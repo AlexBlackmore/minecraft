@@ -1,0 +1,71 @@
+/summon Villager ~ ~ ~
+	{
+		Profession: 4,
+		CustomName: "Leatherworker",
+		CustomNameVisible: 0,
+		Career: 2,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "leather",
+						Count: 9
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 2
+					},
+					sell:
+					{
+						id: "leather_leggings",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "leather_chestplate",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "saddle",
+						Count: 1
+					}
+				}
+			]
+		}
+	}
