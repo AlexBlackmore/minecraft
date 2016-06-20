@@ -1,0 +1,7165 @@
+VANILLA VILLAGERS
+[
+FARMER
+/summon Villager ~ ~ ~
+	{
+		Profession: 0,
+		CustomName: "Farmer",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "wheat",
+						Count: 18
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "potato",
+						Count: 15
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "carrot",
+						Count: 15
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "bread",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "pumpkin",
+						Count: 8
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "pumpkin_pie",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "melon",
+						Count: 7
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "apple",
+						Count: 5
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "cookie",
+						Count: 6
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "cake",
+						Count: 1
+					}
+				}
+			]
+		}
+	}
+
+
+FISHERMAN
+/summon Villager ~ ~ ~
+	{
+		Profession: 0,
+		CustomName: "Fisherman",
+		CustomNameVisible: 0,
+		Career: 2,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "fish",
+						Count: 6
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "cooked_fish",
+						Count: 6
+					}
+				},
+				{
+					buy:
+					{
+						id: "string",
+						Count: 15
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "coal",
+						Count: 16
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				}
+			]
+		}
+	}
+
+
+FLETCHER
+/summon Villager ~ ~ ~
+	{
+		Profession: 0,
+		CustomName: "Fletcher",
+		CustomNameVisible: 0,
+		Career: 4,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "string",
+						Count: 15
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "arrow",
+						Count: 12
+					}
+				},
+				{
+					buy:
+					{
+						id: "gravel",
+						Count: 10
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "flint",
+						Count: 10
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 2
+					},
+					sell:
+					{
+						id: "bow",
+						Count: 1
+					}
+				}
+			]
+		}
+	}
+
+
+SHEPHERD
+/summon Villager ~ ~ ~
+	{
+		Profession: 0,
+		CustomName: "Shepherd",
+		CustomNameVisible: 0,
+		Career: 3,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "wool",
+						Count: 16
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 2
+					},
+					sell:
+					{
+						id: "shears",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 0
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 5
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 6
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 7
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 8
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 9
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 10
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 11
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 12
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 13
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 14
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "wool",
+						Count: 1,
+						Damage: 15
+					}
+				}
+			]
+		}
+	}
+
+
+LIBRARIAN
+/summon Villager ~ ~ ~
+	{
+		Profession: 1,
+		CustomName: "Librarian",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "paper",
+						Count: 24
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 8
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 10
+					},
+					sell:
+					{
+						id: "compass",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 2
+					},
+					sell:
+					{
+						id: "bookshelf",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "written_book",
+						Count: 2
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 10
+					},
+					sell:
+					{
+						id: "clock",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "glass",
+						Count: 5
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 20
+					},
+					sell:
+					{
+						id: "name_tag",
+						Count: 1
+					}
+				}
+			]
+		}
+	}
+
+
+CLERIC
+/summon Villager ~ ~ ~
+	{
+		Profession: 2,
+		CustomName: "Cleric",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 36
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "gold_ingot",
+						Count: 8
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "redstone",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "lapis_lazuli",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "glowstone",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "ender_eye",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 3
+					},
+					sell:
+					{
+						id: "experience_bottle",
+						Count: 1
+					}
+				}
+			]
+		}
+	}
+
+
+ARMORER
+/summon Villager ~ ~ ~
+	{
+		Profession: 3,
+		CustomName: "Armorer",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "coal",
+						Count: 16
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 4
+					},
+					sell:
+					{
+						id: "iron_helmet",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_ingot",
+						Count: 7
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 10
+					},
+					sell:
+					{
+						id: "iron_chestplate",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond",
+						Count: 3
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 16
+					},
+					sell:
+					{
+						id: "diamond_chestplate",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "chainmail_boots",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 9
+					},
+					sell:
+					{
+						id: "chainmail_leggings",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "chainmail_helmet",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 11
+					},
+					sell:
+					{
+						id: "chainmail_chestplate",
+						Count: 1
+					}
+				}
+			]
+		}
+	}
+
+
+WEAPON SMITH
+/summon Villager ~ ~ ~
+	{
+		Profession: 3,
+		CustomName: "Weapon Smith",
+		CustomNameVisible: 0,
+		Career: 2,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "coal",
+						Count: 16
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 6
+					},
+					sell:
+					{
+						id: "iron_axe",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_ingot",
+						Count: 7
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 9
+					},
+					sell:
+					{
+						id: "iron_sword",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond",
+						Count: 3
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 12
+					},
+					sell:
+					{
+						id: "diamond_sword",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 9
+					},
+					sell:
+					{
+						id: "diamond_axe",
+						Count: 1
+					}
+				}
+			]
+		}
+	}
+
+
+TOOL SMITH
+/summon Villager ~ ~ ~
+	{
+		Profession: 3,
+		CustomName: "Tool Smith",
+		CustomNameVisible: 0,
+		Career: 3,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "coal",
+						Count: 16
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "iron_shovel",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_ingot",
+						Count: 7
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 9
+					},
+					sell:
+					{
+						id: "iron_sword",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond",
+						Count: 3
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 12
+					},
+					sell:
+					{
+						id: "diamond_sword",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 9
+					},
+					sell:
+					{
+						id: "diamond_axe",
+						Count: 1
+					}
+				}
+			]
+		}
+	}
+
+
+BUTCHER
+/summon Villager ~ ~ ~
+	{
+		Profession: 4,
+		CustomName: "Butcher",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "porkchop",
+						Count: 14
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "chicken",
+						Count: 14
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "coal",
+						Count: 16
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "cooked_porkchop",
+						Count: 7
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "cooked_chicken",
+						Count: 8
+					}
+				}
+			]
+		}
+	}
+
+
+LEATHERWORKER
+/summon Villager ~ ~ ~
+	{
+		Profession: 4,
+		CustomName: "Leatherworker",
+		CustomNameVisible: 0,
+		Career: 2,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "leather",
+						Count: 9
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 2
+					},
+					sell:
+					{
+						id: "leather_leggings",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "leather_chestplate",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "saddle",
+						Count: 1
+					}
+				}
+			]
+		}
+	}
+]
+
+HYPIXEL VILLAGERS
+[
+VICTOR
+/summon Villager ~ ~ ~
+	{
+		Profession: 2,
+		CustomName: "Victor",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+                	buy:
+					{
+                    	id: "rotten_flesh",
+                    	Count: 4
+                	},
+                	sell:
+					{
+                    	id: "cooked_beef",
+                    	Count: 2
+                	}
+            	},
+				{
+                	buy:
+					{
+						id: "bone",
+						Count: 4
+					},
+					sell:
+					{
+						id: "cooked_beef",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "spider_eye",
+						Count: 4
+					},
+					sell:
+					{
+						id: "cooked_beef",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 7
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage: 16373
+					}
+				},
+				{
+					buy:
+					{
+						id: "bone",
+						Count: 7
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage: 32757
+					}
+				},
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 11
+					},
+					sell:
+					{
+						id: 373,
+						Count: 2,
+						Damage: 16337,
+						tag:
+						{
+							CustomPotionEffects:
+							[
+								{
+									Id: 10,
+									Amplifier: 1,
+									Duration: 200
+								}
+							]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 15
+					},
+					buyB:
+					{
+						id: "bone",
+						Count: 15
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage: 16389,
+						tag:
+						{
+							CustomPotionEffects:
+							[
+								{
+									Id: 14,
+									Amplifier: 1,
+									Duration: 300
+								},
+								{
+									Id: 15,
+									Amplifier: 1,
+									Duration: 300
+								}
+							],
+							display:
+							{
+								Name: "Vanish Potion",
+								Lore:
+								[
+									"Allow you to vanish into the shadows."
+								]
+							}
+						}
+					}
+				},
+				{
+                	buy:
+					{
+						id: "gold_ingot",
+						Count: 2
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage:  16281,
+						tag:
+						{
+							 CustomPotionEffects:
+							 [
+								{
+									Id: 1,
+									Amplifier: 1,
+									Duration: 500
+								},
+								{
+									Id: 3,
+									Amplifier: 1,
+									Duration: 500
+								},
+								{
+									Id: 5,
+									Amplifier: 1,
+									Duration: 500
+								},
+								{
+									Id: 9,
+									Amplifier: 0,
+									Duration: 40
+								}
+							],
+							display:
+							{
+								Name: "Berserking Potion",
+								Lore:
+								[
+									"At first you might feel dizzy."
+								]
+							}
+						}
+					}
+				}
+
+			]
+		}
+	}
+
+
+VICTOR'S ASSISTANT
+/summon Villager ~ ~ ~
+	{
+		Profession: 3,
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "chainmail_helmet",
+						Count: 1
+					},
+                	buyB:
+					{
+                    	id: "gold_ingot",
+                    	Count: 8
+                	},
+                	sell:
+					{
+                    	id: "chainmail_helmet",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Cauli's Agony",
+								Lore:
+								[
+									"Demonic Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 4,
+									lvl: 2
+								},
+								{
+									id: 1,
+									lvl: 2
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+					buy:
+					{
+						id: "chainmail_chestplate",
+						Count: 1
+					},
+                	buyB:
+					{
+                    	id: "gold_ingot",
+                    	Count: 16
+                	},
+                	sell:
+					{
+                    	id: "chainmail_chestplate",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Sqorck's Nightmare",
+								Lore:
+								[
+									"Demonic Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 3,
+									lvl: 2
+								},
+								{
+									id: 1,
+									lvl: 1
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+					buy:
+					{
+						id: "chainmail_leggings",
+						Count: 1
+					},
+                	buyB:
+					{
+                    	id: "gold_ingot",
+                    	Count: 16
+                	},
+                	sell:
+					{
+                    	id: "chainmail_leggings",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Milsy's Anger",
+								Lore:
+								[
+									"Demonic Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 4,
+									lvl: 2
+								},
+								{
+									id: 1,
+									lvl: 1
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+					buy:
+					{
+						id: "chainmail_boots",
+						Count: 1
+					},
+                	buyB:
+					{
+                    	id: "gold_ingot",
+                    	Count: 8
+                	},
+                	sell:
+					{
+                    	id: "chainmail_boots",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Rezz's Lavawalker",
+								Lore:
+								[
+									"Demonic Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 1,
+									lvl: 1
+								},
+								{
+									id: 2,
+									lvl: 2
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	}
+			]
+		}
+	}
+
+
+ARCHANGEL BLACKSMITH
+/summon Villager ~ ~ ~
+	{
+		Profession: 1,
+		CustomName: "Archangel BlackSmith",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "nether_star",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "gold_block",
+						Count: 6
+					},
+					sell:
+					{
+						id: "potion",
+						Damage: 8195,
+						Count: 6,
+						tag:
+						{
+							display:
+							{
+								Name: "Golden Essence",
+								Lore:
+								[
+									"Pure gold, crafted by the Gods",
+									"themselves...",
+									"Used to smith the Archangel Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 23,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					}
+				},
+				{
+                	buy:
+					{
+                    	id: "iron_sword",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 8195,
+						Count: 3,
+						tag:
+						{
+							display:
+							{
+								Name: "Golden Essence",
+								Lore:
+								[
+									"Pure gold, crafted by the Gods",
+									"themselves...",
+									"Used to smith the Archangel Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 23,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "iron_sword",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Hope",
+								Lore:
+								[
+									"Archangel Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 16,
+									lvl: 10
+								},
+								{
+									id: 18,
+									lvl: 2
+								},
+								{
+									id: 17,
+									lvl: 2
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "bow",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 8195,
+						Count: 3,
+						tag:
+						{
+							display:
+							{
+								Name: "Golden Essence",
+								Lore:
+								[
+									"Pure gold, crafted by the Gods",
+									"themselves...",
+									"Used to smith the Archangel Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 23,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "bow",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Arias'tama",
+								Lore:
+								[
+									"Archangel Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 48,
+									lvl: 10
+								},
+								{
+									id: 49,
+									lvl: 1
+								},
+								{
+									id: 51,
+									lvl: 1
+								},
+								{
+									id: 50,
+									lvl: 2
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "iron_helmet",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 8195,
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Golden Essence",
+								Lore:
+								[
+									"Pure gold, crafted by the Gods",
+									"themselves...",
+									"Used to smith the Archangel Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 23,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "iron_helmet",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Vanguard",
+								Lore:
+								[
+									"Archangel Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 3
+								},
+								{
+									id: 4,
+									lvl: 2
+								},
+								{
+									id: 3,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 3
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "iron_chestplate",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 8195,
+						Count: 2,
+						tag:
+						{
+							display:
+							{
+								Name: "Golden Essence",
+								Lore:
+								[
+									"Pure gold, crafted by the Gods",
+									"themselves...",
+									"Used to smith the Archangel Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 23,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "iron_chestplate",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Ariel's Armor",
+								Lore:
+								[
+									"Archangel Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 3
+								},
+								{
+									id: 4,
+									lvl: 2
+								},
+								{
+									id: 3,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 3
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+					buy:
+					{
+                    	id: "iron_leggings",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 8195,
+						Count: 2,
+						tag:
+						{
+							display:
+							{
+								Name: "Golden Essence",
+								Lore:
+								[
+									"Pure gold, crafted by the Gods",
+									"themselves...",
+									"Used to smith the Archangel Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 23,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "iron_leggings",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Acheru Knight's Legplate",
+								Lore:
+								[
+									"Archangel Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 3
+								},
+								{
+									id: 4,
+									lvl: 2
+								},
+								{
+									id: 3,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 3
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "iron_boots",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 8195,
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Golden Essence",
+								Lore:
+								[
+									"Pure gold, crafted by the Gods",
+									"themselves...",
+									"Used to smith the Archangel Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 23,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "iron_boots",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Windwalker",
+								Lore:
+								[
+									"Archangel Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 3
+								},
+								{
+									id: 4,
+									lvl: 2
+								},
+								{
+									id: 3,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 3
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	}
+			]
+		}
+	}
+
+
+ARCHDEMON BLACKSMITH
+/summon Villager ~ ~ ~
+	{
+		Profession: 2,
+		CustomName: "Archdemon BlackSmith",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 32
+					},
+					buyB:
+					{
+						id: "gold_block",
+						Count: 6
+					},
+					sell:
+					{
+						id: "potion",
+						Damage: 12,
+						Count: 6,
+						tag:
+						{
+							display:
+							{
+								Name: "Dark Essence",
+								Lore:
+								[
+									"A substance from the deepest",
+									"reaches of the Nether...",
+									"Used to smith the Archdemon Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 20,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					}
+				},
+				{
+                	buy:
+					{
+                    	id: "stone_sword",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 12,
+						Count: 3,
+						tag:
+						{
+							display:
+							{
+								Name: "Dark Essence",
+								Lore:
+								[
+									"A substance from the deepest",
+									"reaches of the Nether...",
+									"Used to smith the Archdemon Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 20,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "stone_sword",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Oblivion",
+								Lore:
+								[
+									"Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 16,
+									lvl: 9
+								},
+								{
+									id: 18,
+									lvl: 2
+								},
+								{
+									id: 17,
+									lvl: 2
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "bow",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 12,
+						Count: 3,
+						tag:
+						{
+							display:
+							{
+								Name: "Dark Essence",
+								Lore:
+								[
+									"A substance from the deepest",
+									"reaches of the Nether...",
+									"Used to smith the Archdemon Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 20,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "bow",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Soul Breaker",
+								Lore:
+								[
+									"Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 48,
+									lvl: 9
+								},
+								{
+									id: 49,
+									lvl: 1
+								},
+								{
+									id: 51,
+									lvl: 1
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "chainmail_helmet",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 12,
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Dark Essence",
+								Lore:
+								[
+									"A substance from the deepest",
+									"reaches of the Nether...",
+									"Used to smith the Archdemon Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 20,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "chainmail_helmet",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Hinder's Visage",
+								Lore:
+								[
+									"Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 4,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 2
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "chainmail_chestplate",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 12,
+						Count: 2,
+						tag:
+						{
+							display:
+							{
+								Name: "Dark Essence",
+								Lore:
+								[
+									"A substance from the deepest",
+									"reaches of the Nether...",
+									"Used to smith the Archdemon Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 20,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "chainmail_chestplate",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Demonskin",
+								Lore:
+								[
+									"Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 3,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 2
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "chainmail_leggings",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 12,
+						Count: 2,
+						tag:
+						{
+							display:
+							{
+								Name: "Dark Essence",
+								Lore:
+								[
+									"A substance from the deepest",
+									"reaches of the Nether...",
+									"Used to smith the Archdemon Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 20,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "chainmail_leggings",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Warlord Legplates",
+								Lore:
+								[
+									"Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 4,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 2
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	},
+				{
+					buy:
+					{
+                    	id: "chainmail_boots",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "potion",
+						Damage: 12,
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Dark Essence",
+								Lore:
+								[
+									"A substance from the deepest",
+									"reaches of the Nether...",
+									"Used to smith the Archdemon Set"
+								]
+							},
+							CustomPotionEffects:
+							[
+								{
+									Id: 20,
+									Amplifier: 3,
+									Duration: 20
+
+								}
+
+							]
+						}
+					},
+                	sell:
+					{
+                    	id: "chainmail_boots",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Taz's Lavawalker",
+								Lore:
+								[
+									"Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 2,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 2
+								},
+								{
+									id: 34,
+									lvl: 10
+								}
+							]
+						}
+                	}
+            	}
+			]
+		}
+	}
+
+
+ALERN
+/summon Villager ~ ~ ~
+	{
+		Profession: 2,
+		CustomName: "Alern",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+                	buy:
+					{
+                    	id: "rotten_flesh",
+                    	Count: 2
+                	},
+                	sell:
+					{
+                    	id: "cooked_beef",
+                    	Count: 4
+                	}
+            	},
+				{
+                	buy:
+					{
+						id: "bone",
+						Count: 2
+					},
+					sell:
+					{
+						id: "cooked_chicken",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 6
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage: 16373
+					}
+				},
+				{
+					buy:
+					{
+						id: "bone",
+						Count: 6
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage: 32757
+					}
+				},
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 4
+					},
+					buyB:
+					{
+						id: "bone",
+						Count: 4
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage: 16337,
+						tag:
+						{
+							CustomPotionEffects:
+							[
+								{
+									Id: 5,
+									Amplifier: 1,
+									Duration: 1100
+								}
+							]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 7
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage: 16369,
+						tag:
+						{
+							CustomPotionEffects:
+							[
+								{
+									Id: 10,
+									Amplifier: 1,
+									Duration: 1100
+								}
+							]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 3
+					},
+					buyB:
+					{
+						id: "bone",
+						Count: 3
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage: 16371,
+						tag:
+						{
+							CustomPotionEffects:
+							[
+								{
+									Id: 3,
+									Amplifier: 1,
+									Duration: 700
+								}
+							]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 4
+					},
+					sell:
+					{
+						id: "milk_bucket",
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Lore:
+								[
+									"Clear all effects"
+								]
+
+							}
+						}
+					}
+				},
+				{
+                	buy:
+					{
+						id: "gold_ingot",
+						Count: 2
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage:  16281,
+						tag:
+						{
+							 CustomPotionEffects:
+							 [
+								{
+									Id: 3,
+									Amplifier: 1,
+									Duration: 700
+								},
+								{
+									Id: 5,
+									Amplifier: 1,
+									Duration: 700
+								},
+								{
+									Id: 11,
+									Amplifier: 1,
+									Duration: 700
+								},
+								{
+									Id: 1,
+									Amplifier: 1,
+									Duration: 700
+								}
+							],
+							display:
+							{
+								Name: "Berserking Potion"
+							}
+						}
+					}
+				}
+			]
+		}
+	}
+]
+
+
+LEONARDO, THE GYPSY MERCHANT
+/summon Villager ~ ~ ~
+	{
+		Profession:5,
+		CustomName:Leonardo,
+		CustomNameVisible: 0f,
+		PersistenceRequired:1,
+		CanPickUpLoot: 0,
+		Career: 1,
+		CareerLevel: 42,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:5
+					},
+					sell:
+					{
+						id:"fishing_rod",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"hardened_clay",
+						Count:2
+					}
+				},
+				{
+					buy:
+					{
+						id:"log",
+						Count:28
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"quartz_block",
+						Count:2
+					}
+				},
+				{
+					buy:
+					{
+						id:"clay_ball",
+						Count:16
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					buyB:
+					{
+						id:"dirt",
+						Damage:0,
+						Count:3
+					},
+					sell:
+					{
+						id:"dirt",
+						Damage:2,
+						Count:2
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"brick_block",
+						Count:2
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"sandstone",
+						Count:2
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"flower_pot",
+						Count:3
+					}
+				},
+				{
+					buy:
+					{
+						id:"quartz",
+						Count:14
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:7
+					},
+					sell:
+					{
+						id:"bow",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:3
+					},
+					sell:
+					{
+						id:"crafting_table",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					buyB:
+					{
+						id:"ice",
+						Count:4
+					},
+					sell:
+					{
+						id:"packed_ice",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"dye",
+						Damage:4,
+						Count:3
+					}
+				}
+			]
+		}
+	}
+
+FLOWER SHOP
+/summon Villager ~ ~ ~
+	{
+		Profession: 0,
+		Career: 4,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name: "generic.movementSpeed",
+				Base: "0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "yellow_flower",
+						Count: 4
+					},
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "red_flower",
+						Count: 4
+					},
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+                			sell:
+					{
+                    				id: "red_flower",
+                    				Count: 4,
+                    				Damage: 1
+                			},
+
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "red_flower",
+						Count: 4,
+						Damage: 2
+					},
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "red_flower",
+						Count: 4,
+						Damage: 3
+					},
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "red_flower",
+						Count: 4,
+						Damage: 4
+					},
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "red_flower",
+						Count: 4,
+						Damage: 5
+					},
+
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "red_flower",
+						Count: 4,
+						Damage: 6
+					},
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "red_flower",
+						Count: 4,
+						Damage: 7
+					},
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "red_flower",
+						Count: 4,
+						Damage: 8
+					},
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "double_plant",
+						Count: 2
+					},
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "double_plant",
+						Count: 2,
+						Damage: 1
+					},
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "double_plant",
+						Count: 2,
+						Damage: 4
+					},
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "double_plant",
+						Count: 2,
+						Damage: 5
+					},
+
+				}
+			]
+		}
+	}
+
+SEA SHOP
+/summon Villager ~ ~ ~
+	{
+		Profession: 1,
+		CustomName: " ",
+		CustomNameVisible: 0,
+		Career: 2,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+                	buy:
+					{
+                    	id: "emerald",
+                    	Count: 1
+                	},
+                	sell:
+					{
+                    	id: "fish",
+                    	Count: 4
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "emerald",
+                    	Count: 1
+                	},
+                	sell:
+					{
+                    	id: "fish",
+                    	Count: 4,
+						Damage: 1
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "emerald",
+                    	Count: 1
+                	},
+                	sell:
+					{
+                    	id: "fish",
+                    	Count: 4,
+						Damage: 2
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "emerald",
+                    	Count: 1
+                	},
+                	sell:
+					{
+                    	id: "fish",
+                    	Count: 4,
+						Damage: 3
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "emerald",
+                    	Count: 1
+                	},
+                	sell:
+					{
+                    	id: "dye",
+                    	Count: 8
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "emerald",
+                    	Count: 1
+                	},
+					buyB:
+					{
+						id: "book",
+						Count: 1
+					},
+                	sell:
+					{
+                    	id: "enchanted_book",
+                    	Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id: 61,
+									lvl: 3
+								},
+								{
+									id: 62,
+									lvl: 3
+								}
+							]
+						}
+                	}
+            	},
+				{
+                	buy:
+					{
+                    	id: "emerald",
+                    	Count: 32
+                	},
+					buyB:
+					{
+						id: "gold_helmet",
+						Count: 1
+					},
+                	sell:
+					{
+                    	id: "gold_helmet",
+                    	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Diving Helmet",
+								Lore:
+								[
+									"Swim with the fishes!"
+								]
+							},
+							ench:
+							[
+								{
+									id: 5,
+									lvl: 10
+								},
+								{
+									id: 6,
+									lvl: 1
+								}
+							]
+						}
+                	}
+            	}
+			]
+		}
+	}
+
+SMELTER
+/summon Villager ~ ~ ~
+	{
+		Profession: 3,
+		CustomName: "Smelter",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name: "generic.movementSpeed",
+				Base: "0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "written_book",
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Welcome to the Smeltery!",
+								Lore:
+								[
+									"Trade an item to revert it to",
+									"it's core metallergic components."
+								]
+							}
+						}
+					},
+					buyB:
+					{
+						id: "barrier",
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: " "
+							}
+						}
+					},
+					sell:
+					{
+						id: "barrier",
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: " "
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "compass",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "clock",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "leather_helmet",
+						Count: 1
+					},
+					sell:
+					{
+						id: "leather",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "leather_chestplate",
+						Count: 1
+					},
+					sell:
+					{
+						id: "leather",
+						Count: 7
+					}
+				},
+				{
+					buy:
+					{
+						id: "leather_leggings",
+						Count: 1
+					},
+					sell:
+					{
+						id: "leather",
+						Count: 6
+					}
+				},
+				{
+					buy:
+					{
+						id: "leather_boots",
+						Count: 1
+					},
+					sell:
+					{
+						id: "leather",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "chainmail_helmet",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "chainmail_chestplate",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 5
+					}
+				},
+				{
+					buy:
+					{
+						id: "chainmail_leggings",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "chainmail_boots",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_pickaxe",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_shovel",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_axe",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_sword",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_helmet",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_chestplate",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 7
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_leggings",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 6
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_boots",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_horse_armor",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 12
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_pickaxe",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_shovel",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_axe",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_sword",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_helmet",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_chestplate",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 7
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_leggings",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 6
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_boots",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_horse_armor",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 12
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond_pickaxe",
+						Count: 1
+					},
+					sell:
+					{
+						id: "diamond",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond_shovel",
+						Count: 1
+					},
+					sell:
+					{
+						id: "diamond",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond_axe",
+						Count: 1
+					},
+					sell:
+					{
+						id: "diamond",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond_sword",
+						Count: 1
+					},
+					sell:
+					{
+						id: "diamond",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond_helmet",
+						Count: 1
+					},
+					sell:
+					{
+						id: "diamond",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond_chestplate",
+						Count: 1
+					},
+					sell:
+					{
+						id: "diamond",
+						Count: 7
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond_leggings",
+						Count: 1
+					},
+					sell:
+					{
+						id: "diamond",
+						Count: 6
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond_boots",
+						Count: 1
+					},
+					sell:
+					{
+						id: "diamond",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "diamond_horse_armor",
+						Count: 1
+					},
+					sell:
+					{
+						id: "diamond",
+						Count: 12
+					}
+				},
+				{
+					buy:
+					{
+						id: "anvil",
+						Count: 1,
+						Damage: 0
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 30
+					}
+				},
+				{
+					buy:
+					{
+						id: "minecart",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "iron_door",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 5
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "flint",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "stick",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "feather",
+						Count:1
+					}
+				}
+			]
+		}
+	}
+
+ORES & MINERALS
+/summon Villager ~ ~ ~
+	{
+		Profession:1,
+		CustomName:"Ores & Minerals",
+		CustomNameVisible: 0,
+		PersistenceRequired:1,
+		CanPickUpLoot:0,
+		Career:1,
+		CareerLevel:42,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 5
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "coal",
+						Count: 14
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 6
+					}
+				},
+				{
+					buy:
+					{
+						id: "quartz_block",
+						Count: 1
+					},
+					sell:
+					{
+						id: "quartz",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_apple",
+						Damage: 0,
+						Count: 1
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_apple",
+						Damage: 0,
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count:64
+					},
+					sell:
+					{
+						id: "golden_apple",
+						Damage: 1,
+						Count: 1
+					}
+				}
+			]
+		}
+	}
+
+EXPLORER
+/summon Villager ~ ~ ~
+	{
+		Profession: 4,
+		CustomName: "Explorer",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "ice",
+						Count: 8
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1
+					},
+					sell:
+					{
+						id: "ice",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "nether_wart",
+						Count: 16
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "blaze_rod",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "netherrack",
+						Count: 16
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "soul_sand",
+						Count: 8
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 3
+					},
+					sell:
+					{
+						id: "ghast_tear",
+						Count: 1
+					}
+				}
+			]
+        }
+	}
+
+POTIONS & POISONS
+/summon Villager ~ ~ ~
+	{
+		Profession:2,
+		CustomName:"Potion's & Poisons",
+		CustomNameVisible: 0,
+		PersistenceRequired:1,
+		CanPickUpLoot:0,
+		Career:1,
+		CareerLevel:42,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							Potion: "strong_regeneration"
+						}
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name:"Potion of Regeneration II"
+							},
+							Potion: "empty",
+							CustomPotionEffects:
+							[
+								{
+									Id: 10,
+									Amplifier: 1,
+									Duration: 1200
+								}
+							],
+							HideFlags: 32
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							Potion: "strong_swiftness"
+						}
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name:"Potion of Swiftness II"
+							},
+							Potion: "empty",
+							CustomPotionEffects:
+							[
+								{
+									Id: 1,
+									Amplifier: 1,
+									Duration: 4800
+								}
+							],
+							HideFlags: 32
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							Potion: "strong_strength"
+						}
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name:"Potion of Strength II"
+							},
+							Potion: "empty",
+							CustomPotionEffects:
+							[
+								{
+									Id: 5,
+									Amplifier: 1,
+									Duration: 4800
+								}
+							],
+							HideFlags: 32
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							Potion: "strong_poison"
+						}
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name:"Potion of Poison II"
+							},
+							Potion: "empty",
+							CustomPotionEffects:
+							[
+								{
+									Id: 19,
+									Amplifier: 1,
+									Duration: 1200
+								}
+							],
+							HideFlags: 32
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							Potion: "long_swiftness"
+						}
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							Potion: "empty",
+							CustomPotionEffects:
+							[
+								{
+									Id: 3,
+									Amplifier: 3,
+									Duration: 1800
+								},
+								{
+									Id: 17,
+									Amplifier: 0,
+									Duration: 1800
+								},
+								{
+									Id: 9,
+									Amplifier: 1,
+									Duration: 200
+								}
+							],
+							display:
+							{
+								Name: "Potion of Haste"
+							},
+							HideFlags: 32
+						}
+					}
+				},
+
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							Potion: "strong_healing"
+						}
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							Potion:"empty",
+							CustomPotionEffects:
+							[
+								{
+									Id: 22,
+									Amplifier: 4,
+									Duration: 9600
+								},
+								{
+									Id: 18,
+									Amplifier: 1,
+									Duration: 1800
+								},
+								{
+									Id: 9,
+									Amplifier: 1,
+									Duration: 200
+								}
+							],
+							display:
+							{
+								Name: "Potion of Absorption"
+							},
+							HideFlags:32
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							Potion:"strong_regeneration"
+						}
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							Potion:"empty",
+							CustomPotionEffects:
+							[
+								{
+									Id: 21,
+									Amplifier: 4,
+									Duration: 9600
+								},
+								{
+									Id: 19,
+									Amplifier: 0,
+									Duration: 600
+								},
+								{
+									Id: 9,
+									Amplifier: 1,
+									Duration: 200
+								}
+							],
+							display:
+							{
+								Name: "Potion of Health Boost"
+							},
+							HideFlags:32
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						tag:
+						{
+							Potion:"invisibility"
+						}
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 12
+					},
+					sell:
+					{
+						id: "splash_potion",
+						Count: 8,
+						tag:
+						{
+							Potion:"empty",
+							CustomPotionEffects:
+							[
+								{
+									Id: 10,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 2,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 4,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 9,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 15,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 17,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 18,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 19,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 20,
+									Amplifier: 3,
+									Duration: 30
+								},
+							],
+							display:
+							{
+								Name: "Antidote",
+								Lore:
+								[
+									"It tastes aweful, but it works!"
+								]
+							},
+							HideFlags:32
+						}
+					}
+				}
+			]
+		}
+	}
+
+ARMOR MAGE
+/summon Villager ~ ~ ~
+	{
+		Profession: 1,
+		CustomName: "Armor Mage",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:0,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Reduces most damage"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:1,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Reduces fire damage",
+									"Every level reduces initiated burn time by 15%"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:2,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Reduces fall damage"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:3,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Reduces explosion damage"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:4,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Reduces projectile damage"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:5,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Extends underwater breathing time",
+									"+15 seconds breathing time per level, "
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 9
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:6,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases underwater mining rate"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:7,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Damages attackers",
+									"Chance of inflicting 1-4 damage"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 9
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:8,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases underwater movement speed",
+									"+33% speed in water per level"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:34,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases durability",
+									"Tools last Level+1 times as long"
+								]
+							}
+						}
+					}
+				}
+			]
+        }
+	}
+
+WEAPON MAGE
+/summon Villager ~ ~ ~
+	{
+		Profession: 1,
+		CustomName: "Weapon Mage",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:16,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases damage",
+									"+1.25 damage per level on hit"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:17,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases damage to undead mobs",
+									"+2.5 damage per level on hit"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:18,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases damage to anthropod mobs",
+									"+2.5 damage per level on hit"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:19,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases knockback",
+									"+3-block knockback on hit per level"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:20,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Sets target on fire",
+									"+4 seconds burn time per level"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 9
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:21,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Causes mobs to drop more loot",
+									"+1 loot drop, +1% rare loot drop per level"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:34,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases durability",
+									"Tools last Level+1 times as long"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:48,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases arrow damage",
+									"+0.5 arrow damage per level on hit"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:49,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases arrow knockback"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:50,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Sets arrows on fire",
+									"Deals 5 damage over 5 seconds of burn time"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 19
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:51,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Causes shooting to consume no arrows",
+									"At least 1 arrow is required to shoot bow"
+								]
+							}
+						}
+					}
+				}
+			]
+        }
+	}
+
+TOOL MAGE
+/summon Villager ~ ~ ~
+	{
+		Profession: 1,
+		CustomName: "Tool Mage",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:32,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases mining speed",
+									"+30% per level"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 19
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:33,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Allows collection of normally unobtainable blocks"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:34,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases durability",
+									"Tools last Level+1 times as long"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:35,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases block drops"
+								]
+							}
+						}
+					}
+				}
+			]
+        }
+	}
+
+JUNK MERCHANT
+/summon Villager ~ ~ ~
+	{
+		Profession: 0,
+		CustomName: "Junk Merchant",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "feather",
+						Count: 16
+					},
+					buyB:
+					{
+						id: "dye",
+						Count: 16
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						tag:
+						{
+							display:
+							{
+								Name: "Ink and Quill"
+							},
+							CustomPotionEffects:[],
+							Potion: harming,
+							HideFlags: 63
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 16
+					},
+					buyB:
+					{
+						id: potion,
+						Count:1,
+						tag:
+						{
+							display:
+							{
+								Name: "Ink and Quill"
+							},
+							CustomPotionEffects:[],
+							Potion: harming,
+							HideFlags: 63
+						}
+					},
+					sell:
+					{
+						id: "written_book",
+						Count: 16
+					}
+				},
+				{
+					buy:
+					{
+						id: "stick",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "redstone",
+						Count: 1
+					},
+					sell:
+					{
+						id: "redstone_torch",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "flint",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "stick",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "feather",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:12
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count:1
+					}
+				}
+			]
+        }
+	}
+
+BREEDER
+/summon Villager ~ ~ ~
+	{
+		Profession: 0,
+		CustomName: "Breeder",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "beef",
+						Count:16
+					},
+					buyB:
+					{
+						id: "diamond",
+						Count:1
+					},
+					sell:
+					{
+						id: "spawn_egg",
+						Count:1,
+						Damage: 92
+					}
+				},
+				{
+					buy:
+					{
+						id: "chicken",
+						Count:16
+					},
+					buyB:
+					{
+						id: "diamond",
+						Count:1
+					},
+					sell:
+					{
+						id: "spawn_egg",
+						Count:1,
+						Damage: 93
+					}
+				},
+				{
+					buy:
+					{
+						id: "porkchop",
+						Count:16
+					},
+					buyB:
+					{
+						id: "diamond",
+						Count:1
+					},
+					sell:
+					{
+						id: "spawn_egg",
+						Count:1,
+						Damage: 90
+					}
+				},
+				{
+					buy:
+					{
+						id: "rabbit",
+						Count:16
+					},
+					buyB:
+					{
+						id: "diamond",
+						Count:1
+					},
+					sell:
+					{
+						id: "spawn_egg",
+						Count:1,
+						Damage: 101
+					}
+				},
+				{
+					buy:
+					{
+						id: "mutton",
+						Count:16
+					},
+					buyB:
+					{
+						id: "diamond",
+						Count:1
+					},
+					sell:
+					{
+						id: "spawn_egg",
+						Count:1,
+						Damage: 91
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count:16
+					},
+					buyB:
+					{
+						id: "diamond",
+						Count:1
+					},
+					sell:
+					{
+						id: "spawn_egg",
+						Count:1,
+						Damage: 120
+					}
+				}
+			]
+        }
+	}
+
+CLEOPHIAN CRATE BOOPER
+/give @p diamond_axe 1 0
+{
+    display: {
+        Name: "Cleophian Crate Booper",
+        Lore: [
+            "Boop ALL the things!"
+        ]
+    },
+    ench: [
+        {
+            id: 32,
+            lvl: 100
+        },
+        {
+            id: 34,
+            lvl: 100
+        }
+    ],
+    HideFlags: 1
+}
+
+AUTO TREE CHOPPER
+[
+/summon FallingSand ~ ~1 ~ {Block:stone,Time:1,Passengers:[{id:FallingSand,Block:redstone_block,Time:1,Passengers:[{id:FallingSand,Block:activator_rail,Time:1},{id:MinecartCommandBlock,Command:gamerule commandBlockOutput false},{id:MinecartCommandBlock,Command:gamerule logAdminCommands false},{id:MinecartCommandBlock,Command:fill ~3 ~-3 ~-1 ~9 ~3 ~2 minecraft:stained_glass 12 hollow},{id:MinecartCommandBlock,Command:fill ~3 ~-3 ~ ~9 ~3 ~1 minecraft:stained_hardened_clay 12 replace stained_glass},{id:MinecartCommandBlock,Command:setblock ~4 ~-2 ~ repeating_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[score_tree_min=3,type=ArmorStand] ~ ~ ~ detect ~ ~ ~ minecraft:log2 -1 /setblock ~ ~ ~ minecraft:air 0 destroy}},{id:MinecartCommandBlock,Command:setblock ~2 ~ ~0 minecraft:wall_sign 4 replace {Text1:"{\\\"text\\\":\\\"-=+=-\\\",\\\"color\\\":\\\"dark_blue\\\"}",Text2:"{\\\"text\\\":\\\"Right-Click\\\",\\\"color\\\":\\\"dark_red\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"kill @e[type=ArmorStand,r=5,c=1]\\\"}}",Text3:"{\\\"text\\\":\\\"To Remove\\\",\\\"color\\\":\\\"dark_red\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"fill ~ ~-3 ~-2 ~8 ~3 ~2 minecraft:air\\\"}}",Text4:"{\\\"text\\\":\\\"-=+=-\\\",\\\"color\\\":\\\"dark_blue\\\"}"}},{id:MinecartCommandBlock,Command:/scoreboard objectives add tree dummy},{id:MinecartCommandBlock,Command:/scoreboard objectives add treeDropAge dummy},{id:MinecartCommandBlock,Command:/scoreboard objectives add mineLog stat.mineBlock.minecraft.log},{id:MinecartCommandBlock,Command:/scoreboard objectives add mineLog2 stat.mineBlock.minecraft.log2},{id:MinecartCommandBlock,Command:/tellraw @a ["",{"text":"Falling Trees","color":"dark_red","bold":true},{"text":" by ","color":"red","bold":false},{"text":"MiroTech Software","color":"dark_red","underlined":true,"clickEvent":{"action":"open_url","value":"http://bit.ly/mirotech"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Click to go to MiroTech Software's YouTube page"}]}}},{"text":" has been installed!","color":"red","underlined":false,"bold":false}]},{id:MinecartCommandBlock,Command:summon ArmorStand ~2 ~2 ~0.5 {CustomName:Falling Trees,CustomNameVisible:1,Marker:1,Invisible:1,NoGravity:1}},{id:MinecartCommandBlock,Command:setblock ~5 ~-2 ~0 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchW] ~ ~ ~ /summon ArmorStand ~-1 ~ ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchW"}}},{id:MinecartCommandBlock,Command:setblock ~6 ~-2 ~0 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[score_tree_min=3,type=ArmorStand] ~ ~ ~ detect ~ ~ ~ minecraft:vine -1 /setblock ~ ~ ~ minecraft:air 0 destroy}},{id:MinecartCommandBlock,Command:setblock ~7 ~-2 ~0 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[score_tree_min=3,type=ArmorStand] ~ ~ ~ detect ~ ~ ~ minecraft:leaves2 -1 /setblock ~ ~ ~ minecraft:air 0 destroy}},{id:MinecartCommandBlock,Command:setblock ~8 ~-2 ~0 chain_command_block 1 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchS] ~ ~ ~ /summon ArmorStand ~-1 ~ ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchW"}}},{id:MinecartCommandBlock,Command:setblock ~8 ~-1 ~0 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players add @e[type=ArmorStand,name=TreeBranchU] tree 1}},{id:MinecartCommandBlock,Command:setblock ~7 ~-1 ~0 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBase] ~ ~ ~ /summon ArmorStand ~-1 ~ ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchW"}}},{id:MinecartCommandBlock,Command:setblock ~6 ~-1 ~0 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchN] ~ ~ ~ /summon ArmorStand ~1 ~ ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchE"}}},{id:MinecartCommandBlock,Command:setblock ~5 ~-1 ~0 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,name=TreeBranchS,score_tree_min=1] ~ ~ ~ detect ~ ~ ~ minecraft:air -1 /kill @e[type=ArmorStand,c=1]}},{id:MinecartCommandBlock,Command:setblock ~4 ~-1 ~0 chain_command_block 1 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,name=TreeBranchE,score_tree_min=1] ~ ~ ~ detect ~ ~ ~ minecraft:air -1 /kill @e[type=ArmorStand,c=1]}},{id:MinecartCommandBlock,Command:setblock ~4 ~0 ~0 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,name=TreeBranchW,score_tree_min=1] ~ ~ ~ detect ~ ~ ~ minecraft:air -1 /kill @e[type=ArmorStand,c=1]}},{id:MinecartCommandBlock,Command:setblock ~5 ~0 ~0 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,name=TreeBase,score_tree_min=3] ~ ~ ~ detect ~ ~ ~ minecraft:air -1 /kill @e[type=ArmorStand,c=1]}},{id:MinecartCommandBlock,Command:setblock ~6 ~0 ~0 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players add @e[type=Item] treeDropAge 1 {Item:{id:"minecraft:log2"}}}},{id:MinecartCommandBlock,Command:setblock ~7 ~0 ~0 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players add @e[type=Item] treeDropAge 1 {Item:{id:"minecraft:log"}}}},{id:MinecartCommandBlock,Command:setblock ~8 ~0 ~0 chain_command_block 1 replace {TrackOutput:0b,auto:1b,Command:/execute @a[score_mineLog2_min=1,score_mineLog2=1] ~ ~ ~ /scoreboard players add @e[type=Item,c=1,score_treeDropAge=1] tree 1 {Item:{id:"minecraft:log2"}}}},{id:MinecartCommandBlock,Command:setblock ~8 ~1 ~0 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchU] ~ ~ ~ /summon ArmorStand ~ ~ ~1 {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchS"}}},{id:MinecartCommandBlock,Command:setblock ~7 ~1 ~0 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @a[score_mineLog_min=1,score_mineLog=1] ~ ~ ~ /scoreboard players add @e[type=Item,c=1,score_treeDropAge=1] tree 1 {Item:{id:"minecraft:log"}}}},{id:MinecartCommandBlock,Command:setblock ~6 ~1 ~0 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=Item,score_tree_min=2,score_tree=2] ~ ~ ~ /summon ArmorStand ~ ~ ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBase"}}},{id:MinecartCommandBlock,Command:setblock ~5 ~1 ~0 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchU] ~ ~ ~ /summon ArmorStand ~-1 ~ ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchW"}}},{id:MinecartCommandBlock,Command:setblock ~4 ~1 ~0 chain_command_block 1 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players set @a[score_mineLog_min=2] mineLog 0}},{id:MinecartCommandBlock,Command:setblock ~4 ~2 ~0 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players add @e[type=ArmorStand,name=TreeBranchN] tree 1}},{id:MinecartCommandBlock,Command:setblock ~5 ~2 ~0 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players set @a[score_mineLog2_min=2] mineLog2 0}},{id:MinecartCommandBlock,Command:setblock ~6 ~2 ~0 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchS] ~ ~ ~ /summon ArmorStand ~ ~ ~1 {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchS"}}},{id:MinecartCommandBlock,Command:setblock ~7 ~2 ~0 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[score_tree_min=3,type=ArmorStand] ~ ~ ~ detect ~ ~ ~ minecraft:log -1 /setblock ~ ~ ~ minecraft:air 0 destroy}},{id:MinecartCommandBlock,Command:setblock ~8 ~2 ~0 chain_command_block 3 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players add @e[type=Item,score_tree_min=1] tree 1}},{id:MinecartCommandBlock,Command:setblock ~8 ~2 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players add @e[type=ArmorStand,name=TreeBranchS] tree 1}},{id:MinecartCommandBlock,Command:setblock ~7 ~2 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players add @a[score_mineLog_min=1] mineLog 1}},{id:MinecartCommandBlock,Command:setblock ~6 ~2 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchU] ~ ~ ~ /summon ArmorStand ~ ~ ~-1 {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchN"}}},{id:MinecartCommandBlock,Command:setblock ~5 ~2 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players add @e[type=ArmorStand,name=TreeBranchW] tree 1}},{id:MinecartCommandBlock,Command:setblock ~4 ~2 ~1 chain_command_block 0 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBase] ~ ~ ~ /summon ArmorStand ~1 ~ ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchE"}}},{id:MinecartCommandBlock,Command:setblock ~4 ~1 ~1 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchN] ~ ~ ~ /summon ArmorStand ~-1 ~ ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchW"}}},{id:MinecartCommandBlock,Command:setblock ~5 ~1 ~1 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,name=TreeBranchN,score_tree_min=1] ~ ~ ~ detect ~ ~ ~ minecraft:air -1 /kill @e[type=ArmorStand,c=1]}},{id:MinecartCommandBlock,Command:setblock ~6 ~1 ~1 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBase] ~ ~ ~ /summon ArmorStand ~ ~ ~1 {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchS"}}},{id:MinecartCommandBlock,Command:setblock ~7 ~1 ~1 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBase] ~ ~ ~ /summon ArmorStand ~ ~ ~-1 {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchN"}}},{id:MinecartCommandBlock,Command:setblock ~8 ~1 ~1 chain_command_block 0 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBase] ~ ~ ~ /summon ArmorStand ~ ~1 ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchU"}}},{id:MinecartCommandBlock,Command:setblock ~8 ~0 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchE] ~ ~ ~ /summon ArmorStand ~1 ~ ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchE"}}},{id:MinecartCommandBlock,Command:setblock ~7 ~0 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchU] ~ ~ ~ /summon ArmorStand ~ ~1 ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchU"}}},{id:MinecartCommandBlock,Command:setblock ~6 ~0 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[score_tree_min=3,type=ArmorStand] ~ ~ ~ detect ~ ~ ~ minecraft:leaves -1 /setblock ~ ~ ~ minecraft:air 0 destroy}},{id:MinecartCommandBlock,Command:setblock ~5 ~0 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchS] ~ ~ ~ /summon ArmorStand ~1 ~ ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchE"}}},{id:MinecartCommandBlock,Command:setblock ~4 ~0 ~1 chain_command_block 0 replace {TrackOutput:0b,auto:1b,Command:/execute @e[score_tree_min=3,type=ArmorStand] ~ ~ ~ detect ~ ~ ~ minecraft:cocoa -1 /setblock ~ ~ ~ minecraft:air 0 destroy}},{id:MinecartCommandBlock,Command:setblock ~4 ~-1 ~1 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players add @e[type=ArmorStand,name=TreeBase] tree 1}},{id:MinecartCommandBlock,Command:setblock ~5 ~-1 ~1 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchU] ~ ~ ~ /summon ArmorStand ~1 ~ ~ {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchE"}}},{id:MinecartCommandBlock,Command:setblock ~6 ~-1 ~1 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players add @a[score_mineLog2_min=1] mineLog2 1}},{id:MinecartCommandBlock,Command:setblock ~7 ~-1 ~1 chain_command_block 5 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,name=TreeBranchU,score_tree_min=1] ~ ~ ~ detect ~ ~ ~ minecraft:air -1 /kill @e[type=ArmorStand,c=1]}},{id:MinecartCommandBlock,Command:setblock ~8 ~-1 ~1 chain_command_block 0 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=2,score_tree=2,name=TreeBranchN] ~ ~ ~ /summon ArmorStand ~ ~ ~-1 {Invisible:1,Marker:1,Invulnerable:1,NoGravity:1,NoBasePlate:1,CustomName:"TreeBranchN"}}},{id:MinecartCommandBlock,Command:setblock ~8 ~-2 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/kill @e[type=ArmorStand,score_tree_min=4]}},{id:MinecartCommandBlock,Command:setblock ~7 ~-2 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/scoreboard players add @e[type=ArmorStand,name=TreeBranchE] tree 1}},{id:MinecartCommandBlock,Command:setblock ~6 ~-2 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=1] ~ ~ ~ detect ~ ~ ~ minecraft:dirt -1 /kill @e[type=ArmorStand,c=1]}},{id:MinecartCommandBlock,Command:setblock ~5 ~-2 ~1 chain_command_block 4 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=1] ~ ~ ~ detect ~ ~ ~ minecraft:stone -1 /kill @e[type=ArmorStand,c=1]}},{id:MinecartCommandBlock,Command:setblock ~4 ~-2 ~1 chain_command_block 3 replace {TrackOutput:0b,auto:1b,Command:/execute @e[type=ArmorStand,score_tree_min=1] ~ ~ ~ detect ~ ~ ~ minecraft:sand -1 /kill @e[type=ArmorStand,c=1]}},{id:MinecartCommandBlock,Command:setblock ~-1 ~-3 ~ command_block 0 replace {Command:fill ~ ~ ~ ~2 ~3 ~ air 0}},{id:MinecartCommandBlock,Command:setblock ~-1 ~-2 ~ redstone_block 0 replace},{id:MinecartCommandBlock,Command:kill @e[type=MinecartCommandBlock]}]}]}
+]
+
+OLD 1.8 VILLAGERS
+[
+
+BARTENDER 1.8
+/summon Villager ~ ~ ~
+	{
+		Profession: 4,
+		CustomName: "Bartender",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 2,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 4,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 6,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 7,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 8,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 10,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 12,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 14,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 18,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 20,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 22,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 24,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 26,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 28,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 30,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 34,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 36,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 38,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 40,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 42,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 44,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 46,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 48,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 50,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 52,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 54,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 56,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 58,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 60,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 62,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 64,
+						tag:
+						{
+							CustomPotionEffects:[]
+						}
+					}
+				}
+			]
+        }
+	}
+
+JUNK MERCHANT 1.8
+/summon Villager ~ ~ ~
+	{
+		Profession: 0,
+		CustomName: "Junk Merchant",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "feather",
+						Count: 16
+					},
+					buyB:
+					{
+						id: "dye",
+						Count: 16
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						Damage: 8204,
+						tag:
+						{
+							display:
+							{
+								Name: "Ink and Quill"
+							},
+							CustomPotionEffects:[]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 16
+					},
+					buyB:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8204,
+						tag:
+						{
+							display:
+							{
+								Name: "Ink and Quill"
+							},
+							CustomPotionEffects:[]
+						}
+					},
+					sell:
+					{
+						id: "written_book",
+						Count: 16
+					}
+				},
+				{
+					buy:
+					{
+						id: "stick",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "redstone",
+						Count: 1
+					},
+					sell:
+					{
+						id: "redstone_torch",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "flint",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "stick",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "feather",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:12
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count:1
+					}
+				}
+			]
+        }
+	}
+
+ADVANCED POTION MAKING VOL.1.8.8
+/give @p written_book 1 0 {
+	pages:["{\"text\":\"\n\n\n\nAdanced Potion Making\n    ~ Volume 1.8.8 ~   \n \"}","[\"\",{\"text\":\"Chapter I:\",\"bold\":true},{\"text\":\"\nBasic Ingredients \n\n\",\"color\":\"reset\"},{\"text\":\"Fermented Spider Eye\",\"italic\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Spider Eye  + Brown Mushroom + Sugar\"}},{\"text\":\"\n\",\"italic\":true},{\"text\":\"Glistering Melon\",\"italic\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Melon + 8 Gold Nugget\"}},{\"text\":\"\n\",\"italic\":true},{\"text\":\"Golden Carrot\",\"italic\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Carrot + 8 Gold Nugget\"}},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Magma Cream\",\"italic\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Slime Ball + Blaze Powder\"}}]","[\"\",{\"text\":\"Chapter 2:\",\"bold\":true},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Potions\",\"underlined\":true},{\"text\":\"\n\n\",\"color\":\"reset\"},{\"text\":\"Night Vision\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + Golden Carrot (3:00)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Redstone (8:00)\"}},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Invisibility\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + Golden Carrot + Fermented Spider Eye (3:00)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Redstone (8:00)\"}},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Leaping\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + Rabbit's Foot (3:00)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Redstone (8:00)\"}},{\"text\":\" \",\"color\":\"dark_red\"},{\"text\":\"\\u25cf\",\"color\":\"gold\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Glowstone (1:30)\"}},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Fire Resistance\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + Magma Cream (3:00)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Redstone (8:00)\"}},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Swiftness\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + Sugar (+20% ; 3:00)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Redstone (+20% ; 8:00)\"}},{\"text\":\" \",\"color\":\"dark_red\"},{\"text\":\"\\u25cf\",\"color\":\"gold\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Glowstone (+40% ; 1:30)\"}},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Water Breathing\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + Pufferfish (3:00)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Redstone (8:00)\"}},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Healing\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + Glistering Melon (+2 <3)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"gold\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Glowstone (+4 <3)\"}},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Regeneration\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + Ghast Tear (0:45)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Redstone (2:00)\"}},{\"text\":\" \",\"color\":\"dark_red\"},{\"text\":\"\\u25cf\",\"color\":\"gold\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Glowstone (0:22)\"}},{\"text\":\" \n\",\"color\":\"reset\"},{\"text\":\"Strength\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + Blaze Powder (+130% : 3:00)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Redstone (+130% ; 8:00)\"}},{\"text\":\" \",\"color\":\"dark_red\"},{\"text\":\"\\u25cf\",\"color\":\"gold\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Glowstone (+260% ; 1:30)\"}}]","[\"\",{\"text\":\"Chapter 3:\",\"bold\":true},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Poisons\",\"underlined\":true},{\"text\":\"\n\n\",\"color\":\"reset\"},{\"text\":\"Slowness\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + [Magma Cream, Rabbit's Foot, Sugar] + Fermented Spider Eye  (-15% ; 1:30)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Redstone (-15% ; 4:00)\"}},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Harming\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + [Glistering Melon, Pufferfish, Spider Eye] + Fermented Spider Eye (-3 <3)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"gold\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Glowstone (-6 <3)\"}},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Poison\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart + Spider Eye (0:45)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Redstone (2:00)\"}},{\"text\":\" \",\"color\":\"dark_red\"},{\"text\":\"\\u25cf\",\"color\":\"gold\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Glowstone (0:22)\"}},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"Weakness\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Fermented Spider Eye (-50% ; 1:30)\"}},{\"text\":\" \"},{\"text\":\"\\u25cf\",\"color\":\"dark_red\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"+ Redstone (-50% ; 4:00)\"}},{\"text\":\" \",\"color\":\"dark_red\"}]","[\"\",{\"text\":\"Chapter 4:\",\"bold\":true},{\"text\":\"\nPotions of No Effect\n\n\",\"color\":\"reset\"},{\"text\":\"Awkward Potion\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Nether Wart\"}},{\"text\":\"\n\"},{\"text\":\"Mundane Potion\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"[Glistering Melon, Ghast Tear, Rabbit's Foot, Blaze Powder, Spider Eye, Sugar, Magma Cream]\"}},{\"text\":\" \n\"},{\"text\":\"Thick Potion\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Glowstone\"}},{\"text\":\"\n\"},{\"text\":\"Mundane Potion+\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Redstone\"}}]"],title:"Advanced Potion Making",author:"your local Apothecary",generation:3,display:{Lore:["For all your brewing needs!"]}}
+
+POTIONS & POISONS 1.8
+/summon Villager ~ ~ ~
+	{
+		Profession:2,
+		CustomName:"Potion's & Poisons",
+		CustomNameVisible: 0,
+		PersistenceRequired:1,
+		CanPickUpLoot:0,
+		Career:1,
+		CareerLevel:42,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8257
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8289
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8258
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8290
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8265
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8297
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8226
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8195,
+						tag:
+						{
+							CustomPotionEffects:
+							[
+								{
+									Id: 3,
+									Amplifier: 3,
+									Duration: 1800
+								},
+								{
+									Id: 17,
+									Amplifier: 0,
+									Duration: 1800
+								},
+								{
+									Id: 9,
+									Amplifier: 1,
+									Duration: 200
+								}
+							]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8229
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8195,
+						tag:
+						{
+							CustomPotionEffects:
+							[
+								{
+									Id: 22,
+									Amplifier: 4,
+									Duration: 9600
+								},
+								{
+									Id: 18,
+									Amplifier: 1,
+									Duration: 1800
+								},
+								{
+									Id: 9,
+									Amplifier: 1,
+									Duration: 200
+								}
+							]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8225
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 8
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8197,
+						tag:
+						{
+							CustomPotionEffects:
+							[
+								{
+									Id: 21,
+									Amplifier: 4,
+									Duration: 9600
+								},
+								{
+									Id: 19,
+									Amplifier: 0,
+									Duration: 600
+								},
+								{
+									Id: 9,
+									Amplifier: 1,
+									Duration: 200
+								}
+							]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1,
+						Damage: 8270
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 12
+					},
+					sell:
+					{
+						id: "potion",
+						Count: 8,
+						Damage: 16398,
+						tag:
+						{
+							CustomPotionEffects:
+							[
+								{
+									Id: 10,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 2,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 4,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 9,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 15,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 17,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 18,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 19,
+									Amplifier: 3,
+									Duration: 30
+								},
+								{
+									Id: 20,
+									Amplifier: 3,
+									Duration: 30
+								},
+							],
+							display:
+							{
+								Name: "Antidote",
+								Lore:
+								[
+									"It tastes aweful, but it works!"
+								]
+							}
+						}
+
+					}
+				}
+			]
+		}
+	}
+
+LEONARDO, THE GYPSY MERCHANT 1.8
+/summon Villager ~ ~ ~
+	{
+		Profession:5,
+		CustomName:Leonardo,
+		CustomNameVisible: 0f,
+		PersistenceRequired:1,
+		CanPickUpLoot: 0,
+		Career: 1,
+		CareerLevel: 42,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id:388,
+						Count:5
+					},
+					sell:
+					{
+						id:346,
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:388,
+						Count:1
+					},
+					sell:
+					{
+						id:172,
+						Count:2
+					}
+				},
+				{
+					buy:
+					{
+						id:17,
+						Count:28
+					},
+					sell:
+					{
+						id:388,
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:388,
+						Count:1
+					},
+					sell:
+					{
+						id:155,
+						Count:2
+					}
+				},
+				{
+					buy:
+					{
+						id:337,
+						Count:16
+					},
+					sell:
+					{
+						id:388,
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:388,
+						Count:1
+					},
+					buyB:
+					{
+						id:3,
+						Damage:0,
+						Count:3
+					},
+					sell:
+					{
+						id:3,
+						Damage:2,
+						Count:2
+					}
+				},
+				{
+					buy:
+					{
+						id:388,
+						Count:1
+					},
+					sell:
+					{
+						id:45,
+						Count:2
+					}
+				},
+				{
+					buy:
+					{
+						id:388,
+						Count:1
+					},
+					sell:
+					{
+						id:24,
+						Count:2
+					}
+				},
+				{
+					buy:
+					{
+						id:388,
+						Count:1
+					},
+					sell:
+					{
+						id:390,
+						Count:3
+					}
+				},
+				{
+					buy:
+					{
+						id:406,
+						Count:14
+					},
+					sell:
+					{
+						id:388,
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:388,
+						Count:7
+					},
+					sell:
+					{
+						id:261,
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:388,
+						Count:3
+					},
+					sell:
+					{
+						id:58,
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:388,
+						Count:1
+					},
+					buyB:
+					{
+						id:79,
+						Count:4
+					},
+					sell:
+					{
+						id:174,
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:388,
+						Count:1
+					},
+					sell:
+					{
+						id:351,
+						Damage:4,
+						Count:3
+					}
+				}
+			]
+		}
+	}
+
+]
