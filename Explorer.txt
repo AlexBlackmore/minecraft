@@ -1,0 +1,107 @@
+/summon Villager ~ ~ ~
+	{
+		Profession: 4,
+		CustomName: "Explorer",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "ice",
+						Count: 8
+					}
+				},
+				{
+					buy:
+					{
+						id: "potion",
+						Count: 1
+					},
+					sell:
+					{
+						id: "ice",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "nether_wart",
+						Count: 16
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "blaze_rod",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "netherrack",
+						Count: 16
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "soul_sand",
+						Count: 8
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 3
+					},
+					sell:
+					{
+						id: "ghast_tear",
+						Count: 1
+					}
+				}
+			]
+        }
+	}

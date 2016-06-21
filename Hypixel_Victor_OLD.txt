@@ -1,0 +1,199 @@
+/summon Villager ~ ~ ~
+	{
+		Profession: 2,
+		CustomName: "Victor",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+                	buy:
+					{
+                    	id: "rotten_flesh",
+                    	Count: 4
+                	},
+                	sell:
+					{
+                    	id: "cooked_beef",
+                    	Count: 2
+                	}
+            	},
+				{
+                	buy:
+					{
+						id: "bone",
+						Count: 4
+					},
+					sell:
+					{
+						id: "cooked_beef",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "spider_eye",
+						Count: 4
+					},
+					sell:
+					{
+						id: "cooked_beef",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 7
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage: 16373
+					}
+				},
+				{
+					buy:
+					{
+						id: "bone",
+						Count: 7
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage: 32757
+					}
+				},
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 11
+					},
+					sell:
+					{
+						id: 373,
+						Count: 2,
+						Damage: 16337,
+						tag:
+						{
+							CustomPotionEffects:
+							[
+								{
+									Id: 10,
+									Amplifier: 1,
+									Duration: 200
+								}
+							]
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 15
+					},
+					buyB:
+					{
+						id: "bone",
+						Count: 15
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage: 16389,
+						tag:
+						{
+							CustomPotionEffects:
+							[
+								{
+									Id: 14,
+									Amplifier: 1,
+									Duration: 300
+								},
+								{
+									Id: 15,
+									Amplifier: 1,
+									Duration: 300
+								}
+							],
+							display:
+							{
+								Name: "Vanish Potion",
+								Lore:
+								[
+									"Allow you to vanish into the shadows."
+								]
+							}
+						}
+					}
+				},
+				{
+                	buy:
+					{
+						id: "gold_ingot",
+						Count: 2
+					},
+					sell:
+					{
+						id: 373,
+						Count: 1,
+						Damage:  16281,
+						tag:
+						{
+							 CustomPotionEffects:
+							 [
+								{
+									Id: 1,
+									Amplifier: 1,
+									Duration: 500
+								},
+								{
+									Id: 3,
+									Amplifier: 1,
+									Duration: 500
+								},
+								{
+									Id: 5,
+									Amplifier: 1,
+									Duration: 500
+								},
+								{
+									Id: 9,
+									Amplifier: 0,
+									Duration: 40
+								}
+							],
+							display:
+							{
+								Name: "Berserking Potion",
+								Lore:
+								[
+									"At first you might feel dizzy."
+								]
+							}
+						}
+					}
+				}
+
+			]
+		}
+	}

@@ -1,0 +1,570 @@
+/summon Villager ~ ~ ~
+	{
+		Profession: 1,
+		CustomName: "Weapon Mage",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:16,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases damage",
+									"+1.25 damage per level on hit"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:17,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases damage to undead mobs",
+									"+2.5 damage per level on hit"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:18,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases damage to anthropod mobs",
+									"+2.5 damage per level on hit"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:19,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases knockback",
+									"+3-block knockback on hit per level"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:20,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Sets target on fire",
+									"+4 seconds burn time per level"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 9
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:21,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Causes mobs to drop more loot",
+									"+1 loot drop, +1% rare loot drop per level"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:34,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases durability",
+									"Tools last Level+1 times as long"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:48,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases arrow damage",
+									"+0.5 arrow damage per level on hit"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:49,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases arrow knockback"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:50,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Sets arrows on fire",
+									"Deals 5 damage over 5 seconds of burn time"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 19
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:51,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Causes shooting to consume no arrows",
+									"At least 1 arrow is required to shoot bow"
+								]
+							}
+						}
+					}
+				}
+			]
+        }
+	}
+
+TOOL MAGE
+/summon Villager ~ ~ ~
+	{
+		Profession: 1,
+		CustomName: "Tool Mage",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:32,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases mining speed",
+									"+30% per level"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 19
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:33,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Allows collection of normally unobtainable blocks"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 5
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:34,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases durability",
+									"Tools last Level+1 times as long"
+								]
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "enchanted_book",
+						Count: 1,
+						tag:
+						{
+							StoredEnchantments:
+							[
+								{
+									id:35,
+									lvl:1
+								}
+							],
+							display:
+							{
+								Lore:
+								[
+									"Increases block drops"
+								]
+							}
+						}
+					}
+				}
+			]
+        }
+	}

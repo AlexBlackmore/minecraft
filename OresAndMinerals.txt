@@ -1,0 +1,103 @@
+/summon Villager ~ ~ ~
+	{
+		Profession:1,
+		CustomName:"Ores & Minerals",
+		CustomNameVisible: 0,
+		PersistenceRequired:1,
+		CanPickUpLoot:0,
+		Career:1,
+		CareerLevel:42,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 5
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "coal",
+						Count: 14
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "gold_ingot",
+						Count: 6
+					}
+				},
+				{
+					buy:
+					{
+						id: "quartz_block",
+						Count: 1
+					},
+					sell:
+					{
+						id: "quartz",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_apple",
+						Damage: 0,
+						Count: 1
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "golden_apple",
+						Damage: 0,
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count:64
+					},
+					sell:
+					{
+						id: "golden_apple",
+						Damage: 1,
+						Count: 1
+					}
+				}
+			]
+		}
+	}		
