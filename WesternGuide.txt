@@ -1,0 +1,68 @@
+/summon Villager ~ ~ ~
+	{
+		Profession: 1,
+		CustomName: "Alern, the Western Guide",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name: "generic.movementSpeed",
+				Base: "0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "written_book",
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "Welcome to Western Checkpoint!",
+								Lore:
+								[
+									"You are currently in the Brazilian Jungle.",
+									"May I offer you some of my wares to accompany you on your journey?",
+									"",
+		              "Godspeed traveller!"
+								]
+							}
+						}
+					},
+					buyB:
+					{
+						id: "barrier",
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: " "
+							}
+						}
+					},
+					sell:
+					{
+						id: "barrier",
+						Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: " "
+							}
+						}
+					}
+				}
+			]
+		}
+	}
