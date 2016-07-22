@@ -1,6 +1,6 @@
-/summon Villager ~ ~3 ~ {
-		Profession: 1,
-		CustomName: "Western Guide",
+/summon Villager ~ ~ ~ {
+		Profession: 2,
+		CustomName: "Alern",
 		CustomNameVisible: 0,
 		Career: 1,
 		CareerLevel: 42,
@@ -9,62 +9,14 @@
 		Attributes:
 		[
 			{
-				Name: "generic.movementSpeed",
-				Base: "0f"
+				Name:"generic.movementSpeed",
+				Base:"0f"
 			}
 		],
 		Offers:
 		{
 			Recipes:
 			[
-				{
-					buy:
-					{
-						id: "written_book",
-						Count: 1,
-						tag:
-						{
-							generation:3,
-							display:
-							{
-								Name: "§6Welcome to Western Checkpoint!",
-								Lore:
-								[
-									"§7You are currently in the Brazilian Jungle.",
-									"§7May I offer you some of my wares to accompany",
-									"§7you on your journey?",
-									"",
-		              "§9§oGodspeed traveller!"
-								]
-							}
-						}
-					},
-					buyB:
-					{
-						id: "barrier",
-						Count: 1,
-						tag:
-						{
-							display:
-							{
-								Name: ""
-							}
-						}
-					},
-					sell:
-					{
-						id: "stained_glass_pane",
-						Count: 1,
-						Damage:8,
-						tag:
-						{
-							display:
-							{
-								Name: ""
-							}
-						}
-					}
-				},
 				{
           buy:
 					{
