@@ -1,0 +1,53 @@
+/summon Villager ~ ~ ~ {
+		CustomName: "Legendary Merchant",
+		CustomNameVisible: 0,
+    Profession: 2,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name: "generic.movementSpeed",
+				Base: "0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "golden_helmet",
+						Count: 1,
+            tag:
+            {
+              display:
+              {
+                Name: "§9Mining Helmet",
+                Lore:
+                [
+                  "§6§oProvides light when worn"
+                ]
+              },
+              ench:
+              [
+                  {
+                      id: 34,
+                      lvl: 10
+                  }
+              ],
+              HideFlags:1
+            }
+					}
+				}
+			]
+		}
+	}

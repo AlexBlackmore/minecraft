@@ -1,5 +1,4 @@
-/summon Villager ~ ~ ~
-	{
+/summon Villager ~ ~ ~ {
 		Profession: 2,
 		CustomName: "Cleric",
 		CustomNameVisible: 0,
@@ -62,8 +61,9 @@
 					},
 					sell:
 					{
-						id: "lapis_lazuli",
-						Count: 2
+						id: "dye",
+						Count: 2,
+						Damage:4
 					}
 				},
 				{

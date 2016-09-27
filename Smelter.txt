@@ -1,5 +1,4 @@
-/summon Villager ~ ~ ~
-	{
+/summon Villager ~ ~ ~ {
 		Profession: 3,
 		CustomName: "Smelter",
 		CustomNameVisible: 0,
@@ -25,6 +24,7 @@
 						Count: 1,
 						tag:
 						{
+							generation:3,
 							display:
 							{
 								Name: "Welcome to the Smeltery!",
@@ -540,42 +540,6 @@
 					{
 						id: "iron_ingot",
 						Count: 5
-					}
-				},
-				{
-					buy:
-					{
-						id: "arrow",
-						Count:1
-					},
-					sell:
-					{
-						id: "flint",
-						Count:1
-					}
-				},
-				{
-					buy:
-					{
-						id: "arrow",
-						Count:1
-					},
-					sell:
-					{
-						id: "stick",
-						Count:1
-					}
-				},
-				{
-					buy:
-					{
-						id: "arrow",
-						Count:1
-					},
-					sell:
-					{
-						id: "feather",
-						Count:1
 					}
 				}
 			]

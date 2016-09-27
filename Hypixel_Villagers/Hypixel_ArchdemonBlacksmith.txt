@@ -1,0 +1,250 @@
+/summon Villager ~ ~ ~ {
+		Profession: 3,
+		CustomName: "Archdemon BlackSmith",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+          buy:
+					{
+          	id: "gold_nugget",
+          	Count: 8
+        	},
+        	sell:
+					{
+          	id: "leather_helmet",
+          	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "§5Hinder's Visage",
+								Lore:
+								[
+									"§5Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 4,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 2
+								}
+							]
+						}
+        	}
+    	  },
+				{
+      	  buy:
+					{
+          	id: "gold_nugget",
+          	Count: 16
+      	  },
+        	sell:
+					{
+          	id: "leather_chestplate",
+          	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "§5Demonskin",
+								Lore:
+								[
+									"§5Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 3,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 2
+								}
+							]
+						}
+        	}
+        },
+				{
+        	buy:
+					{
+          	id: "gold_nugget",
+          	Count: 16
+        	},
+        	sell:
+					{
+          	id: "leather_leggings",
+          	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "§5Warlord Legplates",
+								Lore:
+								[
+									"§5Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 4,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 2
+								}
+							]
+						}
+        	}
+      	},
+				{
+					buy:
+					{
+          	id: "gold_nugget",
+          	Count: 8
+        	},
+        	sell:
+					{
+          	id: "leather_boots",
+          	Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "§5Taz's Lavawalker",
+								Lore:
+								[
+									"§5Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 0,
+									lvl: 2
+								},
+								{
+									id: 2,
+									lvl: 2
+								},
+								{
+									id: 7,
+									lvl: 2
+								}
+							]
+						}
+        	}
+      	},
+				{
+          buy:
+					{
+            id: "gold_nugget",
+            Count: 16
+          },
+          sell:
+					{
+            id: "wooden_sword",
+            Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "§5Oblivion",
+								Lore:
+								[
+									"§5Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 16,
+									lvl: 9
+								},
+								{
+									id: 18,
+									lvl: 2
+								},
+								{
+									id: 17,
+									lvl: 2
+								}
+							]
+						}
+          }
+        },
+				{
+          buy:
+					{
+            id: "gold_nugget",
+            Count: 16
+          },
+          sell:
+					{
+            id: "bow",
+            Count: 1,
+						tag:
+						{
+							display:
+							{
+								Name: "§5Soul Breaker",
+								Lore:
+								[
+									"§5Archdemon Set"
+								]
+							},
+							ench:
+							[
+								{
+									id: 48,
+									lvl: 9
+								},
+								{
+									id: 49,
+									lvl: 1
+								},
+								{
+									id: 51,
+									lvl: 1
+								}
+							]
+						}
+          }
+        }
+			]
+		}
+	}

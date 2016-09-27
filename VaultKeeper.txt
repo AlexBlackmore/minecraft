@@ -1,0 +1,218 @@
+/summon Villager ~ ~ ~ {
+		CustomName:"Vault Keeper",
+		CustomNameVisible: 0,
+		Profession:1,
+		Career:1,
+		PersistenceRequired:1,
+		CanPickUpLoot:0,
+		CareerLevel:42,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "golden_apple",
+						Damage: 0,
+						Count: 1
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+        {
+					buy:
+					{
+						id: "golden_apple",
+						Damage: 1,
+						Count: 1
+					},
+					sell:
+					{
+						id: "emerald_block",
+						Count: 7
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count: 64
+					}
+				},
+				{
+					buy:
+					{
+						id: "quartz_block",
+						Damage:0,
+						Count:1
+					},
+					sell:
+					{
+						id: "quartz",
+						Count:4
+					}
+				},
+				{
+					buy:
+					{
+						id: "quartz_block",
+						Damage:1,
+						Count:1
+					},
+					sell:
+					{
+						id: "quartz",
+						Count:4
+					}
+				},
+				{
+					buy:
+					{
+						id: "quartz_block",
+						Damage:2,
+						Count:1
+					},
+					sell:
+					{
+						id: "quartz",
+						Count:4
+					}
+				},
+				{
+					buy:
+					{
+						id: "feather",
+						Count: 16
+					},
+					buyB:
+					{
+						id: "dye",
+						Count: 16
+					},
+					sell:
+					{
+						id: potion,
+						Count:1,
+						tag:
+						{
+							display:
+							{
+								Name: "Ink and Quill"
+							},
+							CustomPotionEffects:[],
+							Potion: harming,
+							HideFlags: 63
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "book",
+						Count: 16
+					},
+					buyB:
+					{
+						id: potion,
+						Count:1,
+						tag:
+						{
+							display:
+							{
+								Name: "Ink and Quill"
+							},
+							CustomPotionEffects:[],
+							Potion: harming,
+							HideFlags: 63
+						}
+					},
+					sell:
+					{
+						id: "written_book",
+						Count: 16
+					}
+				},
+				{
+					buy:
+					{
+						id: "stick",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "redstone",
+						Count: 1
+					},
+					sell:
+					{
+						id: "redstone_torch",
+						Count: 2
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "flint",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "stick",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:1
+					},
+					sell:
+					{
+						id: "feather",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id: "arrow",
+						Count:12
+					},
+					sell:
+					{
+						id: "iron_ingot",
+						Count:1
+					}
+				}
+			]
+		}
+	}

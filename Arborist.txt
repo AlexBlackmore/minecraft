@@ -1,0 +1,189 @@
+/summon Villager ~ ~3 ~ {
+		CustomName: "Arborist",
+		CustomNameVisible: 0,
+    Profession: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name: "generic.movementSpeed",
+				Base: "0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "paper",
+						Count: 4,
+            tag:
+            {
+              display:
+              {
+                Name: "Log Voucher",
+                Lore:
+                [
+                  "Valued at one stack of logs, any kind"
+                ]
+              }
+            }
+					}
+				},
+        {
+					buy:
+          {
+						id: "paper",
+						Count: 1,
+            tag:
+            {
+              display:
+              {
+                Name: "Log Voucher",
+                Lore:
+                [
+                  "Valued at one stack of logs, any kind"
+                ]
+              }
+            }
+					},
+					sell:
+          {
+						id: "log",
+            Damage: 0,
+						Count: 64
+					}
+				},
+        {
+					buy:
+          {
+						id: "paper",
+						Count: 1,
+            tag:
+            {
+              display:
+              {
+                Name: "Log Voucher",
+                Lore:
+                [
+                  "Valued at one stack of logs, any kind"
+                ]
+              }
+            }
+					},
+					sell:
+          {
+						id: "log",
+            Damage: 1,
+						Count: 64
+					}
+				},
+        {
+					buy:
+          {
+						id: "paper",
+						Count: 1,
+            tag:
+            {
+              display:
+              {
+                Name: "Log Voucher",
+                Lore:
+                [
+                  "Valued at one stack of logs, any kind"
+                ]
+              }
+            }
+					},
+					sell:
+          {
+						id: "log",
+            Damage: 2,
+						Count: 64
+					}
+				},
+        {
+					buy:
+          {
+						id: "paper",
+						Count: 1,
+            tag:
+            {
+              display:
+              {
+                Name: "Log Voucher",
+                Lore:
+                [
+                  "Valued at one stack of logs, any kind"
+                ]
+              }
+            }
+					},
+					sell:
+          {
+						id: "log",
+            Damage: 3,
+						Count: 64
+					}
+				},
+        {
+					buy:
+          {
+						id: "paper",
+						Count: 1,
+            tag:
+            {
+              display:
+              {
+                Name: "Log Voucher",
+                Lore:
+                [
+                  "Valued at one stack of logs, any kind"
+                ]
+              }
+            }
+					},
+					sell:
+          {
+						id: "log2",
+            Damage: 0,
+						Count: 64
+					}
+				},
+        {
+					buy:
+          {
+						id: "paper",
+						Count: 1,
+            tag:
+            {
+              display:
+              {
+                Name: "Log Voucher",
+                Lore:
+                [
+                  "Valued at one stack of logs, any kind"
+                ]
+              }
+            }
+					},
+					sell:
+          {
+						id: "log2",
+            Damage: 1,
+						Count: 64
+					}
+				}
+			]
+		}
+	}
