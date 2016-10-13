@@ -1,0 +1,382 @@
+/summon Villager ~ ~ ~ {
+		CustomName: "Block Merchant",
+		CustomNameVisible: 0,
+    Profession: 0,
+		Career: 0,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name: "generic.movementSpeed",
+				Base: "0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+        {
+          buy:
+          {
+            id: "diamond",
+            Count: 1
+          },
+          sell:
+          {
+            id: "command_block",
+            Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ piston_head",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fPiston Head Down"
+              }
+            }
+          }
+        },
+				{
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ piston_head 1",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fPiston Head Up"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ piston_head 2",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fPiston Head North"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ piston_head 3",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fPiston Head South"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ piston_head 4",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fPiston Head West"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ piston_head 5",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fPiston Head East"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ log 12",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fOak Log Full Bark"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ log 13",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fSpruce Log Full Bark"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ log 14",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fBirch Log Full Bark"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ log 15",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fJungle Log Full Bark"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ log2 12",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fAcacia Log Full Bark"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ log2 13",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fDark Oak Log Full Bark"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ double_stone_slab 8",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fDouble Stone Slab Seamless"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ double_stone_slab 9",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fDouble Sandstone Slab Seamless"
+              }
+            }
+					}
+				},
+        {
+					buy:
+					{
+						id: "diamond",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ double_stone_slab2 8",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fDouble Red Sandstone Slab Seamless"
+              }
+            }
+					}
+				}
+			]
+		}
+	}
