@@ -2,128 +2,17 @@ summon EntityHorse ~ ~ ~ {
   OwnerName:%a,
   ArmorItem:419,
   PersistenceRequired:1,
-  Type:3,
+  Type:4,
   ChestedHorse:1,
-  Attributes:
-  [
-    {
-      Name: "generic.movementSpeed",
-      Base: "0f"
-    }
-  ],
-  Items:[
-    {
-      Slot:2,
-      id:172,
-      Count:64
-    },
-    {
-      Slot:3,
-      id:172,
-      Count:64
-    },
-    {
-      Slot:5,
-      id:57,
-      Count:1
-    },
-    {
-      Slot:5,
-      id:2261,
-      Count:1
-    },
-    {
-      Slot:6,
-      id:2267,
-      Count:1
-    },
-    {
-      Slot:7,
-      id:2259,
-      Count:1
-    },
-    {
-      Slot:7,
-      id:84,
-      Count:1
-    },
-    {
-      Slot:8,
-      id:420,
-      Count:1
-    },
-    {
-      Slot:9,
-      id:383,
-      Damage:100,
-      Count:1
-    },
-    {
-      Slot:10,
-      id:145,
-      Count:1
-    },
-    {
-      Slot:11,
-      id:398,
-      Count:1
-    },
-    {
-      Slot:12,
-      id:346,
-      Count:1
-    },
-    {
-      Slot:13,
-      id:129,
-      Count:1
-    },
-    {
-      Slot:14,
-      id:56,
-      Count:1
-    },
-    {
-      Slot:15,
-      id:388,
-      Count:13
-    },
-    {
-      Slot:16,
-      id:264,
-      Count:4
-    }
-  ],
   Bred:1,
   Silent:1,
   Tame:1,
   Saddle:1,
-  CustomName:§2Emerald Strider,
-  ActiveEffects: [
-    ShowParticles:0,
-    {
-      Id:1,
-      Amplifier:30,
-      Duration:7777,
-      Ambient:1
-    },
-    {
-      Id:8,
-      Amplifier:50,
-      Duration:7777,
-      Ambient:1
-    }
-  ],
-  Attributes: [
-    {
-      Name:generic.maxHealth,
-      Base:5000.0
-    }
-  ],
+  NoAI:1,
   Passengers: [
     {
       id:"Villager",
-      Profession:3,
+      Profession:2,
       CustomName:"§5§lLegendary Merchant",
       Silent:1,
       CustomNameVisible:1,
@@ -135,28 +24,10 @@ summon EntityHorse ~ ~ ~ {
       Invulnerable:0,
       ActiveEffects: [
         {
-          Id:8,
-          Amplifier:1,
-          Duration:1800,
-          Ambient:1
-        },
-        {
-          Id:10,
+          Id:21,
           Amplifier:1,
           Duration:9999,
           Ambient:1
-        },
-        {
-          Id:11,
-          Amplifier:1,
-          Duration:9999,
-          Ambient:1
-        }
-      ],
-      Attributes: [
-        {
-          Name:generic.maxHealth,
-          Base:3000.1
         }
       ],
       Offers:
@@ -194,10 +65,11 @@ summon EntityHorse ~ ~ ~ {
   						{
   						  display:
   						  {
-  						    Name: "§9Mining Helmet",
+  						    Name: "§bMining Helmet",
   						    Lore:
   						    [
-  						      "§6Provides light when worn"
+  						      "§5Provides light when",
+                    "§5worn"
   						    ]
   						  },
   						  ench:
@@ -245,7 +117,7 @@ summon EntityHorse ~ ~ ~ {
   					        Name: "§bTunnel Bore",
   					        Lore:
   					        [
-  					            "§cAnything but boring"
+  					            "§5Anything but boring"
   					        ]
   					    },
   					    ench:
@@ -290,10 +162,11 @@ summon EntityHorse ~ ~ ~ {
   						{
   					    display:
   					    {
-					        Name: "§aDiving Helmet",
+					        Name: "§bDiving Helmet",
 					        Lore:
 					        [
-                    "§cGreatly extends underwater breathing"
+                    "§5Greatly extends",
+                    "§5underwater breathing"
 					        ]
   					    },
   					    ench:
@@ -344,45 +217,24 @@ summon EntityHorse ~ ~ ~ {
   						Count: 1,
               tag:
   						{
-  					    display:
-  					    {
-					        Name: "§9Herme's Boots",
-					        Lore:
-					        [
-                    "§cThe wearer can run super fast"
-					        ],
-                  color:39168
-  					    },
-  					    ench:
-  					    [
-					        {
-				            id: 34,
-				            lvl: 10
-					        }
-  					    ],
                 AttributeModifiers: [
                   {
-                    AttributeName: "generic.movementSpeed",
-                    Name: "generic.movementSpeed",
+                    AttributeName:"generic.movementSpeed",
+                    Name:"generic.movementSpeed",
                     Amount:1,
-                    Operation:1
+                    Operation:1,
+                    UUIDMost:35308,UUIDLeast:121250
                   }
                 ],
-  					    HideFlags:1
-  						}
-  					}
-  				},
-          {
-            buy:
-            {
-              id: "gold_nugget",
-              Count: 2,
-              tag:
-              {
-                display: {
-                  Name: "§6Gold Coin o' Experience",
+                display:
+                {
+                  color:56847,
+                  Name:"§2Herme's Boots",
                   Lore: [
-                    "§e§oMagistra rerum experientia"
+                    "§5The wearer can run",
+                    "§5super fast",
+                    "",
+                    "§9+100% speed"
                   ]
                 },
                 ench:
@@ -392,89 +244,7 @@ summon EntityHorse ~ ~ ~ {
                     lvl: 10
                   }
                 ],
-                HideFlags:1
-              }
-            },
-  					sell:
-  					{
-  						id: "gold_nugget",
-  						Count: 1,
-              tag:
-  						{
-  					    display:
-  					    {
-					        Name: "§5Ring of Protection"
-  					    },
-  					    ench:
-  					    [
-                  {
-                    id: 0,
-                    lvl: 4
-                  },
-                  {
-                    id:71,
-                    lvl:1
-                  }
-  					    ],
-                AttributeModifiers: [
-                  {
-                  AttributeName: "generic.armor",
-                  Name: "generic.armor",
-                  Amount:4,
-                  Operation:0
-                  }
-                ]
-  						}
-  					}
-  				},
-          {
-            buy:
-            {
-              id: "gold_nugget",
-              Count: 2,
-              tag:
-              {
-                display: {
-                  Name: "§6Gold Coin o' Experience",
-                  Lore: [
-                    "§e§oMagistra rerum experientia"
-                  ]
-                },
-                ench:
-                [
-                  {
-                    id: 34,
-                    lvl: 10
-                  }
-                ],
-                HideFlags:1
-              }
-            },
-  					sell:
-  					{
-  						id: "gold_nugget",
-  						Count: 1,
-              tag:
-  						{
-  					    display:
-  					    {
-					        Name: "§cRing of Health"
-  					    },
-  					    ench:
-  					    [
-                  {
-                    id:71,
-                    lvl:1
-                  }
-  					    ],
-                AttributeModifiers: [
-                  {
-                    AttributeName: "generic.maxHealth",
-                    Name: "generic.maxHealth",
-                    Amount:4,
-                    Operation:0
-                  }
-                ]
+                HideFlags:3
   						}
   					}
   				}

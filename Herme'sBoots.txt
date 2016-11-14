@@ -1,0 +1,30 @@
+/give @a minecraft:leather_boots 1 0 {
+  AttributeModifiers: [
+    {
+      AttributeName:"generic.movementSpeed",
+      Name:"generic.movementSpeed",
+      Amount:1,
+      Operation:1,
+      UUIDMost:35308,UUIDLeast:121250
+    }
+  ],
+  display:
+  {
+    color:56847,
+    Name:"§2Herme's Boots",
+    Lore: [
+      "§5The wearer can run",
+      "§5super fast",
+      "",
+      "§9+100% speed"
+    ]
+  },
+  ench:
+  [
+    {
+      id: 34,
+      lvl: 10
+    }
+  ],
+  HideFlags:3
+}
