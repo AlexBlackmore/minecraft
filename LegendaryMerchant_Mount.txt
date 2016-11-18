@@ -9,6 +9,13 @@ summon EntityHorse ~ ~ ~ {
   Tame:1,
   Saddle:1,
   NoAI:1,
+  ActiveEffects: [
+    {
+      Id:20,
+      Amplifier:1,
+      Duration:9999
+    }
+  ],
   Passengers: [
     {
       id:"Villager",
@@ -24,10 +31,9 @@ summon EntityHorse ~ ~ ~ {
       Invulnerable:0,
       ActiveEffects: [
         {
-          Id:21,
+          Id:20,
           Amplifier:1,
-          Duration:9999,
-          Ambient:1
+          Duration:9999
         }
       ],
       Offers:
@@ -44,7 +50,7 @@ summon EntityHorse ~ ~ ~ {
                 display: {
                   Name: "§6Gold Coin o' Experience",
                   Lore: [
-                    "§e§oMagistra rerum experientia"
+                    "§7Magistra rerum experientia"
                   ]
                 },
                 ench:
@@ -93,7 +99,7 @@ summon EntityHorse ~ ~ ~ {
                 display: {
                   Name: "§6Gold Coin o' Experience",
                   Lore: [
-                    "§e§oMagistra rerum experientia"
+                    "§7Magistra rerum experientia"
                   ]
                 },
                 ench:
@@ -141,7 +147,7 @@ summon EntityHorse ~ ~ ~ {
                 display: {
                   Name: "§6Gold Coin o' Experience",
                   Lore: [
-                    "§e§oMagistra rerum experientia"
+                    "§7Magistra rerum experientia"
                   ]
                 },
                 ench:
@@ -198,7 +204,7 @@ summon EntityHorse ~ ~ ~ {
                 display: {
                   Name: "§6Gold Coin o' Experience",
                   Lore: [
-                    "§e§oMagistra rerum experientia"
+                    "§7Magistra rerum experientia"
                   ]
                 },
                 ench:
