@@ -1,230 +1,230 @@
 /summon Villager ~ ~ ~ {
-		CustomName:"Dyes",
-		CustomNameVisible: 0,
-		Profession:0,
-		Career:3,
-		PersistenceRequired:1,
-		CanPickUpLoot:0,
-		CareerLevel:42,
-		Attributes:
+	CustomName:"Dyes",
+	CustomNameVisible: 0,
+	Profession:0,
+	Career:3,
+	PersistenceRequired:1,
+	CanPickUpLoot:0,
+	CareerLevel:42,
+	Attributes:
+	[
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes:
 		[
 			{
-				Name:"generic.movementSpeed",
-				Base:"0f"
-			}
-		],
-		Offers:
-		{
-			Recipes:
-			[
+				buy:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 0,
-						Count: 14
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
+					id: "dye",
+					Damage: 0,
+					Count: 14
 				},
+				sell:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 1,
-						Count: 12
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
-				},
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 2,
-						Count: 16
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
+					id: "dye",
+					Damage: 1,
+					Count: 12
 				},
+				sell:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 3,
-						Count: 14
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
-				},
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 4,
-						Count: 6
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
+					id: "dye",
+					Damage: 2,
+					Count: 16
 				},
+				sell:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 5,
-						Count: 8
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
-				},
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 6,
-						Count: 8
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
+					id: "dye",
+					Damage: 3,
+					Count: 14
 				},
+				sell:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 7,
-						Count: 10
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
-				},
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 8,
-						Count: 10
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
+					id: "dye",
+					Damage: 4,
+					Count: 6
 				},
+				sell:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 9,
-						Count: 10
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
-				},
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 10,
-						Count: 10
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
+					id: "dye",
+					Damage: 5,
+					Count: 8
 				},
+				sell:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 11,
-						Count: 12
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
-				},
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 12,
-						Count: 8
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
+					id: "dye",
+					Damage: 6,
+					Count: 8
 				},
+				sell:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 13,
-						Count: 10
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
-				},
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 14,
-						Count: 10
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
+					id: "dye",
+					Damage: 7,
+					Count: 10
 				},
+				sell:
 				{
-					buy:
-					{
-						id: "dye",
-						Damage: 15,
-						Count: 16
-					},
-					sell:
-					{
-						id: "emerald",
-						Count: 1
-					}
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "dye",
+					Damage: 8,
+					Count: 10
 				},
-			]
-		}
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "dye",
+					Damage: 9,
+					Count: 10
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "dye",
+					Damage: 10,
+					Count: 10
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "dye",
+					Damage: 11,
+					Count: 12
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "dye",
+					Damage: 12,
+					Count: 8
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "dye",
+					Damage: 13,
+					Count: 10
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "dye",
+					Damage: 14,
+					Count: 10
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "dye",
+					Damage: 15,
+					Count: 16
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+		]
 	}
+}

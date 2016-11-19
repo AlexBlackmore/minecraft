@@ -1,11 +1,57 @@
 /give @p gold_nugget 1 0 {
-    display: {
-        Name: "§6One Ring",
-        Lore: [
-            "§7§oOne Ring to rule them all",
-            "§7§oOne Ring to find them",
-            "§7§oOne Ring to bring them all",
-            "§7§oand in the darkness bind them."
-        ]
+  display: {
+    Name: "§6§lOne Ring",
+    Lore: [
+      "§eOne Ring to rule them all",
+      "§eOne Ring to find them",
+      "§eOne Ring to bring them all",
+      "§eand in the darkness bind them."
+    ]
+  },
+  ench: [
+    {
+      id: 34,
+      lvl: 10
     }
+  ],
+  HideFlags:1
+}
+
+--------------------------------------------------------------------------------
+
+/give @p sign 1 0 {
+  BlockEntityTag:
+  {
+    Text2:"
+    {
+      \"text\":\"Click\",
+      \"color\":\"blue\",
+      \"clickEvent\":
+      {
+        \"action\":\"run_command\",
+        \"value\":\"/setblock ~ ~ ~ command_block 2 replace
+        {
+          Command:
+          /give @p gold_nugget 1 0 {
+            display: {
+              Name: \\\"\u00a76\u00a7lOne Ring\\\",
+              Lore: [
+                \\\"\u00a7eOne Ring to rule them all\\\",
+                \\\"\u00a7eOne Ring to find them\\\",
+                \\\"\u00a7eOne Ring to bring them all\\\",
+                \\\"\u00a7eand in the darkness bind them.\\\"
+              ]
+            },
+            ench: [
+              {
+                id: 34,
+                lvl: 10
+              }
+            ],
+            HideFlags:1
+          }
+        }\"
+      }
+    }"
+  }
 }

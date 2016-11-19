@@ -1,18 +1,57 @@
 /give @p golden_helmet 1 0 {
   display:
   {
-    Name: "§9Mining Helmet",
+    Name: "§bMining Helmet",
     Lore:
     [
-      "§6§oProvides light when worn"        
+      "§5Provides light when worn"
     ]
   },
   ench:
   [
-      {
-          id: 34,
-          lvl: 10
-      }
+    {
+      id: 34,
+      lvl: 10
+    }
   ],
   HideFlags:1
+}
+
+--------------------------------------------------------------------------------
+
+/give @p sign 1 0 {
+  BlockEntityTag:
+  {
+    Text2:"
+    {
+      \"text\":\"Click\",
+      \"color\":\"blue\",
+      \"clickEvent\":
+      {
+        \"action\":\"run_command\",
+        \"value\":\"/setblock ~ ~ ~ command_block 2 replace 
+        {
+          Command:
+          /give @p golden_helmet 1 0 {
+            display:
+            {
+              Name: \\\"\u00a7bMining Helmet\\\",
+              Lore:
+              [
+                \\\"\u00a75Provides light when worn\\\"
+              ]
+            },
+            ench:
+            [
+              {
+                id: 34,
+                lvl: 10
+              }
+            ],
+            HideFlags:1
+          }
+        }\"
+      }
+    }"
+  }
 }

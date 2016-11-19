@@ -14,4 +14,41 @@
   ],
   HideFlags:1
 }
-//experience is the teacher of all things - Julius Caesar
+
+--------------------------------------------------------------------------------
+
+/give @p sign 1 0 {
+  BlockEntityTag:
+  {
+    Text2:"
+    {
+      \"text\":\"Click\",
+      \"color\":\"blue\",
+      \"clickEvent\":
+      {
+        \"action\":\"run_command\",
+        \"value\":\"/setblock ~ ~ ~ command_block 2 replace
+        {
+          Command:
+          /give @p gold_nugget 1 0 {
+            display:
+            {
+              Name: \\\"\u00a76Gold Coin o\\' Experience\\\",
+              Lore: [
+                \\\"\u00a77Magistra rerum experientia\\\"
+              ]
+            },
+            ench:
+            [
+              {
+                id: 34,
+                lvl: 10
+              }
+            ],
+            HideFlags:1
+          }
+        }\"
+      }
+    }"
+  }
+}

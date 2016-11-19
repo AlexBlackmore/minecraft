@@ -1,368 +1,367 @@
-/summon Villager ~ ~ ~
+/summon Villager ~ ~ ~ {
+	Profession: 1,
+	CustomName: "Armor Mage",
+	CustomNameVisible: 0,
+	Career: 1,
+	CareerLevel: 42,
+	CanPickUpLoot: 0,
+	PersistenceRequired: 1,
+	Attributes:
+	[
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
 	{
-		Profession: 1,
-		CustomName: "Armor Mage",
-		CustomNameVisible: 0,
-		Career: 1,
-		CareerLevel: 42,
-		CanPickUpLoot: 0,
-		PersistenceRequired: 1,
-		Attributes:
+		Recipes:
 		[
 			{
-				Name:"generic.movementSpeed",
-				Base:"0f"
-			}
-		],
-		Offers:
-		{
-			Recipes:
-			[
+				buy:
 				{
-					buy:
-					{
-						id: "book",
-						Count: 1
-					},
-					buyB:
-					{
-						id: "emerald",
-						Count: 5
-					},
-					sell:
-					{
-						id: "enchanted_book",
-						Count: 1,
-						tag:
-						{
-							StoredEnchantments:
-							[
-								{
-									id:0,
-									lvl:1
-								}
-							],
-							display:
-							{
-								Lore:
-								[
-									"Reduces most damage"
-								]
-							}
-						}
-					}
+					id: "book",
+					Count: 1
 				},
+				buyB:
 				{
-					buy:
-					{
-						id: "book",
-						Count: 1
-					},
-					buyB:
-					{
-						id: "emerald",
-						Count: 5
-					},
-					sell:
-					{
-						id: "enchanted_book",
-						Count: 1,
-						tag:
-						{
-							StoredEnchantments:
-							[
-								{
-									id:1,
-									lvl:1
-								}
-							],
-							display:
-							{
-								Lore:
-								[
-									"Reduces fire damage",
-									"Every level reduces initiated burn time by 15%"
-								]
-							}
-						}
-					}
+					id: "emerald",
+					Count: 5
 				},
+				sell:
 				{
-					buy:
+					id: "enchanted_book",
+					Count: 1,
+					tag:
 					{
-						id: "book",
-						Count: 1
-					},
-					buyB:
-					{
-						id: "emerald",
-						Count: 5
-					},
-					sell:
-					{
-						id: "enchanted_book",
-						Count: 1,
-						tag:
-						{
-							StoredEnchantments:
-							[
-								{
-									id:2,
-									lvl:1
-								}
-							],
-							display:
+						StoredEnchantments:
+						[
 							{
-								Lore:
-								[
-									"Reduces fall damage"
-								]
+								id:0,
+								lvl:1
 							}
-						}
-					}
-				},
-				{
-					buy:
-					{
-						id: "book",
-						Count: 1
-					},
-					buyB:
-					{
-						id: "emerald",
-						Count: 5
-					},
-					sell:
-					{
-						id: "enchanted_book",
-						Count: 1,
-						tag:
+						],
+						display:
 						{
-							StoredEnchantments:
+							Lore:
 							[
-								{
-									id:3,
-									lvl:1
-								}
-							],
-							display:
-							{
-								Lore:
-								[
-									"Reduces explosion damage"
-								]
-							}
-						}
-					}
-				},
-				{
-					buy:
-					{
-						id: "book",
-						Count: 1
-					},
-					buyB:
-					{
-						id: "emerald",
-						Count: 5
-					},
-					sell:
-					{
-						id: "enchanted_book",
-						Count: 1,
-						tag:
-						{
-							StoredEnchantments:
-							[
-								{
-									id:4,
-									lvl:1
-								}
-							],
-							display:
-							{
-								Lore:
-								[
-									"Reduces projectile damage"
-								]
-							}
-						}
-					}
-				},
-				{
-					buy:
-					{
-						id: "book",
-						Count: 1
-					},
-					buyB:
-					{
-						id: "emerald",
-						Count: 7
-					},
-					sell:
-					{
-						id: "enchanted_book",
-						Count: 1,
-						tag:
-						{
-							StoredEnchantments:
-							[
-								{
-									id:5,
-									lvl:1
-								}
-							],
-							display:
-							{
-								Lore:
-								[
-									"Extends underwater breathing time",
-									"+15 seconds breathing time per level, "
-								]
-							}
-						}
-					}
-				},
-				{
-					buy:
-					{
-						id: "book",
-						Count: 1
-					},
-					buyB:
-					{
-						id: "emerald",
-						Count: 9
-					},
-					sell:
-					{
-						id: "enchanted_book",
-						Count: 1,
-						tag:
-						{
-							StoredEnchantments:
-							[
-								{
-									id:6,
-									lvl:1
-								}
-							],
-							display:
-							{
-								Lore:
-								[
-									"Increases underwater mining rate"
-								]
-							}
-						}
-					}
-				},
-				{
-					buy:
-					{
-						id: "book",
-						Count: 1
-					},
-					buyB:
-					{
-						id: "emerald",
-						Count: 7
-					},
-					sell:
-					{
-						id: "enchanted_book",
-						Count: 1,
-						tag:
-						{
-							StoredEnchantments:
-							[
-								{
-									id:7,
-									lvl:1
-								}
-							],
-							display:
-							{
-								Lore:
-								[
-									"Damages attackers",
-									"Chance of inflicting 1-4 damage"
-								]
-							}
-						}
-					}
-				},
-				{
-					buy:
-					{
-						id: "book",
-						Count: 1
-					},
-					buyB:
-					{
-						id: "emerald",
-						Count: 9
-					},
-					sell:
-					{
-						id: "enchanted_book",
-						Count: 1,
-						tag:
-						{
-							StoredEnchantments:
-							[
-								{
-									id:8,
-									lvl:1
-								}
-							],
-							display:
-							{
-								Lore:
-								[
-									"Increases underwater movement speed",
-									"+33% speed in water per level"
-								]
-							}
-						}
-					}
-				},
-				{
-					buy:
-					{
-						id: "book",
-						Count: 1
-					},
-					buyB:
-					{
-						id: "emerald",
-						Count: 5
-					},
-					sell:
-					{
-						id: "enchanted_book",
-						Count: 1,
-						tag:
-						{
-							StoredEnchantments:
-							[
-								{
-									id:34,
-									lvl:1
-								}
-							],
-							display:
-							{
-								Lore:
-								[
-									"Increases durability",
-									"Tools last Level+1 times as long"
-								]
-							}
+								"Reduces most damage"
+							]
 						}
 					}
 				}
-			]
-        }
-	}
+			},
+			{
+				buy:
+				{
+					id: "book",
+					Count: 1
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 5
+				},
+				sell:
+				{
+					id: "enchanted_book",
+					Count: 1,
+					tag:
+					{
+						StoredEnchantments:
+						[
+							{
+								id:1,
+								lvl:1
+							}
+						],
+						display:
+						{
+							Lore:
+							[
+								"Reduces fire damage",
+								"Every level reduces initiated burn time by 15%"
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id: "book",
+					Count: 1
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 5
+				},
+				sell:
+				{
+					id: "enchanted_book",
+					Count: 1,
+					tag:
+					{
+						StoredEnchantments:
+						[
+							{
+								id:2,
+								lvl:1
+							}
+						],
+						display:
+						{
+							Lore:
+							[
+								"Reduces fall damage"
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id: "book",
+					Count: 1
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 5
+				},
+				sell:
+				{
+					id: "enchanted_book",
+					Count: 1,
+					tag:
+					{
+						StoredEnchantments:
+						[
+							{
+								id:3,
+								lvl:1
+							}
+						],
+						display:
+						{
+							Lore:
+							[
+								"Reduces explosion damage"
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id: "book",
+					Count: 1
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 5
+				},
+				sell:
+				{
+					id: "enchanted_book",
+					Count: 1,
+					tag:
+					{
+						StoredEnchantments:
+						[
+							{
+								id:4,
+								lvl:1
+							}
+						],
+						display:
+						{
+							Lore:
+							[
+								"Reduces projectile damage"
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id: "book",
+					Count: 1
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 7
+				},
+				sell:
+				{
+					id: "enchanted_book",
+					Count: 1,
+					tag:
+					{
+						StoredEnchantments:
+						[
+							{
+								id:5,
+								lvl:1
+							}
+						],
+						display:
+						{
+							Lore:
+							[
+								"Extends underwater breathing time",
+								"+15 seconds breathing time per level, "
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id: "book",
+					Count: 1
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 9
+				},
+				sell:
+				{
+					id: "enchanted_book",
+					Count: 1,
+					tag:
+					{
+						StoredEnchantments:
+						[
+							{
+								id:6,
+								lvl:1
+							}
+						],
+						display:
+						{
+							Lore:
+							[
+								"Increases underwater mining rate"
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id: "book",
+					Count: 1
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 7
+				},
+				sell:
+				{
+					id: "enchanted_book",
+					Count: 1,
+					tag:
+					{
+						StoredEnchantments:
+						[
+							{
+								id:7,
+								lvl:1
+							}
+						],
+						display:
+						{
+							Lore:
+							[
+								"Damages attackers",
+								"Chance of inflicting 1-4 damage"
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id: "book",
+					Count: 1
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 9
+				},
+				sell:
+				{
+					id: "enchanted_book",
+					Count: 1,
+					tag:
+					{
+						StoredEnchantments:
+						[
+							{
+								id:8,
+								lvl:1
+							}
+						],
+						display:
+						{
+							Lore:
+							[
+								"Increases underwater movement speed",
+								"+33% speed in water per level"
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id: "book",
+					Count: 1
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 5
+				},
+				sell:
+				{
+					id: "enchanted_book",
+					Count: 1,
+					tag:
+					{
+						StoredEnchantments:
+						[
+							{
+								id:34,
+								lvl:1
+							}
+						],
+						display:
+						{
+							Lore:
+							[
+								"Increases durability",
+								"Tools last Level+1 times as long"
+							]
+						}
+					}
+				}
+			}
+		]
+  }
+}
