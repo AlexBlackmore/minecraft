@@ -1,376 +1,773 @@
 /summon Villager ~ ~ ~ {
-		Profession: 4,
-		CustomName: "Archangel BlackSmith",
-		CustomNameVisible: 0,
-		Career: 1,
-		CareerLevel: 42,
-		CanPickUpLoot: 0,
-		PersistenceRequired: 1,
-		Attributes:
-		[
-			{
-				Name:"generic.movementSpeed",
-				Base:"0f"
-			}
-		],
-		Offers:
+	Profession: 4,
+	CustomName: "§3Archangel BlackSmith",
+	CustomNameVisible: 0,
+	Career: 1,
+	CareerLevel: 42,
+	CanPickUpLoot: 0,
+	PersistenceRequired: 1,
+	Attributes: [
 		{
-			Recipes:
-			[
-				{
-        	buy:
-					{
-          	id: "gold_nugget",
-          	Count: 8,
-						tag:
-						{
-					    display: {
-				        Name: "§6Gold Coin o' Experience",
-				        Lore: [
-			            "§7Magistra rerum experientia"
-				        ]
-					    },
-					    ench:
-					    [
-				        {
-			            id: 34,
-			            lvl: 10
-				        }
-						  ],
-						  HideFlags:1
-						}
-        	},
-        	sell:
-					{
-          	id: "leather_helmet",
-          	Count: 1,
-						tag:
-						{
-							display:
-							{
-								color:16777215,
-								Name: "§3Vanguard",
-								Lore:
-								[
-									"§3Archangel Set"
-								]
-							},
-							ench:
-							[
-								{
-									id: 0,
-									lvl: 3
-								},
-								{
-									id: 4,
-									lvl: 2
-								},
-								{
-									id: 3,
-									lvl: 2
-								},
-								{
-									id: 7,
-									lvl: 3
-								}
-							]
-						}
-        	}
-      	},
-				{
-        	buy:
-					{
-          	id: "gold_nugget",
-          	Count: 16,
-						tag:
-						{
-					    display: {
-				        Name: "§6Gold Coin o' Experience",
-				        Lore: [
-			            "§7Magistra rerum experientia"
-				        ]
-					    },
-					    ench:
-					    [
-				        {
-			            id: 34,
-			            lvl: 10
-				        }
-						  ],
-						  HideFlags:1
-						}
-        	},
-        	sell:
-					{
-          	id: "leather_chestplate",
-          	Count: 1,
-						tag:
-						{
-							display:
-							{
-								color:16777215,
-								Name: "Ariel's Armor",
-								Lore:
-								[
-									"Archangel Set"
-								]
-							},
-							ench:
-							[
-								{
-									id: 0,
-									lvl: 3
-								},
-								{
-									id: 4,
-									lvl: 2
-								},
-								{
-									id: 3,
-									lvl: 2
-								},
-								{
-									id: 7,
-									lvl: 3
-								}
-							]
-						}
-        	}
-      	},
-				{
-					buy:
-					{
-          	id: "gold_nugget",
-          	Count: 16,
-						tag:
-						{
-					    display: {
-				        Name: "§6Gold Coin o' Experience",
-				        Lore: [
-			            "§7Magistra rerum experientia"
-				        ]
-					    },
-					    ench:
-					    [
-				        {
-			            id: 34,
-			            lvl: 10
-				        }
-						  ],
-						  HideFlags:1
-						}
-        	},
-        	sell:
-					{
-          	id: "leather_leggings",
-          	Count: 1,
-						tag:
-						{
-							display:
-							{
-								color:16777215,
-								Name: "§3Acheru Knight's Legplate",
-								Lore:
-								[
-									"§3Archangel Set"
-								]
-							},
-							ench:
-							[
-								{
-									id: 0,
-									lvl: 3
-								},
-								{
-									id: 4,
-									lvl: 2
-								},
-								{
-									id: 3,
-									lvl: 2
-								},
-								{
-									id: 7,
-									lvl: 3
-								}
-							]
-						}
-        	}
-      	},
-				{
-        	buy:
-					{
-          	id: "gold_nugget",
-          	Count: 8,
-						tag:
-						{
-					    display: {
-				        Name: "§6Gold Coin o' Experience",
-				        Lore: [
-			            "§7Magistra rerum experientia"
-				        ]
-					    },
-					    ench:
-					    [
-				        {
-			            id: 34,
-			            lvl: 10
-				        }
-						  ],
-						  HideFlags:1
-						}
-        	},
-        	sell:
-					{
-          	id: "leather_boots",
-          	Count: 1,
-						tag:
-						{
-							display:
-							{
-								color:16777215,
-								Name: "§3Windwalker",
-								Lore:
-								[
-									"§3Archangel Set"
-								]
-							},
-							ench:
-							[
-								{
-									id: 0,
-									lvl: 3
-								},
-								{
-									id: 4,
-									lvl: 2
-								},
-								{
-									id: 3,
-									lvl: 2
-								},
-								{
-									id: 7,
-									lvl: 3
-								}
-							]
-						}
-        	}
-      	},
-				{
-          buy:
-					{
-          	id: "gold_nugget",
-          	Count: 16,
-						tag:
-						{
-					    display: {
-				        Name: "§6Gold Coin o' Experience",
-				        Lore: [
-			            "§7Magistra rerum experientia"
-				        ]
-					    },
-					    ench:
-					    [
-				        {
-			            id: 34,
-			            lvl: 10
-				        }
-						  ],
-						  HideFlags:1
-						}
-        	},
-        	sell:
-					{
-          	id: "iron_sword",
-            Count: 1,
-						tag:
-						{
-							display:
-							{
-								Name: "§3Hope",
-								Lore:
-								[
-									"§3Archangel Set"
-								]
-							},
-							ench:
-							[
-								{
-									id: 16,
-									lvl: 10
-								},
-								{
-									id: 18,
-									lvl: 2
-								},
-								{
-									id: 17,
-									lvl: 2
-								}
-							]
-						}
-        	}
-      	},
-				{
-        	buy:
-					{
-          	id: "gold_nugget",
-          	Count: 16,
-						tag:
-						{
-					    display: {
-				        Name: "§6Gold Coin o' Experience",
-				        Lore: [
-			            "§7Magistra rerum experientia"
-				        ]
-					    },
-					    ench:
-					    [
-				        {
-			            id: 34,
-			            lvl: 10
-				        }
-						  ],
-						  HideFlags:1
-						}
-        	},
-        	sell:
-					{
-          	id: "bow",
-          	Count: 1,
-						tag:
-						{
-							display:
-							{
-								Name: "§3Arias'tama",
-								Lore:
-								[
-									"§3Archangel Set"
-								]
-							},
-							ench:
-							[
-								{
-									id: 48,
-									lvl: 10
-								},
-								{
-									id: 49,
-									lvl: 1
-								},
-								{
-									id: 51,
-									lvl: 1
-								},
-								{
-									id: 50,
-									lvl: 2
-								}
-							]
-						}
-        	}
-      	}
-			]
+			Name:"generic.movementSpeed",
+			Base:"0f"
 		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+      	buy:
+				{
+        	id: "gold_nugget",
+        	Count: 8,
+					tag:
+					{
+				    display: {
+			        Name: "§6Gold Coin o' Experience",
+			        Lore: [
+		            "§7Magistra rerum experientia"
+			        ]
+				    },
+				    ench: [
+			        {
+		            id: 34,
+		            lvl: 10
+			        }
+					  ],
+					  HideFlags:1
+					}
+      	},
+      	sell:
+				{
+        	id: "iron_helmet",
+        	Count: 1,
+					tag:
+					{
+						display:
+						{
+							Name: "§3Vanguard",
+							Lore: [
+								"§3Archangel Set"
+							]
+						},
+						ench: [
+							{
+								id: 0,
+								lvl: 3
+							},
+							{
+								id: 4,
+								lvl: 2
+							},
+							{
+								id: 3,
+								lvl: 2
+							},
+							{
+								id: 7,
+								lvl: 3
+							},
+							{
+								id: 34,
+								lvl: 10
+							}
+						]
+					}
+      	}
+    	},
+			{
+      	buy:
+				{
+        	id: "gold_nugget",
+        	Count: 16,
+					tag:
+					{
+				    display: {
+			        Name: "§6Gold Coin o' Experience",
+			        Lore: [
+		            "§7Magistra rerum experientia"
+			        ]
+				    },
+				    ench: [
+			        {
+		            id: 34,
+		            lvl: 10
+			        }
+					  ],
+					  HideFlags:1
+					}
+      	},
+      	sell:
+				{
+        	id: "iron_chestplate",
+        	Count: 1,
+					tag:
+					{
+						display:
+						{
+							Name: "Ariel's Armor",
+							Lore: [
+								"Archangel Set"
+							]
+						},
+						ench: [
+							{
+								id: 0,
+								lvl: 3
+							},
+							{
+								id: 4,
+								lvl: 2
+							},
+							{
+								id: 3,
+								lvl: 2
+							},
+							{
+								id: 7,
+								lvl: 3
+							},
+							{
+								id: 34,
+								lvl: 10
+							}
+						]
+					}
+      	}
+    	},
+			{
+				buy:
+				{
+        	id: "gold_nugget",
+        	Count: 16,
+					tag:
+					{
+				    display: {
+			        Name: "§6Gold Coin o' Experience",
+			        Lore: [
+		            "§7Magistra rerum experientia"
+			        ]
+				    },
+				    ench: [
+			        {
+		            id: 34,
+		            lvl: 10
+			        }
+					  ],
+					  HideFlags:1
+					}
+      	},
+      	sell:
+				{
+        	id: "iron_leggings",
+        	Count: 1,
+					tag:
+					{
+						display:
+						{
+							Name: "§3Acheru Knight's Legplate",
+							Lore: [
+								"§3Archangel Set"
+							]
+						},
+						ench: [
+							{
+								id: 0,
+								lvl: 3
+							},
+							{
+								id: 4,
+								lvl: 2
+							},
+							{
+								id: 3,
+								lvl: 2
+							},
+							{
+								id: 7,
+								lvl: 3
+							},
+							{
+								id: 34,
+								lvl: 10
+							}
+						]
+					}
+      	}
+    	},
+			{
+      	buy:
+				{
+        	id: "gold_nugget",
+        	Count: 8,
+					tag:
+					{
+				    display: {
+			        Name: "§6Gold Coin o' Experience",
+			        Lore: [
+		            "§7Magistra rerum experientia"
+			        ]
+				    },
+				    ench: [
+			        {
+		            id: 34,
+		            lvl: 10
+			        }
+					  ],
+					  HideFlags:1
+					}
+      	},
+      	sell:
+				{
+        	id: "iron_boots",
+        	Count: 1,
+					tag:
+					{
+						display:
+						{
+							Name: "§3Windwalker",
+							Lore: [
+								"§3Archangel Set"
+							]
+						},
+						ench: [
+							{
+								id: 0,
+								lvl: 3
+							},
+							{
+								id: 4,
+								lvl: 2
+							},
+							{
+								id: 3,
+								lvl: 2
+							},
+							{
+								id: 7,
+								lvl: 3
+							},
+							{
+								id: 34,
+								lvl: 10
+							}
+						]
+					}
+      	}
+    	},
+			{
+        buy:
+				{
+        	id: "gold_nugget",
+        	Count: 16,
+					tag:
+					{
+				    display: {
+			        Name: "§6Gold Coin o' Experience",
+			        Lore: [
+		            "§7Magistra rerum experientia"
+			        ]
+				    },
+				    ench: [
+			        {
+		            id: 34,
+		            lvl: 10
+			        }
+					  ],
+					  HideFlags:1
+					}
+      	},
+      	sell:
+				{
+        	id: "iron_sword",
+          Count: 1,
+					tag:
+					{
+						display:
+						{
+							Name: "§3Hope",
+							Lore: [
+								"§3Archangel Set"
+							]
+						},
+						ench: [
+							{
+								id: 16,
+								lvl: 10
+							},
+							{
+								id: 18,
+								lvl: 2
+							},
+							{
+								id: 17,
+								lvl: 2
+							},
+							{
+								id: 34,
+								lvl: 10
+							}
+						]
+					}
+      	}
+    	},
+			{
+      	buy:
+				{
+        	id: "gold_nugget",
+        	Count: 16,
+					tag:
+					{
+				    display: {
+			        Name: "§6Gold Coin o' Experience",
+			        Lore: [
+		            "§7Magistra rerum experientia"
+			        ]
+				    },
+				    ench: [
+			        {
+		            id: 34,
+		            lvl: 10
+			        }
+					  ],
+					  HideFlags:1
+					}
+      	},
+      	sell:
+				{
+        	id: "bow",
+        	Count: 1,
+					tag:
+					{
+						display:
+						{
+							Name: "§3Arias'tama",
+							Lore: [
+								"§3Archangel Set"
+							]
+						},
+						ench: [
+							{
+								id: 48,
+								lvl: 10
+							},
+							{
+								id: 49,
+								lvl: 1
+							},
+							{
+								id: 51,
+								lvl: 1
+							},
+							{
+								id: 50,
+								lvl: 2
+							},
+							{
+								id: 34,
+								lvl: 10
+							}
+						]
+					}
+      	}
+    	}
+		]
 	}
+}
+
+--------------------------------------------------------------------------------
+
+/give @p sign 1 0 {
+	BlockEntityTag:
+	{
+		Text2:"
+		{
+			\"text\":\"Click\",
+			\"color\":\"blue\",
+			\"clickEvent\":
+			{
+				\"action\":\"run_command\",
+				\"value\":\"/setblock ~ ~ ~ command_block 2 replace
+				{
+					Command:
+					/summon Villager ~ ~ ~ {
+						Profession: 4,
+						CustomName: \\\"\u00a73Archangel BlackSmith\\\",
+						CustomNameVisible: 0,
+						Career: 1,
+						CareerLevel: 42,
+						CanPickUpLoot: 0,
+						PersistenceRequired: 1,
+						Attributes: [
+							{
+								Name:\\\"generic.movementSpeed\\\",
+								Base:\\\"0f\\\"
+							}
+						],
+						Offers:
+						{
+							Recipes: [
+								{
+					      	buy:
+									{
+					        	id: \\\"gold_nugget\\\",
+					        	Count: 8,
+										tag:
+										{
+									    display: {
+								        Name: \\\"\u00a76Gold Coin o\\' Experience\\\",
+								        Lore: [
+							            \\\"\u00a77Magistra rerum experientia\\\"
+								        ]
+									    },
+									    ench: [
+								        {
+							            id: 34,
+							            lvl: 10
+								        }
+										  ],
+										  HideFlags:1
+										}
+					      	},
+					      	sell:
+									{
+					        	id: \\\"iron_helmet\\\",
+					        	Count: 1,
+										tag:
+										{
+											display:
+											{
+												Name: \\\"\u00a73Vanguard\\\",
+												Lore: [
+													\\\"\u00a73Archangel Set\\\"
+												]
+											},
+											ench: [
+												{
+													id: 0,
+													lvl: 3
+												},
+												{
+													id: 4,
+													lvl: 2
+												},
+												{
+													id: 3,
+													lvl: 2
+												},
+												{
+													id: 7,
+													lvl: 3
+												},
+												{
+													id: 34,
+													lvl: 10
+												}
+											]
+										}
+					      	}
+					    	},
+								{
+					      	buy:
+									{
+					        	id: \\\"gold_nugget\\\",
+					        	Count: 16,
+										tag:
+										{
+									    display: {
+								        Name: \\\"\u00a76Gold Coin o\\' Experience\\\",
+								        Lore: [
+							            \\\"\u00a77Magistra rerum experientia\\\"
+								        ]
+									    },
+									    ench: [
+								        {
+							            id: 34,
+							            lvl: 10
+								        }
+										  ],
+										  HideFlags:1
+										}
+					      	},
+					      	sell:
+									{
+					        	id: \\\"iron_chestplate\\\",
+					        	Count: 1,
+										tag:
+										{
+											display:
+											{
+												Name: \\\"Ariel\\'s Armor\\\",
+												Lore: [
+													\\\"Archangel Set\\\"
+												]
+											},
+											ench: [
+												{
+													id: 0,
+													lvl: 3
+												},
+												{
+													id: 4,
+													lvl: 2
+												},
+												{
+													id: 3,
+													lvl: 2
+												},
+												{
+													id: 7,
+													lvl: 3
+												},
+												{
+													id: 34,
+													lvl: 10
+												}
+											]
+										}
+					      	}
+					    	},
+								{
+									buy:
+									{
+					        	id: \\\"gold_nugget\\\",
+					        	Count: 16,
+										tag:
+										{
+									    display: {
+								        Name: \\\"\u00a76Gold Coin o\\' Experience\\\",
+								        Lore: [
+							            \\\"\u00a77Magistra rerum experientia\\\"
+								        ]
+									    },
+									    ench: [
+								        {
+							            id: 34,
+							            lvl: 10
+								        }
+										  ],
+										  HideFlags:1
+										}
+					      	},
+					      	sell:
+									{
+					        	id: \\\"iron_leggings\\\",
+					        	Count: 1,
+										tag:
+										{
+											display:
+											{
+												Name: \\\"\u00a73Acheru Knight\\'s Legplate\\\",
+												Lore: [
+													\\\"\u00a73Archangel Set\\\"
+												]
+											},
+											ench: [
+												{
+													id: 0,
+													lvl: 3
+												},
+												{
+													id: 4,
+													lvl: 2
+												},
+												{
+													id: 3,
+													lvl: 2
+												},
+												{
+													id: 7,
+													lvl: 3
+												},
+												{
+													id: 34,
+													lvl: 10
+												}
+											]
+										}
+					      	}
+					    	},
+								{
+					      	buy:
+									{
+					        	id: \\\"gold_nugget\\\",
+					        	Count: 8,
+										tag:
+										{
+									    display: {
+								        Name: \\\"\u00a76Gold Coin o\\' Experience\\\",
+								        Lore: [
+							            \\\"\u00a77Magistra rerum experientia\\\"
+								        ]
+									    },
+									    ench: [
+								        {
+							            id: 34,
+							            lvl: 10
+								        }
+										  ],
+										  HideFlags:1
+										}
+					      	},
+					      	sell:
+									{
+					        	id: \\\"iron_boots\\\",
+					        	Count: 1,
+										tag:
+										{
+											display:
+											{
+												Name: \\\"\u00a73Windwalker\\\",
+												Lore: [
+													\\\"\u00a73Archangel Set\\\"
+												]
+											},
+											ench: [
+												{
+													id: 0,
+													lvl: 3
+												},
+												{
+													id: 4,
+													lvl: 2
+												},
+												{
+													id: 3,
+													lvl: 2
+												},
+												{
+													id: 7,
+													lvl: 3
+												},
+												{
+													id: 34,
+													lvl: 10
+												}
+											]
+										}
+					      	}
+					    	},
+								{
+					        buy:
+									{
+					        	id: \\\"gold_nugget\\\",
+					        	Count: 16,
+										tag:
+										{
+									    display: {
+								        Name: \\\"\u00a76Gold Coin o\\' Experience\\\",
+								        Lore: [
+							            \\\"\u00a77Magistra rerum experientia\\\"
+								        ]
+									    },
+									    ench: [
+								        {
+							            id: 34,
+							            lvl: 10
+								        }
+										  ],
+										  HideFlags:1
+										}
+					      	},
+					      	sell:
+									{
+					        	id: \\\"iron_sword\\\",
+					          Count: 1,
+										tag:
+										{
+											display:
+											{
+												Name: \\\"\u00a73Hope\\\",
+												Lore: [
+													\\\"\u00a73Archangel Set\\\"
+												]
+											},
+											ench: [
+												{
+													id: 16,
+													lvl: 10
+												},
+												{
+													id: 18,
+													lvl: 2
+												},
+												{
+													id: 17,
+													lvl: 2
+												},
+												{
+													id: 34,
+													lvl: 10
+												}
+											]
+										}
+					      	}
+					    	},
+								{
+					      	buy:
+									{
+					        	id: \\\"gold_nugget\\\",
+					        	Count: 16,
+										tag:
+										{
+									    display: {
+								        Name: \\\"\u00a76Gold Coin o\\' Experience\\\",
+								        Lore: [
+							            \\\"\u00a77Magistra rerum experientia\\\"
+								        ]
+									    },
+									    ench: [
+								        {
+							            id: 34,
+							            lvl: 10
+								        }
+										  ],
+										  HideFlags:1
+										}
+					      	},
+					      	sell:
+									{
+					        	id: \\\"bow\\\",
+					        	Count: 1,
+										tag:
+										{
+											display:
+											{
+												Name: \\\"\u00a73Arias\\'tama\\\",
+												Lore: [
+													\\\"\u00a73Archangel Set\\\"
+												]
+											},
+											ench: [
+												{
+													id: 48,
+													lvl: 10
+												},
+												{
+													id: 49,
+													lvl: 1
+												},
+												{
+													id: 51,
+													lvl: 1
+												},
+												{
+													id: 50,
+													lvl: 2
+												},
+												{
+													id: 34,
+													lvl: 10
+												}
+											]
+										}
+					      	}
+					    	}
+							]
+						}
+					}
+				}\"
+			}
+		}"
+	}
+}

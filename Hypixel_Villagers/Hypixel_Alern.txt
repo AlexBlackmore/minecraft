@@ -1,260 +1,253 @@
 /summon Villager ~ ~ ~ {
-		Profession: 2,
-		CustomName: "Alern",
-		CustomNameVisible: 0,
-		Career: 1,
-		CareerLevel: 42,
-		CanPickUpLoot: 0,
-		PersistenceRequired: 1,
-		Attributes:
-		[
-			{
-				Name:"generic.movementSpeed",
-				Base:"0f"
-			}
-		],
-		Offers:
+	Profession: 2,
+	CustomName: "Alern",
+	CustomNameVisible: 0,
+	Career: 1,
+	CareerLevel: 42,
+	CanPickUpLoot: 0,
+	PersistenceRequired: 1,
+	Attributes: [
 		{
-			Recipes:
-			[
-				{
-          buy:
-					{
-          	id: "rotten_flesh",
-            Count: 2
-          },
-          sell:
-					{
-            id: "cooked_beef",
-            Count: 4
-          }
-        },
-				{
-        	buy:
-					{
-						id: "bone",
-						Count: 2
-					},
-					sell:
-					{
-						id: "cooked_chicken",
-						Count: 4
-					}
-				},
-				{
-				  buy:
-				  {
-				    id: "rotten_flesh",
-				    Count: 6
-				  },
-				  sell:
-				  {
-				    id:"potion",
-				    Count: 1,
-				    tag:
-				    {
-				      Potion:"strong_healing"
-				    }
-				  }
-				},
-				{
-				  buy:
-				  {
-				    id: "bone",
-				    Count: 6
-				  },
-				  sell:
-				  {
-				    id:"splash_potion",
-				    Count: 1,
-				    tag:
-				    {
-				      Potion:"strong_healing"
-				    }
-				  }
-				},
-				{
-				  buy:
-				  {
-				    id: "rotten_flesh",
-				    Count: 4
-				  },
-				  buyB:
-				  {
-				    id: "bone",
-				    Count: 4
-				  },
-				  sell:
-				  {
-				    id:"potion",
-				    Count: 1,
-				    tag:
-				    {
-				      Potion:"empty",
-				      CustomPotionEffects:
-				      [
-								{
-									Id: 5,
-									Amplifier: 0,
-									Duration: 3600
-								},
-				        {
-				          Id: 5,
-				          Amplifier: 1,
-				          Duration: 1100
-				        }
-				      ],
-				      display:
-				      {
-				        Name: "§fStrength Potion"
-				      }
-				    }
-				  }
-				},
-				{
-				  buy:
-				  {
-				    id: "rotten_flesh",
-				    Count: 7
-				  },
-				  sell:
-				  {
-				    id:"potion",
-				    Count: 1,
-				    tag:
-				    {
-				      Potion:"empty",
-				      CustomPotionEffects:
-				      [
-				        {
-				          Id: 10,
-				          Amplifier: 0,
-				          Duration: 900
-				        },
-								{
-				          Id: 10,
-				          Amplifier: 1,
-				          Duration: 500
-				        }
-				      ],
-				      display:
-				      {
-				        Name: "§fRegeneration Potion"
-				      }
-				    }
-				  }
-				},
-				{
-				  buy:
-				  {
-				    id: "rotten_flesh",
-				    Count: 3
-				  },
-				  buyB:
-				  {
-				    id: "bone",
-				    Count: 3
-				  },
-				  sell:
-				  {
-				    id:"potion",
-				    Count: 1,
-				    tag:
-				    {
-				      Potion:"empty",
-				      CustomPotionEffects:
-				      [
-								{
-									Id: 12,
-									Amplifier: 0,
-									Duration: 9600
-								},
-				        {
-				          Id: 3,
-				          Amplifier: 1,
-				          Duration: 700
-				        }
-				      ],
-				      display:
-				      {
-				        Name: "§fPotion of Haste"
-				      }
-				    }
-				  }
-				},
-				{
-				  buy:
-				  {
-				    id: "rotten_flesh",
-				    Count: 4
-				  },
-				  sell:
-				  {
-				    id: "milk_bucket",
-				    Count: 1,
-				    tag:
-				    {
-				      display:
-				      {
-				        Lore:
-				        [
-				          "§7Clear all effects"
-				        ]
-
-				      }
-				    }
-				  }
-				},
-				{
-				  buy:
-				  {
-				    id: "gold_nugget",
-				    Count: 2
-				  },
-				  sell:
-				  {
-				    id: "potion",
-				    Count: 1,
-				    tag:
-				    {
-				       CustomPotionEffects:
-				       [
-								 {
-									 Id: 18,
-									 Amplifier: 0,
-									 Duration: 4800
-								 },
-				        {
-				          Id: 3,
-				          Amplifier: 1,
-				          Duration: 700
-				        },
-				        {
-				          Id: 5,
-				          Amplifier: 1,
-				          Duration: 700
-				        },
-				        {
-				          Id: 11,
-				          Amplifier: 1,
-				          Duration: 700
-				        },
-				        {
-				          Id: 1,
-				          Amplifier: 1,
-				          Duration: 700
-				        }
-				      ],
-				      display:
-				      {
-				        Name: "§fBerserking Potion"
-				      }
-				    }
-				  }
-				}
-			]
+			Name:"generic.movementSpeed",
+			Base:"0f"
 		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+        buy:
+				{
+        	id: "rotten_flesh",
+          Count: 2
+        },
+        sell:
+				{
+          id: "cooked_beef",
+          Count: 4
+        }
+      },
+			{
+      	buy:
+				{
+					id: "bone",
+					Count: 2
+				},
+				sell:
+				{
+					id: "cooked_chicken",
+					Count: 4
+				}
+			},
+			{
+			  buy:
+			  {
+			    id: "rotten_flesh",
+			    Count: 6
+			  },
+			  sell:
+			  {
+			    id:"potion",
+			    Count: 1,
+			    tag:
+			    {
+			      Potion:"strong_healing"
+			    }
+			  }
+			},
+			{
+			  buy:
+			  {
+			    id: "bone",
+			    Count: 6
+			  },
+			  sell:
+			  {
+			    id:"splash_potion",
+			    Count: 1,
+			    tag:
+			    {
+			      Potion:"strong_healing"
+			    }
+			  }
+			},
+			{
+			  buy:
+			  {
+			    id: "rotten_flesh",
+			    Count: 4
+			  },
+			  buyB:
+			  {
+			    id: "bone",
+			    Count: 4
+			  },
+			  sell:
+			  {
+			    id:"potion",
+			    Count: 1,
+			    tag:
+			    {
+			      Potion:"empty",
+			      CustomPotionEffects: [
+							{
+								Id: 5,
+								Amplifier: 0,
+								Duration: 3600
+							},
+			        {
+			          Id: 5,
+			          Amplifier: 1,
+			          Duration: 1100
+			        }
+			      ],
+			      display:
+			      {
+			        Name: "§fStrength Potion"
+			      }
+			    }
+			  }
+			},
+			{
+			  buy:
+			  {
+			    id: "rotten_flesh",
+			    Count: 7
+			  },
+			  sell:
+			  {
+			    id:"potion",
+			    Count: 1,
+			    tag:
+			    {
+			      Potion:"empty",
+			      CustomPotionEffects: [
+			        {
+			          Id: 10,
+			          Amplifier: 0,
+			          Duration: 900
+			        },
+							{
+			          Id: 10,
+			          Amplifier: 1,
+			          Duration: 500
+			        }
+			      ],
+			      display:
+			      {
+			        Name: "§fRegeneration Potion"
+			      }
+			    }
+			  }
+			},
+			{
+			  buy:
+			  {
+			    id: "rotten_flesh",
+			    Count: 3
+			  },
+			  buyB:
+			  {
+			    id: "bone",
+			    Count: 3
+			  },
+			  sell:
+			  {
+			    id:"potion",
+			    Count: 1,
+			    tag:
+			    {
+			      Potion:"empty",
+			      CustomPotionEffects: [
+							{
+								Id: 12,
+								Amplifier: 0,
+								Duration: 9600
+							},
+			        {
+			          Id: 3,
+			          Amplifier: 1,
+			          Duration: 700
+			        }
+			      ],
+			      display:
+			      {
+			        Name: "§fPotion of Haste"
+			      }
+			    }
+			  }
+			},
+			{
+			  buy:
+			  {
+			    id: "rotten_flesh",
+			    Count: 4
+			  },
+			  sell:
+			  {
+			    id: "milk_bucket",
+			    Count: 1,
+			    tag:
+			    {
+			      display:
+			      {
+			        Lore: [
+			          "§7Clear all effects"
+			        ]
+
+			      }
+			    }
+			  }
+			},
+			{
+			  buy:
+			  {
+			    id: "gold_nugget",
+			    Count: 2
+			  },
+			  sell:
+			  {
+			    id: "potion",
+			    Count: 1,
+			    tag:
+			    {
+			       CustomPotionEffects: [
+							 {
+								 Id: 18,
+								 Amplifier: 0,
+								 Duration: 4800
+							 },
+			        {
+			          Id: 3,
+			          Amplifier: 1,
+			          Duration: 700
+			        },
+			        {
+			          Id: 5,
+			          Amplifier: 1,
+			          Duration: 700
+			        },
+			        {
+			          Id: 11,
+			          Amplifier: 1,
+			          Duration: 700
+			        },
+			        {
+			          Id: 1,
+			          Amplifier: 1,
+			          Duration: 700
+			        }
+			      ],
+			      display:
+			      {
+			        Name: "§fBerserking Potion"
+			      }
+			    }
+			  }
+			}
+		]
 	}
+}
 
 --------------------------------------------------------------------------------
 
@@ -279,8 +272,7 @@
 						CareerLevel: 42,
 						CanPickUpLoot: 0,
 						PersistenceRequired: 1,
-						Attributes:
-						[
+						Attributes: [
 							{
 								Name:\\\"generic.movementSpeed\\\",
 								Base:\\\"0f\\\"
@@ -288,8 +280,7 @@
 						],
 						Offers:
 						{
-							Recipes:
-							[
+							Recipes: [
 								{
 				          buy:
 									{
@@ -364,8 +355,7 @@
 								    tag:
 								    {
 								      Potion:\\\"empty\\\",
-								      CustomPotionEffects:
-								      [
+								      CustomPotionEffects: [
 												{
 													Id: 5,
 													Amplifier: 0,
@@ -397,8 +387,7 @@
 								    tag:
 								    {
 								      Potion:\\\"empty\\\",
-								      CustomPotionEffects:
-								      [
+								      CustomPotionEffects: [
 								        {
 								          Id: 10,
 								          Amplifier: 0,
@@ -435,8 +424,7 @@
 								    tag:
 								    {
 								      Potion:\\\"empty\\\",
-								      CustomPotionEffects:
-								      [
+								      CustomPotionEffects: [
 												{
 													Id: 12,
 													Amplifier: 0,
@@ -469,8 +457,7 @@
 								    {
 								      display:
 								      {
-								        Lore:
-								        [
+								        Lore: [
 								          \\\"\u00a77Clear all effects\\\"
 								        ]
 
@@ -490,13 +477,12 @@
 								    Count: 1,
 								    tag:
 								    {
-								       CustomPotionEffects:
-								       [
-												 {
-													 Id: 18,
-													 Amplifier: 0,
-													 Duration: 4800
-												 },
+								    	CustomPotionEffects: [
+												{
+													Id: 18,
+													Amplifier: 0,
+													Duration: 4800
+												},
 								        {
 								          Id: 3,
 								          Amplifier: 1,
