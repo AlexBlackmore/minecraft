@@ -1,0 +1,83 @@
+/summon Villager ~ ~ ~ {
+	CustomName: "Arctic Explorer",
+	CustomNameVisible: 0,
+	Profession: 1,
+	Career: 2,
+	CareerLevel: 42,
+	CanPickUpLoot: 0,
+	PersistenceRequired: 1,
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id: "written_book",
+					Count: 1,
+					tag:
+					{
+						generation:3,
+						display:
+						{
+							Name: "§fHello fellow adventurer!",
+							Lore: [
+								"§fI have travelled to the furthest reaches of the north and",
+                "§freturn with a revolutionary new material. This new form of",
+                "§fice, only found in the coldest, most hospitable lands of this",
+                "§fworld, has hardened to the point which it is unmeltable! No",
+                "§ftorch or lantern can sweat this ice, no matter the proximity.",
+                "§fWhile on my travels, I have learned a mysterious method for",
+                "§fsynthesizing this material, and will trade it for the right",
+                "§fprice."
+							]
+						}
+					}
+				},
+				buyB:
+				{
+					id: "barrier",
+					Count: 1,
+					tag:
+					{
+						display:
+						{
+							Name: "§l-->"
+						}
+					}
+				},
+				sell:
+				{
+					id: "barrier",
+					Count: 1,
+					tag:
+					{
+						display:
+						{
+							Name: "§l-->"
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id: "emerald",
+					Count: 1
+				},
+				sell:
+				{
+					id: "packed_ice",
+					Count: 8
+				}
+			}
+		]
+  }
+}
+
+--------------------------------------------------------------------------------
