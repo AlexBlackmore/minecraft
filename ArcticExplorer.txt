@@ -28,7 +28,7 @@
 							Name: "§fHello fellow adventurer!",
 							Lore: [
 								"§fI have travelled to the furthest reaches of the north and",
-                "§freturn with a revolutionary new material. This new form of",
+                "§freturned with a revolutionary new material. This new form of",
                 "§fice, only found in the coldest, most hospitable lands of this",
                 "§fworld, has hardened to the point which it is unmeltable! No",
                 "§ftorch or lantern can sweat this ice, no matter the proximity.",
@@ -72,6 +72,52 @@
 				},
 				sell:
 				{
+					id: "ice",
+					Count: 16
+				}
+			},
+			{
+				buy:
+				{
+					id: "emerald",
+					Count: 1
+				},
+				sell:
+				{
+					id: "packed_ice",
+					Count: 4
+				}
+			},
+			{
+				buy:
+				{
+					id: "snow",
+					Count: 64
+				},
+				buyB:
+				{
+					id: "snow",
+					Count: 64
+				},
+				sell:
+				{
+					id: "ice",
+					Count: 32
+				}
+			},
+			{
+				buy:
+				{
+					id: "snow",
+					Count: 64
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 1
+				},
+				sell:
+				{
 					id: "packed_ice",
 					Count: 8
 				}
@@ -80,4 +126,152 @@
   }
 }
 
+
 --------------------------------------------------------------------------------
+
+
+/give @p sign 1 0 {
+  BlockEntityTag:
+  {
+    Text2:"
+    {
+      \"text\":\"Click\",
+      \"color\":\"blue\",
+      \"clickEvent\":
+      {
+        \"action\":\"run_command\",
+        \"value\":\"/setblock ~ ~ ~ command_block 2 replace
+        {
+          Command:
+					/summon Villager ~ ~ ~ {
+						CustomName: \\\"Arctic Explorer\\\",
+						CustomNameVisible: 0,
+						Profession: 1,
+						Career: 2,
+						CareerLevel: 42,
+						CanPickUpLoot: 0,
+						PersistenceRequired: 1,
+						Attributes: [
+							{
+								Name:\\\"generic.movementSpeed\\\",
+								Base:\\\"0f\\\"
+							}
+						],
+						Offers:
+						{
+							Recipes: [
+								{
+									buy:
+									{
+										id: \\\"written_book\\\",
+										Count: 1,
+										tag:
+										{
+											generation:3,
+											display:
+											{
+												Name: \\\"\u00a7fHello fellow adventurer!\\\",
+												Lore: [
+													\\\"\u00a7fI have travelled to the furthest reaches of the north and\\\",
+					                \\\"\u00a7freturned with a revolutionary new material. This new form of\\\",
+					                \\\"\u00a7fice, only found in the coldest, most hospitable lands of this\\\",
+					                \\\"\u00a7fworld, has hardened to the point which it is unmeltable! No\\\",
+					                \\\"\u00a7ftorch or lantern can sweat this ice, no matter the proximity.\\\",
+					                \\\"\u00a7fWhile on my travels, I have learned a mysterious method for\\\",
+					                \\\"\u00a7fsynthesizing this material, and will trade it for the right\\\",
+					                \\\"\u00a7fprice.\\\"
+												]
+											}
+										}
+									},
+									buyB:
+									{
+										id: \\\"barrier\\\",
+										Count: 1,
+										tag:
+										{
+											display:
+											{
+												Name: \\\"\u00a7l-->\\\"
+											}
+										}
+									},
+									sell:
+									{
+										id: \\\"barrier\\\",
+										Count: 1,
+										tag:
+										{
+											display:
+											{
+												Name: \\\"\u00a7l-->\\\"
+											}
+										}
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"ice\\\",
+										Count: 16
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"packed_ice\\\",
+										Count: 4
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"snow\\\",
+										Count: 64
+									},
+									buyB:
+									{
+										id: \\\"snow\\\",
+										Count: 64
+									},
+									sell:
+									{
+										id: \\\"ice\\\",
+										Count: 32
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"snow\\\",
+										Count: 64
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"packed_ice\\\",
+										Count: 8
+									}
+								}
+							]
+					  }
+					}
+				}\"
+			}
+		}"
+	}
+}

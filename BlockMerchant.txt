@@ -1,8 +1,8 @@
 /summon Villager ~ ~ ~ {
 		CustomName: "Block Merchant",
 		CustomNameVisible: 0,
-    Profession: 0,
-		Career: 0,
+    Profession: 5,
+		Career: 5,
 		CareerLevel: 42,
 		CanPickUpLoot: 0,
 		PersistenceRequired: 1,
@@ -17,12 +17,285 @@
 		{
 			Recipes:
 			[
+				{
+					buy:
+					{
+						id: "stone_slab",
+						Damage: 0,
+						Count: 2
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+						tag:
+						{
+							BlockEntityTag:
+							{
+								Command:"/setblock ~ ~ ~ double_stone_slab 8",
+								auto:1
+							},
+							display:
+							{
+								Name: "§fDouble Stone Slab Seamless"
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "sandstone",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+						tag:
+						{
+							BlockEntityTag:
+							{
+								Command:"/setblock ~ ~ ~ double_stone_slab 9",
+								auto:1
+							},
+							display:
+							{
+								Name: "§fDouble Sandstone Slab Seamless"
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "red_sandstone",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+						tag:
+						{
+							BlockEntityTag:
+							{
+								Command:"/setblock ~ ~ ~ double_stone_slab2 8",
+								auto:1
+							},
+							display:
+							{
+								Name: "§fDouble Red Sandstone Slab Seamless"
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "log",
+						Damage: 0,
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+						tag:
+						{
+							BlockEntityTag:
+							{
+								Command:"/setblock ~ ~ ~ log 12",
+								auto:1
+							},
+							display:
+							{
+								Name: "§fOak Log Full Bark"
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "log",
+						Damage: 1,
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+						tag:
+						{
+							BlockEntityTag:
+							{
+								Command:"/setblock ~ ~ ~ log 13",
+								auto:1
+							},
+							display:
+							{
+								Name: "§fSpruce Log Full Bark"
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "log",
+						Damage: 2,
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+						tag:
+						{
+							BlockEntityTag:
+							{
+								Command:"/setblock ~ ~ ~ log 14",
+								auto:1
+							},
+							display:
+							{
+								Name: "§fBirch Log Full Bark"
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "log",
+						Damage: 3,
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+						tag:
+						{
+							BlockEntityTag:
+							{
+								Command:"/setblock ~ ~ ~ log 15",
+								auto:1
+							},
+							display:
+							{
+								Name: "§fJungle Log Full Bark"
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "log2",
+						Damage: 0,
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+						tag:
+						{
+							BlockEntityTag:
+							{
+								Command:"/setblock ~ ~ ~ log2 12",
+								auto:1
+							},
+							display:
+							{
+								Name: "§fAcacia Log Full Bark"
+							}
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id: "log2",
+						Damage: 1,
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "command_block",
+						Count: 1,
+						tag:
+						{
+							BlockEntityTag:
+							{
+								Command:"/setblock ~ ~ ~ log2 13",
+								auto:1
+							},
+							display:
+							{
+								Name: "§fDark Oak Log Full Bark"
+							}
+						}
+					}
+				},
         {
           buy:
           {
-            id: "diamond",
+            id: "piston",
             Count: 1
           },
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
           sell:
           {
             id: "command_block",
@@ -31,7 +304,7 @@
             {
               BlockEntityTag:
               {
-                Command:"/setblock ~ ~ ~ piston_head",
+                Command:"/setblock ~ ~ ~ piston_head 0",
                 auto:1
               },
               display:
@@ -44,7 +317,12 @@
 				{
 					buy:
 					{
-						id: "diamond",
+						id: "piston",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
 						Count: 1
 					},
 					sell:
@@ -68,7 +346,12 @@
         {
 					buy:
 					{
-						id: "diamond",
+						id: "piston",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
 						Count: 1
 					},
 					sell:
@@ -92,7 +375,12 @@
         {
 					buy:
 					{
-						id: "diamond",
+						id: "piston",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
 						Count: 1
 					},
 					sell:
@@ -116,7 +404,12 @@
         {
 					buy:
 					{
-						id: "diamond",
+						id: "piston",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
 						Count: 1
 					},
 					sell:
@@ -140,7 +433,12 @@
         {
 					buy:
 					{
-						id: "diamond",
+						id: "piston",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
 						Count: 1
 					},
 					sell:
@@ -161,10 +459,44 @@
             }
 					}
 				},
-        {
+				{
+          buy:
+          {
+            id: "sticky_piston",
+            Count: 1
+          },
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+          sell:
+          {
+            id: "command_block",
+            Count: 1,
+            tag:
+            {
+              BlockEntityTag:
+              {
+                Command:"/setblock ~ ~ ~ piston_head 8",
+                auto:1
+              },
+              display:
+              {
+                Name: "§fSticky Piston Head Down"
+              }
+            }
+          }
+        },
+				{
 					buy:
 					{
-						id: "diamond",
+						id: "sticky_piston",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
 						Count: 1
 					},
 					sell:
@@ -175,12 +507,12 @@
             {
               BlockEntityTag:
               {
-                Command:"/setblock ~ ~ ~ log 12",
+                Command:"/setblock ~ ~ ~ piston_head 9",
                 auto:1
               },
               display:
               {
-                Name: "§fOak Log Full Bark"
+                Name: "§fSticky Piston Head Up"
               }
             }
 					}
@@ -188,7 +520,12 @@
         {
 					buy:
 					{
-						id: "diamond",
+						id: "sticky_piston",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
 						Count: 1
 					},
 					sell:
@@ -199,12 +536,12 @@
             {
               BlockEntityTag:
               {
-                Command:"/setblock ~ ~ ~ log 13",
+                Command:"/setblock ~ ~ ~ piston_head 10",
                 auto:1
               },
               display:
               {
-                Name: "§fSpruce Log Full Bark"
+                Name: "§fSticky Piston Head North"
               }
             }
 					}
@@ -212,7 +549,12 @@
         {
 					buy:
 					{
-						id: "diamond",
+						id: "sticky_piston",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
 						Count: 1
 					},
 					sell:
@@ -223,12 +565,12 @@
             {
               BlockEntityTag:
               {
-                Command:"/setblock ~ ~ ~ log 14",
+                Command:"/setblock ~ ~ ~ piston_head 11",
                 auto:1
               },
               display:
               {
-                Name: "§fBirch Log Full Bark"
+                Name: "§fSticky Piston Head South"
               }
             }
 					}
@@ -236,7 +578,12 @@
         {
 					buy:
 					{
-						id: "diamond",
+						id: "sticky_piston",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
 						Count: 1
 					},
 					sell:
@@ -247,12 +594,12 @@
             {
               BlockEntityTag:
               {
-                Command:"/setblock ~ ~ ~ log 15",
+                Command:"/setblock ~ ~ ~ piston_head 12",
                 auto:1
               },
               display:
               {
-                Name: "§fJungle Log Full Bark"
+                Name: "§fSticky Piston Head West"
               }
             }
 					}
@@ -260,7 +607,12 @@
         {
 					buy:
 					{
-						id: "diamond",
+						id: "sticky_piston",
+						Count: 1
+					},
+					buyB:
+					{
+						id: "emerald",
 						Count: 1
 					},
 					sell:
@@ -271,108 +623,12 @@
             {
               BlockEntityTag:
               {
-                Command:"/setblock ~ ~ ~ log2 12",
+                Command:"/setblock ~ ~ ~ piston_head 13",
                 auto:1
               },
               display:
               {
-                Name: "§fAcacia Log Full Bark"
-              }
-            }
-					}
-				},
-        {
-					buy:
-					{
-						id: "diamond",
-						Count: 1
-					},
-					sell:
-					{
-						id: "command_block",
-						Count: 1,
-            tag:
-            {
-              BlockEntityTag:
-              {
-                Command:"/setblock ~ ~ ~ log2 13",
-                auto:1
-              },
-              display:
-              {
-                Name: "§fDark Oak Log Full Bark"
-              }
-            }
-					}
-				},
-        {
-					buy:
-					{
-						id: "diamond",
-						Count: 1
-					},
-					sell:
-					{
-						id: "command_block",
-						Count: 1,
-            tag:
-            {
-              BlockEntityTag:
-              {
-                Command:"/setblock ~ ~ ~ double_stone_slab 8",
-                auto:1
-              },
-              display:
-              {
-                Name: "§fDouble Stone Slab Seamless"
-              }
-            }
-					}
-				},
-        {
-					buy:
-					{
-						id: "diamond",
-						Count: 1
-					},
-					sell:
-					{
-						id: "command_block",
-						Count: 1,
-            tag:
-            {
-              BlockEntityTag:
-              {
-                Command:"/setblock ~ ~ ~ double_stone_slab 9",
-                auto:1
-              },
-              display:
-              {
-                Name: "§fDouble Sandstone Slab Seamless"
-              }
-            }
-					}
-				},
-        {
-					buy:
-					{
-						id: "diamond",
-						Count: 1
-					},
-					sell:
-					{
-						id: "command_block",
-						Count: 1,
-            tag:
-            {
-              BlockEntityTag:
-              {
-                Command:"/setblock ~ ~ ~ double_stone_slab2 8",
-                auto:1
-              },
-              display:
-              {
-                Name: "§fDouble Red Sandstone Slab Seamless"
+                Name: "§fSticky Piston Head East"
               }
             }
 					}
@@ -380,3 +636,664 @@
 			]
 		}
 	}
+
+
+--------------------------------------------------------------------------------
+
+
+/give @p sign 1 0 {
+  BlockEntityTag:
+  {
+    Text2:"
+    {
+      \"text\":\"Click\",
+      \"color\":\"blue\",
+      \"clickEvent\":
+      {
+        \"action\":\"run_command\",
+        \"value\":\"/setblock ~ ~ ~ command_block 2 replace
+        {
+          Command:
+					/summon Villager ~ ~ ~ {
+						CustomName: \\\"Block Merchant\\\",
+						CustomNameVisible: 0,
+				    Profession: 5,
+						Career: 5,
+						CareerLevel: 42,
+						CanPickUpLoot: 0,
+						PersistenceRequired: 1,
+						Attributes:
+						[
+							{
+								Name: \\\"generic.movementSpeed\\\",
+								Base: \\\"0f\\\"
+							}
+						],
+						Offers:
+						{
+							Recipes:
+							[
+								{
+									buy:
+									{
+										id: \\\"stone_slab\\\",
+										Damage: 0,
+										Count: 2
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+										tag:
+										{
+											BlockEntityTag:
+											{
+												Command:\\\"/setblock ~ ~ ~ double_stone_slab 8\\\",
+												auto:1
+											},
+											display:
+											{
+												Name: \\\"\u00a7fDouble Stone Slab Seamless\\\"
+											}
+										}
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"sandstone\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+										tag:
+										{
+											BlockEntityTag:
+											{
+												Command:\\\"/setblock ~ ~ ~ double_stone_slab 9\\\",
+												auto:1
+											},
+											display:
+											{
+												Name: \\\"\u00a7fDouble Sandstone Slab Seamless\\\"
+											}
+										}
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"red_sandstone\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+										tag:
+										{
+											BlockEntityTag:
+											{
+												Command:\\\"/setblock ~ ~ ~ double_stone_slab2 8\\\",
+												auto:1
+											},
+											display:
+											{
+												Name: \\\"\u00a7fDouble Red Sandstone Slab Seamless\\\"
+											}
+										}
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"log\\\",
+										Damage: 0,
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+										tag:
+										{
+											BlockEntityTag:
+											{
+												Command:\\\"/setblock ~ ~ ~ log 12\\\",
+												auto:1
+											},
+											display:
+											{
+												Name: \\\"\u00a7fOak Log Full Bark\\\"
+											}
+										}
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"log\\\",
+										Damage: 1,
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+										tag:
+										{
+											BlockEntityTag:
+											{
+												Command:\\\"/setblock ~ ~ ~ log 13\\\",
+												auto:1
+											},
+											display:
+											{
+												Name: \\\"\u00a7fSpruce Log Full Bark\\\"
+											}
+										}
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"log\\\",
+										Damage: 2,
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+										tag:
+										{
+											BlockEntityTag:
+											{
+												Command:\\\"/setblock ~ ~ ~ log 14\\\",
+												auto:1
+											},
+											display:
+											{
+												Name: \\\"\u00a7fBirch Log Full Bark\\\"
+											}
+										}
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"log\\\",
+										Damage: 3,
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+										tag:
+										{
+											BlockEntityTag:
+											{
+												Command:\\\"/setblock ~ ~ ~ log 15\\\",
+												auto:1
+											},
+											display:
+											{
+												Name: \\\"\u00a7fJungle Log Full Bark\\\"
+											}
+										}
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"log2\\\",
+										Damage: 0,
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+										tag:
+										{
+											BlockEntityTag:
+											{
+												Command:\\\"/setblock ~ ~ ~ log2 12\\\",
+												auto:1
+											},
+											display:
+											{
+												Name: \\\"\u00a7fAcacia Log Full Bark\\\"
+											}
+										}
+									}
+								},
+								{
+									buy:
+									{
+										id: \\\"log2\\\",
+										Damage: 1,
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+										tag:
+										{
+											BlockEntityTag:
+											{
+												Command:\\\"/setblock ~ ~ ~ log2 13\\\",
+												auto:1
+											},
+											display:
+											{
+												Name: \\\"\u00a7fDark Oak Log Full Bark\\\"
+											}
+										}
+									}
+								},
+				        {
+				          buy:
+				          {
+				            id: \\\"piston\\\",
+				            Count: 1
+				          },
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+				          sell:
+				          {
+				            id: \\\"command_block\\\",
+				            Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 0\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fPiston Head Down\\\"
+				              }
+				            }
+				          }
+				        },
+								{
+									buy:
+									{
+										id: \\\"piston\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 1\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fPiston Head Up\\\"
+				              }
+				            }
+									}
+								},
+				        {
+									buy:
+									{
+										id: \\\"piston\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 2\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fPiston Head North\\\"
+				              }
+				            }
+									}
+								},
+				        {
+									buy:
+									{
+										id: \\\"piston\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 3\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fPiston Head South\\\"
+				              }
+				            }
+									}
+								},
+				        {
+									buy:
+									{
+										id: \\\"piston\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 4\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fPiston Head West\\\"
+				              }
+				            }
+									}
+								},
+				        {
+									buy:
+									{
+										id: \\\"piston\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 5\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fPiston Head East\\\"
+				              }
+				            }
+									}
+								},
+								{
+				          buy:
+				          {
+				            id: \\\"sticky_piston\\\",
+				            Count: 1
+				          },
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+				          sell:
+				          {
+				            id: \\\"command_block\\\",
+				            Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 8\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fSticky Piston Head Down\\\"
+				              }
+				            }
+				          }
+				        },
+								{
+									buy:
+									{
+										id: \\\"sticky_piston\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 9\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fSticky Piston Head Up\\\"
+				              }
+				            }
+									}
+								},
+				        {
+									buy:
+									{
+										id: \\\"sticky_piston\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 10\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fSticky Piston Head North\\\"
+				              }
+				            }
+									}
+								},
+				        {
+									buy:
+									{
+										id: \\\"sticky_piston\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 11\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fSticky Piston Head South\\\"
+				              }
+				            }
+									}
+								},
+				        {
+									buy:
+									{
+										id: \\\"sticky_piston\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 12\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fSticky Piston Head West\\\"
+				              }
+				            }
+									}
+								},
+				        {
+									buy:
+									{
+										id: \\\"sticky_piston\\\",
+										Count: 1
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"command_block\\\",
+										Count: 1,
+				            tag:
+				            {
+				              BlockEntityTag:
+				              {
+				                Command:\\\"/setblock ~ ~ ~ piston_head 13\\\",
+				                auto:1
+				              },
+				              display:
+				              {
+				                Name: \\\"\u00a7fSticky Piston Head East\\\"
+				              }
+				            }
+									}
+								}
+							]
+						}
+					}
+				}\"
+			}
+		}"
+	}
+}

@@ -1,13 +1,12 @@
 /summon Villager ~ ~ ~ {
-	Profession: 1,
 	CustomName: "Armor Mage",
 	CustomNameVisible: 0,
+	Profession: 1,
 	Career: 1,
 	CareerLevel: 42,
 	CanPickUpLoot: 0,
 	PersistenceRequired: 1,
-	Attributes:
-	[
+	Attributes: [
 		{
 			Name:"generic.movementSpeed",
 			Base:"0f"
@@ -15,8 +14,7 @@
 	],
 	Offers:
 	{
-		Recipes:
-		[
+		Recipes: [
 			{
 				buy:
 				{
@@ -34,8 +32,7 @@
 					Count: 1,
 					tag:
 					{
-						StoredEnchantments:
-						[
+						StoredEnchantments: [
 							{
 								id:0,
 								lvl:1
@@ -43,8 +40,7 @@
 						],
 						display:
 						{
-							Lore:
-							[
+							Lore: [
 								"Reduces most damage"
 							]
 						}
@@ -68,8 +64,7 @@
 					Count: 1,
 					tag:
 					{
-						StoredEnchantments:
-						[
+						StoredEnchantments: [
 							{
 								id:1,
 								lvl:1
@@ -77,10 +72,8 @@
 						],
 						display:
 						{
-							Lore:
-							[
-								"Reduces fire damage",
-								"Every level reduces initiated burn time by 15%"
+							Lore: [
+								"Reduces fire damage"
 							]
 						}
 					}
@@ -103,8 +96,7 @@
 					Count: 1,
 					tag:
 					{
-						StoredEnchantments:
-						[
+						StoredEnchantments: [
 							{
 								id:2,
 								lvl:1
@@ -112,8 +104,7 @@
 						],
 						display:
 						{
-							Lore:
-							[
+							Lore: [
 								"Reduces fall damage"
 							]
 						}
@@ -137,8 +128,7 @@
 					Count: 1,
 					tag:
 					{
-						StoredEnchantments:
-						[
+						StoredEnchantments: [
 							{
 								id:3,
 								lvl:1
@@ -146,8 +136,7 @@
 						],
 						display:
 						{
-							Lore:
-							[
+							Lore: [
 								"Reduces explosion damage"
 							]
 						}
@@ -171,8 +160,7 @@
 					Count: 1,
 					tag:
 					{
-						StoredEnchantments:
-						[
+						StoredEnchantments: [
 							{
 								id:4,
 								lvl:1
@@ -180,8 +168,7 @@
 						],
 						display:
 						{
-							Lore:
-							[
+							Lore: [
 								"Reduces projectile damage"
 							]
 						}
@@ -197,7 +184,7 @@
 				buyB:
 				{
 					id: "emerald",
-					Count: 7
+					Count: 8
 				},
 				sell:
 				{
@@ -205,8 +192,7 @@
 					Count: 1,
 					tag:
 					{
-						StoredEnchantments:
-						[
+						StoredEnchantments: [
 							{
 								id:5,
 								lvl:1
@@ -214,10 +200,8 @@
 						],
 						display:
 						{
-							Lore:
-							[
-								"Extends underwater breathing time",
-								"+15 seconds breathing time per level, "
+							Lore: [
+								"Extends underwater breathing time"
 							]
 						}
 					}
@@ -232,7 +216,7 @@
 				buyB:
 				{
 					id: "emerald",
-					Count: 9
+					Count: 16
 				},
 				sell:
 				{
@@ -240,8 +224,7 @@
 					Count: 1,
 					tag:
 					{
-						StoredEnchantments:
-						[
+						StoredEnchantments: [
 							{
 								id:6,
 								lvl:1
@@ -249,8 +232,7 @@
 						],
 						display:
 						{
-							Lore:
-							[
+							Lore: [
 								"Increases underwater mining rate"
 							]
 						}
@@ -266,7 +248,7 @@
 				buyB:
 				{
 					id: "emerald",
-					Count: 7
+					Count: 8
 				},
 				sell:
 				{
@@ -274,8 +256,7 @@
 					Count: 1,
 					tag:
 					{
-						StoredEnchantments:
-						[
+						StoredEnchantments: [
 							{
 								id:7,
 								lvl:1
@@ -283,10 +264,8 @@
 						],
 						display:
 						{
-							Lore:
-							[
-								"Damages attackers",
-								"Chance of inflicting 1-4 damage"
+							Lore: [
+								"Damages attackers"
 							]
 						}
 					}
@@ -301,7 +280,7 @@
 				buyB:
 				{
 					id: "emerald",
-					Count: 9
+					Count: 8
 				},
 				sell:
 				{
@@ -309,8 +288,7 @@
 					Count: 1,
 					tag:
 					{
-						StoredEnchantments:
-						[
+						StoredEnchantments: [
 							{
 								id:8,
 								lvl:1
@@ -318,10 +296,8 @@
 						],
 						display:
 						{
-							Lore:
-							[
-								"Increases underwater movement speed",
-								"+33% speed in water per level"
+							Lore: [
+								"Increases underwater movement speed"
 							]
 						}
 					}
@@ -336,7 +312,7 @@
 				buyB:
 				{
 					id: "emerald",
-					Count: 5
+					Count: 16
 				},
 				sell:
 				{
@@ -344,19 +320,48 @@
 					Count: 1,
 					tag:
 					{
-						StoredEnchantments:
-						[
+						StoredEnchantments: [
 							{
-								id:34,
+								id:9,
 								lvl:1
 							}
 						],
 						display:
 						{
-							Lore:
-							[
-								"Increases durability",
-								"Tools last Level+1 times as long"
+							Lore: [
+								"Creates frosted ice blocks when walking over water"
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id: "book",
+					Count: 1
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 8
+				},
+				sell:
+				{
+					id: "enchanted_book",
+					Count: 1,
+					tag:
+					{
+						StoredEnchantments: [
+							{
+								id:10,
+								lvl:1
+							}
+						],
+						display:
+						{
+							Lore: [
+								"Prevents removal of the cursed item"
 							]
 						}
 					}
