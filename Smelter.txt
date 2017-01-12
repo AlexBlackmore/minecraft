@@ -1,550 +1,547 @@
 /summon Villager ~ ~ ~ {
-		Profession: 3,
-		CustomName: "Smelter",
-		CustomNameVisible: 0,
-		Career: 1,
-		CareerLevel: 42,
-		CanPickUpLoot: 0,
-		PersistenceRequired: 1,
-		Attributes:
-		[
-			{
-				Name: "generic.movementSpeed",
-				Base: "0f"
-			}
-		],
-		Offers:
+	Profession: 3,
+	CustomName: "Smelter",
+	CustomNameVisible: 0,
+	Career: 1,
+	CareerLevel: 42,
+	CanPickUpLoot: 0,
+	PersistenceRequired: 1,
+	Attributes: [
 		{
-			Recipes:
-			[
+			Name: "generic.movementSpeed",
+			Base: "0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
 				{
-					buy:
+					id: "written_book",
+					Count: 1,
+					tag:
 					{
-						id: "written_book",
-						Count: 1,
-						tag:
+						generation:3,
+						display:
 						{
-							generation:3,
-							display:
-							{
-								Name: "§fWelcome to the Smeltery!",
-								Lore:
-								[
-									"§7Trade an item to revert it to",
-									"§7it's core metallergic components."
-								]
-							}
-						}
-					},
-					buyB:
-					{
-						id: "barrier",
-						Count: 1,
-						tag:
-						{
-							display:
-							{
-								Name: " "
-							}
-						}
-					},
-					sell:
-					{
-						id: "barrier",
-						Count: 1,
-						tag:
-						{
-							display:
-							{
-								Name: " "
-							}
+							Name: "§fWelcome to the Smeltery!",
+							Lore: [
+								"§7Trade an item to revert it to",
+								"§7it's core metallergic components."
+							]
 						}
 					}
 				},
+				buyB:
 				{
-					buy:
+					id: "barrier",
+					Count: 1,
+					tag:
 					{
-						id: "compass",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 3
+						display:
+						{
+							Name: " "
+						}
 					}
 				},
+				sell:
 				{
-					buy:
-					{
-						id: "clock",
-						Count: 1
-					},
-					sell:
-					{
-						id: "gold_ingot",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "leather_helmet",
-						Count: 1
-					},
-					sell:
-					{
-						id: "leather",
-						Count: 4
-					}
-				},
-				{
-					buy:
-					{
-						id: "leather_chestplate",
-						Count: 1
-					},
-					sell:
-					{
-						id: "leather",
-						Count: 7
-					}
-				},
-				{
-					buy:
-					{
-						id: "leather_leggings",
-						Count: 1
-					},
-					sell:
-					{
-						id: "leather",
-						Count: 6
-					}
-				},
-				{
-					buy:
-					{
-						id: "leather_boots",
-						Count: 1
-					},
-					sell:
-					{
-						id: "leather",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "chainmail_helmet",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "chainmail_chestplate",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 5
-					}
-				},
-				{
-					buy:
-					{
-						id: "chainmail_leggings",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 4
-					}
-				},
-				{
-					buy:
-					{
-						id: "chainmail_boots",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 2
-					}
-				},
-				{
-					buy:
-					{
-						id: "golden_pickaxe",
-						Count: 1
-					},
-					sell:
-					{
-						id: "gold_ingot",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "golden_shovel",
-						Count: 1
-					},
-					sell:
-					{
-						id: "gold_ingot",
-						Count: 1
-					}
-				},
-				{
-					buy:
-					{
-						id: "golden_axe",
-						Count: 1
-					},
-					sell:
-					{
-						id: "gold_ingot",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "golden_sword",
-						Count: 1
-					},
-					sell:
-					{
-						id: "gold_ingot",
-						Count: 2
-					}
-				},
-				{
-					buy:
-					{
-						id: "golden_helmet",
-						Count: 1
-					},
-					sell:
-					{
-						id: "gold_ingot",
-						Count: 4
-					}
-				},
-				{
-					buy:
-					{
-						id: "golden_chestplate",
-						Count: 1
-					},
-					sell:
-					{
-						id: "gold_ingot",
-						Count: 7
-					}
-				},
-				{
-					buy:
-					{
-						id: "golden_leggings",
-						Count: 1
-					},
-					sell:
-					{
-						id: "gold_ingot",
-						Count: 6
-					}
-				},
-				{
-					buy:
-					{
-						id: "golden_boots",
-						Count: 1
-					},
-					sell:
-					{
-						id: "gold_ingot",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "golden_horse_armor",
-						Count: 1
-					},
-					sell:
-					{
-						id: "gold_ingot",
-						Count: 12
-					}
-				},
-				{
-					buy:
-					{
-						id: "iron_pickaxe",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "iron_shovel",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 1
-					}
-				},
-				{
-					buy:
-					{
-						id: "iron_axe",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "iron_sword",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 2
-					}
-				},
-				{
-					buy:
-					{
-						id: "iron_helmet",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "iron_chestplate",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 7
-					}
-				},
-				{
-					buy:
-					{
-						id: "iron_leggings",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 6
-					}
-				},
-				{
-					buy:
-					{
-						id: "iron_boots",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "iron_horse_armor",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 12
-					}
-				},
-				{
-					buy:
-					{
-						id: "diamond_pickaxe",
-						Count: 1
-					},
-					sell:
-					{
-						id: "diamond",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "diamond_shovel",
-						Count: 1
-					},
-					sell:
-					{
-						id: "diamond",
-						Count: 1
-					}
-				},
-				{
-					buy:
-					{
-						id: "diamond_axe",
-						Count: 1
-					},
-					sell:
-					{
-						id: "diamond",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "diamond_sword",
-						Count: 1
-					},
-					sell:
-					{
-						id: "diamond",
-						Count: 2
-					}
-				},
-				{
-					buy:
-					{
-						id: "diamond_helmet",
-						Count: 1
-					},
-					sell:
-					{
-						id: "diamond",
-						Count: 4
-					}
-				},
-				{
-					buy:
-					{
-						id: "diamond_chestplate",
-						Count: 1
-					},
-					sell:
-					{
-						id: "diamond",
-						Count: 7
-					}
-				},
-				{
-					buy:
-					{
-						id: "diamond_leggings",
-						Count: 1
-					},
-					sell:
-					{
-						id: "diamond",
-						Count: 6
-					}
-				},
-				{
-					buy:
-					{
-						id: "diamond_boots",
-						Count: 1
-					},
-					sell:
-					{
-						id: "diamond",
-						Count: 3
-					}
-				},
-				{
-					buy:
-					{
-						id: "diamond_horse_armor",
-						Count: 1
-					},
-					sell:
-					{
-						id: "diamond",
-						Count: 12
-					}
-				},
-				{
-					buy:
-					{
-						id: "anvil",
-						Count: 1,
-						Damage: 0
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 30
-					}
-				},
-				{
-					buy:
-					{
-						id: "minecart",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 4
-					}
-				},
-				{
-					buy:
-					{
-						id: "iron_door",
-						Count: 1
-					},
-					sell:
-					{
-						id: "iron_ingot",
-						Count: 5
+					id: "barrier",
+					Count: 1,
+					tag:
+					{
+						display:
+						{
+							Name: " "
+						}
 					}
 				}
-			]
-		}
+			},
+			{
+				buy:
+				{
+					id: "compass",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "clock",
+					Count: 1
+				},
+				sell:
+				{
+					id: "gold_ingot",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "leather_helmet",
+					Count: 1
+				},
+				sell:
+				{
+					id: "leather",
+					Count: 4
+				}
+			},
+			{
+				buy:
+				{
+					id: "leather_chestplate",
+					Count: 1
+				},
+				sell:
+				{
+					id: "leather",
+					Count: 7
+				}
+			},
+			{
+				buy:
+				{
+					id: "leather_leggings",
+					Count: 1
+				},
+				sell:
+				{
+					id: "leather",
+					Count: 6
+				}
+			},
+			{
+				buy:
+				{
+					id: "leather_boots",
+					Count: 1
+				},
+				sell:
+				{
+					id: "leather",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "chainmail_helmet",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "chainmail_chestplate",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 5
+				}
+			},
+			{
+				buy:
+				{
+					id: "chainmail_leggings",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 4
+				}
+			},
+			{
+				buy:
+				{
+					id: "chainmail_boots",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 2
+				}
+			},
+			{
+				buy:
+				{
+					id: "golden_pickaxe",
+					Count: 1
+				},
+				sell:
+				{
+					id: "gold_ingot",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "golden_shovel",
+					Count: 1
+				},
+				sell:
+				{
+					id: "gold_ingot",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "golden_axe",
+					Count: 1
+				},
+				sell:
+				{
+					id: "gold_ingot",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "golden_sword",
+					Count: 1
+				},
+				sell:
+				{
+					id: "gold_ingot",
+					Count: 2
+				}
+			},
+			{
+				buy:
+				{
+					id: "golden_helmet",
+					Count: 1
+				},
+				sell:
+				{
+					id: "gold_ingot",
+					Count: 4
+				}
+			},
+			{
+				buy:
+				{
+					id: "golden_chestplate",
+					Count: 1
+				},
+				sell:
+				{
+					id: "gold_ingot",
+					Count: 7
+				}
+			},
+			{
+				buy:
+				{
+					id: "golden_leggings",
+					Count: 1
+				},
+				sell:
+				{
+					id: "gold_ingot",
+					Count: 6
+				}
+			},
+			{
+				buy:
+				{
+					id: "golden_boots",
+					Count: 1
+				},
+				sell:
+				{
+					id: "gold_ingot",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "golden_horse_armor",
+					Count: 1
+				},
+				sell:
+				{
+					id: "gold_ingot",
+					Count: 12
+				}
+			},
+			{
+				buy:
+				{
+					id: "iron_pickaxe",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "iron_shovel",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "iron_axe",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "iron_sword",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 2
+				}
+			},
+			{
+				buy:
+				{
+					id: "iron_helmet",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "iron_chestplate",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 7
+				}
+			},
+			{
+				buy:
+				{
+					id: "iron_leggings",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 6
+				}
+			},
+			{
+				buy:
+				{
+					id: "iron_boots",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "iron_horse_armor",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 12
+				}
+			},
+			{
+				buy:
+				{
+					id: "diamond_pickaxe",
+					Count: 1
+				},
+				sell:
+				{
+					id: "diamond",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "diamond_shovel",
+					Count: 1
+				},
+				sell:
+				{
+					id: "diamond",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "diamond_axe",
+					Count: 1
+				},
+				sell:
+				{
+					id: "diamond",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "diamond_sword",
+					Count: 1
+				},
+				sell:
+				{
+					id: "diamond",
+					Count: 2
+				}
+			},
+			{
+				buy:
+				{
+					id: "diamond_helmet",
+					Count: 1
+				},
+				sell:
+				{
+					id: "diamond",
+					Count: 4
+				}
+			},
+			{
+				buy:
+				{
+					id: "diamond_chestplate",
+					Count: 1
+				},
+				sell:
+				{
+					id: "diamond",
+					Count: 7
+				}
+			},
+			{
+				buy:
+				{
+					id: "diamond_leggings",
+					Count: 1
+				},
+				sell:
+				{
+					id: "diamond",
+					Count: 6
+				}
+			},
+			{
+				buy:
+				{
+					id: "diamond_boots",
+					Count: 1
+				},
+				sell:
+				{
+					id: "diamond",
+					Count: 3
+				}
+			},
+			{
+				buy:
+				{
+					id: "diamond_horse_armor",
+					Count: 1
+				},
+				sell:
+				{
+					id: "diamond",
+					Count: 12
+				}
+			},
+			{
+				buy:
+				{
+					id: "anvil",
+					Count: 1,
+					Damage: 0
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 30
+				}
+			},
+			{
+				buy:
+				{
+					id: "minecart",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 4
+				}
+			},
+			{
+				buy:
+				{
+					id: "iron_door",
+					Count: 1
+				},
+				sell:
+				{
+					id: "iron_ingot",
+					Count: 5
+				}
+			}
+		]
 	}
+}
 
 --------------------------------------------------------------------------------
 

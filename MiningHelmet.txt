@@ -2,13 +2,11 @@
   display:
   {
     Name: "§bMining Helmet",
-    Lore:
-    [
+    Lore: [
       "§5Provides light when worn"
     ]
   },
-  ench:
-  [
+  ench: [
     {
       id: 34,
       lvl: 10
@@ -29,7 +27,7 @@
       \"clickEvent\":
       {
         \"action\":\"run_command\",
-        \"value\":\"/setblock ~ ~ ~ command_block 2 replace 
+        \"value\":\"/setblock ~ ~ ~ command_block 2 replace
         {
           Command:
           /give @p golden_helmet 1 0 {
