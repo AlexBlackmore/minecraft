@@ -1,0 +1,673 @@
+/summon Villager ~ ~ ~ {
+	CustomName: "Fish Merchant",
+	CustomNameVisible: 0,
+	Profession: 0,
+	Career: 2,
+	CareerLevel: 42,
+	CanPickUpLoot: 0,
+	PersistenceRequired: 1,
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id: "emerald",
+					Count: 1
+				},
+				sell:
+				{
+					id: "fish",
+          Damage: 0,
+					Count: 6
+				}
+			},
+      {
+				buy:
+				{
+					id: "emerald",
+					Count: 1
+				},
+				sell:
+				{
+					id: "fish",
+          Damage: 1,
+					Count: 6
+				}
+			},
+      {
+				buy:
+				{
+					id: "emerald",
+					Count: 1
+				},
+				sell:
+				{
+					id: "fish",
+          Damage: 2,
+					Count: 4
+				}
+			},
+      {
+				buy:
+				{
+					id: "emerald",
+					Count: 1
+				},
+				sell:
+				{
+					id: "fish",
+          Damage: 3,
+					Count: 2
+				}
+			},
+      {
+				buy:
+				{
+					id: "emerald",
+					Count: 3
+				},
+				sell:
+				{
+					id: "bow",
+					Count: 1
+				}
+			},
+      {
+				buy:
+				{
+					id: "enchanted_book",
+					Count: 1
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 4
+				}
+			},
+      {
+				buy:
+				{
+					id: "emerald",
+					Count: 6
+				},
+				sell:
+				{
+					id: "fishing_rod",
+					Count: 1
+				}
+			},
+      {
+				buy:
+				{
+					id: "emerald",
+					Count: 22
+				},
+				sell:
+				{
+					id: "name_tag",
+					Count: 1
+				}
+			},
+      {
+				buy:
+				{
+					id: "leather",
+					Count: 5
+				},
+        buyB:
+        {
+          id: "iron_ingot",
+          Count: 3
+        },
+				sell:
+				{
+					id: "saddle",
+					Count: 1
+				}
+			},
+      {
+				buy:
+				{
+					id: "emerald",
+					Count: 1
+				},
+				sell:
+				{
+					id: "waterlily",
+					Count: 8
+				}
+			},
+      {
+        buy:
+        {
+          id: "fishing_rod",
+          Count: 1
+        },
+				buyB:
+				{
+					id: "emerald",
+					Count: 16
+				},
+				sell:
+				{
+					id: "fishing_rod",
+					Count: 1,
+          tag:
+          {
+            display:
+            {
+              Name: "§9Old Rod",
+              Lore: [
+                "§7Worn-out Fishing Rod"
+              ]
+            },
+            ench: [
+              {
+                id: 61,
+                lvl: 1
+              },
+              {
+                id: 62,
+                lvl: 1
+              },
+              {
+                id: 34,
+                lvl: 1
+              }
+            ],
+						HideFlags: 1
+          }
+				}
+			},
+      {
+        buy:
+				{
+					id: "fishing_rod",
+					Count: 1,
+          tag:
+          {
+            display:
+            {
+              Name: "§9Old Rod",
+              Lore: [
+                "§7Worn-out Fishing Rod"
+              ]
+            },
+            ench: [
+              {
+                id: 61,
+                lvl: 1
+              },
+              {
+                id: 62,
+                lvl: 1
+              },
+              {
+                id: 34,
+                lvl: 1
+              }
+            ],
+						HideFlags: 1
+          }
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 32
+				},
+				sell:
+				{
+					id: "fishing_rod",
+					Count: 1,
+          tag:
+          {
+            display:
+            {
+              Name: "§aGood Rod",
+              Lore: [
+                "§7Good Fishing Rod"
+              ]
+            },
+            ench: [
+              {
+                id: 61,
+                lvl: 2
+              },
+              {
+                id: 62,
+                lvl: 2
+              },
+              {
+                id: 34,
+                lvl: 2
+              }
+            ],
+						HideFlags: 1
+          }
+				}
+			},
+      {
+        buy:
+				{
+					id: "fishing_rod",
+					Count: 1,
+          tag:
+          {
+            display:
+            {
+              Name: "§aGood Rod",
+              Lore: [
+                "§7Good Fishing Rod"
+              ]
+            },
+            ench: [
+              {
+                id: 61,
+                lvl: 2
+              },
+              {
+                id: 62,
+                lvl: 2
+              },
+              {
+                id: 34,
+                lvl: 2
+              }
+            ],
+						HideFlags: 1
+          }
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 64
+				},
+				sell:
+				{
+					id: "fishing_rod",
+					Count: 1,
+          tag:
+          {
+            display:
+            {
+              Name: "§6Super Rod",
+              Lore: [
+                "§7Amazing Fishing Rod"
+              ]
+            },
+            ench: [
+              {
+                id: 61,
+                lvl: 3
+              },
+              {
+                id: 62,
+                lvl: 3
+              },
+              {
+                id: 34,
+                lvl: 3
+              }
+            ],
+						HideFlags: 1
+          }
+				}
+			}
+		]
+  }
+}
+
+
+--------------------------------------------------------------------------------
+
+
+/give @p sign 1 0 {
+  BlockEntityTag:
+  {
+    Text2:"
+    {
+      \"text\":\"Click\",
+      \"color\":\"blue\",
+      \"clickEvent\":
+      {
+        \"action\":\"run_command\",
+        \"value\":\"/setblock ~ ~ ~ command_block 2 replace
+        {
+          Command:
+					/summon Villager ~ ~ ~ {
+						CustomName: \\\"Fish Merchant\\\",
+						CustomNameVisible: 0,
+						Profession: 0,
+						Career: 2,
+						CareerLevel: 42,
+						CanPickUpLoot: 0,
+						PersistenceRequired: 1,
+						Attributes: [
+							{
+								Name:\\\"generic.movementSpeed\\\",
+								Base:\\\"0f\\\"
+							}
+						],
+						Offers:
+						{
+							Recipes: [
+								{
+									buy:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"fish\\\",
+					          Damage: 0,
+										Count: 6
+									}
+								},
+					      {
+									buy:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"fish\\\",
+					          Damage: 1,
+										Count: 6
+									}
+								},
+					      {
+									buy:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"fish\\\",
+					          Damage: 2,
+										Count: 4
+									}
+								},
+					      {
+									buy:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"fish\\\",
+					          Damage: 3,
+										Count: 2
+									}
+								},
+					      {
+									buy:
+									{
+										id: \\\"emerald\\\",
+										Count: 3
+									},
+									sell:
+									{
+										id: \\\"bow\\\",
+										Count: 1
+									}
+								},
+					      {
+									buy:
+									{
+										id: \\\"enchanted_book\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"emerald\\\",
+										Count: 4
+									}
+								},
+					      {
+									buy:
+									{
+										id: \\\"emerald\\\",
+										Count: 6
+									},
+									sell:
+									{
+										id: \\\"fishing_rod\\\",
+										Count: 1
+									}
+								},
+					      {
+									buy:
+									{
+										id: \\\"emerald\\\",
+										Count: 22
+									},
+									sell:
+									{
+										id: \\\"name_tag\\\",
+										Count: 1
+									}
+								},
+					      {
+									buy:
+									{
+										id: \\\"leather\\\",
+										Count: 5
+									},
+					        buyB:
+					        {
+					          id: \\\"iron_ingot\\\",
+					          Count: 3
+					        },
+									sell:
+									{
+										id: \\\"saddle\\\",
+										Count: 1
+									}
+								},
+					      {
+									buy:
+									{
+										id: \\\"emerald\\\",
+										Count: 1
+									},
+									sell:
+									{
+										id: \\\"waterlily\\\",
+										Count: 8
+									}
+								},
+					      {
+					        buy:
+					        {
+					          id: \\\"fishing_rod\\\",
+					          Count: 1
+					        },
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 16
+									},
+									sell:
+									{
+										id: \\\"fishing_rod\\\",
+										Count: 1,
+					          tag:
+					          {
+					            display:
+					            {
+					              Name: \\\"\u00a79Old Rod\\\",
+					              Lore: [
+					                \\\"\u00a77Worn-out Fishing Rod\\\"
+					              ]
+					            },
+					            ench: [
+					              {
+					                id: 61,
+					                lvl: 1
+					              },
+					              {
+					                id: 62,
+					                lvl: 1
+					              },
+					              {
+					                id: 34,
+					                lvl: 1
+					              }
+					            ],
+											HideFlags: 1
+					          }
+									}
+								},
+					      {
+					        buy:
+									{
+										id: \\\"fishing_rod\\\",
+										Count: 1,
+					          tag:
+					          {
+					            display:
+					            {
+					              Name: \\\"\u00a79Old Rod\\\",
+					              Lore: [
+					                \\\"\u00a77Worn-out Fishing Rod\\\"
+					              ]
+					            },
+					            ench: [
+					              {
+					                id: 61,
+					                lvl: 1
+					              },
+					              {
+					                id: 62,
+					                lvl: 1
+					              },
+					              {
+					                id: 34,
+					                lvl: 1
+					              }
+					            ],
+											HideFlags: 1
+					          }
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 32
+									},
+									sell:
+									{
+										id: \\\"fishing_rod\\\",
+										Count: 1,
+					          tag:
+					          {
+					            display:
+					            {
+					              Name: \\\"\u00a7aGood Rod\\\",
+					              Lore: [
+					                \\\"\u00a77Good Fishing Rod\\\"
+					              ]
+					            },
+					            ench: [
+					              {
+					                id: 61,
+					                lvl: 2
+					              },
+					              {
+					                id: 62,
+					                lvl: 2
+					              },
+					              {
+					                id: 34,
+					                lvl: 2
+					              }
+					            ],
+											HideFlags: 1
+					          }
+									}
+								},
+					      {
+					        buy:
+									{
+										id: \\\"fishing_rod\\\",
+										Count: 1,
+					          tag:
+					          {
+					            display:
+					            {
+					              Name: \\\"\u00a7aGood Rod\\\",
+					              Lore: [
+					                \\\"\u00a77Good Fishing Rod\\\"
+					              ]
+					            },
+					            ench: [
+					              {
+					                id: 61,
+					                lvl: 2
+					              },
+					              {
+					                id: 62,
+					                lvl: 2
+					              },
+					              {
+					                id: 34,
+					                lvl: 2
+					              }
+					            ],
+											HideFlags: 1
+					          }
+									},
+									buyB:
+									{
+										id: \\\"emerald\\\",
+										Count: 64
+									},
+									sell:
+									{
+										id: \\\"fishing_rod\\\",
+										Count: 1,
+					          tag:
+					          {
+					            display:
+					            {
+					              Name: \\\"\u00a76Super Rod\\\",
+					              Lore: [
+					                \\\"\u00a77Amazing Fishing Rod\\\"
+					              ]
+					            },
+					            ench: [
+					              {
+					                id: 61,
+					                lvl: 3
+					              },
+					              {
+					                id: 62,
+					                lvl: 3
+					              },
+					              {
+					                id: 34,
+					                lvl: 3
+					              }
+					            ],
+											HideFlags: 1
+					          }
+									}
+								}
+							]
+					  }
+					}
+				}\"
+			}
+		}"
+	}
+}
