@@ -1,0 +1,153 @@
+/summon Villager ~ ~ ~ {
+	CustomName: "Junk Merchant",
+	CustomNameVisible: 0,
+	Profession: 0,
+	Career: 2,
+	CareerLevel: 42,
+	CanPickUpLoot: 0,
+	PersistenceRequired: 1,
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id: "bowl",
+					Count: 16
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+      {
+				buy:
+				{
+					id: "fishing_rod",
+					Count: 1
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 4
+				}
+			},
+      {
+				buy:
+				{
+					id: "leather",
+					Count: 6
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+      {
+				buy:
+				{
+					id: "leather_boots",
+					Count: 1
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 2
+				}
+			},
+      {
+				buy:
+				{
+					id: "rotten_flesh",
+					Count: 32
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+      {
+				buy:
+				{
+					id: "stick",
+					Count: 64
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+      {
+				buy:
+				{
+					id: "string",
+					Count: 8
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+      {
+				buy:
+				{
+					id: "glass_bottle",
+					Count: 32
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+      {
+				buy:
+				{
+					id: "bone",
+					Count: 24
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+      {
+				buy:
+				{
+					id: "dye",
+          Damage: 0,
+					Count: 10
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 4
+				}
+			},
+      {
+				buy:
+				{
+					id: "tripwire_hook",
+					Count: 6
+				},
+				sell:
+				{
+					id: "emerald",
+					Count: 1
+				}
+			},
+		]
+  }
+}

@@ -18,60 +18,13 @@
 			{
 				buy:
 				{
-					id: "written_book",
-					Count: 1,
-					tag:
-					{
-						generation:3,
-						display:
-						{
-							Name: "§fHello fellow adventurer!",
-							Lore: [
-								"§fI have gone to the deepest, darkest dimension of this world",
-								"§fand returned to you with wonders beyond imagination. Rocks",
-								"§fstained with the blood of countless adventurers! Molten",
-								"§frods hotter than lava! The tears of monstrous ghouls, whose",
-								"§fscreams would haunt your nightmares!",
-								"§fAll of this and more can be yours, for a price."
-							]
-						}
-					}
-				},
-				buyB:
-				{
-					id: "barrier",
-					Count: 1,
-					tag:
-					{
-						display:
-						{
-							Name: "§l-->"
-						}
-					}
-				},
-				sell:
-				{
-					id: "barrier",
-					Count: 1,
-					tag:
-					{
-						display:
-						{
-							Name: "§l-->"
-						}
-					}
-				}
-			},
-			{
-				buy:
-				{
 					id: "emerald",
 					Count: 1
 				},
 				sell:
 				{
 					id: "netherrack",
-					Count: 8
+					Count: 64
 				}
 			},
 			{
@@ -83,7 +36,7 @@
 				sell:
 				{
 					id: "soul_sand",
-					Count: 8
+					Count: 32
 				}
 			},
 			{
@@ -95,7 +48,7 @@
 				sell:
 				{
 					id: "obsidian",
-					Count: 3
+					Count: 4
 				}
 			},
 			{
@@ -107,7 +60,7 @@
 				sell:
 				{
 					id: "nether_brick",
-					Count: 4
+					Count: 16
 				}
 			},
 			{
@@ -131,7 +84,7 @@
 				sell:
 				{
 					id: "magma",
-					Count: 5
+					Count: 8
 				}
 			},
 			{
@@ -179,6 +132,19 @@
 				sell:
 				{
 					id: "ghast_tear",
+					Count: 1
+				}
+			},
+			{
+				buy:
+				{
+					id: "diamond",
+					Count: 16
+				},
+				sell:
+				{
+					id: "skull",
+					Damage: 1,
 					Count: 1
 				}
 			}

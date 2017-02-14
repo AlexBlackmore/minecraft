@@ -1,0 +1,183 @@
+/summon Villager ~ ~ ~ {
+		CustomName:"Mob Tamer",
+		CustomNameVisible: 0,
+		Profession:0,
+		Career:0,
+		PersistenceRequired:1,
+		CanPickUpLoot:0,
+		CareerLevel:42,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+        {
+          buy:
+          {
+            id: "nether_star",
+            Count: 1
+          },
+          buyB:
+          {
+            id: "diamond",
+            Count: 64
+          },
+          sell:
+          {
+            id: "mob_spawner",
+            Count: 1
+          }
+        },
+        {
+          buy:
+          {
+            id: "glowstone_dust",
+            Count: 64
+          },
+          buyB:
+          {
+            id: "redstone",
+            Count: 64
+          },
+          sell:
+          {
+            id: "spawn_egg",
+            Count: 1,
+            tag:
+            {
+              EntityTag:
+              {
+                id:"minecraft:witch"
+              }
+            }
+          }
+        },
+        {
+          buy:
+          {
+            id: "prismarine_shard",
+            Count: 64
+          },
+          buyB:
+          {
+            id: "fish",
+            Count: 64
+          },
+          sell:
+          {
+            id: "spawn_egg",
+            Count: 1,
+            tag:
+            {
+              EntityTag:
+              {
+                id:"minecraft:guardian"
+              }
+            }
+          }
+        },
+				{
+          buy:
+          {
+            id: "shulker_shell",
+            Count: 64
+          },
+          buyB:
+          {
+            id: "shulker_shell",
+            Count: 64
+          },
+          sell:
+          {
+            id: "spawn_egg",
+            Count: 1,
+            tag:
+            {
+              EntityTag:
+              {
+                id:"minecraft:shulker"
+              }
+            }
+          }
+        },
+				{
+          buy:
+          {
+            id: "blaze_rod",
+            Count: 64
+          },
+          buyB:
+          {
+            id: "blaze_rod",
+            Count: 64
+          },
+          sell:
+          {
+            id: "spawn_egg",
+            Count: 1,
+            tag:
+            {
+              EntityTag:
+              {
+                id:"minecraft:blaze"
+              }
+            }
+          }
+        },
+				{
+          buy:
+          {
+            id: "ghast_tear",
+            Count: 64
+          },
+          buyB:
+          {
+            id: "gunpowder",
+            Count: 64
+          },
+          sell:
+          {
+            id: "spawn_egg",
+            Count: 1,
+            tag:
+            {
+              EntityTag:
+              {
+                id:"minecraft:ghast"
+              }
+            }
+          }
+        },
+				{
+          buy:
+          {
+            id: "coal",
+            Count: 64
+          },
+          buyB:
+          {
+            id: "bone",
+            Count: 64
+          },
+          sell:
+          {
+            id: "spawn_egg",
+            Count: 1,
+            tag:
+            {
+              EntityTag:
+              {
+                id:"minecraft:wither_skeleton"
+              }
+            }
+          }
+        }
+			]
+		}
+	}
