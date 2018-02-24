@@ -1,12 +1,12 @@
 summon Villager ~ ~ ~ {
   CustomName:"Telengard Architect",
   CustomNameVisible:0,
-  CareerLevel:42,
 	Profession:3,
   Career:1,
+  CareerLevel:42,
 	CanPickUpLoot:0,
   PersistenceRequired:1,
-	Attributes:[
+	Attributes: [
 		{
 			Name:"generic.movementSpeed",
 			Base:"0f"
@@ -14,7 +14,7 @@ summon Villager ~ ~ ~ {
 	],
 	Offers:
 	{
-		Recipes:[
+		Recipes: [
 			{
         buy:
         {
@@ -27,14 +27,781 @@ summon Villager ~ ~ ~ {
 					Count:1,
 					tag:
 					{
-            title:"§cTelengard Materials List",
+            title:"§9Telengard Materials List",
             author:"Mojang Construction Co.",
             generation:3,
-						pages:["[\"\",{\"text\":\"Cobblestone * \"},{\"text\":\"1280\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"20*64\"}},{\"text\":\"\\nStone Bricks * \",\"color\":\"reset\"},{\"text\":\"1024\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"16*64\"}},{\"text\":\"\\nWood Planks * \",\"color\":\"reset\"},{\"text\":\"960\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"15*64\"}},{\"text\":\"\\nWood Stairs * \",\"color\":\"reset\"},{\"text\":\"832\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"13*64\"}},{\"text\":\"\\nLogs * \",\"color\":\"reset\"},{\"text\":\"576\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"9*64\"}},{\"text\":\"\\nOak Slab * \",\"color\":\"reset\"},{\"text\":\"512\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"8*64\"}},{\"text\":\"\\nLeaves * \",\"color\":\"reset\"},{\"text\":\"192\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"3*64\"}},{\"text\":\"\\nFence * \",\"color\":\"reset\"},{\"text\":\"128\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"2*64\"}},{\"text\":\"\\nWool * \",\"color\":\"reset\"},{\"text\":\"128\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"2*64\"}},{\"text\":\"\\nStone Brick Stair * \",\"color\":\"reset\"},{\"text\":\"96\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"1*64 + 32\"}},{\"text\":\"\\nBookshelf * \",\"color\":\"reset\"},{\"text\":\"80\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"1*64 + 16\"}},{\"text\":\"\\nCarpet * \",\"color\":\"reset\"},{\"text\":\"64\",\"bold\":true},{\"text\":\"\\nChests * \",\"color\":\"reset\"},{\"text\":\"64\",\"bold\":true},{\"text\":\"\\nCobble Stairs * \",\"color\":\"reset\"},{\"text\":\"64\",\"bold\":true},{\"text\":\"\\nPistons * \",\"color\":\"reset\"},{\"text\":\"64\",\"bold\":true}]","[\"\",{\"text\":\"Stone Brick Slab * \"},{\"text\":\"64\",\"bold\":true},{\"text\":\"\\nTorch * \",\"color\":\"reset\"},{\"text\":\"48\",\"bold\":true},{\"text\":\"\\nIron Bars * \",\"color\":\"reset\"},{\"text\":\"40\",\"bold\":true},{\"text\":\"\\nHay Bale * \",\"color\":\"reset\"},{\"text\":\"32\",\"bold\":true},{\"text\":\"\\nCobblestone Wall * \",\"color\":\"reset\"},{\"text\":\"24\",\"bold\":true},{\"text\":\"\\nGlowstone * \",\"color\":\"reset\"},{\"text\":\"24\",\"bold\":true},{\"text\":\"\\nGlass Panes * \",\"color\":\"reset\"},{\"text\":\"24\",\"bold\":true},{\"text\":\"\\nHopper * \",\"color\":\"reset\"},{\"text\":\"24\",\"bold\":true},{\"text\":\"\\nStone Buttons * \",\"color\":\"reset\"},{\"text\":\"24\",\"bold\":true},{\"text\":\"\\nCrafting Table * \",\"color\":\"reset\"},{\"text\":\"16\",\"bold\":true},{\"text\":\"\\nSigns * \",\"color\":\"reset\"},{\"text\":\"16\",\"bold\":true},{\"text\":\"\\nFlower Pot * \",\"color\":\"reset\"},{\"text\":\"12\",\"bold\":true},{\"text\":\"\\nBrewing Stand * \",\"color\":\"reset\"},{\"text\":\"8\",\"bold\":true},{\"text\":\"\\nIron Door * \",\"color\":\"reset\"},{\"text\":\"8\",\"bold\":true},{\"text\":\"\\nRedstone Torch * \",\"color\":\"reset\"},{\"text\":\"8\",\"bold\":true}]","[\"\",{\"text\":\"Spruce Door * \"},{\"text\":\"8\",\"bold\":true},{\"text\":\"\\nTrapdoors * \",\"color\":\"reset\"},{\"text\":\"8\",\"bold\":true},{\"text\":\"\\nGolden Plate * \",\"color\":\"reset\"},{\"text\":\"4\",\"bold\":true},{\"text\":\"\\nIron Plate * \",\"color\":\"reset\"},{\"text\":\"4\",\"bold\":true},{\"text\":\"\\nAnvil * \",\"color\":\"reset\"},{\"text\":\"3\",\"bold\":true},{\"text\":\"\\nCake * \",\"color\":\"reset\"},{\"text\":\"3\",\"bold\":true},{\"text\":\"\\nCauldron * \",\"color\":\"reset\"},{\"text\":\"3\",\"bold\":true},{\"text\":\"\\nEnchantment Table * \",\"color\":\"reset\"},{\"text\":\"1\",\"bold\":true},{\"text\":\"\\nEnder Chest * \",\"color\":\"reset\"},{\"text\":\"1\",\"bold\":true}]"]
+						pages:["[\"\",{\"text\":\"Cobblestone * \"},{\"text\":\"1280\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"20*64\"}},{\"text\":\"\\nStone Bricks * \",\"color\":\"reset\"},{\"text\":\"1024\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"16*64\"}},{\"text\":\"\\nWood Planks * \",\"color\":\"reset\"},{\"text\":\"1024\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"16*64\"}},{\"text\":\"\\nWood Stairs * \",\"color\":\"reset\"},{\"text\":\"768\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"12*64\"}},{\"text\":\"\\nLogs * \",\"color\":\"reset\"},{\"text\":\"640\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"10*64\"}},{\"text\":\"\\nOak Slab * \",\"color\":\"reset\"},{\"text\":\"512\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"8*64\"}},{\"text\":\"\\nLeaves * \",\"color\":\"reset\"},{\"text\":\"128\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"2*64\"}},{\"text\":\"\\nFence * \",\"color\":\"reset\"},{\"text\":\"128\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"2*64\"}},{\"text\":\"\\nWool * \",\"color\":\"reset\"},{\"text\":\"128\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"2*64\"}},{\"text\":\"\\nStone Brick Stair * \",\"color\":\"reset\"},{\"text\":\"96\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"1*64 + 32\"}},{\"text\":\"\\nBookshelf * \",\"color\":\"reset\"},{\"text\":\"80\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"1*64 + 16\"}},{\"text\":\"\\nCarpet * \",\"color\":\"reset\"},{\"text\":\"64\",\"bold\":true},{\"text\":\"\\nChests * \",\"color\":\"reset\"},{\"text\":\"64\",\"bold\":true},{\"text\":\"\\nCobble Stairs * \",\"color\":\"reset\"},{\"text\":\"64\",\"bold\":true}]","[\"\",{\"text\":\"Pistons * \",\"color\":\"reset\"},{\"text\":\"64\",\"bold\":true},{\"text\":\"\\nStone Brick Slab * \"},{\"text\":\"64\",\"bold\":true},{\"text\":\"\\nTorch * \",\"color\":\"reset\"},{\"text\":\"48\",\"bold\":true},{\"text\":\"\\nIron Bars * \",\"color\":\"reset\"},{\"text\":\"40\",\"bold\":true},{\"text\":\"\\nHay Bale * \",\"color\":\"reset\"},{\"text\":\"32\",\"bold\":true},{\"text\":\"\\nGlass Panes * \",\"color\":\"reset\"},{\"text\":\"24\",\"bold\":true},{\"text\":\"\\nHopper * \",\"color\":\"reset\"},{\"text\":\"24\",\"bold\":true},{\"text\":\"\\nCrafting Table * \",\"color\":\"reset\"},{\"text\":\"16\",\"bold\":true},{\"text\":\"\\nSigns * \",\"color\":\"reset\"},{\"text\":\"16\",\"bold\":true},{\"text\":\"\\nFlower Pot * \",\"color\":\"reset\"},{\"text\":\"12\",\"bold\":true},{\"text\":\"\\nSpruce Door * \"},{\"text\":\"8\",\"bold\":true},{\"text\":\"\\nAnvil * \",\"color\":\"reset\"},{\"text\":\"\\nCauldron * \",\"color\":\"reset\"},{\"text\":\"3\",\"bold\":true},{\"text\":\"\\nEnchantment Table * \",\"color\":\"reset\"},{\"text\":\"1\",\"bold\":true}]"]
 					}
-				},
-        rewardExp:0
-			}
+				}
+			},
+      {
+        buy:
+        {
+          id:"paper",
+          Count:63,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"diamond",
+          Count:64
+        },
+        sell:
+        {
+          id:"written_book",
+          Count:1,
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"cobblestone",
+          Count:64
+        },
+        buyB:
+        {
+          id:"cobblestone",
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483637,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"stonebrick",
+          Count:64
+        },
+        buyB:
+        {
+          id:"stonebrick",
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483639,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"planks",
+          Damage:0,
+          Count:64
+        },
+        buyB:
+        {
+          id:"planks",
+          Damage:0,
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483639,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"oak_stairs",
+          Count:64
+        },
+        buyB:
+        {
+          id:"oak_stairs",
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483641,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"log",
+          Damage:0,
+          Count:64
+        },
+        buyB:
+        {
+          id:"log",
+          Damage:0,
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483642,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"wooden_slab",
+          Damage:0,
+          Count:64
+        },
+        buyB:
+        {
+          id:"wooden_slab",
+          Damage:0,
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483643,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"leaves",
+          Count:64
+        },
+        buyB:
+        {
+          id:"leaves",
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"fence",
+          Count:64
+        },
+        buyB:
+        {
+          id:"fence",
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"wool",
+          Damage:0,
+          Count:64
+        },
+        buyB:
+        {
+          id:"wool",
+          Damage:0,
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"stone_brick_stairs",
+          Count:64
+        },
+        buyB:
+        {
+          id:"stone_brick_stairs",
+          Count:32
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"bookshelf",
+          Count:64
+        },
+        buyB:
+        {
+          id:"bookshelf",
+          Count:16
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"carpet",
+          Damage:0,
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"chest",
+          Damage:0,
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"stone_stairs",
+          Damage:0,
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"piston",
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"stone_slab",
+          Damage:5,
+          Count:64
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"torch",
+          Count:48
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"iron_bars",
+          Count:40
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"hay_block",
+          Count:32
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"glass_pane",
+          Count:24
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"hopper",
+          Count:24
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"crafting_table",
+          Count:16
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"sign",
+          Count:16
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"flower_pot",
+          Count:12
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"spruce_door",
+          Count:8
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"anvil",
+          Count:3
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"cauldron",
+          Count:3
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"enchanting_table",
+          Count:1
+        },
+        sell:
+        {
+          id:"paper",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Materials Ticket",
+              Lore: [
+                "Project: Telengard"
+              ]
+            }
+          }
+        },
+        uses:2147483646,
+        maxUses:2147483647
+      }
 		]
 	}
 }
