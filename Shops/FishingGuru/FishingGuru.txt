@@ -1,0 +1,162 @@
+summon Villager ~ ~ ~ {
+	CustomName:"Fishing Guru",
+	CustomNameVisible:0,
+	Profession:5,
+	Career:1,
+	CareerLevel:42,
+	CanPickUpLoot:0,
+	PersistenceRequired:1,
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+      {
+        buy:
+        {
+          id:"barrier",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:" "
+            }
+          }
+        },
+        sell:
+        {
+          id:"written_book",
+          Count:1,
+          tag:
+          {
+            generation:3,
+            display:
+            {
+              Name:"§fI'm the Fishing Guru!",
+              Lore: [
+                "§7I simply Looove fishing! Fishing is a way of life!",
+                "§7From the seas to rivers, go out and land the big one, young one!",
+              ]
+            }
+          }
+        }
+      },
+      {
+				buy:
+				{
+					id:"emerald",
+					Count:16
+				},
+				sell:
+				{
+					id:"fishing_rod",
+					Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§9Old Rod",
+              Lore: [
+                "§7Worn-out Fishing Rod"
+              ]
+            },
+            ench: [
+              {
+                id:61,
+                lvl:1
+              },
+              {
+                id:62,
+                lvl:1
+              },
+              {
+                id:34,
+                lvl:1
+              }
+            ],
+						HideFlags:1
+          }
+				}
+			},
+      {
+				buy:
+				{
+					id:"emerald",
+					Count:32
+				},
+				sell:
+				{
+					id:"fishing_rod",
+					Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§aGood Rod",
+              Lore: [
+                "§7Good Fishing Rod"
+              ]
+            },
+            ench: [
+              {
+                id:61,
+                lvl:2
+              },
+              {
+                id:62,
+                lvl:2
+              },
+              {
+                id:34,
+                lvl:2
+              }
+            ],
+						HideFlags:1
+          }
+				}
+			},
+      {
+        buy:
+				{
+					id:"emerald",
+					Count:64
+				},
+				sell:
+				{
+					id:"fishing_rod",
+					Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"§6Super Rod",
+              Lore: [
+                "§7Amazing Fishing Rod"
+              ]
+            },
+            ench: [
+              {
+                id:61,
+                lvl:4
+              },
+              {
+                id:62,
+                lvl:4
+              },
+              {
+                id:34,
+                lvl:4
+              }
+            ],
+						HideFlags:1
+          }
+				}
+			}
+		]
+  }
+}

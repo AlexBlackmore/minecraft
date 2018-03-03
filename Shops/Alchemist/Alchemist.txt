@@ -1,0 +1,327 @@
+summon Villager ~ ~ ~ {
+	CustomName:"Alchemist",
+	Profession:2,
+	CustomNameVisible:0,
+	PersistenceRequired:1,
+	CanPickUpLoot:0,
+	Career:1,
+	CareerLevel:42,
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"luck"
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"§fPotion of Regeneration",
+							Lore: [
+								"§9Regeneration II (1:00)"
+							]
+						},
+						Potion:"strong_regeneration",
+						CustomPotionEffects: [
+							{
+								Id:10,
+								Amplifier:1,
+								Duration:1200
+							}
+						],
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"§fPotion of Swiftness",
+							Lore: [
+								"§9Speed II (4:00)",
+								"",
+								"§5When Applied:",
+								"§9+40% Speed"
+							]
+						},
+						Potion:"strong_swiftness",
+						CustomPotionEffects: [
+							{
+								Id:1,
+								Amplifier:1,
+								Duration:4800
+							}
+						],
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"§fPotion of Strength",
+							Lore: [
+								"§9Strength II (4:00)",
+								"",
+								"§5When Applied:",
+								"§9+6 Attack Damage"
+							]
+						},
+						Potion:"strong_strength",
+						CustomPotionEffects: [
+							{
+								Id:5,
+								Amplifier:1,
+								Duration:4800
+							}
+						],
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"empty",
+						display:
+						{
+							Name:"§fPotion of Haste",
+							Lore: [
+								"§9Haste II (3:00)"
+							]
+						},
+						CustomPotionEffects: [
+							{
+								Id:3,
+								Amplifier:1,
+								Duration:3600
+							}
+						],
+						CustomPotionColor:28557379,
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"empty",
+						CustomPotionEffects: [
+							{
+								Id:23,
+								Amplifier:0,
+								Duration:9600
+							}
+						],
+						display:
+						{
+							Name:"§fPotion of Saturation",
+							Lore: [
+								"§9Saturation (8:00)"
+							]
+						},
+						CustomPotionColor:16262179,
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"empty",
+						CustomPotionEffects: [
+							{
+								Id:22,
+								Amplifier:0,
+								Duration:1800
+							}
+						],
+						display:
+						{
+							Name:"§fPotion of Absorption",
+							Lore: [
+								"§9Absorption (1:30)"
+							]
+						},
+						CustomPotionColor:2445989,
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"empty",
+						CustomPotionEffects: [
+							{
+								Id:22,
+								Amplifier:1,
+								Duration:1200
+							}
+						],
+						display:
+						{
+							Name:"§fPotion of Absorption",
+							Lore: [
+								"§9Absorption II (1:00)"
+							]
+						},
+						CustomPotionColor:2445989,
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"empty",
+						CustomPotionEffects: [
+							{
+								Id:21,
+								Amplifier:0,
+								Duration:1800
+							}
+						],
+						display:
+						{
+							Name:"§fPotion of Health Boost",
+							Lore: [
+								"§9Health Boost (1:30)"
+							]
+						},
+						CustomPotionColor:16284963,
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"empty",
+						CustomPotionEffects: [
+							{
+								Id:21,
+								Amplifier:0,
+								Duration:1200
+							}
+						],
+						display:
+						{
+							Name:"§fPotion of Health Boost",
+							Lore: [
+								"§9Health Boost II (1:00)"
+							]
+						},
+						CustomPotionColor:16284963,
+						HideFlags:32
+					}
+				}
+			}
+		]
+	}
+}
