@@ -1,0 +1,68 @@
+summon Villager ~ ~ ~ {
+	CustomName:"Marc's Head Converter",
+	CustomNameVisible:0,
+	Profession:5,
+	Career:0,
+	PersistenceRequired:1,
+	CanPickUpLoot:0,
+	CareerLevel:42,
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+      {
+        buy:
+        {
+          id:"skull",
+          Count:1,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Enderman"
+          }
+        },
+        sell:
+        {
+          id:"skull",
+          Count:1,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Enderman",
+            display:
+            {
+              Name:"§fEnderman Head"
+            }
+          }
+        }
+      },
+      {
+        buy:
+        {
+          id:"skull",
+          Count:1,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Ocelot",
+            display:
+            {
+              Name:"§fOcelot Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"skull",
+          Count:1,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Ocelot"
+          }
+        },
+      },
+		]
+	}
+}

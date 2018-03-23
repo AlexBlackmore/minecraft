@@ -1,0 +1,1441 @@
+summon Villager ~ ~ ~ {
+	CustomName:"Marc's Mob Summoner",
+	CustomNameVisible:0,
+	Profession:5,
+	Career:0,
+	PersistenceRequired:1,
+	CanPickUpLoot:0,
+	CareerLevel:42,
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id:"potion",
+					Count:1,
+					tag:{
+						CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+						],
+						CustomPotionColor:16777215,
+						HideFlags:32,
+						display:
+						{
+							Name:"§bMob Essence",
+							Lore: [
+								"§5§k@@@@@@@@"
+							]
+						}
+					}
+				},
+				buyB:
+				{
+					id:"skull",
+					Count:8,
+					Damage:3,
+					tag: {
+						SkullOwner:"MHF_Blaze",
+						display:
+						{
+							Name:"§fBlaze Head"
+						}
+					}
+				},
+				sell:
+				{
+					id:"spawn_egg",
+					Count:1,
+					tag:
+					{
+						EntityTag:
+						{
+							id:"minecraft:blaze"
+						}
+					}
+				}
+			},
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+              {
+                Id:9,
+                Duration:200
+              }
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_CaveSpider",
+            display:
+            {
+              Name:"§fCave Spider Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:cave_spider"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Chicken",
+            display:
+            {
+              Name:"§fChicken Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:chicken"
+            }
+          }
+        }
+			},
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Cow",
+            display:
+            {
+              Name:"§fCow Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:cow"
+            }
+          }
+        }
+			},
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Creeper",
+            display:
+            {
+              Name:"§fCreeper Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:creeper"
+            }
+          }
+        }
+			},
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_EGuardian",
+            display:
+            {
+              Name:"§fElder Guardian Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:elder_guardian"
+            }
+          }
+        }
+			},
+      {
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Enderman",
+            display:
+            {
+              Name:"§fEnderman Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:enderman"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Endermite",
+            display:
+            {
+              Name:"§fEndermite Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:endermite"
+            }
+          }
+        }
+      },
+      {
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Ghast",
+            display:
+            {
+              Name:"§fGhast Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:ghast"
+            }
+          }
+        }
+      },
+      {
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Guardian",
+            display:
+            {
+              Name:"§fGuardian Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:guardian"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Illager",
+            display:
+            {
+              Name:"§fIllager Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:evocation_illager"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Illager",
+            display:
+            {
+              Name:"§fIllager Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:vindication_illager"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Illager",
+            display:
+            {
+              Name:"§fIllager Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:illusion_illager"
+            }
+          }
+        }
+      },
+      {
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+              {
+                Id:9,
+                Duration:200
+              }
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_LavaSlime",
+            display:
+            {
+              Name:"§fMagma Cube Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:magma_cube"
+            }
+          }
+        }
+      },
+      {
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+              {
+                Id:9,
+                Duration:200
+              }
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_MushroomCow",
+            display:
+            {
+              Name:"§fMooshroom Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:mooshroom"
+            }
+          }
+        }
+      },
+      {
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+              {
+                Id:9,
+                Duration:200
+              }
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Ocelot",
+            display:
+            {
+              Name:"§fOcelot Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:ocelot"
+            }
+          }
+        }
+      },
+      {
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+              {
+                Id:9,
+                Duration:200
+              }
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Pig",
+            display:
+            {
+              Name:"§fPig Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:pig"
+            }
+          }
+        }
+      },
+      {
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+              {
+                Id:9,
+                Duration:200
+              }
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Sheep",
+            display:
+            {
+              Name:"§fSheep Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:sheep"
+            }
+          }
+        }
+      },
+      {
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Shulker",
+            display:
+            {
+              Name:"§fShulker Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:shulker"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Skeleton",
+            display:
+            {
+              Name:"§fSkeleton Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:skeleton"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Slime",
+            display:
+            {
+              Name:"§fSlime Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:slime"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Spider",
+            display:
+            {
+              Name:"§fSpider Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:spider"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Squid",
+            display:
+            {
+              Name:"§fSquid Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:squid"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Stray",
+            display:
+            {
+              Name:"§fStray Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:stray"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Vex",
+            display:
+            {
+              Name:"§fVex Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:vex"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Villager",
+            display:
+            {
+              Name:"§fVillager Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:villager"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_WSkeleton",
+            display:
+            {
+              Name:"§fWither Skeleton Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:wither_skeleton"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_Zombie",
+            display:
+            {
+              Name:"§fZombie Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:zombie"
+            }
+          }
+        }
+      },
+			{
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:{
+            CustomPotionEffects: [
+							{
+								Id:9,
+								Duration:200
+							}
+            ],
+            CustomPotionColor:16777215,
+            HideFlags:32,
+            display:
+            {
+              Name:"§bMob Essence",
+              Lore: [
+                "§5§k@@@@@@@@"
+              ]
+            }
+          }
+        },
+        buyB:
+        {
+          id:"skull",
+          Count:8,
+          Damage:3,
+          tag: {
+            SkullOwner:"MHF_PigZombie",
+            display:
+            {
+              Name:"§fZombie Pigman Head"
+            }
+          }
+        },
+        sell:
+        {
+          id:"spawn_egg",
+          Count:1,
+          tag:
+          {
+            EntityTag:
+            {
+              id:"minecraft:zombie_pigman"
+            }
+          }
+        }
+      }
+		]
+	}
+}
