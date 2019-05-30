@@ -1,0 +1,71 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:brain_coral_fan"
+		},
+		"title": "Cooler Coral",
+		"description": "Collect some coral fans"
+	},
+	"parent": "custom:ocean/coral",
+	"criteria": {
+		"tube": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:tube_coral_fan"
+					}
+				]
+			}
+		},
+		"brain": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:brain_coral_fan"
+					}
+				]
+			}
+		},
+		"bubble": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:bubble_coral_fan"
+					}
+				]
+			}
+		},
+		"fire": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:fire_coral_fan"
+					}
+				]
+			}
+		},
+		"horn": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:horn_coral_fan"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"tube",
+			"brain",
+			"bubble",
+			"fire",
+			"horn"
+		]
+	]
+}

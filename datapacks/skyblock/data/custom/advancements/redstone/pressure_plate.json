@@ -1,0 +1,65 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stone_pressure_plate"
+        },
+        "title": "Under Pressure",
+        "description": "Craft a Pressure Plate"
+    },
+    "parent": "custom:redstone/root",
+    "criteria": {
+        "stone": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:stone_pressure_plate"
+            }
+        },
+		"oak": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:oak_pressure_plate"
+			}
+		},
+		"spruce": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:spruce_pressure_plate"
+			}
+		},
+		"birch": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:birch_pressure_plate"
+			}
+		},
+		"jungle": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:jungle_pressure_plate"
+			}
+		},
+		"acacia": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:acacia_pressure_plate"
+			}
+		},
+		"dark_oak": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:dark_oak_pressure_plate"
+			}
+		}
+    },
+	"requirements": [
+		[
+			"stone",
+			"oak",
+			"spruce",
+			"birch",
+			"jungle",
+			"acacia",
+			"dark_oak"
+		]
+	]
+}

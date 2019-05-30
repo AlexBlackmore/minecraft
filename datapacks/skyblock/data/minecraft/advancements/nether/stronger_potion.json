@@ -1,0 +1,79 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glowstone_dust"
+        },
+        "title": "Power Up",
+        "description": "Use glowstone dust to make a potion stronger"
+    },
+    "parent": "minecraft:nether/extend_potion",
+    "criteria": {
+		"strong_leaping": {
+			"trigger": "minecraft:brewed_potion",
+			"conditions": {
+				"potion": "minecraft:strong_leaping"
+			}
+		},
+		"strong_swiftness": {
+			"trigger": "minecraft:brewed_potion",
+			"conditions": {
+				"potion": "minecraft:strong_swiftness"
+			}
+		},
+		"strong_slowness": {
+			"trigger": "minecraft:brewed_potion",
+			"conditions": {
+				"potion": "minecraft:strong_slowness"
+			}
+		},
+		"strong_turtle_master": {
+			"trigger": "minecraft:brewed_potion",
+			"conditions": {
+				"potion": "minecraft:strong_turtle_master"
+			}
+		},
+		"strong_healing": {
+			"trigger": "minecraft:brewed_potion",
+			"conditions": {
+				"potion": "minecraft:strong_healing"
+			}
+		},
+		"strong_harming": {
+			"trigger": "minecraft:brewed_potion",
+			"conditions": {
+				"potion": "minecraft:strong_harming"
+			}
+		},
+		"strong_poison": {
+			"trigger": "minecraft:brewed_potion",
+			"conditions": {
+				"potion": "minecraft:strong_poison"
+			}
+		},
+		"strong_regeneration": {
+			"trigger": "minecraft:brewed_potion",
+			"conditions": {
+				"potion": "minecraft:strong_regeneration"
+			}
+		},
+		"strong_strength": {
+			"trigger": "minecraft:brewed_potion",
+			"conditions": {
+				"potion": "minecraft:strong_strength"
+			}
+		}
+    },
+	"requirements": [
+		[
+			"strong_leaping",
+			"strong_swiftness",
+			"strong_slowness",
+			"strong_turtle_master",
+			"strong_healing",
+			"strong_harming",
+			"strong_poison",
+			"strong_regeneration",
+			"strong_strength"
+		]
+	]
+}

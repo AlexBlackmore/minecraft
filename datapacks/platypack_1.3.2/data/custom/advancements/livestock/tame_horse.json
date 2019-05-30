@@ -1,0 +1,43 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:saddle"
+		},
+		"title": "Saddle Up",
+		"description": "Tame a horse"
+	},
+	"parent": "custom:livestock/tame_a_mob",
+	"criteria": {
+		"tame_horse": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:horse"
+				}
+			}
+		},
+		"tame_donkey": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:donkey"
+				}
+			}
+		},
+		"tame_mule": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:mule"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"tame_horse",
+			"tame_donkey",
+			"tame_mule"
+		]
+	]
+}

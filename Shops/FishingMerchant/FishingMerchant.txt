@@ -1,5 +1,5 @@
 summon Villager ~ ~ ~ {
-	CustomName:"Fish Merchant",
+	CustomName:"Fishing Merchant",
 	CustomNameVisible:0,
 	Profession:0,
 	Career:2,
@@ -126,13 +126,8 @@ summon Villager ~ ~ ~ {
 			{
 				buy:
 				{
-					id:"fishing_rod",
-					Count:1
-				},
-				buyB:
-				{
 					id:"emerald",
-					Count:8
+					Count:1
 				},
 				sell:
 				{
@@ -146,7 +141,29 @@ summon Villager ~ ~ ~ {
 						},
 						display:
 						{
-							Name:"§fFishing Loot Chest"
+							Name:"§fFishing Loot Chest",
+							Lore: [
+								"§748.0% Raw fish",
+								"§720.0% Raw salmon",
+								"§710.4% Pufferfish",
+								"§71.6% Bow",
+								"§71.6% Enchanted book",
+								"§71.6% Fishing rod",
+								"§71.6% Name tag",
+								"§71.6% Saddle",
+								"§71.6% Lily pad",
+								"§71.6% Clown fish",
+								"§70.6% Bowl",
+								"§70.6% Leather",
+								"§70.6% Leather boots",
+								"§70.6% Rotten flesh",
+								"§70.6% Water bottle",
+								"§70.6% Bone",
+								"§70.6% Tripwire hook",
+								"§70.3% Stick",
+								"§70.3% String",
+								"§70.06% Ink Sac",
+							]
 						}
 					}
 				}

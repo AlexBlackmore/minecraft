@@ -1,0 +1,20 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cod"
+		},
+		"title": "Timid Kitty",
+		"description": "Tame an ocelot"
+	},
+	"parent": "custom:exploration/tame_parrot",
+	"criteria": {
+		"ocelot": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:ocelot"
+				}
+			}
+		}
+	}
+}

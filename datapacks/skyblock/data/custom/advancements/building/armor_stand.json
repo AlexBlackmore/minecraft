@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:armor_stand"
+        },
+        "title": "Castle Guards",
+        "description": "Craft an armor stand to display your armor"
+    },
+    "parent": "custom:building/item_frame",		  
+    "criteria": {
+        "armor_stand": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:armor_stand"
+                    }
+                ]
+            }
+        }
+    }       
+}

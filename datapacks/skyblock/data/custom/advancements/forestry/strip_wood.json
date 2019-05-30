@@ -1,0 +1,82 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stripped_spruce_wood"
+        },
+        "title": "Lost Its Bark",
+        "description": "Strip a wood block of its bark"
+    },
+    "parent": "custom:forestry/wood",	
+    "criteria": {
+        "stripped_oak_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stripped_oak_wood"
+                    }
+                ]
+            }
+        },
+        "stripped_spruce_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stripped_spruce_wood"
+                    }
+                ]
+            }
+        },
+		"stripped_birch_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stripped_birch_wood"
+                    }
+                ]
+            }
+        },
+        "stripped_jungle_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stripped_jungle_wood"
+                    }
+                ]
+            }
+        },
+        "stripped_acacia_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stripped_acacia_wood"
+                    }
+                ]
+            }
+        },
+        "stripped_dark_oak_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stripped_dark_oak_wood"
+                    }
+                ]
+            }
+        }
+	},
+	"requirements": [
+		[
+			"stripped_oak_wood",
+			"stripped_spruce_wood",
+			"stripped_birch_wood",
+			"stripped_jungle_wood",
+			"stripped_acacia_wood",
+			"stripped_dark_oak_wood"
+		]
+	]
+}

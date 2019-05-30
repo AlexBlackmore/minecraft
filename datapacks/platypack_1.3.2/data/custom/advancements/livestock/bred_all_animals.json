@@ -1,0 +1,116 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_carrot"
+        },
+        "title": {
+            "translate": "advancements.husbandry.breed_all_animals.title"
+        },
+        "description": {
+            "translate": "advancements.husbandry.breed_all_animals.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "custom:livestock/breed_an_animal",
+	"rewards": {
+        "experience": 100
+    },
+    "criteria": {
+		"horse": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:horse"
+				}
+			}
+		},
+		"donkey": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:donkey"
+				}
+			}
+		},
+		"sheep": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:sheep"
+				}
+			}
+		},
+		"cow": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:cow"
+				}
+			}
+		},
+		"mooshroom": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:mooshroom"
+				}
+			}
+		},
+		"pig": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:pig"
+				}
+			}
+		},
+		"chicken": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:chicken"
+				}
+			}
+		},
+		"wolf": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:wolf"
+				}
+			}
+		},
+		"ocelot": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:ocelot"
+				}
+			}
+		},
+		"rabbit": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:rabbit"
+				}
+			}
+		},
+		"llama": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:llama"
+				}
+			}
+		},
+		"turtle": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:turtle"
+				}
+			}
+		}
+	}
+}

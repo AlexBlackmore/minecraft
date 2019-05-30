@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:flint_and_steel"
+        },
+        "title": "Got a Light?",
+        "description": "Combine a flint and iron ingot"
+    },
+    "parent": "custom:caving/flint",	
+    "criteria": {
+        "flint_and_steel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:flint_and_steel"
+                    }
+                ]
+            }
+        }
+    }
+}

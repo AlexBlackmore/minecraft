@@ -1,0 +1,114 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cobweb"
+		},
+		"title": "Here Before Us",
+		"description": "Find a structure in the world"
+	},
+	"parent": "custom:exploration/root",
+	"criteria": {
+		"buried_treasure": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Buried_Treasure"
+			}
+		},
+		"desert_temple": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Desert_Pyramid"
+			}
+		},
+		"end_city": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "EndCity"
+			}
+		},
+		"nether_fortress": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Fortress"
+			}
+		},
+		"igloo": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Igloo"
+			}
+		},
+		"jungle_temple": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Jungle_Pyramid"
+			}
+		},
+		"mansion": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Mansion"
+			}
+		},
+		"mineshaft": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Mineshaft"
+			}
+		},
+		"monument": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Monument"
+			}
+		},
+		"ocean_ruin": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Ocean_Ruin"
+			}
+		},
+		"shipwreck": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Shipwreck"
+			}
+		},
+		"stronghold": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Stronghold"
+			}
+		},	
+		"witch_hut": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Swamp_Hut"
+			}
+		},
+		"village": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Village"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"buried_treasure",
+			"desert_temple",
+			"end_city",
+			"nether_fortress",
+			"igloo",
+			"jungle_temple",
+			"mansion",
+			"mineshaft",
+			"monument",
+			"ocean_ruin",
+			"shipwreck",
+			"stronghold",
+			"witch_hut",
+			"village"
+		]
+	]
+}

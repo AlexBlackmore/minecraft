@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bedrock"
+		},
+		"title": "Unbreakable",
+		"description": "Where the ground starts to become unbreakable"
+	},
+	"parent": "custom:caving/lava_level",
+	"criteria": {
+		"5": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"position": {
+					"y": {
+						"max": 5
+					}
+				}
+			}
+		}
+	}
+}
+				

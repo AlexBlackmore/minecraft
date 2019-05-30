@@ -1,0 +1,52 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:salmon"
+		},
+		"title": "Now This Is Fishing!",
+		"description": "Use your fishing rod to catch a live fish"
+	},
+	"parent": "custom:ocean/fishy_business",
+	"criteria": {
+		"cod": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:cod"
+				}
+			}
+		},
+		"tropical_fish": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:tropical_fish"
+				}
+			}
+		},
+		"pufferfish": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:pufferfish"
+				}
+			}
+		},
+		"salmon": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:salmon"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"cod",
+			"tropical_fish",
+			"pufferfish",
+			"salmon"
+		]
+	]
+}

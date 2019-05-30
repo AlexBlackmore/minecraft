@@ -1,0 +1,106 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_pickaxe"
+		},
+		"title": "The Highest Tier",
+		"description": "Have full diamond tools and armor",
+		"frame": "challenge"
+	},
+	"parent": "minecraft:story/shiny_gear",
+	"rewards": {
+        "experience": 50
+    },
+	"criteria": {
+        "diamond_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_helmet"
+                    }
+                ]
+            }
+        },
+        "diamond_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_chestplate"
+                    }
+                ]
+            }
+        },
+        "diamond_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_leggings"
+                    }
+                ]
+            }
+        },
+        "diamond_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_boots"
+                    }
+                ]
+            }
+        },
+		"sword": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:diamond_sword"
+					}
+				]
+			}
+		},
+		"shovel": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:diamond_shovel"
+					}
+				]
+			}
+		},
+		"pickaxe": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:diamond_pickaxe"
+					}
+				]
+			}
+		},
+		"axe": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:diamond_axe"
+					}
+				]
+			}
+		},
+		"hoe": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:diamond_hoe"
+					}
+				]
+			}
+		}
+	}
+}

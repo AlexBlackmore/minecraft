@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "custom:blue_wool_easy"
+    ]
+  },
+  "criteria": {
+    "has_lapis": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lapis_lazuli"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "custom:blue_wool_easy"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_lapis",
+      "has_the_recipe"
+    ]
+  ]
+}

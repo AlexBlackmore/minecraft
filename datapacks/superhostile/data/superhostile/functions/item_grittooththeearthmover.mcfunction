@@ -1,0 +1,1 @@
+give @p diamond_shovel{display:{Name:"{\"text\":\"Grit-tooth, The Earth Mover\",\"italic\":false}"},Enchantments:[{id:efficiency,lvl:5},{id:unbreaking,lvl:4},{id:fortune,lvl:3}]}

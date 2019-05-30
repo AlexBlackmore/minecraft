@@ -1,0 +1,58 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:jungle_sapling"
+		},
+		"title": "Restoration",
+		"description": "Help restore a forest by planting a sapling"
+	},
+	"parent": "custom:forestry/sapling",
+	"criteria": {
+		"oak": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:oak_sapling"
+			}
+		},
+		"spruce": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:spruce_sapling"
+			}
+		},
+		"birch": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:birch_sapling"
+			}
+		},
+		"jungle": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:jungle_sapling"
+			}
+		},
+		"acacia": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:acacia_sapling"
+			}
+		},
+		"dark_oak": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:dark_oak_sapling"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"oak",
+			"spruce",
+			"birch",
+			"jungle",
+			"acacia",
+			"dark_oak"
+		]
+	]
+}

@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:item_frame"
+        },
+        "title": "On Display",
+        "description": "Craft an item frame for displaying your items"
+    },
+    "parent": "custom:building/sign",	
+    "criteria": {
+        "item_frame": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:item_frame"
+                    }
+                ]
+            }
+        }
+    }
+}

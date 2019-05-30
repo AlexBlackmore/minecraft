@@ -1,0 +1,18 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:chiseled_sandstone"
+		},
+		"title": "Tricky Treasure",
+		"description": "Enter a desert temple"
+	},
+	"parent": "custom:exploration/desert",
+	"criteria": {
+		"desert_pyramid": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"feature": "Desert_Pyramid"
+			}
+		}
+	}
+}

@@ -1,0 +1,116 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_boots"
+		},
+		"title": "Water Walker",
+		"description": "Use Depth Strider to walk in water"
+	},
+	"parent": "custom:ocean/boat",
+	"criteria": {
+		"leather": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:leather_boots",
+						"enchantments": [
+							{
+								"enchantment": "minecraft:depth_strider",
+								"levels": {
+									"max": 3,
+									"min": 1
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"chainmail": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:chainmail_boots",
+						"enchantments": [
+							{
+								"enchantment": "minecraft:depth_strider",
+								"levels": {
+									"max": 3,
+									"min": 1
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"iron": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:iron_boots",
+						"enchantments": [
+							{
+								"enchantment": "minecraft:depth_strider",
+								"levels": {
+									"max": 3,
+									"min": 1
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"diamond": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:diamond_boots",
+						"enchantments": [
+							{
+								"enchantment": "minecraft:depth_strider",
+								"levels": {
+									"max": 3,
+									"min": 1
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"gold": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:golden_boots",
+						"enchantments": [
+							{
+								"enchantment": "minecraft:depth_strider",
+								"levels": {
+									"max": 3,
+									"min": 1
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"leather",
+			"chainmail",
+			"iron",
+			"diamond",
+			"gold"
+		]
+	]
+}

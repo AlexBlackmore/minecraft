@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:totem_of_undying"
+        },
+        "title": {
+            "translate": "advancements.adventure.totem_of_undying.title"
+        },
+        "description": {
+            "translate": "Use a totem of undying to cheat death"
+        },
+        "frame": "goal"
+    },
+    "parent": "custom:exploration/enter_mansion",
+    "criteria": {
+        "totem_of_undying": {
+            "trigger": "minecraft:used_totem",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:totem_of_undying"
+                }
+            }
+        }
+    }
+}

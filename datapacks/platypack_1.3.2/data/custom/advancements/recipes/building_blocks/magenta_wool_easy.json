@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "custom:magenta_wool_easy"
+    ]
+  },
+  "criteria": {
+    "has_magenta": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:magenta_dye"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "custom:magenta_wool_easy"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_magenta",
+      "has_the_recipe"
+    ]
+  ]
+}

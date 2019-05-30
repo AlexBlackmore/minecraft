@@ -1,0 +1,30 @@
+{
+	"parent": "minecraft:recipes/root",
+	"rewards": {
+		"recipes": [
+			"custom:gray_dye"
+		]
+	},
+	"criteria": {
+		"has_gunpowder": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"item": "minecraft:gunpowder"
+				}]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "custom:gray_dye"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_gunpowder",
+			"has_the_recipe"
+		]
+	]
+}

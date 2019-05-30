@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:shield"
+		},
+		"title": "Defense!",
+		"description": "Craft a shield"
+	},
+	"parent": "custom:combat/root",
+	"criteria": {
+		"shield": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:shield"
+					}
+				]
+			}
+		}
+	}
+}

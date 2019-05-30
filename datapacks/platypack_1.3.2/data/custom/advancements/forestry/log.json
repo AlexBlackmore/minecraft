@@ -1,0 +1,82 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_log"
+        },
+        "title": "Log Off",
+        "description": "Collect a log from a tree"
+    },
+    "parent": "custom:forestry/root",	
+    "criteria": {
+        "oak_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:oak_log"
+                    }
+                ]
+            }
+        },
+        "spruce_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:spruce_log"
+                    }
+                ]
+            }
+        },
+		"birch_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:birch_log"
+                    }
+                ]
+            }
+        },
+        "jungle_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:jungle_log"
+                    }
+                ]
+            }
+        },
+        "acacia_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:acacia_log"
+                    }
+                ]
+            }
+        },
+        "dark_oak_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:dark_oak_log"
+                    }
+                ]
+            }
+        }
+	},
+	"requirements": [
+		[
+			"oak_log",
+			"spruce_log",
+			"birch_log",
+			"jungle_log",
+			"acacia_log",
+			"dark_oak_log"
+		]
+	]
+}

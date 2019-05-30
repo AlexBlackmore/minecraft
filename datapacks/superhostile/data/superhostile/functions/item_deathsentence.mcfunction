@@ -1,0 +1,1 @@
+give @p bow{display:{Name:"{\"text\":\"Death Sentence\",\"italic\":false}",Lore:["(bFfupk)"]},Enchantments:[{id:fire_aspect,lvl:10},{id:flame,lvl:1},{id:unbreaking,lvl:10},{id:power,lvl:5},{id:knockback,lvl:2}]}

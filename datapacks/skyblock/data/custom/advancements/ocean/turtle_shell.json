@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:turtle_helmet"
+		},
+		"title": "Hard Hat",
+		"description": "Wear a turtle shell",
+		"frame": "goal"
+	},
+	"parent": "custom:ocean/scute",
+	"criteria": {
+		"turtle_shell": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:turtle_helmet"
+					}
+				]
+			}
+		}
+	}
+}

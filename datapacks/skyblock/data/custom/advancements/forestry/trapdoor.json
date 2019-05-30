@@ -1,0 +1,82 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:jungle_trapdoor"
+        },
+        "title": "Under Here!",
+        "description": "Craft a trapdoor"
+    },
+    "parent": "custom:forestry/door",
+    "criteria": {
+        "oak_trapdoor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:oak_trapdoor"
+                    }
+                ]
+            }
+        },
+        "spruce_trapdoor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:spruce_trapdoor"
+                    }
+                ]
+            }
+        },
+		"birch_trapdoor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:birch_trapdoor"
+                    }
+                ]
+            }
+        },
+        "jungle_trapdoor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:jungle_trapdoor"
+                    }
+                ]
+            }
+        },
+        "acacia_trapdoor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:acacia_trapdoor"
+                    }
+                ]
+            }
+        },
+        "dark_oak_trapdoor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:dark_oak_trapdoor"
+                    }
+                ]
+            }
+        }
+	},
+	"requirements": [
+		[
+			"oak_trapdoor",
+			"spruce_trapdoor",
+			"birch_trapdoor",
+			"jungle_trapdoor",
+			"acacia_trapdoor",
+			"dark_oak_trapdoor"
+		]
+	]
+}

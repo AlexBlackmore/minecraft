@@ -1,0 +1,82 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_fence"
+		},
+		"title": "Oaken Corral",
+		"description": "Craft some fences to contain your livestock"
+	},
+	"parent": "custom:livestock/find_lead",
+	"criteria": {
+		"oak": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:oak_fence"
+					}
+				]
+			}
+		},
+		"spruce": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:spruce_fence"
+					}
+				]
+			}
+		},
+		"birch": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:birch_fence"
+					}
+				]
+			}
+		},
+		"jungle": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:jungle_fence"
+					}
+				]
+			}
+		},
+		"acacia": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:acacia_fence"
+					}
+				]
+			}
+		},
+		"dark_oak": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:dark_oak_fence"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"oak",
+			"spruce",
+			"birch",
+			"jungle",
+			"acacia",
+			"dark_oak"
+		]
+	]
+}

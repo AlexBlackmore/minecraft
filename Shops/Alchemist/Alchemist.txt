@@ -1,10 +1,10 @@
-summon Villager ~ ~ ~ {
-	CustomName:"Alchemist",
-	Profession:2,
+summon minecraft:villager ~ ~ ~ {
+	CustomName:"{\"text\":\"Alchemist\"}",
 	CustomNameVisible:0,
+	Career:1,
+	Profession:2,
 	PersistenceRequired:1,
 	CanPickUpLoot:0,
-	Career:1,
 	CareerLevel:42,
 	Attributes: [
 		{
@@ -18,89 +18,61 @@ summon Villager ~ ~ ~ {
 			{
 				buy:
 				{
-					id:"emerald",
-					Count:8
-				},
-				sell:
-				{
-					id:"potion",
-					Count:1,
-					tag:
-					{
-						Potion:"luck"
-					}
-				}
-			},
-			{
-				buy:
-				{
-					id:"emerald",
-					Count:8
-				},
-				sell:
-				{
-					id:"potion",
+					id:"barrier",
 					Count:1,
 					tag:
 					{
 						display:
 						{
-							Name:"§fPotion of Regeneration",
-							Lore: [
-								"§9Regeneration II (1:00)"
-							]
-						},
-						Potion:"strong_regeneration",
-						CustomPotionEffects: [
-							{
-								Id:10,
-								Amplifier:1,
-								Duration:1200
-							}
-						],
-						HideFlags:32
+							Name:"{\"text\":\" \"}"
+						}
 					}
-				}
-			},
-			{
-				buy:
-				{
-					id:"emerald",
-					Count:8
 				},
 				sell:
 				{
-					id:"potion",
+					id:"written_book",
 					Count:1,
 					tag:
 					{
+						generation:3,
 						display:
 						{
-							Name:"§fPotion of Swiftness",
+							Name:"{\"text\":\"How can I help you?\"}",
 							Lore: [
-								"§9Speed II (4:00)",
-								"",
-								"§5When Applied:",
-								"§9+40% Speed"
+								"§fLeaping (3:00) + §a$1 §f= Luck (3:00)",
+								"§fSwiftness (3:00) + §a$1 §f= Haste II (4:00)",
+								"§fNight Vision (3:00) + §a$1 §f= Saturation (8:00)",
+								"§fWater Breathing (3:00) + §a$1 §f= Conduit Power (3:00)",
+								"§fWater Breathing+ (8:00) + §a$1 §f= Dolphin's Grace (8:00)",
+								"§fHarming + §a$1 §f= Absorption (0:45)",
+								"§fHarming II + §a$1 §f= Absorption II (1:00)",
+								"§fHealing + §a$1 §f= Health Boost (0:45)",
+								"§fHealing II + §a$1 §f= Health Boost II (1:00)",
+								"§fRegeneration+ (1:30) + §a$1 §f= Regeneration II (1:00)",
+								"§fRegeneration II (0:21) + §a$1 §f= Regeneration II (1:00)",
+								"§fSwiftness+ (8:00) + §a$1 §f= Swiftness II (4:00)",
+								"§fSwiftness II (1:30) + §a$1 §f= Swiftness II (4:00)",
+								"§fStrength+ (8:00) + §a$1 §f= Strength II (4:00)",
+								"§fStrength II (1:30) + §a$1 §f= Strength II (4:00)",
 							]
-						},
-						Potion:"strong_swiftness",
-						CustomPotionEffects: [
-							{
-								Id:1,
-								Amplifier:1,
-								Duration:4800
-							}
-						],
-						HideFlags:32
+						}
 					}
 				}
 			},
 			{
 				buy:
 				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:leaping"
+					}
+				},
+				buyB:
+				{
 					id:"emerald",
-					Count:8
+					Count:1
 				},
 				sell:
 				{
@@ -108,33 +80,24 @@ summon Villager ~ ~ ~ {
 					Count:1,
 					tag:
 					{
-						display:
-						{
-							Name:"§fPotion of Strength",
-							Lore: [
-								"§9Strength II (4:00)",
-								"",
-								"§5When Applied:",
-								"§9+6 Attack Damage"
-							]
-						},
-						Potion:"strong_strength",
-						CustomPotionEffects: [
-							{
-								Id:5,
-								Amplifier:1,
-								Duration:4800
-							}
-						],
-						HideFlags:32
+						Potion:"minecraft:luck"
 					}
 				}
 			},
 			{
 				buy:
 				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:swiftness"
+					}
+				},
+				buyB:
+				{
 					id:"emerald",
-					Count:8
+					Count:1
 				},
 				sell:
 				{
@@ -142,19 +105,19 @@ summon Villager ~ ~ ~ {
 					Count:1,
 					tag:
 					{
-						Potion:"empty",
+						Potion:"minecraft:empty",
 						display:
 						{
 							Name:"§fPotion of Haste",
 							Lore: [
-								"§9Haste II (3:00)"
+								"§9Haste II (4:00)"
 							]
 						},
 						CustomPotionEffects: [
 							{
 								Id:3,
 								Amplifier:1,
-								Duration:3600
+								Duration:4800
 							}
 						],
 						CustomPotionColor:28557379,
@@ -165,8 +128,17 @@ summon Villager ~ ~ ~ {
 			{
 				buy:
 				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:night_vision"
+					}
+				},
+				buyB:
+				{
 					id:"emerald",
-					Count:8
+					Count:1
 				},
 				sell:
 				{
@@ -174,7 +146,7 @@ summon Villager ~ ~ ~ {
 					Count:1,
 					tag:
 					{
-						Potion:"empty",
+						Potion:"minecraft:empty",
 						CustomPotionEffects: [
 							{
 								Id:23,
@@ -197,8 +169,17 @@ summon Villager ~ ~ ~ {
 			{
 				buy:
 				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:long_regeneration"
+					}
+				},
+				buyB:
+				{
 					id:"emerald",
-					Count:8
+					Count:1
 				},
 				sell:
 				{
@@ -206,19 +187,271 @@ summon Villager ~ ~ ~ {
 					Count:1,
 					tag:
 					{
-						Potion:"empty",
+						display:
+						{
+							Name:"§fPotion of Regeneration",
+							Lore: [
+								"§9Regeneration II (1:00)"
+							]
+						},
+						Potion:"minecraft:strong_regeneration",
+						CustomPotionEffects: [
+							{
+								Id:10,
+								Amplifier:1,
+								Duration:1200
+							}
+						],
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:strong_regeneration"
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:1
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"§fPotion of Regeneration",
+							Lore: [
+								"§9Regeneration II (1:00)"
+							]
+						},
+						Potion:"minecraft:strong_regeneration",
+						CustomPotionEffects: [
+							{
+								Id:10,
+								Amplifier:1,
+								Duration:1200
+							}
+						],
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:long_swiftness"
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:1
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"§fPotion of Swiftness",
+							Lore: [
+								"§9Speed II (4:00)",
+								"",
+								"§5When Applied:",
+								"§9+40% Speed"
+							]
+						},
+						Potion:"minecraft:strong_swiftness",
+						CustomPotionEffects: [
+							{
+								Id:1,
+								Amplifier:1,
+								Duration:4800
+							}
+						],
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:strong_swiftness"
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:1
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"§fPotion of Swiftness",
+							Lore: [
+								"§9Speed II (4:00)",
+								"",
+								"§5When Applied:",
+								"§9+40% Speed"
+							]
+						},
+						Potion:"minecraft:strong_swiftness",
+						CustomPotionEffects: [
+							{
+								Id:1,
+								Amplifier:1,
+								Duration:4800
+							}
+						],
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:long_strength"
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:1
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"§fPotion of Strength",
+							Lore: [
+								"§9Strength II (4:00)",
+								"",
+								"§5When Applied:",
+								"§9+6 Attack Damage"
+							]
+						},
+						Potion:"minecraft:strong_strength",
+						CustomPotionEffects: [
+							{
+								Id:5,
+								Amplifier:1,
+								Duration:4800
+							}
+						],
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:strong_strength"
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:1
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"§fPotion of Strength",
+							Lore: [
+								"§9Strength II (4:00)",
+								"",
+								"§5When Applied:",
+								"§9+6 Attack Damage"
+							]
+						},
+						Potion:"minecraft:strong_strength",
+						CustomPotionEffects: [
+							{
+								Id:5,
+								Amplifier:1,
+								Duration:4800
+							}
+						],
+						HideFlags:32
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:harming"
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:1
+				},
+				sell:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:empty",
 						CustomPotionEffects: [
 							{
 								Id:22,
-								Amplifier:0,
-								Duration:1800
+								Amplifier:2,
+								Duration:900
 							}
 						],
 						display:
 						{
 							Name:"§fPotion of Absorption",
 							Lore: [
-								"§9Absorption (1:30)"
+								"§9Absorption (0:45)"
 							]
 						},
 						CustomPotionColor:2445989,
@@ -229,8 +462,17 @@ summon Villager ~ ~ ~ {
 			{
 				buy:
 				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:strong_harming"
+					}
+				},
+				buyB:
+				{
 					id:"emerald",
-					Count:8
+					Count:1
 				},
 				sell:
 				{
@@ -238,17 +480,17 @@ summon Villager ~ ~ ~ {
 					Count:1,
 					tag:
 					{
-						Potion:"empty",
+						Potion:"minecraft:empty",
 						CustomPotionEffects: [
 							{
 								Id:22,
-								Amplifier:1,
+								Amplifier:2,
 								Duration:1200
 							}
 						],
 						display:
 						{
-							Name:"§fPotion of Absorption",
+							Name:"§fPotion of Absorption II",
 							Lore: [
 								"§9Absorption II (1:00)"
 							]
@@ -261,8 +503,17 @@ summon Villager ~ ~ ~ {
 			{
 				buy:
 				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:healing"
+					}
+				},
+				buyB:
+				{
 					id:"emerald",
-					Count:8
+					Count:1
 				},
 				sell:
 				{
@@ -270,19 +521,19 @@ summon Villager ~ ~ ~ {
 					Count:1,
 					tag:
 					{
-						Potion:"empty",
+						Potion:"minecraft:empty",
 						CustomPotionEffects: [
 							{
 								Id:21,
 								Amplifier:0,
-								Duration:1800
+								Duration:900
 							}
 						],
 						display:
 						{
 							Name:"§fPotion of Health Boost",
 							Lore: [
-								"§9Health Boost (1:30)"
+								"§9Health Boost (0:45)"
 							]
 						},
 						CustomPotionColor:16284963,
@@ -293,8 +544,17 @@ summon Villager ~ ~ ~ {
 			{
 				buy:
 				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:strong_healing"
+					}
+				},
+				buyB:
+				{
 					id:"emerald",
-					Count:8
+					Count:1
 				},
 				sell:
 				{
@@ -302,17 +562,17 @@ summon Villager ~ ~ ~ {
 					Count:1,
 					tag:
 					{
-						Potion:"empty",
+						Potion:"minecraft:empty",
 						CustomPotionEffects: [
 							{
 								Id:21,
-								Amplifier:0,
+								Amplifier:1,
 								Duration:1200
 							}
 						],
 						display:
 						{
-							Name:"§fPotion of Health Boost",
+							Name:"§fPotion of Health Boost II",
 							Lore: [
 								"§9Health Boost II (1:00)"
 							]

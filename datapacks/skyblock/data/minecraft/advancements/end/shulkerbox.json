@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:shulker_box"
+		},
+		"title": "Portable Storage",
+		"description": "Craft a shulker box"
+	},
+	"parent": "minecraft:end/find_end_city",
+	"criteria": {
+		"shulkerbox": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+					"item": "minecraft:shulker_box"
+					}
+				]
+			}
+		}
+	}
+}

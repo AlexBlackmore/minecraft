@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:quartz"
+        },
+        "title": "Crystal Collection",
+        "description": "Mine quartz"
+    },
+    "parent": "minecraft:nether/root",
+    "criteria": {
+        "quartz": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:quartz"
+                    }
+                ]
+            }
+        }
+    }
+}

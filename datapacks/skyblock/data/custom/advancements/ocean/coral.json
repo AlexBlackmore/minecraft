@@ -1,0 +1,71 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:fire_coral"
+		},
+		"title": "Cooorrraallll",
+		"description": "Collect some coral"
+	},
+	"parent": "custom:ocean/green_in_the_blue",
+	"criteria": {
+		"tube": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:tube_coral"
+					}
+				]
+			}
+		},
+		"brain": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:brain_coral"
+					}
+				]
+			}
+		},
+		"bubble": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:bubble_coral"
+					}
+				]
+			}
+		},
+		"fire": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:fire_coral"
+					}
+				]
+			}
+		},
+		"horn": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:horn_coral"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"tube",
+			"brain",
+			"bubble",
+			"fire",
+			"horn"
+		]
+	]
+}

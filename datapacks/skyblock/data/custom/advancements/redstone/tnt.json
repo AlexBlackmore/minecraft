@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:tnt"
+        },
+        "title": "BOOM",
+        "description": "Craft TNT"
+    },
+    "parent": "custom:redstone/root",	
+    "criteria": {
+        "tnt": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:tnt"
+                    }
+                ]
+            }
+        }
+    }
+}

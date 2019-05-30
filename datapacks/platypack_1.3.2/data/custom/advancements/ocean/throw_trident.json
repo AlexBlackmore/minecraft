@@ -1,0 +1,34 @@
+{
+	"parent": "custom:ocean/drowned",
+	"display": {
+		"icon": {
+			"item": "minecraft:trident"
+		},
+		"title": {
+			"translate": "advancements.adventure.throw_trident.title"
+		},
+		"description": {
+			"translate": "advancements.adventure.throw_trident.description"
+		}
+	},
+	"criteria": {
+		"shot_trident": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"type": {
+						"is_projectile": true,
+						"direct_entity": {
+							"type": "minecraft:trident"
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"shot_trident"
+		]
+	]
+}

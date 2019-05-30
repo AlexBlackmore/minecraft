@@ -1,5 +1,5 @@
-summon Villager ~ ~ ~ {
-	CustomName:"Smelter",
+summon minecraft:villager ~ ~ ~ {
+	CustomName:"{\"text\":\"Smelter\"}",
 	CustomNameVisible:0,
 	Profession:3,
 	Career:1,
@@ -37,7 +37,7 @@ summon Villager ~ ~ ~ {
 						generation:3,
 						display:
 						{
-							Name:"§fWelcome to the Smeltery!",
+							Name:"{\"text\":\"Welcome to the Smeltery!\"}",
 							Lore: [
 								"§7Trade an item to revert it to",
 								"§7it's core metallergic components."
@@ -62,7 +62,6 @@ summon Villager ~ ~ ~ {
 				buy:
 				{
 					id:"anvil",
-					Damage:0,
 					Count:1
 				},
 				sell:
@@ -74,8 +73,7 @@ summon Villager ~ ~ ~ {
 			{
 				buy:
 				{
-					id:"anvil",
-					Damage:1,
+					id:"chipped_anvil",
 					Count:1
 				},
 				sell:
@@ -87,8 +85,7 @@ summon Villager ~ ~ ~ {
 			{
 				buy:
 				{
-					id:"anvil",
-					Damage:2,
+					id:"damaged_anvil",
 					Count:1
 				},
 				sell:

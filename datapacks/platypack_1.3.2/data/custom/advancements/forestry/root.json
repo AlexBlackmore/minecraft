@@ -1,0 +1,73 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:iron_axe"
+		},
+		"title": "Forestry",
+		"description": "Logs and leaves",
+		"background": "minecraft:textures/block/oak_log.png",
+		"show_toast": false,
+        "announce_to_chat": false
+	},
+	"criteria": {
+		"wooden": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:wooden_axe"
+					}
+				]
+			}
+		},
+		"golden": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:golden_axe"
+					}
+				]
+			}
+		},
+		"stone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:stone_axe"
+					}
+				]
+			}
+		},
+		"iron": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:iron_axe"
+					}
+				]
+			}
+		},
+		"diamond": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:diamond_axe"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"wooden",
+			"golden",
+			"stone",
+			"iron",
+			"diamond"
+		]
+	]
+}

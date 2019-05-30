@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "custom:white_wool_easy"
+    ]
+  },
+  "criteria": {
+    "has_white": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:bone_meal"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "custom:white_wool_easy"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_white",
+      "has_the_recipe"
+    ]
+  ]
+}

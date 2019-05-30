@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:comparator"
+        },
+        "title": "(Don't) Compare Yourself",
+        "description": "Craft and place a comparator"
+    },
+    "parent": "custom:redstone/repeater",
+    "criteria": {
+        "comparator": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:comparator"
+			}
+        }
+    }
+}

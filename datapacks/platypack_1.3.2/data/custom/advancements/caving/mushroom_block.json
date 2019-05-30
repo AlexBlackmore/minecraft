@@ -1,0 +1,49 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:mushroom_stem"
+        },
+        "title": "Overgrown",
+        "description": "Grow a giant mushroom then harvest it with silk touch"
+    },
+    "parent": "custom:caving/find_all_mushrooms",	
+    "criteria": {
+        "brown": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:brown_mushroom_block"
+                    }
+                ]
+            }
+        },
+		"red": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:red_mushroom_block"
+                    }
+                ]
+            }
+        },
+		"stem": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:mushroom_stem"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"brown",
+			"red",
+			"stem"
+		]
+	]
+}

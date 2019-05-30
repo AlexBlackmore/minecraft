@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:lava_bucket"
+		},
+		"title": "Hot Down Here",
+		"description": "Go so deep that lava seeps into open spaces"
+	},
+	"parent": "custom:caving/niamond_level",
+	"criteria": {
+		"10": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"position": {
+					"y": {
+						"max": 10
+					}
+				}
+			}
+		}
+	}
+}
+				

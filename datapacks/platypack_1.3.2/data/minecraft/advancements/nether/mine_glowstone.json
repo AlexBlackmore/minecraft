@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glowstone"
+        },
+        "title": "Glow Up",
+        "description": "Mine a glowstone block with silk touch"
+    },
+    "parent": "minecraft:nether/root", 
+    "criteria": {
+        "glowstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:glowstone"
+                    }
+                ]
+            }
+        }
+    }
+}

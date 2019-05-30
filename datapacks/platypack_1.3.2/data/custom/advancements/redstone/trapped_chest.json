@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:trapped_chest"
+        },
+        "title": "It's a Trap!",
+        "description": "Craft a trapped chest"
+    },
+    "parent": "custom:redstone/tripwire_hook",	
+    "criteria": {
+        "trapped_chest": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:trapped_chest"
+                    }
+                ]
+            }
+        }
+    }
+}

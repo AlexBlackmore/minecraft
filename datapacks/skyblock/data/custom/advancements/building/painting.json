@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": "A Masterpiece!",
+        "description": "Paint a painting"
+    },
+    "parent": "custom:building/sign",		
+    "criteria": {
+        "painting": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:painting"
+                    }
+                ]
+            }
+        }
+    }
+}

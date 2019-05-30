@@ -1,0 +1,71 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:wooden_hoe"
+		},
+		"title": "Time to Farm!",
+		"description": "Craft a hoe"
+	},
+	"parent": "minecraft:husbandry/root",
+	"criteria": {
+		"wood": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:wooden_hoe"
+					}
+				]
+			}
+		},
+		"stone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:stone_hoe"
+					}
+				]
+			}
+		},
+		"gold": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:golden_hoe"
+					}
+				]
+			}
+		},
+		"iron": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:iron_hoe"
+					}
+				]
+			}
+		},
+		"diamond": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:diamond_hoe"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"wood",
+			"stone",
+			"gold",
+			"iron",
+			"diamond"
+		]
+	]
+}

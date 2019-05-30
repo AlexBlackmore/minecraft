@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:observer"
+        },
+        "title": "Observe This!",
+        "description": "Craft and place an observer"
+    },
+    "parent": "custom:redstone/dispenser",	
+    "criteria": {
+        "observer": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:observer"
+            }
+        }
+    }
+}

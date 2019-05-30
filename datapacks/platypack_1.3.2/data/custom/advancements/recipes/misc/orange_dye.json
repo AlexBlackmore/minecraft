@@ -1,0 +1,30 @@
+{
+	"parent": "minecraft:recipes/root",
+	"rewards": {
+		"recipes": [
+			"custom:orange_dye"
+		]
+	},
+	"criteria": {
+		"has_pumpkin": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"item": "minecraft:pumpkin"
+				}]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "custom:orange_dye"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_pumpkin",
+			"has_the_recipe"
+		]
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cooked_chicken"
+		},
+		"title": "Thanksgiving Feast",
+		"description": "Eat turkey, potatoes, rolls, and pie for your feast",
+		"frame": "goal"
+	},
+	"parent": "minecraft:husbandry/pumpkin_pie",
+	"criteria": {
+		"pie": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:pumpkin_pie"
+				}
+			}
+		},
+		"turkey": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_chicken"
+				}
+			}
+		},
+		"mashed_potatoes": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:baked_potato"
+				}
+			}
+		},
+		"rolls": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:bread"
+				}
+			}
+		}
+	}
+}

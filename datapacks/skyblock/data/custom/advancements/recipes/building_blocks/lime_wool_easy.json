@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "custom:lime_wool_easy"
+    ]
+  },
+  "criteria": {
+    "has_lime": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_dye"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "custom:lime_wool_easy"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_lime",
+      "has_the_recipe"
+    ]
+  ]
+}

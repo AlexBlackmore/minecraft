@@ -1,0 +1,46 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:packed_ice"
+		},
+		"title": "When Hell Freezes Over",
+		"description": "Place ice in the nether"
+	},
+	"parent": "minecraft:nether/root",
+	"criteria": {
+		"ice": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:ice",
+				"location": {
+					"dimension": "the_nether"
+				}
+			}
+		},
+		"packed_ice": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:packed_ice",
+				"location": {
+					"dimension": "the_nether"
+				}
+			}
+		},
+		"blue_ice": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:blue_ice",
+				"location": {
+					"dimension": "the_nether"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"ice",
+			"packed_ice",
+			"blue_ice"
+		]
+	]
+}

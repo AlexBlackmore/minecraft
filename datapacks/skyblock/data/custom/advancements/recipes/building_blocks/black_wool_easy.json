@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "custom:black_wool_easy"
+    ]
+  },
+  "criteria": {
+    "has_ink": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:ink_sac"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "custom:black_wool_easy"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ink",
+      "has_the_recipe"
+    ]
+  ]
+}

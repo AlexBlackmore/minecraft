@@ -1,0 +1,71 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:wooden_sword"
+		},
+		"title": "Time to Strike!",
+		"description": "Craft a sword"
+	},
+	"parent": "custom:combat/root",
+	"criteria": {
+		"wood": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:wooden_sword"
+					}
+				]
+			}
+		},
+		"stone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:stone_sword"
+					}
+				]
+			}
+		},
+		"gold": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:golden_sword"
+					}
+				]
+			}
+		},
+		"iron": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:iron_sword"
+					}
+				]
+			}
+		},
+		"diamond": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:diamond_sword"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"wood",
+			"stone",
+			"gold",
+			"iron",
+			"diamond"
+		]
+	]
+}
