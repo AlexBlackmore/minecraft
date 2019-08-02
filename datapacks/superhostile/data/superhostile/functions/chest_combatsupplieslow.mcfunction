@@ -1,1 +1,0 @@
-give @p chest{BlockEntityTag:{CustomName:"{\"text\":\"Combat Supplies - Low\"}",Items: [{Slot:11,id:torch,Count:64},{Slot:12,id:iron_sword,Count:1},{Slot:13,id:bow,Count:1},{Slot:14,id:arrow,Count:64},{Slot:15,id:cooked_porkchop,Count:1}]},display:{Name:"{\"text\":\"Combat Supplies - Low\",\"italic\":false}"}}

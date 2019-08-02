@@ -1,1 +1,0 @@
-give @p chest{BlockEntityTag:{CustomName:"{\"text\":\"Bruce-in-a-Box\"}",Items: [{Slot:12,id:blaze_spawn_egg,Count:1,tag:{display:{Name:"{\"text\":\"Bruce\",\"italic\":false}"}}},{Slot:14,id:splash_potion,Count:1,tag:{Potion:"long_fire_resistance"}}]},display:{Name:"{\"text\":\"Bruce-in-a-Box\",\"italic\":false}"}}

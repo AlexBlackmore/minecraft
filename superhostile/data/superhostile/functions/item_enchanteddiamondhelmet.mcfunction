@@ -1,0 +1,1 @@
+give @p diamond_helmet{display:{Name:"{\"text\":\"Enchanted Diamond Helmet\",\"italic\":false}"},Enchantments:[{id:protection,lvl:3},{id:respiration,lvl:3}]}

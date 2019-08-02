@@ -1,0 +1,902 @@
+	summon minecraft:villager ~ ~ ~ {
+		CustomName:"{\"text\":\"Victory Monument\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		VillagerData:
+		{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes: [
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes: [
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:16,
+						tag:
+						{
+							display:
+							{
+								Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+								Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+								]
+							},
+							Enchantments: [
+								{
+									id:"unbreaking",
+									lvl:1
+								}
+							],
+							HideFlags:7
+						}
+					},
+					sell:
+					{
+						id:"chest",
+						Count:1,
+						tag:
+						{
+							BlockEntityTag:
+							{
+								LootTable:"superhostile:loot"
+							},
+							display:
+							{
+								Name:"{\"text\":\"Super Hostile Loot Chest\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore: [
+									"\"Contains 4 pieces of random loot.\""
+								]
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"white_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"White Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"white\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #1\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"orange_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Orange Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"gold\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #2\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+	                "\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"magenta_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Magenta Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"light_purple\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #3\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"light_blue_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Light Blue Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"aqua\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #4\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"yellow_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Yellow Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"yellow\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #5\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"lime_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Lime Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"green\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #6\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"pink_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Pink Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"light_purple\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #7\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"gray_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Gray Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"dark_gray\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #8\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"light_gray_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Light Gray Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"gray\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #9\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"cyan_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Cyan Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"dark_aqua\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #10\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"purple_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Purple Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"dark_purple\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #11\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"blue_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Blue Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"blue\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #12\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"brown_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Brown Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"gold\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #13\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"green_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Green Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"dark_green\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #14\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"red_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Red Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"red\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #15\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"black_wool",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Black Wool\",\"italic\":false,\"bold\":true,\"underlined\":true,\"color\":\"black\"}",
+	              Lore: [
+	                "{\"text\":\"Victory Monument Wool #16\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Super Hostile\",\"color\":\"white\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"diamond_block",
+						Count:1
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1,
+						tag:
+	          {
+	            display:
+	            {
+	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
+	              Lore: [
+									"\"Can be traded for at the Victory Monument for a\"",
+									"\"Super Hostile Loot Chest.\""
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				}
+			]
+		}
+	}

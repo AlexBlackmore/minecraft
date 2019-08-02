@@ -1,1 +1,0 @@
-give @p chest{BlockEntityTag:{CustomName:"{\"text\":\"Flak Vest\",\"italic\":false}",Items: [{Slot:13,id:chainmail_chestplate,Count:1,tag:{display:{Name:"{\"text\":\"Flak Vest\",\"italic\":false}"},Enchantments:[{id:projectile_protection,lvl:4}]}}]},display:{Name:"{\"text\":\"Flak Vest\",\"italic\":false}"}}
