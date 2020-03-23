@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:spruce_log"
+		},
+		"title": "Giant Spruce Taiga Hills",
+    "description": "Visit a Giant Spruce Taiga Hills biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:giant_tree_taiga_hills",
+	"criteria": {
+		"minecraft:giant_spruce_taiga_hills": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:giant_spruce_taiga_hills"
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:terracotta"
+		},
+		"title": "Badlands",
+		"description": "Visit a Badlands biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:badlands": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:badlands"
+			}
+		}
+	}
+}

@@ -1,11 +1,17 @@
-summon minecraft:villager ~ ~ ~ {
-	Profession:0,
+summon minecraft:villager ~ ~1 ~ {
 	CustomName:"{\"text\":\"Fisherman\"}",
-	CustomNameVisible:0,
-	Career:2,
-	CareerLevel:42,
-	CanPickUpLoot:0,
-	PersistenceRequired:1,
+	CustomNameVisible:true,
+	PersistenceRequired:true,
+	Silent:true,
+	CanPickUpLoot:false,
+	Willing:false,
+	NoAI:false,
+	VillagerData:
+	{
+		level:5,
+		profession:"fisherman",
+		type:"plains"
+	},
 	Attributes: [
 		{
 			Name:"generic.movementSpeed",
@@ -30,7 +36,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"cooked_cod",
 					Count:6
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -42,7 +50,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"emerald",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -54,7 +64,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"emerald",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -66,7 +78,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"fishing_rod",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			}
 		]
 	}

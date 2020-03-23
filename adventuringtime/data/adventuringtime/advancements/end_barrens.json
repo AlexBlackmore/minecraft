@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:end_stone"
+		},
+		"title": "End Barrens",
+		"description": "Visit an End Barrens biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:the_end",
+	"criteria": {
+		"minecraft:end_barrens": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:end_barrens"
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:sand"
+		},
+		"title": "Desert Lakes",
+    "description": "Visit a Desert Lakes biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:desert",
+	"criteria": {
+		"minecraft:desert_lakes": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:desert_lakes"
+			}
+		}
+	}
+}

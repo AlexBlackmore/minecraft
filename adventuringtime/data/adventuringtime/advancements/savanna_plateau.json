@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:acacia_log"
+		},
+		"title": "Savanna Plateau",
+		"description": "Visit a Savanna Plateau biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:savanna_plateau": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:savanna_plateau"
+			}
+		}
+	}
+}

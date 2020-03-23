@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:spruce_log"
+		},
+		"title": "Taiga",
+		"description": "Visit a Taiga biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:taiga": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:taiga"
+			}
+		}
+	}
+}

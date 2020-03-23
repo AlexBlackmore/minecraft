@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:birch_log"
+		},
+		"title": "Tall Birch Hills",
+    "description": "Visit a Tall Birch Hills biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:birch_forest_hills",
+	"criteria": {
+		"minecraft:tall_birch_hills": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:tall_birch_hills"
+			}
+		}
+	}
+}

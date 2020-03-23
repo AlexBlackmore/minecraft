@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:acacia_log"
+		},
+		"title": "Shattered Savanna",
+    "description": "Visit a Shattered Savanna biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:savanna",
+	"criteria": {
+		"minecraft:shattered_savanna": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:shattered_savanna"
+			}
+		}
+	}
+}

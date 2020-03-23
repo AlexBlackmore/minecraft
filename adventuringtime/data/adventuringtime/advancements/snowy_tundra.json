@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:snow_block"
+		},
+		"title": "Snowy Tundra",
+		"description": "Visit a Snowy Tundra biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:snowy_tundra": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:snowy_tundra"
+			}
+		}
+	}
+}

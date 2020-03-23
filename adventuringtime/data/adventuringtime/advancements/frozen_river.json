@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:ice"
+		},
+		"title": "Frozen River",
+		"description": "Visit a Frozen River biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:frozen_river": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:frozen_river"
+			}
+		}
+	}
+}

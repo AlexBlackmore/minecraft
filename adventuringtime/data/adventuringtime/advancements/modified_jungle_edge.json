@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:jungle_log"
+		},
+		"title": "Modified Jungle Edge",
+    "description": "Visit a Modified Jungle Edge biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:jungle_edge",
+	"criteria": {
+		"minecraft:modified_jungle_edge": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:modified_jungle_edge"
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_boat"
+		},
+		"title": "Warm Ocean",
+    "description": "Visit a Warm Ocean biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:warm_ocean": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:warm_ocean"
+			}
+		}
+	}
+}

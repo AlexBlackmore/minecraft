@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:packed_ice"
+		},
+		"title": "Frozen Ocean",
+		"description": "Visit a Frozen Ocean biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:ocean",
+	"criteria": {
+		"minecraft:frozen_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:frozen_ocean"
+			}
+		}
+	}
+}

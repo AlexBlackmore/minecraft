@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_boat"
+		},
+		"title": "Ocean",
+		"description": "Visit an Ocean biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:ocean"
+			}
+		}
+	}
+}

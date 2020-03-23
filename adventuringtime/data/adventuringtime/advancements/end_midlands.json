@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:end_stone"
+		},
+		"title": "End Midlands",
+		"description": "Visit an End Midlands biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:the_end",
+	"criteria": {
+		"minecraft:end_midlands": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:end_midlands"
+			}
+		}
+	}
+}

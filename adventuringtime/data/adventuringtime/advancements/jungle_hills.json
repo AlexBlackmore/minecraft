@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:jungle_log"
+		},
+		"title": "Jungle Hills",
+		"description": "Visit a Jungle Hills biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:jungle_hills": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:jungle_hills"
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:dark_oak_log"
+		},
+		"title": "Dark Forest",
+		"description": "Visit a Dark Forest biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:dark_forest": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:dark_forest"
+			}
+		}
+	}
+}

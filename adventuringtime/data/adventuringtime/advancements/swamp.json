@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:grass_block"
+		},
+		"title": "Swamp",
+		"description": "Visit a Swamp biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:swamp": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:swamp"
+			}
+		}
+	}
+}

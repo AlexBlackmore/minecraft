@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:birch_log"
+		},
+		"title": "Birch Forest Hills",
+		"description": "Visit a Birch Forest Hills biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:birch_forest_hills": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:birch_forest_hills"
+			}
+		}
+	}
+}

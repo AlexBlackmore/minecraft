@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:stone"
+		},
+		"title": "Mountain Edge",
+		"description": "Visit a Mountain Edge biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:mountains",
+	"criteria": {
+		"minecraft:mountain_edge": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:mountain_edge"
+			}
+		}
+	}
+}

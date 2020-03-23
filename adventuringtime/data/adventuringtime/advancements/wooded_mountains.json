@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:stone"
+		},
+		"title": "Wooded Mountains",
+		"description": "Visit a Wooded Mountains biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:wooded_mountains": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:wooded_mountains"
+			}
+		}
+	}
+}

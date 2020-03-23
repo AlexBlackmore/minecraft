@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:end_stone"
+		},
+		"title": "The End",
+		"description": "Visit The End.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:the_end": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:the_end"
+			}
+		}
+	}
+}

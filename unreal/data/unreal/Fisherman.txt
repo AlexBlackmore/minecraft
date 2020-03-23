@@ -1,0 +1,152 @@
+summon minecraft:villager ~ ~1 ~ {
+	CustomName:"{\"text\":\"Fisherman\"}",
+	CustomNameVisible:true,
+	PersistenceRequired:true,
+	Silent:true,
+	CanPickUpLoot:false,
+	Willing:false,
+	NoAI:false,
+	VillagerData:
+	{
+		level:5,
+		profession:"fisherman",
+		type:"plains"
+	},
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id:"cod",
+					Count:6
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:1
+				},
+				sell:
+				{
+					id:"cooked_cod",
+					Count:6
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"string",
+					Count:64
+				},
+				buyB:
+				{
+					id:"string",
+					Count:36
+				},
+				sell:
+				{
+					id:"emerald",
+					Count:1
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"coal",
+					Count:16
+				},
+				sell:
+				{
+					id:"emerald",
+					Count:1
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:7
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"unreal:item_enchanted_fishing_rod"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Enchanted Fishing Rod\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"Fishing Rod x1\""
+							]
+						},
+						Enchantments: [
+							{
+								id:"unbreaking",
+								lvl:1
+							}
+						],
+						HideFlags:1
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:2
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/village/village_fisher"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Fisherman Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"May contain:\"",
+								"\"- Wheat Seeds\"",
+								"\"- Raw Cod\"",
+								"\"- Coal\"",
+								"\"- Water Bucket\"",
+								"\"- Raw Salmon\"",
+								"\"and 2 more...\""
+							]
+						},
+						Enchantments: [
+							{
+								id:"unbreaking",
+								lvl:1
+							}
+						],
+						HideFlags:1
+					}
+				}
+			}
+		]
+	}
+}

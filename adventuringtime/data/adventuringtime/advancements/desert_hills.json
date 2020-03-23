@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:sand"
+		},
+		"title": "Desert Hills",
+		"description": "Visit a Desert Hills biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:desert_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:desert_hills"
+			}
+		}
+	}
+}

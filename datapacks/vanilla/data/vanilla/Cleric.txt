@@ -1,11 +1,17 @@
-summon minecraft:villager ~ ~ ~ {
+summon minecraft:villager ~ ~1 ~ {
 	CustomName:"{\"text\":\"Cleric\"}",
-	CustomNameVisible:0,
-	Profession:2,
-	Career:1,
-	CareerLevel:42,
-	CanPickUpLoot:0,
-	PersistenceRequired:1,
+	CustomNameVisible:true,
+	PersistenceRequired:true,
+	Silent:true,
+	CanPickUpLoot:false,
+	Willing:false,
+	NoAI:false,
+	VillagerData:
+	{
+		level:5,
+		profession:"cleric",
+		type:"plains"
+	},
 	Attributes: [
 		{
 			Name:"generic.movementSpeed",
@@ -25,7 +31,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"emerald",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -37,7 +45,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"emerald",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -49,7 +59,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"redstone",
 					Count:4
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -61,7 +73,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"lapis_lazuli",
 					Count:2
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -73,7 +87,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"glowstone",
 					Count:3
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -85,7 +101,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"ender_eye",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -97,7 +115,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"ender_pearl",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -109,7 +129,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"experience_bottle",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			}
 		]
 	}

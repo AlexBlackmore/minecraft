@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:sand"
+		},
+		"title": "Desert",
+		"description": "Visit a Desert biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:desert": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:desert"
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:red_sand"
+		},
+		"title": "Modified Wooded Badlands Plateau",
+    "description": "Visit a Modified Wooded Badlands Plateau biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:wooded_badlands_plateau",
+	"criteria": {
+		"minecraft:modified_wooded_badlands_plateau": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:modified_wooded_badlands_plateau"
+			}
+		}
+	}
+}

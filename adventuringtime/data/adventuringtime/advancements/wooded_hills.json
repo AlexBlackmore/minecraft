@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_log"
+		},
+		"title": "Wooded Hills",
+		"description": "Visit a Wooded Hills biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:wooded_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:wooded_hills"
+			}
+		}
+	}
+}

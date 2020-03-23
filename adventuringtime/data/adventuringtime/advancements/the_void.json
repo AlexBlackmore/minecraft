@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": "The Void",
+    "description": "Visit The Void.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:the_void": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:the_void"
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:acacia_log"
+		},
+		"title": "Savanna",
+		"description": "Visit a Savanna biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:savanna": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:savanna"
+			}
+		}
+	}
+}

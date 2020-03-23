@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_boat"
+		},
+		"title": "Lukewarm Ocean",
+    "description": "Visit a Lukewarm Ocean biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:lukewarm_ocean": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:lukewarm_ocean"
+			}
+		}
+	}
+}

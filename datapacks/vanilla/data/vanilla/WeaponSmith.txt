@@ -1,11 +1,17 @@
-summon minecraft:villager ~ ~ ~ {
+summon minecraft:villager ~ ~1 ~ {
 	CustomName:"{\"text\":\"Weapon Smith\"}",
-	CustomNameVisible:0,
-	Profession:3,
-	Career:2,
-	CareerLevel:42,
-	CanPickUpLoot:0,
-	PersistenceRequired:1,
+	CustomNameVisible:true,
+	PersistenceRequired:true,
+	Silent:true,
+	CanPickUpLoot:false,
+	Willing:false,
+	NoAI:false,
+	VillagerData:
+	{
+		level:5,
+		profession:"weaponsmith",
+		type:"plains"
+	},
 	Attributes: [
 		{
 			Name:"generic.movementSpeed",
@@ -25,7 +31,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"emerald",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -37,7 +45,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"iron_axe",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -49,7 +59,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"emerald",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -61,7 +73,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"iron_sword",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -73,7 +87,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"emerald",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -85,7 +101,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"diamond_sword",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -97,7 +115,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"diamond_axe",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			}
 		]
 	}

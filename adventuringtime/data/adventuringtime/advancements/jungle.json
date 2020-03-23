@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:jungle_log"
+		},
+		"title": "Jungle",
+		"description": "Visit a Jungle biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:jungle": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:jungle"
+			}
+		}
+	}
+}

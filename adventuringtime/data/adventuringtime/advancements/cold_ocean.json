@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_boat"
+		},
+		"title": "Cold Ocean",
+    "description": "Visit a Cold Ocean biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:cold_ocean": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:cold_ocean"
+			}
+		}
+	}
+}

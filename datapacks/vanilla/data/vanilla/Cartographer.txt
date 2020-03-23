@@ -1,11 +1,17 @@
-summon minecraft:villager ~ ~ ~ {
+summon minecraft:villager ~ ~1 ~ {
 	CustomName:"{\"text\":\"Cartographer\"}",
-	CustomNameVisible:0,
-  Profession:1,
-	Career:2,
-	CareerLevel:42,
-	CanPickUpLoot:0,
-	PersistenceRequired:1,
+	CustomNameVisible:true,
+	PersistenceRequired:true,
+	Silent:true,
+	CanPickUpLoot:false,
+	Willing:false,
+	NoAI:false,
+	VillagerData:
+	{
+		level:5,
+		profession:"cartographer",
+		type:"plains"
+	},
 	Attributes: [
 		{
 			Name:"generic.movementSpeed",
@@ -25,7 +31,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"emerald",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -37,7 +45,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"emerald",
 					Count:1
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -49,55 +59,9 @@ summon minecraft:villager ~ ~ ~ {
 				{
 					id:"map",
 					Count:1
-				}
-			},
-			{
-				buy:
-				{
-					id:"compass",
-					Count:1
 				},
-        buyB:
-        {
-          id:"emerald",
-          Count:12
-        },
-				sell:
-				{
-					id:"filled_map",
-					Count:1,
-          tag:
-          {
-            display:
-            {
-              Name:"{\"translate\":\"filled_map.monument\",\"italic\":false}"
-            }
-          }
-				}
-			},
-      {
-				buy:
-				{
-					id:"compass",
-					Count:1
-				},
-        buyB:
-        {
-          id:"emerald",
-          Count:12
-        },
-				sell:
-				{
-					id:"filled_map",
-					Count:1,
-          tag:
-          {
-            display:
-            {
-              Name:"{\"translate\":\"filled_map.mansion\",\"italic\":false}"
-            }
-          }
-				}
+				rewardExp:false,
+				maxUses:2147483647
 			}
 		]
 	}

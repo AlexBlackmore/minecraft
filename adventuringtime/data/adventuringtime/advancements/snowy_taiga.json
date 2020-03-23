@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:snow_block"
+		},
+		"title": "Snowy Taiga",
+		"description": "Visit a Snowy Taiga biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:snowy_taiga": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:snowy_taiga"
+			}
+		}
+	}
+}

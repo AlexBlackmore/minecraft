@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:terracotta"
+		},
+		"title": "Eroded Badlands",
+    "description": "Visit an Eroded Badlands biome.",
+		"frame": "task"
+	},
+  "parent": "adventuringtime:badlands",
+	"criteria": {
+		"minecraft:eroded_badlands": {
+    "trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:eroded_badlands"
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:mycelium"
+		},
+		"title": "Mushroom Field Shore",
+		"description": "Visit a Mushroom Field Shore biome.",
+		"frame": "goal"
+	},
+  "parent": "adventuringtime:root",
+	"criteria": {
+		"minecraft:mushroom_field_shore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:mushroom_field_shore"
+			}
+		}
+	}
+}
