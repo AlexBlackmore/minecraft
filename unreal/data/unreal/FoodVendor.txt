@@ -9,7 +9,7 @@ summon minecraft:villager ~ ~1 ~ {
 	VillagerData:
 	{
 		level:5,
-		profession:"nitwit",
+		profession:"butcher",
 		type:"plains"
 	},
 	Attributes: [
@@ -25,31 +25,35 @@ summon minecraft:villager ~ ~1 ~ {
         buy:
 				{
         	id:"rotten_flesh",
-          Count:2
+          Count:6
         },
         sell:
 				{
           id:"cooked_beef",
-          Count:4
-        }
+          Count:1
+        },
+				rewardExp:false,
+				maxUses:2147483647
       },
 			{
       	buy:
 				{
 					id:"bone",
-					Count:2
+					Count:3
 				},
 				sell:
 				{
 					id:"cooked_chicken",
 					Count:4
-				}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 			  buy:
 			  {
 			    id:"rotten_flesh",
-			    Count:6
+			    Count:40
 			  },
 			  sell:
 			  {
@@ -63,13 +67,15 @@ summon minecraft:villager ~ ~1 ~ {
 			        Name:"{\"text\":\"Healing Potion\",\"italic\":false}"
 			      }
 			    }
-			  }
+			  },
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 			  buy:
 			  {
 			    id:"bone",
-			    Count:6
+			    Count:11
 			  },
 			  sell:
 			  {
@@ -83,18 +89,20 @@ summon minecraft:villager ~ ~1 ~ {
 			        Name:"{\"text\":\"Splash Healing Potion\",\"italic\":false}"
 			      }
 			    }
-			  }
+			  },
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 			  buy:
 			  {
 			    id:"rotten_flesh",
-			    Count:4
+			    Count:17
 			  },
 			  buyB:
 			  {
 			    id:"bone",
-			    Count:4
+			    Count:13
 			  },
 			  sell:
 			  {
@@ -121,13 +129,20 @@ summon minecraft:villager ~ ~1 ~ {
 			      },
 						CustomPotionColor:9643043
 			    }
-			  }
+			  },
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 			  buy:
 			  {
 			    id:"rotten_flesh",
-			    Count:7
+			    Count:22
+			  },
+				buyB:
+			  {
+			    id:"bone",
+			    Count:17
 			  },
 			  sell:
 			  {
@@ -154,18 +169,20 @@ summon minecraft:villager ~ ~1 ~ {
 			      },
 						CustomPotionColor:13458603
 			    }
-			  }
+			  },
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 			  buy:
 			  {
 			    id:"rotten_flesh",
-			    Count:3
+			    Count:8
 			  },
 			  buyB:
 			  {
 			    id:"bone",
-			    Count:3
+			    Count:8
 			  },
 			  sell:
 			  {
@@ -192,13 +209,15 @@ summon minecraft:villager ~ ~1 ~ {
 			      },
 						CustomPotionColor:28557379
 			    }
-			  }
+			  },
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 			  buy:
 			  {
 			    id:"rotten_flesh",
-			    Count:4
+			    Count:49
 			  },
 			  sell:
 			  {
@@ -213,13 +232,15 @@ summon minecraft:villager ~ ~1 ~ {
 			        ]
 			      }
 			    }
-			  }
+			  },
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 			  buy:
 			  {
 			    id:"gold_nugget",
-			    Count:2
+			    Count:13
 			  },
 			  sell:
 			  {
@@ -259,7 +280,9 @@ summon minecraft:villager ~ ~1 ~ {
 			        Name:"{\"text\":\"Berserking Potion\",\"italic\":false}"
 			      }
 			    }
-			  }
+			  },
+				rewardExp:false,
+				maxUses:2147483647
 			}
 		]
 	}
