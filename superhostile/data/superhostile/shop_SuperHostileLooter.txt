@@ -1,0 +1,143 @@
+summon minecraft:villager ~ ~1 ~ {
+	CustomName:"{\"text\":\"Super Hostile Supplies\"}",
+	CustomNameVisible:true,
+	PersistenceRequired:true,
+	CanPickUpLoot:false,
+	Willing:false,
+	NoAI:false,
+	VillagerData:
+	{
+		level:5,
+		profession:"nitwit",
+		type:"plains"
+	},
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:7
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"superhostile:randomloot"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"Contains basic weapons, armor,\"",
+								"\"blocks, food, and other resources.\""
+							]
+						}
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"superhostile:enchantedarmor"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Enchanted Armor\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"Contains a complete set of\"",
+								"\"random enchanted armor.\""
+							]
+						}
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:64
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"superhostile:tieredequipment"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Tiered Equipment\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"Contains 5 pieces of random\"",
+								"\"tiered armor and weapons. Tiers\"",
+								"\"include common, uncommon, rare,\"",
+								"\"epic, and legendary, and have\"",
+								"\"progressively better stats.\""
+							]
+						}
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"diamond_block",
+					Count:16
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"superhostile:uniques"
+						},
+						display:
+						{
+							Name:"{\"text\":\"Super Hostile Loot Chest\",\"italic\":false,\"color\":\"aqua\"}",
+							Lore: [
+								"\"Contains 4 pieces of random loot.\""
+							]
+						}
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			}
+		]
+	}
+}
