@@ -30,11 +30,11 @@ summon minecraft:villager ~ ~1 ~ {
 					{
 						display:
 						{
-							Name:"\"Smelter:\"",
+							Name:"{\"text\":\"<Smelter>\",\"italic\":false,\"color\":\"white\"}",
 							Lore: [
-								"\"Trade an undamaged item to\"",
-                "\"revert it to it's core\"",
-                "\"metallergic components.\""
+								"{\"text\":\"    Trade an undamaged item to\",\"italic\":false,\"color\":\"white\"}",
+                "{\"text\":\"    revert it to it's core\",\"italic\":false,\"color\":\"white\"}",
+                "{\"text\":\"    metallergic components.\",\"italic\":false,\"color\":\"white\"}"
 							]
 						},
             Enchantments:
@@ -545,7 +545,7 @@ summon minecraft:villager ~ ~1 ~ {
 				sell:
 				{
 					id:"iron_nugget",
-					Count:18
+					Count:32
 				},
 				rewardExp:false,
 				maxUses:2147483647
@@ -559,7 +559,7 @@ summon minecraft:villager ~ ~1 ~ {
 				sell:
 				{
 					id:"iron_nugget",
-					Count:36
+					Count:64
 				},
 				rewardExp:false,
 				maxUses:2147483647
@@ -573,7 +573,7 @@ summon minecraft:villager ~ ~1 ~ {
 				sell:
 				{
 					id:"iron_nugget",
-					Count:22
+					Count:40
 				},
 				rewardExp:false,
 				maxUses:2147483647
@@ -587,7 +587,7 @@ summon minecraft:villager ~ ~1 ~ {
 				sell:
 				{
 					id:"iron_nugget",
-					Count:31
+					Count:56
 				},
 				rewardExp:false,
 				maxUses:2147483647
