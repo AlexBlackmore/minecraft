@@ -1,0 +1,1 @@
+give @p chest{BlockEntityTag:{LootTable:"superhostile:rareenchantedloot"},display:{Lore: ["{\"text\":\"Rare Enchanted Loot\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}","\"Contains 5 random rare loot items.\""]}}
