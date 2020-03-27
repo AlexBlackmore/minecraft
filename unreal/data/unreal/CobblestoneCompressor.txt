@@ -9,7 +9,7 @@ summon minecraft:villager ~ ~1 ~ {
 	VillagerData:
 	{
 		level:5,
-		profession:"nitwit",
+		profession:"mason",
 		type:"plains"
 	},
 	Attributes: [
@@ -35,9 +35,9 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Compressed Cobblestone\",\"italic\":false}",
+              Name:"{\"text\":\"Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
               Lore: [
-								"\"9 cobblestone\""
+								"{\"text\":\"Cobblestone x9\",\"italic\":false,\"color\":\"white\"}"
               ]
             },
             Enchantments: [
@@ -49,7 +49,8 @@ summon minecraft:villager ~ ~1 ~ {
             HideFlags:7
           }
 				},
-        maxUses:2147483647
+				rewardExp:false,
+				maxUses:2147483647
 			},
       {
 				buy:
@@ -57,12 +58,12 @@ summon minecraft:villager ~ ~1 ~ {
 					id:"cobblestone",
 					Count:9,
           tag:
-          {
+					{
             display:
             {
-              Name:"{\"text\":\"Compressed Cobblestone\",\"italic\":false}",
+              Name:"{\"text\":\"Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
               Lore: [
-                "\"9 cobblestone\""
+								"{\"text\":\"Cobblestone x9\",\"italic\":false,\"color\":\"white\"}"
               ]
             },
             Enchantments: [
@@ -82,9 +83,105 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Double Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"81 cobblestone\""
+              Name:"{\"text\":\"Double Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x81\",\"italic\":false,\"color\":\"white\"}"
+              ]
+            },
+            Enchantments: [
+              {
+                id:"unbreaking",
+                lvl:1
+              }
+            ],
+            HideFlags:7
+          }
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"cobblestone",
+					Count:9,
+          tag:
+          {
+            display:
+            {
+              Name:"{\"text\":\"Double Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x81\",\"italic\":false,\"color\":\"white\"}"
+              ]
+            },
+            Enchantments: [
+              {
+                id:"unbreaking",
+                lvl:1
+              }
+            ],
+            HideFlags:7
+          }
+				},
+				sell:
+				{
+					id:"cobblestone",
+					Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"{\"text\":\"Triple Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x729\",\"italic\":false,\"color\":\"white\"}"
+              ]
+            },
+            Enchantments: [
+              {
+                id:"unbreaking",
+                lvl:1
+              }
+            ],
+            HideFlags:7
+          }
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"cobblestone",
+					Count:9,
+          tag:
+          {
+            display:
+            {
+              Name:"{\"text\":\"Triple Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x729\",\"italic\":false,\"color\":\"white\"}"
+              ]
+            },
+            Enchantments: [
+              {
+                id:"unbreaking",
+                lvl:1
+              }
+            ],
+            HideFlags:7
+          }
+				},
+				sell:
+				{
+					id:"cobblestone",
+					Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"{\"text\":\"Quadruple Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x6,561\",\"italic\":false,\"color\":\"white\"}"
               ]
             },
             Enchantments: [
@@ -107,9 +204,9 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Double Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"81 cobblestone\""
+              Name:"{\"text\":\"Quadruple Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x6,561\",\"italic\":false,\"color\":\"white\"}"
               ]
             },
             Enchantments: [
@@ -129,9 +226,9 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Triple Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"729 cobblestone\""
+              Name:"{\"text\":\"Quintuple Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x59,049\",\"italic\":false,\"color\":\"white\"}"
               ]
             },
             Enchantments: [
@@ -143,7 +240,8 @@ summon minecraft:villager ~ ~1 ~ {
             HideFlags:7
           }
 				},
-        maxUses:2147483647
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -154,9 +252,9 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Triple Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"729 cobblestone\""
+              Name:"{\"text\":\"Quintuple Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x59,049\",\"italic\":false,\"color\":\"white\"}"
               ]
             },
             Enchantments: [
@@ -176,9 +274,9 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Quadruple Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"6,561 cobblestone\""
+              Name:"{\"text\":\"Sextuple Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x531,441\",\"italic\":false,\"color\":\"white\"}"
               ]
             },
             Enchantments: [
@@ -190,7 +288,8 @@ summon minecraft:villager ~ ~1 ~ {
             HideFlags:7
           }
 				},
-        maxUses:2147483647
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -201,9 +300,9 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Quadruple Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"6,561 cobblestone\""
+              Name:"{\"text\":\"Sextuple Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x531,441\",\"italic\":false,\"color\":\"white\"}"
               ]
             },
             Enchantments: [
@@ -223,9 +322,9 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Quintuple Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"59,049 cobblestone\""
+              Name:"{\"text\":\"Septuple Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x4,782,969\",\"italic\":false,\"color\":\"white\"}"
               ]
             },
             Enchantments: [
@@ -237,7 +336,8 @@ summon minecraft:villager ~ ~1 ~ {
             HideFlags:7
           }
 				},
-        maxUses:2147483647
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:
@@ -248,9 +348,9 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Quintuple Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"59,049 cobblestone\""
+              Name:"{\"text\":\"Septuple Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x4,782,969\",\"italic\":false,\"color\":\"white\"}"
               ]
             },
             Enchantments: [
@@ -270,9 +370,9 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Sextuple Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"531,441 cobblestone\""
+              Name:"{\"text\":\"Octuple Compressed Cobblestone\",\"italic\":false,\"color\":\"yellow\"}",
+							Lore: [
+								"{\"text\":\"Cobblestone x43,046,721\",\"italic\":false,\"color\":\"white\"}"
               ]
             },
             Enchantments: [
@@ -284,101 +384,8 @@ summon minecraft:villager ~ ~1 ~ {
             HideFlags:7
           }
 				},
-        maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"cobblestone",
-					Count:9,
-          tag:
-          {
-            display:
-            {
-              Name:"{\"text\":\"Sextuple Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"531,441 cobblestone\""
-              ]
-            },
-            Enchantments: [
-              {
-                id:"unbreaking",
-                lvl:1
-              }
-            ],
-            HideFlags:7
-          }
-				},
-				sell:
-				{
-					id:"cobblestone",
-					Count:1,
-          tag:
-          {
-            display:
-            {
-              Name:"{\"text\":\"Septuple Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"4,782,969 cobblestone\""
-              ]
-            },
-            Enchantments: [
-              {
-                id:"unbreaking",
-                lvl:1
-              }
-            ],
-            HideFlags:7
-          }
-				},
-        maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"cobblestone",
-					Count:9,
-          tag:
-          {
-            display:
-            {
-              Name:"{\"text\":\"Septuple Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"4,782,969 cobblestone\""
-              ]
-            },
-            Enchantments: [
-              {
-                id:"unbreaking",
-                lvl:1
-              }
-            ],
-            HideFlags:7
-          }
-				},
-				sell:
-				{
-					id:"cobblestone",
-					Count:1,
-          tag:
-          {
-            display:
-            {
-              Name:"{\"text\":\"Octuple Compressed Cobblestone\",\"italic\":false}",
-              Lore: [
-                "\"43,046,721 cobblestone\""
-              ]
-            },
-            Enchantments: [
-              {
-                id:"unbreaking",
-                lvl:1
-              }
-            ],
-            HideFlags:7
-          }
-				},
-        maxUses:2147483647
+				rewardExp:false,
+				maxUses:2147483647
 			}
 		]
 	}

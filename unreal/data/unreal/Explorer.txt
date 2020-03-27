@@ -43,15 +43,13 @@ summon minecraft:villager ~ ~1 ~ {
 					  author:"?",
 					  generation:3,
 					  display:{
-					    Name:"{\"text\":\"Blank Atlas\",\"italic\":false,\"color\":\"aqua\"}",
+					    Name:"{\"text\":\"Blank Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
-					      "\"A collection of blank maps.\""
+					      "\"A collection of blank\"",
+					      "\"maps.\""
 					    ]
 					  },
-					  Enchantments: [
-					    {id:"unbreaking",lvl:1}
-					  ],
-					  HideFlags:7
+					  HideFlags:63
 					}
 				},
 				rewardExp:false,
@@ -69,16 +67,13 @@ summon minecraft:villager ~ ~1 ~ {
 					  author:"?",
 					  generation:3,
 					  display:{
-					    Name:"{\"text\":\"Blank Atlas\",\"italic\":false,\"color\":\"aqua\"}",
+					    Name:"{\"text\":\"Blank Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
-					      "\"A collection of blank maps.\""
+					      "\"A collection of blank\"",
+					      "\"maps.\""
 					    ]
 					  },
-					  Enchantments: [
-					    {id:"unbreaking",lvl:1}
-					  ],
-					  HideFlags:7
-
+					  HideFlags:63
 					}
 				},
 				buyB:
@@ -100,14 +95,15 @@ summon minecraft:villager ~ ~1 ~ {
 					  author:"?",
 					  generation:3,
 					  display:{
-					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"aqua\"}",
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
-					      "\"A collection of maps and charts\"",
-					      "\"depicting nearby structures.\"",
-					      "\" \"",
-					      "{\"text\":\"(25% complete)\",\"italic\":false,\"color\":\"red\"}"
+					      "{\"text\":\"Level I\",\"italic\":false,\"color\":\"gray\"}",
+					      "\"A collection of maps\"",
+					      "\"and charts depicting\"",
+					      "\"nearby structures.\""
 					    ]
-					  }
+					  },
+					  HideFlags:63
 					}
 				},
 				rewardExp:false,
@@ -120,22 +116,23 @@ summon minecraft:villager ~ ~1 ~ {
 					Count:1,
 					tag:
 					{
-						pages:[
-							'["",
-								{"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
-							]'],
-						title:"World Atlas",
-						author:"?",
-						generation:3,
-						display:{
-							Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"aqua\"}",
-							Lore:[
-								"\"A collection of maps and charts\"",
-								"\"depicting nearby structures.\"",
-								"\" \"",
-								"{\"text\":\"(25% complete)\",\"italic\":false,\"color\":\"red\"}"
-							]
-						}
+					  pages:[
+					    '["",
+					      {"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
+					    ]'],
+					  title:"World Atlas",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
+					    Lore:[
+					      "{\"text\":\"Level I\",\"italic\":false,\"color\":\"gray\"}",
+					      "\"A collection of maps\"",
+					      "\"and charts depicting\"",
+					      "\"nearby structures.\""
+					    ]
+					  },
+					  HideFlags:63
 					}
 				},
 				buyB:
@@ -159,14 +156,15 @@ summon minecraft:villager ~ ~1 ~ {
 					  author:"?",
 					  generation:3,
 					  display:{
-					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"aqua\"}",
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
-					      "\"A collection of maps and charts\"",
-					      "\"depicting nearby structures.\"",
-					      "\" \"",
-					      "{\"text\":\"(50% complete)\",\"italic\":false,\"color\":\"gold\"}"
+					      "{\"text\":\"Level II\",\"italic\":false,\"color\":\"gray\"}",
+					      "\"A collection of maps\"",
+					      "\"and charts depicting\"",
+					      "\"nearby structures.\""
 					    ]
-					  }
+					  },
+					  HideFlags:63
 					}
 				},
 				rewardExp:false,
@@ -189,14 +187,15 @@ summon minecraft:villager ~ ~1 ~ {
 					  author:"?",
 					  generation:3,
 					  display:{
-					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"aqua\"}",
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
-					      "\"A collection of maps and charts\"",
-					      "\"depicting nearby structures.\"",
-					      "\" \"",
-					      "{\"text\":\"(50% complete)\",\"italic\":false,\"color\":\"gold\"}"
+					      "{\"text\":\"Level II\",\"italic\":false,\"color\":\"gray\"}",
+					      "\"A collection of maps\"",
+					      "\"and charts depicting\"",
+					      "\"nearby structures.\""
 					    ]
-					  }
+					  },
+					  HideFlags:63
 					}
 				},
 				buyB:
@@ -222,14 +221,15 @@ summon minecraft:villager ~ ~1 ~ {
 					  author:"?",
 					  generation:3,
 					  display:{
-					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"aqua\"}",
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
-					      "\"A collection of maps and charts\"",
-					      "\"depicting nearby structures.\"",
-					      "\" \"",
-					      "{\"text\":\"(75% complete)\",\"italic\":false,\"color\":\"yellow\"}"
+					      "{\"text\":\"Level III\",\"italic\":false,\"color\":\"gray\"}",
+					      "\"A collection of maps\"",
+					      "\"and charts depicting\"",
+					      "\"nearby structures.\""
 					    ]
-					  }
+					  },
+					  HideFlags:63
 					}
 				},
 				rewardExp:false,
@@ -254,14 +254,15 @@ summon minecraft:villager ~ ~1 ~ {
 					  author:"?",
 					  generation:3,
 					  display:{
-					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"aqua\"}",
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
-					      "\"A collection of maps and charts\"",
-					      "\"depicting nearby structures.\"",
-					      "\" \"",
-					      "{\"text\":\"(75% complete)\",\"italic\":false,\"color\":\"yellow\"}"
+					      "{\"text\":\"Level III\",\"italic\":false,\"color\":\"gray\"}",
+					      "\"A collection of maps\"",
+					      "\"and charts depicting\"",
+					      "\"nearby structures.\""
 					    ]
-					  }
+					  },
+					  HideFlags:63
 					}
 				},
 				buyB:
@@ -289,14 +290,15 @@ summon minecraft:villager ~ ~1 ~ {
 					  author:"?",
 					  generation:3,
 					  display:{
-					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"aqua\"}",
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
-					      "\"A collection of maps and charts\"",
-					      "\"depicting nearby structures.\"",
-					      "\" \"",
-					      "{\"text\":\"(100% complete)\",\"italic\":false,\"color\":\"green\"}"
+					      "{\"text\":\"Level IV\",\"italic\":false,\"color\":\"gray\"}",
+					      "\"A collection of maps\"",
+					      "\"and charts depicting\"",
+					      "\"nearby structures.\""
 					    ]
-					  }
+					  },
+					  HideFlags:63
 					}
 				},
 				rewardExp:false,

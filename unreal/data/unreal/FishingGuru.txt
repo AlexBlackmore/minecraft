@@ -25,7 +25,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buy:
 				{
 					id:"cod",
-					Count:16
+					Count:17
 				},
 				sell:
 				{
@@ -39,7 +39,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buy:
 				{
 					id:"salmon",
-					Count:15
+					Count:16
 				},
 				sell:
 				{
@@ -53,7 +53,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buy:
 				{
 					id:"tropical_fish",
-					Count:33
+					Count:34
 				},
 				sell:
 				{
@@ -88,8 +88,8 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				buyB:
 				{
-					id:"iron_ingot",
-					Count:8
+					id:"emerald",
+					Count:21
 				},
 				sell:
 				{
@@ -99,14 +99,18 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Old Rod\",\"italic\":false,\"color\":\"blue\"}",
+              Name:"{\"text\":\"Old Rod\",\"italic\":false,\"color\":\"yellow\"}",
               Lore:[
                 "\"An old and beat-up fishing rod.\""
               ]
             },
             Enchantments:[
+							{
+								id:"mending",
+								lvl:1
+							},
               {
-                id:"luck_of_the_sea",
+                id:"unbreaking",
                 lvl:1
               },
               {
@@ -114,7 +118,7 @@ summon minecraft:villager ~ ~1 ~ {
                 lvl:1
               },
               {
-                id:"unbreaking",
+                id:"luck_of_the_sea",
                 lvl:1
               }
             ]
@@ -130,33 +134,37 @@ summon minecraft:villager ~ ~1 ~ {
 					Count:1,
 					tag:
 					{
-						display:
-						{
-							Name:"{\"text\":\"Old Rod\",\"italic\":false,\"color\":\"blue\"}",
-							Lore:[
-								"\"An old and beat-up fishing rod.\""
-							]
-						},
-						Enchantments:[
+            display:
+            {
+              Name:"{\"text\":\"Old Rod\",\"italic\":false,\"color\":\"yellow\"}",
+              Lore:[
+                "\"An old and beat-up fishing rod.\""
+              ]
+            },
+            Enchantments:[
 							{
-								id:"luck_of_the_sea",
+								id:"mending",
 								lvl:1
 							},
-							{
-								id:"lure",
-								lvl:1
-							},
-							{
-								id:"unbreaking",
-								lvl:1
-							}
-						]
-					}
+              {
+                id:"unbreaking",
+                lvl:1
+              },
+              {
+                id:"lure",
+                lvl:1
+              },
+              {
+                id:"luck_of_the_sea",
+                lvl:1
+              }
+            ]
+          }
 				},
 				buyB:
 				{
-					id:"gold_ingot",
-					Count:8
+					id:"emerald",
+					Count:7
 				},
 				sell:
 				{
@@ -166,24 +174,28 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Good Rod\",\"italic\":false,\"color\":\"green\"}",
+              Name:"{\"text\":\"Good Rod\",\"italic\":false,\"color\":\"aqua\"}",
               Lore:[
                 "\"A new, good-quality fishing rod.\""
               ]
             },
-            Enchantments:[
+						Enchantments:[
 							{
-								id:"luck_of_the_sea",
-								lvl:2
+								id:"mending",
+								lvl:1
 							},
-							{
-								id:"lure",
-								lvl:2
-							},
-							{
-								id:"unbreaking",
-								lvl:2
-							}
+              {
+                id:"unbreaking",
+                lvl:2
+              },
+              {
+                id:"lure",
+                lvl:2
+              },
+              {
+                id:"luck_of_the_sea",
+                lvl:2
+              }
             ]
           }
 				},
@@ -197,33 +209,37 @@ summon minecraft:villager ~ ~1 ~ {
 					Count:1,
 					tag:
 					{
-						display:
-						{
-							Name:"{\"text\":\"Good Rod\",\"italic\":false,\"color\":\"green\"}",
-							Lore:[
-								"\"A new, good-quality fishing rod.\""
-							]
-						},
+            display:
+            {
+              Name:"{\"text\":\"Good Rod\",\"italic\":false,\"color\":\"aqua\"}",
+              Lore:[
+                "\"A new, good-quality fishing rod.\""
+              ]
+            },
 						Enchantments:[
 							{
-								id:"luck_of_the_sea",
-								lvl:2
+								id:"mending",
+								lvl:1
 							},
-							{
-								id:"lure",
-								lvl:2
-							},
-							{
-								id:"unbreaking",
-								lvl:2
-							}
-						]
-					}
+              {
+                id:"unbreaking",
+                lvl:2
+              },
+              {
+                id:"lure",
+                lvl:2
+              },
+              {
+                id:"luck_of_the_sea",
+                lvl:2
+              }
+            ]
+          }
 				},
 				buyB:
 				{
-					id:"diamond",
-					Count:8
+					id:"emerald",
+					Count:7
 				},
 				sell:
 				{
@@ -233,24 +249,28 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Super Rod\",\"italic\":false,\"color\":\"gold\"}",
+              Name:"{\"text\":\"Super Rod\",\"italic\":false,\"color\":\"light_purple\"}",
               Lore:[
                 "\"An awesome, high-tech fishing rod.\""
               ]
             },
-            Enchantments:[
+						Enchantments:[
 							{
-								id:"luck_of_the_sea",
-								lvl:3
+								id:"mending",
+								lvl:1
 							},
-							{
-								id:"lure",
-								lvl:3
-							},
-							{
-								id:"unbreaking",
-								lvl:3
-							}
+              {
+                id:"unbreaking",
+                lvl:3
+              },
+              {
+                id:"lure",
+                lvl:3
+              },
+              {
+                id:"luck_of_the_sea",
+                lvl:3
+              }
             ]
           }
 				},
@@ -269,7 +289,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buyB:
 				{
 					id:"emerald",
-					Count:8
+					Count:4
 				},
 				sell:
 				{
@@ -284,20 +304,19 @@ summon minecraft:villager ~ ~1 ~ {
 						display:
 						{
 							Lore: [
-								"{\"text\":\"Fishing Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
-								"\"May contain:\"",
-								"\"- Raw Cod\"",
-								"\"- Raw Salmon\"",
-								"\"- Pufferfish\"",
-								"\"- Tropical Fish\"",
-								"\"- Bowl\"",
-								"\"and 17 more...\""
+								"{\"text\":\"Fishing Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Raw Cod 51.0%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Raw Salmon 21.3%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Pufferfish 11.1%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tropical Fish 1.7%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Bowl 1.2%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"and 17 more...\",\"color\":\"white\"}",
 							]
 						},
 						Enchantments: [
 							{
 								id:"unbreaking",
-								lvl:0
+								lvl:1
 							}
 						],
 						HideFlags:1

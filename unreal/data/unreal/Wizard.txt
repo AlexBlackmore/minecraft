@@ -541,18 +541,22 @@ summon minecraft:villager ~ ~1 ~ {
 					id:"emerald_block",
 					Count:9,
 					tag:
-					{
-					  display:{
-					    Name:"{\"text\":\"Compressed Block of Emerald\",\"italic\":false}",
-					    Lore:[
-					      "{\"text\":\"Emerald x81\",\"italic\":false,\"color\":\"gray\"}"
-					    ]
-					  },
-					  Enchantments: [
-					    {id:"unbreaking",lvl:1}
-					  ],
-					  HideFlags:1
-					}
+						{
+	            display:
+	            {
+	              Name:"{\"text\":\"Compressed Block of Emerald\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore: [
+									"{\"text\":\"Emerald x81\",\"italic\":false,\"color\":\"gray\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
 				},
 				sell:
 				{
@@ -951,12 +955,12 @@ summon minecraft:villager ~ ~1 ~ {
 					tag:
 					{
 					  display:{
-					    Name:"{\"text\":\"Compressed Block of Emerald\",\"italic\":false}",
+					    Name:"{\"text\":\"Compressed Block of Emerald\",\"italic\":false,\"color\":\"yellow\"}",
 					    Lore:[
 					      "{\"text\":\"Emerald x81\",\"italic\":false,\"color\":\"gray\"}"
 					    ]
 					  },
-					  Enchantments: [
+					  Enchantments:[
 					    {id:"unbreaking",lvl:1}
 					  ],
 					  HideFlags:1
@@ -973,12 +977,12 @@ summon minecraft:villager ~ ~1 ~ {
 					tag:
 					{
 					  display:{
-					    Name:"{\"text\":\"Compressed Block of Emerald\",\"italic\":false}",
+					    Name:"{\"text\":\"Compressed Block of Emerald\",\"italic\":false,\"color\":\"yellow\"}",
 					    Lore:[
 					      "{\"text\":\"Emerald x81\",\"italic\":false,\"color\":\"gray\"}"
 					    ]
 					  },
-					  Enchantments: [
+					  Enchantments:[
 					    {id:"unbreaking",lvl:1}
 					  ],
 					  HideFlags:1
