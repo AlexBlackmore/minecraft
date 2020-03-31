@@ -1,4 +1,8 @@
 /give @p written_book{
+  resolved:1,
+  generation:3,
+  author:"?",
+  title:"World Atlas",
   pages:[
     '["",
       {"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
@@ -8,10 +12,8 @@
       {"text":"III:","bold":true,"underlined":true},{"text":" Ocean Explorer","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Ocean Monument","clickEvent":{"action":"run_command","value":"/locate Monument"},"hoverEvent":{"action":"show_text","value":"Ocean Monument"}},{"text":"\\n"},{"text":"- Ocean Ruin","clickEvent":{"action":"run_command","value":"/locate Ocean_Ruin"},"hoverEvent":{"action":"show_text","value":"Ocean Ruin"}},{"text":"\\n"},{"text":"- Shipwreck","clickEvent":{"action":"run_command","value":"/locate Shipwreck"},"hoverEvent":{"action":"show_text","value":"Shipwreck"}},{"text":"\\n "}
     ]','["",
       {"text":"IV:","bold":true,"underlined":true},{"text":" Buried Treasure","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Buried Treasure","clickEvent":{"action":"run_command","value":"/locate Buried_Treasure"},"hoverEvent":{"action":"show_text","value":"Buried Treasure"}}
-    ]'],
-  title:"World Atlas",
-  author:"?",
-  generation:3,
+    ]'
+  ],
   display:{
     Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
     Lore:[
