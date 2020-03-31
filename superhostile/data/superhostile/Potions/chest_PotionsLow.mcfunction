@@ -1,0 +1,26 @@
+give @p chest{
+  BlockEntityTag:{
+    Items:[
+      {Slot:4,id:splash_potion,Count:1,tag:{Potion:strong_healing}},
+      {Slot:12,id:splash_potion,Count:1,tag:{Potion:regeneration}},
+      {Slot:13,id:potion,Count:1,tag:{Potion:strong_swiftness}},
+      {Slot:14,id:splash_potion,Count:1,tag:{Potion:regeneration}},
+      {Slot:22,id:splash_potion,Count:1,tag:{Potion:strong_healing}}
+    ]
+  },
+  display:{
+    Lore:[
+      "{\"text\":\"Potions - Low\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+      "{\"text\":\"Splash Potion of Healing II x2\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Splash Potion of Regeneration x2\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Potion of Swiftness II x1\",\"italic\":false,\"color\":\"white\"}"
+    ]
+  },
+  Enchantments:[
+    {
+      id:"unbreaking",
+      lvl:1
+    }
+  ],
+  HideFlags:1
+}

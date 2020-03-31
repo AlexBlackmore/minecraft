@@ -1,1 +1,12 @@
-give @p lime_dye{AttributeModifiers:[{Slot:"offhand",AttributeName:"generic.movementSpeed",Name:"generic.movementSpeed",Amount:0.2,Operation:1,UUIDMost:1,UUIDLeast:1},{Slot:"offhand",AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:0.2,Operation:1,UUIDMost:1,UUIDLeast:1}],Enchantments:[{id:vanishing_curse,lvl:1}],display:{Name:"{\"text\":\"Charm of Speed\",\"italic\":false}"}}
+give @p lime_dye{
+  AttributeModifiers:[
+    {Slot:"offhand",AttributeName:"generic.movementSpeed",Name:"generic.movementSpeed",Amount:0.2,Operation:1,UUIDMost:1,UUIDLeast:1},
+    {Slot:"offhand",AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:0.2,Operation:1,UUIDMost:1,UUIDLeast:1}
+  ],
+  Enchantments:[
+    {id:vanishing_curse,lvl:1}
+  ],
+  display:{
+    Name:"{\"text\":\"Charm of Speed\",\"italic\":false,\"color\":\"yellow\"}"
+  }
+}

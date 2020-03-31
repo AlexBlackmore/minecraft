@@ -10,14 +10,7 @@ give @p chest{
             Name:"{\"text\":\"Bruce Egg\",\"italic\":false}"}
           }
         },
-        {
-          Slot:14,
-          id:splash_potion,
-          Count:1,
-          tag:{
-            Potion:"long_fire_resistance"
-          }
-        }
+        {Slot:14,id:splash_potion,Count:1,tag:{Potion:"long_fire_resistance"}}
       ]
     },
     display:{
