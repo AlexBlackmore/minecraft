@@ -1,0 +1,15 @@
+give @p chest{
+  BlockEntityTag:{
+    LootTable:"unreal:item_spawn_egg"
+  },
+  display:{
+    Lore:[
+      "{\"text\":\"Random Spawn Egg\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+      "{\"text\":\"Spawn Egg x1\",\"italic\":false,\"color\":\"white\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:1}
+  ],
+  HideFlags:1
+}
