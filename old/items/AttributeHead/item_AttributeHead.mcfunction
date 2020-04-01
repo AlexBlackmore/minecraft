@@ -1,1 +1,0 @@
-/give @p player_head{SkullOwner:Unr3al,AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:10,Operation:0,UUIDMost:25587,UUIDLeast:590687}],ench:[{id:10,lvl:1}],HideFlags:7}
