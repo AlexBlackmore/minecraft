@@ -1,258 +1,385 @@
 {
   "pools":[
     {
-      "rolls":5,
+      "rolls":1,
       "entries":[
         {
           "type":"item",
-          "name":"minecraft:iron_chestplate",
-          "weight":5,
+          "name":"minecraft:leather_chestplate",
+          "weight":4,
           "functions":[
             {
               "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Common\\\"\"]},Enchantments:[{id:protection,lvl:2},{id:unbreaking,lvl:2}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Chestpiece\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+                  ],
+                  color:16777215
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:2},
+                  {id:\"unbreaking\",lvl:2}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:iron_chestplate",
+          "weight":4,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Iron Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:2},
+                  {id:\"unbreaking\",lvl:2}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:leather_chestplate",
+          "weight":3,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Chestpiece\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ],
+                  color:16777045
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:3},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:leather_chestplate",
+          "weight":2,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Chestpiece\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"RARE\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ],
+                  color:5636095
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:4},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"fire_protection\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:leather_chestplate",
+          "weight":2,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Chestpiece\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"EPIC\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ],
+                  color:16733695
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:4},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"fire_protection\",lvl:1},
+                  {id:\"blast_protection\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:7,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:leather_chestplate",
+          "weight":1,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Chestpiece\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ],
+                  color:16755200
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:4},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"fire_protection\",lvl:3},
+                  {id:\"blast_protection\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_leggings",
+          "weight":3,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Pants\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+                  ],
+                  color:16777215
+                },
+                Enchantments:[
+                  {id:\"projectile_protection\",lvl:1},
+                  {id:\"unbreaking\",lvl:2}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
             }
           ]
         },
         {
           "type":"item",
           "name":"minecraft:iron_leggings",
-          "weight":5,
+          "weight":3,
           "functions":[
             {
               "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Common\\\"\"]},Enchantments:[{id:projectile_protection,lvl:1},{id:unbreaking,lvl:2}],AttributeModifiers:[{Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Iron Pants\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"projectile_protection\",lvl:1},
+                  {id:\"unbreaking\",lvl:2}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:leather_leggings",
+          "weight":2,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Pants\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ],
+                  color:16777045
+                },
+                Enchantments:[
+                  {id:\"projectile_protection\",lvl:2},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:leather_leggings",
+          "weight":2,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Pants\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"RARE\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ],
+                  color:5636095
+                },
+                Enchantments:[
+                  {id:\"projectile_protection\",lvl:3},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:leather_leggings",
+          "weight":2,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Pants\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"EPIC\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ],
+                  color:16733695
+                },
+                Enchantments:[
+                  {id:\"projectile_protection\",lvl:4},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:leather_leggings",
+          "weight":1,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Pants\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ],
+                  color:16755200
+                },
+                Enchantments:[
+                  {id:\"projectile_protection\",lvl:5},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:7,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_boots",
+          "weight":3,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+                  ],
+                  color:16777215
+                },
+                Enchantments:[
+                  {id:\"depth_strider\",lvl:1},
+                  {id:\"feather_falling\",lvl:1},
+                  {id:\"unbreaking\",lvl:2},
+                  {id:\"respiration\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:2,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
             }
           ]
         },
         {
           "type":"item",
           "name":"minecraft:iron_boots",
-          "weight":5,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Common\\\"\"]},Enchantments:[{id:depth_strider,lvl:1},{id:feather_falling,lvl:1},{id:unbreaking,lvl:2},{id:respiration,lvl:1}],AttributeModifiers:[{Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_chestplate",
-          "weight":5,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Common\\\"\"],color:16701501},Enchantments:[{id:protection,lvl:2},{id:unbreaking,lvl:2}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_leggings",
-          "weight":5,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Common\\\"\"],color:16701501},Enchantments:[{id:projectile_protection,lvl:1},{id:unbreaking,lvl:2}],AttributeModifiers:[{Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_boots",
-          "weight":5,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Common\\\"\"],color:16701501},Enchantments:[{id:depth_strider,lvl:1},{id:feather_falling,lvl:1},{id:unbreaking,lvl:2},{id:respiration,lvl:1}],AttributeModifiers:[{Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:2,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:iron_sword",
-          "weight":5,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Common\\\"\"]},Enchantments:[{id:sharpness,lvl:1},{id:unbreaking,lvl:1}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:7,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:bow",
-          "weight":5,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Common\\\"\"]},Enchantments:[{id:power,lvl:1},{id:unbreaking,lvl:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:stone_axe",
-          "weight":5,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Name:\"{\\\"text\\\":\\\"Stone Battle Axe\\\",\\\"italic\\\":false}\",Lore:[\"\\\"Common\\\"\"]},Enchantments:[{id:unbreaking,lvl:1},{id:knockback,lvl:1}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:-0.1,Operation:1,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:-0.9,Operation:1,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:15,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_chestplate",
-          "weight":4,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Uncommon\\\"\"],color:8439583},Enchantments:[{id:protection,lvl:3},{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_leggings",
-          "weight":4,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Uncommon\\\"\"],color:8439583},Enchantments:[{id:projectile_protection,lvl:2},{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_boots",
-          "weight":4,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Uncommon\\\"\"],color:8439583},Enchantments:[{id:depth_strider,lvl:2},{id:feather_falling,lvl:2},{id:unbreaking,lvl:3},{id:respiration,lvl:2}],AttributeModifiers:[{Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:iron_sword",
-          "weight":4,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Uncommon\\\"\"]},Enchantments:[{id:sharpness,lvl:3},{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:8,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:bow",
-          "weight":4,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Uncommon\\\"\"]},Enchantments:[{id:power,lvl:2},{id:unbreaking,lvl:2}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:stone_axe",
-          "weight":4,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Name:\"{\\\"text\\\":\\\"Stone Battle Axe\\\",\\\"italic\\\":false}\",Lore:[\"\\\"Uncommon\\\"\"]},Enchantments:[{id:unbreaking,lvl:2},{id:knockback,lvl:2}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:-0.1,Operation:1,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:-0.9,Operation:1,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:17,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_chestplate",
           "weight":3,
           "functions":[
             {
               "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Rare\\\"\"],color:1908001},Enchantments:[{id:protection,lvl:4},{id:unbreaking,lvl:3},{id:fire_protection,lvl:1}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_leggings",
-          "weight":3,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Rare\\\"\"],color:1908001},Enchantments:[{id:projectile_protection,lvl:3},{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_boots",
-          "weight":3,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Rare\\\"\"],color:1908001},Enchantments:[{id:depth_strider,lvl:3},{id:feather_falling,lvl:3},{id:unbreaking,lvl:3},{id:respiration,lvl:3}],AttributeModifiers:[{Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:iron_sword",
-          "weight":3,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Rare\\\"\"]},Enchantments:[{id:sharpness,lvl:3},{id:unbreaking,lvl:3},{id:sweeping,lvl:3}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:8,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:bow",
-          "weight":3,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Rare\\\"\"]},Enchantments:[{id:power,lvl:3},{id:unbreaking,lvl:3}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:stone_axe",
-          "weight":3,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Name:\"{\\\"text\\\":\\\"Stone Battle Axe\\\",\\\"italic\\\":false}\",Lore:[\"\\\"Rare\\\"\"]},Enchantments:[{id:unbreaking,lvl:3},{id:knockback,lvl:3}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:-0.1,Operation:1,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:-0.9,Operation:1,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:19,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_chestplate",
-          "weight":2,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Epic\\\"\"],color:11546150},Enchantments:[{id:protection,lvl:4},{id:unbreaking,lvl:3},{id:fire_protection,lvl:1},{id:blast_protection,lvl:1}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:7,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_leggings",
-          "weight":2,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Epic\\\"\"],color:11546150},Enchantments:[{id:projectile_protection,lvl:4},{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Iron Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"depth_strider\",lvl:1},
+                  {id:\"feather_falling\",lvl:1},
+                  {id:\"unbreaking\",lvl:2},
+                  {id:\"respiration\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
             }
           ]
         },
@@ -263,62 +390,80 @@
           "functions":[
             {
               "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Epic\\\"\"],color:11546150},Enchantments:[{id:depth_strider,lvl:3},{id:feather_falling,lvl:4},{id:unbreaking,lvl:3},{id:respiration,lvl:3}],AttributeModifiers:[{Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ],
+                  color:16777045
+                },
+                Enchantments:[
+                  {id:\"depth_strider\",lvl:2},
+                  {id:\"feather_falling\",lvl:2},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"respiration\",lvl:2}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
             }
           ]
         },
         {
           "type":"item",
-          "name":"minecraft:iron_sword",
+          "name":"minecraft:leather_boots",
           "weight":2,
           "functions":[
             {
               "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Epic\\\"\"]},Enchantments:[{id:sharpness,lvl:5},{id:unbreaking,lvl:3},{id:sweeping,lvl:4},{id:knockback,lvl:1}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:9,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"RARE\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ],
+                  color:5636095
+                },
+                Enchantments:[
+                  {id:\"depth_strider\",lvl:3},
+                  {id:\"feather_falling\",lvl:3},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"respiration\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
             }
           ]
         },
         {
           "type":"item",
-          "name":"minecraft:bow",
+          "name":"minecraft:leather_boots",
           "weight":2,
           "functions":[
             {
               "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Epic\\\"\"]},Enchantments:[{id:power,lvl:4},{id:unbreaking,lvl:3},{id:flame,lvl:1},{id:infinity,lvl:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:stone_axe",
-          "weight":2,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Name:\"{\\\"text\\\":\\\"Stone Battle Axe\\\",\\\"italic\\\":false}\",Lore:[\"\\\"Epic\\\"\"]},Enchantments:[{id:unbreaking,lvl:3},{id:knockback,lvl:4},{id:fire_aspect,lvl:1}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:-0.1,Operation:1,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:-0.9,Operation:1,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:21,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_chestplate",
-          "weight":1,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Legendary\\\"\"],color:16351261},Enchantments:[{id:protection,lvl:4},{id:unbreaking,lvl:3},{id:fire_protection,lvl:3},{id:blast_protection,lvl:3}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"minecraft:leather_leggings",
-          "weight":1,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Legendary\\\"\"],color:16351261},Enchantments:[{id:projectile_protection,lvl:5},{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"legs\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:7,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"EPIC\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ],
+                  color:16733695
+                },
+                Enchantments:[
+                  {id:\"depth_strider\",lvl:3},
+                  {id:\"feather_falling\",lvl:4},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"respiration\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
             }
           ]
         },
@@ -329,7 +474,132 @@
           "functions":[
             {
               "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Legendary\\\"\"],color:16351261},Enchantments:[{id:depth_strider,lvl:3},{id:feather_falling,lvl:5},{id:unbreaking,lvl:3},{id:respiration,lvl:3}],AttributeModifiers:[{Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Leather Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ],
+                  color:16755200
+                },
+                Enchantments:[
+                  {id:\"depth_strider\",lvl:3},
+                  {id:\"feather_falling\",lvl:5},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"respiration\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"feet\",AttributeName:\"generic.armorToughness\",Name:\"generic.armorToughness\",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:iron_sword",
+          "weight":9,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Iron Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"sharpness\",lvl:1},
+                  {id:\"unbreaking\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:7,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:iron_sword",
+          "weight":4,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Iron Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"sharpness\",lvl:3},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:8,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:iron_sword",
+          "weight":3,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Iron Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"RARE\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"sharpness\",lvl:3},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"sweeping\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:8,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:iron_sword",
+          "weight":2,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Iron Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"EPIC\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"sharpness\",lvl:5},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"sweeping\",lvl:4},
+                  {id:\"knockback\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:9,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
             }
           ]
         },
@@ -340,7 +610,114 @@
           "functions":[
             {
               "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Legendary\\\"\"]},Enchantments:[{id:sharpness,lvl:7},{id:unbreaking,lvl:3},{id:sweeping,lvl:5},{id:knockback,lvl:3}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:10,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Iron Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"sharpness\",lvl:7},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"sweeping\",lvl:5},
+                  {id:\"knockback\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:10,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:bow",
+          "weight":9,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+                  ],
+                },
+                Enchantments:[
+                  {id:\"power\",lvl:1},
+                  {id:\"unbreaking\",lvl:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:bow",
+          "weight":6,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"power\",lvl:2},
+                  {id:\"unbreaking\",lvl:2}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:bow",
+          "weight":4,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"RARE\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"power\",lvl:3},
+                  {id:\"unbreaking\",lvl:3}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:bow",
+          "weight":2,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"EPIC\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"power\",lvl:4},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"flame\",lvl:1},
+                  {id:\"infinity\",lvl:1}
+                ]
+              }"
             }
           ]
         },
@@ -351,7 +728,130 @@
           "functions":[
             {
               "function":"set_nbt",
-              "tag":"{display:{Lore:[\"\\\"Legendary\\\"\"]},Enchantments:[{id:power,lvl:6},{id:unbreaking,lvl:3},{id:flame,lvl:3},{id:infinity,lvl:1},{id:punch,lvl:2}]}"
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"power\",lvl:6},
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"flame\",lvl:3},
+                  {id:\"infinity\",lvl:1},
+                  {id:\"punch\",lvl:2}
+                ]
+              }"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:stone_axe",
+          "weight":7,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Stone Battle Axe\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:1},
+                  {id:\"knockback\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:-0.1,Operation:1,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:-0.9,Operation:1,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:15,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:stone_axe",
+          "weight":4,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Stone Battle Axe\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:2},
+                  {id:\"knockback\",lvl:2}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:-0.1,Operation:1,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:-0.9,Operation:1,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:17,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:stone_axe",
+          "weight":3,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Stone Battle Axe\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"RARE\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"knockback\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:-0.1,Operation:1,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:-0.9,Operation:1,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:19,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:stone_axe",
+          "weight":2,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Stone Battle Axe\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"EPIC\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"knockback\",lvl:4},
+                  {id:\"fire_aspect\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:-0.1,Operation:1,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:-0.9,Operation:1,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:21,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
             }
           ]
         },
@@ -362,7 +862,23 @@
           "functions":[
             {
               "function":"set_nbt",
-              "tag":"{display:{Name:\"{\\\"text\\\":\\\"Stone Battle Axe\\\",\\\"italic\\\":false}\",Lore:[\"\\\"Legendary\\\"\"]},Enchantments:[{id:unbreaking,lvl:3},{id:knockback,lvl:6},{id:fire_aspect,lvl:3}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:-0.1,Operation:1,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:-0.9,Operation:1,UUIDMost:1,UUIDLeast:1},{Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:23,Operation:0,UUIDMost:1,UUIDLeast:1}]}"
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Stone Battle Axe\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:3},
+                  {id:\"knockback\",lvl:6},
+                  {id:\"fire_aspect\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.movementSpeed\",Name:\"generic.movementSpeed\",Amount:-0.1,Operation:1,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:-0.9,Operation:1,UUIDMost:1,UUIDLeast:1},
+                  {Slot:\"mainhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:23,Operation:0,UUIDMost:1,UUIDLeast:1}
+                ]
+              }"
             }
           ]
         }

@@ -1,23 +1,20 @@
 give @p chest{
   BlockEntityTag:{
-    LootTable:"superhostile:random_equipment"
+    LootTable:"superhostile:random_equipment_set"
   },
   display:{
     Lore:[
       "{\"text\":\"Random Equipment Set\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-      "{\"text\":\"Enchanted Helmet (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
       "{\"text\":\"Enchanted Chestpiece (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
       "{\"text\":\"Enchanted Pants (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
       "{\"text\":\"Enchanted Boots (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
-      "{\"text\":\"Enchanted Weapon (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
-      "{\"text\":\"and 1 more...\",\"color\":\"white\"}"
+      "{\"text\":\"Enchanted Sword (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Enchanted Bow (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Enchanted Battle Axe (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
     ]
   },
   Enchantments:[
-    {
-      id:"unbreaking",
-      lvl:1
-    }
+    {id:"unbreaking",lvl:1}
   ],
   HideFlags:1
 }
