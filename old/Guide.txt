@@ -1,0 +1,41 @@
+/summon Villager ~ ~ ~ {
+	CustomName: "Guide",
+	CustomNameVisible: 0,
+	Profession: 1,
+	Career: 1,
+	CareerLevel: 42,
+	CanPickUpLoot: 0,
+	PersistenceRequired: 1,
+	Attributes: [
+		{
+			Name: "generic.movementSpeed",
+			Base: "0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id: "diamond",
+					Count: 1
+				},
+				sell:
+				{
+					id: "written_book",
+					Count: 1,
+					tag:
+					{
+            pages:[
+							"{\"text\":\"5904            7711\",\"bold\":true,\"italic\":true,\"strikethrough\":true,\"underlined\":true},{\"text\":\"\n\",\"color\":\"reset\"},{\"text\":\"5\",\"obfuscated\":true}"
+						],
+            title:"§7§n§lRagecraft I: The Corrupt Path",
+            author:"heliceo",
+            generation:3
+          }
+				}
+			}
+		]
+	}
+}

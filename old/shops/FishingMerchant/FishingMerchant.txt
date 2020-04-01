@@ -1,0 +1,173 @@
+summon Villager ~ ~ ~ {
+	CustomName:"Fishing Merchant",
+	CustomNameVisible:0,
+	Profession:0,
+	Career:2,
+	CareerLevel:42,
+	CanPickUpLoot:0,
+	PersistenceRequired:1,
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:2
+				},
+				sell:
+				{
+					id:"fish",
+					Damage:1,
+					Count:5
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:5
+				},
+				sell:
+				{
+					id:"fish",
+					Damage:2,
+					Count:1
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:2
+				},
+				sell:
+				{
+					id:"fish",
+					Damage:3,
+					Count:1
+				}
+			},
+			{
+				buy:
+				{
+					id:"stick",
+					Count:60
+				},
+				buyB:
+				{
+					id:"string",
+					Count:40
+				},
+				sell:
+				{
+					id:"emerald",
+					Count:10
+				}
+			},
+			{
+				buy:
+				{
+					id:"fish",
+					Count:39
+				},
+				sell:
+				{
+					id:"emerald",
+					Count:2
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"golden_chestplate",
+					Count:1,
+					tag:
+					{
+						display: {
+							Name:"§cDiving Gear",
+							Lore: [
+								"§7Greatly extends underwater breathing"
+							]
+						},
+						ench: [
+							{
+								id:6,
+								lvl:1
+							},
+							{
+								id:8,
+								lvl:3
+							},
+							{
+								id:5,
+								lvl:10
+							},
+							{
+								id:34,
+								lvl:10,
+							}
+						],
+						HideFlags:1
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:1
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"custom:fishing"
+						},
+						display:
+						{
+							Name:"§fFishing Loot Chest",
+							Lore: [
+								"§748.0% Raw fish",
+								"§720.0% Raw salmon",
+								"§710.4% Pufferfish",
+								"§71.6% Bow",
+								"§71.6% Enchanted book",
+								"§71.6% Fishing rod",
+								"§71.6% Name tag",
+								"§71.6% Saddle",
+								"§71.6% Lily pad",
+								"§71.6% Clown fish",
+								"§70.6% Bowl",
+								"§70.6% Leather",
+								"§70.6% Leather boots",
+								"§70.6% Rotten flesh",
+								"§70.6% Water bottle",
+								"§70.6% Bone",
+								"§70.6% Tripwire hook",
+								"§70.3% Stick",
+								"§70.3% String",
+								"§70.06% Ink Sac",
+							]
+						}
+					}
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,80 @@
+/give @a minecraft:leather_boots 1 0 {
+  AttributeModifiers: [
+    {
+      AttributeName:"generic.movementSpeed",
+      Name:"generic.movementSpeed",
+      Amount:1,
+      Operation:1,
+      UUIDMost:35308,UUIDLeast:121250
+    }
+  ],
+  display:
+  {
+    color:56847,
+    Name:"§2Herme's Boots",
+    Lore: [
+      "§5The wearer can run",
+      "§5super fast",
+      "",
+      "§9+100% speed"
+    ]
+  },
+  ench: [
+    {
+      id: 34,
+      lvl: 10
+    }
+  ],
+  HideFlags:3
+}
+
+---------------------------------------------------------------------
+
+/give @p sign 1 0 {
+  BlockEntityTag:
+  {
+    Text2:"
+    {
+      \"text\":\"Click\",
+      \"color\":\"blue\",
+      \"clickEvent\":
+      {
+        \"action\":\"run_command\",
+        \"value\":\"/setblock ~ ~ ~ command_block 2 replace
+        {
+          Command:
+          /give @a minecraft:leather_boots 1 0 {
+            AttributeModifiers: [
+              {
+                AttributeName:\\\"generic.movementSpeed\\\",
+                Name:\\\"generic.movementSpeed\\\",
+                Amount:1,
+                Operation:1,
+                UUIDMost:35308,UUIDLeast:121250
+              }
+            ],
+            display:
+            {
+              color:56847,
+              Name:\\\"\u00a72Herme's Boots\\\",
+              Lore: [
+                \\\"\u00a75The wearer can run\\\",
+                \\\"\u00a75super fast\\\",
+                \\\"\\\",
+                \\\"\u00a79+100% speed\\\"
+              ]
+            },
+            ench:
+            [
+              {
+                id: 34,
+                lvl: 10
+              }
+            ],
+            HideFlags:3
+          }
+        }\"
+      }
+    }"
+  }
+}

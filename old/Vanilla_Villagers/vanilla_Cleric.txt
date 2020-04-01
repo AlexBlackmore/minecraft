@@ -1,0 +1,119 @@
+/summon Villager ~ ~ ~ {
+		Profession: 2,
+		CustomName: "Cleric",
+		CustomNameVisible: 0,
+		Career: 1,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "rotten_flesh",
+						Count: 36
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "gold_ingot",
+						Count: 8
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "redstone",
+						Count: 4
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "dye",
+						Count: 2,
+						Damage:4
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "glowstone",
+						Count: 3
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 7
+					},
+					sell:
+					{
+						id: "ender_eye",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 4
+					},
+					sell:
+					{
+						id: "ender_pearl",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "emerald",
+						Count: 3
+					},
+					sell:
+					{
+						id: "experience_bottle",
+						Count: 1
+					}
+				}
+			]
+		}
+	}

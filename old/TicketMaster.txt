@@ -1,0 +1,42 @@
+/summon Villager ~ ~ ~ {
+	CustomName: "Ticket Master",
+	CustomNameVisible: 0,
+  Profession: 2,
+	Career: 1,
+	CareerLevel: 42,
+	CanPickUpLoot: 0,
+	PersistenceRequired: 1,
+	Attributes: [
+		{
+			Name: "generic.movementSpeed",
+			Base: "0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id: "diamond",
+					Count: 1
+				},
+				sell:
+				{
+					id: "paper",
+					Count: 1,
+          tag:
+          {
+            display:
+            {
+              Name: "§cBoarding Pass",
+              Lore: [
+                "§71-way"
+              ]
+            }
+          }
+				}
+			}
+		]
+	}
+}

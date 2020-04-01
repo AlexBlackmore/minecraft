@@ -1,0 +1,46 @@
+/summon Villager ~ ~ ~ {
+	CustomName: "Legendary Merchant",
+	CustomNameVisible: 0,
+  Profession: 2,
+	Career: 1,
+	CareerLevel: 42,
+	CanPickUpLoot: 0,
+	PersistenceRequired: 1,
+	Attributes: [
+		{
+			Name: "generic.movementSpeed",
+			Base: "0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id: "diamond",
+					Count: 1
+				},
+				sell:
+				{
+					id: "gold_nugget",
+					Count: 1,
+          tag:
+          {
+            display:
+            {
+              Name: "§6One Ring",
+              Lore:
+              [
+                "§7§oOne Ring to rule them all",
+                "§7§oOne Ring to find them",
+                "§7§oOne Ring to bring them all",
+                "§7§oand in the darkness bind them."
+              ]
+            }
+          }
+				}
+			}
+		]
+	}
+}

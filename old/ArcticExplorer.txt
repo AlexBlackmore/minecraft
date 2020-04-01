@@ -1,0 +1,78 @@
+/summon Villager ~ ~ ~ {
+	CustomName: "Arctic Explorer",
+	CustomNameVisible: 0,
+	Profession: 1,
+	Career: 2,
+	CareerLevel: 42,
+	CanPickUpLoot: 0,
+	PersistenceRequired: 1,
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id: "emerald",
+					Count: 1
+				},
+				sell:
+				{
+					id: "ice",
+					Count: 16
+				}
+			},
+			{
+				buy:
+				{
+					id: "emerald",
+					Count: 1
+				},
+				sell:
+				{
+					id: "packed_ice",
+					Count: 4
+				}
+			},
+			{
+				buy:
+				{
+					id: "snow",
+					Count: 64
+				},
+				buyB:
+				{
+					id: "snow",
+					Count: 64
+				},
+				sell:
+				{
+					id: "ice",
+					Count: 32
+				}
+			},
+			{
+				buy:
+				{
+					id: "snow",
+					Count: 64
+				},
+				buyB:
+				{
+					id: "emerald",
+					Count: 1
+				},
+				sell:
+				{
+					id: "packed_ice",
+					Count: 8
+				}
+			}
+		]
+  }
+}

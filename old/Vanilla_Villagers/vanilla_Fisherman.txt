@@ -1,0 +1,63 @@
+/summon Villager ~ ~ ~ {
+		Profession: 0,
+		CustomName: "Fisherman",
+		CustomNameVisible: 0,
+		Career: 2,
+		CareerLevel: 42,
+		CanPickUpLoot: 0,
+		PersistenceRequired: 1,
+		Attributes:
+		[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:
+			[
+				{
+					buy:
+					{
+						id: "fish",
+						Count: 6
+					},
+					buyB:
+					{
+						id: "emerald",
+						Count: 1
+					},
+					sell:
+					{
+						id: "cooked_fish",
+						Count: 6
+					}
+				},
+				{
+					buy:
+					{
+						id: "string",
+						Count: 15
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				},
+				{
+					buy:
+					{
+						id: "coal",
+						Count: 16
+					},
+					sell:
+					{
+						id: "emerald",
+						Count: 1
+					}
+				}
+			]
+		}
+	}
