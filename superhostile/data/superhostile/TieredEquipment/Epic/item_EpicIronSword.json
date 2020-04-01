@@ -1,0 +1,18 @@
+give @p iron_sword{
+  display:{
+    Name:"{\"text\":\"Iron Sword\",\"italic\":false,\"color\":\"light_purple\"}",
+    Lore:[
+      "{\"text\":\"EPIC\",\"italic\":false,\"color\":\"light_purple\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"sharpness",lvl:5},
+    {id:"unbreaking",lvl:3},
+    {id:"sweeping",lvl:4},
+    {id:"knockback",lvl:1}
+  ],
+  AttributeModifiers:[
+    {Slot:"mainhand",AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},
+    {Slot:"mainhand",AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:9,Operation:0,UUIDMost:1,UUIDLeast:1}
+  ]
+}

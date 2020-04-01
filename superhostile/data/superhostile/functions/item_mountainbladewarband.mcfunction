@@ -1,1 +1,0 @@
-give @p stone_sword{display:{Name:"{\"text\":\"Mountain Blade: Warband\",\"italic\":false}"},Enchantments:[{id:sweeping,lvl:3},{id:unbreaking,lvl:3}]}

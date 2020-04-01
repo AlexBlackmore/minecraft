@@ -1,0 +1,23 @@
+give @p chest{
+  BlockEntityTag:{
+    LootTable:"superhostile:random_equipment"
+  },
+  display:{
+    Lore:[
+      "{\"text\":\"Random Equipment Set\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+      "{\"text\":\"Enchanted Helmet (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Enchanted Chestpiece (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Enchanted Pants (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Enchanted Boots (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Enchanted Weapon (Tiered) x1\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"and 1 more...\",\"color\":\"white\"}"
+    ]
+  },
+  Enchantments:[
+    {
+      id:"unbreaking",
+      lvl:1
+    }
+  ],
+  HideFlags:1
+}

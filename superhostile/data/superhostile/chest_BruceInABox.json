@@ -1,0 +1,30 @@
+give @p chest{
+  BlockEntityTag:{
+    Items:[
+      {
+        Slot:12,
+        id:"blaze_spawn_egg",
+        Count:1,
+        tag:{
+          display:{
+            Name:"{\"text\":\"Bruce Egg\",\"italic\":false}"}
+          }
+        },
+        {Slot:14,id:"splash_potion",Count:1,tag:{Potion:"long_fire_resistance"}}
+      ]
+    },
+    display:{
+      Lore:[
+        "{\"text\":\"Bruce-in-a-Box\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+        "{\"text\":\"Bruce Egg x1\",\"italic\":false,\"color\":\"white\"}",
+        "{\"text\":\"Splash Potion of Fire Resistance + x1\",\"italic\":false,\"color\":\"white\"}"
+      ]
+    },
+    Enchantments:[
+      {
+        id:"unbreaking",
+        lvl:1
+      }
+    ],
+    HideFlags:1
+  }

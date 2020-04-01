@@ -1,0 +1,70 @@
+give @p chest{
+  BlockEntityTag:{
+    Items:[
+      {
+        Slot:4,
+        id:"golden_helmet",
+        Count:1,
+        tag:{
+          display:{
+            Name:"{\"text\":\"Enchanted Golden Helmet\",\"italic\":false}"
+          },
+          Enchantments:[
+            {id:"protection",lvl:4},
+            {id:"respiration",lvl:3}
+          ]
+        }
+      },
+      {
+        Slot:12,
+        id:"golden_chestplate",
+        Count:1,
+        tag:{
+          display:{
+            Name:"{\"text\":\"Enchanted Golden Chestplate\",\"italic\":false}"
+          },
+          Enchantments:[
+            {id:"protection",lvl:4}
+          ]
+        }
+      },
+      {
+        Slot:14,
+        id:"golden_leggings",
+        Count:1,
+        tag:{
+          display:{
+            Name:"{\"text\":\"Enchanted Golden Pants\",\"italic\":false}"
+          },
+          Enchantments:[
+            {id:"protection",lvl:4}
+          ]
+        }
+      },
+      {
+        Slot:22,
+        id:"golden_boots",
+        Count:1,
+        tag:{
+          display:{
+            Name:"{\"text\":\"Enchanted Golden Boots\",\"italic\":false}"
+          },
+          Enchantments:[
+            {id:"protection",lvl:4},
+            {id:"feather_falling",lvl:4}
+          ]
+        }
+      }
+    ]
+  },
+  display:{
+    Lore:[
+      "{\"text\":\"Enchanted Golden Armor\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+      "{\"text\":\"Set of Enchanted Golden Armor x1\",\"italic\":false,\"color\":\"white\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:1}
+  ],
+  HideFlags:1
+}

@@ -1,0 +1,17 @@
+give @p chest{
+  BlockEntityTag:{
+    LootTable:"superhostile:random_loot"
+  },
+  display:{
+    Lore:[
+      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}"
+    ]
+  },
+  Enchantments:[
+    {
+      id:"unbreaking",
+      lvl:1
+    }
+  ],
+  HideFlags:1
+}

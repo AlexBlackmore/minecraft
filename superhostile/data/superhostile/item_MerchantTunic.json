@@ -1,0 +1,16 @@
+give @p leather_chestplate{
+  display:{
+    Name:"{\"text\":\"Merchant Tunic\",\"italic\":false}",
+    Lore:[
+      "\"Helps traders travel safe and fast.\""
+    ]
+  },
+  AttributeModifiers:[
+    {Slot:"chest",AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:4,Operation:0,UUIDMost:1,UUIDLeast:1},
+    {Slot:"chest",AttributeName:"generic.movementSpeed",Name:"generic.movementSpeed",Amount:0.1,Operation:1,UUIDMost:1,UUIDLeast:1}
+  ],
+  Enchantments:[
+    {id:"protection",lvl:4},
+    {id:"unbreaking",lvl:3}
+  ]
+}

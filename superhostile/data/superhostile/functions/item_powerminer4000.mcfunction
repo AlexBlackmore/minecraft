@@ -1,1 +1,0 @@
-give @p iron_pickaxe{display:{Name:"{\"text\":\"Power Miner 4000\",\"italic\":false}"},Enchantments:[{id:efficiency,lvl:10},{id:unbreaking,lvl:5},{id:fortune,lvl:4}]}

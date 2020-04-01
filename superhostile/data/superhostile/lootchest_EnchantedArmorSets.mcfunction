@@ -1,1 +1,0 @@
-give @p chest{BlockEntityTag:{LootTable:"superhostile:enchantedarmor"},display:{Lore: ["{\"text\":\"Enchanted Armor\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}","\"Contains a complete set of random\"","\"enchanted armor.\""]}}

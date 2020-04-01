@@ -1,1 +1,0 @@
-give @p chest{BlockEntityTag:{LootTable:"superhostile:randomloot"},display:{Lore: ["{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}","\"Contains basic weapons, armor,\"","\"blocks, food, and other resources.\""]}}

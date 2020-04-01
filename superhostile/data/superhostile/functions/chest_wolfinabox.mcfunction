@@ -1,1 +1,0 @@
-give @p chest{BlockEntityTag:{Items: [{Slot:12,id:wolf_spawn_egg,Count:1,tag:{display:{Name:"{\"text\":\"Wolf Egg\",\"italic\":false}"}}},{Slot:14,id:bone,Count:10}]},display:{Lore:["{\"text\":\"Wolf-in-a-Box\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}","\"1 Wolf Egg\"","\"10 Bones\""]}}

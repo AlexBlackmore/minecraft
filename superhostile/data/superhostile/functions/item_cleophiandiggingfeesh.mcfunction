@@ -1,1 +1,0 @@
-give @p cod{display:{Name:"{\"text\":\"Cleophian Digging Feesh\",\"italic\":false}",Lore:["\"(It's very efeeshant.) :D\""]},Enchantments:[{id:efficiency,lvl:10},{id:unbreaking,lvl:10},{id:fortune,lvl:10},{id:knockback,lvl:5}]}

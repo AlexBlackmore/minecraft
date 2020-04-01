@@ -1,0 +1,17 @@
+give @p iron_leggings{
+  display:{
+    Name:"{\"text\":\"Merchant Pants\",\"italic\":false}",
+    Lore:[
+      "\"Armored pockets prevent pickpocketing.\""
+    ]
+  },
+  AttributeModifiers:[
+    {Slot:"legs",AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:6,Operation:0,UUIDMost:1,UUIDLeast:1},
+    {Slot:"legs",AttributeName:"generic.movementSpeed",Name:"generic.movementSpeed",Amount:0.1,Operation:1,UUIDMost:1,UUIDLeast:1},
+    {Slot:"legs",AttributeName:"generic.armorToughness",Name:"generic.armorToughness",Amount:4,Operation:0,UUIDMost:1,UUIDLeast:1}
+  ],
+  Enchantments:[
+    {id:"protection",lvl:4},
+    {id:"unbreaking",lvl:3}
+  ]
+}

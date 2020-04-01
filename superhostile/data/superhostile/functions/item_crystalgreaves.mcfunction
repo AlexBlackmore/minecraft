@@ -1,1 +1,0 @@
-give @p diamond_leggings{display:{Name:"{\"text\":\"Crystal Greaves\",\"italic\":false}",Lore:["\"Tough. Sharp. Badass!\""]},Enchantments:[{id:fire_protection,lvl:2},{id:blast_protection,lvl:4},{id:thorns,lvl:6}]}
