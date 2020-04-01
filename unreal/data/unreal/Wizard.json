@@ -1,0 +1,1001 @@
+summon minecraft:villager ~ ~1 ~ {
+	CustomName:"{\"text\":\"Wizard\"}",
+	CustomNameVisible:true,
+  PersistenceRequired:true,
+  Silent:true,
+  CanPickUpLoot:false,
+  Willing:false,
+  NoAI:false,
+  VillagerData:
+  {
+    level:5,
+    profession:"cleric",
+    type:"plains"
+  },
+  Attributes: [
+    {
+      Name:"generic.movementSpeed",
+      Base:"0f"
+    }
+  ],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id:"beacon",
+					Count:1
+				},
+				buyB:
+				{
+					id:"emerald_block",
+					Count:9
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+				buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:{
+						Potion:"minecraft:swiftness"
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:speed 11\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Swiftness",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Swiftness\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Speed (0:11)\",\"italic\":false,\"color\":\"blue\"}",
+							]
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+				buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:empty",
+						display:
+						{
+							Name:"{\"text\":\"Potion of Haste\",\"italic\":false}",
+							Lore: [
+								"{\"text\":\"Haste (3:00)\",\"italic\":false,\"color\":\"blue\"}",
+                "\" \"",
+                "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                "{\"text\":\"+10% Mining and Attack Speed\",\"italic\":false,\"color\":\"blue\"}"
+							]
+						},
+						CustomPotionEffects:[
+							{
+								Id:3,
+								Amplifier:0,
+								Duration:3600
+							}
+						],
+						CustomPotionColor:28557379,
+						HideFlags:32
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:haste 11\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Haste",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Haste\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Haste (0:11)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				maxUses:0
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+				buyB:
+				{
+					id:"emerald_block",
+					Count:25
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome II",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome II\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome II",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome II\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+        buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+            Potion:"minecraft:empty",
+            display:
+            {
+              Name:"{\"text\":\"Potion of Resistance\",\"italic\":false}",
+              Lore: [
+								"{\"text\":\"Resistance (3:00)\",\"italic\":false,\"color\":\"blue\"}",
+                "\" \"",
+                "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                "{\"text\":\"-20% Damage Taken\",\"italic\":false,\"color\":\"blue\"}"
+							]
+            },
+            CustomPotionEffects: [
+              {
+                Id:11,
+                Amplifier:0,
+                Duration:3600
+              }
+            ],
+            CustomPotionColor:10044730,
+            HideFlags:32
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:resistance 13\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Resistance",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Resistance\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Resistance (0:13)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+					  },
+						HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome II",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome II\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+						HideFlags:63
+					}
+				},
+        buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+            Potion:"minecraft:leaping"
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:jump_boost 13\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Leaping",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Leaping\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Jump Boost (0:13)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				maxUses:0
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome II",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome II\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+				buyB:
+				{
+					id:"emerald_block",
+					Count:49
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome III",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome III\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome III",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome III\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+        buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+            Potion:"minecraft:strength"
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:strength 15\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Strength",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Strength\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Strength (0:15)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+					  },
+						HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome III",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome III\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+						HideFlags:63
+					}
+				},
+				buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+            Potion:"minecraft:empty",
+            display:
+            {
+              Name:"{\"text\":\"Potion of Saturation\",\"italic\":false}",
+              Lore: [
+								"{\"text\":\"Saturation (3:00)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+            },
+            CustomPotionEffects: [
+              {
+                Id:23,
+                Amplifier:0,
+                Duration:3600
+              }
+            ],
+            CustomPotionColor:16262179,
+            HideFlags:32
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:saturation 15\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Saturation",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Saturation\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Saturation (0:15)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				maxUses:0
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome III",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome III\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+				buyB:
+				{
+					id:"emerald_block",
+					Count:9,
+					tag:
+						{
+	            display:
+	            {
+	              Name:"{\"text\":\"Compressed Block of Emerald\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore: [
+									"{\"text\":\"Emerald x81\",\"italic\":false,\"color\":\"gray\"}"
+	              ]
+	            },
+	            Enchantments: [
+	              {
+	                id:"unbreaking",
+	                lvl:1
+	              }
+	            ],
+	            HideFlags:7
+	          }
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome IV",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome IV\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome IV",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome IV\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+					  HideFlags:63
+					}
+				},
+        buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+            Potion:"minecraft:regeneration"
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:regeneration 16\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Strength",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Regeneration\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Regeneration (0:16)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+					  },
+						HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome IV",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome IV\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+						HideFlags:63
+					}
+				},
+				buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+            Potion:"minecraft:strong_swiftness"
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:speed 16 1\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Swiftness II",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Swiftness II\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Speed II (0:16)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome IV",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome IV\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+						HideFlags:63
+					}
+				},
+				buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+						Potion:"minecraft:empty",
+						display:
+						{
+							Name:"{\"text\":\"Potion of Haste II\",\"italic\":false}",
+							Lore: [
+								"{\"text\":\"Haste II (1:30)\",\"italic\":false,\"color\":\"blue\"}",
+                "\" \"",
+                "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                "{\"text\":\"+20% Mining and Attack Speed\",\"italic\":false,\"color\":\"blue\"}"
+							]
+						},
+						CustomPotionEffects: [
+							{
+								Id:3,
+								Amplifier:1,
+								Duration:1800
+							}
+						],
+						CustomPotionColor:28557379,
+						HideFlags:32
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:haste 16 1\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Haste II",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Haste II\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Haste II (0:16)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome IV",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome IV\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+						HideFlags:63
+					}
+				},
+				buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+            Potion:"minecraft:empty",
+            display:
+            {
+              Name:"{\"text\":\"Potion of Resistance II\",\"italic\":false}",
+              Lore: [
+								"{\"text\":\"Resistance II (1:30)\",\"italic\":false,\"color\":\"blue\"}",
+                "\" \"",
+                "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                "{\"text\":\"-40% Damage Taken\",\"italic\":false,\"color\":\"blue\"}"
+							]
+            },
+            CustomPotionEffects: [
+              {
+                Id:11,
+                Amplifier:1,
+                Duration:1800
+              }
+            ],
+            CustomPotionColor:10044730,
+            HideFlags:32
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:resistance 16 1\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Resistance II",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Resistance II\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Resistance II (0:16)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome IV",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome IV\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+						HideFlags:63
+					}
+				},
+				buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+            Potion:"minecraft:strong_leaping"
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:jump_boost 16 1\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Leaping II",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Leaping II\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Jump Boost II (0:16)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages:[""],
+					  title:"Blank Tome IV",
+					  author:"?",
+					  generation:3,
+					  display:{
+					    Name:"{\"text\":\"Blank Tome IV\",\"italic\":false,\"color\":\"light_purple\"}"
+					  },
+						HideFlags:63
+					}
+				},
+				buyB:
+				{
+					id:"potion",
+					Count:1,
+					tag:
+					{
+            Potion:"minecraft:strong_strength"
+					}
+				},
+				sell:
+				{
+					id:"written_book",
+					Count:1,
+					tag:
+					{
+					  pages: ["{
+					      \"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+					      \"obfuscated\":true,
+					      \"clickEvent\":{\"action\":\"run_command\",\"value\":\"/effect give @p minecraft:strength 16 1\"},
+					      \"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Activate Tome\"}
+					    }"
+					  ],
+					  title:"Tome of Strength II",
+					  author:"?",
+					  generation:3,
+						display:{
+					    Name:"{\"text\":\"Tome of Strength II\",\"italic\":false,\"color\":\"light_purple\"}",
+							Lore:[
+								"{\"text\":\"Strength II (0:16)\",\"italic\":false,\"color\":\"blue\"}"
+							]
+					  },
+					  HideFlags:63
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				maxUses:0
+			},
+			{
+				buy:
+				{
+					id:"emerald_block",
+					Count:9
+				},
+				sell:
+				{
+					id:"emerald_block",
+					Count:1,
+					tag:
+					{
+					  display:{
+					    Name:"{\"text\":\"Compressed Block of Emerald\",\"italic\":false,\"color\":\"yellow\"}",
+					    Lore:[
+					      "{\"text\":\"Emerald x81\",\"italic\":false,\"color\":\"gray\"}"
+					    ]
+					  },
+					  Enchantments:[
+					    {id:"unbreaking",lvl:1}
+					  ],
+					  HideFlags:1
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"emerald_block",
+					Count:1,
+					tag:
+					{
+					  display:{
+					    Name:"{\"text\":\"Compressed Block of Emerald\",\"italic\":false,\"color\":\"yellow\"}",
+					    Lore:[
+					      "{\"text\":\"Emerald x81\",\"italic\":false,\"color\":\"gray\"}"
+					    ]
+					  },
+					  Enchantments:[
+					    {id:"unbreaking",lvl:1}
+					  ],
+					  HideFlags:1
+					}
+				},
+				sell:
+				{
+					id:"emerald_block",
+					Count:9
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			}
+		]
+	}
+}

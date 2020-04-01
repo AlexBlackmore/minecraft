@@ -1,0 +1,153 @@
+summon minecraft:villager ~ ~1 ~ {
+  CustomName:"{\"text\":\"Obsidian Blacksmith\"}",
+  CustomNameVisible:true,
+  PersistenceRequired:true,
+  Silent:true,
+  CanPickUpLoot:false,
+  Willing:false,
+  NoAI:false,
+  VillagerData:
+  {
+    level:5,
+    profession:"toolsmith",
+    type:"plains"
+  },
+  Attributes: [
+    {
+      Name:"generic.movementSpeed",
+      Base:"0f"
+    }
+  ],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id:"obsidian",
+					Count:3
+				},
+				buyB:
+				{
+					id:"emerald_block",
+					Count:33
+				},
+				sell:
+				{
+					id:"golden_pickaxe",
+					Count:1,
+					tag:
+					{
+            display:
+            {
+              Name:"{\"text\":\"Obsidian Pickaxe\",\"italic\":false,\"color\":\"light_purple\"}",
+              Lore:["{\"text\":\"Unbreaking C\",\"italic\":false,\"color\":\"gray\"}"]
+            },
+            Enchantments: [
+              {id:"unbreaking",lvl:487},
+              {id:"efficiency",lvl:5}
+            ],
+            HideFlags:1
+          }
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+      {
+				buy:
+				{
+					id:"obsidian",
+					Count:1
+				},
+				buyB:
+				{
+					id:"emerald_block",
+					Count:11
+				},
+				sell:
+				{
+					id:"golden_shovel",
+					Count:1,
+					tag:
+					{
+            display:
+            {
+              Name:"{\"text\":\"Obsidian Shovel\",\"italic\":false,\"color\":\"light_purple\"}",
+              Lore:["{\"text\":\"Unbreaking C\",\"italic\":false,\"color\":\"gray\"}"]
+            },
+            Enchantments: [
+              {id:"unbreaking",lvl:487},
+              {id:"efficiency",lvl:2}
+            ],
+            HideFlags:1
+          }
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+      {
+				buy:
+				{
+					id:"obsidian",
+					Count:3
+				},
+				buyB:
+				{
+					id:"emerald_block",
+					Count:33
+				},
+				sell:
+				{
+					id:"golden_axe",
+					Count:1,
+					tag:
+					{
+            display:
+            {
+              Name:"{\"text\":\"Obsidian Axe\",\"italic\":false,\"color\":\"light_purple\"}",
+              Lore:["{\"text\":\"Unbreaking C\",\"italic\":false,\"color\":\"gray\"}"]
+            },
+            Enchantments: [
+              {id:"unbreaking",lvl:487},
+              {id:"efficiency",lvl:6}
+            ],
+            HideFlags:1
+          }
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+      {
+				buy:
+				{
+					id:"obsidian",
+					Count:2
+				},
+				buyB:
+				{
+					id:"emerald_block",
+					Count:22
+				},
+				sell:
+				{
+					id:"golden_hoe",
+					Count:1,
+					tag:
+					{
+            display:
+            {
+              Name:"{\"text\":\"Obsidian Hoe\",\"italic\":false,\"color\":\"light_purple\"}",
+              Lore:["{\"text\":\"Unbreaking C\",\"italic\":false,\"color\":\"gray\"}"]
+            },
+            Enchantments: [
+              {id:"unbreaking",lvl:487}
+            ],
+            HideFlags:1
+          }
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			}
+		]
+	}
+}
