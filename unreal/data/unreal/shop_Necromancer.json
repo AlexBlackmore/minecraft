@@ -6,8 +6,7 @@ summon minecraft:villager ~ ~1 ~ {
   CanPickUpLoot:false,
   Willing:false,
   NoAI:false,
-  VillagerData:
-  {
+  VillagerData:{
     level:5,
     profession:"cleric",
     type:"plains"
@@ -18,22 +17,18 @@ summon minecraft:villager ~ ~1 ~ {
       Base:"0f"
     }
   ],
-	Offers:
-	{
+	Offers:{
 		Recipes:[
 			{
-				buy:
-				{
+				buy:{
 					id:"zombie_head",
 					Count:1
 				},
-				buyB:
-				{
+				buyB:{
 					id:"dragon_egg",
 					Count:1
 				},
-				sell:
-				{
+				sell:{
 					id:"zombie_spawn_egg",
 					Count:1,
           tag:{
@@ -46,18 +41,15 @@ summon minecraft:villager ~ ~1 ~ {
 				maxUses:2147483647
 			},
       {
-        buy:
-        {
+        buy:{
           id:"skeleton_skull",
           Count:1
         },
-        buyB:
-        {
+        buyB:{
           id:"dragon_egg",
           Count:1
         },
-        sell:
-        {
+        sell:{
           id:"skeleton_spawn_egg",
           Count:1,
           tag:{
@@ -70,18 +62,15 @@ summon minecraft:villager ~ ~1 ~ {
         maxUses:2147483647
       },
       {
-        buy:
-        {
+        buy:{
           id:"creeper_head",
           Count:1
         },
-        buyB:
-        {
+        buyB:{
           id:"dragon_egg",
           Count:1
         },
-        sell:
-        {
+        sell:{
           id:"creeper_spawn_egg",
           Count:1,
           tag:{
@@ -94,18 +83,15 @@ summon minecraft:villager ~ ~1 ~ {
         maxUses:2147483647
       },
       {
-        buy:
-        {
+        buy:{
           id:"nether_star",
           Count:1
         },
-        buyB:
-        {
+        buyB:{
           id:"dragon_egg",
           Count:1
         },
-        sell:
-        {
+        sell:{
           id:"chest",
           Count:1,
           tag:{
@@ -126,13 +112,11 @@ summon minecraft:villager ~ ~1 ~ {
         maxUses:2147483647
       },
       {
-        buy:
-        {
+        buy:{
           id:"dragon_head",
           Count:1
         },
-        sell:
-        {
+        sell:{
           id:"nether_star",
           Count:4
         },
