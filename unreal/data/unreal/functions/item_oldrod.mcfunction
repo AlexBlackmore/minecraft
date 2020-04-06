@@ -1,1 +1,0 @@
-give @p fishing_rod{display:{Name:"{\"text\":\"Old Rod\",\"italic\":false,\"color\":\"blue\"}",Lore:["\"An old and beat-up fishing rod.\""]},Enchantments:[{id:"luck_of_the_sea",lvl:1},{id:"lure",lvl:1},{id:"unbreaking",lvl:1},{id:"mending",lvl:1}]}

@@ -1,1 +1,0 @@
-give @p golden_axe{display:{Name:"{\"text\":\"Obsidian Axe\",\"italic\":false,\"color\":\"dark_purple\"}",Lore:["{\"text\":\"Unbreaking C\",\"italic\":false,\"color\":\"gray\"}"]},Enchantments:[{id:"unbreaking",lvl:100},{id:"efficiency",lvl:6},{id:"fire_aspect",lvl:1}],HideFlags:1}
