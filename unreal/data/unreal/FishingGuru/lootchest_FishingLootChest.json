@@ -1,0 +1,20 @@
+give @p chest{
+  BlockEntityTag:{
+    LootTable:"unreal:chest_fishing"
+  },
+  display:{
+    Lore:[
+      "{\"text\":\"Fishing Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+      "{\"text\":\"Raw Cod 51.0%\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Raw Salmon 21.3%\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Pufferfish 11.1%\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Tropical Fish 1.7%\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Bowl 1.2%\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"and 17 more...\",\"color\":\"white\"}",
+    ]
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:1}
+  ],
+  HideFlags:1
+}
