@@ -25,311 +25,6 @@ summon minecraft:villager ~ ~1 ~ {
 				buy:
 				{
 					id:"chainmail_helmet",
-					Count:1
-				},
-				buyB:
-				{
-					id:"gold_block",
-					Count:8
-				},
-				sell:
-				{
-					id:"chainmail_helmet",
-					Count:1,
-					tag:
-					{
-						display:
-						{
-							Name:"{\"text\":\"Lufenian Helm (Helmet)\",\"italic\":false,\"color\":\"green\"}",
-							Lore: [
-								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
-							]
-						},
-						Enchantments: [
-							{
-								id:"protection",
-								lvl:1
-							},
-							{
-								id:"projectile_protection",
-								lvl:1
-							},
-							{
-								id:"unbreaking",
-								lvl:10
-							}
-						],
-						AttributeModifiers: [
-							{
-								Slot:"head",
-								AttributeName:"generic.armor",
-								Name:"generic.armor",
-								Amount:3,
-								Operation:0,
-								UUIDMost:1,
-								UUIDLeast:1
-							}
-						]
-					}
-				},
-				rewardExp:false,
-				maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"chainmail_chestplate",
-					Count:1
-				},
-				buyB:
-				{
-					id:"gold_block",
-					Count:16
-				},
-				sell:
-				{
-					id:"chainmail_chestplate",
-					Count:1,
-					tag:
-					{
-						display:
-						{
-							Name:"{\"text\":\"Quagie's Might (Chestplate)\",\"italic\":false,\"color\":\"green\"}",
-							Lore: [
-								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
-							]
-						},
-						Enchantments: [
-							{
-								id:"protection",
-								lvl:1
-							},
-							{
-								id:"blast_protection",
-								lvl:1
-							},
-							{
-								id:"unbreaking",
-								lvl:10
-							}
-						],
-						AttributeModifiers: [
-							{
-								Slot:"chest",
-								AttributeName:"generic.armor",
-								Name:"generic.armor",
-								Amount:8,
-								Operation:0,
-								UUIDMost:1,
-								UUIDLeast:1
-							}
-						]
-					}
-				},
-				rewardExp:false,
-				maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"chainmail_leggings",
-					Count:1
-				},
-				buyB:
-				{
-					id:"gold_block",
-					Count:12
-				},
-				sell:
-				{
-					id:"chainmail_leggings",
-					Count:1,
-					tag:
-					{
-						display:
-						{
-							Name:"{\"text\":\"Judgement Legplates (Leggings)\",\"italic\":false,\"color\":\"green\"}",
-							Lore: [
-								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
-							]
-						},
-						Enchantments: [
-							{
-								id:"protection",
-								lvl:1
-							},
-							{
-								id:"projectile_protection",
-								lvl:1
-							},
-							{
-								id:"unbreaking",
-								lvl:10
-							}
-						],
-						AttributeModifiers: [
-							{
-								Slot:"legs",
-								AttributeName:"generic.armor",
-								Name:"generic.armor",
-								Amount:6,
-								Operation:0,
-								UUIDMost:1,
-								UUIDLeast:1
-							}
-						]
-					}
-				},
-				rewardExp:false,
-				maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"chainmail_boots",
-					Count:1
-				},
-				buyB:
-				{
-					id:"gold_ingot",
-					Count:64
-				},
-				sell:
-				{
-					id:"chainmail_boots",
-					Count:1,
-					tag:
-					{
-						display:
-						{
-							Name:"{\"text\":\"Millsy's Escape (Boots)\",\"italic\":false,\"color\":\"green\"}",
-							Lore: [
-								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
-							]
-						},
-						Enchantments: [
-							{
-								id:"protection",
-								lvl:1
-							},
-							{
-								id:"unbreaking",
-								lvl:10
-							}
-						],
-						AttributeModifiers: [
-							{
-								Slot:"feet",
-								AttributeName:"generic.armor",
-								Name:"generic.armor",
-								Amount:3,
-								Operation:0,
-								UUIDMost:1,
-								UUIDLeast:1
-							}
-						]
-					}
-				},
-				rewardExp:false,
-				maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"iron_sword",
-					Count:1
-				},
-				buyB:
-				{
-					id:"gold_ingot",
-					Count:33
-				},
-				sell:
-				{
-					id:"iron_sword",
-					Count:1,
-					tag:
-					{
-						display:
-						{
-							Name:"{\"text\":\"Victor's Grace (Sword)\",\"italic\":false,\"color\":\"green\"}",
-							Lore: [
-								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
-							]
-						},
-						Enchantments: [
-							{
-								id:"sharpness",
-								lvl:5
-							},
-							{
-								id:"bane_of_arthropods",
-								lvl:1
-							},
-							{
-								id:"smite",
-								lvl:1
-							},
-							{
-								id:"unbreaking",
-								lvl:10
-							}
-						]
-					}
-				},
-				rewardExp:false,
-				maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"bow",
-					Count:1
-				},
-				buyB:
-				{
-					id:"gold_ingot",
-					Count:21
-				},
-				sell:
-				{
-					id:"bow",
-					Count:1,
-					tag:
-					{
-						display:
-						{
-							Name:"{\"text\":\"Hawk Strike (Bow)\",\"italic\":false,\"color\":\"green\"}",
-							Lore: [
-								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
-							]
-						},
-						Enchantments: [
-							{
-								id:"power",
-								lvl:4
-							},
-							{
-								id:"infinity",
-								lvl:1
-							},
-							{
-								id:"unbreaking",
-								lvl:10
-							}
-						]
-					}
-				},
-				rewardExp:false,
-				maxUses:2147483647
-			},
-			{
-				maxUses:0
-			},
-			{
-				buy:
-				{
-					id:"chainmail_helmet",
 					Count:1,
 					tag:
 					{
@@ -369,7 +64,7 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				buyB:
 				{
-					id:"gold_ingot",
+					id:"gold_nugget",
 					Count:16
 				},
 				sell:
@@ -458,7 +153,7 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				buyB:
 				{
-					id:"gold_ingot",
+					id:"gold_nugget",
 					Count:16
 				},
 				sell:
@@ -547,7 +242,7 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				buyB:
 				{
-					id:"gold_ingot",
+					id:"gold_nugget",
 					Count:8
 				},
 				sell:
@@ -632,7 +327,7 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				buyB:
 				{
-					id:"gold_ingot",
+					id:"gold_nugget",
 					Count:8
 				},
 				sell:
@@ -1381,8 +1076,8 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				buyB:
 				{
-					id:"enchanted_golden_apple",
-					Count:8
+					id:"gold_ingot",
+					Count:62
 				},
         sell:
         {
@@ -1480,11 +1175,11 @@ summon minecraft:villager ~ ~1 ~ {
 						]
 					}
 				},
-        buyB:
-        {
-          id:"enchanted_golden_apple",
-          Count:12
-        },
+				buyB:
+				{
+					id:"gold_block",
+					Count:10
+				},
         sell:
         {
           id:"diamond_chestplate",
@@ -1581,11 +1276,11 @@ summon minecraft:villager ~ ~1 ~ {
 						]
 					}
 				},
-        buyB:
-        {
-          id:"enchanted_golden_apple",
-          Count:11
-        },
+				buyB:
+				{
+					id:"gold_block",
+					Count:9
+				},
         sell:
         {
           id:"diamond_leggings",
@@ -1682,11 +1377,11 @@ summon minecraft:villager ~ ~1 ~ {
 						]
 					}
 				},
-        buyB:
-        {
-          id:"enchanted_golden_apple",
-          Count:6
-        },
+				buyB:
+				{
+					id:"gold_ingot",
+					Count:14
+				},
         sell:
         {
           id:"diamond_boots",
@@ -1772,11 +1467,11 @@ summon minecraft:villager ~ ~1 ~ {
 						]
 					}
 				},
-        buyB:
-        {
-          id:"enchanted_golden_apple",
-          Count:3
-        },
+				buyB:
+				{
+					id:"gold_ingot",
+					Count:22
+				},
         sell:
         {
           id:"diamond_sword",
@@ -1847,11 +1542,11 @@ summon minecraft:villager ~ ~1 ~ {
 						]
 					}
 				},
-        buyB:
-        {
-          id:"enchanted_golden_apple",
-          Count:1
-        },
+				buyB:
+				{
+					id:"gold_ingot",
+					Count:11
+				},
         sell:
         {
           id:"bow",
