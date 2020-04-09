@@ -76,44 +76,6 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				rewardExp:false,
 				maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"emerald",
-					Count:4
-				},
-				sell:
-				{
-					id:"chest",
-					Count:1,
-					tag:
-					{
-						BlockEntityTag:
-						{
-							LootTable:"minecraft:chests/village/village_tannery"
-						},
-						display:
-						{
-							Lore: [
-								"{\"text\":\"Tannery Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-								"{\"text\":\"Bread ~2.344\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Emerald ~0.469\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Leather Tunic ~0.375\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Leather Pants ~0.375\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Leather Cap ~0.375\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"and 3 more...\",\"color\":\"white\"}",
-							]
-						},
-						Enchantments: [
-							{
-								id:"unbreaking",
-								lvl:1
-							}
-						],
-						HideFlags:1
-					}
-				}
 			}
 		]
 	}

@@ -90,44 +90,6 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				rewardExp:false,
 				maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"emerald",
-					Count:1
-				},
-				sell:
-				{
-					id:"chest",
-					Count:1,
-					tag:
-					{
-						BlockEntityTag:
-						{
-							LootTable:"minecraft:chests/village/village_butcher"
-						},
-						display:
-						{
-							Lore: [
-								"{\"text\":\"Butcher Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-								"{\"text\":\"Raw Beef ~1.286\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Raw Mutton ~1.286\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Raw Porkchop ~1.286\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Wheat ~1.286\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Coal ~0.643\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"and 1 more...\",\"color\":\"white\"}"
-							]
-						},
-						Enchantments: [
-							{
-								id:"unbreaking",
-								lvl:1
-							}
-						],
-						HideFlags:1
-					}
-				}
 			}
 		]
 	}

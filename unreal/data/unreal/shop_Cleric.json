@@ -118,44 +118,6 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				rewardExp:false,
 				maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"emerald",
-					Count:4
-				},
-				sell:
-				{
-					id:"chest",
-					Count:1,
-					tag:
-					{
-						BlockEntityTag:
-						{
-							LootTable:"minecraft:chests/village/village_temple"
-						},
-						display:
-						{
-							Lore: [
-								"{\"text\":\"Temple Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-								"{\"text\":\"Rotten Flesh ~5.066\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Bread ~5.066\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Redstone Dust ~1.447\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Lapis Lazuli ~0.724\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Gold Ingot ~0.724\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"and 1 more...\",\"color\":\"white\"}"
-							]
-						},
-						Enchantments: [
-							{
-								id:"unbreaking",
-								lvl:1
-							}
-						],
-						HideFlags:1
-					}
-				}
 			}
 		]
 	}

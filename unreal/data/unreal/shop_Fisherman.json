@@ -107,44 +107,6 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				rewardExp:false,
 				maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"emerald",
-					Count:2
-				},
-				sell:
-				{
-					id:"chest",
-					Count:1,
-					tag:
-					{
-						BlockEntityTag:
-						{
-							LootTable:"minecraft:chests/village/village_fisher"
-						},
-						display:
-						{
-							Lore: [
-								"{\"text\":\"Fisherman Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-								"{\"text\":\"Wheat Seeds ~1.636\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Raw Cod ~1.091\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Coal ~1.091\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Water Bucket ~0.545\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Raw Salmon ~0.545\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"and 2 more...\",\"color\":\"white\"}"
-							]
-						},
-						Enchantments: [
-							{
-								id:"unbreaking",
-								lvl:1
-							}
-						],
-						HideFlags:1
-					}
-				}
 			}
 		]
 	}

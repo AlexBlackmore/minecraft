@@ -186,42 +186,6 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				rewardExp:false,
 				maxUses:2147483647
-			},
-			{
-				buy:
-				{
-					id:"emerald",
-					Count:3
-				},
-				sell:
-				{
-					id:"chest",
-					Count:1,
-					tag:
-					{
-						BlockEntityTag:
-						{
-							LootTable:"minecraft:chests/village/village_armorer"
-						},
-						display:
-						{
-							Lore: [
-								"{\"text\":\"Armorer Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-								"{\"text\":\"Bread ~3.75\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Iron Ingot ~1.5\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Iron Helmet ~0.375\",\"italic\":false,\"color\":\"white\"}",
-								"{\"text\":\"Emerald ~0.375\",\"italic\":false,\"color\":\"white\"}"
-							]
-						},
-						Enchantments: [
-							{
-								id:"unbreaking",
-								lvl:1
-							}
-						],
-						HideFlags:1
-					}
-				}
 			}
 		]
 	}
