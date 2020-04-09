@@ -1,0 +1,15 @@
+give @p chest{
+  BlockEntityTag:{
+    LootTable:"superhostile:tiered_boots_reforge"
+  },
+  display:{
+    Lore:[
+      "{\"text\":\"Leather Boots Reforge\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+      "{\"text\":\"Enchanted Leather Boots (Tiered) x1\",\"italic\":false,\"color\":\"white\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:1}
+  ],
+  HideFlags:1
+}
