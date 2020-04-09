@@ -95,7 +95,7 @@ summon minecraft:villager ~ ~1 ~ {
 					Count:2
 				},
 				sell:{
-					id:"leather_leggings",
+					id:"leather_boots",
 					Count:1,
 					tag:{
 					  display:{
@@ -119,6 +119,9 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				rewardExp:false,
 				maxUses:2147483647
+			},
+			{
+				maxUses:0
 			},
 			{
 				buy:{
@@ -219,21 +222,7 @@ summon minecraft:villager ~ ~1 ~ {
 				maxUses:2147483647
 			},
 			{
-				buy:{
-					id:"gold_ingot",
-					Count:49
-				},
-				buyB:{
-					id:"gold_nugget",
-					Count:1
-				},
-				sell:
-				{
-					id:"diamond_helmet",
-					Count:1
-				},
-				rewardExp:false,
-				maxUses:2147483647
+				maxUses:0
 			},
 			{
 				buy:{
@@ -273,7 +262,7 @@ summon minecraft:villager ~ ~1 ~ {
 					Count:39
 				},
 				buyB:{
-					id:"gold_block",
+					id:"gold_nugget",
 					Count:2
 				},
 				sell:{
