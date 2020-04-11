@@ -10,7 +10,7 @@ summon minecraft:villager ~ ~1 ~ {
   {
     level:5,
     profession:"cartographer",
-    type:"plains"
+    type:"jungle"
   },
   Attributes: [
     {
@@ -36,18 +36,19 @@ summon minecraft:villager ~ ~1 ~ {
 				{
 					id:"written_book",
 					Count:1,
-					tag:
-					{
+					tag:{
 					  resolved:1,
 					  generation:3,
 					  author:"?",
 					  title:"Blank Atlas",
 					  pages:[""],
 					  display:{
-					    Name:"{\"text\":\"Blank Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
+					    Name:"{\"text\":\"Blank Atlas\",\"italic\":false,\"color\":\"white\"}",
 					    Lore:[
 					      "\"A collection of blank\"",
-					      "\"maps.\""
+					      "\"maps.\"",
+					      "\" \"",
+					      "{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
 					    ]
 					  },
 					  HideFlags:63
@@ -61,18 +62,19 @@ summon minecraft:villager ~ ~1 ~ {
 				{
 					id:"written_book",
 					Count:1,
-					tag:
-					{
+					tag:{
 					  resolved:1,
 					  generation:3,
 					  author:"?",
 					  title:"Blank Atlas",
 					  pages:[""],
 					  display:{
-					    Name:"{\"text\":\"Blank Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
+					    Name:"{\"text\":\"Blank Atlas\",\"italic\":false,\"color\":\"white\"}",
 					    Lore:[
 					      "\"A collection of blank\"",
-					      "\"maps.\""
+					      "\"maps.\"",
+					      "\" \"",
+					      "{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
 					    ]
 					  },
 					  HideFlags:63
@@ -87,8 +89,7 @@ summon minecraft:villager ~ ~1 ~ {
 				{
 					id:"written_book",
 					Count:1,
-					tag:
-					{
+					tag:{
 					  resolved:1,
 					  author:"?",
 					  generation:3,
@@ -98,12 +99,14 @@ summon minecraft:villager ~ ~1 ~ {
 					      {"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
 					    ]'],
 					  display:{
-					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"yellow\"}",
 					    Lore:[
-					      "{\"text\":\"Level I\",\"italic\":false,\"color\":\"gray\"}",
+					      "{\"text\":\"Level 1\",\"italic\":false,\"color\":\"blue\"}",
 					      "\"A collection of maps\"",
 					      "\"and charts depicting\"",
-					      "\"nearby structures.\""
+					      "\"nearby structures.\"",
+					      "\" \"",
+					      "{\"text\":\"UNCOMMON\",\"italic\":false,\"bold\":true,\"color\":\"yellow\"}"
 					    ]
 					  },
 					  HideFlags:63
@@ -117,8 +120,7 @@ summon minecraft:villager ~ ~1 ~ {
 				{
 					id:"written_book",
 					Count:1,
-					tag:
-					{
+					tag:{
 					  resolved:1,
 					  author:"?",
 					  generation:3,
@@ -128,12 +130,14 @@ summon minecraft:villager ~ ~1 ~ {
 					      {"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
 					    ]'],
 					  display:{
-					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"yellow\"}",
 					    Lore:[
-					      "{\"text\":\"Level I\",\"italic\":false,\"color\":\"gray\"}",
+					      "{\"text\":\"Level 1\",\"italic\":false,\"color\":\"blue\"}",
 					      "\"A collection of maps\"",
 					      "\"and charts depicting\"",
-					      "\"nearby structures.\""
+					      "\"nearby structures.\"",
+					      "\" \"",
+					      "{\"text\":\"UNCOMMON\",\"italic\":false,\"bold\":true,\"color\":\"yellow\"}"
 					    ]
 					  },
 					  HideFlags:63
@@ -148,8 +152,7 @@ summon minecraft:villager ~ ~1 ~ {
 				{
 					id:"written_book",
 					Count:1,
-					tag:
-					{
+					tag:{
 					  resolved:1,
 					  generation:3,
 					  author:"?",
@@ -161,12 +164,14 @@ summon minecraft:villager ~ ~1 ~ {
 					      {"text":"II: ","bold":true,"underlined":true},{"text":"Woodland Explorer","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Desert Pyramid","clickEvent":{"action":"run_command","value":"/locate Desert_Pyramid"},"hoverEvent":{"action":"show_text","value":"Desert Pyramid"}},{"text":"\\n"},{"text":"- Igloo","clickEvent":{"action":"run_command","value":"/locate Igloo"},"hoverEvent":{"action":"show_text","value":"Igloo"}},{"text":"\\n"},{"text":"- Jungle Pyramid","clickEvent":{"action":"run_command","value":"/locate Jungle_Pyramid"},"hoverEvent":{"action":"show_text","value":"Jungle Pyramid"}},{"text":"\\n"},{"text":"- Woodland Mansion","clickEvent":{"action":"run_command","value":"/locate Mansion"},"hoverEvent":{"action":"show_text","value":"Woodland Mansion"}},{"text":"\\n"},{"text":"- Mineshaft","clickEvent":{"action":"run_command","value":"/locate Mineshaft"},"hoverEvent":{"action":"show_text","value":"Mineshaft"}},{"text":"\\n"},{"text":"- Pillager Outpost","clickEvent":{"action":"run_command","value":"/locate Pillager_Outpost"},"hoverEvent":{"action":"show_text","value":"Pillager Outpost"}},{"text":"\\n"},{"text":"- Swamp Hut","clickEvent":{"action":"run_command","value":"/locate Swamp_Hut"},"hoverEvent":{"action":"show_text","value":"Swamp Hut"}},{"text":"\\n"},{"text":"- Village","clickEvent":{"action":"run_command","value":"/locate Village"},"hoverEvent":{"action":"show_text","value":"Village"}}
 					    ]'],
 					  display:{
-					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"aqua\"}",
 					    Lore:[
-					      "{\"text\":\"Level II\",\"italic\":false,\"color\":\"gray\"}",
+					      "{\"text\":\"Level 2\",\"italic\":false,\"color\":\"blue\"}",
 					      "\"A collection of maps\"",
 					      "\"and charts depicting\"",
-					      "\"nearby structures.\""
+					      "\"nearby structures.\"",
+					      "\" \"",
+					      "{\"text\":\"RARE\",\"italic\":false,\"bold\":true,\"color\":\"aqua\"}"
 					    ]
 					  },
 					  HideFlags:63
@@ -180,8 +185,7 @@ summon minecraft:villager ~ ~1 ~ {
 				{
 					id:"written_book",
 					Count:1,
-					tag:
-					{
+					tag:{
 					  resolved:1,
 					  generation:3,
 					  author:"?",
@@ -193,12 +197,14 @@ summon minecraft:villager ~ ~1 ~ {
 					      {"text":"II: ","bold":true,"underlined":true},{"text":"Woodland Explorer","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Desert Pyramid","clickEvent":{"action":"run_command","value":"/locate Desert_Pyramid"},"hoverEvent":{"action":"show_text","value":"Desert Pyramid"}},{"text":"\\n"},{"text":"- Igloo","clickEvent":{"action":"run_command","value":"/locate Igloo"},"hoverEvent":{"action":"show_text","value":"Igloo"}},{"text":"\\n"},{"text":"- Jungle Pyramid","clickEvent":{"action":"run_command","value":"/locate Jungle_Pyramid"},"hoverEvent":{"action":"show_text","value":"Jungle Pyramid"}},{"text":"\\n"},{"text":"- Woodland Mansion","clickEvent":{"action":"run_command","value":"/locate Mansion"},"hoverEvent":{"action":"show_text","value":"Woodland Mansion"}},{"text":"\\n"},{"text":"- Mineshaft","clickEvent":{"action":"run_command","value":"/locate Mineshaft"},"hoverEvent":{"action":"show_text","value":"Mineshaft"}},{"text":"\\n"},{"text":"- Pillager Outpost","clickEvent":{"action":"run_command","value":"/locate Pillager_Outpost"},"hoverEvent":{"action":"show_text","value":"Pillager Outpost"}},{"text":"\\n"},{"text":"- Swamp Hut","clickEvent":{"action":"run_command","value":"/locate Swamp_Hut"},"hoverEvent":{"action":"show_text","value":"Swamp Hut"}},{"text":"\\n"},{"text":"- Village","clickEvent":{"action":"run_command","value":"/locate Village"},"hoverEvent":{"action":"show_text","value":"Village"}}
 					    ]'],
 					  display:{
-					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"aqua\"}",
 					    Lore:[
-					      "{\"text\":\"Level II\",\"italic\":false,\"color\":\"gray\"}",
+					      "{\"text\":\"Level 2\",\"italic\":false,\"color\":\"blue\"}",
 					      "\"A collection of maps\"",
 					      "\"and charts depicting\"",
-					      "\"nearby structures.\""
+					      "\"nearby structures.\"",
+					      "\" \"",
+					      "{\"text\":\"RARE\",\"italic\":false,\"bold\":true,\"color\":\"aqua\"}"
 					    ]
 					  },
 					  HideFlags:63
@@ -213,8 +219,7 @@ summon minecraft:villager ~ ~1 ~ {
 				{
 					id:"written_book",
 					Count:1,
-					tag:
-					{
+					tag:{
 					  resolved:1,
 					  generation:3,
 					  author:"?",
@@ -231,10 +236,12 @@ summon minecraft:villager ~ ~1 ~ {
 					  display:{
 					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
-					      "{\"text\":\"Level III\",\"italic\":false,\"color\":\"gray\"}",
+					      "{\"text\":\"Level 3\",\"italic\":false,\"color\":\"blue\"}",
 					      "\"A collection of maps\"",
 					      "\"and charts depicting\"",
-					      "\"nearby structures.\""
+					      "\"nearby structures.\"",
+					      "\" \"",
+					      "{\"text\":\"EPIC\",\"italic\":false,\"bold\":true,\"color\":\"light_purple\"}"
 					    ]
 					  },
 					  HideFlags:63
@@ -248,8 +255,7 @@ summon minecraft:villager ~ ~1 ~ {
 				{
 					id:"written_book",
 					Count:1,
-					tag:
-					{
+					tag:{
 					  resolved:1,
 					  generation:3,
 					  author:"?",
@@ -266,10 +272,12 @@ summon minecraft:villager ~ ~1 ~ {
 					  display:{
 					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
-					      "{\"text\":\"Level III\",\"italic\":false,\"color\":\"gray\"}",
+					      "{\"text\":\"Level 3\",\"italic\":false,\"color\":\"blue\"}",
 					      "\"A collection of maps\"",
 					      "\"and charts depicting\"",
-					      "\"nearby structures.\""
+					      "\"nearby structures.\"",
+					      "\" \"",
+					      "{\"text\":\"EPIC\",\"italic\":false,\"bold\":true,\"color\":\"light_purple\"}"
 					    ]
 					  },
 					  HideFlags:63
@@ -284,8 +292,7 @@ summon minecraft:villager ~ ~1 ~ {
 				{
 					id:"written_book",
 					Count:1,
-					tag:
-					{
+					tag:{
 					  resolved:1,
 					  generation:3,
 					  author:"?",
@@ -302,12 +309,14 @@ summon minecraft:villager ~ ~1 ~ {
 					    ]'
 					  ],
 					  display:{
-					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
+					    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"gold\"}",
 					    Lore:[
-					      "{\"text\":\"Level IV\",\"italic\":false,\"color\":\"gray\"}",
+					      "{\"text\":\"Level 4\",\"italic\":false,\"color\":\"blue\"}",
 					      "\"A collection of maps\"",
 					      "\"and charts depicting\"",
-					      "\"nearby structures.\""
+					      "\"nearby structures.\"",
+					      "\" \"",
+					      "{\"text\":\"LEGENDARY\",\"italic\":false,\"bold\":true,\"color\":\"gold\"}"
 					    ]
 					  },
 					  HideFlags:63

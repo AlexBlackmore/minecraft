@@ -9,7 +9,7 @@ summon minecraft:villager ~ ~1 ~ {
 	VillagerData:{
 		level:5,
 		profession:"fisherman",
-		type:"plains"
+		type:"jungle"
 	},
 	Attributes:[
 		{
@@ -73,19 +73,7 @@ summon minecraft:villager ~ ~1 ~ {
       {
 				buy:{
 					id:"fishing_rod",
-					Count:1,
-					tag:{
-					  display:{
-					    Name:"{\"text\":\"Fishing Rod\",\"italic\":false,\"color\":\"white\"}",
-					    Lore:[
-					      "{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
-					    ]
-					  },
-					  Enchantments:[
-					    {id:"lure",lvl:1},
-					    {id:"unbreaking",lvl:1}
-					  ]
-					}
+					Count:1
 				},
 				buyB:{
 					id:"emerald",
@@ -98,9 +86,9 @@ summon minecraft:villager ~ ~1 ~ {
 					  display:{
 					    Name:"{\"text\":\"Old Rod\",\"italic\":false,\"color\":\"yellow\"}",
 					    Lore:[
-					      "{\"text\":\"UNCOMMON\",\"italic\":false,\"bold\":true,\"color\":\"yellow\"}",
+					      "\"An old and beat-up fishing rod\"",
 					      "\" \"",
-					      "\"An old and beat-up fishing rod\""
+					      "{\"text\":\"UNCOMMON\",\"italic\":false,\"bold\":true,\"color\":\"yellow\"}"
 					    ]
 					  },
 					  Enchantments:[
@@ -122,9 +110,9 @@ summon minecraft:villager ~ ~1 ~ {
 					  display:{
 					    Name:"{\"text\":\"Old Rod\",\"italic\":false,\"color\":\"yellow\"}",
 					    Lore:[
-					      "{\"text\":\"UNCOMMON\",\"italic\":false,\"bold\":true,\"color\":\"yellow\"}",
+					      "\"An old and beat-up fishing rod\"",
 					      "\" \"",
-					      "\"An old and beat-up fishing rod\""
+					      "{\"text\":\"UNCOMMON\",\"italic\":false,\"bold\":true,\"color\":\"yellow\"}"
 					    ]
 					  },
 					  Enchantments:[
@@ -146,9 +134,9 @@ summon minecraft:villager ~ ~1 ~ {
 					  display:{
 					    Name:"{\"text\":\"Good Rod\",\"italic\":false,\"color\":\"aqua\"}",
 					    Lore:[
-					      "{\"text\":\"RARE\",\"italic\":false,\"bold\":true,\"color\":\"aqua\"}",
+					      "\"A new, good-quality fishing rod\"",
 					      "\" \"",
-					      "\"A new, good-quality fishing rod\""
+					      "{\"text\":\"RARE\",\"italic\":false,\"bold\":true,\"color\":\"aqua\"}"
 					    ]
 					  },
 					  Enchantments:[
@@ -170,9 +158,9 @@ summon minecraft:villager ~ ~1 ~ {
 					  display:{
 					    Name:"{\"text\":\"Good Rod\",\"italic\":false,\"color\":\"aqua\"}",
 					    Lore:[
-					      "{\"text\":\"RARE\",\"italic\":false,\"bold\":true,\"color\":\"aqua\"}",
+					      "\"A new, good-quality fishing rod\"",
 					      "\" \"",
-					      "\"A new, good-quality fishing rod\""
+					      "{\"text\":\"RARE\",\"italic\":false,\"bold\":true,\"color\":\"aqua\"}"
 					    ]
 					  },
 					  Enchantments:[
@@ -194,6 +182,7 @@ summon minecraft:villager ~ ~1 ~ {
 					  display:{
 					    Name:"{\"text\":\"Epic Rod\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
+					      "\" \"",
 					      "{\"text\":\"EPIC\",\"italic\":false,\"bold\":true,\"color\":\"light_purple\"}"
 					    ]
 					  },
@@ -216,6 +205,7 @@ summon minecraft:villager ~ ~1 ~ {
 					  display:{
 					    Name:"{\"text\":\"Epic Rod\",\"italic\":false,\"color\":\"light_purple\"}",
 					    Lore:[
+					      "\" \"",
 					      "{\"text\":\"EPIC\",\"italic\":false,\"bold\":true,\"color\":\"light_purple\"}"
 					    ]
 					  },
@@ -238,9 +228,9 @@ summon minecraft:villager ~ ~1 ~ {
 					  display:{
 					    Name:"{\"text\":\"Super Rod\",\"italic\":false,\"color\":\"gold\"}",
 					    Lore:[
-					      "{\"text\":\"LEGENDARY\",\"italic\":false,\"bold\":true,\"color\":\"gold\"}",
+					      "\"An awesome, high-tech fishing rod\"",
 					      "\" \"",
-					      "\"An awesome, high-tech fishing rod\""
+					      "{\"text\":\"LEGENDARY\",\"italic\":false,\"bold\":true,\"color\":\"gold\"}"
 					    ]
 					  },
 					  Enchantments:[
