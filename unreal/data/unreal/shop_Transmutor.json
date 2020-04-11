@@ -10,7 +10,7 @@ summon minecraft:villager ~ ~1 ~ {
   {
     level:5,
     profession:"cleric",
-    type:"plains"
+    type:"jungle"
   },
   Attributes: [
     {
@@ -21,6 +21,25 @@ summon minecraft:villager ~ ~1 ~ {
 	Offers:
 	{
 		Recipes: [
+      {
+        buy:
+        {
+          id:"iron_nugget",
+          Count:15
+        },
+        buyB:
+        {
+          id:"emerald",
+          Count:1
+        },
+        sell:
+        {
+          id:"gold_nugget",
+          Count:14
+        },
+				rewardExp:false,
+				maxUses:2147483647
+      },
       {
         buy:
         {
@@ -43,8 +62,46 @@ summon minecraft:villager ~ ~1 ~ {
       {
         buy:
         {
-          id:"gold_ingot",
+          id:"iron_block",
+          Count:3
+        },
+        buyB:
+        {
+          id:"emerald",
           Count:1
+        },
+        sell:
+        {
+          id:"gold_block",
+          Count:1
+        },
+				rewardExp:false,
+				maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"gold_nugget",
+          Count:6
+        },
+        buyB:
+        {
+          id:"emerald",
+          Count:1
+        },
+        sell:
+        {
+          id:"iron_nugget",
+          Count:42
+        },
+				rewardExp:false,
+				maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"gold_ingot",
+          Count:5
         },
         buyB:
         {
@@ -54,7 +111,26 @@ summon minecraft:villager ~ ~1 ~ {
         sell:
         {
           id:"iron_ingot",
-          Count:6
+          Count:19
+        },
+				rewardExp:false,
+				maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"gold_block",
+          Count:4
+        },
+        buyB:
+        {
+          id:"emerald",
+          Count:1
+        },
+        sell:
+        {
+          id:"iron_block",
+          Count:13
         },
 				rewardExp:false,
 				maxUses:2147483647
@@ -64,6 +140,25 @@ summon minecraft:villager ~ ~1 ~ {
         {
           id:"coal",
           Count:57
+        },
+        buyB:
+        {
+          id:"emerald",
+          Count:1
+        },
+        sell:
+        {
+          id:"diamond",
+          Count:1
+        },
+				rewardExp:false,
+				maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"coal_block",
+          Count:62
         },
         buyB:
         {

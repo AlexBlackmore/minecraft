@@ -1,23 +1,23 @@
 summon minecraft:villager ~ ~1 ~ {
-  CustomName:"{\"text\":\"Smelter\",\"color\":\"green\"}",
-  CustomNameVisible:true,
-  PersistenceRequired:true,
-  Silent:true,
-  CanPickUpLoot:false,
-  Willing:false,
-  NoAI:false,
-  VillagerData:
-  {
-    level:5,
-    profession:"armorer",
-    type:"plains"
-  },
-  Attributes: [
-    {
-      Name:"generic.movementSpeed",
-      Base:"0f"
-    }
-  ],
+	CustomName:"{\"text\":\"Smelter\",\"color\":\"green\"}",
+	CustomNameVisible:true,
+	PersistenceRequired:true,
+	Silent:true,
+	CanPickUpLoot:false,
+	Willing:false,
+	NoAI:false,
+	VillagerData:
+	{
+		level:5,
+		profession:"armorer",
+		type:"jungle"
+	},
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
 	Offers:
 	{
 		Recipes: [
@@ -30,21 +30,20 @@ summon minecraft:villager ~ ~1 ~ {
 					{
 						display:
 						{
-							Name:"{\"text\":\"<Smelter>\",\"italic\":false,\"color\":\"white\"}",
+							Name:"{\"text\":\"<Smelter> Trade an undamaged item\",\"italic\":false,\"color\":\"white\"}",
 							Lore: [
-								"{\"text\":\"    Trade an undamaged item to\",\"italic\":false,\"color\":\"white\"}",
-                "{\"text\":\"    revert it to it's core\",\"italic\":false,\"color\":\"white\"}",
-                "{\"text\":\"    metallergic components.\",\"italic\":false,\"color\":\"white\"}"
+								"{\"text\":\"to revert it to it's core metallergic\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"components.\",\"italic\":false,\"color\":\"white\"}"
 							]
 						},
-            Enchantments:
-            [
-              {id:"unbreaking",lvl:1}
-            ],
-            HideFlags:1
+						Enchantments:
+						[
+							{id:"unbreaking",lvl:1}
+						],
+						HideFlags:1
 					}
 				},
-        maxUses:0
+				maxUses:0
 			},
 			{
 				buy:
@@ -102,20 +101,20 @@ summon minecraft:villager ~ ~1 ~ {
 				rewardExp:false,
 				maxUses:2147483647
 			},
-      {
-        buy:
-        {
-          id:"blast_furnace",
-          Count:1
-        },
-        sell:
-        {
-          id:"iron_nugget",
-          Count:45
-        },
+			{
+				buy:
+				{
+					id:"blast_furnace",
+					Count:1
+				},
+				sell:
+				{
+					id:"iron_nugget",
+					Count:45
+				},
 				rewardExp:false,
 				maxUses:2147483647
-      },
+			},
 			{
 				buy:
 				{
@@ -158,20 +157,20 @@ summon minecraft:villager ~ ~1 ~ {
 				rewardExp:false,
 				maxUses:2147483647
 			},
-      {
-        buy:
-        {
-          id:"crossbow",
-          Count:1
-        },
-        sell:
-        {
-          id:"iron_nugget",
-          Count:13
-        },
+			{
+				buy:
+				{
+					id:"crossbow",
+					Count:1
+				},
+				sell:
+				{
+					id:"iron_nugget",
+					Count:13
+				},
 				rewardExp:false,
 				maxUses:2147483647
-      },
+			},
 			{
 				buy:
 				{
@@ -200,20 +199,20 @@ summon minecraft:villager ~ ~1 ~ {
 				rewardExp:false,
 				maxUses:2147483647
 			},
-      {
-        buy:
-        {
-          id:"heavy_weighted_pressure_plate",
-          Count:1
-        },
-        sell:
-        {
-          id:"iron_ingot",
-          Count:2
-        },
+			{
+				buy:
+				{
+					id:"heavy_weighted_pressure_plate",
+					Count:1
+				},
+				sell:
+				{
+					id:"iron_ingot",
+					Count:2
+				},
 				rewardExp:false,
 				maxUses:2147483647
-      },
+			},
 			{
 				buy:
 				{
@@ -424,7 +423,7 @@ summon minecraft:villager ~ ~1 ~ {
 				rewardExp:false,
 				maxUses:2147483647
 			},
-      {
+			{
 				buy:
 				{
 					id:"sticky_piston",
@@ -480,34 +479,34 @@ summon minecraft:villager ~ ~1 ~ {
 				rewardExp:false,
 				maxUses:2147483647
 			},
-      {
-        buy:
-        {
-          id:"smithing_table",
-          Count:1
-        },
-        sell:
-        {
-          id:"iron_nugget",
-          Count:18
-        },
+			{
+				buy:
+				{
+					id:"smithing_table",
+					Count:1
+				},
+				sell:
+				{
+					id:"iron_nugget",
+					Count:18
+				},
 				rewardExp:false,
 				maxUses:2147483647
-      },
-      {
-        buy:
-        {
-          id:"stonecutter",
-          Count:1
-        },
-        sell:
-        {
-          id:"iron_nugget",
-          Count:9
-        },
+			},
+			{
+				buy:
+				{
+					id:"stonecutter",
+					Count:1
+				},
+				sell:
+				{
+					id:"iron_nugget",
+					Count:9
+				},
 				rewardExp:false,
 				maxUses:2147483647
-      },
+			},
 			{
 				buy:
 				{
@@ -592,9 +591,9 @@ summon minecraft:villager ~ ~1 ~ {
 				rewardExp:false,
 				maxUses:2147483647
 			},
-      {
-        maxUses:0
-      },
+			{
+				maxUses:0
+			},
 			{
 				buy:
 				{
@@ -623,7 +622,7 @@ summon minecraft:villager ~ ~1 ~ {
 				rewardExp:false,
 				maxUses:2147483647
 			},
-      {
+			{
 				buy:
 				{
 					id:"enchanted_golden_apple",
