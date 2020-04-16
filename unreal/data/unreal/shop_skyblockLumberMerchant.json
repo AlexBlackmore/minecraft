@@ -101,6 +101,18 @@ summon minecraft:villager ~ ~1 ~ {
 				maxUses:2147483647
 			},
       {
+        buy:{
+          id:"gold_nugget",
+          Count:6
+        },
+        sell:{
+          id:"iron_axe",
+          Count:1
+        },
+        rewardExp:false,
+        maxUses:2147483647
+      },
+      {
 				buy:{
 					id:"gold_nugget",
 					Count:1
@@ -108,22 +120,6 @@ summon minecraft:villager ~ ~1 ~ {
 				sell:{
 					id:"podzol",
 					Count:2
-				},
-				rewardExp:false,
-				maxUses:2147483647
-			},
-      {
-				buy:{
-					id:"gold_ingot",
-					Count:29
-				},
-        buyB:{
-					id:"gold_nugget",
-					Count:5
-				},
-				sell:{
-					id:"diamond_axe",
-					Count:1
 				},
 				rewardExp:false,
 				maxUses:2147483647

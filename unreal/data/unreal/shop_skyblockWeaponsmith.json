@@ -21,100 +21,12 @@ summon minecraft:villager ~ ~1 ~ {
 		Recipes:[
 			{
 				buy:{
-					id:"gold_ingot",
-					Count:10
-				},
-				buyB:{
 					id:"gold_nugget",
-					Count:5
+					Count:6
 				},
 				sell:{
 					id:"iron_sword",
-					Count:1,
-					tag:{
-					  display:{
-					    Name:"{\"text\":\"Iron Sword\",\"italic\":false,\"color\":\"white\"}",
-					    Lore:[
-								"\" \"",
-					      "{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
-					    ]
-					  },
-					  Enchantments:[
-					    {id:"sharpness",lvl:1},
-					    {id:"unbreaking",lvl:1}
-					  ],
-					  AttributeModifiers:[
-					    {Slot:"mainhand",AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1.6,Operation:0,UUIDMost:1,UUIDLeast:1},
-					    {Slot:"mainhand",AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:7,Operation:0,UUIDMost:1,UUIDLeast:1}
-					  ]
-					}
-				},
-				rewardExp:false,
-				maxUses:2147483647
-			},
-			{
-				buy:{
-					id:"gold_ingot",
-					Count:10
-				},
-				sell:{
-					id:"bow",
-					Count:1,
-					tag:{
-					  display:{
-					    Name:"{\"text\":\"Bow\",\"italic\":false,\"color\":\"white\"}",
-					    Lore:[
-								"\" \"",
-								"{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
-							],
-					  },
-					  Enchantments:[
-					    {id:"power",lvl:1},
-					    {id:"unbreaking",lvl:1}
-					  ]
-					}
-				},
-				rewardExp:false,
-				maxUses:2147483647
-			},
-			{
-				buy:{
-					id:"gold_ingot",
-					Count:10
-				},
-				sell:{
-					id:"stone_axe",
-					Count:1,
-					tag:{
-					  display:{
-					    Name:"{\"text\":\"Stone Battle Axe\",\"italic\":false,\"color\":\"white\"}",
-					    Lore:[
-								"\" \"",
-					      "{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
-					    ]
-					  },
-					  Enchantments:[
-					    {id:"unbreaking",lvl:1},
-					    {id:"knockback",lvl:1}
-					  ],
-					  AttributeModifiers:[
-					    {Slot:"mainhand",AttributeName:"generic.movementSpeed",Name:"generic.movementSpeed",Amount:-0.1,Operation:1,UUIDMost:1,UUIDLeast:1},
-					    {Slot:"mainhand",AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:-0.9,Operation:1,UUIDMost:1,UUIDLeast:1},
-					    {Slot:"mainhand",AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:15,Operation:0,UUIDMost:1,UUIDLeast:1}
-					  ]
-					}
-				},
-				rewardExp:false,
-				maxUses:2147483647
-			},
-			{
-				buy:{
-					id:"gold_nugget",
-					Count:2
-				},
-				sell:{
-					id:"arrow",
-					Count:12
+					Count:1
 				},
 				rewardExp:false,
 				maxUses:2147483647
@@ -161,6 +73,30 @@ summon minecraft:villager ~ ~1 ~ {
 							{id:"unbreaking",lvl:10}
 						]
 					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:{
+					id:"gold_nugget",
+					Count:2
+				},
+				sell:{
+					id:"bow",
+					Count:1
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:{
+					id:"gold_nugget",
+					Count:2
+				},
+				sell:{
+					id:"arrow",
+					Count:12
 				},
 				rewardExp:false,
 				maxUses:2147483647

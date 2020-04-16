@@ -22,66 +22,38 @@ summon minecraft:villager ~ ~1 ~ {
 			{
 				buy:{
 					id:"gold_ingot",
-					Count:16
-				},
-				buyB:{
-					id:"gold_nugget",
-					Count:8
-				},
-				sell:{
-					id:"leather_chestplate",
-					Count:1,
-					tag:{
-					  display:{
-					    Name:"{\"text\":\"Leather Chestpiece\",\"italic\":false,\"color\":\"white\"}",
-					    Lore:[
-								"\" \"",
-					      "{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
-					    ],
-					    color:16777215
-					  },
-					  Enchantments:[
-					    {id:"protection",lvl:2},
-					    {id:"unbreaking",lvl:2}
-					  ],
-					  AttributeModifiers:[
-					    {Slot:"chest",AttributeName:"generic.armorToughness",Name:"generic.armorToughness",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
-					    {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:4,Operation:0,UUIDMost:1,UUIDLeast:1}
-					  ]
-					}
-				},
-				rewardExp:false,
-				maxUses:2147483647
-			},
-			{
-				buy:{
-					id:"gold_ingot",
-					Count:13
+					Count:42
 				},
 				buyB:{
 					id:"gold_nugget",
 					Count:7
 				},
 				sell:{
-					id:"leather_leggings",
+					id:"chainmail_helmet",
 					Count:1,
 					tag:{
-					  display:{
-					    Name:"{\"text\":\"Leather Pants\",\"italic\":false,\"color\":\"white\"}",
-					    Lore:[
-								"\" \"",
-					      "{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
-					    ],
-					    color:16777215
-					  },
-					  Enchantments:[
-					    {id:"projectile_protection",lvl:1},
-					    {id:"unbreaking",lvl:2}
-					  ],
-					  AttributeModifiers:[
-					    {Slot:"legs",AttributeName:"generic.armorToughness",Name:"generic.armorToughness",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
-					    {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1}
-					  ]
+						display:{
+							Name:"{\"text\":\"Lufenian Helm (Helmet)\",\"italic\":false,\"color\":\"green\"}",
+							Lore:[
+								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
+							]
+						},
+						Enchantments:[
+							{id:"protection",lvl:1},
+							{id:"projectile_protection",lvl:1},
+							{id:"unbreaking",lvl:10}
+						],
+						AttributeModifiers:[
+							{
+								Slot:"head",
+								AttributeName:"generic.armor",
+								Name:"generic.armor",
+								Amount:3,
+								Operation:0,
+								UUIDMost:1,
+								UUIDLeast:1
+							}
+						]
 					}
 				},
 				rewardExp:false,
@@ -90,104 +62,158 @@ summon minecraft:villager ~ ~1 ~ {
 			{
 				buy:{
 					id:"gold_ingot",
-					Count:23
+					Count:43
 				},
 				buyB:{
 					id:"gold_nugget",
-					Count:2
+					Count:3
 				},
 				sell:{
-					id:"leather_boots",
+					id:"chainmail_chestplate",
 					Count:1,
 					tag:{
-					  display:{
-					    Name:"{\"text\":\"Leather Boots\",\"italic\":false,\"color\":\"white\"}",
-					    Lore:[
-								"\" \"",
-					      "{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
-					    ],
-					    color:16777215
-					  },
-					  Enchantments:[
-					    {id:"depth_strider",lvl:1},
-					    {id:"feather_falling",lvl:1},
-					    {id:"unbreaking",lvl:2},
-					    {id:"respiration",lvl:1}
-					  ],
-					  AttributeModifiers:[
-					    {Slot:"feet",AttributeName:"generic.armorToughness",Name:"generic.armorToughness",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
-					    {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:2,Operation:0,UUIDMost:1,UUIDLeast:1}
-					  ]
+						display:{
+							Name:"{\"text\":\"Quagie's Might (Chestplate)\",\"italic\":false,\"color\":\"green\"}",
+							Lore:[
+								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
+							]
+						},
+						Enchantments:[
+							{id:"protection",lvl:1},
+							{id:"blast_protection",lvl:1},
+							{id:"unbreaking",lvl:10}
+						],
+						AttributeModifiers:[
+							{
+								Slot:"chest",
+								AttributeName:"generic.armor",
+								Name:"generic.armor",
+								Amount:8,
+								Operation:0,
+								UUIDMost:1,
+								UUIDLeast:1
+							}
+						]
 					}
 				},
 				rewardExp:false,
 				maxUses:2147483647
 			},
 			{
-				maxUses:0
+				buy:{
+					id:"gold_ingot",
+					Count:43
+				},
+				sell:{
+					id:"chainmail_leggings",
+					Count:1,
+					tag:{
+						display:{
+							Name:"{\"text\":\"Judgement Legplates (Leggings)\",\"italic\":false,\"color\":\"green\"}",
+							Lore:[
+								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
+							]
+						},
+						Enchantments:[
+							{id:"protection",lvl:1},
+							{id:"projectile_protection",lvl:1},
+							{id:"unbreaking",lvl:10}
+						],
+						AttributeModifiers:[
+							{
+								Slot:"legs",
+								AttributeName:"generic.armor",
+								Name:"generic.armor",
+								Amount:6,
+								Operation:0,
+								UUIDMost:1,
+								UUIDLeast:1
+							}
+						]
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:{
 					id:"gold_ingot",
-					Count:15
+					Count:37
+				},
+				sell:{
+					id:"chainmail_boots",
+					Count:1,
+					tag:{
+						display:{
+							Name:"{\"text\":\"Millsy's Escape (Boots)\",\"italic\":false,\"color\":\"green\"}",
+							Lore:[
+								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
+							]
+						},
+						Enchantments:[
+							{id:"protection",lvl:1},
+							{id:"unbreaking",lvl:10}
+						],
+						AttributeModifiers:[
+							{
+								Slot:"feet",
+								AttributeName:"generic.armor",
+								Name:"generic.armor",
+								Amount:3,
+								Operation:0,
+								UUIDMost:1,
+								UUIDLeast:1
+							}
+						]
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:{
+					id:"gold_ingot",
+					Count:49
 				},
 				buyB:{
 					id:"gold_nugget",
+					Count:1
+				},
+				sell:{
+					id:"iron_helmet",
+					Count:1
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:{
+					id:"gold_block",
+					Count:8
+				},
+				buyB:{
+					id:"gold_ingot",
 					Count:7
 				},
 				sell:{
 					id:"iron_chestplate",
-					Count:1,
-					tag:{
-					  display:{
-					    Name:"{\"text\":\"Iron Chestplate\",\"italic\":false,\"color\":\"white\"}",
-					    Lore:[
-								"\" \"",
-					      "{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
-					    ]
-					  },
-					  Enchantments:[
-					    {id:"protection",lvl:2},
-					    {id:"unbreaking",lvl:2}
-					  ],
-					  AttributeModifiers:[
-					    {Slot:"chest",AttributeName:"generic.armorToughness",Name:"generic.armorToughness",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
-					    {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}
-					  ]
-					}
+					Count:1
 				},
 				rewardExp:false,
 				maxUses:2147483647
 			},
 			{
 				buy:{
-					id:"gold_ingot",
-					Count:12
+					id:"gold_block",
+					Count:7
 				},
 				buyB:{
-					id:"gold_nugget",
-					Count:7
+					id:"gold_ingot",
+					Count:6
 				},
 				sell:{
 					id:"iron_leggings",
-					Count:1,
-					tag:{
-					  display:{
-					    Name:"{\"text\":\"Iron Pants\",\"italic\":false,\"color\":\"white\"}",
-					    Lore:[
-								"\" \"",
-					      "{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
-					    ]
-					  },
-					  Enchantments:[
-					    {id:"projectile_protection",lvl:1},
-					    {id:"unbreaking",lvl:2}
-					  ],
-					  AttributeModifiers:[
-					    {Slot:"legs",AttributeName:"generic.armorToughness",Name:"generic.armorToughness",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
-					    {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUIDMost:1,UUIDLeast:1}
-					  ]
-					}
+					Count:1
 				},
 				rewardExp:false,
 				maxUses:2147483647
@@ -195,40 +221,34 @@ summon minecraft:villager ~ ~1 ~ {
 			{
 				buy:{
 					id:"gold_ingot",
-					Count:23
+					Count:39
 				},
 				buyB:{
 					id:"gold_nugget",
 					Count:2
 				},
 				sell:{
-					id:"iron_leggings",
-					Count:1,
-					tag:{
-					  display:{
-					    Name:"{\"text\":\"Iron Boots\",\"italic\":false,\"color\":\"white\"}",
-					    Lore:[
-								"\" \"",
-					      "{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
-					    ]
-					  },
-					  Enchantments:[
-					    {id:"depth_strider",lvl:1},
-					    {id:"feather_falling",lvl:1},
-					    {id:"unbreaking",lvl:2},
-					    {id:"respiration",lvl:1}
-					  ],
-					  AttributeModifiers:[
-					    {Slot:"feet",AttributeName:"generic.armorToughness",Name:"generic.armorToughness",Amount:1,Operation:0,UUIDMost:1,UUIDLeast:1},
-					    {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUIDMost:1,UUIDLeast:1}
-					  ]
-					}
+					id:"iron_boots",
+					Count:1
 				},
 				rewardExp:false,
 				maxUses:2147483647
 			},
 			{
-				maxUses:0
+				buy:{
+					id:"gold_ingot",
+					Count:49
+				},
+				buyB:{
+					id:"gold_nugget",
+					Count:1
+				},
+				sell:{
+					id:"diamond_helmet",
+					Count:1
+				},
+				rewardExp:false,
+				maxUses:2147483647
 			},
 			{
 				buy:{
@@ -272,7 +292,7 @@ summon minecraft:villager ~ ~1 ~ {
 					Count:2
 				},
 				sell:{
-					id:"diamond_leggings",
+					id:"diamond_boots",
 					Count:1
 				},
 				rewardExp:false,
