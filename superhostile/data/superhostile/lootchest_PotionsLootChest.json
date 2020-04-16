@@ -1,0 +1,19 @@
+give @p chest{
+  BlockEntityTag:{
+    LootTable:"superhostile:potions"
+  },
+  display:{
+    Lore:[
+      "{\"text\":\"Potions Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+      "{\"text\":\"Splash Potion of Regeneration 34.0%\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Splash Potion of Healing II 34.0%\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Potion of Swiftness II 19.1%\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Potion of Strength + 8.5%\",\"italic\":false,\"color\":\"white\"}",
+      "{\"text\":\"Splash Potion of Strength II 4.3%\",\"italic\":false,\"color\":\"white\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:1}
+  ],
+  HideFlags:1
+}

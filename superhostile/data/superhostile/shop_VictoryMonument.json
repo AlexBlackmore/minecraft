@@ -1,5 +1,5 @@
-	summon minecraft:villager ~ ~ ~ {
-		CustomName:"{\"text\":\"Victory Monument\"}",
+	summon minecraft:villager ~ ~1 ~ {
+		CustomName:"{\"text\":\"Victory Monument\",\"color\":\"green\"}",
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		CanPickUpLoot:false,
@@ -8,7 +8,7 @@
 		{
 			level:5,
 			profession:"nitwit",
-			type:"plains"
+			type:"swamp"
 		},
 		Attributes: [
 			{
@@ -45,26 +45,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -95,26 +93,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-	                "\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -145,26 +141,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -195,26 +189,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -245,26 +237,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -295,26 +285,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -345,26 +333,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -395,26 +381,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -445,26 +429,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -495,26 +477,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -545,26 +525,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -595,26 +573,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -645,26 +621,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -695,26 +669,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -745,26 +717,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -795,58 +765,24 @@
 					},
 					sell:
 					{
-						id:"emerald",
+						id:"chest",
 						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
-						id:"diamond_block",
-						Count:1
-					},
-					sell:
-					{
-						id:"emerald",
-						Count:1,
-						tag:
-	          {
-	            display:
-	            {
-	              Name:"{\"text\":\"Victory Monument Token\",\"italic\":false,\"color\":\"green\"}",
-	              Lore: [
-									"\"Can be traded for at the Victory Monument for a\"",
-									"\"Super Hostile Loot Chest.\""
-	              ]
-	            },
-	            Enchantments: [
-	              {
-	                id:"unbreaking",
-	                lvl:1
-	              }
-	            ],
-	            HideFlags:7
-	          }
+						tag:{
+						  BlockEntityTag:{
+						    LootTable:"superhostile:random_loot"
+						  },
+						  display:{
+						    Lore:[
+						      "{\"text\":\"Random Loot\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+						      "\"Contains basic weapons, armor, food,\"",
+						      "\"and other resources.\""
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  HideFlags:1
+						}
 					},
 					rewardExp:false,
 					maxUses:2147483647
