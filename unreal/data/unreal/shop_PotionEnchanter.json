@@ -39,13 +39,59 @@ summon minecraft:villager ~ ~1 ~ {
           {
             display:
             {
-              Name:"{\"text\":\"Potion of Regeneration ++\",\"italic\":false,\"color\":\"yellow\"}"
+              Name:"{\"text\":\"Potion of Regeneration +2\",\"italic\":false,\"color\":\"yellow\"}",
+              Lore:[
+                "\" \"",
+                "{\"text\":\"UNCOMMON\",\"italic\":false,\"bold\":true,\"color\":\"yellow\"}"
+              ]
             },
             CustomPotionEffects:[
               {
                 Id:10,
                 Amplifier:0,
                 Duration:2700
+              }
+            ],
+            CustomPotionColor:13458603
+          }
+        },
+        rewardExp:false,
+        maxUses:2147483647
+      },
+      {
+        buy:
+        {
+          id:"potion",
+          Count:1,
+          tag:
+          {
+            Potion:"minecraft:strong_regeneration"
+          }
+        },
+        buyB:
+        {
+          id:"experience_bottle",
+          Count:1
+        },
+        sell:
+        {
+          id:"potion",
+          Count:1,
+          tag:
+          {
+            display:
+            {
+              Name:"{\"text\":\"Potion of Regeneration III\",\"italic\":false,\"color\":\"yellow\"}",
+              Lore:[
+                "\" \"",
+                "{\"text\":\"UNCOMMON\",\"italic\":false,\"bold\":true,\"color\":\"yellow\"}"
+              ]
+            },
+            CustomPotionEffects:[
+              {
+                Id:10,
+                Amplifier:2,
+                Duration:225
               }
             ],
             CustomPotionColor:13458603
