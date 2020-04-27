@@ -1,5 +1,5 @@
 summon minecraft:villager ~ ~1 ~ {
-	CustomName:"{\"text\":\"Blacksmith\",\"color\":\"green\"}",
+	CustomName:"{\"text\":\"Super Hostile Blacksmith\",\"color\":\"green\"}",
 	CustomNameVisible:true,
 	PersistenceRequired:true,
 	Silent:true,
@@ -12,7 +12,7 @@ summon minecraft:villager ~ ~1 ~ {
 		profession:"leatherworker",
 		type:"swamp"
 	},
-	Attributes: [
+	Attributes:[
 		{
 			Name:"generic.movementSpeed",
 			Base:"0f"
@@ -20,7 +20,7 @@ summon minecraft:villager ~ ~1 ~ {
 	],
 	Offers:
 	{
-		Recipes: [
+		Recipes:[
 			{
 				buy:{
 					id:leather_chestplate,
@@ -46,8 +46,8 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				buyB:
 				{
-					id:"gold_nugget",
-					Count:53
+					id:"emerald",
+					Count:8
 				},
 				sell:
 				{
@@ -97,8 +97,8 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				buyB:
 				{
-					id:"gold_nugget",
-					Count:19
+					id:"emerald",
+					Count:6
 				},
 				sell:
 				{
@@ -150,8 +150,8 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				buyB:
 				{
-					id:"gold_nugget",
-					Count:43
+					id:"emerald",
+					Count:11
 				},
 				sell:
 				{
@@ -201,7 +201,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buyB:
 				{
 					id:"gold_ingot",
-					Count:9
+					Count:14
 				},
 				sell:
 				{
@@ -246,8 +246,8 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				buyB:
 				{
-					id:"gold_nugget",
-					Count:33
+					id:"emerald",
+					Count:9
 				},
 				sell:
 				{
@@ -297,8 +297,8 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				buyB:
 				{
-					id:"gold_nugget",
-					Count:31
+					id:"emerald",
+					Count:9
 				},
 				sell:
 				{
