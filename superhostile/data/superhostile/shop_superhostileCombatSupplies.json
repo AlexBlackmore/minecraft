@@ -1,18 +1,17 @@
 summon minecraft:villager ~ ~1 ~ {
-	CustomName:"{\"text\":\"Combat Supplies\",\"color\":\"green\"}",
+	CustomName:"{\"text\":\"Super Hostile Combat Supplies\",\"color\":\"green\"}",
 	CustomNameVisible:true,
 	PersistenceRequired:true,
 	Silent:true,
 	CanPickUpLoot:false,
 	Willing:false,
 	NoAI:false,
-	VillagerData:
-	{
+	VillagerData:{
 		level:5,
 		profession:"weaponsmith",
 		type:"swamp"
 	},
-	Attributes: [
+	Attributes:[
 		{
 			Name:"generic.movementSpeed",
 			Base:"0f"
@@ -20,11 +19,11 @@ summon minecraft:villager ~ ~1 ~ {
 	],
 	Offers:
 	{
-		Recipes: [
+		Recipes:[
 			{
 				buy:{
 					id:"emerald",
-					Count:2
+					Count:3
 				},
 				sell:{
 					id:"arrow",
@@ -48,7 +47,7 @@ summon minecraft:villager ~ ~1 ~ {
 			{
 				buy:{
 					id:"emerald",
-					Count:2
+					Count:3
 				},
 				sell:{
 					id:"torch",
@@ -58,14 +57,10 @@ summon minecraft:villager ~ ~1 ~ {
 				maxUses:2147483647
 			},
 			{
-				buy:{
-					id:"iron_sword",
-					Count:1
-				},
-				buyB:
+				buy:
 				{
 					id:"emerald",
-					Count:10
+					Count:11
 				},
 				sell:{
 					id:"iron_sword",
@@ -92,14 +87,10 @@ summon minecraft:villager ~ ~1 ~ {
 				maxUses:2147483647
 			},
 			{
-				buy:{
-					id:"bow",
-					Count:1
-				},
-				buyB:
+				buy:
 				{
 					id:"emerald",
-					Count:10
+					Count:11
 				},
 				sell:{
 					id:"bow",
@@ -136,7 +127,7 @@ summon minecraft:villager ~ ~1 ~ {
 			{
 				buy:{
 					id:"emerald",
-					Count:4
+					Count:3
 				},
 				sell:{
 					id:"golden_apple",
@@ -148,7 +139,7 @@ summon minecraft:villager ~ ~1 ~ {
 			{
 				buy:{
 					id:"emerald",
-					Count:4
+					Count:10
 				},
 				sell:{
 					id:"chest",
