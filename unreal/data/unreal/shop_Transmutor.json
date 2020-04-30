@@ -6,188 +6,79 @@ summon minecraft:villager ~ ~1 ~ {
   CanPickUpLoot:false,
   Willing:false,
   NoAI:false,
-  VillagerData:
-  {
+  VillagerData:{
     level:5,
     profession:"cleric",
     type:"jungle"
   },
-  Attributes: [
+  Attributes:[
     {
       Name:"generic.movementSpeed",
       Base:"0f"
     }
   ],
-	Offers:
-	{
-		Recipes: [
+	Offers:{
+		Recipes:[
       {
-        buy:
-        {
-          id:"iron_nugget",
-          Count:15
-        },
-        buyB:
-        {
-          id:"emerald",
-          Count:1
-        },
-        sell:
-        {
-          id:"gold_nugget",
-          Count:14
-        },
-				rewardExp:false,
-				maxUses:2147483647
-      },
-      {
-        buy:
-        {
+        buy:{
           id:"iron_ingot",
-          Count:16
+          Count:11
         },
-        buyB:
-        {
+        buyB:{
           id:"emerald",
           Count:1
         },
-        sell:
-        {
+        sell:{
           id:"gold_ingot",
-          Count:6
+          Count:11
         },
 				rewardExp:false,
 				maxUses:2147483647
       },
       {
-        buy:
-        {
-          id:"iron_block",
+        buy:{
+          id:"gold_ingot",
           Count:3
         },
-        buyB:
-        {
+        buyB:{
           id:"emerald",
           Count:1
         },
-        sell:
-        {
-          id:"gold_block",
-          Count:1
-        },
-				rewardExp:false,
-				maxUses:2147483647
-      },
-      {
-        buy:
-        {
-          id:"gold_nugget",
-          Count:6
-        },
-        buyB:
-        {
-          id:"emerald",
-          Count:1
-        },
-        sell:
-        {
-          id:"iron_nugget",
-          Count:42
-        },
-				rewardExp:false,
-				maxUses:2147483647
-      },
-      {
-        buy:
-        {
-          id:"gold_ingot",
-          Count:5
-        },
-        buyB:
-        {
-          id:"emerald",
-          Count:1
-        },
-        sell:
-        {
+        sell:{
           id:"iron_ingot",
-          Count:19
+          Count:8
         },
 				rewardExp:false,
 				maxUses:2147483647
       },
       {
-        buy:
-        {
-          id:"gold_block",
-          Count:4
-        },
-        buyB:
-        {
-          id:"emerald",
-          Count:1
-        },
-        sell:
-        {
-          id:"iron_block",
+        buy:{
+          id:"coal",
           Count:13
         },
-				rewardExp:false,
-				maxUses:2147483647
-      },
-      {
-        buy:
-        {
-          id:"coal",
-          Count:57
-        },
-        buyB:
-        {
+        buyB:{
           id:"emerald",
           Count:1
         },
-        sell:
-        {
+        sell:{
           id:"diamond",
-          Count:1
+          Count:2
         },
 				rewardExp:false,
 				maxUses:2147483647
       },
       {
-        buy:
-        {
-          id:"coal_block",
-          Count:62
-        },
-        buyB:
-        {
-          id:"emerald",
-          Count:1
-        },
-        sell:
-        {
-          id:"diamond",
-          Count:1
-        },
-				rewardExp:false,
-				maxUses:2147483647
-      },
-      {
-        buy:
-        {
+        buy:{
           id:"charcoal",
-          Count:41
+          Count:5
         },
-        buyB:
-        {
+        buyB:{
           id:"emerald",
           Count:1
         },
-        sell:
-        {
+        sell:{
           id:"diamond",
-          Count:1
+          Count:5
         },
 				rewardExp:false,
 				maxUses:2147483647
