@@ -25,12 +25,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buy:
 				{
 					id:"paper",
-					Count:64
-				},
-				buyB:
-				{
-					id:"paper",
-					Count:36
+					Count:3
 				},
 				sell:
 				{
@@ -49,7 +44,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buyB:
 				{
 					id:"emerald",
-					Count:17
+					Count:5
 				},
 				sell:
 				{
@@ -84,7 +79,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buy:
 				{
 					id:"book",
-					Count:8
+					Count:1
 				},
 				sell:
 				{
@@ -98,7 +93,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buy:
 				{
 					id:"emerald",
-					Count:10
+					Count:2
 				},
 				sell:
 				{
@@ -112,7 +107,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buy:
 				{
 					id:"emerald",
-					Count:3
+					Count:5
 				},
 				sell:
 				{
@@ -126,7 +121,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buy:
 				{
 					id:"written_book",
-					Count:4
+					Count:1
 				},
 				sell:
 				{
@@ -140,7 +135,7 @@ summon minecraft:villager ~ ~1 ~ {
 				buy:
 				{
 					id:"emerald",
-					Count:10
+					Count:2
 				},
 				sell:
 				{
@@ -154,12 +149,98 @@ summon minecraft:villager ~ ~1 ~ {
 				buy:
 				{
 					id:"emerald",
-					Count:1
+					Count:2
 				},
 				sell:
 				{
 					id:"glass",
 					Count:5
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"book",
+					Count:1
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:5
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"unreal:item_enchanted_book_level1"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Level I Enchanted Book\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Enchanted Book x1\",\"italic\":false,\"color\":\"white\"}",
+								"\"Contains an enchanted book with\"",
+								"\"a random Level I non-treasure\"",
+								"\"enchantment.\""
+							]
+						},
+						Enchantments:[
+							{
+								id:"unbreaking",
+								lvl:1
+							}
+						],
+						HideFlags:1
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"book",
+					Count:1
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"unreal:item_enchanted_book_level2"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Level II Enchanted Book\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Enchanted Book x1\",\"italic\":false,\"color\":\"white\"}",
+								"\"Contains an enchanted book with\"",
+								"\"a random Level II non-treasure\"",
+								"\"enchantment.\""
+							]
+						},
+						Enchantments:[
+							{
+								id:"unbreaking",
+								lvl:1
+							}
+						],
+						HideFlags:1
+					}
 				},
 				rewardExp:false,
 				maxUses:2147483647
@@ -174,6 +255,132 @@ summon minecraft:villager ~ ~1 ~ {
 				{
 					id:"name_tag",
 					Count:1
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"book",
+					Count:1
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:11
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"unreal:item_enchanted_book_level3"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Level III Enchanted Book\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Enchanted Book x1\",\"italic\":false,\"color\":\"white\"}",
+								"\"Contains an enchanted book with\"",
+								"\"a random Level III enchantment.\""
+							]
+						},
+						Enchantments:[
+							{
+								id:"unbreaking",
+								lvl:1
+							}
+						],
+						HideFlags:1
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"book",
+					Count:1
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:14
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"unreal:item_enchanted_book_level4"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Level IV Enchanted Book\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Enchanted Book x1\",\"italic\":false,\"color\":\"white\"}",
+								"\"Contains an enchanted book with\"",
+								"\"a random Level IV enchantment.\""
+							]
+						},
+						Enchantments:[
+							{
+								id:"unbreaking",
+								lvl:1
+							}
+						],
+						HideFlags:1
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"book",
+					Count:1
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:17
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"unreal:item_enchanted_book_level5"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Level V Enchanted Book\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Enchanted Book x1\",\"italic\":false,\"color\":\"white\"}",
+								"\"Contains an enchanted book with\"",
+								"\"a random Level V enchantment.\""
+							]
+						},
+						Enchantments:[
+							{
+								id:"unbreaking",
+								lvl:1
+							}
+						],
+						HideFlags:1
+					}
 				},
 				rewardExp:false,
 				maxUses:2147483647
