@@ -24,18 +24,31 @@ summon minecraft:villager ~ ~1 ~ {
 					id:"zombie_head",
 					Count:1
 				},
-				buyB:{
-					id:"dragon_egg",
-					Count:1
+        buyB:{
+          id:"potion",
+					Count:1,
+					tag:{
+            Potion:"minecraft:empty",
+            display:{
+              Name:"{\"text\":\"Potion of Decay\",\"italic\":false}",
+              Lore:[
+								"{\"text\":\"Wither (0:40)\",\"italic\":false,\"color\":\"red\"}"
+							]
+            },
+            CustomPotionEffects:[
+              {
+                Id:20,
+                Amplifier:0,
+                Duration:800
+              }
+            ],
+            CustomPotionColor:3484199,
+            HideFlags:32
+					}
 				},
 				sell:{
-					id:"zombie_spawn_egg",
-					Count:1,
-          tag:{
-            display:{
-              Name:"{\"text\":\"Zombie Spawn Egg\",\"italic\":false,\"color\":\"light_purple\"}"
-            }
-          }
+					id:"wither_skeleton_skull",
+					Count:1
 				},
 				rewardExp:false,
 				maxUses:2147483647
@@ -46,18 +59,31 @@ summon minecraft:villager ~ ~1 ~ {
           Count:1
         },
         buyB:{
-          id:"dragon_egg",
-          Count:1
-        },
-        sell:{
-          id:"skeleton_spawn_egg",
-          Count:1,
-          tag:{
+          id:"potion",
+					Count:1,
+					tag:{
+            Potion:"minecraft:empty",
             display:{
-              Name:"{\"text\":\"Skeleton Spawn Egg\",\"italic\":false,\"color\":\"light_purple\"}"
-            }
-          }
-        },
+              Name:"{\"text\":\"Potion of Decay\",\"italic\":false}",
+              Lore:[
+								"{\"text\":\"Wither (0:40)\",\"italic\":false,\"color\":\"red\"}"
+							]
+            },
+            CustomPotionEffects:[
+              {
+                Id:20,
+                Amplifier:0,
+                Duration:800
+              }
+            ],
+            CustomPotionColor:3484199,
+            HideFlags:32
+					}
+				},
+				sell:{
+					id:"wither_skeleton_skull",
+					Count:1
+				},
         rewardExp:false,
         maxUses:2147483647
       },
@@ -67,18 +93,31 @@ summon minecraft:villager ~ ~1 ~ {
           Count:1
         },
         buyB:{
-          id:"dragon_egg",
-          Count:1
-        },
-        sell:{
-          id:"creeper_spawn_egg",
-          Count:1,
-          tag:{
+          id:"potion",
+					Count:1,
+					tag:{
+            Potion:"minecraft:empty",
             display:{
-              Name:"{\"text\":\"Creeper Spawn Egg\",\"italic\":false,\"color\":\"light_purple\"}"
-            }
-          }
-        },
+              Name:"{\"text\":\"Potion of Decay\",\"italic\":false}",
+              Lore:[
+								"{\"text\":\"Wither (0:40)\",\"italic\":false,\"color\":\"red\"}"
+							]
+            },
+            CustomPotionEffects:[
+              {
+                Id:20,
+                Amplifier:0,
+                Duration:800
+              }
+            ],
+            CustomPotionColor:3484199,
+            HideFlags:32
+					}
+				},
+				sell:{
+					id:"wither_skeleton_skull",
+					Count:1
+				},
         rewardExp:false,
         maxUses:2147483647
       },
