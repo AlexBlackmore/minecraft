@@ -1,0 +1,204 @@
+summon minecraft:villager ~ ~1 ~ {
+	CustomName:"{\"text\":\"Victor's Assistant\",\"color\":\"green\"}",
+	CustomNameVisible:true,
+	PersistenceRequired:true,
+	Silent:true,
+	CanPickUpLoot:false,
+	Willing:false,
+	NoAI:false,
+	VillagerData:
+	{
+		level:5,
+		profession:"armorer",
+		type:"swamp"
+	},
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id:"gold_block",
+					Count:20
+				},
+				buyB:
+				{
+					id:"gold_ingot",
+					Count:3
+				},
+        sell:
+				{
+        	id:"diamond_helmet",
+        	Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"{\"text\":\"Cauli's Agony\",\"italic\":false,\"color\":\"dark_red\"}",
+							Lore: [
+								"{\"text\":\"Demonic Set\",\"italic\":false,\"color\":\"dark_red\"}"
+							]
+						},
+						Enchantments: [
+							{
+								id:"protection",
+								lvl:2
+							},
+							{
+								id:"projectile_protection",
+								lvl:2
+							},
+							{
+								id:"fire_protection",
+								lvl:2
+							},
+							{
+								id:"unbreaking",
+								lvl:10
+							}
+						]
+					}
+      	},
+				rewardExp:false,
+				maxUses:2147483647
+      },
+			{
+				buy:
+				{
+					id:"gold_block",
+					Count:20
+				},
+				buyB:
+				{
+					id:"gold_ingot",
+					Count:3
+				},
+        sell:
+				{
+        	id:"diamond_chestplate",
+        	Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"{\"text\":\"Sqorck's Nightmare\",\"italic\":false,\"color\":\"dark_red\"}",
+							Lore: [
+								"{\"text\":\"Demonic Set\",\"italic\":false,\"color\":\"dark_red\"}"
+							]
+						},
+						Enchantments: [
+							{
+								id:"protection",
+								lvl:2
+							},
+							{
+								id:"blast_protection",
+								lvl:2
+							},
+							{
+								id:"fire_protection",
+								lvl:1
+							},
+							{
+								id:"unbreaking",
+								lvl:10
+							}
+						]
+					}
+      	},
+				rewardExp:false,
+				maxUses:2147483647
+  		},
+			{
+				buy:
+				{
+					id:"gold_block",
+					Count:20
+				},
+        sell:
+				{
+        	id:"diamond_leggings",
+        	Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"{\"text\":\"Milsy's Anger\",\"italic\":false,\"color\":\"dark_red\"}",
+							Lore: [
+								"{\"text\":\"Demonic Set\",\"italic\":false,\"color\":\"dark_red\"}"
+							]
+						},
+						Enchantments: [
+							{
+								id:"protection",
+								lvl:2
+							},
+							{
+								id:"projectile_protection",
+								lvl:2
+							},
+							{
+								id:"fire_protection",
+								lvl:1
+							},
+							{
+								id:"unbreaking",
+								lvl:10
+							}
+						]
+					}
+        },
+				rewardExp:false,
+				maxUses:2147483647
+    	},
+			{
+				buy:
+				{
+					id:"gold_block",
+					Count:19
+				},
+        sell:
+				{
+        	id:"diamond_boots",
+        	Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"{\"text\":\"Rezz's Lavawalker\",\"italic\":false,\"color\":\"dark_red\"}",
+							Lore: [
+								"{\"text\":\"Demonic Set\",\"italic\":false,\"color\":\"dark_red\"}"
+							]
+						},
+						Enchantments: [
+							{
+								id:"protection",
+								lvl:2
+							},
+							{
+								id:"fire_protection",
+								lvl:1
+							},
+							{
+								id:"feather_falling",
+								lvl:2
+							},
+							{
+								id:"unbreaking",
+								lvl:10
+							}
+						]
+					}
+        },
+				rewardExp:false,
+				maxUses:2147483647
+    	}
+		]
+	}
+}

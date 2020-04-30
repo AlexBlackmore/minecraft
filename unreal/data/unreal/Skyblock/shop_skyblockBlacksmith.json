@@ -1,0 +1,430 @@
+summon minecraft:villager ~ ~1 ~ {
+	CustomName:"{\"text\":\"Skyblock Blacksmith\",\"color\":\"green\"}",
+	CustomNameVisible:true,
+	PersistenceRequired:true,
+	Silent:true,
+	CanPickUpLoot:false,
+	Willing:false,
+	NoAI:false,
+	VillagerData:
+	{
+		level:5,
+		profession:"armorer",
+		type:"swamp"
+	},
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id:"leather_helmet",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"{\"text\":\"Lufenian Helm\",\"italic\":false,\"color\":\"green\"}",
+							Lore: [
+								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
+							]
+						},
+						Enchantments: [
+							{
+								id:"protection",
+								lvl:1
+							},
+							{
+								id:"projectile_protection",
+								lvl:1
+							},
+							{
+								id:"unbreaking",
+								lvl:10
+							}
+						],
+						AttributeModifiers: [
+							{
+								Slot:"head",
+								AttributeName:"generic.armor",
+								Name:"generic.armor",
+								Amount:3,
+								Operation:0,
+								UUIDMost:1,
+								UUIDLeast:1
+							}
+						]
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Skyblock Helmet Reforge\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Tier 1 Helmet 45.5%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 2 Helmet 27.3%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 3 Helmet 18.2%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 4 Helmet 9.1%\",\"italic\":false,\"color\":\"white\"}",
+							]
+						},
+					  Enchantments:[
+					    {id:"unbreaking",lvl:1}
+					  ],
+					  HideFlags:1
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"leather_chestplate",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"{\"text\":\"Quagie's Might\",\"italic\":false,\"color\":\"green\"}",
+							Lore: [
+								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
+							]
+						},
+						Enchantments: [
+							{
+								id:"protection",
+								lvl:1
+							},
+							{
+								id:"blast_protection",
+								lvl:1
+							},
+							{
+								id:"unbreaking",
+								lvl:10
+							}
+						],
+						AttributeModifiers: [
+							{
+								Slot:"chest",
+								AttributeName:"generic.armor",
+								Name:"generic.armor",
+								Amount:8,
+								Operation:0,
+								UUIDMost:1,
+								UUIDLeast:1
+							}
+						]
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:9
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Skyblock Chestplate Reforge\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Tier 1 Chestplate 45.5%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 2 Chestplate 27.3%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 3 Chestplate 18.2%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 4 Chestplate 9.1%\",\"italic\":false,\"color\":\"white\"}",
+							]
+						},
+					  Enchantments:[
+					    {id:"unbreaking",lvl:1}
+					  ],
+					  HideFlags:1
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"leather_leggings",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"{\"text\":\"Judgement Legplates\",\"italic\":false,\"color\":\"green\"}",
+							Lore: [
+								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
+							]
+						},
+						Enchantments: [
+							{
+								id:"protection",
+								lvl:1
+							},
+							{
+								id:"projectile_protection",
+								lvl:1
+							},
+							{
+								id:"unbreaking",
+								lvl:10
+							}
+						],
+						AttributeModifiers: [
+							{
+								Slot:"legs",
+								AttributeName:"generic.armor",
+								Name:"generic.armor",
+								Amount:6,
+								Operation:0,
+								UUIDMost:1,
+								UUIDLeast:1
+							}
+						]
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:8
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Skyblock Leggings Reforge\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Tier 1 Leggings 45.5%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 2 Leggings 27.3%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 3 Leggings 18.2%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 4 Leggings 9.1%\",\"italic\":false,\"color\":\"white\"}",
+							]
+						},
+					  Enchantments:[
+					    {id:"unbreaking",lvl:1}
+					  ],
+					  HideFlags:1
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"leather_boots",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"{\"text\":\"Millsy's Escape\",\"italic\":false,\"color\":\"green\"}",
+							Lore: [
+								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
+							]
+						},
+						Enchantments: [
+							{
+								id:"protection",
+								lvl:1
+							},
+							{
+								id:"unbreaking",
+								lvl:10
+							}
+						],
+						AttributeModifiers: [
+							{
+								Slot:"feet",
+								AttributeName:"generic.armor",
+								Name:"generic.armor",
+								Amount:3,
+								Operation:0,
+								UUIDMost:1,
+								UUIDLeast:1
+							}
+						]
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:9
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Skyblock Boots Reforge\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Tier 1 Boots 45.5%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 2 Boots 27.3%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 3 Boots 18.2%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 4 Boots 9.1%\",\"italic\":false,\"color\":\"white\"}",
+							]
+						},
+					  Enchantments:[
+					    {id:"unbreaking",lvl:1}
+					  ],
+					  HideFlags:1
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"iron_sword",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"{\"text\":\"Victor's Grace\",\"italic\":false,\"color\":\"green\"}",
+							Lore: [
+								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
+							]
+						},
+						Enchantments: [
+							{
+								id:"sharpness",
+								lvl:5
+							},
+							{
+								id:"bane_of_arthropods",
+								lvl:1
+							},
+							{
+								id:"smite",
+								lvl:1
+							},
+							{
+								id:"unbreaking",
+								lvl:10
+							}
+						]
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:9
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Skyblock Sword Reforge\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Tier 1 Sword 45.5%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 2 Sword 27.3%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 3 Sword 18.2%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 4 Sword 9.1%\",\"italic\":false,\"color\":\"white\"}",
+							]
+						},
+					  Enchantments:[
+					    {id:"unbreaking",lvl:1}
+					  ],
+					  HideFlags:1
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:
+				{
+					id:"bow",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Name:"{\"text\":\"Hawk Strike\",\"italic\":false,\"color\":\"green\"}",
+							Lore: [
+								"{\"text\":\"Crimson Blade Set (Tier 1)\",\"italic\":false,\"color\":\"green\"}"
+							]
+						},
+						Enchantments: [
+							{
+								id:"power",
+								lvl:4
+							},
+							{
+								id:"infinity",
+								lvl:1
+							},
+							{
+								id:"unbreaking",
+								lvl:10
+							}
+						]
+					}
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:11
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Skyblock Bow Reforge\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+								"{\"text\":\"Tier 1 Bow 45.5%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 2 Bow 27.3%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 3 Bow 18.2%\",\"italic\":false,\"color\":\"white\"}",
+								"{\"text\":\"Tier 4 Bow 9.1%\",\"italic\":false,\"color\":\"white\"}",
+							]
+						},
+					  Enchantments:[
+					    {id:"unbreaking",lvl:1}
+					  ],
+					  HideFlags:1
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			}
+		]
+	}
+}
