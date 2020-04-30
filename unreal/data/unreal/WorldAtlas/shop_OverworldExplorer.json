@@ -1,0 +1,526 @@
+summon minecraft:villager ~ ~1 ~ {
+	CustomName:"{\"text\":\"Overworld Explorer\",\"color\":\"green\"}",
+	CustomNameVisible:true,
+	PersistenceRequired:true,
+	Silent:true,
+	CanPickUpLoot:false,
+	Willing:false,
+	NoAI:false,
+	Attributes: [
+		{
+			Name:"generic.movementSpeed",
+			Base:"0f"
+		}
+	],
+	Offers:
+	{
+		Recipes: [
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:3
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/igloo_chest"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Igloo Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"100.0% Golden Apple\"",
+								"\"74.3% Coal\"",
+								"\"74.3% Apple\"",
+								"\"57.9% Wheat\"",
+								"\"57.9% Gold Nugget\"",
+								"\"57.9% Rotten Flesh\"",
+								"\"14.9% Stone Axe\"",
+								"\"7.7% Emerald\""
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:3
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/spawn_bonus_chest"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Spawn Bonus Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"83.8% Apple\"",
+								"\"75.0% Wooden Axe\"",
+								"\"75.0% Wooden Pickaxe\"",
+								"\"70.5% Oak Planks\"",
+								"\"70.5% Stick\"",
+								"\"61.5% Bread\"",
+								"\"61.5% Raw Salmon\"",
+								"\"28.0% Acacia Log\"",
+								"\"28.0% Birch Log\"",
+								"\"28.0% Dark Oak Log\"",
+								"\"28.0% Jungle Log\"",
+								"\"28.0% Oak Log\"",
+								"\"28.0% Spruce Log\"",
+								"\"25.0% Stone Axe\"",
+								"\"25.0% Stone Pickaxe\""
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:4
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/shipwreck_supply"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Shipwreck Supply Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"55.5% Paper\"",
+								"\"50.7% Wheat\"",
+								"\"50.7% Carrot\"",
+								"\"50.7% Poisonous Potato\"",
+								"\"50.7% Potato\"",
+								"\"45.4% Coal\"",
+								"\"39.6% Rotten Flesh\"",
+								"\"26.0% Gunpowder\"",
+								"\"26.0% Enchanted Leather Cap\"",
+								"\"26.0% Enchanted Leather Tunic\"",
+								"\"26.0% Enchanted Leather Leggings\"",
+								"\"26.0% Enchanted Leather Boots\"",
+								"\"18.2% Pumpkin\"",
+								"\"9.5% TNT\""
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:11
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/underwater_ruin_big"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Underwater Ruins Big Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"81.0% Coal\"",
+								"\"81.0% Wheat\"",
+								"\"81.0% Gold Nugget\"",
+								"\"43.5% Buried Treasure Map\"",
+								"\"21.7% Enchanted Book\"",
+								"\"21.7% Enchanted Fishing Rod\"",
+								"\"14.9% Emerald\"",
+								"\"4.3% Leather Tunic\"",
+								"\"4.3% Golden Apple\"",
+								"\"4.3% Golden Helmet\""
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:11
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/underwater_ruin_small"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Underwater Ruins Small Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"84.2% Coal\"",
+								"\"84.2% Wheat\"",
+								"\"59.6% Rotten Flesh\"",
+								"\"41.7% Buried Treasure Map\"",
+								"\"41.7% Enchanted Fishing Rod\"",
+								"\"30.2% Stone Axe\"",
+								"\"16.4% Emerald\"",
+								"\"8.3% Leather Tunic\"",
+								"\"8.3% Golden Helmet\""
+							]
+						}
+					}
+				}
+			},
+
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:12
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/shipwreck_treasure"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Shipwreck Treasure Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"97.4% Iron Ingot\"",
+								"\"94.5% Iron Nugget\"",
+								"\"73.7% Emerald\"",
+								"\"61.5% Lapis Lazuli\"",
+								"\"36.6% Gold Nugget\"",
+								"\"26.5% Gold Ingot\"",
+								"\"14.1% Bottle o' Enchanting\"",
+								"\"14.1% Diamond\""
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:14
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/desert_pyramid"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Desert Pyramid Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"70.9% Bone\"",
+								"\"70.9% Rotten Flesh\"",
+								"\"59.0% Gunpowder\"",
+								"\"59.0% Sand\"",
+								"\"59.0% String\"",
+								"\"29.0% Spider Eye\"",
+								"\"23.7% Enchanted Book\"",
+								"\"23.7% Saddle\"",
+								"\"23.7% Golden Apple\"",
+								"\"18.2% Gold Ingot\"",
+								"\"18.2% Iron Ingot\"",
+								"\"18.2% Emerald\"",
+								"\"18.2% Iron Horse Armor\"",
+								"\"12.4% Golden Horse Armor\"",
+								"\"6.3% Diamond\"",
+								"\"6.3% Diamond Horse Armor\"",
+								"\"2.6% Enchanted Golden Apple\""
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:15
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/village_blacksmith"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Blacksmith Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"61.6% Apple\"",
+								"\"61.6% Bread\"",
+								"\"46.1% Iron Ingot\"",
+								"\"26.0% Oak Sapling\"",
+								"\"26.0% Obsidian\"",
+								"\"26.0% Gold Ingot\"",
+								"\"26.0% Iron Pickaxe\"",
+								"\"26.0% Iron Sword\"",
+								"\"26.0% Iron Helmet\"",
+								"\"26.0% Iron Chestplate\"",
+								"\"26.0% Iron Leggings\"",
+								"\"26.0% Iron Boots\"",
+								"\"16.3% Diamond\"",
+								"\"16.3% Saddle\"",
+								"\"5.7% Iron Horse Armor\"",
+								"\"5.7% Golden Horse Armor\"",
+								"\"5.7% Diamond Horse Armor\""
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:20
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/nether_bridge"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Nether Fortress Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"49.8% Gold Ingot\"",
+								"\"35.7% Saddle\"",
+								"\"29.4% Golden Horse Armor\"",
+								"\"19.2% Nether Wart\"",
+								"\"19.2% Iron Ingot\"",
+								"\"19.2% Diamond\"",
+								"\"19.2% Flint and Steel\"",
+								"\"19.2% Iron Horse Armor\"",
+								"\"19.2% Golden Sword\"",
+								"\"19.2% Golden Chestplate\"",
+								"\"11.8% Diamond Horse Armor\"",
+								"\"8.0% Obsidian\""
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:21
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/woodland_mansion"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Woodland Mansion Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"57.8% Bone\"",
+								"\"57.8% Gunpowder\"",
+								"\"57.8% Rotten Flesh\"",
+								"\"57.8% String\"",
+								"\"35.3% Wheat\"",
+								"\"35.3% Bread\"",
+								"\"29.0% Lead\"",
+								"\"29.0% Name Tag\"",
+								"\"27.4% Coal\"",
+								"\"27.4% Redstone\"",
+								"\"22.2% Music Disc (13)\"",
+								"\"22.2% Music Disc (Cat)\"",
+								"\"22.2% Golden Apple\"",
+								"\"22.2% Diamond Hoe\"",
+								"\"18.8% Beetroot Seeds\"",
+								"\"18.8% Melon Seeds\"",
+								"\"18.8% Pumpkin Seeds\"",
+								"\"18.8% Iron Ingot\"",
+								"\"18.8% Bucket\"",
+								"\"15.1% Enchanted Book\"",
+								"\"15.1% Chainmail Chestplate\"",
+								"\"9.7% Gold Ingot\"",
+								"\"7.7% Diamond Chestplate\"",
+								"\"3.1% Enchanted Golden Apple\""
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:22
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/shipwreck_map"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Shipwreck Map Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"100.0% Buried Treasure Map\"",
+								"\"89.4% Paper\"",
+								"\"60.0% Feather\"",
+								"\"34.5% Book\"",
+								"\"7.7% Clock\"",
+								"\"7.7% Compass\"",
+								"\"7.7% Empty Map\""
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:46
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/buried_treasure"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"Buried Treasure Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"100.0% Heart Of The Sea\"",
+								"\"99.4% Iron Ingot\"",
+								"\"88.0% Gold Ingot\"",
+								"\"75.0% Cooked Cod\"",
+								"\"75.0% Cooked Salmon\"",
+								"\"75.0% Leather Tunic\"",
+								"\"75.0% Iron Sword\"",
+								"\"62.7% TNT\"",
+								"\"53.1% Emerald\"",
+								"\"53.1% Prismarine Crystal\"",
+								"\"53.1% Diamond\""
+							]
+						}
+					}
+				}
+			},
+			{
+				buy:
+				{
+					id:"emerald",
+					Count:64
+				},
+				buyB:
+				{
+					id:"emerald",
+					Count:2
+				},
+				sell:
+				{
+					id:"chest",
+					Count:1,
+					tag:
+					{
+						BlockEntityTag:
+						{
+							LootTable:"minecraft:chests/end_city_treasure"
+						},
+						display:
+						{
+							Lore: [
+								"{\"text\":\"End City Loot Chest\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+								"\"54.0% Gold Ingot\"",
+								"\"39.4% Iron Ingot\"",
+								"\"21.5% Beetroot Seeds\"",
+								"\"21.5% Diamond\"",
+								"\"13.4% Saddle\"",
+								"\"13.4% Enchanted Iron Pickaxe\"",
+								"\"13.4% Enchanted Iron Shovel\"",
+								"\"13.4% Enchanted Iron Sword\"",
+								"\"13.4% Enchanted Iron Helmet\"",
+								"\"13.4% Enchanted Iron Chestplate\"",
+								"\"13.4% Enchanted Iron Leggings\"",
+								"\"13.4% Enchanted Iron Boots\"",
+								"\"13.4% Enchanted Diamond Pickaxe\"",
+								"\"13.4% Enchanted Diamond Shovel\"",
+								"\"13.4% Enchanted Diamond Sword\"",
+								"\"13.4% Enchanted Diamond Helmet\"",
+								"\"13.4% Enchanted Diamond Chestplate\"",
+								"\"13.4% Enchanted Diamond Leggings\"",
+								"\"13.4% Enchanted Diamond Boots\"",
+								"\"9.1% Emerald\"",
+								"\"4.6% Iron Horse Armor\"",
+								"\"4.6% Golden Horse Armor\"",
+								"\"4.6% Diamond Horse Armor\""
+							]
+						}
+					}
+				}
+			},
+		]
+	}
+}
