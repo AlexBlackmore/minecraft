@@ -1,0 +1,15 @@
+/give @p creeper_spawn_egg{
+  EntityTag:{
+    id:"minecraft:creeper",
+    CustomName:"[\"\",{\"text\":\"Creeper \",\"color\":\"white\"},{\"text\":\"(level 1)\",\"color\":\"green\"}]",
+    CustomNameVisible:1,
+    DeathLootTable:"superhostile:classic_island_creeper",
+    Health:23,
+    Attributes:[
+      {Name:"generic.maxHealth",Base:23}
+    ]
+  },
+  display:{
+    Name:"[\"\",{\"text\":\"Creeper \",\"color\":\"white\"},{\"text\":\"(level 1)\",\"color\":\"green\"}]"
+  }
+}

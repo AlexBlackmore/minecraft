@@ -1,5 +1,5 @@
 summon minecraft:villager ~ ~1 ~ {
-	CustomName:"{\"text\":\"Farmer\",\"color\":\"green\"}",
+	CustomName:"{\"text\":\"Super Hostile Farmer\",\"color\":\"green\"}",
 	CustomNameVisible:true,
 	PersistenceRequired:true,
 	Silent:true,
@@ -10,7 +10,7 @@ summon minecraft:villager ~ ~1 ~ {
 	{
 		level:5,
 		profession:"farmer",
-		type:"jungle"
+		type:"swamp"
 	},
 	Attributes: [
 		{
@@ -72,7 +72,7 @@ summon minecraft:villager ~ ~1 ~ {
 				sell:
 				{
 					id:"bread",
-					Count:4
+					Count:6
 				},
 				rewardExp:false,
 				maxUses:2147483647
@@ -99,8 +99,8 @@ summon minecraft:villager ~ ~1 ~ {
 				},
 				sell:
 				{
-					id:"pumpkin_pie",
-					Count:3
+					id:"mushroom_stew",
+					Count:5
 				},
 				rewardExp:false,
 				maxUses:2147483647
@@ -128,7 +128,7 @@ summon minecraft:villager ~ ~1 ~ {
 				sell:
 				{
 					id:"apple",
-					Count:7
+					Count:16
 				},
 				rewardExp:false,
 				maxUses:2147483647
@@ -142,7 +142,7 @@ summon minecraft:villager ~ ~1 ~ {
 				sell:
 				{
 					id:"cookie",
-					Count:10
+					Count:40
 				},
 				rewardExp:false,
 				maxUses:2147483647
