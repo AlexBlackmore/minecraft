@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Farmer\",\"color\":\"green\"}",
+		CustomName:"{\"text\":\"Stone Mason\",\"color\":\"green\"}",
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -11,7 +11,7 @@ give @p villager_spawn_egg{
 		VillagerData:
 		{
 			level:5,
-			profession:"farmer",
+			profession:"mason",
 			type:"jungle"
 		},
 		Attributes: [
@@ -26,7 +26,35 @@ give @p villager_spawn_egg{
 				{
 					buy:
 					{
-						id:"wheat",
+						id:"clay_ball",
+						Count:17
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"brick",
+						Count:16
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"stone",
 						Count:20
 					},
 					sell:
@@ -40,40 +68,12 @@ give @p villager_spawn_egg{
 				{
 					buy:
 					{
-						id:"potato",
-						Count:26
-					},
-					sell:
-					{
-						id:"emerald",
-						Count:1
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
-						id:"carrot",
-						Count:22
-					},
-					sell:
-					{
-						id:"emerald",
-						Count:1
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
 						id:"emerald",
 						Count:1
 					},
 					sell:
 					{
-						id:"bread",
+						id:"chiseled_stone_bricks",
 						Count:4
 					},
 					rewardExp:false,
@@ -82,8 +82,8 @@ give @p villager_spawn_egg{
 				{
 					buy:
 					{
-						id:"pumpkin",
-						Count:6
+						id:"granite",
+						Count:16
 					},
 					sell:
 					{
@@ -101,18 +101,18 @@ give @p villager_spawn_egg{
 					},
 					sell:
 					{
-						id:"pumpkin_pie",
-						Count:3
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
-						id:"melon",
+						id:"polished_granite",
 						Count:4
 					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"andesite",
+						Count:16
+					},
 					sell:
 					{
 						id:"emerald",
@@ -129,8 +129,22 @@ give @p villager_spawn_egg{
 					},
 					sell:
 					{
-						id:"apple",
-						Count:7
+						id:"polished_andesite",
+						Count:4
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"diorite",
+						Count:16
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -143,8 +157,8 @@ give @p villager_spawn_egg{
 					},
 					sell:
 					{
-						id:"cookie",
-						Count:10
+						id:"polished_diorite",
+						Count:4
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -157,7 +171,7 @@ give @p villager_spawn_egg{
 					},
 					sell:
 					{
-						id:"cake",
+						id:"quartz_pillar",
 						Count:1
 					},
 					rewardExp:false,
@@ -167,6 +181,6 @@ give @p villager_spawn_egg{
 		}
 	},
 	display:{
-		Name:"{\"text\":\"Farmer\",\"color\":\"green\"}"
+		Name:"{\"text\":\"Stone Mason\",\"color\":\"green\"}"
 	}
 }
