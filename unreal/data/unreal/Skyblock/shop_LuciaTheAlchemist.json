@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Victor\",\"color\":\"green\"}",
+		CustomName:"{\"text\":\"Lucia the Alchemist\",\"color\":\"green\"}",
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -11,7 +11,7 @@ give @p villager_spawn_egg{
 		VillagerData:
 		{
 			level:5,
-			profession:"butcher",
+			profession:"cleric",
 			type:"swamp"
 		},
 		Attributes:[
@@ -24,43 +24,23 @@ give @p villager_spawn_egg{
 		{
 			Recipes:[
 				{
-	        buy:
+					buy:
 					{
-	          id:"rotten_flesh",
-	          Count:7
-	      	},
-	  			sell:
-					{
-	          id:"cooked_beef",
-	        	Count:2
-	        },
-					rewardExp:false,
-					maxUses:2147483647
-	      },
-				{
-	        buy:
+						id:"rotten_flesh",
+						Count:3
+					},
+					buyB:
 					{
 						id:"bone",
 						Count:3
 					},
 					sell:
 					{
-						id:"cooked_beef",
-						Count:2
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
-						id:"spider_eye",
-						Count:4
-					},
-					sell:
-					{
-						id:"cooked_beef",
-						Count:2
+						id:"potion",
+						Count:1,
+						tag:{
+				      Potion:"healing"
+				    }
 					},
 					rewardExp:false,
 					maxUses:2147483647
@@ -69,7 +49,12 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"rotten_flesh",
-						Count:7
+						Count:5
+					},
+					buyB:
+					{
+						id:"bone",
+						Count:5
 					},
 					sell:
 					{
@@ -85,25 +70,8 @@ give @p villager_spawn_egg{
 				{
 					buy:
 					{
-						id:"bone",
-						Count:7
-					},
-					sell:
-					{
-						id:"splash_potion",
-						Count:1,
-						tag:{
-				      Potion:"strong_healing"
-				    }
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
 						id:"rotten_flesh",
-						Count:11
+						Count:9
 					},
 					sell:
 					{
@@ -126,7 +94,7 @@ give @p villager_spawn_egg{
 							],
 							display:
 							{
-								Name:"{\"text\":\"Regeneration Potion\",\"italic\":false}"
+								Name:"{\"text\":\"Potion of Regeneration\",\"italic\":false}"
 							},
 							CustomPotionColor:13458603
 						}
@@ -138,12 +106,12 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"rotten_flesh",
-						Count:15
+						Count:20
 					},
 					buyB:
 					{
 						id:"bone",
-						Count:15
+						Count:20
 					},
 					sell:
 					{
@@ -153,29 +121,31 @@ give @p villager_spawn_egg{
 						{
 							CustomPotionEffects:[
 								{
-									Id:5,
+									Id:16,
 									Amplifier:0,
 									Duration:3600
 								},
 								{
-									Id:14,
-									Amplifier:0,
-									Duration:300
+									Id:16,
+									Amplifier:1,
+									Duration:500
 								},
 								{
-									Id:15,
-									Amplifier:0,
-									Duration:300
+									Id:5,
+									Amplifier:1,
+									Duration:500
+								},
+								{
+									Id:1,
+									Amplifier:1,
+									Duration:500
 								}
 							],
 							display:
 							{
-								Name:"{\"text\":\"Vanish Potion\",\"italic\":false,\"color\":\"light_purple\"}",
-								Lore:[
-									"\" \"",
-									"{\"text\":\"Allow you to vanish into the shadows.\",\"color\":\"gold\"}"
-								]
-							}
+								Name:"{\"text\":\"Potion of Madness\",\"italic\":false}"
+							},
+							CustomPotionColor:2039713
 						}
 					},
 					rewardExp:false,
@@ -185,7 +155,7 @@ give @p villager_spawn_egg{
 	        buy:
 					{
 						id:"gold_nugget",
-						Count:2
+						Count:1
 					},
 					sell:
 					{
@@ -222,21 +192,17 @@ give @p villager_spawn_egg{
 							],
 							display:
 							{
-								Name:"{\"text\":\"Berserking Potion\",\"italic\":false,\"color\":\"light_purple\"}",
-								Lore:[
-									"\" \"",
-									"{\"text\":\"At first you might feel dizzy.\",\"color\":\"gold\"}"
-								]
+								Name:"{\"text\":\"Potion of Anger\",\"italic\":false}"
 							}
 						}
 					},
 					rewardExp:false,
-					maxUses:2147483647
+					maxUses:9643043
 				}
 			]
 		}
 	},
 	display:{
-		Name:"{\"text\":\"Victor\",\"color\":\"green\"}"
+		Name:"{\"text\":\"Lucia the Alchemist\",\"color\":\"green\"}"
 	}
 }
