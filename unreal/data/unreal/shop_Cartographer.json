@@ -27,7 +27,12 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"paper",
-						Count:3
+						Count:64
+					},
+					buyB:
+					{
+						id:"paper",
+						Count:36
 					},
 					sell:
 					{
@@ -55,7 +60,7 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"emerald",
-						Count:5
+						Count:7
 					},
 					sell:
 					{
@@ -81,25 +86,35 @@ give @p villager_spawn_egg{
 						id:"written_book",
 						Count:1,
 						tag:{
-						  resolved:1,
-						  author:"?",
-						  generation:3,
-						  title:"World Atlas",
 						  pages:[
 						    '["",
-						      {"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
-						    ]'],
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Ruined Portal ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate ruined_portal"},"hoverEvent":{"action":"show_text","contents":"Ruined Portal"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Fortress ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate fortress"},"hoverEvent":{"action":"show_text","contents":"Fortress"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Stronghold ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate stronghold"},"hoverEvent":{"action":"show_text","contents":"Stronghold"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Monument ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate monument"},"hoverEvent":{"action":"show_text","contents":"Monument"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Woodland Mansion ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate mansion"},"hoverEvent":{"action":"show_text","contents":"Woodland Mansion"}},
+						      {"text":"-------------------\\n","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Buried Treasure ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate buried_treasure"},"hoverEvent":{"action":"show_text","contents":"Buried Treasure"}},
+						      {"text":"-------------------\\n","strikethrough":true,"obfuscated":true}
+						    ]'
+						  ],
+						  title:"World Atlas",
+						  author:"?",
+						  generation:3,
 						  display:{
-						    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"yellow\"}",
+						    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 						    Lore:[
-						      "{\"text\":\"Level 1\",\"italic\":false,\"color\":\"blue\"}",
-									"\" \"",
+						      "\" \"",
 						      "\"A collection of maps\"",
 						      "\"and charts depicting\"",
 						      "\"nearby structures.\""
 						    ]
-						  },
-						  HideFlags:63
+						  }
 						}
 					}
 				},
@@ -109,24 +124,35 @@ give @p villager_spawn_egg{
 						id:"written_book",
 						Count:1,
 						tag:{
-						  resolved:1,
-						  author:"?",
-						  generation:3,
-						  title:"World Atlas",
 						  pages:[
 						    '["",
-						      {"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
-						    ]'],
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Ruined Portal ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate ruined_portal"},"hoverEvent":{"action":"show_text","contents":"Ruined Portal"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Fortress ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate fortress"},"hoverEvent":{"action":"show_text","contents":"Fortress"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Stronghold ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate stronghold"},"hoverEvent":{"action":"show_text","contents":"Stronghold"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Monument ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate monument"},"hoverEvent":{"action":"show_text","contents":"Monument"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Woodland Mansion ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate mansion"},"hoverEvent":{"action":"show_text","contents":"Woodland Mansion"}},
+						      {"text":"-------------------\\n","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Buried Treasure ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate buried_treasure"},"hoverEvent":{"action":"show_text","contents":"Buried Treasure"}},
+						      {"text":"-------------------\\n","strikethrough":true,"obfuscated":true}
+						    ]'
+						  ],
+						  title:"World Atlas",
+						  author:"?",
+						  generation:3,
 						  display:{
-						    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"yellow\"}",
+						    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
 						    Lore:[
-						      "{\"text\":\"Level 1\",\"italic\":false,\"color\":\"blue\"}",
+						      "\" \"",
 						      "\"A collection of maps\"",
 						      "\"and charts depicting\"",
 						      "\"nearby structures.\""
 						    ]
-						  },
-						  HideFlags:63
+						  }
 						}
 					},
 					buyB:
@@ -139,162 +165,65 @@ give @p villager_spawn_egg{
 						id:"written_book",
 						Count:1,
 						tag:{
-						  resolved:1,
-						  generation:3,
-						  author:"?",
-						  title:"World Atlas",
 						  pages:[
 						    '["",
-						      {"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
-						    ]','["",
-						      {"text":"II: ","bold":true,"underlined":true},{"text":"Woodland Explorer","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Desert Pyramid","clickEvent":{"action":"run_command","value":"/locate Desert_Pyramid"},"hoverEvent":{"action":"show_text","value":"Desert Pyramid"}},{"text":"\\n"},{"text":"- Igloo","clickEvent":{"action":"run_command","value":"/locate Igloo"},"hoverEvent":{"action":"show_text","value":"Igloo"}},{"text":"\\n"},{"text":"- Jungle Pyramid","clickEvent":{"action":"run_command","value":"/locate Jungle_Pyramid"},"hoverEvent":{"action":"show_text","value":"Jungle Pyramid"}},{"text":"\\n"},{"text":"- Woodland Mansion","clickEvent":{"action":"run_command","value":"/locate Mansion"},"hoverEvent":{"action":"show_text","value":"Woodland Mansion"}},{"text":"\\n"},{"text":"- Mineshaft","clickEvent":{"action":"run_command","value":"/locate Mineshaft"},"hoverEvent":{"action":"show_text","value":"Mineshaft"}},{"text":"\\n"},{"text":"- Pillager Outpost","clickEvent":{"action":"run_command","value":"/locate Pillager_Outpost"},"hoverEvent":{"action":"show_text","value":"Pillager Outpost"}},{"text":"\\n"},{"text":"- Swamp Hut","clickEvent":{"action":"run_command","value":"/locate Swamp_Hut"},"hoverEvent":{"action":"show_text","value":"Swamp Hut"}},{"text":"\\n"},{"text":"- Village","clickEvent":{"action":"run_command","value":"/locate Village"},"hoverEvent":{"action":"show_text","value":"Village"}}
-						    ]'],
-						  display:{
-						    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"aqua\"}",
-						    Lore:[
-						      "{\"text\":\"Level 2\",\"italic\":false,\"color\":\"blue\"}",
-									"\" \"",
-						      "\"A collection of maps\"",
-						      "\"and charts depicting\"",
-						      "\"nearby structures.\""
-						    ]
-						  },
-						  HideFlags:63
-						}
-					}
-				},
-				{
-					buy:
-					{
-						id:"written_book",
-						Count:1,
-						tag:{
-						  resolved:1,
-						  generation:3,
-						  author:"?",
-						  title:"World Atlas",
-						  pages:[
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Buried Treasure ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate buried_treasure"},"hoverEvent":{"action":"show_text","contents":"Buried Treasure"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Desert Pyramid ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate desert_pyramid"},"hoverEvent":{"action":"show_text","contents":"Desert Pyramid"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Igloo ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate igloo"},"hoverEvent":{"action":"show_text","contents":"Igloo"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Jungle Pyramid ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate jungle_pyramid"},"hoverEvent":{"action":"show_text","contents":"Jungle Pyramid"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Mineshaft ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate mineshaft"},"hoverEvent":{"action":"show_text","contents":"Mineshaft"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Monument ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate monument"},"hoverEvent":{"action":"show_text","contents":"Monument"}},
+						      {"text":"-------------------","strikethrough":true,"obfuscated":true}
+						    ]',
 						    '["",
-						      {"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
-						    ]','["",
-						      {"text":"II: ","bold":true,"underlined":true},{"text":"Woodland Explorer","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Desert Pyramid","clickEvent":{"action":"run_command","value":"/locate Desert_Pyramid"},"hoverEvent":{"action":"show_text","value":"Desert Pyramid"}},{"text":"\\n"},{"text":"- Igloo","clickEvent":{"action":"run_command","value":"/locate Igloo"},"hoverEvent":{"action":"show_text","value":"Igloo"}},{"text":"\\n"},{"text":"- Jungle Pyramid","clickEvent":{"action":"run_command","value":"/locate Jungle_Pyramid"},"hoverEvent":{"action":"show_text","value":"Jungle Pyramid"}},{"text":"\\n"},{"text":"- Woodland Mansion","clickEvent":{"action":"run_command","value":"/locate Mansion"},"hoverEvent":{"action":"show_text","value":"Woodland Mansion"}},{"text":"\\n"},{"text":"- Mineshaft","clickEvent":{"action":"run_command","value":"/locate Mineshaft"},"hoverEvent":{"action":"show_text","value":"Mineshaft"}},{"text":"\\n"},{"text":"- Pillager Outpost","clickEvent":{"action":"run_command","value":"/locate Pillager_Outpost"},"hoverEvent":{"action":"show_text","value":"Pillager Outpost"}},{"text":"\\n"},{"text":"- Swamp Hut","clickEvent":{"action":"run_command","value":"/locate Swamp_Hut"},"hoverEvent":{"action":"show_text","value":"Swamp Hut"}},{"text":"\\n"},{"text":"- Village","clickEvent":{"action":"run_command","value":"/locate Village"},"hoverEvent":{"action":"show_text","value":"Village"}}
-						    ]'],
-						  display:{
-						    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"aqua\"}",
-						    Lore:[
-						      "{\"text\":\"Level 2\",\"italic\":false,\"color\":\"blue\"}",
-						      "\"A collection of maps\"",
-						      "\"and charts depicting\"",
-						      "\"nearby structures.\""
-						    ]
-						  },
-						  HideFlags:63
-						}
-					},
-					buyB:
-					{
-						id:"ender_eye",
-						Count:20
-					},
-					sell:
-					{
-						id:"written_book",
-						Count:1,
-						tag:{
-						  resolved:1,
-						  generation:3,
-						  author:"?",
-						  title:"World Atlas",
-						  pages:[
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Ocean Ruins ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate ocean_ruins"},"hoverEvent":{"action":"show_text","contents":"Ocean Ruins"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Pillager Outpost ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate pillager_outpost"},"hoverEvent":{"action":"show_text","contents":"Pillager Outpost"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Shipwreck ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate shipwreck"},"hoverEvent":{"action":"show_text","contents":"Shipwreck"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Stronghold ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate stronghold"},"hoverEvent":{"action":"show_text","contents":"Stronghold"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Swamp Hut ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate swamp_hut"},"hoverEvent":{"action":"show_text","contents":"Swamp Hut"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Village ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate village"},"hoverEvent":{"action":"show_text","contents":"Monument"}},
+						      {"text":"-------------------","strikethrough":true,"obfuscated":true}
+						    ]',
 						    '["",
-						      {"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
-						    ]','["",
-						      {"text":"II: ","bold":true,"underlined":true},{"text":"Woodland Explorer","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Desert Pyramid","clickEvent":{"action":"run_command","value":"/locate Desert_Pyramid"},"hoverEvent":{"action":"show_text","value":"Desert Pyramid"}},{"text":"\\n"},{"text":"- Igloo","clickEvent":{"action":"run_command","value":"/locate Igloo"},"hoverEvent":{"action":"show_text","value":"Igloo"}},{"text":"\\n"},{"text":"- Jungle Pyramid","clickEvent":{"action":"run_command","value":"/locate Jungle_Pyramid"},"hoverEvent":{"action":"show_text","value":"Jungle Pyramid"}},{"text":"\\n"},{"text":"- Woodland Mansion","clickEvent":{"action":"run_command","value":"/locate Mansion"},"hoverEvent":{"action":"show_text","value":"Woodland Mansion"}},{"text":"\\n"},{"text":"- Mineshaft","clickEvent":{"action":"run_command","value":"/locate Mineshaft"},"hoverEvent":{"action":"show_text","value":"Mineshaft"}},{"text":"\\n"},{"text":"- Pillager Outpost","clickEvent":{"action":"run_command","value":"/locate Pillager_Outpost"},"hoverEvent":{"action":"show_text","value":"Pillager Outpost"}},{"text":"\\n"},{"text":"- Swamp Hut","clickEvent":{"action":"run_command","value":"/locate Swamp_Hut"},"hoverEvent":{"action":"show_text","value":"Swamp Hut"}},{"text":"\\n"},{"text":"- Village","clickEvent":{"action":"run_command","value":"/locate Village"},"hoverEvent":{"action":"show_text","value":"Village"}}
-						    ]','["",
-						      {"text":"III:","bold":true,"underlined":true},{"text":" Ocean Explorer","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Ocean Monument","clickEvent":{"action":"run_command","value":"/locate Monument"},"hoverEvent":{"action":"show_text","value":"Ocean Monument"}},{"text":"\\n"},{"text":"- Ocean Ruin","clickEvent":{"action":"run_command","value":"/locate Ocean_Ruin"},"hoverEvent":{"action":"show_text","value":"Ocean Ruin"}},{"text":"\\n"},{"text":"- Shipwreck","clickEvent":{"action":"run_command","value":"/locate Shipwreck"},"hoverEvent":{"action":"show_text","value":"Shipwreck"}},{"text":"\\n "}
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Woodland Mansion ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate mansion"},"hoverEvent":{"action":"show_text","contents":"Woodland Mansion"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Ruined Portal ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate ruined_portal"},"hoverEvent":{"action":"show_text","contents":"Ruined Portal"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Bastion Remnant ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate bastion_remnant"},"hoverEvent":{"action":"show_text","contents":"Bastion Remnant"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Fortress ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate fortress"},"hoverEvent":{"action":"show_text","contents":"Fortress"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ Nether Fossil ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate nether_fossil"},"hoverEvent":{"action":"show_text","contents":"Nether Fossil"}},
+						      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+						      {"text":"[ End City ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate endcity"},"hoverEvent":{"action":"show_text","contents":"End City"}},
+						      {"text":"-------------------","strikethrough":true,"obfuscated":true}
 						    ]'
 						  ],
-						  display:{
-						    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
-						    Lore:[
-						      "{\"text\":\"Level 3\",\"italic\":false,\"color\":\"blue\"}",
-									"\" \"",
-						      "\"A collection of maps\"",
-						      "\"and charts depicting\"",
-						      "\"nearby structures.\""
-						    ]
-						  },
-						  HideFlags:63
-						}
-					}
-				},
-				{
-					buy:
-					{
-						id:"written_book",
-						Count:1,
-						tag:{
-						  resolved:1,
-						  generation:3,
-						  author:"?",
 						  title:"World Atlas",
-						  pages:[
-						    '["",
-						      {"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
-						    ]','["",
-						      {"text":"II: ","bold":true,"underlined":true},{"text":"Woodland Explorer","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Desert Pyramid","clickEvent":{"action":"run_command","value":"/locate Desert_Pyramid"},"hoverEvent":{"action":"show_text","value":"Desert Pyramid"}},{"text":"\\n"},{"text":"- Igloo","clickEvent":{"action":"run_command","value":"/locate Igloo"},"hoverEvent":{"action":"show_text","value":"Igloo"}},{"text":"\\n"},{"text":"- Jungle Pyramid","clickEvent":{"action":"run_command","value":"/locate Jungle_Pyramid"},"hoverEvent":{"action":"show_text","value":"Jungle Pyramid"}},{"text":"\\n"},{"text":"- Woodland Mansion","clickEvent":{"action":"run_command","value":"/locate Mansion"},"hoverEvent":{"action":"show_text","value":"Woodland Mansion"}},{"text":"\\n"},{"text":"- Mineshaft","clickEvent":{"action":"run_command","value":"/locate Mineshaft"},"hoverEvent":{"action":"show_text","value":"Mineshaft"}},{"text":"\\n"},{"text":"- Pillager Outpost","clickEvent":{"action":"run_command","value":"/locate Pillager_Outpost"},"hoverEvent":{"action":"show_text","value":"Pillager Outpost"}},{"text":"\\n"},{"text":"- Swamp Hut","clickEvent":{"action":"run_command","value":"/locate Swamp_Hut"},"hoverEvent":{"action":"show_text","value":"Swamp Hut"}},{"text":"\\n"},{"text":"- Village","clickEvent":{"action":"run_command","value":"/locate Village"},"hoverEvent":{"action":"show_text","value":"Village"}}
-						    ]','["",
-						      {"text":"III:","bold":true,"underlined":true},{"text":" Ocean Explorer","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Ocean Monument","clickEvent":{"action":"run_command","value":"/locate Monument"},"hoverEvent":{"action":"show_text","value":"Ocean Monument"}},{"text":"\\n"},{"text":"- Ocean Ruin","clickEvent":{"action":"run_command","value":"/locate Ocean_Ruin"},"hoverEvent":{"action":"show_text","value":"Ocean Ruin"}},{"text":"\\n"},{"text":"- Shipwreck","clickEvent":{"action":"run_command","value":"/locate Shipwreck"},"hoverEvent":{"action":"show_text","value":"Shipwreck"}},{"text":"\\n "}
-						    ]'
-						  ],
-						  display:{
-						    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
-						    Lore:[
-						      "{\"text\":\"Level 3\",\"italic\":false,\"color\":\"blue\"}",
-						      "\"A collection of maps\"",
-						      "\"and charts depicting\"",
-						      "\"nearby structures.\""
-						    ]
-						  },
-						  HideFlags:63
-						}
-					},
-					buyB:
-					{
-						id:"ender_eye",
-						Count:28
-					},
-					sell:
-					{
-						id:"written_book",
-						Count:1,
-						tag:{
-						  resolved:1,
-						  generation:3,
 						  author:"?",
-						  title:"World Atlas",
-						  pages:[
-						    '["",
-						      {"text":"I:","bold":true,"underlined":true},{"text":" Eye of Ender","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Stronghold","clickEvent":{"action":"run_command","value":"/locate Stronghold"},"hoverEvent":{"action":"show_text","value":"Stronghold"}},{"text":"\\n"},{"text":"- End City","clickEvent":{"action":"run_command","value":"/locate EndCity"},"hoverEvent":{"action":"show_text","value":"End City"}},{"text":"\\n"},{"text":"- Nether Fortress","clickEvent":{"action":"run_command","value":"/locate Fortress"},"hoverEvent":{"action":"show_text","value":"Nether Fortress"}}
-						    ]','["",
-						      {"text":"II: ","bold":true,"underlined":true},{"text":"Woodland Explorer","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Desert Pyramid","clickEvent":{"action":"run_command","value":"/locate Desert_Pyramid"},"hoverEvent":{"action":"show_text","value":"Desert Pyramid"}},{"text":"\\n"},{"text":"- Igloo","clickEvent":{"action":"run_command","value":"/locate Igloo"},"hoverEvent":{"action":"show_text","value":"Igloo"}},{"text":"\\n"},{"text":"- Jungle Pyramid","clickEvent":{"action":"run_command","value":"/locate Jungle_Pyramid"},"hoverEvent":{"action":"show_text","value":"Jungle Pyramid"}},{"text":"\\n"},{"text":"- Woodland Mansion","clickEvent":{"action":"run_command","value":"/locate Mansion"},"hoverEvent":{"action":"show_text","value":"Woodland Mansion"}},{"text":"\\n"},{"text":"- Mineshaft","clickEvent":{"action":"run_command","value":"/locate Mineshaft"},"hoverEvent":{"action":"show_text","value":"Mineshaft"}},{"text":"\\n"},{"text":"- Pillager Outpost","clickEvent":{"action":"run_command","value":"/locate Pillager_Outpost"},"hoverEvent":{"action":"show_text","value":"Pillager Outpost"}},{"text":"\\n"},{"text":"- Swamp Hut","clickEvent":{"action":"run_command","value":"/locate Swamp_Hut"},"hoverEvent":{"action":"show_text","value":"Swamp Hut"}},{"text":"\\n"},{"text":"- Village","clickEvent":{"action":"run_command","value":"/locate Village"},"hoverEvent":{"action":"show_text","value":"Village"}}
-						    ]','["",
-						      {"text":"III:","bold":true,"underlined":true},{"text":" Ocean Explorer","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Ocean Monument","clickEvent":{"action":"run_command","value":"/locate Monument"},"hoverEvent":{"action":"show_text","value":"Ocean Monument"}},{"text":"\\n"},{"text":"- Ocean Ruin","clickEvent":{"action":"run_command","value":"/locate Ocean_Ruin"},"hoverEvent":{"action":"show_text","value":"Ocean Ruin"}},{"text":"\\n"},{"text":"- Shipwreck","clickEvent":{"action":"run_command","value":"/locate Shipwreck"},"hoverEvent":{"action":"show_text","value":"Shipwreck"}},{"text":"\\n "}
-						    ]','["",
-						      {"text":"IV:","bold":true,"underlined":true},{"text":" Buried Treasure","color":"reset","italic":true,"underlined":true},{"text":"\\n\\n","color":"reset"},{"text":"- Buried Treasure","clickEvent":{"action":"run_command","value":"/locate Buried_Treasure"},"hoverEvent":{"action":"show_text","value":"Buried Treasure"}}
-						    ]'
-						  ],
+						  generation:3,
 						  display:{
 						    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"gold\"}",
 						    Lore:[
-						      "{\"text\":\"Level 4\",\"italic\":false,\"color\":\"blue\"}",
-									"\" \"",
+						      "\" \"",
 						      "\"A collection of maps\"",
 						      "\"and charts depicting\"",
 						      "\"nearby structures.\""
 						    ]
-						  },
-						  HideFlags:63
+						  }
 						}
 					}
 				}

@@ -20,9 +20,6 @@ give @p villager_spawn_egg{
 				Base:"0f"
 			}
 		],
-		ActiveEffects:[
-			{Id:2,Amplifier:999,Duration:2147483647}
-		],
 		Offers:
 		{
 			Recipes: [
@@ -30,7 +27,7 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"coal",
-						Count:15
+						Count:16
 					},
 					sell:
 					{
@@ -44,7 +41,7 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"emerald",
-						Count:2
+						Count:4
 					},
 					sell:
 					{
@@ -58,7 +55,7 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"iron_ingot",
-						Count:4
+						Count:7
 					},
 					sell:
 					{
@@ -72,7 +69,7 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"emerald",
-						Count:2
+						Count:10
 					},
 					sell:
 					{
@@ -86,7 +83,7 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"diamond",
-						Count:1
+						Count:3
 					},
 					sell:
 					{
@@ -100,24 +97,16 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"emerald",
-						Count:18
+						Count:16
 					},
 					sell:
 					{
 						id:"diamond_chestplate",
 						Count:1,
-						tag:
-						{
-							Enchantments:[
-								{
-									id:"protection",
-									lvl:1
-								},
-								{
-									id:"unbreaking",
-									lvl:1
-								}
-							]
+						tag:{
+						  Enchantments:[
+						    {id:"protection",lvl:2}
+						  ]
 						}
 					},
 					rewardExp:false,
