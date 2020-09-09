@@ -11,7 +11,7 @@ give @p villager_spawn_egg{
     VillagerData:{
       level:5,
       profession:"fisherman",
-      type:"swamp"
+      type:"jungle"
     },
     Attributes:[
       {Name:"generic.movementSpeed",Base:"0f"}
@@ -40,7 +40,7 @@ give @p villager_spawn_egg{
   					}
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
   				buy:{
@@ -49,10 +49,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"cod",
-  					Count:15
+  					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -61,10 +61,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"salmon",
-  					Count:13
+  					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -73,10 +73,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"tropical_fish",
-  					Count:6
+  					Count:5
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:128
   			},
         {
   				buy:{
@@ -85,10 +85,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"pufferfish",
-  					Count:4
+  					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
           maxUses:0
@@ -103,7 +103,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
   				buy:{
@@ -115,7 +115,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
   				buy:{
@@ -127,7 +127,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
   				buy:{
@@ -139,7 +139,79 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"prismarine_shard",
+  					Count:10
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"prismarine_crystals",
+  					Count:7
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"clay_ball",
+  					Count:17
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"lily_pad",
+  					Count:17
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"ink_sac",
+  					Count:5
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"sponge",
+  					Count:5
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
   			}
   		]
   	}

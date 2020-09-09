@@ -11,7 +11,7 @@ give @p villager_spawn_egg{
     VillagerData:{
       level:5,
       profession:"farmer",
-      type:"swamp"
+      type:"jungle"
     },
     Attributes:[
       {Name:"generic.movementSpeed",Base:"0f"}
@@ -25,10 +25,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"wheat",
-  					Count:20
+  					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -37,10 +37,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"carrot",
-  					Count:22
+  					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -49,10 +49,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"potato",
-  					Count:26
+  					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -61,10 +61,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"melon_slice",
-  					Count:33
+  					Count:32
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:20
   			},
         {
   				buy:{
@@ -76,7 +76,7 @@ give @p villager_spawn_egg{
   					Count:64
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:10
   			},
         {
   				buy:{
@@ -85,10 +85,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"pumpkin",
-  					Count:6
+  					Count:5
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:128
   			},
         {
   				buy:{
@@ -100,7 +100,7 @@ give @p villager_spawn_egg{
   					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -109,10 +109,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"red_mushroom",
-  					Count:50
+  					Count:32
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:20
   			},
         {
   				buy:{
@@ -121,10 +121,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"brown_mushroom",
-  					Count:50
+  					Count:32
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:20
   			},
         {
   				buy:{
@@ -136,7 +136,7 @@ give @p villager_spawn_egg{
   					Count:64
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:10
   			},
         {
   				buy:{
@@ -145,10 +145,10 @@ give @p villager_spawn_egg{
   				},
   				sell:{
   					id:"bone_meal",
-  					Count:30
+  					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -160,7 +160,7 @@ give @p villager_spawn_egg{
   					Count:1,
   					tag:{
   						display:{
-  							Name:"{\"text\":\"Stone Hoe\",\"italic\":false,\"color\":\"white\"}",
+  							Name:"{\"text\":\"Rookie Hoe\",\"italic\":false,\"color\":\"white\"}",
   							Lore:[
   								"\" \"",
   								"{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
@@ -172,7 +172,7 @@ give @p villager_spawn_egg{
   					}
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
           maxUses:0
@@ -187,7 +187,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
   				buy:{
@@ -199,7 +199,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
   				buy:{
@@ -211,7 +211,19 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"pumpkin",
+  					Count:6
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
   			},
         {
   				buy:{
@@ -223,7 +235,55 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"red_mushroom",
+  					Count:50
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"brown_mushroom",
+  					Count:50
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"cocoa_beans",
+  					Count:10
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"cactus",
+  					Count:10
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
   			},
         {
   				buy:{
@@ -239,11 +299,23 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
   				buy:{
-  					id:"pumpkin",
+  					id:"feather",
+  					Count:24
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"leather",
   					Count:6
   				},
   				sell:{
@@ -251,11 +323,11 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
   				buy:{
-  					id:"cocoa_beans",
+  					id:"beef",
   					Count:10
   				},
   				sell:{
@@ -263,31 +335,67 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
   				buy:{
-  					id:"red_mushroom",
-  					Count:50
+  					id:"porkchop",
+  					Count:7
   				},
   				sell:{
   					id:"emerald",
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			},
         {
   				buy:{
-  					id:"brown_mushroom",
-  					Count:50
+  					id:"chicken",
+  					Count:14
   				},
   				sell:{
   					id:"emerald",
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"mutton",
+  					Count:8
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"rabbit",
+  					Count:4
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"rabbit_hide",
+  					Count:9
+  				},
+  				sell:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:640
   			},
         {
   				buy:{
@@ -303,7 +411,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:640
   			}
   		]
   	}

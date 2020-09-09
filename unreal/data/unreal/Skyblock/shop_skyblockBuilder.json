@@ -11,7 +11,7 @@ give @p villager_spawn_egg{
     VillagerData:{
       level:5,
       profession:"mason",
-      type:"swamp"
+      type:"jungle"
     },
     Attributes:[
       {Name:"generic.movementSpeed",Base:"0f"}
@@ -28,7 +28,7 @@ give @p villager_spawn_egg{
   					Count:64
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:10
   			},
         {
   				buy:{
@@ -40,7 +40,7 @@ give @p villager_spawn_egg{
   					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -52,7 +52,7 @@ give @p villager_spawn_egg{
   					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -64,7 +64,7 @@ give @p villager_spawn_egg{
   					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -76,7 +76,7 @@ give @p villager_spawn_egg{
   					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -88,7 +88,7 @@ give @p villager_spawn_egg{
   					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -100,7 +100,7 @@ give @p villager_spawn_egg{
   					Count:8
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:80
   			},
         {
   				buy:{
@@ -112,7 +112,7 @@ give @p villager_spawn_egg{
   					Count:5
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:128
   			},
         {
   				buy:{
@@ -136,7 +136,7 @@ give @p villager_spawn_egg{
   					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -148,7 +148,7 @@ give @p villager_spawn_egg{
   					Count:10
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:64
   			},
         {
   				buy:{
@@ -160,7 +160,7 @@ give @p villager_spawn_egg{
   					Count:5
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:128
   			},
         {
   				buy:{
@@ -220,7 +220,7 @@ give @p villager_spawn_egg{
   					Count:64
   				},
   				rewardExp:false,
-  				maxUses:2147483647
+  				maxUses:10
   			},
         {
   				buy:{
@@ -305,67 +305,7 @@ give @p villager_spawn_egg{
   				},
   				rewardExp:false,
   				maxUses:2147483647
-  			},
-				{
-					buy:{
-						id:"obsidian",
-						Count:1
-					},
-					sell:{
-						id:"emerald",
-						Count:1
-					}
-				},
-				{
-					buy:{
-						id:"ice",
-						Count:8
-					},
-					sell:{
-						id:"emerald",
-						Count:1
-					}
-				},
-				{
-					buy:{
-						id:"packed_ice",
-						Count:1
-					},
-					sell:{
-						id:"emerald",
-						Count:1
-					}
-				},
-				{
-					buy:{
-						id:"netherrack",
-						Count:10
-					},
-					sell:{
-						id:"emerald",
-						Count:1
-					}
-				},
-				{
-					buy:{
-						id:"end_stone",
-						Count:5
-					},
-					sell:{
-						id:"emerald",
-						Count:1
-					}
-				},
-				{
-					buy:{
-						id:"snow_block",
-						Count:13
-					},
-					sell:{
-						id:"emerald",
-						Count:1
-					}
-				}
+  			}
   		]
   	}
   },

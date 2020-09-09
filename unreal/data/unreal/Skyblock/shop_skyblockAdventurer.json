@@ -12,7 +12,7 @@ give @p villager_spawn_egg{
 		{
 			level:5,
 			profession:"nitwit",
-			type:"swamp"
+			type:"jungle"
 		},
 		Attributes: [
 			{
@@ -35,7 +35,7 @@ give @p villager_spawn_egg{
 						Count:32
 					},
 					rewardExp:false,
-					maxUses:2147483647
+					maxUses:20
 				},
 				{
 					buy:
@@ -49,7 +49,7 @@ give @p villager_spawn_egg{
 						Count:10
 					},
 					rewardExp:false,
-					maxUses:2147483647
+					maxUses:64
 				},
 				{
 					buy:
@@ -63,7 +63,7 @@ give @p villager_spawn_egg{
 						Count:10
 					},
 					rewardExp:false,
-					maxUses:2147483647
+					maxUses:64
 				},
 				{
 					buy:
@@ -77,7 +77,7 @@ give @p villager_spawn_egg{
 						Count:5
 					},
 					rewardExp:false,
-					maxUses:2147483647
+					maxUses:128
 				},
 				{
 					buy:
@@ -91,7 +91,7 @@ give @p villager_spawn_egg{
 						Count:5
 					},
 					rewardExp:false,
-					maxUses:2147483647
+					maxUses:128
 				},
 				{
 					maxUses:0
@@ -108,7 +108,7 @@ give @p villager_spawn_egg{
 						Count:1
 					},
 					rewardExp:false,
-					maxUses:2147483647
+					maxUses:640
 				},
 				{
 					buy:
@@ -122,7 +122,7 @@ give @p villager_spawn_egg{
 						Count:1
 					},
 					rewardExp:false,
-					maxUses:2147483647
+					maxUses:640
 				},
 				{
 					buy:
@@ -136,21 +136,7 @@ give @p villager_spawn_egg{
 						Count:1
 					},
 					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
-						id:"slime_ball",
-						Count:5
-					},
-					sell:
-					{
-						id:"emerald",
-						Count:1
-					},
-					rewardExp:false,
-					maxUses:2147483647
+					maxUses:640
 				},
 				{
 					buy:
@@ -164,7 +150,35 @@ give @p villager_spawn_egg{
 						Count:1
 					},
 					rewardExp:false,
-					maxUses:2147483647
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"ender_pearl",
+						Count:1
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"slime_ball",
+						Count:5
+					},
+					sell:
+					{
+						id:"emerald",
+						Count:1
+					},
+					rewardExp:false,
+					maxUses:640
 				}
 			]
 		}

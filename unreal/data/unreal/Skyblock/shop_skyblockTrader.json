@@ -1,12 +1,21 @@
-give @p wandering_trader_spawn_egg{
+give @p villager_spawn_egg{
 	EntityTag:{
-		id:"minecraft:wandering_trader",
-    CustomName:"{\"text\":\"Skyblock Trader\",\"color\":\"green\"}",
-    CustomNameVisible:true,
-    DespawnDelay:1200,
-    Attributes:[
-      {Name:"generic.movementSpeed",Base:"0f"}
-    ],
+		id:"minecraft:villager",
+    CustomName:"{\"text\":\"Trader\",\"color\":\"green\"}",
+	  CustomNameVisible:true,
+	  PersistenceRequired:true,
+	  Silent:true,
+	  CanPickUpLoot:false,
+	  Willing:false,
+	  NoAI:false,
+	  VillagerData:{
+	    level:5,
+	    profession:"nitwit",
+	    type:"jungle"
+	  },
+	  Attributes:[
+	    {Name:"generic.movementSpeed",Base:"0f"}
+	  ],
   	Offers:{
   		Recipes:[
         {
@@ -301,6 +310,6 @@ give @p wandering_trader_spawn_egg{
   	}
   },
 	display:{
-		Name:"{\"text\":\"Skyblock Trader\",\"color\":\"green\"}"
+		Name:"{\"text\":\"Trader\",\"color\":\"green\"}"
 	}
 }

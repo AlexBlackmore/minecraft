@@ -24,21 +24,24 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:12
+						Count:26
 					},
 					sell:{
 						id:"leather_helmet",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Leather Helmet\",\"italic\":false,\"color\":\"white\"}",
+								Name:"{\"text\":\"Lufenian Helm\",\"italic\":false,\"color\":\"green\"}",
 								Lore:[
 									"\" \"",
-									"{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
+									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}"
 								]
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:3}
+								{id:"mending",lvl:1},
+								{id:"projectile_protection",lvl:1},
+								{id:"protection",lvl:1},
+								{id:"unbreaking",lvl:1}
 							]
 						}
 					},
@@ -48,21 +51,24 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:13
+						Count:27
 					},
 					sell:{
 						id:"leather_chestplate",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Leather Chestplate\",\"italic\":false,\"color\":\"white\"}",
+								Name:"{\"text\":\"Quagie's Might\",\"italic\":false,\"color\":\"green\"}",
 								Lore:[
 									"\" \"",
-									"{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
+									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}"
 								]
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:3}
+								{id:"blast_protection",lvl:1},
+								{id:"mending",lvl:1},
+								{id:"protection",lvl:1},
+								{id:"unbreaking",lvl:1}
 							]
 						}
 					},
@@ -72,21 +78,24 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:13
+						Count:27
 					},
 					sell:{
 						id:"leather_leggings",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Leather Leggings\",\"italic\":false,\"color\":\"white\"}",
+								Name:"{\"text\":\"Judgement Legplates\",\"italic\":false,\"color\":\"green\"}",
 								Lore:[
 									"\" \"",
-									"{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
+									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}"
 								]
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:3}
+								{id:"mending",lvl:1},
+								{id:"projectile_protection",lvl:1},
+								{id:"protection",lvl:1},
+								{id:"unbreaking",lvl:1}
 							]
 						}
 					},
@@ -96,21 +105,23 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:12
+						Count:21
 					},
 					sell:{
 						id:"leather_boots",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Leather Boots\",\"italic\":false,\"color\":\"white\"}",
+								Name:"{\"text\":\"Millsy's Escape\",\"italic\":false,\"color\":\"green\"}",
 								Lore:[
 									"\" \"",
-									"{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
+									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}"
 								]
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:3}
+								{id:"mending",lvl:1},
+								{id:"protection",lvl:1},
+								{id:"unbreaking",lvl:1}
 							]
 						}
 					},
@@ -120,23 +131,18 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:18
+						Count:2
 					},
 					sell:{
 						id:"iron_helmet",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Iron Helmet\",\"italic\":false,\"color\":\"white\"}",
 								Lore:[
 									"\" \"",
 									"{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
 								]
-							},
-							Enchantments:[
-								{id:"protection",lvl:1},
-								{id:"unbreaking",lvl:3}
-							]
+							}
 						}
 					},
 					rewardExp:false,
@@ -145,23 +151,18 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:18
+						Count:2
 					},
 					sell:{
 						id:"iron_chestplate",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Iron Chestplate\",\"italic\":false,\"color\":\"white\"}",
 								Lore:[
 									"\" \"",
 									"{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
 								]
-							},
-							Enchantments:[
-								{id:"protection",lvl:1},
-								{id:"unbreaking",lvl:3}
-							]
+							}
 						}
 					},
 					rewardExp:false,
@@ -170,23 +171,18 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:18
+						Count:2
 					},
 					sell:{
 						id:"iron_leggings",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Iron Leggings\",\"italic\":false,\"color\":\"white\"}",
 								Lore:[
 									"\" \"",
 									"{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
 								]
-							},
-							Enchantments:[
-								{id:"protection",lvl:1},
-								{id:"unbreaking",lvl:3}
-							]
+							}
 						}
 					},
 					rewardExp:false,
@@ -195,24 +191,18 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:22
+						Count:1
 					},
 					sell:{
 						id:"iron_boots",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Iron Boots\",\"italic\":false,\"color\":\"white\"}",
 								Lore:[
 									"\" \"",
 									"{\"text\":\"COMMON\",\"italic\":false,\"bold\":true,\"color\":\"white\"}"
 								]
-							},
-							Enchantments:[
-								{id:"protection",lvl:1},
-								{id:"unbreaking",lvl:3},
-								{id:"feather_falling",lvl:1}
-							]
+							}
 						}
 					},
 					rewardExp:false,
@@ -221,7 +211,7 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:39
+						Count:10
 					},
 					sell:{
 						id:"diamond_helmet",
@@ -235,12 +225,11 @@ give @p villager_spawn_egg{
 								]
 							},
 							Enchantments:[
-								{id:"aqua_affinity",lvl:1},
-								{id:"protection",lvl:2},
-								{id:"respiration",lvl:1},
-								{id:"unbreaking",lvl:3},
-								{id:"thorns",lvl:1}
-							]
+								{id:"unbreaking",lvl:1}
+							],
+						  AttributeModifiers:[
+						    {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1.5,Operation:0,UUID:[I;-660836151,508362164,-784748146,-482407743]}
+						  ]
 						}
 					},
 					rewardExp:false,
@@ -249,7 +238,7 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:32
+						Count:13
 					},
 					sell:{
 						id:"diamond_chestplate",
@@ -263,10 +252,11 @@ give @p villager_spawn_egg{
 								]
 							},
 							Enchantments:[
-								{id:"protection",lvl:2},
-								{id:"unbreaking",lvl:3},
-								{id:"thorns",lvl:1}
-							]
+								{id:"unbreaking",lvl:1}
+							],
+						  AttributeModifiers:[
+						    {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1.5,Operation:0,UUID:[I;212316644,-910962951,-985330741,-287247742]}
+						  ]
 						}
 					},
 					rewardExp:false,
@@ -275,7 +265,7 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:31
+						Count:12
 					},
 					sell:{
 						id:"diamond_leggings",
@@ -289,10 +279,11 @@ give @p villager_spawn_egg{
 								]
 							},
 							Enchantments:[
-								{id:"protection",lvl:2},
-								{id:"unbreaking",lvl:3},
-								{id:"thorns",lvl:1}
-							]
+								{id:"unbreaking",lvl:1}
+							],
+						  AttributeModifiers:[
+						    {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1.5,Operation:0,UUID:[I;-219735657,757677998,962330731,-604603035]}
+						  ]
 						}
 					},
 					rewardExp:false,
@@ -301,7 +292,7 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:36
+						Count:12
 					},
 					sell:{
 						id:"diamond_boots",
@@ -315,12 +306,11 @@ give @p villager_spawn_egg{
 								]
 							},
 							Enchantments:[
-								{id:"protection",lvl:2},
-								{id:"unbreaking",lvl:3},
-								{id:"depth_strider",lvl:1},
-								{id:"feather_falling",lvl:2},
-								{id:"thorns",lvl:1}
-							]
+								{id:"unbreaking",lvl:1}
+							],
+						  AttributeModifiers:[
+						    {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1.5,Operation:0,UUID:[I;886578369,977771781,-54929752,450208370]}
+						  ]
 						}
 					},
 					rewardExp:false,
