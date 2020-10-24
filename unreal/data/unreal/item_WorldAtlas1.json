@@ -1,0 +1,33 @@
+/give @p written_book{
+  pages:[
+    '["",
+      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+      {"text":"[ Ruined Portal ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate ruined_portal"},"hoverEvent":{"action":"show_text","contents":"Ruined Portal"}},
+      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+      {"text":"[ Fortress ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate fortress"},"hoverEvent":{"action":"show_text","contents":"Fortress"}},
+      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+      {"text":"[ Stronghold ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate stronghold"},"hoverEvent":{"action":"show_text","contents":"Stronghold"}},
+      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+      {"text":"[ Monument ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate monument"},"hoverEvent":{"action":"show_text","contents":"Monument"}},
+      {"text":"-------------------\\n-","strikethrough":true,"obfuscated":true},
+      {"text":"[ Woodland Mansion ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate mansion"},"hoverEvent":{"action":"show_text","contents":"Woodland Mansion"}},
+      {"text":"-------------------\\n","strikethrough":true,"obfuscated":true},
+      {"text":"[ Buried Treasure ]\\n","color":"reset","clickEvent":{"action":"run_command","value":"/locate buried_treasure"},"hoverEvent":{"action":"show_text","contents":"Buried Treasure"}},
+      {"text":"-------------------\\n","strikethrough":true,"obfuscated":true}
+    ]'
+  ],
+  title:"World Atlas",
+  author:"?",
+  generation:3,
+  display:{
+    Name:"{\"text\":\"World Atlas\",\"italic\":false,\"color\":\"light_purple\"}",
+    Lore:[
+      "\" \"",
+      "\"A collection of maps\"",
+      "\"and charts depicting\"",
+      "\"nearby structures.\"",
+      "\" \"",
+      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+    ]
+  }
+}

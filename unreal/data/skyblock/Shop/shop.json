@@ -1,0 +1,46 @@
+summon villager ~ ~-1.5 ~ {
+  CustomName:"{\"text\":\"Shop\"}",
+  CustomNameVisible:true,
+  PersistenceRequired:true,
+  Silent:true,
+  CanPickUpLoot:false,
+  Willing:false,
+  NoAI:true,
+  VillagerData:{
+    level:5,
+    profession:"nitwit",
+    type:"plains"
+  },
+  ActiveEffects:[
+    {Id:14,Duration:2147483647,ShowParticles:false}
+  ],
+	Offers:{
+		Recipes:[
+      {
+				buy:{
+					id:"emerald",
+					Count:33
+				},
+				sell:{
+					id:"golden_pickaxe",
+					Count:1,
+          tag:{
+            display:{
+              Name:"{\"text\":\"Ender Pearl\",\"italic\":false,\"color\":\"light_purple\"}",
+              Lore:[
+                "\" \"",
+                "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+              ]
+            },
+            Enchantments:[
+              {id:"efficiency",lvl:6},
+              {id:"unbreaking",lvl:3}
+            ]
+          }
+				},
+				rewardExp:false,
+				maxUses:640
+			}
+		]
+	}
+}

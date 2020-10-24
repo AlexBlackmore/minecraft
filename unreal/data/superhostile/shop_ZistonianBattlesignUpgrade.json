@@ -1,0 +1,41 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Zistonian Battlesign Level 2\",\"color\":\"aqua\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:1,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:{
+			Recipes:[
+				{
+					buy:{
+						id:"emerald",
+						Count:1
+					},
+					sell:{
+						id:"minecart",
+						Count:1
+					},
+					rewardExp:true,
+					maxUses:1
+				}
+			]
+		}
+	},
+	display:{
+		Name:"{\"text\":\"Zistonian Battlesign Level 2\",\"color\":\"aqua\"}"
+	}
+}

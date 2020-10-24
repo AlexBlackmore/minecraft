@@ -1,0 +1,182 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Bartender\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"weaponsmith",
+			type:"cleric"
+		},
+		Attributes:[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Cheap Coffee\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							},
+							Potion:"swiftness"
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Tepid Green Tea\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"dark_purple\"}",
+									"{\"text\":\"+20% Defense\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							},
+              CustomPotionEffects:[
+                {Id:11,Amplifier:0,Duration:3600}
+              ],
+							Potion:"empty",
+              CustomPotionColor:10044730
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Pulpous Orange Juice\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							},
+							Potion:"healing"
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Bitter Ice Tea\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							},
+							Potion:"water_breathing"
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"KnockOff Cola\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							},
+							Potion:"strength"
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Decent Coffee\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Potion:"strong_swiftness"
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				}
+			]
+		}
+	},
+	display:{
+		Name:"{\"text\":\"Bartender\"}"
+	}
+}

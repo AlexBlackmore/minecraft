@@ -1,0 +1,27 @@
+/give @p zombie_spawn_egg{
+  EntityTag:{
+    id:"minecraft:zombie",
+    CustomName:"[\"\",{\"text\":\"Zombie \",\"color\":\"yellow\"},{\"text\":\"(level 1)\",\"color\":\"#00ff00\"}]",
+    CustomNameVisible:1,
+    DeathLootTable:"superhostile:combat_supplies_low_zombie",
+    Health:23,
+    Attributes:[
+      {Name:"generic.maxHealth",Base:23}
+    ],
+    HandItems:[
+      {id:"minecraft:iron_sword",Count:1},
+      {}
+    ],
+    HandDropChances:[0.074F,0F],
+    ArmorItems:[
+      {},
+      {},
+      {},
+      {}
+    ],
+    ArmorDropChances:[0F,0F,0.0F,0F]
+  },
+  display:{
+    Name:"[\"\",{\"text\":\"Zombie \",\"color\":\"yellow\"},{\"text\":\"(level 1)\",\"color\":\"#00ff00\"}]"
+  }
+}

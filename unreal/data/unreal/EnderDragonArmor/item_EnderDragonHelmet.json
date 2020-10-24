@@ -1,0 +1,21 @@
+give @p leather_helmet{
+  display:{
+    Name:"{\"text\":\"Ender Dragon Helmet\",\"italic\":false,\"color\":\"gold\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+    ],
+    color:9474237
+  },
+  Enchantments:[
+    {id:"mending",lvl:1},
+    {id:"protection",lvl:5},
+    {id:"thorns",lvl:3},
+    {id:"unbreaking",lvl:4}
+  ],
+  AttributeModifiers:[
+    {Slot:"head",AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;-143756436,717262605,579552248,425746076]},
+    {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;905894153,-845393649,-146432811,795130265]},
+    {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;-257145054,-723864224,-731556372,-997071423]}
+  ]
+}

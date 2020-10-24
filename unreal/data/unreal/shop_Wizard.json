@@ -1,0 +1,220 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Wizard\"}",
+		CustomNameVisible:true,
+	  PersistenceRequired:true,
+	  Silent:true,
+	  CanPickUpLoot:false,
+	  Willing:false,
+	  NoAI:false,
+	  VillagerData:
+	  {
+	    level:5,
+	    profession:"cleric",
+	    type:"jungle"
+	  },
+	  Attributes: [
+	    {
+	      Name:"generic.movementSpeed",
+	      Base:"0f"
+	    }
+	  ],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:
+					{
+						id:"writable_book",
+						Count:1
+					},
+					buyB:
+					{
+						id:"heart_of_the_sea",
+						Count:3
+					},
+					sell:
+					{
+						id:"written_book",
+						Count:1,
+						tag:{
+						  pages:[
+						    '["",
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Water Breathing\\n","color":"#2E5299"},
+						      {"text":"[ I ]","bold":true,"color":"#2E5299","clickEvent":{"action":"run_command","value":"/function unreal:waterbreathing1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Water Breathing (0:16)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Night Vision\\n","color":"#1F1FA1"},
+						      {"text":"[ I ]","bold":true,"color":"#1F1FA1","clickEvent":{"action":"run_command","value":"/function unreal:night_vision1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Night Vision (0:16)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Haste\\n","color":"#D9C043"},
+						      {"text":"[ I ]","bold":true,"color":"#D9C043","clickEvent":{"action":"run_command","value":"/function unreal:haste1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Haste I (0:11)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true}
+						    ]'
+						  ],
+						  title:Spellbook,
+						  author:"???",
+						  generation:3,
+						  display:{
+						    Name:"[\"\",{\"text\":\"δ \",\"italic\":true,\"color\":\"yellow\"},{\"text\":\"Spellbook\",\"italic\":false,\"color\":\"yellow\"},{\"text\":\" δ\",\"italic\":true,\"color\":\"yellow\"}]",
+						    Lore:[
+						      "\" \"",
+						      "{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+						    ]
+						  }
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"writable_book",
+						Count:1
+					},
+					buyB:
+					{
+						id:"nether_star",
+						Count:6
+					},
+					sell:
+					{
+						id:"written_book",
+						Count:1,
+						tag:{
+						  pages:[
+						    '["",
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Speed\\n","color":"#7CAFC6"},
+						      {"text":"[ I ]","bold":true,"color":"#7CAFC6","clickEvent":{"action":"run_command","value":"/function unreal:speed1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Speed I (0:11)"}},
+						      {"text":" "},
+						      {"text":"[ II ]","bold":true,"color":"#7CAFC6","clickEvent":{"action":"run_command","value":"/function unreal:speed2"},"hoverEvent":{"action":"show_text","contents":"2 levels \\u27a1 Speed II (0:16)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Haste\\n","color":"#D9C043"},
+						      {"text":"[ I ]","bold":true,"color":"#D9C043","clickEvent":{"action":"run_command","value":"/function unreal:haste1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Haste I (0:11)"}},
+						      {"text":" "},
+						      {"text":"[ II ]","bold":true,"color":"#D9C043","clickEvent":{"action":"run_command","value":"/function unreal:haste2"},"hoverEvent":{"action":"show_text","contents":"2 levels \\u27a1 Haste II (0:16)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Resistance\\n","color":"#99453A"},
+						      {"text":"[ I ]","bold":true,"color":"#99453A","clickEvent":{"action":"run_command","value":"/function unreal:resistance1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Resistance I (0:13)"}},
+						      {"text":" "},
+						      {"text":"[ II ]","bold":true,"color":"#99453A","clickEvent":{"action":"run_command","value":"/function unreal:resistance2"},"hoverEvent":{"action":"show_text","contents":"2 levels \\u27a1 Resistance II (0:16)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Jump Boost\\n","color":"#22FF4C"},
+						      {"text":"[ I ]","bold":true,"color":"#22FF4C","clickEvent":{"action":"run_command","value":"/function unreal:jumpboost1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Jump Boost I (0:13)"}},
+						      {"text":" "},
+						      {"text":"[ II ]","bold":true,"color":"#22FF4C","clickEvent":{"action":"run_command","value":"/function unreal:jumpboost2"},"hoverEvent":{"action":"show_text","contents":"2 levels \\u27a1 Jump Boost II (0:16)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true}]',
+						    '["",
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Strength\\n","color":"#932423"},
+						      {"text":"[ I ]","bold":true,"color":"#932423","clickEvent":{"action":"run_command","value":"/function unreal:strength1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Strength I (0:15)"}},
+						      {"text":" "},
+						      {"text":"[ II ]","bold":true,"color":"#932423","clickEvent":{"action":"run_command","value":"/function unreal:strength2"},"hoverEvent":{"action":"show_text","contents":"2 levels \\u27a1 Strength II (0:16)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Regeneration\\n","color":"#CD5CAB"},
+						      {"text":"[ I ]","bold":true,"color":"#CD5CAB","clickEvent":{"action":"run_command","value":"/function unreal:regeneration1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Regeneration I (0:16)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true}]'
+						  ],
+						  title:Spellbook,
+						  author:"???",
+						  generation:3,
+						  display:{
+						    Name:"[\"\",{\"text\":\"γ \",\"italic\":true,\"color\":\"aqua\"},{\"text\":\"Spellbook\",\"italic\":false,\"color\":\"aqua\"},{\"text\":\" γ\",\"italic\":true,\"color\":\"aqua\"}]",
+						    Lore:[
+						      "\" \"",
+						      "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+						    ]
+						  }
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"writable_book",
+						Count:1
+					},
+					buyB:
+					{
+						id:"enchanted_golden_apple",
+						Count:4
+					},
+					sell:
+					{
+						id:"written_book",
+						Count:1,
+						tag:{
+						  pages:[
+						    '["",
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Absorption\\n","color":"#2552A5"},
+						      {"text":"[ I ]","bold":true,"color":"#2552A5","clickEvent":{"action":"run_command","value":"/function unreal:absorption1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Absorption I (0:16)"}},
+						      {"text":" "},
+						      {"text":"[ II ]","bold":true,"color":"#2552A5","clickEvent":{"action":"run_command","value":"/function unreal:absorption2"},"hoverEvent":{"action":"show_text","contents":"2 levels \\u27a1 Absorption II (0:16)"}},
+						      {"text":" "},
+						      {"text":"[ III ]","bold":true,"color":"#2552A5","clickEvent":{"action":"run_command","value":"/function unreal:absorption3"},"hoverEvent":{"action":"show_text","contents":"3 levels \\u27a1 Absorption III (0:16)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Regeneration\\n","color":"#CD5CAB"},
+						      {"text":"[ I ]","bold":true,"color":"#CD5CAB","clickEvent":{"action":"run_command","value":"/function unreal:regeneration1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Regeneration I (0:16)"}},
+						      {"text":" "},
+						      {"text":"[ II ]","bold":true,"color":"#CD5CAB","clickEvent":{"action":"run_command","value":"/function unreal:regeneration2"},"hoverEvent":{"action":"show_text","contents":"2 levels \\u27a1 Regeneration II (0:16)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Fire Resistance\\n","color":"#E49A3A"},
+						      {"text":"[ I ]","bold":true,"color":"#E49A3A","clickEvent":{"action":"run_command","value":"/function unreal:fireresistance1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Fire Resistance (0:16)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"},
+						      {"text":"Resistance\\n","color":"#99453A"},
+						      {"text":"[ I ]","bold":true,"color":"#99453A","clickEvent":{"action":"run_command","value":"/function unreal:resistance1"},"hoverEvent":{"action":"show_text","contents":"1 level \\u27a1 Resistance I (0:13)"}},
+						      {"text":"\\n"},
+						      {"text":"------------------","strikethrough":true,"obfuscated":true},
+						      {"text":"\\n","color":"reset"}
+						    ]'
+						  ],
+						  title:Spellbook,
+						  author:"???",
+						  generation:3,
+						  display:{
+						    Name:"[\"\",{\"text\":\"β \",\"italic\":true,\"color\":\"light_purple\"},{\"text\":\"Spellbook\",\"italic\":false,\"color\":\"light_purple\"},{\"text\":\" β\",\"italic\":true,\"color\":\"light_purple\"}]",
+						    Lore:[
+						      "\" \"",
+						      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+						    ]
+						  }
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				}
+			]
+		}
+	}
+}

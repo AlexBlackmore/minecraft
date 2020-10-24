@@ -1,0 +1,21 @@
+give @p leather_leggings{
+  display:{
+    Name:"{\"text\":\"Ender Dragon Leggings\",\"italic\":false,\"color\":\"gold\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+    ],
+    color:9474237
+  },
+  Enchantments:[
+    {id:"mending",lvl:1},
+    {id:"protection",lvl:5},
+    {id:"thorns",lvl:3},
+    {id:"unbreaking",lvl:4}
+  ],
+  AttributeModifiers:[
+    {Slot:"legs",AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;360726211,397145718,-709168306,-724554217]},
+    {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:6,Operation:0,UUID:[I;320488109,123611766,508490998,-728225163]},
+    {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;-495684646,-352924442,21675288,965995724]}
+  ]
+}

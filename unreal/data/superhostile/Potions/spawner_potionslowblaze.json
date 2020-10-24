@@ -1,0 +1,39 @@
+/setblock ~ ~-1 ~ spawner{
+  SpawnCount:1,
+  MaxNearbyEntities:8,
+  SpawnRange:8,
+  Delay:20,
+  MinSpawnDelay:60,
+  MaxSpawnDelay:120,
+  RequiredPlayerRange:32,
+  SpawnPotentials:[
+    {
+      Entity:{
+        id:"minecraft:blaze",
+        CustomName:"[\"\",{\"text\":\"Blaze \",\"color\":\"#00ff00\"},{\"text\":\"(level 1)\",\"color\":\"gray\",\"italic\":true}]",
+        CustomNameVisible:1,
+        DeathLootTable:"superhostile:potions_low_blaze",
+        Health:23,
+        ActiveEffects:[
+          {Id:10,Amplifier:0,Duration:2147483647}
+        ],
+        Tags:["custom"]
+      },
+      Weight:2
+    },
+    {
+      Entity:{
+        id:"minecraft:blaze",
+        CustomName:"[\"\",{\"text\":\"Blaze \",\"color\":\"#00ff00\"},{\"text\":\"(level 1)\",\"color\":\"gray\",\"italic\":true}]",
+        CustomNameVisible:1,
+        DeathLootTable:"superhostile:potions_low_blaze",
+        Health:23,
+        ActiveEffects:[
+          {Id:1,Amplifier:0,Duration:2147483647}
+        ],
+        Tags:["custom"]
+      },
+      Weight:1
+    }
+  ]
+}

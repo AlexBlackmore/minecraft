@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Cartographer\",\"color\":\"green\"}",
+		CustomName:"{\"text\":\"Cartographer\"}",
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -112,7 +112,9 @@ give @p villager_spawn_egg{
 						      "\" \"",
 						      "\"A collection of maps\"",
 						      "\"and charts depicting\"",
-						      "\"nearby structures.\""
+						      "\"nearby structures.\"",
+						      "\" \"",
+						      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
 						    ]
 						  }
 						}
@@ -150,7 +152,9 @@ give @p villager_spawn_egg{
 						      "\" \"",
 						      "\"A collection of maps\"",
 						      "\"and charts depicting\"",
-						      "\"nearby structures.\""
+						      "\"nearby structures.\"",
+						      "\" \"",
+						      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
 						    ]
 						  }
 						}
@@ -221,7 +225,9 @@ give @p villager_spawn_egg{
 						      "\" \"",
 						      "\"A collection of maps\"",
 						      "\"and charts depicting\"",
-						      "\"nearby structures.\""
+						      "\"nearby structures.\"",
+						      "\" \"",
+						      "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
 						    ]
 						  }
 						}
@@ -231,6 +237,6 @@ give @p villager_spawn_egg{
 		}
 	},
 	display:{
-		Name:"{\"text\":\"Cartographer\",\"color\":\"green\"}"
+		Name:"{\"text\":\"Cartographer\"}"
 	}
 }

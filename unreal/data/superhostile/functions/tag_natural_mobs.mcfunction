@@ -1,0 +1,4 @@
+data merge entity @e[limit=1,type=creeper,tag=!custom] {Tags:["custom"],CustomNameVisible:true,CustomName:"[\"\",{\"text\":\"Creeper \",\"color\":\"#00ff00\"},{\"text\":\"(level 0)\",\"color\":\"gray\",\"italic\":true}]"}
+data merge entity @e[limit=1,type=zombie,tag=!custom] {Tags:["custom"],CustomNameVisible:true,CustomName:"[\"\",{\"text\":\"Zombie \",\"color\":\"#00ff00\"},{\"text\":\"(level 0)\",\"color\":\"gray\",\"italic\":true}]"}
+data merge entity @e[limit=1,type=skeleton,tag=!custom] {Tags:["custom"],CustomNameVisible:true,CustomName:"[\"\",{\"text\":\"Skeleton \",\"color\":\"#00ff00\"},{\"text\":\"(level 0)\",\"color\":\"gray\",\"italic\":true}]"}
+data merge entity @e[limit=1,type=spider,tag=!custom] {Tags:["custom"],CustomNameVisible:true,CustomName:"[\"\",{\"text\":\"Spider \",\"color\":\"#00ff00\"},{\"text\":\"(level 0)\",\"color\":\"gray\",\"italic\":true}]"}

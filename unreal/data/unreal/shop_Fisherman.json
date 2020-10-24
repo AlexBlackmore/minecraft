@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Fisherman\",\"color\":\"green\"}",
+		CustomName:"{\"text\":\"Fisherman\"}",
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -80,16 +80,18 @@ give @p villager_spawn_egg{
 						Count:1,
 	          tag:{
 						  display:{
-						    Name:"{\"text\":\"Old Rod\",\"italic\":false,\"color\":\"aqua\"}",
+						    Name:"{\"text\":\"Old Rod\",\"italic\":false,\"color\":\"yellow\"}",
 						    Lore:[
 									"\" \"",
-						      "\"An old and beat-up fishing rod\""
+						      "\"An old and beat-up fishing rod\"",
+						      "\" \"",
+						      "{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
 						    ]
 						  },
 						  Enchantments:[
-								{id:"luck_of_the_sea",lvl:1},
+						    {id:"unbreaking",lvl:1},
 						    {id:"lure",lvl:1},
-								{id:"unbreaking",lvl:1}
+						    {id:"luck_of_the_sea",lvl:1}
 						  ]
 						}
 					},
@@ -102,16 +104,18 @@ give @p villager_spawn_egg{
 						Count:1,
 	          tag:{
 						  display:{
-						    Name:"{\"text\":\"Old Rod\",\"italic\":false,\"color\":\"aqua\"}",
+						    Name:"{\"text\":\"Old Rod\",\"italic\":false,\"color\":\"yellow\"}",
 						    Lore:[
 									"\" \"",
-						      "\"An old and beat-up fishing rod\""
+						      "\"An old and beat-up fishing rod\"",
+						      "\" \"",
+						      "{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
 						    ]
 						  },
 						  Enchantments:[
-								{id:"luck_of_the_sea",lvl:1},
+						    {id:"unbreaking",lvl:1},
 						    {id:"lure",lvl:1},
-								{id:"unbreaking",lvl:1}
+						    {id:"luck_of_the_sea",lvl:1}
 						  ]
 						}
 					},
@@ -124,16 +128,18 @@ give @p villager_spawn_egg{
 						Count:1,
 	          tag:{
 						  display:{
-						    Name:"{\"text\":\"Good Rod\",\"italic\":false,\"color\":\"light_purple\"}",
+						    Name:"{\"text\":\"Good Rod\",\"italic\":false,\"color\":\"aqua\"}",
 						    Lore:[
 									"\" \"",
-						      "\"A new, good-quality fishing rod\""
+						      "\"A new, good-quality fishing rod\"",
+						      "\" \"",
+						      "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
 						    ]
 						  },
 						  Enchantments:[
-								{id:"luck_of_the_sea",lvl:2},
-						    {id:"lure",lvl:3},
-								{id:"unbreaking",lvl:2}
+						    {id:"unbreaking",lvl:2},
+						    {id:"lure",lvl:2},
+						    {id:"luck_of_the_sea",lvl:2}
 						  ]
 						}
 					},
@@ -146,16 +152,18 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 						  display:{
-						    Name:"{\"text\":\"Good Rod\",\"italic\":false,\"color\":\"light_purple\"}",
+						    Name:"{\"text\":\"Good Rod\",\"italic\":false,\"color\":\"aqua\"}",
 						    Lore:[
 									"\" \"",
-						      "\"A new, good-quality fishing rod\""
+						      "\"A new, good-quality fishing rod\"",
+						      "\" \"",
+						      "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
 						    ]
 						  },
 						  Enchantments:[
-								{id:"luck_of_the_sea",lvl:2},
-						    {id:"lure",lvl:3},
-								{id:"unbreaking",lvl:2}
+						    {id:"unbreaking",lvl:2},
+						    {id:"lure",lvl:2},
+						    {id:"luck_of_the_sea",lvl:2}
 						  ]
 						}
 					},
@@ -168,17 +176,19 @@ give @p villager_spawn_egg{
 						Count:1,
 	          tag:{
 						  display:{
-						    Name:"{\"text\":\"Super Rod\",\"italic\":false,\"color\":\"gold\"}",
+						    Name:"{\"text\":\"Super Rod\",\"italic\":false,\"color\":\"light_purple\"}",
 						    Lore:[
 									"\" \"",
-						      "\"An awesome, high-tech fishing rod\""
+						      "\"An awesome, high-tech fishing rod\"",
+						      "\" \"",
+						      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
 						    ]
 						  },
 						  Enchantments:[
-								{id:"luck_of_the_sea",lvl:4},
-						    {id:"lure",lvl:5},
-								{id:"mending",lvl:1},
-								{id:"unbreaking",lvl:3}
+						    {id:"mending",lvl:1},
+						    {id:"unbreaking",lvl:3},
+						    {id:"lure",lvl:3},
+						    {id:"luck_of_the_sea",lvl:3}
 						  ]
 						}
 					},
@@ -189,6 +199,6 @@ give @p villager_spawn_egg{
 		}
 	},
 	display:{
-		Name:"{\"text\":\"Fisherman\",\"color\":\"green\"}"
+		Name:"{\"text\":\"Fisherman\"}"
 	}
 }

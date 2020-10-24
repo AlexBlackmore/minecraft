@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-    CustomName:"{\"text\":\"Necromancer\",\"color\":\"green\"}",
+    CustomName:"{\"text\":\"Necromancer\"}",
     CustomNameVisible:true,
     PersistenceRequired:true,
     Silent:true,
@@ -21,6 +21,87 @@ give @p villager_spawn_egg{
     ],
   	Offers:{
   		Recipes:[
+        {
+          buy:{
+            id:"zombie_head",
+            Count:1
+          },
+          buyB:{
+            id:"dragon_egg",
+            Count:1
+          },
+          sell:{
+            id:"zombie_spawn_egg",
+            Count:1
+          },
+          rewardExp:false,
+          maxUses:2147483647
+        },
+				{
+          buy:{
+            id:"skeleton_skull",
+            Count:1
+          },
+          buyB:{
+            id:"dragon_egg",
+            Count:1
+          },
+          sell:{
+            id:"skeleton_spawn_egg",
+            Count:1
+          },
+          rewardExp:false,
+          maxUses:2147483647
+        },
+				{
+          buy:{
+            id:"creeper_head",
+            Count:1
+          },
+          buyB:{
+            id:"dragon_egg",
+            Count:1
+          },
+          sell:{
+            id:"creeper_spawn_egg",
+            Count:1
+          },
+          rewardExp:false,
+          maxUses:2147483647
+        },
+        {
+          buy:{
+            id:"nether_star",
+            Count:1
+          },
+          buyB:{
+            id:"dragon_egg",
+            Count:1
+          },
+          sell:{
+            id:"chest",
+            Count:1,
+            tag:{
+              BlockEntityTag:{LootTable:"unreal:item_spawn_egg"},
+              display:{
+                Lore:[
+                  "{\"text\":\"Random Spawn Egg\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
+									"\" \"",
+                  "{\"text\":\"Spawn Egg x1\",\"italic\":false,\"color\":\"white\"}"
+                ]
+              },
+              Enchantments:[
+                {id:"unbreaking",lvl:1}
+              ],
+              HideFlags:1
+            }
+          },
+          rewardExp:false,
+          maxUses:2147483647
+        },
+				{
+					maxUses:0
+				},
   			{
   				buy:{
   					id:"zombie_head",
@@ -125,58 +206,13 @@ give @p villager_spawn_egg{
         },
         {
           buy:{
-            id:"nether_star",
-            Count:1
-          },
-          buyB:{
-            id:"dragon_egg",
-            Count:1
-          },
-          sell:{
-            id:"chest",
-            Count:1,
-            tag:{
-              BlockEntityTag:{LootTable:"unreal:item_spawn_egg"},
-              display:{
-                Lore:[
-                  "{\"text\":\"Random Spawn Egg\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-                  "{\"text\":\"Spawn Egg x1\",\"italic\":false,\"color\":\"white\"}"
-                ]
-              },
-              Enchantments:[
-                {id:"unbreaking",lvl:1}
-              ],
-              HideFlags:1
-            }
-          },
-          rewardExp:false,
-          maxUses:2147483647
-        },
-        {
-          buy:{
             id:"dragon_head",
             Count:1
           },
           sell:{
-            id:"wither_skeleton_skull",
-            Count:3
-          },
-          rewardExp:false,
-          maxUses:2147483647
-        },
-        {
-          buy:{
-            id:"wither_skeleton_skull",
+            id:"nether_star",
             Count:1
           },
-          buyB:{
-            id:"poppy",
-            Count:2
-          },
-					sell:{
-						id:"wither_rose",
-						Count:2
-					},
           rewardExp:false,
           maxUses:2147483647
         }
@@ -184,6 +220,6 @@ give @p villager_spawn_egg{
   	}
   },
 	display:{
-		Name:"{\"text\":\"Necromancer\",\"color\":\"green\"}"
+		Name:"{\"text\":\"Necromancer\"}"
 	}
 }

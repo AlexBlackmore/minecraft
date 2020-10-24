@@ -6,7 +6,7 @@
         {
           "type":"item",
           "name":"rotten_flesh",
-          "weight":975,
+          "weight":99,
           "functions":[
             {
               "function":"looting_enchant",
@@ -20,7 +20,7 @@
         {
           "type":"item",
           "name":"feather",
-          "weight":25
+          "weight":1
         }
       ],
       "functions":[
@@ -48,10 +48,6 @@
         {
           "type":"item",
           "name":"potato"
-        },
-        {
-          "type":"item",
-          "name":"zombie_head"
         }
       ],
       "conditions":[
@@ -62,6 +58,26 @@
           "condition":"random_chance_with_looting",
           "chance":0.025,
           "looting_multiplier":0.01
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"zombie_head",
+          "weight":1,
+          "conditions":[
+            {
+              "condition":"killed_by_player"
+            },
+            {
+              "condition":"random_chance_with_looting",
+              "chance":0.025,
+              "looting_multiplier":0.01
+            }
+          ]
         }
       ]
     }

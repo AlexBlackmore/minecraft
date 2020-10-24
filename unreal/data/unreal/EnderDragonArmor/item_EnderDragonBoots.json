@@ -1,0 +1,22 @@
+give @p leather_boots{
+  display:{
+    Name:"{\"text\":\"Ender Dragon Boots\",\"italic\":false,\"color\":\"gold\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+    ],
+    color:9474237
+  },
+  Enchantments:[
+    {id:"feather_falling",lvl:5},
+    {id:"mending",lvl:1},
+    {id:"protection",lvl:5},
+    {id:"thorns",lvl:3},
+    {id:"unbreaking",lvl:4}
+  ],
+  AttributeModifiers:[
+    {Slot:"feet",AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;-737644648,-934743123,676180459,-950760728]},
+    {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;-373042292,967259634,808308928,-400776253]},
+    {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;762098284,-570462540,745670293,-68275965]}
+  ]
+}
