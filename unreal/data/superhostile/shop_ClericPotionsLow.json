@@ -1,22 +1,16 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Zistonian Battlesign Level 2\",\"color\":\"aqua\"}",
-		CustomNameVisible:true,
 		PersistenceRequired:true,
 		CanPickUpLoot:false,
 		Willing:false,
-		NoAI:true,
 		VillagerData:{
 			level:1,
-			profession:"nitwit",
+			profession:"cleric",
 			type:"plains"
 		},
 		Attributes:[
-			{
-				Name:"generic.movementSpeed",
-				Base:"0f"
-			}
+			{Name:"generic.movement_speed",Base:0}
 		],
 		Offers:{
 			Recipes:[
@@ -34,8 +28,5 @@ give @p villager_spawn_egg{
 				}
 			]
 		}
-	},
-	display:{
-		Name:"{\"text\":\"Zistonian Battlesign Level 2\",\"color\":\"aqua\"}"
 	}
 }
