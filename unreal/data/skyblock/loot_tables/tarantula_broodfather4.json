@@ -1,0 +1,186 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"string",
+          "functions":[
+            {
+              "function":"set_count",
+              "count":{
+                "min":52,
+                "max":64,
+                "type":"uniform"
+              }
+            },
+            {
+              "function":"looting_enchant",
+              "count":{
+                "min":0,
+                "max":1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"tipped_arrow",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Toxic Arrow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"Instant Damage II\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"}\",
+                    \"{\\\"text\\\":\\\"Poison (0:04)\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ]
+                },
+                CustomPotionEffects:[
+                  {Id:7,Amplifier:1,Duration:1},
+                  {Id:19,Amplifier:1,Duration:80}
+                ],
+                Potion:\"empty\",
+                CustomPotionColor:2293580,
+                HideFlags:32
+              }"
+            },
+            {
+              "function":"set_count",
+              "count":{
+                "min":60,
+                "max":64,
+                "type":"uniform"
+              }
+            },
+            {
+              "function":"looting_enchant",
+              "count":{
+                "min":0,
+                "max":1
+              }
+            }
+          ],
+          "conditions":[
+            {
+              "condition":"random_chance_with_looting",
+              "chance":0.2,
+              "looting_multiplier":0.01
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"enchanted_book",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Spider Catalyst\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"An extraordinarily rare drop\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"from a Tier III+ Tarantula\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Broodfather.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"\\\"Can be used to upgrade an item\\\"\",
+                    \"\\\"at Maddox the Slayer.\\\"\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ]
+                }
+              }"
+            }
+          ],
+          "conditions":[
+            {
+              "condition":"random_chance_with_looting",
+              "chance":0.01,
+              "looting_multiplier":0.01
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"enchanted_book",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                StoredEnchantments:[
+                  {id:\"bane_of_arthropods\",lvl:6}
+                ],
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Enchanted Book\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ]
+                }
+              }"
+            }
+          ],
+          "conditions":[
+            {
+              "condition":"random_chance_with_looting",
+              "chance":0.01,
+              "looting_multiplier":0.01
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"enchanted_book",
+          "weight":7,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Digested Mosquito\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"An unbelievably rare drop from a\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Tier IV Tarantula Broodfather.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"\\\"Can be used to upgrade an item\\\"\",
+                    \"\\\"at Maddox the Slayer.\\\"\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ]
+                }
+              }"
+            }
+          ]
+        },
+        {
+          "type":"empty",
+          "weight":12993
+        }
+      ]
+    }
+  ]
+}

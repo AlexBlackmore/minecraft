@@ -1,0 +1,22 @@
+summon spider ~ ~1 ~ {
+  CustomName:"[\"\",{\"text\":\"Tarantula Broodfather\",\"color\":\"aqua\"},{\"text\":\" (level-90)\",\"color\":\"#c0ff00\"}]",
+  CustomNameVisible:true,
+  Passengers:[
+    {
+      id:"cave_spider",
+      CustomName:"[\"\",{\"text\":\"Tarantula Broodfather\",\"color\":\"aqua\"},{\"text\":\" (level-90)\",\"color\":\"#c0ff00\"}]",
+      CustomNameVisible:true
+    }
+  ],
+  Tags:["colosseum"],
+  Health:1,
+  Attributes:[
+    {Name:"generic.max_health",Base:463},
+    {Name:"generic.attack_damage",Base:22}
+  ],
+  ActiveEffects:[
+    {Id:1,Amplifier:1,Duration:2147483647},
+    {Id:10,Amplifier:1,Duration:2147483647}
+  ],
+  DeathLootTable:"skyblock:tarantula_broodfather2"
+}

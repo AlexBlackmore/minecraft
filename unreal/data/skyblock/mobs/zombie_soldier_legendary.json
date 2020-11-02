@@ -1,0 +1,137 @@
+summon zombie ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Zombie Soldier\",\"color\":\"white\"},{\"text\":\" (level-20)\",\"color\":\"#40ff00\"}]",
+  CustomNameVisible:true,
+  Tags:["colosseum"],
+  Health:71,
+  Attributes:[
+    {Name:"generic.max_health",Base:71},
+    {Name:"generic.attack_damage",Base:9.6}
+  ],
+  HandItems:[
+    {
+      id:"iron_sword",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Soldier Cutlass\",\"italic\":false,\"color\":\"light_purple\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+          ]
+        },
+        Enchantments:[
+          {id:"looting",lvl:3},
+          {id:"sharpness",lvl:5},
+          {id:"unbreaking",lvl:2}
+        ],
+        AttributeModifiers:[
+          {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:19.6,Operation:0,UUID:[I;552545094,974173237,-470532554,431034665]},
+          {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:1.0,Operation:1,UUID:[I;25065069,-321053846,-35592738,-383607666]}
+        ]
+      }
+    },
+    {}
+  ],
+  ArmorItems:[
+    {
+      id:"leather_boots",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Soldier Boots\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ],
+          color:13664000
+        },
+        Enchantments:[
+          {id:"deapth_strider",lvl:3},
+          {id:"feather_falling",lvl:5},
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:22,Operation:0,UUID:[I;-870738347,-740320327,-462431229,-321531755]},
+          {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:17.4,Operation:0,UUID:[I;28642390,800151276,475627597,929516710]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_leggings",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Soldier Leggings\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ],
+          color:13664000
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:28.6,Operation:0,UUID:[I;399818491,901086656,200605756,-158222589]},
+          {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:31.2,Operation:0,UUID:[I;-857939611,-438043668,-72958383,754047310]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_chestplate",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Soldier Chestplate\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ],
+          color:13664000
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:32.2,Operation:0,UUID:[I;-3917746,990194661,-75522300,-575627738]},
+          {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:35.4,Operation:0,UUID:[I;-141985683,288232690,738750847,393427282]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_helmet",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Soldier Helmet\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ],
+          color:13664000
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:23.4,Operation:0,UUID:[I;-843426589,772934057,617233115,-193368980]},
+          {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:20.2,Operation:0,UUID:[I;822610269,-124986001,-787432060,667017659]}
+        ],
+        HideFlags:64
+      }
+    }
+  ],
+  HandDropChances:[0.085f,0.0f],
+  ArmorDropChances:[0.085f,0.085f,0.085f,0.085f]
+}

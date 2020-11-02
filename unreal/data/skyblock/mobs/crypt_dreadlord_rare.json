@@ -1,0 +1,42 @@
+summon zombie ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Crypt Dreadlord\",\"color\":\"white\"},{\"text\":\" (level-10)\",\"color\":\"#40ff00\"}]",
+  CustomNameVisible:true,
+  Tags:["colosseum"],
+  Health:29,
+  Attributes:[
+    {Name:"generic.max_health",Base:29},
+    {Name:"generic.attack_damage",Base:10}
+  ],
+  HandItems:[
+    {
+      id:"iron_sword",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Dreadlord Sword\",\"italic\":false,\"color\":\"aqua\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+          ]
+        },
+        Enchantments:[
+          {id:"looting",lvl:3},
+          {id:"sharpness",lvl:5},
+          {id:"unbreaking",lvl:2}
+        ],
+        AttributeModifiers:[
+          {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:10.4,Operation:0,UUID:[I;432580984,774109919,255564732,-557253268]}
+        ]
+      }
+    },
+    {}
+  ],
+  ArmorItems:[
+    {},
+    {},
+    {},
+    {}
+  ],
+  HandDropChances:[0.085f,0.0f],
+  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
+}

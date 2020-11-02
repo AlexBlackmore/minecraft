@@ -1,0 +1,155 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"rotten_flesh",
+          "functions":[
+            {
+              "function":"set_count",
+              "count":{
+                "min":9,
+                "max":18,
+                "type":"uniform"
+              }
+            },
+            {
+              "function":"looting_enchant",
+              "count":{
+                "min":0,
+                "max":1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"charcoal",
+          "functions":[
+            {
+              "function":"set_count",
+              "count":1
+            },
+            {
+              "function":"looting_enchant",
+              "count":{
+                "min":0,
+                "max":1
+              }
+            }
+          ],
+          "conditions":[
+            {
+              "condition":"random_chance_with_looting",
+              "chance":0.2,
+              "looting_multiplier":0.01
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"enchanted_book",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Undead Catalyst\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"An extraordinarily rare drop\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"from a Tier II+ Revenant Horror.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"\\\"Can be used to upgrade an item\\\"\",
+                    \"\\\"at Maddox the Slayer.\\\"\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ]
+                }
+              }"
+            }
+          ],
+          "conditions":[
+            {
+              "condition":"random_chance_with_looting",
+              "chance":0.01,
+              "looting_multiplier":0.01
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"enchanted_book",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Revenant Catalyst\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"An extraordinary drop\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"from a Tier II+ Revenant Horror.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"\\\"Can be used to upgrade an item\\\"\",
+                    \"\\\"at Maddox the Slayer.\\\"\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ]
+                }
+              }"
+            }
+          ],
+          "conditions":[
+            {
+              "condition":"random_chance_with_looting",
+              "chance":0.01,
+              "looting_multiplier":0.01
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"experience_bottle",
+          "functions":[
+            {
+              "function":"set_count",
+              "count":{
+                "min":3,
+                "max":4,
+                "type":"uniform"
+              }
+            },
+            {
+              "function":"looting_enchant",
+              "count":{
+                "min":0,
+                "max":1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

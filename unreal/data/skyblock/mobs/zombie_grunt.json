@@ -1,0 +1,113 @@
+summon zombie ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Zombie Grunt\",\"color\":\"white\"},{\"text\":\" (level-10)\",\"color\":\"#40ff00\"}]",
+  CustomNameVisible:true,
+  Tags:["colosseum"],
+  Health:29,
+  Attributes:[
+    {Name:"generic.max_health",Base:29},
+  ],
+  HandItems:[
+    {},
+    {}
+  ],
+  ArmorItems:[
+    {
+      id:"leather_boots",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Rotten Boots\",\"italic\":false,\"color\":\"aqua\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+          ],
+          color:10383363
+        },
+        Enchantments:[
+          {id:"deapth_strider",lvl:3},
+          {id:"feather_falling",lvl:5},
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:2}
+        ],
+        AttributeModifiers:[
+          {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:4.5,Operation:0,UUID:[I;-113074177,491949719,-825230908,-704805828]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_leggings",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Rotten Leggings\",\"italic\":false,\"color\":\"aqua\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+          ],
+          color:97585
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:2}
+        ],
+        AttributeModifiers:[
+          {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:33.6,Operation:0,UUID:[I;-926271250,-147863534,-312860468,-299791242]},
+          {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:4.5,Operation:0,UUID:[I;966250030,331030257,619636027,849502693]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_chestplate",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Rotten Chestplate\",\"italic\":false,\"color\":\"aqua\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+          ],
+          color:97585
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:2}
+        ],
+        AttributeModifiers:[
+          {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:42,Operation:0,UUID:[I;638914160,511746161,-625004127,-319662215]},
+          {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:4.5,Operation:0,UUID:[I;-975671926,-373857968,-264716834,-966200042]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_helmet",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Rotten Helmet\",\"italic\":false,\"color\":\"aqua\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+          ],
+          color:10383363
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:2}
+        ],
+        AttributeModifiers:[
+          {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:4.5,Operation:0,UUID:[I;-736488266,177024065,-528433347,390659778]}
+        ],
+        HideFlags:64
+      }
+    }
+  ],
+  HandDropChances:[0.0f,0.0f],
+  ArmorDropChances:[0.085f,0.085f,0.085f,0.085f]
+}

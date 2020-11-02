@@ -1,0 +1,119 @@
+summon zombie ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Tank Zombie\",\"color\":\"white\"},{\"text\":\" (level-20)\",\"color\":\"#40ff00\"}]",
+  CustomNameVisible:true,
+  Tags:["colosseum"],
+  Health:71,
+  Attributes:[
+    {Name:"generic.max_health",Base:71},
+  ],
+  HandItems:[
+    {},
+    {}
+  ],
+  ArmorItems:[
+    {
+      id:"leather_boots",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Heavy Boots\",\"italic\":false,\"color\":\"light_purple\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+          ],
+          color:16777215
+        },
+        Enchantments:[
+          {id:"deapth_strider",lvl:3},
+          {id:"feather_falling",lvl:5},
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;375445396,617968533,183220500,-795462040]},
+          {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:23.2,Operation:0,UUID:[I;-527515189,133982712,-879503539,309631106]},
+          {Slot:"feet",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.05,Operation:1,UUID:[I;-560899683,793634629,-967422551,368609239]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_leggings",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Heavy Leggings\",\"italic\":false,\"color\":\"light_purple\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+          ],
+          color:8553090
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;-886487367,-190590180,815961667,-782530114]},
+          {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:35.8,Operation:0,UUID:[I;-343561784,-724435830,232126381,595173086]},
+          {Slot:"legs",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.05,Operation:1,UUID:[I;226231557,-365186872,485344806,243215410]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_chestplate",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Heavy Chestplate\",\"italic\":false,\"color\":\"light_purple\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+          ],
+          color:8553090
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;927732156,-682750598,-698146953,201450547]},
+          {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:42.6,Operation:0,UUID:[I;-122469713,357935157,305822326,-317569058]},
+          {Slot:"chest",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.05,Operation:1,UUID:[I;669325913,575805577,-722563322,-562065102]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_helmet",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Heavy Helmet\",\"italic\":false,\"color\":\"light_purple\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+          ],
+          color:16777215
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;254086306,-979555492,114340112,898936204]},
+          {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:25,Operation:0,UUID:[I;-901643257,-58247766,272669846,-473625270]},
+          {Slot:"head",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.05,Operation:1,UUID:[I;-467479001,-370761548,-892112257,-3787364]}
+        ],
+        HideFlags:64
+      }
+    }
+  ],
+  HandDropChances:[0.0f,0.0f],
+  ArmorDropChances:[0.085f,0.085f,0.085f,0.085f]
+}
