@@ -1,0 +1,31 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:enchanted_book",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Hunk of Ice\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:1}
+                ],
+                HideFlags:1
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"diamond_sword",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Aspect of the Dragons\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"Power XIII\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Unbreaking III\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Item Ability: Dragon Rage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"{\\\"text\\\":\\\"All monsters in front of you\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"take \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"12000\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" damage. Hit monsters\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"{\\\"text\\\":\\\"take lake knockback.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:"unbreaking",lvl:4}
+                ],
+                AttributeModifiers:[
+                  {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:65,Operation:0,UUID:[I;524312315,816545671,289779906,411131256]}
+                ]
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

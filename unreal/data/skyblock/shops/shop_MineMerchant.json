@@ -111,16 +111,7 @@ give @p villager_spawn_egg{
           },
   				sell:{
   					id:"golden_pickaxe",
-  					Count:1,
-  					tag:{
-  						display:{
-  							Name:"{\"text\":\"Golden Pickaxe\",\"italic\":false,\"color\":\"white\"}",
-  							Lore:[
-  								"\" \"",
-  								"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
-  							]
-  						}
-  					}
+  					Count:1
   				},
           rewardExp:false,
           maxUses:640
@@ -172,6 +163,31 @@ give @p villager_spawn_egg{
   				},
   				rewardExp:false,
   				maxUses:64
+  			},
+        {
+  				buy:{
+  					id:"emerald",
+  					Count:2
+  				},
+  				sell:{
+  					id:"enchanted_book",
+  					Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Onyx\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Can be used to apply the\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"Fruitful\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" reforge to a Netherite\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"pickaxe.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							}
+						}
+  				},
+  				rewardExp:false,
+  				maxUses:640
   			}
   		]
   	}

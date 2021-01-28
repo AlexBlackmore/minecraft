@@ -147,7 +147,61 @@ give @p villager_spawn_egg{
   				},
   				rewardExp:false,
   				maxUses:64
-  			}
+  			},
+				{
+          buy:{
+            id:"emerald",
+            Count:14
+          },
+  				sell:{
+  					id:"iron_axe",
+  					Count:1,
+  					tag:{
+  						display:{
+  							Name:"{\"text\":\"Sweet Axe\",\"italic\":false,\"color\":\"yellow\"}",
+  							Lore:[
+									"\" \"",
+									"[\"\",{\"text\":\"20%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance of dropping an Apple\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"when chopping logs.\",\"italic\":false,\"color\":\"gray\"}",
+  								"\" \"",
+  								"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+  							]
+  						},
+  						Enchantments:[
+  							{id:"unbreaking",lvl:1}
+  						]
+  					}
+  				},
+          rewardExp:false,
+          maxUses:640
+        },
+				{
+          buy:{
+            id:"emerald",
+            Count:14
+          },
+  				sell:{
+  					id:"iron_axe",
+  					Count:1,
+  					tag:{
+  						display:{
+  							Name:"{\"text\":\"Efficient Axe\",\"italic\":false,\"color\":\"yellow\"}",
+  							Lore:[
+									"\" \"",
+									"{\"text\":\"Drops 5 planks from chopping\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"logs.\",\"italic\":false,\"color\":\"gray\"}",
+  								"\" \"",
+  								"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+  							]
+  						},
+  						Enchantments:[
+  							{id:"unbreaking",lvl:1}
+  						]
+  					}
+  				},
+          rewardExp:false,
+          maxUses:640
+        }
   		]
   	}
   },

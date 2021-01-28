@@ -1,0 +1,35 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:end_crystal",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Summoning Eye\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"\\\"  \\\"\",
+                    \"{\\\"text\\\":\\\"Use this at the Ender Altar in\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"the Dragon's Nest to summon\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Ender Dragons.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:1}
+                ],
+                HideFlags:1
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

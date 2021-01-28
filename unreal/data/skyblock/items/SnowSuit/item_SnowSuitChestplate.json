@@ -1,0 +1,18 @@
+give @p leather_chestplate{
+  display:{
+    Name:"{\"text\":\"Snow Suit Chestplate\",\"italic\":false,\"color\":\"light_purple\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+    ],
+    color:16777215
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:3}
+  ],
+  AttributeModifiers:[
+    {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:20,Operation:0,UUID:[I;561564861,979997204,662469236,172540260]},
+    {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:8,Operation:0,UUID:[I;768471196,327427009,901120297,158866649]}
+  ],
+  HideFlags:64
+}

@@ -1,0 +1,31 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:golden_sword",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Fancy Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"COMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"sharpness\",lvl:2}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

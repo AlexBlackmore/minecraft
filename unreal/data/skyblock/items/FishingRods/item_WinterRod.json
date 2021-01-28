@@ -1,0 +1,17 @@
+give @p fishing_rod{
+  display:{
+    Name:"{\"text\":\"Winter Rod\",\"italic\":false,\"color\":\"aqua\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"luck_of_the_sea",lvl:2},
+    {id:"lure",lvl:2},
+    {id:"unbreaking",lvl:2}
+  ],
+  AttributeModifiers:[
+    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:20,Operation:0,UUID:[I;69898496,324359772,914694403,573291321]}
+  ]
+}

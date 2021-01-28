@@ -1,0 +1,16 @@
+give @p chest{
+  BlockEntityTag:{
+    LootTable:"skyblock:white_gift"
+  },
+  display:{
+    Lore:[
+      "{\"text\":\"White Gift\",\"italic\":false,\"color\":\"white\"}",
+      "\" \"",
+      "{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:1}
+  ],
+  HideFlags:1
+}

@@ -1,0 +1,23 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:enchanted_book",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                StoredEnchantments:[
+                  {id:\"looting\",lvl:4}
+                ]
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

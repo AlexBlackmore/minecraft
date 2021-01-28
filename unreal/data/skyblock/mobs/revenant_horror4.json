@@ -2,14 +2,14 @@ summon zombie ~ ~ ~ {
   CustomName:"[\"\",{\"text\":\"Revenant Horror\",\"color\":\"aqua\"},{\"text\":\" (level-610)\",\"color\":\"#ff0000\"}]",
   CustomNameVisible:true,
   Tags:["colosseum"],
-  Health:1024,
+  Health:610,
   Attributes:[
-    {Name:"generic.max_health",Base:1024},
-    {Name:"generic.attack_damage",Base:200}
+    {Name:"generic.max_health",Base:610},
+    {Name:"generic.attack_damage",Base:200},
+    {Name:"generic.movement_speed",Base:0.43}
   ],
   ActiveEffects:[
-    {Id:1,Amplifier:3,Duration:2147483647},
-    {Id:10,Amplifier:3,Duration:2147483647},
+    {Id:10,Amplifier:3,Duration:2147483647}
   ],
   HandItems:[
     {

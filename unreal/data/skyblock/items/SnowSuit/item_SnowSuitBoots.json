@@ -1,0 +1,19 @@
+give @p leather_boots{
+  display:{
+    Name:"{\"text\":\"Snow Suit Boots\",\"italic\":false,\"color\":\"light_purple\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+    ],
+    color:16777215
+  },
+  Enchantments:[
+    {id:"frost_walker",lvl:2},
+    {id:"unbreaking",lvl:3}
+  ],
+  AttributeModifiers:[
+    {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:13,Operation:0,UUID:[I;733384241,167671743,588432169,125398519]},
+    {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;420551240,191636259,912056981,366266382]}
+  ],
+  HideFlags:64
+}

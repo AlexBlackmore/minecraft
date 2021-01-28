@@ -1,0 +1,70 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		PersistenceRequired:true,
+		Silent:false,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:2,
+			profession:"leatherworker",
+			type:"plains"
+		},
+		Attributes:[
+			{Name:"generic.movement_speed",Base:0}
+		],
+		Offers:{
+			Recipes:[
+				{
+					buy:{
+						id:"oak_sign",
+						Count:1,
+						tag:{
+						  display:{
+						    Name:"{\"text\":\"Zistonian Battlesign\",\"italic\":false,\"color\":\"yellow\"}",
+						    Lore:[
+						      "\" \"",
+						      "{\"text\":\"Level 1\",\"italic\":false,\"color\":\"blue\"}"
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"knockback",lvl:2}
+						  ]
+						}
+					},
+					sell:{
+						id:"oak_sign",
+						Count:1,
+						tag:{
+						  display:{
+						    Name:"{\"text\":\"Zistonian Battlesign\",\"italic\":false,\"color\":\"aqua\"}",
+						    Lore:[
+						      "\" \"",
+						      "{\"text\":\"Level 2\",\"italic\":false,\"color\":\"blue\"}"
+						    ]
+						  },
+						  Enchantments:[
+						    {id:"fire_aspect",lvl:1},
+						    {id:"knockback",lvl:2}
+						  ]
+						}
+					},
+					rewardExp:true,
+					maxUses:1
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"leather_leggings",
+						Count:1
+					},
+					rewardExp:true,
+					maxUses:640
+				}
+			]
+		}
+	}
+}

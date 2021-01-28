@@ -1,0 +1,110 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Tomioka\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:
+		{
+			level:5,
+			profession:"librarian",
+			type:"plains"
+		},
+		Attributes: [
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes: [
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:20
+					},
+					sell:
+					{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+						  display:{
+								Name:"{\"text\":\"Enchanted Book\",\"italic\":false,\"color\":\"aqua\"}",
+						    Lore:[
+						      "\" \"",
+						      "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+						    ]
+						  },
+							StoredEnchantments:[
+								{id:"sharpness",lvl:6}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:20
+					},
+					sell:
+					{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+						  display:{
+								Name:"{\"text\":\"Enchanted Book\",\"italic\":false,\"color\":\"aqua\"}",
+						    Lore:[
+						      "\" \"",
+						      "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+						    ]
+						  },
+							StoredEnchantments:[
+								{id:"protection",lvl:6}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:23
+					},
+					sell:
+					{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+						  display:{
+								Name:"{\"text\":\"Enchanted Book\",\"italic\":false,\"color\":\"light_purple\"}",
+						    Lore:[
+									"\" \"",
+						      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+						    ]
+						  },
+							StoredEnchantments:[
+								{id:"smite",lvl:7}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				}
+			]
+		}
+	},
+	display:{
+		Name:"{\"text\":\"Tomioka\"}"
+	}
+}

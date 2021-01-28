@@ -4,8 +4,8 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"rotten_flesh",
+          "type":"loot_table",
+          "name":"skyblock:items/revenant_flesh",
           "functions":[
             {
               "function":"set_count",
@@ -30,8 +30,8 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"charcoal",
+          "type":"loot_table",
+          "name":"skyblock:items/foul_flesh",
           "functions":[
             {
               "function":"set_count",
@@ -40,22 +40,15 @@
                 "max":3,
                 "type":"uniform"
               }
-            },
-            {
-              "function":"looting_enchant",
-              "count":{
-                "min":0,
-                "max":1
-              }
-            }
-          ],
-          "conditions":[
-            {
-              "condition":"random_chance_with_looting",
-              "chance":0.2,
-              "looting_multiplier":0.01
             }
           ]
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"random_chance_with_looting",
+          "chance":0.2,
+          "looting_multiplier":0.01
         }
       ]
     },
@@ -63,34 +56,15 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"enchanted_book",
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Undead Catalyst\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
-                  Lore:[
-                    \"{\\\"text\\\":\\\"An extraordinarily rare drop\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"{\\\"text\\\":\\\"from a Tier II+ Revenant Horror.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"\\\" \\\"\",
-                    \"\\\"Can be used to upgrade an item\\\"\",
-                    \"\\\"at Maddox the Slayer.\\\"\",
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
-                  ]
-                }
-              }"
-            }
-          ],
-          "conditions":[
-            {
-              "condition":"random_chance_with_looting",
-              "chance":0.01,
-              "looting_multiplier":0.01
-            }
-          ]
+          "type":"loot_table",
+          "name":"skyblock:items/undead_catalyst"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"random_chance_with_looting",
+          "chance":0.01,
+          "looting_multiplier":0.01
         }
       ]
     },
@@ -98,32 +72,15 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"enchanted_book",
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{
-                StoredEnchantments:[
-                  {id:\"smite\",lvl:6}
-                ],
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Enchanted Book\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
-                  Lore:[
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
-                  ]
-                }
-              }"
-            }
-          ],
-          "conditions":[
-            {
-              "condition":"random_chance_with_looting",
-              "chance":0.01,
-              "looting_multiplier":0.01
-            }
-          ]
+          "type":"loot_table",
+          "name":"skyblock:items/enchanted_book_smite6"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"random_chance_with_looting",
+          "chance":0.01,
+          "looting_multiplier":0.01
         }
       ]
     },
@@ -131,33 +88,15 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"enchanted_book",
-          "weight":21,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Beheaded Horror\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
-                  Lore:[
-                    \"{\\\"text\\\":\\\"An extraordinarily rare drop\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"{\\\"text\\\":\\\"from a Tier III+ Revenant\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"{\\\"text\\\":\\\"Horror.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"\\\" \\\"\",
-                    \"\\\"Can be used to upgrade an item\\\"\",
-                    \"\\\"at Maddox the Slayer.\\\"\",
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
-                  ]
-                }
-              }"
-            }
-          ]
-        },
+          "type":"loot_table",
+          "name":"skyblock:items/beheaded_horror"
+        }
+      ],
+      "conditions":[
         {
-          "type":"empty",
-          "weight":12979
+          "condition":"random_chance_with_looting",
+          "chance":0.0016,
+          "looting_multiplier":0.01
         }
       ]
     },
@@ -165,34 +104,15 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"enchanted_book",
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Revenant Catalyst\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
-                  Lore:[
-                    \"{\\\"text\\\":\\\"An extraordinarily rare drop\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"{\\\"text\\\":\\\"from a Tier II+ Revenant Horror.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"\\\" \\\"\",
-                    \"\\\"Can be used to upgrade an item\\\"\",
-                    \"\\\"at Maddox the Slayer.\\\"\",
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
-                  ]
-                }
-              }"
-            }
-          ],
-          "conditions":[
-            {
-              "condition":"random_chance_with_looting",
-              "chance":0.01,
-              "looting_multiplier":0.01
-            }
-          ]
+          "type":"loot_table",
+          "name":"skyblock:items/revenant_catalyst"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"random_chance_with_looting",
+          "chance":0.01,
+          "looting_multiplier":0.01
         }
       ]
     },
@@ -200,37 +120,20 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"enchanted_book",
-          "weight":7,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Scythe Blade\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
-                  Lore:[
-                    \"{\\\"text\\\":\\\"An unbelievably rare drop from a\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"{\\\"text\\\":\\\"Tier IV Revenant Horror.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"\\\" \\\"\",
-                    \"\\\"Can be used to upgrade an item\\\"\",
-                    \"\\\"at Maddox the Slayer.\\\"\",
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
-                  ]
-                }
-              }"
-            }
-          ]
-        },
+          "type":"loot_table",
+          "name":"skyblock:items/scythe_blade"
+        }
+      ],
+      "conditions":[
         {
-          "type":"empty",
-          "weight":12993
+          "condition":"random_chance_with_looting",
+          "chance":0.00054,
+          "looting_multiplier":0.01
         }
       ]
     },
     {
-      "rolls":2,
+      "rolls":1,
       "entries":[
         {
           "type":"item",
@@ -242,13 +145,6 @@
                 "min":35,
                 "max":36,
                 "type":"uniform"
-              }
-            },
-            {
-              "function":"looting_enchant",
-              "count":{
-                "min":0,
-                "max":1
               }
             }
           ]

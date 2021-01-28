@@ -1,0 +1,41 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_helmet",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Old Dragon Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Bonus: Old Blood\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"{\\\"text\\\":\\\"Increases the strength of\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Protection\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\" and \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"Feather Falling\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}]\",
+                    \"{\\\"text\\\":\\\" while worn.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ],
+                  color:15787690
+                },
+                Enchantments:[
+                  {id:"unbreaking",lvl:4}
+                ],
+                AttributeModifiers:[
+                  {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:22,Operation:0,UUID:[I;510750042,802433723,-2610542,-636129923]},
+                  {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:18,Operation:0,UUID:[I;-921414379,523284705,81322475,597058683]}
+                ],
+              	HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

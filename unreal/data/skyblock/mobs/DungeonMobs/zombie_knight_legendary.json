@@ -1,0 +1,131 @@
+summon zombie ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Zombie Knight\",\"color\":\"white\"},{\"text\":\" (level-40)\",\"color\":\"#70ff00\"}]",
+  CustomNameVisible:true,
+  Tags:["colosseum"],
+  HandItems:[
+    {
+      id:"iron_sword",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Knight Sword\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ]
+        },
+        Enchantments:[
+          {id:"looting",lvl:3},
+          {id:"sharpness",lvl:5},
+          {id:"unbreaking",lvl:2}
+        ],
+        AttributeModifiers:[
+          {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:16.4,Operation:0,UUID:[I;-712017311,301832861,-191441003,-733798932]}
+        ]
+      }
+    },
+    {}
+  ],
+  ArmorItems:[
+    {
+      id:"golden_boots",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Knight Boots\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ]
+        },
+        Enchantments:[
+          {id:"deapth_strider",lvl:3},
+          {id:"feather_falling",lvl:5},
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;-290001340,895148899,88960615,-428012037]},
+          {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:22.6,Operation:0,UUID:[I;342790009,-841371183,-194298601,70713748]},
+          {Slot:"feet",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.05,Operation:1,UUID:[I;-383472447,-13315987,-850849632,290733049]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"golden_leggings",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Knight Leggings\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ]
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;190461826,-884423165,-918730126,-886334815]},
+          {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:38.8,Operation:0,UUID:[I;767094571,803427639,-696517957,-290382436]},
+          {Slot:"legs",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.05,Operation:1,UUID:[I;-566406113,-708781617,635183112,-730075821]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"golden_chestplate",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Knight Chestplate\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ]
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;268850517,-501974800,-989762332,-985829985]},
+          {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:43.6,Operation:0,UUID:[I;-944998049,850067470,117096652,834568513]},
+          {Slot:"chest",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.05,Operation:1,UUID:[I;191240266,199087554,-698599555,16871530]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"golden_helmet",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Knight Helmet\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ]
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;-562898896,-193710975,-79553280,-887514512]},
+          {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:25.8,Operation:0,UUID:[I;-750373766,506341902,259962376,371908550]},
+          {Slot:"head",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.05,Operation:1,UUID:[I;-272355053,794985183,-181966360,-569693997]}
+        ],
+        HideFlags:64
+      }
+    }
+  ],
+  HandDropChances:[0.085f,0.0f],
+  ArmorDropChances:[0.085f,0.085f,0.085f,0.085f]
+}

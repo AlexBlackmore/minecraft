@@ -4,8 +4,8 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"string",
+          "type":"loot_table",
+          "name":"skyblock:items/tarantula_web",
           "functions":[
             {
               "function":"set_count",
@@ -20,6 +20,25 @@
               "count":{
                 "min":0,
                 "max":1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"experience_bottle",
+          "functions":[
+            {
+              "function":"set_count",
+              "count":{
+                "min":0,
+                "max":1,
+                "type":"uniform"
               }
             }
           ]

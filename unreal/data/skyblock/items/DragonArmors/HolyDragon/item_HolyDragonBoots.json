@@ -1,0 +1,18 @@
+give @p leather_boots{
+  display:{
+    Name:"{\"text\":\"Holy Dragon Boots\",\"italic\":false,\"color\":\"gold\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+    ],
+    color:4706631
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:4}
+  ],
+  AttributeModifiers:[
+    {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:20,Operation:0,UUID:[I;516964422,120139982,892537029,176304407]},
+    {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:18,Operation:0,UUID:[I;101318414,775242040,635232582,76385253]}
+  ],
+  HideFlags:64
+}

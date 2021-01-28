@@ -1,0 +1,21 @@
+give @p netherite_boots{
+  display:{
+    Name:"{\"text\":\"Renowned Boots\",\"italic\":false,\"color\":\"light_purple\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:3}
+  ],
+  AttributeModifiers:[
+    {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:4,Operation:0,UUID:[I;283479828,917922059,325525051,522313889]},
+    {Slot:"feet",AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:3,Operation:0,UUID:[I;991010299,665973214,507583573,396734222]},
+    {Slot:"feet",AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:0.1,Operation:0,UUID:[I;643725716,375793462,392282635,476190950]},
+    {Slot:"feet",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2,Operation:0,UUID:[I;871949351,450665156,631396375,265833543]},
+    {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;825478957,748683057,200200614,655558976]},
+    {Slot:"feet",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.01,Operation:1,UUID:[I;793369484,869227738,710024164,765904855]},
+    {Slot:"feet",AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:0.03,Operation:1,UUID:[I;419672891,42362556,832929281,605863059]}
+  ]
+}

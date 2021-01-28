@@ -1,0 +1,18 @@
+give @p leather_chestplate{
+  display:{
+    Name:"{\"text\":\"Holy Dragon Chestplate\",\"italic\":false,\"color\":\"gold\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+    ],
+    color:4706631
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:4}
+  ],
+  AttributeModifiers:[
+    {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:36,Operation:0,UUID:[I;163364841,262259674,404545338,512407744]},
+    {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:32,Operation:0,UUID:[I;85250478,767328649,600968645,621354299]}
+  ],
+  HideFlags:64
+}

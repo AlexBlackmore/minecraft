@@ -1,0 +1,16 @@
+give @p chest{
+  BlockEntityTag:{
+    LootTable:"skyblock:red_gift"
+  },
+  display:{
+    Lore:[
+      "{\"text\":\"Red Gift\",\"italic\":false,\"color\":\"red\"}",
+      "\" \"",
+      "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:1}
+  ],
+  HideFlags:1
+}

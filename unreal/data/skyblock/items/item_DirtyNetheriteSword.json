@@ -1,0 +1,16 @@
+give @p netherite_sword{
+  display:{
+    Name:"{\"text\":\"Dirty Netherite Sword\",\"italic\":false,\"color\":\"aqua\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:2}
+  ],
+  AttributeModifiers:[
+    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:9,Operation:0,UUID:[I;534435415,455731341,375899298,940511082]},
+    {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:0.05,Operation:1,UUID:[I;225702787,725567606,993821929,204638002]}
+  ]
+}

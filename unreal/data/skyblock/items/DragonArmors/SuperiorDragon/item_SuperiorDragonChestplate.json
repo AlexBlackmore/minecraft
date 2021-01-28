@@ -1,0 +1,20 @@
+give @p leather_chestplate{
+  display:{
+    Name:"{\"text\":\"Superior Dragon Chestplate\",\"italic\":false,\"color\":\"gold\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+    ],
+    color:15916817
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:4}
+  ],
+  AttributeModifiers:[
+    {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:30,Operation:0,UUID:[I;163364841,262259674,404545338,512407744]},
+    {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:38,Operation:0,UUID:[I;85250478,767328649,600968645,621354299]},
+    {Slot:"chest",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2,Operation:0,UUID:[I;814740065,32157444,490580237,978155283]},
+    {Slot:"chest",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.03,Operation:1,UUID:[I;952623693,30928620,101435759,988563060]}
+  ],
+  HideFlags:64
+}

@@ -1,0 +1,42 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_chestplate",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Obsidian Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"While worn, you will gain \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+1%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" Speed\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}]\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Speed\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"},{\\\"text\\\":\\\" for every \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"20\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\"pieces\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},]\",
+                    \"{\\\"text\\\":\\\"of Obsidian in your inventory.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Grants Immunity to the Wither\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Effect While Worn.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ],
+                  color:0
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;107334010,580750029,749217813,374366670]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

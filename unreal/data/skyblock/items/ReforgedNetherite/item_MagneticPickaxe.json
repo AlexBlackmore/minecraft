@@ -1,0 +1,17 @@
+give @p netherite_pickaxe{
+  display:{
+    Name:"{\"text\":\"Magnetic Pickaxe\",\"italic\":false,\"color\":\"aqua\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:2}
+  ],
+  AttributeModifiers:[
+    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;672550994,154462816,274769501,734376499]},
+    {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-0.666,Operation:1,UUID:[I;143373838,744515615,237620519,782906649]},
+    {Slot:"mainhand",AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;318721282,581654732,92420052,902884381]}
+  ]
+}

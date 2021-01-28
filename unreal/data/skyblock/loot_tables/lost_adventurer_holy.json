@@ -1,0 +1,23 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:loot_table",
+          "name":"skyblock:items/dragon_fragment_holy"
+          "functions":[
+            {
+              "function":"set_count",
+              "count":{
+                "min":2,
+                "max":4,
+                "type":"uniform"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

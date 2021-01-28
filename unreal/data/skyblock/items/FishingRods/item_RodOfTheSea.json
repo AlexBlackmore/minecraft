@@ -1,0 +1,17 @@
+give @p fishing_rod{
+  display:{
+    Name:"{\"text\":\"Rod of the Sea\",\"italic\":false,\"color\":\"gold\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"luck_of_the_sea",lvl:3},
+    {id:"lure",lvl:3},
+    {id:"unbreaking",lvl:4}
+  ],
+  AttributeModifiers:[
+    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:60,Operation:0,UUID:[I;639536901,556825362,936509230,829011472]}
+  ]
+}

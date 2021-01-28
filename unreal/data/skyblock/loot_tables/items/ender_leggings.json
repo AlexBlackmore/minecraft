@@ -1,0 +1,38 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:chainmail_leggings",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Ender Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"All stats of this armor are\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"doubled when in The End.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:2}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"legs\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10,Operation:0,UUID:[I;80803629,992741361,836870106,394779853]},
+                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:20,Operation:0,UUID:[I;312399515,191182420,660902879,440587539]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

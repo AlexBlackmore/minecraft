@@ -1,0 +1,16 @@
+give @p fishing_rod{
+  display:{
+    Name:"{\"text\":\"Yeti Rod\",\"italic\":false,\"color\":\"gold\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"lure",lvl:3},
+    {id:"unbreaking",lvl:4}
+  ],
+  AttributeModifiers:[
+    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:56,Operation:0,UUID:[I;420471459,364745131,566532852,951948509]}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"leather_boots",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Squid Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Your shoes spit out Squid ink!\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\"
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ],
+                  color:0
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:20,Operation:0,UUID:[I;526150889,438009915,678684546,834346409]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

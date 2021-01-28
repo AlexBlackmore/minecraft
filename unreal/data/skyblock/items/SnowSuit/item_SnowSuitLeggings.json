@@ -1,0 +1,18 @@
+give @p leather_leggings{
+  display:{
+    Name:"{\"text\":\"Snow Suit Leggings\",\"italic\":false,\"color\":\"light_purple\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+    ],
+    color:16777215
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:3}
+  ],
+  AttributeModifiers:[
+    {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;593807525,925000135,419246869,313304054]},
+    {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:6,Operation:0,UUID:[I;454790665,862037999,442879984,376825314]}
+  ],
+  HideFlags:64
+}

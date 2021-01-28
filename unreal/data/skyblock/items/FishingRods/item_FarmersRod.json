@@ -1,0 +1,16 @@
+give @p fishing_rod{
+  display:{
+    Name:"{\"text\":\"Farmer's Rod\",\"italic\":false,\"color\":\"yellow\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"lure",lvl:2},
+    {id:"unbreaking",lvl:1}
+  ],
+  AttributeModifiers:[
+    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:14,Operation:0,UUID:[I;532071735,898895607,707838542,183907803]}
+  ]
+}

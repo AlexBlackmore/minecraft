@@ -1,0 +1,127 @@
+summon zombie ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Zombie Commander\",\"color\":\"white\"},{\"text\":\" (level-60)\",\"color\":\"#90ff00\"}]",
+  CustomNameVisible:true,
+  Tags:["colosseum"],
+  HandItems:[
+    {
+      id:"fishing_rod",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Commander Whip\",\"italic\":false,\"color\":\"light_purple\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+          ]
+        },
+        Enchantments:[
+          {id:"looting",lvl:3},
+          {id:"sharpness",lvl:5},
+          {id:"unbreaking",lvl:2}
+        ],
+        AttributeModifiers:[
+          {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:14,Operation:0,UUID:[I;137225446,353224488,716093288,592550062]}
+        ]
+      }
+    },
+    {}
+  ],
+  ArmorItems:[
+    {
+      id:"leather_boots",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Commander Boots\",\"italic\":false,\"color\":\"light_purple\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+          ],
+          color:13963824
+        },
+        Enchantments:[
+          {id:"deapth_strider",lvl:3},
+          {id:"feather_falling",lvl:5},
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;342681720,790207067,792379624,602096192]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_leggings",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Commander Leggings\",\"italic\":false,\"color\":\"light_purple\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+          ],
+          color:13963824
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;153351912,238760462,15668048,298096017]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_chestplate",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Commander Chestplate\",\"italic\":false,\"color\":\"light_purple\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+          ],
+          color:13963824
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;503207358,486775782,705941706,386433903]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_helmet",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Commander Helmet\",\"italic\":false,\"color\":\"light_purple\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+          ],
+          color:13963824
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;730762747,57747881,476344657,832295538]}
+        ],
+        HideFlags:64
+      }
+    }
+  ],
+  HandDropChances:[0.085f,0.0f],
+  ArmorDropChances:[0.085f,0.085f,0.085f,0.085f]
+}

@@ -1,0 +1,136 @@
+summon zombie ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Super Tank Zombie\",\"color\":\"white\"},{\"text\":\" (level-50)\",\"color\":\"#80ff00\"}]",
+  CustomNameVisible:true,
+  Tags:["colosseum"],
+  HandItems:[
+    {
+      id:"stone_sword",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Earth Shard\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ]
+        },
+        Enchantments:[
+          {id:"looting",lvl:3},
+          {id:"sharpness",lvl:5},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:25.8,Operation:0,UUID:[I;613683497,504019490,308279934,631734218]},
+          {Slot:"mainhand",AttributeName:"generic.armor",Name:"generic.armor",Amount:18,Operation:0,UUID:[I;943566133,73872619,71043942,6050850]}
+        ]
+      }
+    },
+    {}
+  ],
+  ArmorItems:[
+    {
+      id:"leather_boots",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Super Heavy Boots\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ],
+          color:15132390
+        },
+        Enchantments:[
+          {id:"deapth_strider",lvl:3},
+          {id:"feather_falling",lvl:5},
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;164847148,554535424,54491461,838464140]},
+          {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:28.6,Operation:0,UUID:[I;647073297,783812328,657751450,600704422]},
+          {Slot:"feet",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.1,Operation:1,UUID:[I;531140745,315666922,315802096,643757317]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_leggings",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Super Heavy Leggings\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ],
+          color:5923940
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;23301747,857836702,998569943,61348118]},
+          {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:43.2,Operation:0,UUID:[I;292424299,582814223,94741719,393314441]},
+          {Slot:"legs",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.1,Operation:1,UUID:[I;490210641,463665780,265601836,942243707]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_chestplate",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Super Heavy Chestplate\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ],
+          color:5923940
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;439256145,608657035,26905494,875196558]},
+          {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:49.2,Operation:0,UUID:[I;176485813,745079339,378855909,14807335]},
+          {Slot:"chest",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.1,Operation:1,UUID:[I;160387593,336440451,497970511,539290941]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_helmet",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Super Heavy Helmet\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ],
+          color:15132390
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;919394052,415543673,586457348,745423962]},
+          {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:31.8,Operation:0,UUID:[I;885978967,49196923,66404288,976441120]},
+          {Slot:"head",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.1,Operation:1,UUID:[I;516458592,709602342,211842167,102511235]}
+        ],
+        HideFlags:64
+      }
+    }
+  ],
+  HandDropChances:[0.085f,0.0f],
+  ArmorDropChances:[0.085f,0.085f,0.085f,0.085f]
+}

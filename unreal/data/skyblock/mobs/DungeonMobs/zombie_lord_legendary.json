@@ -1,0 +1,109 @@
+summon zombie ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Zombie Lord\",\"color\":\"white\"},{\"text\":\" (level-80)\",\"color\":\"#b0ff00\"}]",
+  CustomNameVisible:true,
+  Tags:["colosseum"],
+  ArmorItems:[
+    {
+      id:"leather_boots",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Lord Boots\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ],
+          color:11141290
+        },
+        Enchantments:[
+          {id:"deapth_strider",lvl:3},
+          {id:"feather_falling",lvl:5},
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:40.2,Operation:0,UUID:[I;883810388,384239184,95254719,677351616]},
+          {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:13.8,Operation:0,UUID:[I;992389891,854074097,518575093,580628189]},
+          {Slot:"feet",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;573111298,764697362,221527214,463289104]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_leggings",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Lord Leggings\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ],
+          color:11141290
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:56.4,Operation:0,UUID:[I;257360791,644264630,579192701,208883414]},
+          {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:21.6,Operation:0,UUID:[I;71765865,655123094,742991607,468318184]},
+          {Slot:"legs",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;343003978,501456567,914426138,7782115]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"leather_chestplate",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Lord Chestplate\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ],
+          color:11141290
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:63,Operation:0,UUID:[I;343003978,501456567,914426138,7782115]},
+          {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:25,Operation:0,UUID:[I;970583318,644547605,866917700,474657859]},
+          {Slot:"chest",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;252602469,949911006,575264125,661819258]}
+        ],
+        HideFlags:64
+      }
+    },
+    {
+      id:"golden_helmet",
+      Count:1,
+      tag:{
+        display:{
+          Name:"{\"text\":\"Zombie Lord Helmet\",\"italic\":false,\"color\":\"gold\"}",
+          Lore:[
+            "\" \"",
+            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+          ]
+        },
+        Enchantments:[
+          {id:"protection",lvl:5},
+          {id:"thorns",lvl:3},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:46.8,Operation:0,UUID:[I;181378709,431331461,609112106,633886152]},
+          {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:17.2,Operation:0,UUID:[I;320054006,21356494,520842186,541260238]},
+          {Slot:"head",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;6897868,919296695,746943896,181652085]}
+        ],
+        HideFlags:64
+      }
+    }
+  ],
+  ArmorDropChances:[0.085f,0.085f,0.085f,0.085f]
+}

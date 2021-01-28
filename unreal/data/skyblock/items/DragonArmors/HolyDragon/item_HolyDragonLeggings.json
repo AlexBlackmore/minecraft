@@ -1,0 +1,18 @@
+give @p leather_leggings{
+  display:{
+    Name:"{\"text\":\"Holy Dragon Leggings\",\"italic\":false,\"color\":\"gold\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+    ],
+    color:4706631
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:4}
+  ],
+  AttributeModifiers:[
+    {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:31,Operation:0,UUID:[I;612503681,477078275,719145972,723990602]},
+    {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:28,Operation:0,UUID:[I;523419087,547767249,177821044,718727547]}
+  ],
+  HideFlags:64
+}

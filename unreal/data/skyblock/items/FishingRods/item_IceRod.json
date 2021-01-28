@@ -1,0 +1,16 @@
+give @p fishing_rod{
+  display:{
+    Name:"{\"text\":\"Ice Rod\",\"italic\":false,\"color\":\"aqua\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"lure",lvl:1},
+    {id:"unbreaking",lvl:2}
+  ],
+  AttributeModifiers:[
+    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:6,Operation:0,UUID:[I;960935465,141595161,481972486,468285933]}
+  ]
+}

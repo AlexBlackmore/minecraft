@@ -1,0 +1,16 @@
+give @p netherite_hoe{
+  display:{
+    Name:"{\"text\":\"Blessed Hoe\",\"italic\":false,\"color\":\"light_purple\"}",
+    Lore:[
+      "\" \"",
+      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+    ]
+  },
+  Enchantments:[
+    {id:"unbreaking",lvl:3}
+  ],
+  AttributeModifiers:[
+    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:-1,Operation:0,UUID:[I;134562793,190319551,971566855,462561618]},
+    {Slot:"mainhand",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.13,Operation:1,UUID:[I;305113683,939171288,298412909,62669619]}
+  ]
+}
