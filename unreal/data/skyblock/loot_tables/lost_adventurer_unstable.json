@@ -4,6 +4,25 @@
       "rolls":1,
       "entries":[
         {
+          "type":"minecraft:item",
+          "name":"dragon_breath"
+          "functions":[
+            {
+              "function":"set_count",
+              "count":{
+                "min":1,
+                "max":5,
+                "type":"uniform"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
           "type":"minecraft:loot_table",
           "name":"skyblock:items/dragon_fragment_unstable"
           "functions":[
