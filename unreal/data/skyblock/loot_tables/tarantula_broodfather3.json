@@ -4,8 +4,8 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"string",
+          "type":"loot_table",
+          "name":"tarantula_web",
           "functions":[
             {
               "function":"set_count",
@@ -34,39 +34,14 @@
           "name":"tipped_arrow",
           "functions":[
             {
-              "function":"set_nbt",
-              "tag":"{
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Toxic Arrow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
-                  Lore:[
-                    \"{\\\"text\\\":\\\"Instant Damage II\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"}\",
-                    \"{\\\"text\\\":\\\"Poison (0:04)\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"}\",
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
-                  ]
-                },
-                CustomPotionEffects:[
-                  {Id:7,Amplifier:1,Duration:1},
-                  {Id:19,Amplifier:1,Duration:80}
-                ],
-                Potion:\"empty\",
-                CustomPotionColor:2293580,
-                HideFlags:32
-              }"
+              "type":"loot_table",
+              "name":"toxic_arrow",
             },
             {
               "function":"set_count",
               "count":{
                 "min":24,
-                "max":30,
-                "type":"uniform"
-              }
-            },
-            {
-              "function":"looting_enchant",
-              "count":{
-                "min":0,
-                "max":1
+                "max":30
               }
             }
           ],
@@ -84,35 +59,31 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"enchanted_book",
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Spider Catalyst\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
-                  Lore:[
-                    \"{\\\"text\\\":\\\"An extraordinarily rare drop\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"{\\\"text\\\":\\\"from a Tier III+ Tarantula\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"{\\\"text\\\":\\\"Broodfather.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"\\\" \\\"\",
-                    \"\\\"Can be used to upgrade an item\\\"\",
-                    \"\\\"at Maddox the Slayer.\\\"\",
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
-                  ]
-                }
-              }"
-            }
-          ],
-          "conditions":[
-            {
-              "condition":"random_chance_with_looting",
-              "chance":0.01,
-              "looting_multiplier":0.01
-            }
-          ]
+          "type":"loot_table",
+          "name":"skyblock:items/spider_catalyst"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"random_chance_with_looting",
+          "chance":0.01,
+          "looting_multiplier":0.01
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"loot_table",
+          "name":"skyblock:items/enchanted_book_baneofarthropods6"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"random_chance_with_looting",
+          "chance":0.01,
+          "looting_multiplier":0.01
         }
       ]
     },
@@ -121,29 +92,15 @@
       "entries":[
         {
           "type":"item",
-          "name":"enchanted_book",
+          "name":"experience_bottle",
           "functions":[
             {
-              "function":"set_nbt",
-              "tag":"{
-                StoredEnchantments:[
-                  {id:\"bane_of_arthropods\",lvl:6}
-                ],
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Enchanted Book\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
-                  Lore:[
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
-                  ]
-                }
-              }"
-            }
-          ],
-          "conditions":[
-            {
-              "condition":"random_chance_with_looting",
-              "chance":0.01,
-              "looting_multiplier":0.01
+              "function":"set_count",
+              "count":{
+                "min":14,
+                "max":15,
+                "type":"uniform"
+              }
             }
           ]
         }
