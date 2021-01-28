@@ -1,0 +1,36 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:tipped_arrow",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Toxic Arrow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"Instant Damage II\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"}\",
+                    \"{\\\"text\\\":\\\"Poison (0:04)\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ]
+                },
+                CustomPotionEffects:[
+                  {Id:7,Amplifier:1,Duration:1},
+                  {Id:19,Amplifier:1,Duration:80}
+                ],
+                Potion:\"empty\",
+                CustomPotionColor:2293580,
+                HideFlags:32
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
