@@ -1,0 +1,38 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_helmet",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Holy Dragon Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Bonus: Holy Blood\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Increases the natural \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"Health\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"}]\",
+                    \"{\\\"text\\\":\\\"regeneration of you and all\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"players in a\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"6\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" block radius by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"3x\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ],
+                  color:4706631
+                },
+                AttributeModifiers:[
+                  {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:22,Operation:0,UUID:[I;354188032,375135242,693008749,728096879]},
+                  {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:22,Operation:0,UUID:[I;642533667,670475990,21722314,768717433]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

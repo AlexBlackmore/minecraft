@@ -1,0 +1,34 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:iron_sword",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Hunter Knife\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:"unbreaking",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:10,Operation:0,UUID:[I;554025128,720903561,87891800,234173522]},
+                  {Slot:\"mainhand\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:40,Operation:1,UUID:[I;906675318,640477684,561106596,393546153]}
+                ]
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

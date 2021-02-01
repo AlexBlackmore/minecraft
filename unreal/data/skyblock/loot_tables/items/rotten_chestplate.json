@@ -1,0 +1,85 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_chestplate",
+          "weight":19,
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Rotten Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"This rotten piece of armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"grants \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"15%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"},{\\\"text\\\":\\\" knockback resistance\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"{\\\"text\\\":\\\"to arrows per piece worn.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Bonus: Sieve Body\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Grants an additional \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"20%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}]\",
+                    \"{\\\"text\\\":\\\"knockback resistance to arrows.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ],
+                  color:97585
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:5},
+                  {id:\"thorns\",lvl:3},
+                  {id:\"unbreaking\",lvl:2}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:28,Operation:0,UUID:[I;638914160,511746161,-625004127,-319662215]},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3,Operation:0,UUID:[I;-975671926,-373857968,-264716834,-966200042]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:leather_chestplate",
+          "weight":1,
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Rotten Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"This rotten piece of armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"grants \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"15%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"},{\\\"text\\\":\\\" knockback resistance\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"{\\\"text\\\":\\\"to arrows per piece worn.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Bonus: Sieve Body\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Grants an additional \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"20%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}]\",
+                    \"{\\\"text\\\":\\\"knockback resistance to arrows.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ],
+                  color:97585
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:5},
+                  {id:\"thorns\",lvl:3},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:42,Operation:0,UUID:[I;638914160,511746161,-625004127,-319662215]},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4.5,Operation:0,UUID:[I;-975671926,-373857968,-264716834,-966200042]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_leggings",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Unstable Dragon Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Bonus: Unstable Blood\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"{\\\"text\\\":\\\"Sometimes strikes nearby mobs\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"with lightning. It's unstable!\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ],
+                  color:11670243
+                },
+                Enchantments:[
+                  {id:"unbreaking",lvl:4}
+                ],
+                AttributeModifiers:[
+                  {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:20,Operation:0,UUID:[I;756448827,662431889,991521461,227505340]},
+                  {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:28,Operation:0,UUID:[I;135647361,502569922,907791208,608720518]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

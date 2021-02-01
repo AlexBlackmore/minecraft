@@ -45,11 +45,47 @@ give @p villager_spawn_egg{
         {
   				buy:{
   					id:"emerald",
-  					Count:1
+  					Count:8
   				},
   				sell:{
   					id:"ender_pearl",
-  					Count:1
+  					Count:8,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Silent Pearl\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Endermen won't be attracted to\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"you when used.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							}
+						}
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"emerald",
+  					Count:8
+  				},
+  				sell:{
+  					id:"totem_of_undying",
+  					Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Remnant of the Eye\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Keeps you alive when you're on\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"death's door, granting a short\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"period of invincibility.\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Consumed on use\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							}
+						}
   				},
   				rewardExp:false,
   				maxUses:640
@@ -66,6 +102,10 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"text\":\"Stonk\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
+									"\" \"",
+									"{\"text\":\"When mining End Stone, this pick\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"gives experience and a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"5%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"to drop an extra block.\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
 									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
 								]

@@ -14,325 +14,206 @@ give @p villager_spawn_egg{
 			profession:"armorer",
 			type:"swamp"
 		},
-		Attributes:[
+		Attributes: [
 			{
 				Name:"generic.movementSpeed",
 				Base:"0f"
 			}
 		],
-		Offers:{
-			Recipes:[
+		Offers:
+		{
+			Recipes: [
 				{
 					buy:
 					{
-						id:"leather_helmet",
+						id:"gold_block",
+						Count:15
+					},
+					buyB:{
+						id:"gold_ingot",
+						Count:3
+					},
+					sell:
+					{
+						id:"diamond_helmet",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Lufenian Helm\",\"italic\":false,\"color\":\"green\"}",
+								Name:"{\"text\":\"Hinder's Visage\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
+									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
 									"\" \"",
-									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}"
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
 								]
 							},
 							Enchantments:[
-								{id:"projectile_protection",lvl:1},
-								{id:"protection",lvl:1},
-								{id:"unbreaking",lvl:1}
+								{id:"protection",lvl:2},
+								{id:"projectile_protection",lvl:2},
+								{id:"thorns",lvl:2},
+								{id:"unbreaking",lvl:5}
 							]
 						}
 					},
-					buyB:
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
 					{
-						id:"emerald",
+						id:"gold_block",
+						Count:16
+					},
+					buyB:{
+						id:"gold_ingot",
+						Count:3
+					},
+					sell:
+					{
+						id:"diamond_chestplate",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Demonskin\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"protection",lvl:2},
+								{id:"blast_protection",lvl:2},
+								{id:"thorns",lvl:2},
+								{id:"unbreaking",lvl:5}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"gold_block",
+						Count:16
+					},
+					sell:
+					{
+						id:"diamond_leggings",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Warlord Legplates\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"protection",lvl:2},
+								{id:"projectile_protection",lvl:2},
+								{id:"thorns",lvl:2},
+								{id:"unbreaking",lvl:5}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"gold_block",
+						Count:15
+					},
+					sell:
+					{
+						id:"diamond_boots",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Taz's Lavawalker\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"protection",lvl:2},
+								{id:"feather_falling",lvl:2},
+								{id:"thorns",lvl:2},
+								{id:"unbreaking",lvl:5}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"gold_block",
+						Count:21
+					},
+					buyB:{
+						id:"gold_ingot",
+						Count:4
+					},
+					sell:
+					{
+						id:"diamond_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Oblivion\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore: [
+									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"sharpness",lvl:9},
+								{id:"bane_of_arthropods",lvl:2},
+								{id:"smite",lvl:2},
+								{id:"unbreaking",lvl:5}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"gold_block",
 						Count:18
 					},
-					sell:
-					{
-						id:"chest",
-						Count:1,
-						tag:{
-							BlockEntityTag:{
-								LootTable:"unreal:crimson_blade_reforge_helmet"
-							},
-							display:{
-								Lore:[
-									"{\"text\":\"Crimson Blade Reforge Chest (Helmet)\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-									"\" \"",
-									"{\"text\":\"Raven Set 42.1%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Shadow Set 26.3%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Demonic Set 15.8%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archdemon Set 10.5%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archangel Set 5.3%\",\"italic\":false,\"color\":\"white\"}"
-								]
-							},
-						  Enchantments:[
-						    {id:"unbreaking",lvl:1}
-						  ],
-						  HideFlags:1
-						}
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
-						id:"leather_chestplate",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"text\":\"Quagie's Might\",\"italic\":false,\"color\":\"green\"}",
-								Lore:[
-									"\" \"",
-									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}"
-								]
-							},
-							Enchantments:[
-								{id:"blast_protection",lvl:1},
-								{id:"protection",lvl:1},
-								{id:"unbreaking",lvl:1}
-							]
-						}
-					},
-					buyB:
-					{
-						id:"emerald",
-						Count:20
+					buyB:{
+						id:"gold_ingot",
+						Count:8
 					},
 					sell:
-					{
-						id:"chest",
-						Count:1,
-						tag:{
-							BlockEntityTag:{
-								LootTable:"unreal:crimson_blade_reforge_chestplate",
-							},
-							display:{
-								Lore:[
-									"{\"text\":\"Crimson Blade Reforge Chest (Chestplate)\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-									"\" \"",
-									"{\"text\":\"Raven Set 42.1%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Shadow Set 26.3%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Demonic Set 15.8%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archdemon Set 10.5%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archangel Set 5.3%\",\"italic\":false,\"color\":\"white\"}"
-								]
-							},
-						  Enchantments:[
-						    {id:"unbreaking",lvl:1}
-						  ],
-						  HideFlags:1
-						}
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
-						id:"leather_leggings",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"text\":\"Judgement Legplates\",\"italic\":false,\"color\":\"green\"}",
-								Lore:[
-									"\" \"",
-									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}"
-								]
-							},
-							Enchantments:[
-								{id:"projectile_protection",lvl:1},
-								{id:"protection",lvl:1},
-								{id:"unbreaking",lvl:1}
-							]
-						}
-					},
-					buyB:
-					{
-						id:"emerald",
-						Count:19
-					},
-					sell:
-					{
-						id:"chest",
-						Count:1,
-						tag:{
-							BlockEntityTag:{
-								LootTable:"unreal:crimson_blade_reforge_leggings",
-							},
-							display:{
-								Lore:[
-									"{\"text\":\"Crimson Blade Reforge Chest (Leggings)\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-									"\" \"",
-									"{\"text\":\"Raven Set 42.1%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Shadow Set 26.3%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Demonic Set 15.8%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archdemon Set 10.5%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archangel Set 5.3%\",\"italic\":false,\"color\":\"white\"}"
-								]
-							},
-						  Enchantments:[
-						    {id:"unbreaking",lvl:1}
-						  ],
-						  HideFlags:1
-						}
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
-						id:"leather_boots",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"text\":\"Millsy's Escape\",\"italic\":false,\"color\":\"green\"}",
-								Lore:[
-									"\" \"",
-									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}"
-								]
-							},
-							Enchantments:[
-								{id:"protection",lvl:1},
-								{id:"unbreaking",lvl:1}
-							]
-						}
-					},
-					buyB:
-					{
-						id:"emerald",
-						Count:21
-					},
-					sell:
-					{
-						id:"chest",
-						Count:1,
-						tag:{
-							BlockEntityTag:{
-								LootTable:"unreal:crimson_blade_reforge_boots",
-							},
-							display:{
-								Lore:[
-									"{\"text\":\"Crimson Blade Reforge Chest (Boots)\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-									"\" \"",
-									"{\"text\":\"Raven Set 42.1%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Shadow Set 26.3%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Demonic Set 15.8%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archdemon Set 10.5%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archangel Set 5.3%\",\"italic\":false,\"color\":\"white\"}"
-								]
-							},
-						  Enchantments:[
-						    {id:"unbreaking",lvl:1}
-						  ],
-						  HideFlags:1
-						}
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
-						id:"iron_sword",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"text\":\"Victor's Grace\",\"italic\":false,\"color\":\"green\"}",
-								Lore: [
-									"\" \"",
-									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}"
-								]
-							},
-							Enchantments:[
-								{id:"bane_of_arthropods",lvl:1},
-								{id:"sharpness",lvl:5},
-								{id:"smite",lvl:1},
-								{id:"unbreaking",lvl:1}
-							]
-						}
-					},
-					buyB:
-					{
-						id:"emerald",
-						Count:21
-					},
-					sell:
-					{
-						id:"chest",
-						Count:1,
-						tag:{
-							BlockEntityTag:{
-								LootTable:"unreal:crimson_blade_reforge_sword",
-							},
-							display:{
-								Lore:[
-									"{\"text\":\"Crimson Blade Reforge Chest (Sword)\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-									"\" \"",
-									"{\"text\":\"Raven Set 45.5%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Shadow Set 27.3%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archdemon Set 18.8%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archangel Set 9.1%\",\"italic\":false,\"color\":\"white\"}"
-								]
-							},
-						  Enchantments:[
-						    {id:"unbreaking",lvl:1}
-						  ],
-						  HideFlags:1
-						}
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
 					{
 						id:"bow",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Hawk Strike\",\"italic\":false,\"color\":\"green\"}",
+								Name:"{\"text\":\"Soul Breaker\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
+									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
 									"\" \"",
-									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}"
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
 								]
 							},
 							Enchantments:[
+								{id:"power",lvl:9},
+								{id:"punch",lvl:1},
 								{id:"infinity",lvl:1},
-								{id:"power",lvl:4},
-								{id:"unbreaking",lvl:1}
+								{id:"unbreaking",lvl:5}
 							]
-						}
-					},
-					buyB:
-					{
-						id:"emerald",
-						Count:24
-					},
-					sell:
-					{
-						id:"chest",
-						Count:1,
-						tag:{
-							BlockEntityTag:{
-								LootTable:"unreal:crimson_blade_reforge_bow",
-							},
-							display:{
-								Lore:[
-									"{\"text\":\"Crimson Blade Reforge Chest (Bow)\",\"italic\":false,\"underlined\":true,\"color\":\"yellow\"}",
-									"\" \"",
-									"{\"text\":\"Raven Set 45.5%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Shadow Set 27.3%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archdemon Set 18.8%\",\"italic\":false,\"color\":\"white\"}",
-									"{\"text\":\"Archangel Set 9.1%\",\"italic\":false,\"color\":\"white\"}"
-								]
-							},
-						  Enchantments:[
-						    {id:"unbreaking",lvl:1}
-						  ],
-						  HideFlags:1
 						}
 					},
 					rewardExp:false,

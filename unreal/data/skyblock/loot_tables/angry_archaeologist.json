@@ -4,18 +4,15 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"diamond",
+          "type":"loot_table",
+          "name":"skyblock:items/enchanted/diamond",
           "functions":[
             {
               "function":"set_count",
-              "count":1
-            },
-            {
-              "function":"looting_enchant",
               "count":{
                 "min":0,
-                "max":1
+                "max":1,
+                "type":"uniform"
               }
             }
           ]
@@ -31,7 +28,7 @@
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/superboom_tnt"
+          "name":"skyblock:items/superboom_tnt",
           "functions":[
             {
               "function":"set_count",
@@ -50,7 +47,7 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"totem_of_undying"
+          "name":"totem_of_undying",
           "functions":[
             {
               "function":"set_count",

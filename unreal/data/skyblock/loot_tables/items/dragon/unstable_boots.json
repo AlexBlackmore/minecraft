@@ -1,0 +1,40 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_boots",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Unstable Dragon Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Bonus: Unstable Blood\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"{\\\"text\\\":\\\"Sometimes strikes nearby mobs\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"with lightning. It's unstable!\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ],
+                  color:11670243
+                },
+                Enchantments:[
+                  {id:"unbreaking",lvl:4}
+                ],
+                AttributeModifiers:[
+                  {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:12,Operation:0,UUID:[I;60006271,105112922,799936786,816512731]},
+                  {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:18,Operation:0,UUID:[I;718330852,996951350,203458064,196324262]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

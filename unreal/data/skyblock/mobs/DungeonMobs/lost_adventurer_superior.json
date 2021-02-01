@@ -1,4 +1,4 @@
-summon zombie ~ ~ ~ {
+summon zombified_piglin ~ ~ ~ {
   CustomName:"[\"\",{\"text\":\"⭐ \",\"color\":\"yellow\"},{\"text\":\"Lost Adventurer\",\"color\":\"light_purple\"}]",
   CustomNameVisible:true,
   Tags:["colosseum"],
@@ -14,16 +14,6 @@ summon zombie ~ ~ ~ {
       id:"diamond_sword",
       Count:1,
       tag:{
-        display:{
-          Name:"{\"text\":\"Aspect of the Dragon\",\"italic\":false,\"color\":\"gold\"}",
-          Lore:[
-            "\" \"",
-            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
-          ]
-        },
-        Enchantments:[
-          {id:"unbreaking",lvl:4}
-        ],
         AttributeModifiers:[
           {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:65,Operation:0,UUID:[I;524312315,816545671,289779906,411131256]}
         ]
@@ -37,16 +27,8 @@ summon zombie ~ ~ ~ {
       Count:1,
       tag:{
         display:{
-          Name:"{\"text\":\"Superior Dragon Boots\",\"italic\":false,\"color\":\"gold\"}",
-          Lore:[
-            "\" \"",
-            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
-          ],
           color:15883544
         },
-        Enchantments:[
-          {id:"unbreaking",lvl:4}
-        ],
         AttributeModifiers:[
           {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:16,Operation:0,UUID:[I;516964422,120139982,892537029,176304407]},
           {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:22,Operation:0,UUID:[I;101318414,775242040,635232582,76385253]},
@@ -61,16 +43,8 @@ summon zombie ~ ~ ~ {
       Count:1,
       tag:{
         display:{
-          Name:"{\"text\":\"Superior Dragon Leggings\",\"italic\":false,\"color\":\"gold\"}",
-          Lore:[
-            "\" \"",
-            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
-          ],
           color:15916817
         },
-        Enchantments:[
-          {id:"unbreaking",lvl:4}
-        ],
         AttributeModifiers:[
           {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:26,Operation:0,UUID:[I;612503681,477078275,719145972,723990602]},
           {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:34,Operation:0,UUID:[I;523419087,547767249,177821044,718727547]},
@@ -85,16 +59,8 @@ summon zombie ~ ~ ~ {
       Count:1,
       tag:{
         display:{
-          Name:"{\"text\":\"Superior Dragon Chestplate\",\"italic\":false,\"color\":\"gold\"}",
-          Lore:[
-            "\" \"",
-            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
-          ],
           color:15916817
         },
-        Enchantments:[
-          {id:"unbreaking",lvl:4}
-        ],
         AttributeModifiers:[
           {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:30,Operation:0,UUID:[I;163364841,262259674,404545338,512407744]},
           {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:38,Operation:0,UUID:[I;85250478,767328649,600968645,621354299]},
@@ -104,30 +70,7 @@ summon zombie ~ ~ ~ {
         HideFlags:64
       }
     },
-    {
-      id:"leather_helmet",
-      Count:1,
-      tag:{
-        display:{
-          Name:"{\"text\":\"Superior Dragon Helmet\",\"italic\":false,\"color\":\"gold\"}",
-          Lore:[
-            "\" \"",
-            "{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
-          ],
-          color:15883544
-        },
-        Enchantments:[
-          {id:"unbreaking",lvl:4}
-        ],
-        AttributeModifiers:[
-          {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:18,Operation:0,UUID:[I;412229192,212620848,213052577,242326845]},
-          {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:26,Operation:0,UUID:[I;131025675,475536970,570224518,496226861]},
-          {Slot:"head",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2,Operation:0,UUID:[I;788189277,537835852,145341399,239175572]},
-          {Slot:"head",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.03,Operation:1,UUID:[I;635035439,602687543,248445932,110820433]}
-        ],
-        HideFlags:64
-      }
-    }
+    {}
   ],
   HandDropChances:[0.0f,0.0f],
   ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],

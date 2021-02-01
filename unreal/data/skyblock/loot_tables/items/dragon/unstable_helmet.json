@@ -1,0 +1,40 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_helmet",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Unstable Dragon Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Bonus: Unstable Blood\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"{\\\"text\\\":\\\"Sometimes strikes nearby mobs\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"with lightning. It's unstable!\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ],
+                  color:11670243
+                },
+                Enchantments:[
+                  {id:"unbreaking",lvl:4}
+                ],
+                AttributeModifiers:[
+                  {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:14,Operation:0,UUID:[I;965680863,457263405,483262354,856209230]},
+                  {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:22,Operation:0,UUID:[I;398522537,641908666,744096218,831128641]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:blaze_rod",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Ember Rod\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Item Ability: Fire Blast\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Shoots \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"3\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" Fireballs in rapid\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"{\\\"text\\\":\\\"succession.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Mana Cost: \\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_gray\\\"},{\\\"text\\\":\\\"150\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_aqua\\\"}]\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Cooldown: \\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_gray\\\"},{\\\"text\\\":\\\"30s\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:"unbreaking",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:23,Operation:0,UUID:[I;434260032,520181166,137198787,487547330]}
+                ]
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

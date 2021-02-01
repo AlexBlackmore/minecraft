@@ -1,0 +1,24 @@
+summon vindicator ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Crypt Dreadlord\",\"color\":\"white\"},{\"text\":\" (level-20)\",\"color\":\"gray\"}]",
+  CustomNameVisible:true,
+  Tags:["colosseum"],
+  HandItems:[
+    {
+      id:"iron_sword",
+      Count:1,
+      tag:{
+        Enchantments:[
+          {id:"looting",lvl:3},
+          {id:"sharpness",lvl:5},
+          {id:"unbreaking",lvl:3}
+        ],
+        AttributeModifiers:[
+          {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:10.4,Operation:0,UUID:[I;432580984,774109919,255564732,-557253268]}
+        ]
+      }
+    },
+    {}
+  ],
+  HandDropChances:[0.0f,0.0f],
+  DeathLootTable:"skyblock:crypt_dreadlord"
+}

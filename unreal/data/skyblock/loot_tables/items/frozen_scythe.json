@@ -1,0 +1,39 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:iron_hoe",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Frozen Scythe\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[
+                    \"\\\"Shoots 1 Ice Bolt that deals 200 Damage and slows enemies for 5 seconds.\\\"\",
+                    \"{\\\"text\\\":\\\"Item Ability: Ice Bolt\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Shoots \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"1\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" Ice Bolt that deals \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"200\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"}]\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"},{\\\"text\\\":\\\" and slows enemies for \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"5\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}]\",
+                    \"{\\\"text\\\":\\\"seconds.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Mana Cost: \\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_gray\\\"},{\\\"text\\\":\\\"50\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_aqua\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:"unbreaking",lvl:2}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:16,Operation:0,UUID:[I;233288417,259929776,710642715,119225690]}
+                ]
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
