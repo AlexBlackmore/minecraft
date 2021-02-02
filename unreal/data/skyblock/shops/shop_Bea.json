@@ -1,0 +1,171 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Bea\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:
+		{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes: [
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes: [
+				{
+					buy:
+					{
+						id:"coal_block",
+						Count:2
+					},
+					buyB:
+					{
+						id:"gold_block",
+						Count:2
+					},
+					sell:
+					{
+						id:"honey_bottle",
+						Count:8
+					},
+					rewardExp:false,
+					maxUses:80
+				},
+				{
+					buy:
+					{
+						id:"coal_block",
+						Count:64
+					},
+					buyB:
+					{
+						id:"gold_block",
+						Count:64
+					},
+					sell:
+					{
+						id:"beehive",
+						Count:64
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"coal_block",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:
+					{
+						id:"gold_block",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+	            CustomPotionEffects:[
+								{Id:5,Amplifier:1,Duration:24000},
+								{Id:1,Amplifier:0,Duration:24000},
+	              {Id:22,Amplifier:0,Duration:24000}
+	            ],
+	            display:{
+	              Name:"{\"text\":\"Enchanted Golden Honey\",\"italic\":false,\"color\":\"light_purple\"}",
+	              Lore:[
+	                "{\"text\":\"Strength II (20:00)\",\"italic\":false,\"color\":\"blue\"}",
+	                "{\"text\":\"Speed (20:00)\",\"italic\":false,\"color\":\"blue\"}",
+	                "{\"text\":\"Absorption (20:00)\",\"italic\":false,\"color\":\"blue\"}",
+	                "\" \"",
+	                "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+									"{\"text\":\"+6 Attack Damage\",\"italic\":false,\"color\":\"blue\"}",
+									"{\"text\":\"+20% Speed\",\"italic\":false,\"color\":\"blue\"}",
+	                "{\"text\":\"+1 Absorption Heart\",\"italic\":false,\"color\":\"blue\"}",
+	              ]
+	            },
+	            CustomPotionColor:2445989,
+	            HideFlags:32
+	          }
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"coal_block",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:
+					{
+						id:"gold_block",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:
+					{
+						id:"bee_spawn_egg",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Bee\",\"italic\":false,\"color\":\"gold\"}"
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				}
+			]
+		}
+	},
+	display:{
+		Name:"{\"text\":\"Bea\"}"
+	}
+}

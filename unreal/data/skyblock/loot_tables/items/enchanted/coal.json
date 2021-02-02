@@ -1,0 +1,27 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:coal",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Enchanted Coal\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:1}
+                ],
+                HideFlags:1
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -102,77 +102,9 @@ give @p villager_spawn_egg{
 				{
 					maxUses:0
 				},
-  			{
-  				buy:{
-  					id:"zombie_head",
-  					Count:1
-  				},
-          buyB:{
-            id:"potion",
-  					Count:1,
-  					tag:{
-              Potion:"minecraft:empty",
-              display:{
-                Name:"{\"text\":\"Potion of Decay\",\"italic\":false}",
-                Lore:[
-  								"{\"text\":\"Wither (0:40)\",\"italic\":false,\"color\":\"red\"}"
-  							]
-              },
-              CustomPotionEffects:[
-                {
-                  Id:20,
-                  Amplifier:0,
-                  Duration:800
-                }
-              ],
-              CustomPotionColor:3484199,
-              HideFlags:32
-  					}
-  				},
-  				sell:{
-  					id:"wither_skeleton_skull",
-  					Count:1
-  				},
-  				rewardExp:false,
-  				maxUses:2147483647
-  			},
         {
           buy:{
             id:"skeleton_skull",
-            Count:1
-          },
-          buyB:{
-            id:"potion",
-  					Count:1,
-  					tag:{
-              Potion:"minecraft:empty",
-              display:{
-                Name:"{\"text\":\"Potion of Decay\",\"italic\":false}",
-                Lore:[
-  								"{\"text\":\"Wither (0:40)\",\"italic\":false,\"color\":\"red\"}"
-  							]
-              },
-              CustomPotionEffects:[
-                {
-                  Id:20,
-                  Amplifier:0,
-                  Duration:800
-                }
-              ],
-              CustomPotionColor:3484199,
-              HideFlags:32
-  					}
-  				},
-  				sell:{
-  					id:"wither_skeleton_skull",
-  					Count:1
-  				},
-          rewardExp:false,
-          maxUses:2147483647
-        },
-        {
-          buy:{
-            id:"creeper_head",
             Count:1
           },
           buyB:{
