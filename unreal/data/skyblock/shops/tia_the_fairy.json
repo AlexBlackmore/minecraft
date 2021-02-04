@@ -1,0 +1,164 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Tia the Fairy\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Offers:{
+			Recipes:[
+				{
+					buy:{
+						id:"leather_helmet",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Fairy Fedora\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Full Set Bonus: Fairy's Outfit\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Increases \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Speed\",\"italic\":false,\"color\":\"white\"},{\"text\":\" by \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"10%\",\"italic\":false,\"color\":\"green\"},{\"text\":\". Gain \",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"1 Health\",\"italic\":false,\"color\":\"red\"},{\"text\":\" per Fairy Soul found.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								],
+								color:16724889
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:2}
+							],
+							AttributeModifiers:[
+								{Slot:"chest",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:10,Operation:1,UUID:[I;286296043,577034965,38574117,428678061]},
+								{Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;313117402,610844488,389621059,910226718]},
+								{Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;568602518,338034616,349865688,702742252]}
+							],
+							HideFlags:64
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:8
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"leather_chestplate",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Fairy Polo\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Full Set Bonus: Fairy's Outfit\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Increases \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Speed\",\"italic\":false,\"color\":\"white\"},{\"text\":\" by \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"10%\",\"italic\":false,\"color\":\"green\"},{\"text\":\". Gain \",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"1 Health\",\"italic\":false,\"color\":\"red\"},{\"text\":\" per Fairy Soul found.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								],
+								color:16737970
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:2}
+							],
+							AttributeModifiers:[
+								{Slot:"chest",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:10,Operation:1,UUID:[I;579462579,687496733,111701976,690234529]},
+								{Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;684000807,608814627,896203038,837396389]},
+								{Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;997822103,792922449,888530418,867017217]}
+							],
+							HideFlags:64
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:8
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"leather_leggings",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Fairy Trousers\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Full Set Bonus: Fairy's Outfit\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Increases \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Speed\",\"italic\":false,\"color\":\"white\"},{\"text\":\" by \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"10%\",\"italic\":false,\"color\":\"green\"},{\"text\":\". Gain \",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"1 Health\",\"italic\":false,\"color\":\"red\"},{\"text\":\" per Fairy Soul found.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								],
+								color:16751052
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:2}
+							],
+							AttributeModifiers:[
+								{Slot:"legs",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:10,Operation:1,UUID:[I;644993675,219537454,874179954,196065853]},
+								{Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;853193998,447292168,131809706,788531837]},
+								{Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;24163497,588236644,394505682,129115776]}
+							],
+							HideFlags:64
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:8
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"leather_boots",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Fairy Galoshes\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Full Set Bonus: Fairy's Outfit\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Increases \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Speed\",\"italic\":false,\"color\":\"white\"},{\"text\":\" by \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"10%\",\"italic\":false,\"color\":\"green\"},{\"text\":\". Gain \",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"1 Health\",\"italic\":false,\"color\":\"red\"},{\"text\":\" per Fairy Soul found.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								],
+								color:16764133
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:2}
+							],
+							AttributeModifiers:[
+								{Slot:"feet",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:10,Operation:1,UUID:[I;579583280,299246747,893155847,761904447]},
+								{Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;336706209,99147528,847042097,106119278]},
+								{Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;948376751,385904701,252131857,897134829]}
+							],
+							HideFlags:64
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:8
+					},
+					rewardExp:false,
+					maxUses:640
+				}
+			]
+		}
+	},
+	display:{
+		Name:"{\"text\":\"Tia the Fairy\"}"
+	}
+}
