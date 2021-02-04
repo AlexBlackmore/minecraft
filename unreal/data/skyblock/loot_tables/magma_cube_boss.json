@@ -10,8 +10,8 @@
             {
               "function":"set_count",
               "count":{
-                "min":0,
-                "max":1
+                "min":1,
+                "max":3
               }
             },
             {
@@ -135,7 +135,11 @@
       "entries":[
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/spawn_eggs/magma_cube"
+          "name":"skyblock:items/potions/magma_cube_epic"
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"skyblock:items/pets/magma_cube"
         }
       ],
       "conditions":[
@@ -144,7 +148,7 @@
         },
         {
           "condition":"minecraft:random_chance_with_looting",
-          "chance":0.001,
+          "chance":0.01,
           "looting_multiplier":0.01
         }
       ]
