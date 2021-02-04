@@ -1,0 +1,33 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"potion",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+  							display:{
+  								Name:\"{\\\"text\\\":\\\"Enderman Potion\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+  								Lore:[
+  									\"\\\" \\\"\",
+  									\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+  								]
+  							},
+  							CustomPotionEffects:[
+  	              {Id:3,Amplifier:1,Duration:9600},
+  	              {Id:11,Amplifier:0,Duration:9600}
+  	            ],
+  	            ],
+  	            CustomPotionColor:11539505
+  						}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

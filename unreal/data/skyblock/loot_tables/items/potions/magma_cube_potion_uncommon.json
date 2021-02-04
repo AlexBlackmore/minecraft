@@ -1,0 +1,33 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"potion",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+  							display:{
+  								Name:\"{\\\"text\\\":\\\"Magma Cube Potion\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+  								Lore:[
+  									\"\\\" \\\"\",
+  									\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+  								]
+  							},
+  							CustomPotionEffects:[
+  	              {Id:5,Amplifier:0,Duration:9600},
+                  {Id:21,Amplifier:1,Duration:9600},
+                  {Id:11,Amplifier:0,Duration:9600}
+  	            ],
+  	            CustomPotionColor:666904
+  						}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

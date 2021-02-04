@@ -1,0 +1,47 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:turtle_spawn_egg",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+  							display:{
+  								Name:\"{\\\"text\\\":\\\"Turtle\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+  								Lore:[
+  									\"\\\" \\\"\",
+  									\"{\\\"text\\\":\\\"Turtle Tactics\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+  									\"[\\\"\\\",{\\\"text\\\":\\\"Gain \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+20% Defense\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+  									\"{\\\"text\\\":\\\"Genius Amniote\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+  									\"[\\\"\\\",{\\\"text\\\":\\\"Gain \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+50 Defense\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" and regen \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+25\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"}]\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Health\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"},{\\\"text\\\":\\\" per second when near or\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"{\\\"text\\\":\\\"in water.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+  									\"{\\\"text\\\":\\\"Unflippable\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+  									\"[\\\"\\\",{\\\"text\\\":\\\"Gain \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"immunity\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\" to knockback.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+  									\"\\\" \\\"\",
+  									\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\",
+  								]
+  							},
+  						  Enchantments:[
+  						    {id:\"unbreaking\",lvl:1}
+  						  ],
+  						  AttributeModifiers:[
+                  {Slot:\"offhand\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10,Operation:0,UUID:[I;612176314,725902566,956271981,363060087]},
+  						    {Slot:\"offhand\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:20,Operation:0,UUID:[I;197664844,337159807,579670459,416425440]},
+                  {Slot:\"offhand\",AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:1,Operation:1,UUID:[I;583475045,823842281,810384597,376154290]}
+  						  ],
+  							HideFlags:1
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

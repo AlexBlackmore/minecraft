@@ -1,0 +1,31 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"potion",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+  							display:{
+  								Name:\"{\\\"text\\\":\\\"Dolphin Potion\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+  								Lore:[
+  									\"\\\" \\\"\",
+  									\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+  								]
+  							},
+  							CustomPotionEffects:[
+  	              {Id:30,Amplifier:0,Duration:9600}
+  	            ],
+  	            CustomPotionColor:650759
+  						}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
