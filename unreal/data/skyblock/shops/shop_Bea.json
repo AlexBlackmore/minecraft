@@ -8,121 +8,125 @@ give @p villager_spawn_egg{
 		CanPickUpLoot:false,
 		Willing:false,
 		NoAI:false,
-		VillagerData:
-		{
+		VillagerData:{
 			level:5,
 			profession:"nitwit",
 			type:"plains"
 		},
-		Attributes: [
-			{
-				Name:"generic.movementSpeed",
-				Base:"0f"
-			}
-		],
-		Offers:
-		{
-			Recipes: [
+		Offers:{
+			Recipes:[
 				{
-					buy:
-					{
+					buy:{
 						id:"coal_block",
 						Count:2
 					},
-					buyB:
-					{
+					buyB:{
 						id:"gold_block",
 						Count:2
 					},
-					sell:
-					{
-						id:"honey_bottle",
-						Count:8
-					},
-					rewardExp:false,
-					maxUses:80
-				},
-				{
-					buy:
-					{
-						id:"coal_block",
-						Count:64
-					},
-					buyB:
-					{
-						id:"gold_block",
-						Count:64
-					},
-					sell:
-					{
-						id:"beehive",
-						Count:64
-					},
-					rewardExp:false,
-					maxUses:640
-				},
-				{
-					buy:
-					{
-						id:"coal_block",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}"
-							},
-							Enchantments:[
-								{id:"unbreaking",lvl:1}
-							],
-							HideFlags:1
-						}
-					},
-					buyB:
-					{
-						id:"gold_block",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}"
-							},
-							Enchantments:[
-								{id:"unbreaking",lvl:1}
-							],
-							HideFlags:1
-						}
-					},
-					sell:
-					{
+					sell:{
 						id:"potion",
 						Count:1,
 						tag:{
-	            CustomPotionEffects:[
-								{Id:5,Amplifier:1,Duration:24000},
-								{Id:1,Amplifier:0,Duration:24000},
-	              {Id:22,Amplifier:0,Duration:24000}
+							display:{
+								Name:"{\"text\":\"Bee Potion\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}",
+								]
+							},
+							CustomPotionEffects:[
+	              {Id:5,Amplifier:0,Duration:9600},
+	              {Id:1,Amplifier:0,Duration:9600}
 	            ],
-	            display:{
-	              Name:"{\"text\":\"Enchanted Golden Honey\",\"italic\":false,\"color\":\"light_purple\"}",
-	              Lore:[
-	                "{\"text\":\"Strength II (20:00)\",\"italic\":false,\"color\":\"blue\"}",
-	                "{\"text\":\"Speed (20:00)\",\"italic\":false,\"color\":\"blue\"}",
-	                "{\"text\":\"Absorption (20:00)\",\"italic\":false,\"color\":\"blue\"}",
-	                "\" \"",
-	                "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
-									"{\"text\":\"+6 Attack Damage\",\"italic\":false,\"color\":\"blue\"}",
-									"{\"text\":\"+20% Speed\",\"italic\":false,\"color\":\"blue\"}",
-	                "{\"text\":\"+1 Absorption Heart\",\"italic\":false,\"color\":\"blue\"}",
-	              ]
-	            },
-	            CustomPotionColor:2445989,
-	            HideFlags:32
-	          }
+	            CustomPotionColor:13881363
+						}
 					},
 					rewardExp:false,
 					maxUses:640
 				},
 				{
-					buy:
+					buy:{
+						id:"coal_block",
+						Count:64
+					},
+					buyB:
 					{
+						id:"gold_block",
+						Count:64
+					},
+					sell:{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Bee Potion\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}",
+								]
+							},
+							CustomPotionEffects:[
+	              {Id:5,Amplifier:1,Duration:19200},
+	              {Id:1,Amplifier:0,Duration:19200}
+	            ],
+	            CustomPotionColor:13036234
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"coal_block",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"gold_block",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Gold\",\"italic\":false,\"color\":\"aqua\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Bee Potion\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}",
+								]
+							},
+							CustomPotionEffects:[
+	              {Id:5,Amplifier:1,Duration:48000},
+	              {Id:1,Amplifier:0,Duration:48000},
+	              {Id:22,Amplifier:0,Duration:48000}
+	            ],
+	            CustomPotionColor:11585546
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
 						id:"coal_block",
 						Count:8,
 						tag:{
@@ -135,8 +139,7 @@ give @p villager_spawn_egg{
 							HideFlags:1
 						}
 					},
-					buyB:
-					{
+					buyB:{
 						id:"gold_block",
 						Count:8,
 						tag:{
@@ -149,14 +152,37 @@ give @p villager_spawn_egg{
 							HideFlags:1
 						}
 					},
-					sell:
-					{
+					sell:{
 						id:"bee_spawn_egg",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Bee\",\"italic\":false,\"color\":\"gold\"}"
-							}
+								Name:"{\"text\":\"Bee\",\"italic\":false,\"color\":\"gold\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Hive\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Gain \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+15 Strength\",\"italic\":false,\"color\":\"red\"},{\"text\":\" for each\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"nearby bee. \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"(max 15 bees)\",\"italic\":false,\"color\":\"dark_gray\"}]",
+									"\" \"",
+									"{\"text\":\"Busy Buzz Buzz\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Has \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance for flowers to\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"drop an extra one.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"Weaponized Honey\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Gain \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"25%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" of recieved damage as\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Absorption\",\"italic\":false,\"color\":\"yellow\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}",
+								]
+							},
+						  Enchantments:[
+						    {id:"unbreaking",lvl:1}
+						  ],
+						  AttributeModifiers:[
+						    {Slot:"offhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:5,Operation:0,UUID:[I;343378841,961499546,929553981,996661794]},
+						    {Slot:"offhand",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.1,Operation:1,UUID:[I;758178177,206052831,128644037,721979239]}
+						  ],
+							HideFlags:1
 						}
 					},
 					rewardExp:false,
