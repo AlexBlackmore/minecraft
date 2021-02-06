@@ -1,0 +1,208 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Melancholic Viking\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:{
+			Recipes:[
+				{
+					buy:{
+						id:"emerald",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:44
+					},
+					sell:{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Viking's Tear\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+              CustomPotionEffects:[
+                {Id:10,Amplifier:0,Duration:19200},
+								{Id:26,Amplifier:0,Duration:19200}
+              ],
+							Potion:"empty",
+              CustomPotionColor:1773658
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:16
+					},
+					sell:{
+						id:"iron_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Raider Axe\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Sharpness XXXI\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Unbreaking II\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Earn \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+20 coins\",\"italic\":false,\"color\":\"gold\"},{\"text\":\" from monter\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"kills.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							Enchantments:[
+								{id:"sharpness",lvl:31},
+								{id:"unbreaking",lvl:2}
+							],
+						  AttributeModifiers:[
+						    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:10,Operation:0,UUID:[I;693828788,24478160,337855239,665923795]}
+						  ],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:61,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+							StoredEnchantments:[
+								{id:"looting",lvl:4},
+								{id:"fortune",lvl:4}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:21,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:56
+					},
+					sell:{
+						id:"written_book",
+						Count:1,
+						tag:{
+							resolved:1,
+							generation:3,
+							author:"?",
+							title:"Travel Scroll to Jungle Island",
+							pages: ["{
+									\"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+									\"obfuscated\":true,
+									\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/tp @p -447 133 255\"},
+									\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Click to warp!\"}
+								}"
+							],
+							display:{
+								Name:"{\"text\":\"Travel Scroll to Jungle Island\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Spawn at the top of The Park.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Island: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"The Park\",\"italic\":false,\"color\":\"green\"}]",
+									"[\"\",{\"text\":\"Teleport: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Jungle\",\"italic\":false,\"color\":\"yellow\"}]",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							HideFlags:63
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				}
+			]
+		}
+	},
+	display:{
+		Name:"\"Melancholic Viking\""
+	}
+}
