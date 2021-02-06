@@ -1,0 +1,263 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Smithmonger\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:
+		{
+			level:5,
+			profession:"toolsmith",
+			type:"plains"
+		},
+		Attributes: [
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes: [
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:2
+					},
+					sell:
+					{
+						id:"anvil",
+						Count:1
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:15,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:40
+					},
+					sell:
+					{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+						  display:{
+						    Name:"{\"text\":\"Moil Log\",\"italic\":false,\"color\":\"yellow\"}",
+						    Lore:[
+									"{\"text\":\"Can be used to apply the\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"Moil\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" reforge to a Netherite\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"axe.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+						      "{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+						    ]
+						  }
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:31,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:16
+					},
+					sell:
+					{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+						  display:{
+						    Name:"{\"text\":\"Dirty Bottle\",\"italic\":false,\"color\":\"aqua\"}",
+						    Lore:[
+									"{\"text\":\"Can be used to apply the\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"Dirty\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" reforge to a Netherite\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"sword.\",\"italic\":false,\"color\":\"gray\"}",
+						      "\" \"",
+						      "{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+						    ]
+						  }
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald_block",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald Block\",\"italic\":false,\"color\":\"aqua\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:57,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:
+					{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+						  display:{
+						    Name:"{\"text\":\"Toil Log\",\"italic\":false,\"color\":\"light_purple\"}",
+						    Lore:[
+									"{\"text\":\"Can be used to apply the\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"Toil\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" reforge to a Netherite\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"axe.\",\"italic\":false,\"color\":\"gray\"}",
+						      "\" \"",
+						      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+						    ]
+						  }
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald_block",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald Block\",\"italic\":false,\"color\":\"aqua\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:57,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:
+					{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+						  display:{
+						    Name:"{\"text\":\"Refined Amber\",\"italic\":false,\"color\":\"light_purple\"}",
+						    Lore:[
+									"{\"text\":\"Can be used to apply the\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"Refined\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" reforge to a Netherite\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"pickaxe.\",\"italic\":false,\"color\":\"gray\"}",
+						      "\" \"",
+						      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+						    ]
+						  }
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald_block",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald Block\",\"italic\":false,\"color\":\"aqua\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:57,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:
+					{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+						  display:{
+						    Name:"{\"text\":\"Blessed Fruit\",\"italic\":false,\"color\":\"light_purple\"}",
+						    Lore:[
+									"{\"text\":\"Can be used to apply the\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"Blessed\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" reforge to a Netherite\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"axe or hoe.\",\"italic\":false,\"color\":\"gray\"}",
+						      "\" \"",
+						      "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+						    ]
+						  }
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				}
+			]
+		}
+	},
+	display:{
+		Name:"{\"text\":\"Smithmonger\"}"
+	}
+}
