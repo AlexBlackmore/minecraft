@@ -1,0 +1,35 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"netherite_helmet",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+  							display:{
+  								Name:\"{\\\"text\\\":\\\"Spirit Mask\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+  								Lore:[
+  									\"\\\" \\\"\",
+  									\"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+  								]
+  							},
+  							Enchantments:[
+  								{id:\"unbreaking\",lvl:3}
+  							],
+  						  AttributeModifiers:[
+  						    {Slot:\"head\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:20,Operation:0,UUID:[I;693828788,24478160,337855239,665923795]},
+  						    {Slot:\"head\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:10,Operation:0,UUID:[I;693828788,24478160,337855239,665923795]},
+  						    {Slot:\"head\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.15,Operation:1,UUID:[I;693828788,24478160,337855239,665923795]}
+  						  ]
+  						}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
