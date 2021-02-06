@@ -13,6 +13,8 @@
                 display:{
                   Name:\"{\\\"text\\\":\\\"Aspect of the Dragons\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
                   Lore:[
+                    \"{\\\"text\\\":\\\"Sharpness LXXXIX\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Unbreaking IV\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
                     \"\\\" \\\"\",
                     \"{\\\"text\\\":\\\"Item Ability: Dragon Rage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
                     \"{\\\"text\\\":\\\"All monsters in front of you\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
@@ -23,12 +25,13 @@
                   ]
                 },
                 Enchantments:[
+                  {id:"sharpness",lvl:89},
                   {id:"unbreaking",lvl:4}
                 ],
                 AttributeModifiers:[
-                  {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:65,Operation:0,UUID:[I;524312315,816545671,289779906,411131256]}
+                  {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:20,Operation:0,UUID:[I;524312315,816545671,289779906,411131256]}
                 ]
-                HideFlags:64
+                HideFlags:65
               }"
             }
           ]
