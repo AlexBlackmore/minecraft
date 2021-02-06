@@ -1,0 +1,26 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:enchanted_book",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                StoredEnchantments:[
+                  {id:\"protection\",lvl:6}
+                ],
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Enchanted Book\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\"
+                }
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
