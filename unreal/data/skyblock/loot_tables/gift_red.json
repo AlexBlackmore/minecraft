@@ -38,7 +38,7 @@
           "functions":[
             {
               "function":"set_count",
-              "count":10
+              "count":40
             }
           ]
         },
@@ -48,7 +48,7 @@
           "functions":[
             {
               "function":"set_count",
-              "count":25
+              "count":100
             }
           ]
         },
@@ -68,7 +68,7 @@
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/enchanted_book_looting4"
+          "name":"skyblock:items/enchanted_book/looting4"
         },
         {
           "type":"item",
@@ -77,7 +77,7 @@
           "functions":[
             {
               "function":"set_count",
-              "count":50
+              "count":200
             }
           ]
         }
@@ -107,12 +107,16 @@
           ]
         },
         {
-          "type":"item",
-          "name":"emerald",
+          "type":"loot_table",
+          "name":"skyblock:items/enchanted/emerald",
           "functions":[
             {
               "function":"set_count",
-              "count":500
+              "count":{
+                "min":31,
+                "max":32,
+                "type":"uniform"
+              }
             }
           ]
         }
@@ -128,15 +132,14 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"emerald_block",
-          "weight":30,
+          "type":"loot_table",
+          "name":"skyblock:items/enchanted/emerald",
           "functions":[
             {
               "function":"set_count",
               "count":{
-                "min":555,
-                "max":556,
+                "min":312,
+                "max":313,
                 "type":"uniform"
               }
             }
@@ -144,8 +147,11 @@
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/gift_the_fish",
-          "weight":1
+          "name":"skyblock:items/special/gift_the_fish"
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"skyblock:items/special/gift_the_fish"
         }
       ],
       "conditions":[

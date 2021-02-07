@@ -18,6 +18,25 @@ give @p villager_spawn_egg{
     ],
   	Offers:{
   		Recipes:[
+				{
+					buyB:{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Fish Merchant>\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"Fishing is my trade. I buy and\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"sell any fish, rod, or treasure\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"you can find!\",\"italic\":false,\"color\":\"white\"}"
+								]
+							},
+							HideFlags:32
+						}
+					},
+					rewardExp:false,
+					maxUses:0
+				},
   			{
   				buy:{
   					id:"emerald",

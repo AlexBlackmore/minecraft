@@ -22,16 +22,43 @@ give @p villager_spawn_egg{
 		Offers:{
 			Recipes:[
 				{
-					buy:{
-						id:"emerald",
-						Count:64
-					},
-					sell:{
-						id:"emerald",
+					buyB:
+					{
+						id:"writable_book",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+								Name:"{\"text\":\"<Walter>\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"With the right tools, you can\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"get through anything!\",\"italic\":false,\"color\":\"white\"}"
+								]
+							},
+							HideFlags:32
+						}
+					},
+					rewardExp:false,
+					maxUses:0
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:50
+					},
+					sell:{
+						id:"tnt",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Superboom TNT\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Fuse will ignite once placed.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							BlockEntityTag:{
+								Fuse:80
 							},
 							Enchantments:[
 								{id:"unbreaking",lvl:1}
@@ -40,7 +67,7 @@ give @p villager_spawn_egg{
 						}
 					},
 					rewardExp:false,
-					maxUses:2147483647
+					maxUses:640
 				}
 			]
 		}

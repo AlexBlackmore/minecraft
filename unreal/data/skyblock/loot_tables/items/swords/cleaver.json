@@ -1,0 +1,48 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:golden_sword",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Cleaver\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"Sharpness XV\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Sweeping Edge I\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Unbreaking I\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Item Ability: Cleave\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"{\\\"text\\\":\\\"When hitting a mob, any entity\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"within a \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"3\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" block radius will\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"{\\\"text\\\":\\\"take a small portion of damage.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"When in Main Hand:\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\" 8 Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_green\\\"}\",
+                    \"{\\\"text\\\":\\\"+2 Strength\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"sharpness\",lvl:15},
+                  {id:\"sweeping_edge\",lvl:1},
+                  {id:\"unbreaking\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:2,Operation:0,UUID:[I;230327,834064669,17357896,402050545]}
+                ],
+                HideFlags:3
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

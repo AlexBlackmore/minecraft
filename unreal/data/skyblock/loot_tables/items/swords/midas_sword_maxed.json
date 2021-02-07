@@ -1,0 +1,49 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:golden_sword",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+  							display:{
+  								Name:\"{\\\"text\\\":\\\"Midas' Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+  								Lore:[
+  									\"{\\\"text\\\":\\\"Sharpness CVII\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+  									\"{\\\"text\\\":\\\"Unbreaking IV\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+  									\"\\\" \\\"\",
+  									\"{\\\"text\\\":\\\"Item Ability: Greed\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+  									\"[\\\"\\\",{\\\"text\\\":\\\"The \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"Attack Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"},{\\\"text\\\":\\\" of this item\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+  									\"{\\\"text\\\":\\\"is dependent on the price paid\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+  									\"[\\\"\\\",{\\\"text\\\":\\\"for it at the \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"Dark Auction\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_purple\\\"},{\\\"text\\\":\\\"!\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+  									\"\\\" \\\"\",
+  									\"[\\\"\\\",{\\\"text\\\":\\\"Price paid: \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"$50,000,000\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}]\",
+  									\"{\\\"text\\\":\\\"MAXED!\\\",\\\"bold\\\":true,\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}\",
+  									\"\\\" \\\"\",
+  									\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\",
+                    \\"\\\\" \\\\"\\",
+                    \\"{\\\\"text\\\\":\\\\"When in Main Hand:\\\\",\\\\"italic\\\\":false,\\\\"color\\\\":\\\\"gray\\\\"}\\",
+                    \\"{\\\\"text\\\\":\\\\" 107 Damage\\\\",\\\\"italic\\\\":false,\\\\"color\\\\":\\\\"dark_green\\\\"}\",
+                    \\"{\\\\"text\\\\":\\\\"+24 Strength\\\\",\\\\"italic\\\\":false,\\\\"color\\\\":\\\\"blue\\\\"}\"
+  								]
+  							},
+  							Enchantments:[
+  								{id:\"sharpness\",lvl:107},
+  								{id:\"unbreaking\",lvl:4}
+  							],
+  						  AttributeModifiers:[
+  						    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:24,Operation:0,UUID:[I;693828788,24478160,337855239,665923795]}
+  						  ],
+  							HideFlags:3
+  						}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

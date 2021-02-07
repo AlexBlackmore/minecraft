@@ -1,0 +1,42 @@
+{
+  \"pools\":[
+    {
+      \"rolls\":1,
+      \"entries\":[
+        {
+          \"type\":\"item\",
+          \"name\":\"minecraft:iron_sword\",
+          \"functions\":[
+            {
+              \"function\":\"minecraft:set_nbt\",
+              \"tag\":\"{
+                display:{
+                  Name:\\"{\\\\"text\\\\":\\\\"Hunter Knife\\\\",\\\\"italic\\\\":false,\\\\"color\\\\":\\\\"yellow\\\\"}\\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"Sharpness XIX\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Unbreaking II\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \\"\\\\" \\\\"\\",
+                    \\"{\\\\"text\\\\":\\\\"UNCOMMON\\\\",\\\\"bold\\\\":true,\\\\"color\\\\":\\\\"yellow\\\\"}\\",
+                    \\"\\\\" \\\\"\\",
+                    \\"{\\\\"text\\\\":\\\\"When in Main Hand:\\\\",\\\\"italic\\\\":false,\\\\"color\\\\":\\\\"gray\\\\"}\\",
+                    \\"{\\\\"text\\\\":\\\\" 10 Damage\\\\",\\\\"italic\\\\":false,\\\\"color\\\\":\\\\"dark_green\\\\"}\",
+                    \\"{\\\\"text\\\\":\\\\"+40% Speed\\\\",\\\\"italic\\\\":false,\\\\"color\\\\":\\\\"blue\\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"sharpness\",lvl:19},
+                  {id:\"unbreaking\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\\",AttributeName:\\"generic.attack_damage\\",Name:\\"generic.attack_damage\\",Amount:0,Operation:0,UUID:[I;554025128,720903561,87891800,234173522]},
+                  {Slot:\\"mainhand\\",AttributeName:\\"generic.movement_speed\\",Name:\\"generic.movement_speed\\",Amount:40,Operation:1,UUID:[I;906675318,640477684,561106596,393546153]}
+                ],
+                HideFlags:3
+              }\"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

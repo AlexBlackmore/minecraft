@@ -16,6 +16,26 @@ give @p villager_spawn_egg{
 		Offers:{
 			Recipes:[
 				{
+					buyB:{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Bea>\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"Hello! Do you have a pet?\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Pets are little compansions for\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"your adventures.\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Personally, I prefer the bee pet!\",\"italic\":false,\"color\":\"white\"}"
+								]
+							},
+							HideFlags:32
+						}
+					},
+					rewardExp:false,
+					maxUses:0
+				},
+				{
 					buy:{
 						id:"coal_block",
 						Count:2

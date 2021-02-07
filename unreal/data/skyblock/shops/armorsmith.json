@@ -22,6 +22,24 @@ give @p villager_spawn_egg{
 		Offers:{
 			Recipes:[
 				{
+					buyB:{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Armorsmith>\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"A great warrior is nothing\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"without their armor!\",\"italic\":false,\"color\":\"white\"}"
+								]
+							},
+							HideFlags:32
+						}
+					},
+					rewardExp:false,
+					maxUses:0
+				},
+				{
 					buy:{
 						id:"emerald",
 						Count:2

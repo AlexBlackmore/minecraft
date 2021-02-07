@@ -1,0 +1,48 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:iron_sword",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Dreadlord Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"Looting III\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Sharpness XLVII\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Unbreaking II\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Item Ability: Dreadlord\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"{\\\"text\\\":\\\"Shoots a Wither Skull that does\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"750\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" damage.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Mana: \\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_gray\\\"},{\\\"text\\\":\\\"40\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_aqua\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"When in Main Hand:\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\" 24 Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_green\\\"}\",
+                    \"{\\\"text\\\":\\\"+10.8 Strength\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"looting\",lvl:3},
+                  {id:\"sharpness\",lvl:47},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:10.8,Operation:0,UUID:[I;432580984,774109919,255564732,-557253268]}
+                ],
+                HideFlags:3
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

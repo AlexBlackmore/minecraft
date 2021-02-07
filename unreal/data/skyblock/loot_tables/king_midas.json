@@ -4,13 +4,9 @@
       "rolls":1,
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"gold_ingot"
+          "type":"minecraft:loot_table",
+          "name":"skyblock:items/enchanted/gold_ingot",
           "functions":[
-            {
-              "function":"set_count",
-              "count":1
-            },
             {
               "function":"looting_enchant",
               "count":{
@@ -27,7 +23,7 @@
       "entries":[
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/midas_jewel"
+          "name":"skyblock:items/reforge_stones/midas_jewel"
         }
       ],
       "conditions":[

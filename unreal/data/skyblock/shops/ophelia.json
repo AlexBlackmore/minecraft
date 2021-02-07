@@ -1,0 +1,946 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Ophelia\",\"color\":\"red\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"weaponsmith",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buyB:{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"[\"\",{\"text\":\"<\",\"italic\":false,\"color\":\"white\"},{\"text\":\"Ophelia\",\"italic\":false,\"color\":\"red\"},{\"text\":\">\",\"italic\":false,\"color\":\"white\"}]",
+								Lore:[
+									"[\"\",{\"text\":\"This world holds many \",\"italic\":false,\"color\":\"white\"},{\"text\":\"riches\",\"italic\":false,\"color\":\"yellow\"},{\"text\":\",\",\"italic\":false,\"color\":\"white\"}]",
+									"[\"\",{\"text\":\"powerful \",\"italic\":false,\"color\":\"white\"},{\"text\":\"items\",\"italic\":false,\"color\":\"green\"},{\"text\":\", and great\",\"italic\":false,\"color\":\"white\"}]",
+									"[\"\",{\"text\":\"experience\",\"italic\":false,\"color\":\"aqua\"},{\"text\":\".\",\"italic\":false,\"color\":\"white\"}]",
+									"[\"\",{\"text\":\"My trick? I make \",\"italic\":false,\"color\":\"white\"},{\"text\":\"emeralds\",\"italic\":false,\"color\":\"gold\"},{\"text\":\"emeralds\",\"italic\":false,\"color\":\"gold\"},{\"text\":\" from\",\"italic\":false,\"color\":\"white\"}]",
+									"{\"text\":\"the others' greed.\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Are you interest in buying\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"anything?\",\"italic\":false,\"color\":\"white\"}"
+								]
+							},
+							HideFlags:32
+						}
+					},
+					maxUses:0
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:25,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"bow",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Undead Bow\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Undead\",\"italic\":false,\"color\":\"green\"}]",
+									"[\"\",{\"text\":\"monsters\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"RARE\",\"italic\":true,\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							Enchantments:[
+								{id:"power",lvl:6},
+								{id:"smite",lvl:3},
+								{id:"unbreaking",lvl:2}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:1
+					},
+					sell:
+					{
+						id:"arrow",
+						Count:20
+					},
+					rewardExp:false,
+					maxUses:32
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:25,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"golden_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Super Cleaver\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Sharpness XXXIII\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Sweeping Edge II\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Unbreaking II\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"Item Ability: Cleave\",\"italic\":false,\"color\":\"gold\"}",
+									"{\"text\":\"When hitting an entity, monsters\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"in a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"3\",\"italic\":false,\"color\":\"green\"},{\"text\":\" block range will be hit\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"for a portion of that damage too.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}",
+									"\" \"",
+									"{\"text\":\"When in Main Hand:\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\" 17 Damage\",\"italic\":false,\"color\":\"dark_green\"}",
+									"{\"text\":\"+4 Strength\",\"italic\":false,\"color\":\"blue\"}"
+								]
+							},
+							Enchantments:[
+								{id:"sharpness",lvl:33},
+								{id:"sweeping",lvl:2},
+								{id:"unbreaking",lvl:2}
+							],
+						  AttributeModifiers:[
+						    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;220080633,596613996,8024673,-453369204]}
+						  ],
+							HideFlags:3
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:25,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"leather_chestplate",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Stone Chestplate\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"While in dungeons, players\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"within \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"8\",\"italic\":false,\"color\":\"yellow\"},{\"text\":\" blocks of you take \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"5%\",\"italic\":false,\"color\":\"red\"}]",
+									"{\"text\":\"less damage.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"italic\":true,\"bold\":true,\"color\":\"aqua\"}"
+								],
+								color:14277081
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:2}
+							],
+						  AttributeModifiers:[
+						    {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:26,Operation:0,UUID:[I;563576793,-95394663,12896641,695292725]}
+						  ],
+							HideFlags:64
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:25,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"leather_helmet",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Mender Helmet\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Any healing on others is doubled.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"italic\":true,\"bold\":true,\"color\":\"aqua\"}"
+								],
+								color:14277081
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:2}
+							],
+						  AttributeModifiers:[
+						    {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:16,Operation:0,UUID:[I;15684892,769144980,956003039,365498015]}
+						  ],
+							HideFlags:64
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:64
+					},
+					buyB:{
+						id:"emerald",
+						Count:36
+					},
+					sell:{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Dungeon I Potion\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"COMMON\",\"italic\":true,\"bold\":true,\"color\":\"white\"}"
+								]
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:0,Duration:24000},
+								{Id:5,Amplifier:2,Duration:24000},
+								{Id:1,Amplifier:0,Duration:24000},
+								{Id:11,Amplifier:0,Duration:24000},
+							],
+							Potion:"empty",
+							CustomPotionColor:1888514
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:8
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Dungeon II Potion\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"COMMON\",\"italic\":true,\"bold\":true,\"color\":\"white\"}"
+								]
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:1,Duration:48000},
+								{Id:5,Amplifier:2,Duration:48000},
+								{Id:1,Amplifier:1,Duration:48000},
+								{Id:11,Amplifier:0,Duration:48000},
+							],
+							Potion:"empty",
+							CustomPotionColor:9277409
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:44
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Dungeon III Potion\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"italic\":true,\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:2,Duration:48000},
+								{Id:5,Amplifier:2,Duration:48000},
+								{Id:1,Amplifier:1,Duration:48000},
+								{Id:11,Amplifier:1,Duration:48000},
+							],
+							Potion:"empty",
+							CustomPotionColor:6177315
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:16
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Dungeon IV Potion\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"italic\":true,\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:2,Duration:48000},
+								{Id:5,Amplifier:3,Duration:48000},
+								{Id:1,Amplifier:1,Duration:48000},
+								{Id:11,Amplifier:2,Duration:48000},
+							],
+							Potion:"empty",
+							CustomPotionColor:13620693
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:7,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:52
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Dungeon V Potion\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"RARE\",\"italic\":true,\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:2,Duration:48000},
+								{Id:5,Amplifier:3,Duration:48000},
+								{Id:1,Amplifier:1,Duration:48000},
+								{Id:11,Amplifier:3,Duration:48000},
+							],
+							Potion:"empty",
+							CustomPotionColor:13354462
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:9,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:24
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Dungeon VI Potion\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"RARE\",\"italic\":true,\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:3,Duration:48000},
+								{Id:5,Amplifier:3,Duration:48000},
+								{Id:1,Amplifier:2,Duration:48000},
+								{Id:11,Amplifier:3,Duration:48000},
+							],
+							Potion:"empty",
+							CustomPotionColor:8223994
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:10,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:60
+					},
+					sell:
+					{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Dungeon VII Potion\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"RARE\",\"italic\":true,\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:3,Duration:48000},
+								{Id:5,Amplifier:4,Duration:48000},
+								{Id:1,Amplifier:2,Duration:48000},
+								{Id:11,Amplifier:4,Duration:48000},
+							],
+							Potion:"empty",
+							CustomPotionColor:1509932
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:60
+					},
+					sell:{
+						id:"tnt",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Superboom TNT\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Fuse will ignite once placed.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							BlockEntityTag:{
+								Fuse:80
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:58
+					},
+					sell:{
+						id:"bow",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Super Undead Bow\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Power XXIV\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Smite V\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Unbreaking III\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Undead\",\"italic\":false,\"color\":\"green\"}]",
+									"[\"\",{\"text\":\"monsters\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"power",lvl:24},
+								{id:"smite",lvl:5},
+								{id:"unbreaking",lvl:3}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:58
+					},
+					sell:{
+						id:"golden_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Hyper Cleaver\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Sharpness LVII\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Sweeping Edge III\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Unbreaking III\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"Item Ability: Cleave\",\"italic\":false,\"color\":\"gold\"}",
+									"{\"text\":\"When hitting an entity, monsters\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"in a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"4\",\"italic\":false,\"color\":\"green\"},{\"text\":\" block range will be hit\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"for a portion of that damage too.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}",
+									"\" \"",
+									"{\"text\":\"When in Main Hand:\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\" 29 Damage\",\"italic\":false,\"color\":\"dark_green\"}",
+									"{\"text\":\"+10 Strength\",\"italic\":false,\"color\":\"blue\"}"
+								]
+							},
+							Enchantments:[
+								{id:"sharpness",lvl:57},
+								{id:"sweeping",lvl:3},
+								{id:"unbreaking",lvl:3}
+							],
+						  AttributeModifiers:[
+						    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:10,Operation:0,UUID:[I;241489777,-745137765,797745674,995897850]}
+						  ],
+							HideFlags:3
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:58
+					},
+					sell:{
+						id:"leather_chestplate",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Metal Chestplate\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"While in dungeons, players\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"within \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"8\",\"italic\":false,\"color\":\"yellow\"},{\"text\":\" blocks of you take \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"8%\",\"italic\":false,\"color\":\"red\"}]",
+									"{\"text\":\"less damage.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								],
+								color:14277081
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							],
+						  AttributeModifiers:[
+						    {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:46,Operation:0,UUID:[I;122101825,-595789245,-620564312,-672557471]}
+						  ],
+							HideFlags:64
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:58
+					},
+					sell:{
+						id:"leather_helmet",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Mender Fedora\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Any healing on others and\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"yourself is doubled.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"italic\":true,\"bold\":true,\"color\":\"light_purple\"}"
+								],
+								color:14277081
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							],
+						  AttributeModifiers:[
+						    {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:44,Operation:0,UUID:[I;276446263,457468181,850258746,300819043]}
+						  ],
+							HideFlags:64
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:24,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:27
+					},
+					sell:{
+						id:"bow",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Death Bow\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Power XXXV\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Smite V\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Unbreaking III\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Undead\",\"italic\":false,\"color\":\"green\"}]",
+									"[\"\",{\"text\":\"monsters\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"[\"\",{\"text\":\"Your arrows have a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"50%\",\"italic\":false,\"color\":\"yellow\"},{\"text\":\" chance to\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"bounce to another target after\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"it hits something.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"power",lvl:35},
+								{id:"smite",lvl:5},
+								{id:"unbreaking",lvl:3}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:24,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:27
+					},
+					sell:{
+						id:"golden_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Giant Cleaver\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Sharpness LXVII\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Sweeping Edge IV\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Unbreaking III\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"Item Ability: Cleave\",\"italic\":false,\"color\":\"gold\"}",
+									"{\"text\":\"When hitting an entity, monsters\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"in a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"5\",\"italic\":false,\"color\":\"green\"},{\"text\":\" block range will be hit\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"for a portion of that damage too.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}",
+									"\" \"",
+									"{\"text\":\"When in Main Hand:\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\" 34 Damage\",\"italic\":false,\"color\":\"dark_green\"}",
+									"{\"text\":\"+12 Strength\",\"italic\":false,\"color\":\"blue\"}"
+								]
+							},
+							Enchantments:[
+								{id:"sharpness",lvl:67},
+								{id:"sweeping",lvl:4},
+								{id:"unbreaking",lvl:3}
+							],
+						  AttributeModifiers:[
+						    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:12,Operation:0,UUID:[I;134725804,451742885,121658881,726685598]}
+						  ],
+							HideFlags:3
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:24,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:27
+					},
+					sell:{
+						id:"leather_chestplate",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Steel Chestplate\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"While in dungeons, players\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"within \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"8\",\"italic\":false,\"color\":\"yellow\"},{\"text\":\" blocks of you take \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"10%\",\"italic\":false,\"color\":\"red\"}]",
+									"{\"text\":\"less damage.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								],
+								color:14277081
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							],
+						  AttributeModifiers:[
+						    {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:66,Operation:0,UUID:[I;478535887,729062554,637298103,491882381]}
+						  ],
+							HideFlags:64
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:24,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:27
+					},
+					sell:{
+						id:"leather_helmet",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Mender Crown\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Any healing on others and\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"yourself is doubled.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"italic\":true,\"bold\":true,\"color\":\"light_purple\"}"
+								],
+								color:14277081
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							],
+						  AttributeModifiers:[
+						    {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:54,Operation:0,UUID:[I;516879900,814966674,67624240,124368510]}
+						  ],
+							HideFlags:64
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				}
+			]
+		}
+	},
+	display:{
+		Name:"\"Ophelia\""
+	}
+}

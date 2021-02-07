@@ -24,13 +24,33 @@ give @p villager_spawn_egg{
 		{
 			Recipes: [
 				{
-					buy:
-					{
+					buyB:{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Adventurer>\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"I've seen it all - every island\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"from here to the edge of the\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"world!\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Over the years I've aquired a\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"variety of loot.\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"For a price, you can have it all!\",\"italic\":false,\"color\":\"white\"}"
+								]
+							},
+							HideFlags:32
+						}
+					},
+					rewardExp:false,
+					maxUses:0
+				},
+				{
+					buy:{
 						id:"emerald",
 						Count:1
 					},
-					sell:
-					{
+					sell:{
 						id:"rotten_flesh",
 						Count:32
 					},

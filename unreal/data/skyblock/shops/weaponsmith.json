@@ -1,0 +1,209 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Weaponsmith\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"armorer",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:{
+			Recipes:[
+				{
+					buyB:
+					{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Weaponsmith>\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"You'll need some strong weapons\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"to survive out in the wild!\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Lucky for you, I've got some!\",\"italic\":false,\"color\":\"white\"}"
+								]
+							},
+							HideFlags:32
+						}
+					},
+					rewardExp:false,
+					maxUses:0
+				},
+	      {
+					buy:{
+						id:"emerald",
+						Count:6
+					},
+					sell:{
+						id:"iron_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Undead Sword\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"\" \"",
+									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to Withers,\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"Zombie Pigmen, Skeletons, and\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Zombies.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							},
+							Enchantments:[
+	              {id:"smite",lvl:1}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:13
+					},
+					sell:{
+						id:"diamond_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"End Sword\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore: [
+									"\" \"",
+									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to Enderman,\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"Ender Dragons, and Endermites.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"sharpness",lvl:1},
+								{id:"unbreaking",lvl:1}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:6
+					},
+					sell:{
+						id:"iron_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Spider Sword\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"\" \"",
+									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to Cave\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"Spiders, Spiders, and\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Silverfish.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							},
+							Enchantments:[
+	              {id:"bane_of_arthropods",lvl:1}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:8
+					},
+					sell:{
+						id:"diamond_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Diamond Sword\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:1
+					},
+					sell:{
+						id:"bow",
+						Count:1
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:1
+					},
+					sell:{
+						id:"arrow",
+						Count:12
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:6
+					},
+					sell:{
+						id:"bow",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Wither Bow\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"\" \"",
+									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to Withers\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"and Wither Skeletons.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				}
+			]
+		}
+	},
+	display:{
+		Name:"{\"text\":\"Weaponsmith\"}"
+	}
+}

@@ -1,0 +1,71 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+    CustomName:"{\"text\":\"Pat\"}",
+	  CustomNameVisible:true,
+	  PersistenceRequired:true,
+	  Silent:true,
+	  CanPickUpLoot:false,
+	  Willing:false,
+	  NoAI:false,
+	  VillagerData:{
+	    level:5,
+	    profession:"nitwit",
+	    type:"plains"
+	  },
+	  Attributes:[
+	    {Name:"generic.movementSpeed",Base:"0f"}
+	  ],
+  	Offers:{
+  		Recipes:[
+				{
+					buyB:{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Pat>\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"You like flint? I like flint! I\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"sell flint!\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"My brother is mining the gravel\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"from the Spider's Den. We are\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"the Flint Bros!\",\"italic\":false,\"color\":\"white\"}"
+								]
+							},
+							HideFlags:32
+						}
+					},
+					maxUses:0
+				},
+        {
+  				buy:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"flint",
+  					Count:10
+  				},
+  				rewardExp:false,
+  				maxUses:64
+  			},
+        {
+  				buy:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"gravel",
+  					Count:64
+  				},
+  				rewardExp:false,
+  				maxUses:10
+  			}
+  		]
+  	}
+  },
+	display:{
+		Name:"{\"text\":\"Pat\"}"
+	}
+}

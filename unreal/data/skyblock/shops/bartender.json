@@ -23,6 +23,31 @@ give @p villager_spawn_egg{
 		{
 			Recipes:[
 				{
+					buyB:{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Bartender>\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"Welcome the the Bar, friend!\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"These are trying times, indeed.\",\"italic\":false,\"color\":\"white\"}",
+									"[\"\",{\"text\":\"The \",\"italic\":false,\"color\":\"white\"},{\"text\":\"Graveyard\",\"italic\":false,\"color\":\"dark_red\"},{\"text\":\" is overflowing\",\"italic\":false,\"color\":\"white\"}]",
+									"{\"text\":\"with monters! Anyone who comes\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"in is spooked off by the grunts\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"of zombies in the distance.\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Could you give me a hand? If you\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"help clear out some of these\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"monters, I'll pay you for it!\",\"italic\":false,\"color\":\"white\"}"
+								]
+							},
+							HideFlags:32
+						}
+					},
+					rewardExp:false,
+					maxUses:0
+				},
+				{
 					buy:{
 						id:"emerald",
 						Count:20
@@ -148,7 +173,7 @@ give @p villager_spawn_egg{
 						id:"emerald",
 						Count:64
 					},
-					buy:{
+					buyB:{
 						id:"emerald",
 						Count:36
 					},
@@ -169,6 +194,21 @@ give @p villager_spawn_egg{
 							Potion:"empty",
               CustomPotionColor:8171462
 						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					maxUses:0
+				},
+				{
+					buy:{
+						id:"rotten_flesh",
+						Count:10
+					},
+					sell:{
+						id:"emerald",
+						Count:2
 					},
 					rewardExp:false,
 					maxUses:640

@@ -154,19 +154,19 @@
         },
         {
           "type":"loot_table",
-          "name":"skyblock:items/fairy_fedora"
+          "name":"skyblock:items/armor/fairy_fedora"
         },
         {
           "type":"loot_table",
-          "name":"skyblock:items/fairy_polo"
+          "name":"skyblock:items/armor/fairy_polo"
         },
         {
           "type":"loot_table",
-          "name":"skyblock:items/fairy_trousers"
+          "name":"skyblock:items/armor/fairy_trousers"
         },
         {
           "type":"loot_table",
-          "name":"skyblock:items/fairy_galoshes"
+          "name":"skyblock:items/armor/fairy_galoshes"
         },
         {
           "type":"item",
@@ -204,6 +204,14 @@
               }
             }
           ]
+        },
+        {
+          "type":"loot_table",
+          "name":"skyblock:items/pets/guarian"
+        },
+        {
+          "type":"loot_table",
+          "name":"skyblock:items/pets/squid"
         }
       ],
       "conditions":[
@@ -212,7 +220,7 @@
         },
         {
           "condition":"minecraft:random_chance_with_looting",
-          "chance":0.001,
+          "chance":0.01,
           "looting_multiplier":0.01
         }
       ]

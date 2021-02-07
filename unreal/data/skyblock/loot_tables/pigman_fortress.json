@@ -82,6 +82,19 @@
               }
             }
           ]
+        },
+        {
+          "type":"item",
+          "name":"glowstone_dust",
+          "functions":[
+            {
+              "function":"set_count",
+              "count":{
+                "min":2,
+                "max":4
+              }
+            }
+          ]
         }
       ]
     },
@@ -89,54 +102,18 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"quartz",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":1
-            },
-            {
-              "function":"looting_enchant",
-              "count":{
-                "min":0,
-                "max":1
-              }
-            }
-          ]
+          "type":"minecraft:loot_table",
+          "name":"skyblock:items/swords/flaming_sword"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"minecraft:killed_by_player"
         },
         {
-          "type":"item",
-          "name":"quartz",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":2
-            },
-            {
-              "function":"looting_enchant",
-              "count":{
-                "min":0,
-                "max":1
-              }
-            }
-          ]
-        },
-        {
-          "rolls":1,
-          "entries":[
-            {
-              "type":"minecraft:loot_table",
-              "name":"skyblock:items/flaming_sword"
-            }
-          ],
-          "conditions":[
-            {
-              "condition":"random_chance_with_looting",
-              "chance":0.1667,
-              "looting_multiplier":0.01
-            }
-          ]
+          "condition":"minecraft:random_chance_with_looting",
+          "chance":0.1667,
+          "looting_multiplier":0.01
         }
       ]
     }

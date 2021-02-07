@@ -18,6 +18,27 @@ give @p villager_spawn_egg{
     ],
   	Offers:{
   		Recipes:[
+				{
+					buyB:{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Alchemist>\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"There is a darkness in you.\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"I've seen it in my flames, you\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"are destined for great things.\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"For now, you shouldn't let it\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"get to your head.\",\"italic\":false,\"color\":\"white\"}"
+								]
+							},
+							HideFlags:32
+						}
+					},
+					rewardExp:false,
+					maxUses:0
+				},
   			{
   				buy:{
   					id:"emerald",

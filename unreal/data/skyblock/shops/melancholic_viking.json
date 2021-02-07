@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Melancholic Viking\"}",
+		CustomName:"{\"text\":\"Melancholic Viking\",\"color\":\"aqua\"}",
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -10,8 +10,8 @@ give @p villager_spawn_egg{
 		NoAI:false,
 		VillagerData:{
 			level:5,
-			profession:"nitwit",
-			type:"plains"
+			profession:"weaponsmith",
+			type:"taiga"
 		},
 		Attributes:[
 			{
@@ -64,7 +64,7 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:2,
+						Count:40,
 						tag:{
 							display:{
 								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
@@ -77,7 +77,7 @@ give @p villager_spawn_egg{
 					},
 					buyB:{
 						id:"emerald",
-						Count:16
+						Count:40
 					},
 					sell:{
 						id:"iron_axe",
@@ -89,20 +89,30 @@ give @p villager_spawn_egg{
 									"{\"text\":\"Sharpness XXXI\",\"italic\":false,\"color\":\"gray\"}",
 									"{\"text\":\"Unbreaking II\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
-									"[\"\",{\"text\":\"Earn \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+20 coins\",\"italic\":false,\"color\":\"gold\"},{\"text\":\" from monter\",\"italic\":false,\"color\":\"gray\"}]",
-									"{\"text\":\"kills.\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"Enemies have a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"40%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"drop an \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Emerald\",\"italic\":false,\"color\":\"gold\"},{\"text\":\" when killed.\",\"italic\":false,\"color\":\"gray\"}]",
 									"\" \"",
-									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+									"[\"\",{\"text\":\"+1 Damage\",\"italic\":false,\"color\":\"red\"},{\"text\":\" per \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"500\",\"italic\":false,\"color\":\"green\"},{\"text\":\" kills.\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"(Max +35 Damage)\",\"italic\":false,\"color\":\"dark_gray\"}",
+									"[\"\",{\"text\":\"+1 Strength\",\"italic\":false,\"color\":\"red\"},{\"text\":\" per \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"500\",\"italic\":false,\"color\":\"green\"},{\"text\":\" wood\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"collected.\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"(Max +100 Strength)\",\"italic\":false,\"color\":\"dark_gray\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}",
+									"\" \"",
+									"{\"text\":\"When in Main Hand:\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\" 16 Damage\",\"italic\":false,\"color\":\"dark_green\"}",
+									"{\"text\":\"+10 Strength\",\"italic\":false,\"color\":\"blue\"}"
 								]
 							},
 							Enchantments:[
 								{id:"sharpness",lvl:31},
 								{id:"unbreaking",lvl:2}
 							],
-						  AttributeModifiers:[
-						    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:10,Operation:0,UUID:[I;693828788,24478160,337855239,665923795]}
-						  ],
-							HideFlags:1
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:10,Operation:0,UUID:[I;247505405,661122770,598561972,24654168]}
+							],
+							HideFlags:3
 						}
 					},
 					rewardExp:false,
@@ -184,7 +194,6 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"text\":\"Travel Scroll to Jungle Island\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
-									"\" \"",
 									"{\"text\":\"Spawn at the top of The Park.\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
 									"[\"\",{\"text\":\"Island: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"The Park\",\"italic\":false,\"color\":\"green\"}]",

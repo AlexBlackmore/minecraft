@@ -16,6 +16,25 @@ give @p villager_spawn_egg{
 		Offers:{
 			Recipes:[
 				{
+					buyB:
+					{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"[\"\",{\"text\":\"<\",\"italic\":false,\"color\":\"white\"},{\"text\":\"Tia the Fairy\",\"italic\":false,\"color\":\"light_purple\"},{\"text\":\">\",\"italic\":false,\"color\":\"white\"}]",
+								Lore:[
+									"{\"text\":\"Welcome to the Fairy Pond!\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"I am Tia.\",\"italic\":false,\"color\":\"white\"}"
+								]
+							},
+							HideFlags:32
+						}
+					},
+					rewardExp:false,
+					maxUses:0
+				},
+				{
 					buy:{
 						id:"leather_helmet",
 						Count:1,

@@ -9,7 +9,7 @@
           "functions":[
             {
               "function":"set_count",
-              "count":1
+              "count":4
             }
           ]
         },
@@ -19,7 +19,7 @@
           "functions":[
             {
               "function":"set_count",
-              "count":2
+              "count":8
             }
           ]
         },
@@ -29,7 +29,7 @@
           "functions":[
             {
               "function":"set_count",
-              "count":5
+              "count":20
             }
           ]
         },
@@ -88,7 +88,7 @@
           "functions":[
             {
               "function":"set_count",
-              "count":10
+              "count":40
             }
           ]
         },
@@ -98,13 +98,13 @@
           "functions":[
             {
               "function":"set_count",
-              "count":50
+              "count":200
             }
           ]
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/enchanted_book_looting4"
+          "name":"skyblock:items/enchanted_book/looting4"
         },
         {
           "type":"item",
@@ -132,12 +132,16 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"emerald",
+          "type":"loot_table",
+          "name":"skyblock:items/enchanted/emerald",
           "functions":[
             {
               "function":"set_count",
-              "count":500
+              "count":{
+                "min":31,
+                "max":32,
+                "type":"uniform"
+              }
             }
           ]
         },
@@ -157,19 +161,19 @@
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/snow_suit_helmet"
+          "name":"skyblock:items/armor/snow_suit_helmet"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/snow_suit_chestplate"
+          "name":"skyblock:items/armor/snow_suit_chestplate"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/snow_suit_leggings"
+          "name":"skyblock:items/armor/snow_suit_leggings"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/snow_suit_boots"
+          "name":"skyblock:items/armor/snow_suit_boots"
         },
         {
           "type":"tag",
@@ -189,7 +193,11 @@
       "entries":[
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/gift_the_fish"
+          "name":"skyblock:items/special/gift_the_fish"
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"skyblock:items/special/gift_the_fish"
         }
       ],
       "conditions":[
