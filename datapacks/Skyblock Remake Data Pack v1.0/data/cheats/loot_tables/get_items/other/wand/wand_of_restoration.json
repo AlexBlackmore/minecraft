@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:28,Enchantments:[{}],Base:{Type:\"\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',SlayerRequired:{Type:\"Zombie\",LVL:6},Abilities:[{Name:\"Large Heal\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\",Mana:100,Cooldown:1}]},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Wand of Restoration\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Large Heal\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Heal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"40❤/s \",\"color\":\"red\",\"italic\":false},{\"text\":\"for 7s.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"100\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"1s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Zombie LVL 6\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"EPIC WAND\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

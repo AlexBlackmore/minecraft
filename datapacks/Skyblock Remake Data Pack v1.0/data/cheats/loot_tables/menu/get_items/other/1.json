@@ -1,0 +1,148 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_block",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Cheat in Raw Materials",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "from Skyblock!",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Click to view!",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Materials",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/grappling_hook",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/summoning_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/remnant_of_the_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/magical_mushroom_soup",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/mystical_mushroom_soup",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/catalyst",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"_________________","color":"dark_gray","bold":true,"italic":false,"underlined":true},{"text":""},[{"text":"NOTE: ","color":"red","italic":false,"bold":true},{"text":"The functionality of this","bold":false}],{"text":"item has not been coded yet.","color":"red","italic":false},{"text":"BlueCommander on Youtube for updates.","color":"gray"}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

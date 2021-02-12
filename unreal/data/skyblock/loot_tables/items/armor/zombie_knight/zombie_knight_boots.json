@@ -1,0 +1,71 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:golden_boots",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Zombie Knight Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"deapth_strider\",lvl:3},
+                  {id:\"feather_falling\",lvl:5},
+                  {id:\"protection\",lvl:5},
+                  {id:\"thorns\",lvl:3},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"feet\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:15,Operation:0,UUID:[I;673268691,-798255952,16966796,149898430]},
+                  {Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:12.2,Operation:0,UUID:[I;-322725792,9560949,-53272768,874652792]},
+                  {Slot:\"feet\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.05,Operation:1,UUID:[I;-467858653,-849292184,842822186,-412422598]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:golden_boots",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Zombie Knight Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"deapth_strider\",lvl:3},
+                  {id:\"feather_falling\",lvl:5},
+                  {id:\"protection\",lvl:5},
+                  {id:\"thorns\",lvl:3},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"feet\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:15,Operation:0,UUID:[I;-290001340,895148899,88960615,-428012037]},
+                  {Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:22.6,Operation:0,UUID:[I;342790009,-841371183,-194298601,70713748]},
+                  {Slot:\"feet\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.05,Operation:1,UUID:[I;-383472447,-13315987,-850849632,290733049]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

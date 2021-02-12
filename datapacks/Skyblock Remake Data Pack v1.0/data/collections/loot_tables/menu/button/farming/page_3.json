@@ -1,0 +1,760 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:mutton",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Raw Mutton ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_MuttonL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_MuttonL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Mutton Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Mutton ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_MuttonNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_MuttonP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_MuttonS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_MuttonN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_MuttonL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Raw Mutton ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_MuttonL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Mutton Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_MuttonL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_MuttonS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Raw Mutton ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_MuttonS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:rabbit",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Raw Rabbit ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_RabbitL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_RabbitL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Rabbit Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Rabbit ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RabbitNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RabbitP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RabbitS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RabbitN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_RabbitL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Raw Rabbit ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_RabbitL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Rabbit Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_RabbitL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_RabbitS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Raw Rabbit ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_RabbitS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:nether_wart",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Nether Wart ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_NetherwartL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_NetherwartL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Netherwart Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Netherwart ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_NetherwartNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_NetherwartP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_NetherwartS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_NetherwartN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_NetherwartL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Nether Wart ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_NetherwartL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Netherwart Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_NetherwartL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_NetherwartS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Nether Wart ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_NetherwartS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

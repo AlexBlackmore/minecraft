@@ -1,0 +1,72 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:player_head",
+			"functions": [
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "text": "Currently: ",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+						"score": {
+						  "name": "SuperiorDragChances",
+						  "objective": "Setting"
+						},
+						"color": "blue",
+						"italic": false
+					},
+					{
+					  "text": "%",
+					  "color": "blue",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": "Controls how common Superior",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "Dragon spawns are.",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Click to change!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": {
+				  "text": "Superior Dragon Spawn Chance",
+				  "color": "gold",
+				  "italic": false
+				}
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkullOwner:{Properties: {textures: [{Value: \"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmY4OWIxNTBiZTljNGM1MjQ5ZjM1NWY2OGVhMGM0MzkxMzAwYTliZTFmMjYwZDc1MGZjMzVhMTgxN2FkNzk2ZSJ9fX0=\"}]}, Id: [I; 2084327970, 717899712, -1577301697, -329191066]},SkyblockMenu:1b,HideFlags:63}"
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

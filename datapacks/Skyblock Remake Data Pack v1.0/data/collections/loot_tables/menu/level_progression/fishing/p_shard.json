@@ -1,0 +1,652 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 1",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_PshardP1"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardS": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 1",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_PshardP1"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP1": {
+                  "min": 0,
+                  "max": 99
+                },
+                "C_PshardS": {
+                  "min": 1,
+                  "max": 1000
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 1",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP1": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 2",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_PshardP2"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP1": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 2",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_PshardP2"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP1": 100,
+                "C_PshardP2": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 2",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP2": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 3",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_PshardP3"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP2": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 3",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_PshardP3"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP2": 100,
+                "C_PshardP3": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 3",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP3": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 4",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_PshardP4"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP3": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 4",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_PshardP4"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP3": 100,
+                "C_PshardP4": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 4",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP4": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 5",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_PshardP5"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP4": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 5",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_PshardP5"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP4": 100,
+                "C_PshardP5": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Prismarine Shard 5",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_PshardS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Pshard5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_PshardP5": 100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

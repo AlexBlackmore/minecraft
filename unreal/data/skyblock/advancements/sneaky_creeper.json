@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:creeper",
+                    "nbt": "{Tags:[\"sneaky_creeper\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience":8
+    }
+}

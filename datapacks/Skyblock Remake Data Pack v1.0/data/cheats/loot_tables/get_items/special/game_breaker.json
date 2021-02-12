@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:tnt",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"\",Rarity:\"SPECIAL\",RarityColor:'{\"text\":\"\",\"color\":\"red\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Game Breaker\",\"color\":\"red\",\"italic\":false}]',Lore:['[{\"text\":\"This item was given to a player\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"who reported a game breaking\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"exploit. What a guy!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"SPECIAL\",\"color\":\"red\",\"italic\":false,\"bold\":true}]']},Enchantments:[{id:\"BreakGame\", lvl:0s}]}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

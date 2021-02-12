@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:enchanting_table",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{Damage:0,SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"Enchanting","color":"green","italic":false}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Enchant items to earn Enchanting","color":"gray","italic":false}, {"text":"XP!","color":"gray","italic":false}, {"text":" "}, [{"text":"Progress to Level 1: ","color":"gray","italic":false},{"text":"0","color":"yellow","italic":false},{"text":"%","color":"gold"}], [{"text":"0","color":"yellow","italic":false},{"text":"/","color":"gold","italic":false},{"text":"50","color":"yellow","italic":false}], {"text":" "}, {"text":"COMING SOON","color":"red","italic":false,"bold":true}],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

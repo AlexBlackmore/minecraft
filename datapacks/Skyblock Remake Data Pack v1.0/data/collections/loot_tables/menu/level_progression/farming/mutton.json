@@ -1,0 +1,1168 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 1",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP1"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonS": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 1",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP1"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP1": {
+                  "min": 0,
+                  "max": 99
+                },
+                "C_MuttonS": {
+                  "min": 1,
+                  "max": 1000
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 1",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP1": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 2",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP2"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP1": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 2",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP2"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP1": 100,
+                "C_MuttonP2": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 2",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP2": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 3",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP3"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP2": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 3",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP3"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP2": 100,
+                "C_MuttonP3": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 3",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP3": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 4",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP4"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP3": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 4",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP4"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP3": 100,
+                "C_MuttonP4": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 4",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP4": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 5",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP5"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP4": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 5",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP5"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP4": 100,
+                "C_MuttonP5": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 5",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP5": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 6",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP6"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP5": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 6",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP6"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP5": 100,
+                "C_MuttonP6": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 6",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP6": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 7",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP7"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP6": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 7",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP7"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP6": 100,
+                "C_MuttonP7": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 7",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP7": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 8",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP8"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP7": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 8",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP8"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP7": 100,
+                "C_MuttonP8": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 8",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP8": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 9",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP9"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP8": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 9",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_MuttonP9"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP8": 100,
+                "C_MuttonP9": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Mutton 9",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_MuttonS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Mutton9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_MuttonP9": 100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

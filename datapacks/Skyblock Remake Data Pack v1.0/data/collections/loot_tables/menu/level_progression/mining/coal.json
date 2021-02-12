@@ -1,0 +1,1168 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 1",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP1"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalS": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 1",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP1"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP1": {
+                  "min": 0,
+                  "max": 99
+                },
+                "C_CoalS": {
+                  "min": 1,
+                  "max": 1000
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 1",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP1": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 2",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP2"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP1": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 2",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP2"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP1": 100,
+                "C_CoalP2": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 2",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP2": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 3",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP3"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP2": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 3",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP3"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP2": 100,
+                "C_CoalP3": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 3",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP3": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 4",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP4"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP3": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 4",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP4"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP3": 100,
+                "C_CoalP4": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 4",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP4": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 5",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP5"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP4": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 5",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP5"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP4": 100,
+                "C_CoalP5": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 5",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP5": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 6",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP6"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP5": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 6",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP6"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP5": 100,
+                "C_CoalP6": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 6",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP6": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 7",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP7"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP6": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 7",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP7"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP6": 100,
+                "C_CoalP7": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 7",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP7": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 8",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP8"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP7": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 8",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP8"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP7": 100,
+                "C_CoalP8": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 8",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP8": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 9",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP9"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP8": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 9",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CoalP9"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP8": 100,
+                "C_CoalP9": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal 9",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_CoalS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Coal9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_CoalP9": 100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1516 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:oak_log",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Oak Log ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_OakL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_OakL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Oak Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Oak ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_OakNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_OakP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_OakS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_OakN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_OakL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Oak Log ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_OakL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Oak Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_OakL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_OakS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Oak Log ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_OakS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:spruce_log",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Spruce Log ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_SpruceL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_SpruceL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Spruce Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Spruce ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_SpruceNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_SpruceP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_SpruceS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_SpruceN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_SpruceL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Spruce Log ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_SpruceL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Spruce Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_SpruceL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_SpruceS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Spruce Log ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_SpruceS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:birch_log",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Birch Log ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_BirchL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_BirchL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Birch Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Birch ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_BirchNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_BirchP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_BirchS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_BirchN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_BirchL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Birch Log ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_BirchL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Birch Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_BirchL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_BirchS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Birch Log ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_BirchS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:dark_oak_log",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Dark Oak Log ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_DarkoakL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_DarkoakL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Darkoak Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Darkoak ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_DarkoakNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_DarkoakP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_DarkoakS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_DarkoakN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_DarkoakL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Dark Oak Log ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_DarkoakL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Darkoak Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_DarkoakL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_DarkoakS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Dark Oak Log ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_DarkoakS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:acacia_log",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Acacia Log ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_AcaciaL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_AcaciaL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Acacia Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Acacia ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_AcaciaNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_AcaciaP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_AcaciaS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_AcaciaN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_AcaciaL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Acacia Log ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_AcaciaL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Acacia Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_AcaciaL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_AcaciaS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Acacia Log ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_AcaciaS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:jungle_log",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Jungle Log ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_JungleL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_JungleL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Jungle Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Jungle ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_JungleNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_JungleP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_JungleS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_JungleN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_JungleL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Jungle Log ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_JungleL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Jungle Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_JungleL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_JungleS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Jungle Log ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_JungleS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

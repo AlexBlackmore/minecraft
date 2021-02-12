@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "blast": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "is_explosion": true
+                    },
+                    "source_entity": {
+                        "nbt": "{Tags:[\"CreeperLaunchPlayer\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "public_islands:the_end/launch_player/remove_damage"
+    }
+}

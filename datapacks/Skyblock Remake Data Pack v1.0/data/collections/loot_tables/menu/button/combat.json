@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:stone_sword",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{Damage:0,SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"Combat Collection","color":"green","italic":false}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"View your Combat Collection!","color":"gray","italic":false}, {"text":" "}, [{"text":"Collection Unlocked: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_CombatP"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_Combat"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"text":"10","color":"yellow","italic":false}], {"text":" "}, {"text":"Click to view!","color":"yellow","italic":false}],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

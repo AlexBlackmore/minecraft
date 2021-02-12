@@ -1,0 +1,304 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:baked_potato",
+			"functions": [
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "text": "Currently: ",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+					  "text": "Enabled",
+					  "color": "green",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": "If enabled, you cannot apply more",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "than 10 Hot Potato books.",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Click to toggle!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": {
+				  "text": "Hot Potato Book Limit",
+				  "color": "gold",
+				  "italic": false
+				}
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:clock",
+			"functions": [
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "text": "Currently: ",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+					  "text": "Enabled",
+					  "color": "green",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": "If enabled, item ability cooldowns",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "will apply.",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Click to toggle!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": {
+				  "text": "Ability Cooldowns",
+				  "color": "gold",
+				  "italic": false
+				}
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:zombie_head",
+			"functions": [
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "text": "Currently: ",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+					  "text": "1x",
+					  "color": "blue",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": "Controls how often mobs spawn",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "in public islands.",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Click to change!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": {
+				  "text": "Mob Spawn Rates",
+				  "color": "gold",
+				  "italic": false
+				}
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:sugar",
+			"functions": [
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "text": "Currently: ",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+					  "text": "Enabled",
+					  "color": "green",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": "If enabled, players cannot exceed",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "the speed cap (400%).",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Click to toggle!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": {
+				  "text": "Speed Cap",
+				  "color": "gold",
+				  "italic": false
+				}
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:wheat_seeds",
+			"functions": [
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "text": "Currently: ",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+					  "text": "1x",
+					  "color": "blue",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": "Controls how frequently crops/trees/",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "ores regenerate on public islands.",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Click to change!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": {
+				  "text": "Block Regeneration Speed",
+				  "color": "gold",
+				  "italic": false
+				}
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

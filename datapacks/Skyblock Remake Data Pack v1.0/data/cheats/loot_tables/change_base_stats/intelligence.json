@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"✎ Base Intelligence ","color":"aqua","italic":false},{"score":{"name":"@s","objective":"P_BaseIntel"},"italic":false,"color":"white"}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Intelligence increased both your","color":"gray","italic":false},{"text":"Mana Pool and the damage of your","color":"gray","italic":false},{"text":"magical items.","color":"gray","italic":false},{"text":""},[{"text":"Magic Damage: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_Intelligence"},"italic":false,"color":"aqua"},{"text":"%","color":"aqua","italic":false}],[{"text":"Mana Pool: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_ManaPool"},"italic":false,"color":"aqua"}]],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

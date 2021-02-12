@@ -1,0 +1,67 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:golden_chestplate",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Zombie Knight Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:5},
+                  {id:\"thorns\",lvl:3},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"head\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:15,Operation:0,UUID:[I;-213975379,-84669622,223959858,-173474642]},
+                  {Slot:\"head\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:13.8,Operation:0,UUID:[I;193129921,133288576,-263363468,773286923]},
+                  {Slot:\"head\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.05,Operation:1,UUID:[I;901194845,-986414499,-148141230,344260273]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:golden_chestplate",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Zombie Knight Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:5},
+                  {id:\"thorns\",lvl:3},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:15,Operation:0,UUID:[I;268850517,-501974800,-989762332,-985829985]},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:43.6,Operation:0,UUID:[I;-944998049,850067470,117096652,834568513]},
+                  {Slot:\"chest\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.05,Operation:1,UUID:[I;191240266,199087554,-698599555,16871530]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

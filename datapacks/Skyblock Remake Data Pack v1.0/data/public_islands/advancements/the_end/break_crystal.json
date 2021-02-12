@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:slime",
+                    "nbt": "{Tags:[\"EndCrystalHitBox\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "public_islands:the_end/main_sequence/break_crystal"
+    }
+}

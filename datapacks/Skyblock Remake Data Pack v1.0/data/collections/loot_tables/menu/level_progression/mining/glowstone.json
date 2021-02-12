@@ -1,0 +1,1168 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 1",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP1"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneS": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 1",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP1"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP1": {
+                  "min": 0,
+                  "max": 99
+                },
+                "C_GlowstoneS": {
+                  "min": 1,
+                  "max": 1000
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 1",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP1": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 2",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP2"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP1": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 2",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP2"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP1": 100,
+                "C_GlowstoneP2": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 2",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP2": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 3",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP3"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP2": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 3",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP3"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP2": 100,
+                "C_GlowstoneP3": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 3",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP3": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 4",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP4"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP3": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 4",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP4"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP3": 100,
+                "C_GlowstoneP4": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 4",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP4": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 5",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP5"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP4": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 5",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP5"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP4": 100,
+                "C_GlowstoneP5": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 5",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP5": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 6",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP6"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP5": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 6",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP6"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP5": 100,
+                "C_GlowstoneP6": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 6",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP6": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 7",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP7"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP6": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 7",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP7"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP6": 100,
+                "C_GlowstoneP7": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 7",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP7": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 8",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP8"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP7": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 8",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP8"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP7": 100,
+                "C_GlowstoneP8": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 8",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP8": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 9",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP9"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP8": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 9",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_GlowstoneP9"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP8": 100,
+                "C_GlowstoneP9": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Glowstone Dust 9",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_GlowstoneS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Glowstone9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_GlowstoneP9": 100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1168 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 1",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP1"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenS": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 1",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP1"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP1": {
+                  "min": 0,
+                  "max": 99
+                },
+                "C_ChickenS": {
+                  "min": 1,
+                  "max": 1000
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 1",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken1","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP1": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 2",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP2"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP1": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 2",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP2"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP1": 100,
+                "C_ChickenP2": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 2",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken2","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP2": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 3",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP3"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP2": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 3",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP3"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP2": 100,
+                "C_ChickenP3": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 3",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken3","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP3": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 4",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP4"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP3": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 4",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP4"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP3": 100,
+                "C_ChickenP4": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 4",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken4","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP4": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 5",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP5"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP4": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 5",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP5"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP4": 100,
+                "C_ChickenP5": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 5",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken5","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP5": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 6",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP6"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP5": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 6",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP6"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP5": 100,
+                "C_ChickenP6": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 6",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken6","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP6": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 7",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP7"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP6": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 7",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP7"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP6": 100,
+                "C_ChickenP7": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 7",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken7","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP7": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 8",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP8"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP7": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 8",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP8"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP7": 100,
+                "C_ChickenP8": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 8",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken8","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP8": 100
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 9",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP9"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP8": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 9",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_ChickenP9"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP8": 100,
+                "C_ChickenP9": {
+                  "min": 0,
+                  "max": 99
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Raw Chicken 9",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"text":""},[{"text":"Progress: ","color":"gray","italic":false},{"text":"100%","color":"green"}], [{"score":{"name":"@s","objective":"C_ChickenS"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"score":{"name":"Chicken9","objective":"C_Levels"},"italic":false,"color":"yellow"}],{"text":" "},{"text":"Reward: ","color":"gray","italic":false},[{"text":"  ","color":"blue","italic":false},{"text":"COMING SOON","color":"red","italic":false,"bold":true}],{"text":" "},{"text":"Click to view rewards!","color":"yellow","italic":false}],
+              "entity": "this"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "C_ChickenP9": 100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

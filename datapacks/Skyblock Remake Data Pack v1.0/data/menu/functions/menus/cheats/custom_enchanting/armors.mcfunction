@@ -1,0 +1,68 @@
+#===================NOTE===================#
+# This function was coded by BlueCommander #
+# Please don't claim this as your own work #
+#   LINK www.youtube.com/c/BlueCommander   #
+#==========================================#
+#-----------------BUTTONS------------------#
+playsound minecraft:block.anvil.hit master @p ~ ~ ~ 1 2 1
+
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:0b}] run scoreboard players set @s CustomEnchPage 31
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:0b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:1b}] run scoreboard players set @s CustomEnchPage 32
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:1b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:2b}] run scoreboard players set @s CustomEnchPage 33
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:2b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:3b}] run scoreboard players set @s CustomEnchPage 34
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:3b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:4b}] run scoreboard players set @s CustomEnchPage 35
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:4b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:5b}] run scoreboard players set @s CustomEnchPage 36
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:5b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:6b}] run scoreboard players set @s CustomEnchPage 37
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:6b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:7b}] run scoreboard players set @s CustomEnchPage 38
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:7b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:8b}] run scoreboard players set @s CustomEnchPage 39
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:8b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:9b}] run scoreboard players set @s CustomEnchPage 40
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:9b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:10b}] run scoreboard players set @s CustomEnchPage 41
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:10b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:11b}] run scoreboard players set @s CustomEnchPage 42
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:11b}] run function cheats:custom_enchanting/open_page
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:12b}] run scoreboard players set @s CustomEnchPage 43
+execute if entity @s[scores={M_PageDelay=0}] unless data entity @s Items[{Slot:12b}] run function cheats:custom_enchanting/open_page
+
+execute unless data entity @s Items[{Slot:0b}].tag.SkyblockMenu run function menu:return_item/0
+execute unless data entity @s Items[{Slot:1b}].tag.SkyblockMenu run function menu:return_item/1
+execute unless data entity @s Items[{Slot:2b}].tag.SkyblockMenu run function menu:return_item/2
+execute unless data entity @s Items[{Slot:3b}].tag.SkyblockMenu run function menu:return_item/3
+execute unless data entity @s Items[{Slot:4b}].tag.SkyblockMenu run function menu:return_item/4
+execute unless data entity @s Items[{Slot:5b}].tag.SkyblockMenu run function menu:return_item/5
+execute unless data entity @s Items[{Slot:6b}].tag.SkyblockMenu run function menu:return_item/6
+execute unless data entity @s Items[{Slot:7b}].tag.SkyblockMenu run function menu:return_item/7
+execute unless data entity @s Items[{Slot:8b}].tag.SkyblockMenu run function menu:return_item/8
+execute unless data entity @s Items[{Slot:9b}].tag.SkyblockMenu run function menu:return_item/9
+execute unless data entity @s Items[{Slot:10b}].tag.SkyblockMenu run function menu:return_item/10
+execute unless data entity @s Items[{Slot:11b}].tag.SkyblockMenu run function menu:return_item/11
+execute unless data entity @s Items[{Slot:12b}].tag.SkyblockMenu run function menu:return_item/12
+execute unless data entity @s Items[{Slot:13b}].tag.SkyblockMenu run function menu:return_item/13
+execute unless data entity @s Items[{Slot:14b}].tag.SkyblockMenu run function menu:return_item/14
+execute unless data entity @s Items[{Slot:15b}].tag.SkyblockMenu run function menu:return_item/15
+execute unless data entity @s Items[{Slot:16b}].tag.SkyblockMenu run function menu:return_item/16
+execute unless data entity @s Items[{Slot:17b}].tag.SkyblockMenu run function menu:return_item/17
+execute unless data entity @s Items[{Slot:18b}].tag.SkyblockMenu run function menu:return_item/18
+execute unless data entity @s Items[{Slot:19b}].tag.SkyblockMenu run function menu:return_item/19
+execute unless data entity @s Items[{Slot:20b}].tag.SkyblockMenu run function menu:return_item/20
+execute unless data entity @s Items[{Slot:21b}].tag.SkyblockMenu run function menu:return_item/21
+execute unless data entity @s Items[{Slot:22b}].tag.SkyblockMenu run function menu:return_item/22
+execute unless data entity @s Items[{Slot:23b}].tag.SkyblockMenu run function menu:return_item/23
+execute unless data entity @s Items[{Slot:24b}].tag.SkyblockMenu run function menu:return_item/24
+execute unless data entity @s Items[{Slot:25b}].tag.SkyblockMenu run function menu:return_item/25
+execute unless data entity @s Items[{Slot:26b}].tag.SkyblockMenu run function menu:return_item/26
+
+execute if entity @s[scores={M_PageDelay=0},nbt=!{Items:[{Slot: 21b, id: "minecraft:arrow", Count: 1b}]}] run scoreboard players set @s M_NewPage 118
+execute if entity @s[scores={M_PageDelay=0},nbt=!{Items:[{Slot: 22b, id: "minecraft:barrier", Count: 1b, tag: {SkyblockMenu:1b, display: {Name: '{"text":"Close","color":"red","italic":false}'}}}]}] run function menu:close_menu
+#---------------MENU ITEMS-----------------#
+data merge entity @s {Items: [{Slot: 0b, id: "minecraft:prismarine_crystals", Count: 1b, tag: {SkyblockMenu:1b, display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Aqua Affinity.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Aqua Affinity Book","color":"green","italic":false}'}}}, {Slot: 1b, id: "minecraft:gunpowder", Count: 1b, tag: {SkyblockMenu:1b, display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Blast Protection.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Blast Protection Book","color":"green","italic":false}'}}}, {Slot: 2b, id: "minecraft:lily_pad", Count: 1b, tag: {SkyblockMenu:1b, display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Depth Strider.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Depth Strider Book","color":"green","italic":false}'}}}, {Slot: 3b, id: "minecraft:feather", Count: 1b, tag: {SkyblockMenu:1b, display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Feather Falling.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Feather Falling Book","color":"green","italic":false}'}}}, {Slot: 4b, id: "minecraft:magma_cream", Count: 1b, tag: {SkyblockMenu:1b, display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Fire Protection.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Fire Protection Book","color":"green","italic":false}'}}}, {Slot: 5b, id: "minecraft:ice", Count: 1b, tag: {SkyblockMenu:1b, display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Frost Walker.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Frost Walker Book","color":"green","italic":false}'}}}, {Slot: 6b, id: "minecraft:dark_oak_log", Count: 1b, tag: {SkyblockMenu:1b, Enchantments:[{}],display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Growth.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Growth Book","color":"green","italic":false}'}}}, {Slot: 7b, id: "minecraft:arrow", Count: 1b, tag: {SkyblockMenu:1b, display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Projectile Protection.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Projectile Protection Book","color":"green","italic":false}'}}}, {Slot: 8b, id: "minecraft:iron_ingot", Count: 1b, tag: {SkyblockMenu:1b, display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Protection.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Protection Book","color":"green","italic":false}'}}}, {Slot: 9b, id: "minecraft:water_bucket", Count: 1b, tag: {SkyblockMenu:1b, display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Respiration.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Respiration Book","color":"green","italic":false}'}}}, {Slot: 10b, id: "minecraft:green_dye", Count: 1b, tag: {SkyblockMenu:1b, Enchantments:[{}], display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Thorns.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Thorns Book","color":"green","italic":false}'}}}, {Slot: 11b, id: "minecraft:iron_ingot", Count: 1b, tag: {SkyblockMenu:1b, Enchantments:[{}], display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for True Protection.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"True Protection Book","color":"green","italic":false}'}}}, {Slot: 12b, id: "minecraft:sugar", Count: 1b, tag: {SkyblockMenu:1b, Enchantments:[{}], display: {Lore: ['[{"text":"A custom Enchanted Book","color":"gray","italic":false}]','[{"text":"for Sugar Rush.","color":"gray","italic":false}]','[{"text":""}]','[{"text":"Click to create!","color":"yellow","italic":false}]'], Name: '{"text":"Sugar Rush Book","color":"green","italic":false}'}}}, {Slot: 13b, id: "minecraft:scute", Count: 1b, tag: {CustomModelData:1,SkyblockMenu:1b, display: {Name: '{"text":""}'}}}, {Slot: 14b, id: "minecraft:scute", Count: 1b, tag: {CustomModelData:1,SkyblockMenu:1b, display: {Name: '{"text":""}'}}}, {Slot: 15b, id: "minecraft:scute", Count: 1b, tag: {CustomModelData:1,SkyblockMenu:1b, display: {Name: '{"text":""}'}}}, {Slot: 16b, id: "minecraft:scute", Count: 1b, tag: {CustomModelData:1,SkyblockMenu:1b, display: {Name: '{"text":""}'}}}, {Slot: 17b, id: "minecraft:scute", Count: 1b, tag: {CustomModelData:1,SkyblockMenu:1b, display: {Name: '{"text":""}'}}}, {Slot: 18b, id: "minecraft:red_stained_glass_pane", Count: 1b, tag: {SkyblockMenu:1b, display: {Name: '{"text":" "}'}}}, {Slot: 19b, id: "minecraft:red_stained_glass_pane", Count: 1b, tag: {SkyblockMenu:1b, display: {Name: '{"text":" "}'}}}, {Slot: 20b, id: "minecraft:red_stained_glass_pane", Count: 1b, tag: {SkyblockMenu:1b, display: {Name: '{"text":" "}'}}}, {Slot: 21b, id: "minecraft:arrow", Count: 1b, tag: {SkyblockMenu:1b, display: {Lore: ['[{"text":"To Get Item Categories","color":"gray","italic":false}]'], Name: '{"text":"Go Back","color":"green","italic":false}'}}}, {Slot: 22b, id: "minecraft:barrier", Count: 1b, tag: {SkyblockMenu:1b, display: {Name: '{"text":"Close","color":"red","italic":false}'}}}, {Slot: 23b, id: "minecraft:red_stained_glass_pane", Count: 1b, tag: {SkyblockMenu:1b, display: {Name: '{"text":" "}'}}}, {Slot: 24b, id: "minecraft:red_stained_glass_pane", Count: 1b, tag: {SkyblockMenu:1b, display: {Name: '{"text":" "}'}}}, {Slot: 25b, id: "minecraft:red_stained_glass_pane", Count: 1b, tag: {SkyblockMenu:1b, display: {Name: '{"text":" "}'}}}, {Slot: 26b, id: "minecraft:red_stained_glass_pane", Count: 1b, tag: {SkyblockMenu:1b, display: {Name: '{"text":" "}'}}}]}
+#------------------------------------------#

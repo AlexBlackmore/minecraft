@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-989887561,190991722,-1405170445,315922973],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTk0YWU0MzNiMzAxYzdmYjdjNjhjYmE2MjViMGJkMzZiMGIxNDE5MGYyMGUzNGE3YzhlZTBkOWRlMDZkNTNiOSJ9fX0=\"}]}},Base:{Type:\"HELMET\",Rarity:\"LEGENDARY\",RarityColor:'{\"text\":\"\",\"color\":\"gold\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\",SCChance:2.5,BaseSCChance:2.5,Health:120,BaseHealth:120,Defense:120,BaseDefense:120,Abilities:[{Name:\"Absorb\",Activation:\"\",Type:\"Full Set Bonus\"},{Name:\"Reflect\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Absorb\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Doubles \",\"color\":\"blue\",\"italic\":false},{\"text\":\"your \",\"color\":\"gray\",\"italic\":false},{\"text\":\"❈ Defense\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"while in water.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Reflect\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Your sharp scales reflect\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"15% \",\"color\":\"blue\",\"italic\":false},{\"text\":\"of the damage onto the\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"attacker.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Shark Scale Helmet\",\"color\":\"gold\",\"italic\":false}]',Lore:['[{\"text\":\"Sea Creature Chance: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+2.5%\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+120 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+120\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Absorb\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Doubles \",\"color\":\"blue\",\"italic\":false},{\"text\":\"your \",\"color\":\"gray\",\"italic\":false},{\"text\":\"❈ Defense\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"while in water.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Reflect\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Your sharp scales reflect\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"15% \",\"color\":\"blue\",\"italic\":false},{\"text\":\"of the damage onto the\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"attacker.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"LEGENDARY HELMET\",\"color\":\"gold\",\"italic\":false,\"bold\":true}]']}}"
+            }
+            ,
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

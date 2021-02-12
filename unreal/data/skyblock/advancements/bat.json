@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:bat",
+                    "nbt": "{Tags:[\"bat\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience":33
+    }
+}

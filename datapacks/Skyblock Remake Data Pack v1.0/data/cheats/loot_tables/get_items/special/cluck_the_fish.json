@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:cod",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{}],Base:{Type:\"\",Rarity:\"SPECIAL\",RarityColor:'{\"text\":\"\",\"color\":\"red\"}'},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Cluck cluck bkaawwk. Puk Puk\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Pukaaak!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Cluck the Fish\",\"color\":\"red\",\"italic\":false}]',Lore:['[{\"text\":\"Cluck cluck bkaawwk. Puk Puk\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Pukaaak!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"SPECIAL\",\"color\":\"red\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

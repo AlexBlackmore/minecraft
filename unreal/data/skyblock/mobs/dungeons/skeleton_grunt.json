@@ -1,0 +1,23 @@
+summon skeleton ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Skeleton Grunt\",\"color\":\"white\"}]",
+  CustomNameVisible:true,
+  Tags:["skeleton_grunt","dungeons"],
+  HandItems:[
+    {
+      id:"bow",
+      Count:1,
+      tag:{
+        Enchantments:[
+          {id:"infinity",lvl:1},
+          {id:"power",lvl:7},
+          {id:"unbreaking",lvl:2}
+        ],
+        AttributeModifiers:[
+          {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:5,Operation:0,UUID:[I;668429752,551336958,952772181,458765697]}
+        ]
+      }
+    },
+    {}
+  ],
+  HandDropChances:[0.0f,0.0f]
+}

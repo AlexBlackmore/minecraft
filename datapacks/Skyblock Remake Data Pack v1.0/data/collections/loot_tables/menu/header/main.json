@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:painting",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"Collection","color":"green","italic":false}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"View all the items avaliable","color":"gray","italic":false}, {"text":"in SkyBlock. Collect more of an","color":"gray","italic":false}, {"text":"item to unlock rewards on your","color":"gray","italic":false}, {"text":"way to becoming a master of","color":"gray","italic":false}, {"text":"SkyBlock!","color":"gray","italic":false}, {"text":" "}, [{"text":"Collection Unlocked: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"C_UnlockedP"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"C_Unlocked"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"text":"59","color":"yellow","italic":false}], {"text":" "}, {"text":"Click to show rankings!","color":"yellow","italic":false}],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

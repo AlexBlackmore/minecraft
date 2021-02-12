@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:wolf",
+                    "nbt": "{Tags:[\"soul_of_the_alpha\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience":50
+    }
+}

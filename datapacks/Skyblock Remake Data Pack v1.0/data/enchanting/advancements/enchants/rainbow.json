@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "h": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:shears",
+                    "nbt": "{Base:{Enchantments:[{rainbow:{identifier:1b}}]}}"
+                },
+                "entity": {
+                    "type": "minecraft:sheep"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "enchanting:enchants/rainbow/init"
+    }
+}

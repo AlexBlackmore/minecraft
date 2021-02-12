@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:iron_chestplate",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"❈ Defense ","color":"green","italic":false},{"score":{"name":"@s","objective":"P_Defense"},"italic":false,"color":"white"}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Defense reduces the damage that","color":"gray","italic":false},{"text":"you take from enemies.","color":"gray","italic":false},{"text":""},[{"text":"Base Defense: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_BaseDefense"},"italic":false,"color":"green"}],{"text":" Increase your base Defense","color":"dark_gray","italic":true},{"text":" by leveling your Mining Skill","color":"dark_gray","italic":true},[{"text":" and contributing to the","color":"dark_gray","italic":true},{"text":" Fairy ","color":"light_purple","italic":false}],[{"text":" in the","color":"dark_gray","italic":true},{"text":" Wilderness","color":"dark_green","italic":false}],{"text":""},[{"text":"Bonus Defense: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_BonusDefense"},"italic":false,"color":"yellow"}],{"text":" Increase your bonus Defense","color":"dark_gray","italic":true},{"text":" by equipping Armor and holding","color":"dark_gray","italic":true},{"text":" Talismans in your inventory.","color":"dark_gray","italic":true},{"text":""},[{"text":"Damage Reduction: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_DmgReduction"},"italic":false,"color":"green"},{"text":"%","color":"green","italic":false}],[{"text":"Effective Health: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_EHP"},"italic":false,"color":"red"},{"text":"❤","color":"red","italic":false}]],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

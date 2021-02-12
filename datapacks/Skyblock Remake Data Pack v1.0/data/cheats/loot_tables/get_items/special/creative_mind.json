@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:painting",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"\",Rarity:\"SPECIAL\",RarityColor:'{\"text\":\"\",\"color\":\"red\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Creative Mind\",\"color\":\"red\",\"italic\":false}]',Lore:['[{\"text\":\"Original, visionary, inventive and\",\"color\":\"gray\",\"italic\":true}]','[{\"text\":\"innovative! I would even add\",\"color\":\"gray\",\"italic\":true}]','[{\"text\":\"ingenious, clever! A masterpiece!\",\"color\":\"gray\",\"italic\":true}]','[{\"text\":\"\"}]','[{\"text\":\"SPECIAL\",\"color\":\"red\",\"italic\":false,\"bold\":true}]']},Enchantments:[{}]}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

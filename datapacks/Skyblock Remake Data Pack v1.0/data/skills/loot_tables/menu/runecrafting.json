@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:magma_cream",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{Damage:0,SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"Runecrafting","color":"green","italic":false}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Slay bosses, runic mobs & fuse","color":"gray","italic":false}, {"text":"runes to earn Runecrafting XP!","color":"gray","italic":false}, {"text":" "}, [{"text":"Progress to Level 1: ","color":"gray","italic":false},{"text":"0","color":"yellow","italic":false},{"text":"%","color":"gold"}], [{"text":"0","color":"yellow","italic":false},{"text":"/","color":"gold","italic":false},{"text":"50","color":"yellow","italic":false}], {"text":" "}, {"text":"COMING SOON","color":"red","italic":false,"bold":true}],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

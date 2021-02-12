@@ -1,0 +1,89 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"HELMET\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Health:40,Defense:35,Intel:5,BaseHealth:40,BaseDefense:35,BaseIntel:5,Abilities:[{Name:\"Nether Lord\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Nether Lord\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Obsidian will be created below\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you when walking on Lava. Also\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"increases the chance of Nether\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"monsters dropping an item by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"20%. Wearing this full set will\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"also prevent you from taking\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Lava and Fire Damage.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Ember Helmet\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+40 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+35\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+5\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Nether Lord\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Obsidian will be created below\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you when walking on Lava. Also\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"increases the chance of Nether\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"monsters dropping an item by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"20%. Wearing this full set will\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"also prevent you from taking\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Lava and Fire Damage.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC HELMET\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']},SkullOwner:{Id:[I;149985949,-1160427092,-1235487017,-853639480],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzhkMTk5ZTIzYzE3NDg4YTAxYTA3MDA1YTQxZmUzMzBiMWQyMmIwNGU5OTk0M2M5ZjhjODk3ZDE1NmU5NTU1YSJ9fX0=\"}]}}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"CHESTPLATE\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Health:65,Defense:60,Intel:10,BaseHealth:65,BaseDefense:60,BaseIntel:10,Abilities:[{Name:\"Nether Lord\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Nether Lord\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Obsidian will be created below\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you when walking on Lava. Also\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"increases the chance of Nether\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"monsters dropping an item by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"20%. Wearing this full set will\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"also prevent you from taking\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Lava and Fire Damage.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Ember Chestplate\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+65 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+60\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+10\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Nether Lord\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Obsidian will be created below\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you when walking on Lava. Also\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"increases the chance of Nether\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"monsters dropping an item by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"20%. Wearing this full set will\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"also prevent you from taking\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Lava and Fire Damage.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC CHESTPLATE\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"LEGGINGS\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Health:60,Defense:55,Intel:5,BaseHealth:60,BaseDefense:55,BaseIntel:5,Abilities:[{Name:\"Nether Lord\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Nether Lord\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Obsidian will be created below\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you when walking on Lava. Also\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"increases the chance of Nether\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"monsters dropping an item by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"20%. Wearing this full set will\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"also prevent you from taking\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Lava and Fire Damage.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Ember Leggings\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+60 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+55\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+5\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Nether Lord\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Obsidian will be created below\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you when walking on Lava. Also\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"increases the chance of Nether\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"monsters dropping an item by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"20%. Wearing this full set will\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"also prevent you from taking\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Lava and Fire Damage.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC LEGGINGS\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"BOOTS\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Health:35,Defense:30,Intel:5,BaseHealth:35,BaseDefense:30,BaseIntel:5,Abilities:[{Name:\"Nether Lord\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Nether Lord\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Obsidian will be created below\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you when walking on Lava. Also\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"increases the chance of Nether\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"monsters dropping an item by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"20%. Wearing this full set will\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"also prevent you from taking\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Lava and Fire Damage.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Ember Boots\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+35 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+30\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+5\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Nether Lord\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Obsidian will be created below\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you when walking on Lava. Also\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"increases the chance of Nether\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"monsters dropping an item by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"20%. Wearing this full set will\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"also prevent you from taking\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Lava and Fire Damage.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC BOOTS\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

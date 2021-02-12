@@ -1,0 +1,411 @@
+{
+    "type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stick",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Stick\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:coal\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:torch",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Torch\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:sandstone_slab\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:sandstone_slab\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:chiseled_sandstone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Chiseled Sandstone\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:carved_pumpkin\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:torch\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:jack_o_lantern",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Jack O Lantern\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:quartz_slab\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:quartz_slab\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:chiseled_quartz_block",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Chiseled Quartz Block\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:quartz_block\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:quartz_block\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:quartz_pillar",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Quartz Pillar\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stone_brick_slab\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stone_brick_slab\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:chiseled_stone_bricks",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Chiseled Stone Bricks\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:red_sandstone_slab\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:red_sandstone_slab\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:chiseled_red_sandstone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Chiseled Red Sandstone\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:purpur_slab\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:purpur_slab\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:purpur_pillar",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Purpur Pillar\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:cobblestone\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:lever",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Lever\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:redstone\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:redstone_torch",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Redstone Torch\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:slime_ball\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:piston\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:sticky_piston",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Sticky Piston\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:furnace\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:minecart\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:furnace_minecart",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Furnace Minecart\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:chest\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:minecart\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:chest_minecart",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Chest Minecart\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:hopper\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:minecart\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:hopper_minecart",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Hopper Minecart\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:tnt\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:minecart\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:tnt_minecart",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Tnt Minecart\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:nether_brick_slab\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:nether_brick_slab\",tag:{Base:{Vanilla:1b}}}]}"
+                  }
+                }
+              ],
+              "type": "item",
+              "name": "minecraft:chiseled_nether_bricks",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Chiseled Nether Bricks\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+                },
+                {
+                  "function": "set_count",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:polished_blackstone_slab\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:polished_blackstone_slab\",tag:{Base:{Vanilla:1b}}}]}"
+                  }
+                }
+              ],
+              "type": "item",
+              "name": "minecraft:chiseled_polished_blackstone",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Chiseled Polished Blackstone\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+                },
+                {
+                  "function": "set_count",
+                  "count": 1
+                }
+              ]
+            }
+					]
+				}
+			]
+		}
+	]
+}

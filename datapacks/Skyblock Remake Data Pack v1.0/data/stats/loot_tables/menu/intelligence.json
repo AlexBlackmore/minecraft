@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"✎ Intelligence ","color":"aqua","italic":false},{"score":{"name":"@s","objective":"P_Intelligence"},"italic":false,"color":"white"}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Intelligence increased both your","color":"gray","italic":false},{"text":"Mana Pool and the damage of your","color":"gray","italic":false},{"text":"magical items.","color":"gray","italic":false},{"text":"","color":"yellow","italic":false},[{"text":"Base Intelligence: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_BaseIntel"},"italic":false,"color":"green"}],{"text":" Increase your base","color":"dark_gray","italic":true},[{"text":" Intelligence by leveling your","color":"dark_gray","italic":true}],[{"text":" Enchanting and Alchemy Skills.","color":"dark_gray","italic":true}],{"text":"","color":"light_purple","italic":false},[{"text":"Bonus Intelligence: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_BonusIntel"},"italic":false,"color":"yellow"}],{"text":" Increase your bonus","color":"dark_gray","italic":true},{"text":" Intelligence by equipping Armor","color":"dark_gray","italic":true},{"text":" and holding Talismans in your","color":"dark_gray","italic":true},{"text":" inventory.","color":"dark_gray","italic":true},{"text":"","color":"yellow","italic":false},[{"text":"Magic Damage: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_Intelligence"},"italic":false,"color":"aqua"},{"text":"%","color":"aqua","italic":false}],[{"text":"Mana Pool: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_ManaPool"},"italic":false,"color":"aqua"}]],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

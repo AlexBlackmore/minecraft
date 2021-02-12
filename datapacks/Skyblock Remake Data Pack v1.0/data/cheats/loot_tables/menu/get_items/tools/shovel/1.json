@@ -1,0 +1,124 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/shovels/diamond_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/shovels/flint_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"_________________","color":"dark_gray","bold":true,"italic":false,"underlined":true},{"text":""},[{"text":"NOTE: ","color":"red","italic":false,"bold":true},{"text":"The Item Ability of this","bold":false}],{"text":"tool has not been coded yet.","color":"red","italic":false},{"text":"BlueCommander on Youtube for updates.","color":"gray"}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/shovels/golden_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/shovels/iron_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/shovels/promising_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"_________________","color":"dark_gray","bold":true,"italic":false,"underlined":true},{"text":""},[{"text":"NOTE: ","color":"red","italic":false,"bold":true},{"text":"The Item Ability of this","bold":false}],{"text":"tool has not been coded yet.","color":"red","italic":false},{"text":"BlueCommander on Youtube for updates.","color":"gray"}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/shovels/stone_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/shovels/wooden_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

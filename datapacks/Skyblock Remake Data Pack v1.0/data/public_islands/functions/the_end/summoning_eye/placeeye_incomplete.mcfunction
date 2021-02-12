@@ -1,0 +1,10 @@
+#===================NOTE===================#
+# This function was coded by BlueCommander #
+# Please don't claim this as your own work #
+#   LINK www.youtube.com/c/BlueCommander   #
+#==========================================#
+#-----------------ISLANDS------------------#
+replaceitem entity @s weapon.mainhand minecraft:warped_fungus_on_a_stick{CustomModelData:34,SleepingEye:1b,Base:{Type:"",Rarity:"EPIC",RarityColor:'{"text":"","color":"dark_purple"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{"text":"Sleeping Eye","color":"dark_purple","italic":false}]',Lore:['{"text":"Keep this item in your","color":"gray","italic":false}','{"text":"inventory to recover your placed","color":"gray","italic":false}','{"text":"Summoning Eye when you leave or","color":"gray","italic":false}','{"text":"when you click the Ender Altar.","color":"gray","italic":false}','{"text":"This item becomes imbued with","color":"gray","italic":false}','{"text":"the magic of the Dragon when it","color":"gray","italic":false}','{"text":"spawns, turning it into a","color":"gray","italic":false}','{"text":"Remnant of the Eye.","color":"gray","italic":false}','[{"text":""}]','[{"text":"EPIC","color":"dark_purple","italic":false,"bold":true}]']}}
+tellraw @s ["",{"text":"☬ ","color":"dark_purple"},{"text":"You placed a Summoning Eye! ","color":"light_purple"},{"text":"(","color":"gray"},{"score":{"name":"Global","objective":"End_EyeCount"},"color":"yellow"},{"text":"/","color":"gray"},{"text":"8","color":"green"},{"text":")","color":"gray"}]
+execute at @a unless entity @s[distance=0] run tellraw @p ["",{"text":"☬ ","color":"dark_purple"},{"selector":"@s"},{"text":" placed a Summoning Eye! ","color":"light_purple"},{"text":"(","color":"gray"},{"score":{"name":"Global","objective":"End_EyeCount"},"color":"yellow"},{"text":"/","color":"gray"},{"text":"8","color":"green"},{"text":")","color":"gray"}]
+#------------------------------------------#

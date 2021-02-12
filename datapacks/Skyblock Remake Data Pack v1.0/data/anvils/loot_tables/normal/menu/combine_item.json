@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:anvil",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"Combine the Enchantments of","color":"gray","italic":false},{"text":"the items in the slots to","color":"gray","italic":false},{"text":"the left and the right below.","color":"gray","italic":false},{"text":""},[{"text":"Cost","color":"gray","italic":false}],[{"score":{"name":"@s","objective":"Anvil_Level"},"color":"dark_aqua","italic":false},{"text":" Exp Levels","color":"dark_aqua","italic":false}],{"text":""},{"text":"Click to combine!","color":"yellow","italic":false}
+              ],
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "Anvil_Level": 1
+                    }
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"Combine the Enchantments of","color":"gray","italic":false},{"text":"the items in the slots to","color":"gray","italic":false},{"text":"the left and the right below.","color":"gray","italic":false},{"text":""},[{"text":"Cost","color":"gray","italic":false}],[{"score":{"name":"@s","objective":"Anvil_Level"},"color":"dark_aqua","italic":false},{"text":" Exp Level","color":"dark_aqua","italic":false}],{"text":""},{"text":"Click to combine!","color":"yellow","italic":false}
+              ],
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "Anvil_Level": 1
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [{"text":"Combine Items","color":"green","italic":false}],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{}],AnvilCombine:1b,SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

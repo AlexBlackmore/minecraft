@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:silverfish",
+                    "nbt": "{Tags:[\"sea_leech\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience":675
+    }
+}

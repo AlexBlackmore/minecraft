@@ -1,0 +1,627 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:oak_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:oak_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Oak Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:spruce_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:spruce_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:spruce_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Spruce Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:birch_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:birch_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:birch_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Birch Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:jungle_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:jungle_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:jungle_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Jungle Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:acacia_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:acacia_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:acacia_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Acacia Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:dark_oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:dark_oak_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:dark_oak_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Dark Oak Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stone\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stone\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stone_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Stone Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:light_weighted_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Light Weighted Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:heavy_weighted_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Heavy Weighted Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:white_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"White Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:orange_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:orange_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:orange_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Orange Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:magenta_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:magenta_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:magenta_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Magenta Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:light_blue_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:light_blue_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:light_blue_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Light Blue Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:yellow_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:yellow_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:yellow_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Yellow Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:lime_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:lime_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:lime_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Lime Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:pink_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:pink_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:pink_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Pink Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:gray_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:gray_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:gray_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Gray Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:light_gray_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:light_gray_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:light_gray_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Light Gray Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:cyan_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:cyan_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:cyan_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Cyan Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:purple_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:purple_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:purple_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Purple Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:blue_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:blue_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:blue_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Blue Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:brown_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:brown_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:brown_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Brown Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:green_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:green_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:green_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Green Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:red_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:red_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:red_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Red Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:black_wool\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:black_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:black_carpet",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Black Carpet\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:crimson_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:crimson_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:crimson_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Crimson Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:polished_blackstone\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:polished_blackstone\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:polished_blackstone_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Polished Blackstone Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:warped_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:warped_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_pressure_plate",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Warped Pressure Plate\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

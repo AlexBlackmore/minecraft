@@ -1,0 +1,1768 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:redstone",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Redstone ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_RedstoneL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_RedstoneL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Redstone Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Redstone ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RedstoneNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RedstoneP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RedstoneS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RedstoneN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_RedstoneL": 13
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Redstone ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_RedstoneL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Redstone Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_RedstoneL": 13
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_RedstoneS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Redstone ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_RedstoneS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:quartz",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Quartz ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_QuartzL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_QuartzL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Quartz Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Quartz ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_QuartzNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_QuartzP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_QuartzS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_QuartzN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_QuartzL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Quartz ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_QuartzL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Quartz Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_QuartzL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_QuartzS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Quartz ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_QuartzS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:obsidian",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Obsidian ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_ObsidianL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_ObsidianL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Obsidian Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Obsidian ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_ObsidianNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_ObsidianP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_ObsidianS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_ObsidianN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_ObsidianL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Obsidian ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_ObsidianL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Obsidian Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_ObsidianL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_ObsidianS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Obsidian ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_ObsidianS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:glowstone_dust",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Glowstone Dust ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_GlowstoneL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GlowstoneL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Glowstone Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Glowstone ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GlowstoneNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GlowstoneP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GlowstoneS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GlowstoneN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_GlowstoneL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Glowstone Dust ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GlowstoneL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Glowstone Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GlowstoneL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_GlowstoneS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Glowstone Dust ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_GlowstoneS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gravel",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Gravel ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_GravelL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GravelL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Gravel Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Gravel ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GravelNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GravelP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GravelS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GravelN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_GravelL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Gravel ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GravelL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Gravel Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GravelL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_GravelS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Gravel ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_GravelS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:ice",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Ice ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_IceL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_IceL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Ice Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Ice ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_IceNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_IceP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_IceS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_IceN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_IceL": 10
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Ice ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_IceL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Ice Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_IceL": 10
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_IceS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Ice ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_IceS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:netherrack",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Netherrack ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_NetherrackL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_NetherrackL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Netherrack Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Netherrack ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_NetherrackNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_NetherrackP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_NetherrackS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_NetherrackN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_NetherrackL": 3
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Netherrack ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_NetherrackL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Netherrack Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_NetherrackL": 3
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_NetherrackS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Netherrack ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_NetherrackS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

@@ -1,0 +1,1 @@
+attribute @s[scores={P_AtkSpeed=119}] minecraft:generic.attack_speed base set 8.76

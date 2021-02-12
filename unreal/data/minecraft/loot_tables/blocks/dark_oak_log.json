@@ -1,0 +1,30 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:dark_oak_log"
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:apple",
+          "conditions":[
+            {
+              "condition":"minecraft:match_tool",
+              "predicate":{
+                "item":"iron_axe"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

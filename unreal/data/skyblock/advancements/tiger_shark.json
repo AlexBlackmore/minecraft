@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:drowned",
+                    "nbt": "{Tags:[\"tiger_shark\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience":1013
+    }
+}

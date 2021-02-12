@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"ACCESSORY\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',Reforge:\"\",AccessoryFamily:\"NightCrystal\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Increases your \",\"color\":\"gray\",\"italic\":false},{\"text\":\"❁ Strength\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\" and \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"❈ Defense\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" by \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"+5\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\" during the Night.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Night Crystal\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Increases your \",\"color\":\"gray\",\"italic\":false},{\"text\":\"❁ Strength\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"and \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"❈ Defense\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" by \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"+5\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"during the Night.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE ACCESSORY\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

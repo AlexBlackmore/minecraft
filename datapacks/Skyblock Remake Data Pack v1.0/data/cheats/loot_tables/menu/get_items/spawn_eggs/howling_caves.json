@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/spawn_egg/howling_caves/pack_spirit",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/spawn_egg/howling_caves/howling_spirit",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/spawn_egg/howling_caves/soul_of_the_alpha",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

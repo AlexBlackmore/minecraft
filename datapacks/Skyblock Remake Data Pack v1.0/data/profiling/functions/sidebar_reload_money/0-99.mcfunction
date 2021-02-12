@@ -1,0 +1,10 @@
+execute if score @s Coins matches 0..9 run function profiling:sidebar_reload_money/0-9
+execute if score @s Coins matches 10..19 run function profiling:sidebar_reload_money/10-19
+execute if score @s Coins matches 20..29 run function profiling:sidebar_reload_money/20-29
+execute if score @s Coins matches 30..39 run function profiling:sidebar_reload_money/30-39
+execute if score @s Coins matches 40..49 run function profiling:sidebar_reload_money/40-49
+execute if score @s Coins matches 50..59 run function profiling:sidebar_reload_money/50-59
+execute if score @s Coins matches 60..69 run function profiling:sidebar_reload_money/60-69
+execute if score @s Coins matches 70..79 run function profiling:sidebar_reload_money/70-79
+execute if score @s Coins matches 80..89 run function profiling:sidebar_reload_money/80-89
+execute if score @s Coins matches 90..99 run function profiling:sidebar_reload_money/90-99

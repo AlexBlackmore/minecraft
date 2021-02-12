@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"∞ Sea Creature Chance ","color":"dark_aqua","italic":false},{"score":{"name":"@s","objective":"P_SCChance"},"italic":false,"color":"white"}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Sea Creature Chance is your","color":"gray","italic":false},{"text":"chance to catch Sea Creatures","color":"gray","italic":false},{"text":"while fishing.","color":"gray","italic":false},{"text":""},[{"text":"Base Sea Creature Chance: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_BaseSCChance"},"italic":false,"color":"green"},{"text":"%","color":"green","italic":false}],{"text":" All players have the same","color":"dark_gray","italic":true},{"text":" base chance","color":"dark_gray","italic":true},{"text":""},[{"text":"Bonus Sea Creature Chance: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_BonusSCChance"},"italic":false,"color":"yellow"},{"text":"%","color":"yellow","italic":false}],{"text":" Increase your bonus Sea","color":"dark_gray","italic":true},{"text":" Creature Chance by equipping","color":"dark_gray","italic":true},{"text":" Armor and holding Talismans in","color":"dark_gray","italic":true},{"text":" your inventory.","color":"dark_gray","italic":true}],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

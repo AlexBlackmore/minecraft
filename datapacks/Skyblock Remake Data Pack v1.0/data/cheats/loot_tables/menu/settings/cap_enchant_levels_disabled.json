@@ -1,0 +1,64 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:enchanted_book",
+			"functions": [
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "text": "Currently: ",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+					  "text": "Disabled",
+					  "color": "red",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": "If enabled, items combined in an anvil",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "cannot exceed the standard max level.",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Click to toggle!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": {
+				  "text": "Cap Enchant Levels",
+				  "color": "gold",
+				  "italic": false
+				}
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

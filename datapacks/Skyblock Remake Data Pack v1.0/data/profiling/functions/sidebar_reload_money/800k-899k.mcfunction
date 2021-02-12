@@ -1,0 +1,10 @@
+execute if score @s Coins matches 800000..809999 run function profiling:sidebar_reload_money/800k-809k
+execute if score @s Coins matches 810000..819999 run function profiling:sidebar_reload_money/810k-819k
+execute if score @s Coins matches 820000..829999 run function profiling:sidebar_reload_money/820k-829k
+execute if score @s Coins matches 830000..839999 run function profiling:sidebar_reload_money/830k-839k
+execute if score @s Coins matches 840000..849999 run function profiling:sidebar_reload_money/840k-849k
+execute if score @s Coins matches 850000..859999 run function profiling:sidebar_reload_money/850k-859k
+execute if score @s Coins matches 860000..869999 run function profiling:sidebar_reload_money/860k-869k
+execute if score @s Coins matches 870000..879999 run function profiling:sidebar_reload_money/870k-879k
+execute if score @s Coins matches 880000..889999 run function profiling:sidebar_reload_money/880k-889k
+execute if score @s Coins matches 890000..899999 run function profiling:sidebar_reload_money/890k-899k

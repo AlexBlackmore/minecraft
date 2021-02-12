@@ -1,0 +1,72 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:warped_fungus_on_a_stick",
+			"functions": [
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "text": "Currently: ",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+						"score": {
+						  "name": "SpecialZealotChances",
+						  "objective": "Setting"
+						},
+						"color": "blue",
+						"italic": false
+					},
+					{
+					  "text": "x",
+					  "color": "blue",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": "Controls how common Special",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "Zealots are.",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Click to change!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": {
+				  "text": "Special Zealot Chance",
+				  "color": "gold",
+				  "italic": false
+				}
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{CustomModelData:33,SkyblockMenu:1b,HideFlags:63}"
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

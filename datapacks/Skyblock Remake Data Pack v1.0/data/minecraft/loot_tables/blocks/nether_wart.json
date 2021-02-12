@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_wart",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Nether Wart\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}",
+				"conditions": [
+					{
+					  "condition": "minecraft:inverted",
+					  "term": {
+						  "condition": "minecraft:entity_properties",
+						  "entity": "this",
+						  "predicate": {
+							"type": "minecraft:player",
+							"equipment": {
+							  "mainhand": {
+								"nbt": "{Base:{Enchantments:[{telekinesis:{identifier:1b}},{replenish:{identifier:1b}}]}}"
+							  }
+							}
+						  }
+					  }
+					}
+				  ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1,Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Nether Wart\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}",
+				"conditions": [
+					{
+					  "condition": "minecraft:entity_properties",
+					  "entity": "this",
+					  "predicate": {
+						"type": "minecraft:player",
+						"equipment": {
+						  "mainhand": {
+							"nbt": "{Base:{Enchantments:[{telekinesis:{identifier:1b}},{replenish:{identifier:1b}}]}}"
+						  }
+						}
+					  }
+					}
+				  ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:nether_wart",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:uniform_bonus_count",
+              "parameters": {
+                "bonusMultiplier": 1
+              }
+            }
+          ],
+		  "conditions": [
+			{
+			  "condition": "minecraft:block_state_property",
+			  "block": "minecraft:nether_wart",
+			  "properties": {
+				"age": "3"
+			  }
+			}
+		  ],
+          "name": "minecraft:nether_wart"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:explosion_decay"
+        }
+      ]
+    }
+  ]
+}

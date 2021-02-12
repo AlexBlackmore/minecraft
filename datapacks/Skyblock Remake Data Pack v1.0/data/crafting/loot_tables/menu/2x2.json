@@ -1,0 +1,1165 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:2b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:3b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:crafting_table",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:oak_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:oak_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Oak Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:spruce_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:spruce_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:spruce_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:spruce_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:spruce_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Spruce Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:birch_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:birch_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:birch_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:birch_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:birch_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Birch Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:jungle_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:jungle_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:jungle_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:jungle_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:jungle_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Jungle Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:dark_oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:dark_oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:dark_oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:dark_oak_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:dark_oak_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Dark Oak Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:acacia_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:acacia_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:acacia_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:acacia_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:acacia_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Acacia Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:glowstone_dust\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:glowstone_dust\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:glowstone_dust\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:glowstone_dust\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:glowstone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Glowstone\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:snowball\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:snowball\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:snowball\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:snowball\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:snow_block",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Snow Block\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:clay_ball\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:clay_ball\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:clay_ball\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:clay_ball\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:clay",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Clay\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:brick\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:brick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:brick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:brick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:bricks",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Bricks\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:sandstone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Sandstone\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:sandstone\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:sandstone\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:sandstone\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:sandstone\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:cut_sandstone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Cut Sandstone\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stone\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stone\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stone\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stone\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stone_bricks",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Stone Bricks\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:quartz\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:quartz\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:quartz\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:quartz\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:quartz_block",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Quartz Block\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:nether_brick\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:nether_brick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:nether_brick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:nether_brick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:nether_bricks",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Nether Bricks\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:cobblestone\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:quartz\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:quartz\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:cobblestone\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:diorite",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Diorite\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:quartz\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:cobblestone\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:cobblestone\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:quartz\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:diorite",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Diorite\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:granite\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:granite\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:granite\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:granite\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:polished_granite",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Polished Granite\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:andesite\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:andesite\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:andesite\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:andesite\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:polished_andesite",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Polished Andesite\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:diorite\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:diorite\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:diorite\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:diorite\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:polished_diorite",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Polished Diorite\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:prismarine_shard\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:prismarine_shard\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:prismarine_shard\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:prismarine_shard\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:prismarine",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Prismarine\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:dirt\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:dirt\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:coarse_dirt",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Coarse Dirt\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:dirt\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:dirt\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:coarse_dirt",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Coarse Dirt\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:red_sand\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:red_sand\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:red_sand\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:red_sand\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:red_sandstone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Red Sandstone\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:red_sandstone\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:red_sandstone\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:red_sandstone\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:red_sandstone\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:smooth_red_sandstone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Smooth Red Sandstone\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:popped_chorus_fruit\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:popped_chorus_fruit\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:popped_chorus_fruit\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:popped_chorus_fruit\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:purpur_block",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Purpur Block\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:magma_cream\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:magma_cream\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:magma_cream\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:magma_cream\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:magma_block",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Magma Block\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:nether_wart\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:nether_brick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:nether_brick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:nether_wart\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:red_nether_bricks",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Red Nether Bricks\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:nether_brick\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:nether_wart\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:nether_wart\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:nether_brick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:red_nether_bricks",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Red Nether Bricks\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:1b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:shears",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"SHEARS\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Shears\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"COMMON SHEARS\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:2b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:3b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:shears",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"SHEARS\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Shears\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"COMMON SHEARS\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:iron_trapdoor",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Iron Trapdoor\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:rabbit_hide\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:rabbit_hide\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:rabbit_hide\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:rabbit_hide\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:leather",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Leather\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:string\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:string\",tag:{Base:{Vanilla:1b}}},{Slot:2b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:3b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:loom",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:string\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:string\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:string\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:string\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:white_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"White Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:honey_bottle\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:honey_bottle\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:honey_bottle\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:honey_bottle\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:honey_block",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Honey Block\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:honeycomb\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:honeycomb\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:honeycomb\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:honeycomb\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:honeycomb_block",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Honeycomb Block\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stripped_oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stripped_oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stripped_oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stripped_oak_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stripped_oak_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Stripped Oak Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stripped_spruce_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stripped_spruce_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stripped_spruce_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stripped_spruce_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stripped_spruce_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Stripped Spruce Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stripped_jungle_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stripped_jungle_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stripped_jungle_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stripped_jungle_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stripped_jungle_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Stripped Jungle Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stripped_birch_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stripped_birch_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stripped_birch_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stripped_birch_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stripped_birch_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Stripped Birch Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stripped_acacia_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stripped_acacia_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stripped_acacia_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stripped_acacia_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stripped_acacia_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Stripped Acacia Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stripped_dark_oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stripped_dark_oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stripped_dark_oak_log\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stripped_dark_oak_log\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stripped_dark_oak_wood",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Stripped Dark Oak Wood\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:crimson_stem\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:crimson_stem\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:crimson_stem\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:crimson_stem\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:crimson_hyphae",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Crimson Hyphae\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:basalt\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:basalt\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:basalt\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:basalt\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:polished_basalt",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Polished Basalt\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:blackstone\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:blackstone\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:blackstone\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:blackstone\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:polished_blackstone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Polished Blackstone\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:polished_blackstone\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:polished_blackstone\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:polished_blackstone\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:polished_blackstone\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:polished_blackstone_bricks",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Polished Blackstone Bricks\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:quartz_block\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:quartz_block\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:quartz_block\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:quartz_block\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:quartz_bricks",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Quartz Bricks\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stripped_crimson_stem\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stripped_crimson_stem\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stripped_crimson_stem\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stripped_crimson_stem\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stripped_crimson_hyphae",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Stripped Crimson Hyphae\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:stripped_warped_stem\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stripped_warped_stem\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stripped_warped_stem\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stripped_warped_stem\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stripped_warped_hyphae",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Stripped Warped Hyphae\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:fishing_rod\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:2b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:3b,id:\"minecraft:warped_fungus\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Warped Fungus On A Stick\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:warped_stem\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:warped_stem\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:warped_stem\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:warped_stem\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_hyphae",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Warped Hyphae\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

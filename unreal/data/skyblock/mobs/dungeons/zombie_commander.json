@@ -1,19 +1,12 @@
 summon zombie ~ ~ ~ {
-  CustomName:"[\"\",{\"text\":\"Zombie Commander\",\"color\":\"white\"},{\"text\":\" (level-60)\",\"color\":\"#90ff00\"}]",
+  CustomName:"[\"\",{\"text\":\"Zombie Commander\",\"color\":\"white\"}]",
   CustomNameVisible:true,
-  Tags:["colosseum"],
+  Tags:["zombie_commander","dungeons"],
   HandItems:[
     {
       id:"fishing_rod",
       Count:1,
       tag:{
-        display:{
-          Name:"{\"text\":\"Zombie Commander Whip\",\"italic\":false,\"color\":\"light_purple\"}",
-          Lore:[
-            "\" \"",
-            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
-          ]
-        },
         Enchantments:[
           {id:"looting",lvl:3},
           {id:"sharpness",lvl:5},
@@ -32,11 +25,6 @@ summon zombie ~ ~ ~ {
       Count:1,
       tag:{
         display:{
-          Name:"{\"text\":\"Zombie Commander Boots\",\"italic\":false,\"color\":\"light_purple\"}",
-          Lore:[
-            "\" \"",
-            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
-          ],
           color:13963824
         },
         Enchantments:[
@@ -57,11 +45,6 @@ summon zombie ~ ~ ~ {
       Count:1,
       tag:{
         display:{
-          Name:"{\"text\":\"Zombie Commander Leggings\",\"italic\":false,\"color\":\"light_purple\"}",
-          Lore:[
-            "\" \"",
-            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
-          ],
           color:13963824
         },
         Enchantments:[
@@ -80,11 +63,6 @@ summon zombie ~ ~ ~ {
       Count:1,
       tag:{
         display:{
-          Name:"{\"text\":\"Zombie Commander Chestplate\",\"italic\":false,\"color\":\"light_purple\"}",
-          Lore:[
-            "\" \"",
-            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
-          ],
           color:13963824
         },
         Enchantments:[
@@ -103,11 +81,6 @@ summon zombie ~ ~ ~ {
       Count:1,
       tag:{
         display:{
-          Name:"{\"text\":\"Zombie Commander Helmet\",\"italic\":false,\"color\":\"light_purple\"}",
-          Lore:[
-            "\" \"",
-            "{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
-          ],
           color:13963824
         },
         Enchantments:[
@@ -122,6 +95,6 @@ summon zombie ~ ~ ~ {
       }
     }
   ],
-  HandDropChances:[0.085f,0.0f],
-  ArmorDropChances:[0.085f,0.085f,0.085f,0.085f]
+  HandDropChances:[0.0f,0.0f],
+  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
 }

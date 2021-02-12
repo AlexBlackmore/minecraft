@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:sugar",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"✦ Speed ","color":"white","italic":false},{"score":{"name":"@s","objective":"P_Speed"},"italic":false,"color":"white"},{"text":"%","color":"white","italic":false}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Speed increases your walk speed.","color":"gray","italic":false},{"text":"","color":"yellow","italic":false},[{"text":"Base Speed: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_BaseSpeed"},"italic":false,"color":"green"},{"text":"%","color":"green","italic":false}],{"text":" Increase your base Speed by","color":"dark_gray","italic":true},[{"text":" contributing to the","color":"dark_gray","italic":true},{"text":" Fairy ","color":"light_purple","italic":false}],[{"text":" in the ","color":"dark_gray","italic":true},{"text":"Wilderness","color":"dark_green","italic":false}],{"text":"","color":"light_purple","italic":false},[{"text":"Bonus Speed: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_BonusSpeed"},"italic":false,"color":"yellow"},{"text":"%","color":"yellow","italic":false}],{"text":" Increase your bonus Speed","color":"dark_gray","italic":true},{"text":" by equipping Armor and holding","color":"dark_gray","italic":true},{"text":" Talismans in your inventory.","color":"dark_gray","italic":true},{"text":""},[{"text":"You are ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_ExtraSpeed"},"italic":false,"color":"green"},{"text":"%","color":"green","italic":false},{"text":" faster!","color":"gray","italic":false}]],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

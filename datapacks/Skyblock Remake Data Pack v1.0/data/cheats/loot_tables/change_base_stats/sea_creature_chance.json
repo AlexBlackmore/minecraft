@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"∞ Base Sea Creature Chance ","color":"dark_aqua","italic":false},{"score":{"name":"@s","objective":"P_BaseSCChance"},"italic":false,"color":"white"}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Sea Creature Chance is your","color":"gray","italic":false},{"text":"chance to catch Sea Creatures","color":"gray","italic":false},{"text":"while fishing.","color":"gray","italic":false}],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}
