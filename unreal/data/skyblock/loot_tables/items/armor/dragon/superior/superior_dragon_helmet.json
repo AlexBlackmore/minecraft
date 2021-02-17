@@ -1,0 +1,43 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_helmet",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Superior Dragon Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Bonus: Superior Blood\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"{\\\"text\\\":\\\"All your stats are increased by\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"5%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" and Aspect of the Dragons\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"ability deals \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+50% damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ],
+                  color:15883544
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:4}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"head\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:18,Operation:0,UUID:[I;412229192,212620848,213052577,242326845]},
+                  {Slot:\"head\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:26,Operation:0,UUID:[I;131025675,475536970,570224518,496226861]},
+                  {Slot:\"head\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:2,Operation:0,UUID:[I;788189277,537835852,145341399,239175572]},
+                  {Slot:\"head\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.03,Operation:1,UUID:[I;635035439,602687543,248445932,110820433]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

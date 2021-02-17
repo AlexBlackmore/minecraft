@@ -1,0 +1,26 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"loot_table",
+          "name":"skyblock:items/wolf_tooth",
+          "functions":[
+            {
+              "function":"set_count",
+              "count":1
+            },
+            {
+              "function":"looting_enchant",
+              "count":{
+                "min":0,
+                "max":1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"loot_table",
+          "name":"skyblock:items/revenant_flesh",
+          "functions":[
+            {
+              "function":"set_count",
+              "count":5
+            },
+            {
+              "function":"looting_enchant",
+              "count":{
+                "min":0,
+                "max":1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
