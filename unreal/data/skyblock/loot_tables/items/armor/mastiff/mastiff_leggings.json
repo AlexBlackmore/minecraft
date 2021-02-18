@@ -1,0 +1,40 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:diamond_leggings",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Mastiff Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Bonus: Absolute Unit\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Regain \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"2 Health\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"},{\\\"text\\\":\\\" when hit.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Cooldown: \\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_gray\\\"},{\\\"text\\\":\\\"2s\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}]\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Recieve \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"-20%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" damage from wolves.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"fire_protection\",lvl:5},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"legs\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:100,Operation:0,UUID:[I;971078459,876263934,16984525,747914108]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
