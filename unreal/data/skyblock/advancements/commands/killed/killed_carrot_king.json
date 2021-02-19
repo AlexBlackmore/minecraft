@@ -1,0 +1,17 @@
+{
+  "parent":"skyblock:commands/killed",
+  "criteria": {
+      "killentity": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:rabbit",
+                  "nbt": "{Tags:[\"carrot_king\"]}"
+              }
+          }
+      }
+  },
+  "rewards": {
+      "experience":810
+  }
+}

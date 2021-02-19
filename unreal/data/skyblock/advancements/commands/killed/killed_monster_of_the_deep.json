@@ -1,0 +1,17 @@
+{
+  "parent":"skyblock:commands/killed",
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:baby_zombie",
+                    "nbt": "{Tags:[\"monster_of_the_deep\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience":270
+    }
+}

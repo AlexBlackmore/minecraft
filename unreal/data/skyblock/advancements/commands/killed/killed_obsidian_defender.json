@@ -1,0 +1,17 @@
+{
+  "parent":"skyblock:commands/killed",
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:wither_skeleton",
+                    "nbt": "{Tags:[\"obsidian_defender\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience":40
+    }
+}
