@@ -1,8 +1,6 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Victor's Assistant\",\"color\":\"green\"}",
-		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
 		CanPickUpLoot:false,
@@ -26,13 +24,17 @@ give @p villager_spawn_egg{
 				{
 					buy:
 					{
-						id:"gold_block",
-						Count:14
-					},
-					buyB:
-					{
-						id:"gold_ingot",
-						Count:3
+						id:"gold_nugget",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
 					},
 	        sell:
 					{
@@ -61,13 +63,17 @@ give @p villager_spawn_egg{
 				{
 					buy:
 					{
-						id:"gold_block",
-						Count:14
-					},
-					buyB:
-					{
-						id:"gold_ingot",
-						Count:3
+						id:"gold_nugget",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
 					},
 	        sell:
 					{
@@ -97,8 +103,17 @@ give @p villager_spawn_egg{
 				{
 					buy:
 					{
-						id:"gold_block",
-						Count:14
+						id:"gold_nugget",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
 					},
 	        sell:
 					{
@@ -127,8 +142,17 @@ give @p villager_spawn_egg{
 				{
 					buy:
 					{
-						id:"gold_block",
-						Count:13
+						id:"gold_nugget",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
 					},
 	        sell:
 					{
@@ -156,8 +180,5 @@ give @p villager_spawn_egg{
 	    	}
 			]
 		}
-	},
-	display:{
-		Name:"{\"text\":\"Victor's Assistant\",\"color\":\"green\"}"
 	}
 }

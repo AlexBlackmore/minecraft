@@ -1,0 +1,27 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"gold_nugget",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Enchanted Gold Nugget\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"
+								},
+								Enchantments:[
+									{id:\"unbreaking\",lvl:1}
+								],
+                HideFlags:1
+							}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

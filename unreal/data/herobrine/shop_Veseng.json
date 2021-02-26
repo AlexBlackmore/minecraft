@@ -11,10 +11,10 @@ give @p villager_spawn_egg{
 		VillagerData:
 		{
 			level:5,
-			profession:"armorer",
+			profession:"weaponsmith",
 			type:"swamp"
 		},
-		Attributes: [
+		Attributes:[
 			{
 				Name:"generic.movementSpeed",
 				Base:"0f"
@@ -22,16 +22,99 @@ give @p villager_spawn_egg{
 		],
 		Offers:
 		{
-			Recipes: [
+			Recipes:[
 				{
 					buy:
 					{
-						id:"gold_block",
-						Count:15
+						id:"gold_nugget",
+						Count:16,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
 					},
-					buyB:{
-						id:"gold_ingot",
-						Count:3
+					sell:
+					{
+						id:"diamond_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Oblivion\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"sharpness",lvl:9},
+								{id:"bane_of_arthropods",lvl:2},
+								{id:"smite",lvl:2},
+								{id:"unbreaking",lvl:5}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"gold_nugget",
+						Count:16,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:
+					{
+						id:"bow",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Soul Breaker\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"power",lvl:9},
+								{id:"punch",lvl:1},
+								{id:"infinity",lvl:1},
+								{id:"unbreaking",lvl:5}
+							]
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"gold_nugget",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
 					},
 					sell:
 					{
@@ -60,72 +143,17 @@ give @p villager_spawn_egg{
 				{
 					buy:
 					{
-						id:"gold_block",
-						Count:16
-					},
-					buyB:{
-						id:"gold_ingot",
-						Count:3
-					},
-					sell:
-					{
-						id:"diamond_chestplate",
-						Count:1,
+						id:"gold_nugget",
+						Count:8,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Demonskin\",\"italic\":false,\"color\":\"light_purple\"}",
-								Lore:[
-									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
-									"\" \"",
-									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
-								]
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
 							},
 							Enchantments:[
-								{id:"protection",lvl:2},
-								{id:"blast_protection",lvl:2},
-								{id:"thorns",lvl:2},
-								{id:"unbreaking",lvl:5}
-							]
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
 						}
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
-						id:"gold_block",
-						Count:16
-					},
-					sell:
-					{
-						id:"diamond_leggings",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"text\":\"Warlord Legplates\",\"italic\":false,\"color\":\"light_purple\"}",
-								Lore:[
-									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
-									"\" \"",
-									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
-								]
-							},
-							Enchantments:[
-								{id:"protection",lvl:2},
-								{id:"projectile_protection",lvl:2},
-								{id:"thorns",lvl:2},
-								{id:"unbreaking",lvl:5}
-							]
-						}
-					},
-					rewardExp:false,
-					maxUses:2147483647
-				},
-				{
-					buy:
-					{
-						id:"gold_block",
-						Count:15
 					},
 					sell:
 					{
@@ -154,30 +182,35 @@ give @p villager_spawn_egg{
 				{
 					buy:
 					{
-						id:"gold_block",
-						Count:21
-					},
-					buyB:{
-						id:"gold_ingot",
-						Count:4
+						id:"gold_nugget",
+						Count:16,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
 					},
 					sell:
 					{
-						id:"diamond_sword",
+						id:"diamond_chestplate",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Oblivion\",\"italic\":false,\"color\":\"light_purple\"}",
-								Lore: [
+								Name:"{\"text\":\"Demonskin\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
 									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
 									"\" \"",
 									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
 								]
 							},
 							Enchantments:[
-								{id:"sharpness",lvl:9},
-								{id:"bane_of_arthropods",lvl:2},
-								{id:"smite",lvl:2},
+								{id:"protection",lvl:2},
+								{id:"blast_protection",lvl:2},
+								{id:"thorns",lvl:2},
 								{id:"unbreaking",lvl:5}
 							]
 						}
@@ -188,20 +221,25 @@ give @p villager_spawn_egg{
 				{
 					buy:
 					{
-						id:"gold_block",
-						Count:18
-					},
-					buyB:{
-						id:"gold_ingot",
-						Count:8
+						id:"gold_nugget",
+						Count:16,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
 					},
 					sell:
 					{
-						id:"bow",
+						id:"diamond_leggings",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Soul Breaker\",\"italic\":false,\"color\":\"light_purple\"}",
+								Name:"{\"text\":\"Warlord Legplates\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
 									"{\"text\":\"Archdemon Set\",\"italic\":false,\"color\":\"dark_purple\"}",
 									"\" \"",
@@ -209,9 +247,9 @@ give @p villager_spawn_egg{
 								]
 							},
 							Enchantments:[
-								{id:"power",lvl:9},
-								{id:"punch",lvl:1},
-								{id:"infinity",lvl:1},
+								{id:"protection",lvl:2},
+								{id:"projectile_protection",lvl:2},
+								{id:"thorns",lvl:2},
 								{id:"unbreaking",lvl:5}
 							]
 						}

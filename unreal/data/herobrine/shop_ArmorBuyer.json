@@ -1,0 +1,483 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:
+		{
+			level:5,
+			profession:"toolsmith",
+			type:"swamp"
+		},
+		Attributes: [
+			{
+				Name:"generic.movementSpeed",
+				Base:"0f"
+			}
+		],
+		Offers:
+		{
+			Recipes: [
+				{
+					buy:
+					{
+						id:"leather_helmet",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Lufenian Helm\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}",
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"projectile_protection",lvl:1},
+								{id:"protection",lvl:1},
+								{id:"unbreaking",lvl:1}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"leather_chestplate",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Quagie's Might\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}",
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"blast_protection",lvl:1},
+								{id:"protection",lvl:1},
+								{id:"unbreaking",lvl:1}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"leather_leggings",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Judgement Legplates\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}",
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"projectile_protection",lvl:1},
+								{id:"protection",lvl:1},
+								{id:"unbreaking",lvl:1}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"leather_boots",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Millsy's Escape\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}",
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"protection",lvl:1},
+								{id:"unbreaking",lvl:1}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"iron_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Victor's Grace\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore: [
+									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}",
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"bane_of_arthropods",lvl:1},
+								{id:"sharpness",lvl:5},
+								{id:"smite",lvl:1},
+								{id:"unbreaking",lvl:1}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"bow",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Hawk Strike\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"{\"text\":\"Crimson Blade Set\",\"italic\":false,\"color\":\"green\"}",
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"infinity",lvl:1},
+								{id:"power",lvl:4},
+								{id:"unbreaking",lvl:1}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"chainmail_helmet",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Takn's Light\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Raven Set\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							Enchantments:[
+								{id:"protection",lvl:1},
+								{id:"projectile_protection",lvl:1},
+								{id:"unbreaking",lvl:2}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"chainmail_chestplate",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Acain's Cuirass\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Raven Set\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							Enchantments:[
+								{id:"protection",lvl:1},
+								{id:"blast_protection",lvl:1},
+								{id:"unbreaking",lvl:2}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"chainmail_leggings",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Fallen Defender\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Raven Set\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							Enchantments:[
+								{id:"protection",lvl:1},
+								{id:"projectile_protection",lvl:1},
+								{id:"unbreaking",lvl:2}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"chainmail_boots",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Niklas Anglers\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Raven Set\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							Enchantments:[
+								{id:"protection",lvl:1},
+								{id:"unbreaking",lvl:2}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"iron_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Deathwind\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore: [
+									"{\"text\":\"Raven Set\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							Enchantments:[
+								{id:"sharpness",lvl:7},
+								{id:"bane_of_arthropods",lvl:1},
+								{id:"smite",lvl:1},
+								{id:"unbreaking",lvl:2}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"bow",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"The Raven's Wing\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Raven Set\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							Enchantments:[
+								{id:"power",lvl:7},
+								{id:"infinity",lvl:1},
+								{id:"unbreaking",lvl:2}
+							]
+						}
+					},
+					sell:
+					{
+						id:"gold_nugget",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Gold Nugget\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+			]
+		}
+	}
+}

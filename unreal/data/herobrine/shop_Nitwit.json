@@ -1,8 +1,6 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Nitwit\",\"color\":\"green\"}",
-		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
 		CanPickUpLoot:false,
@@ -70,8 +68,8 @@ give @p villager_spawn_egg{
 								Name:"{\"text\":\"Beer\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
 									"\" \"",
-									"{\"text\":\"Beauty lies in the hands of the\",\"color\":\"gold\"}",
-									"{\"text\":\"beer holder.\",\"color\":\"gold\"}"
+									"{\"text\":\"Beauty lies in the hands of the\",\"italic\":false,\"color\":\"gold\"}",
+									"{\"text\":\"beer holder.\",\"italic\":false,\"color\":\"gold\"}"
 								]
 							},
 							CustomPotionEffects:[
@@ -100,8 +98,5 @@ give @p villager_spawn_egg{
 				}
 			]
 		}
-	},
-	display:{
-		Name:"{\"text\":\"Nitwit\",\"color\":\"green\"}"
 	}
 }

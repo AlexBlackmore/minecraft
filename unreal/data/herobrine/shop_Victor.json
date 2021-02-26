@@ -11,7 +11,7 @@ give @p villager_spawn_egg{
 		VillagerData:
 		{
 			level:5,
-			profession:"nitwit",
+			profession:"farmer",
 			type:"swamp"
 		},
 		Attributes:[
@@ -173,7 +173,8 @@ give @p villager_spawn_egg{
 								Name:"{\"text\":\"Vanish Potion\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
 									"\" \"",
-									"{\"text\":\"Allows you to vanish into the shadows.\",\"color\":\"gold\"}"
+									"{\"text\":\"Allows you to vanish into the\",\"italic\":false,\"color\":\"gold\"}",
+									"{\"text\":\"shadows.\",\"italic\":false,\"color\":\"gold\"}"
 								]
 							}
 						}
@@ -225,7 +226,7 @@ give @p villager_spawn_egg{
 								Name:"{\"text\":\"Berserking Potion\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
 									"\" \"",
-									"{\"text\":\"At first you might feel dizzy.\",\"color\":\"gold\"}"
+									"{\"text\":\"At first you might feel dizzy.\",\"italic\":false,\"color\":\"gold\"}"
 								]
 							}
 						}
