@@ -1,0 +1,27 @@
+{
+  "parent":"skyblock:commands/killed",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Has Sweet Axe",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "sweet_axe":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "items":[
+          {
+            "item":"iron_axe",
+            "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Sweet Axe\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+          }
+        ]
+      }
+    }
+  }
+}
