@@ -1,0 +1,212 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+    CustomName:"{\"text\":\"Anita\"}",
+    CustomNameVisible:true,
+    PersistenceRequired:true,
+    Silent:true,
+    CanPickUpLoot:false,
+    Willing:false,
+    NoAI:false,
+    VillagerData:{
+      level:5,
+      profession:"farmer",
+      type:"plains"
+    },
+    Attributes:[
+      {Name:"generic.movementSpeed",Base:"0f"}
+    ],
+  	Offers:{
+  		Recipes:[
+				{
+					buyB:{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Anita>\",\"italic\":false,\"color\":\"white\"}",
+							},
+							HideFlags:32
+						}
+					},
+					rewardExp:false,
+					maxUses:0
+				},
+  			{
+  				buy:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"wooden_hoe",
+  					Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Mathematical Hoe Blueprint\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"Can be adapted into 5\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"specialized hoes with 3 tiers\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"each.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							}
+						}
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+        {
+  				buy:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"golden_axe",
+  					Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Coco Chopper\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Gain \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"XP\",\"italic\":false,\"color\":\"aqua\"},{\"text\":\" from harvesting cocoa\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"beans.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"[\"\",{\"text\":\"Increases cocoa bean drops by \",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"20%\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"Cannot break trees.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							]
+						}
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+				{
+  				buy:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"diamond_axe",
+  					Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Melon Dicer\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Gain \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"XP\",\"italic\":false,\"color\":\"aqua\"},{\"text\":\" from harvesting melons.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"Item Ability: Roll em'\",\"italic\":false,\"color\":\"gold\"}",
+									"{\"text\":\"Every melon you break, you make\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"a wish to \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"RNGesus\",\"italic\":false,\"color\":\"gold\"},{\"text\":\" which may\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"grant you with a few or TONS of\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"extra melons!\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							]
+						}
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+				{
+  				buy:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"golden_axe",
+  					Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Pumpkin Dicer\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Gain \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"XP\",\"italic\":false,\"color\":\"aqua\"},{\"text\":\" from harvesting pumpkins.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"Item Ability: Roll em'\",\"italic\":false,\"color\":\"gold\"}",
+									"{\"text\":\"Every pumpkin you break, you make\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"a wish to \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"RNGesus\",\"italic\":false,\"color\":\"light_purple\"},{\"text\":\" which may\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"grant you with a few or TONS of\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"extra pumpkins!\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							]
+						}
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+				{
+  				buy:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"golden_axe",
+  					Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Fungi Cutter\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Gain \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"XP\",\"italic\":false,\"color\":\"aqua\"},{\"text\":\" from harvesting\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"mushrooms.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Increases mushroom drops by \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20%\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:2}
+							]
+						}
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			},
+				{
+  				buy:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"golden_hoe",
+  					Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Cactus Knife\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Gain \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"XP\",\"italic\":false,\"color\":\"aqua\"},{\"text\":\" from harvesting cactus.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"[\"\",{\"text\":\"Increases cactus drops by \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20%\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							]
+						}
+  				},
+  				rewardExp:false,
+  				maxUses:640
+  			}
+  		]
+  	}
+  },
+	display:{
+		Name:"{\"text\":\"Anita\"}"
+	}
+}
