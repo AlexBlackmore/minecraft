@@ -1,0 +1,45 @@
+{
+  "parent":"skyblock:collection/farming/potato/potato2",
+  "display":{
+    "icon":{
+      "item":"minecraft:poisonous_potato"
+    },
+    "title":"Potato III",
+    "description":"Collect 500 potatoes.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "potato":{
+      "trigger":"minecraft:tick",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:potatoes",
+                    "value":{
+                      "min":500
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements":[
+    [
+      "potato"
+    ]
+  ]
+}

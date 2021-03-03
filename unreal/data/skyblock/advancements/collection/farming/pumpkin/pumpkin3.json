@@ -1,0 +1,46 @@
+{
+  "parent":"skyblock:collection/farming/pumpkin/pumpkin2",
+  "display":{
+    "icon":{
+      "item":"minecraft:pumpkin",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Pumpkin III",
+    "description":"Collect 250 pumpkins.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "pumpkin":{
+      "trigger":"minecraft:tick",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:pumpkin",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements":[
+    [
+      "pumpkin"
+    ]
+  ]
+}

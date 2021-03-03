@@ -1,0 +1,45 @@
+{
+  "parent":"skyblock:collection/farming",
+  "display":{
+    "icon":{
+      "item":"minecraft:melon_slice"
+    },
+    "title":"Melon I",
+    "description":"Collect 250 melons.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "melon":{
+      "trigger":"minecraft:tick",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:melon",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements":[
+    [
+      "melon"
+    ]
+  ]
+}

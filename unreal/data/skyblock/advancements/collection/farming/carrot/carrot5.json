@@ -1,0 +1,46 @@
+{
+  "parent":"skyblock:collection/farming/carrot/carrot4",
+  "display":{
+    "icon":{
+      "item":"minecraft:carrot_on_a_stick",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Carrot V",
+    "description":"Collect 5,000 carrots.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "carrot":{
+      "trigger":"minecraft:tick",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:carrots",
+                    "value":{
+                      "min":5000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements":[
+    [
+      "carrot"
+    ]
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "parent":"skyblock:collection/farming/potato/potato6",
+  "display":{
+    "icon":{
+      "item":"minecraft:baked_potato",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Potato VII",
+    "description":"Collect 25,000 potatoes.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "potato":{
+      "trigger":"minecraft:tick",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:potatoes",
+                    "value":{
+                      "min":25000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements":[
+    [
+      "potato"
+    ]
+  ]
+}

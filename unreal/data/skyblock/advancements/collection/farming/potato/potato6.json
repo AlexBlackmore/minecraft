@@ -1,0 +1,45 @@
+{
+  "parent":"skyblock:collection/farming/potato/potato5",
+  "display":{
+    "icon":{
+      "item":"minecraft:written_book"
+    },
+    "title":"Potato VI",
+    "description":"Collect 10,000 potatoes.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "potato":{
+      "trigger":"minecraft:tick",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:potatoes",
+                    "value":{
+                      "min":10000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements":[
+    [
+      "potato"
+    ]
+  ]
+}
