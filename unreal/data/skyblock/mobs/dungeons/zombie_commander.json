@@ -1,7 +1,7 @@
 summon zombie ~ ~ ~ {
-  CustomName:"[\"\",{\"text\":\"Zombie Commander\",\"color\":\"white\"}]",
+  CustomName:"[\"\",{\"text\":\"Zombie Commander\",\"color\":\"red\"}]",
   CustomNameVisible:true,
-  Tags:["zombie_commander","dungeons"],
+  Tags:["zombie_commander","dungeons","skyblock"],
   HandItems:[
     {
       id:"fishing_rod",
@@ -27,13 +27,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:13963824
         },
-        Enchantments:[
-          {id:"deapth_strider",lvl:3},
-          {id:"feather_falling",lvl:5},
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
           {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;342681720,790207067,792379624,602096192]}
         ],
@@ -47,11 +40,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:13963824
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
           {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;153351912,238760462,15668048,298096017]}
         ],
@@ -65,11 +53,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:13963824
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
           {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;503207358,486775782,705941706,386433903]}
         ],
@@ -83,11 +66,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:13963824
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
           {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:1,Operation:0,UUID:[I;730762747,57747881,476344657,832295538]}
         ],

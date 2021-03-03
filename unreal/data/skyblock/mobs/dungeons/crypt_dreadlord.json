@@ -1,17 +1,12 @@
-summon vindicator ~ ~ ~ {
-  CustomName:"[\"\",{\"text\":\"Crypt Dreadlord\",\"color\":\"white\"}]",
+summon zombie ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Crypt Dreadlord\",\"color\":\"red\"}]",
   CustomNameVisible:true,
-  Tags:["crypt_dreadlord","dungeons"],
+  Tags:["crypt_dreadlord","dungeons","skyblock"],
   HandItems:[
     {
       id:"iron_sword",
       Count:1,
       tag:{
-        Enchantments:[
-          {id:"looting",lvl:3},
-          {id:"sharpness",lvl:5},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
           {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:10.4,Operation:0,UUID:[I;432580984,774109919,255564732,-557253268]}
         ]

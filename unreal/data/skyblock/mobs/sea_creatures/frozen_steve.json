@@ -1,6 +1,7 @@
 summon zombie_villager ~ ~ ~ {
   CustomName:"[\"\",{\"text\":\"Frozen Steve\",\"color\":\"aqua\"},{\"text\":\" (level-7)\",\"color\":\"#00ff00\"}]",
   CustomNameVisible:true,
+  Tags:["sea_creature","frozen_steve","skyblock"],
   VillagerData:{
     level:5,
     profession:"none",
@@ -22,6 +23,5 @@ summon zombie_villager ~ ~ ~ {
     {}
   ],
   HandDropChances:[0.0f,0.0f],
-  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-  DeathLootTable:"skyblock:frozen_steve"
+  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
 }

@@ -1,7 +1,7 @@
 summon zombie ~ ~ ~ {
   CustomName:"[\"\",{\"text\":\"Revenant Horror\",\"color\":\"aqua\"},{\"text\":\" (level-70)\",\"color\":\"#a0ff00\"}]",
   CustomNameVisible:true,
-  Tags:["colosseum"],
+  Tags:["slayer","revenant_horror2","skyblock"],
   Health:70,
   Attributes:[
     {Name:"generic.max_health",Base:70},
@@ -47,6 +47,5 @@ summon zombie ~ ~ ~ {
     }
   ],
   HandDropChances:[0.0f,0.0f],
-  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-  DeathLootTable:"skyblock:revenant_horror2"
+  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
 }

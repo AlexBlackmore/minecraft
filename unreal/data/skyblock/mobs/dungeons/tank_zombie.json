@@ -1,7 +1,10 @@
 summon zombie ~ ~ ~ {
-  CustomName:"[\"\",{\"text\":\"Tank Zombie\",\"color\":\"white\"}]",
+  CustomName:"[\"\",{\"text\":\"Tank Zombie\",\"color\":\"red\"}]",
   CustomNameVisible:true,
-  Tags:["tank_zombie","dungeons"],
+  Tags:["tank_zombie","dungeons","skyblock"],
+  Attributes:[
+    {Name:"generic.knockback_resistance",Base:1.0}
+  ],
   ArmorItems:[
     {
       id:"leather_boots",
@@ -10,13 +13,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:16777215
         },
-        Enchantments:[
-          {id:"deapth_strider",lvl:3},
-          {id:"feather_falling",lvl:5},
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:2}
-        ],
         AttributeModifiers:[
           {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;200150949,891732409,954370463,451071217]},
           {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:14.4,Operation:0,UUID:[I;-820954789,-715288654,411443102,617862636]},
@@ -32,11 +28,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:8553090
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:2}
-        ],
         AttributeModifiers:[
           {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;264688866,907954743,632140127,864142501]},
           {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:21.4,Operation:0,UUID:[I;-724915371,-734245395,-54512412,-824679018]},
@@ -52,11 +43,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:8553090
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:2}
-        ],
         AttributeModifiers:[
           {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;-742930660,-553278214,-694432880,983285128]},
           {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:25.4,Operation:0,UUID:[I;547621976,-129755961,-941567703,162788170]},
@@ -72,11 +58,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:16777215
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:2}
-        ],
         AttributeModifiers:[
           {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;-68237340,-226154121,613560503,98424409]},
           {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:15.4,Operation:0,UUID:[I;-997341147,153996902,657962010,-132871043]},
@@ -86,6 +67,5 @@ summon zombie ~ ~ ~ {
       }
     }
   ],
-  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-  DeathLootTable:"skyblock:tank_zombie"
+  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
 }

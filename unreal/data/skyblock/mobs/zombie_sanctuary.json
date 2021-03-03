@@ -1,6 +1,7 @@
 summon zombie ~ ~ ~ {
   CustomName:"[\"\",{\"text\":\"Zombie\",\"color\":\"red\"},{\"text\":\" (level-20)\",\"color\":\"gray\"}]",
   CustomNameVisible:true,
+  Tags:["skyblock","zombie_sanctuary"],
   Health:40,
   Attributes:[
     {Name:"generic.max_health",Base:40},
@@ -69,6 +70,5 @@ summon zombie ~ ~ ~ {
     }
   ],
   HandDropChances:[0.0f,0.0f],
-  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-  DeathLootTable:"skyblock:zombie_sanctuary"
+  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
 }

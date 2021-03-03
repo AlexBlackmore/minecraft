@@ -1,6 +1,7 @@
 summon zombie ~ ~ ~ {
   CustomName:"[\"\",{\"text\":\"Zombie\",\"color\":\"red\"},{\"text\":\" (level-15)\",\"color\":\"gray\"}]",
   CustomNameVisible:true,
+  Tags:["skyblock","zombie_reserve"],
   Health:35,
   Attributes:[
     {Name:"generic.max_health",Base:35},
@@ -52,6 +53,5 @@ summon zombie ~ ~ ~ {
     }
   ],
   HandDropChances:[0.0f,0.0f],
-  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-  DeathLootTable:"skyblock:zombie_reserve"
+  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
 }

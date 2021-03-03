@@ -1,7 +1,7 @@
 summon zombified_piglin ~ ~ ~ {
   CustomName:"[\"\",{\"text\":\"⭐ \",\"color\":\"yellow\"},{\"text\":\"Lost Adventurer\",\"color\":\"light_purple\"}]",
   CustomNameVisible:true,
-  Tags:["lost_adventurer_superior","dungeons"],
+  Tags:["lost_adventurer_superior","dungeons","skyblock"],
   Attributes:[
     {Name:"generic.movement_speed",Base:0.43}
   ],
@@ -70,7 +70,22 @@ summon zombified_piglin ~ ~ ~ {
         HideFlags:64
       }
     },
-    {}
+    {
+      id:"leather_helmet",
+      Count:1,
+      tag:{
+        display:{
+          color:15883544
+        },
+        AttributeModifiers:[
+          {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:18,Operation:0,UUID:[I;412229192,212620848,213052577,242326845]},
+          {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:26,Operation:0,UUID:[I;131025675,475536970,570224518,496226861]},
+          {Slot:"head",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2,Operation:0,UUID:[I;788189277,537835852,145341399,239175572]},
+          {Slot:"head",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.03,Operation:1,UUID:[I;635035439,602687543,248445932,110820433]}
+        ],
+        HideFlags:64
+      }
+    }
   ],
   HandDropChances:[0.0f,0.0f],
   ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]

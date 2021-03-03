@@ -1,7 +1,7 @@
 summon zombie ~ ~ ~ {
-  CustomName:"[\"\",{\"text\":\"Zombie Soldier\",\"color\":\"white\"}]",
+  CustomName:"[\"\",{\"text\":\"Zombie Soldier\",\"color\":\"red\"}]",
   CustomNameVisible:true,
-  Tags:["zombie_soldier","dungeons"],
+  Tags:["zombie_soldier","dungeons","skyblock"],
   HandItems:[
     {
       id:"iron_sword",
@@ -28,13 +28,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:13664000
         },
-        Enchantments:[
-          {id:"deapth_strider",lvl:3},
-          {id:"feather_falling",lvl:5},
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
           {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:18.4,Operation:0,UUID:[I;949631168,-559647766,-761186375,-495253332]},
           {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:10.2,Operation:0,UUID:[I;-590039191,-372795172,631696462,264420100]}
@@ -49,11 +42,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:13664000
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
           {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:21.8,Operation:0,UUID:[I;-167805498,-944648286,309541311,-489683879]},
           {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:17.2,Operation:0,UUID:[I;774221904,150757931,-818899942,-406867943]}
@@ -68,11 +56,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:13664000
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
           {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:23.6,Operation:0,UUID:[I;-613923390,792792303,-955171086,-284343826]},
           {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:19.2,Operation:0,UUID:[I;-972449955,-474261557,200240623,-53658492]}
@@ -87,11 +70,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:13664000
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
           {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:19.2,Operation:0,UUID:[I;-188912083,688117085,902432128,-304564863]},
           {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:11.6,Operation:0,UUID:[I;214675277,417128518,-680021721,-700688939]}

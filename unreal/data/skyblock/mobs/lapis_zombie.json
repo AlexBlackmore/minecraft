@@ -1,6 +1,7 @@
 summon zombie ~ ~ ~ {
   CustomName:"[\"\",{\"text\":\"Lapis Zombie\",\"color\":\"red\"},{\"text\":\" (level-7)\",\"color\":\"gray\"}]",
   CustomNameVisible:true,
+  Tags:["skyblock","lapis_zombie"],
   Health:27,
   Attributes:[
     {Name:"generic.max_health",Base:27},
@@ -18,9 +19,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:255
         },
-        Enchantments:[
-          {id:"unbreaking",lvl:1}
-        ],
         AttributeModifiers:[
           {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:4,Operation:0,UUID:[I;446394398,266341821,427207874,140846002]}
         ]
@@ -33,9 +31,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:255
         },
-        Enchantments:[
-          {id:"unbreaking",lvl:1}
-        ],
         AttributeModifiers:[
           {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:7,Operation:0,UUID:[I;673109449,800835453,614698143,163810705]}
         ]
@@ -48,9 +43,6 @@ summon zombie ~ ~ ~ {
         display:{
           color:255
         },
-        Enchantments:[
-          {id:"unbreaking",lvl:1}
-        ],
         AttributeModifiers:[
           {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:8,Operation:0,UUID:[I;107334010,580750029,749217813,374366670]}
         ]
@@ -67,6 +59,5 @@ summon zombie ~ ~ ~ {
     }
   ],
   HandDropChances:[0.0f,0.0f],
-  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-  DeathLootTable:"skyblock:lapis_zombie"
+  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
 }

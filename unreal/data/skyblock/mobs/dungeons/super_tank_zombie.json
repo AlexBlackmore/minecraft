@@ -1,7 +1,10 @@
 summon zombie ~ ~ ~ {
-  CustomName:"[\"\",{\"text\":\"Super Tank Zombie\",\"color\":\"white\"}]",
+  CustomName:"[\"\",{\"text\":\"Super Tank Zombie\",\"color\":\"red\"}]",
   CustomNameVisible:true,
-  Tags:["super_tank_zombie","dungeons"],
+  Tags:["super_tank_zombie","dungeons","skyblock"],
+  Attributes:[
+    {Name:"generic.knockback_resistance",Base:1.0}
+  ],
   HandItems:[
     {},
     {}
@@ -10,7 +13,17 @@ summon zombie ~ ~ ~ {
     {
       id:"leather_boots",
       Count:1,
-      tag:
+      tag:{
+        display:{
+          color:15132390
+        },
+        AttributeModifiers:[
+          {Slot:"feet",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;439602744,505700899,436533849,849052130]},
+          {Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:15.6,Operation:0,UUID:[I;463647646,222348600,745872274,900797299]},
+          {Slot:"feet",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.1,Operation:1,UUID:[I;889678266,499711139,520349562,37966309]}
+        ],
+        HideFlags:64
+      }
     },
     {
       id:"leather_leggings",
@@ -19,15 +32,10 @@ summon zombie ~ ~ ~ {
         display:{
           color:5923940
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
-          {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;572437634,573506185,374118704,85030114]},
-          {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:22.6,Operation:0,UUID:[I;971078459,876263934,16984525,747914108]},
-          {Slot:"legs",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.1,Operation:1,UUID:[I;29686946,432314990,447578813,905982848]}
+          {Slot:"legs",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;323735084,479407454,627119968,991364367]},
+          {Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:22.6,Operation:0,UUID:[I;374973843,555214930,619364499,643310980]},
+          {Slot:"legs",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.1,Operation:1,UUID:[I;720397450,16585803,393622909,535370871]}
         ],
         HideFlags:64
       }
@@ -39,15 +47,10 @@ summon zombie ~ ~ ~ {
         display:{
           color:5923940
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
-          {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;524094931,152787421,62638189,298695653]},
-          {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:25.4,Operation:0,UUID:[I;338682635,73549084,772387147,292244892]},
-          {Slot:"chest",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.1,Operation:1,UUID:[I;968772748,522777506,572708644,275049970]}
+          {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;63545508,313182793,295525239,444032748]},
+          {Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:25.4,Operation:0,UUID:[I;53909174,716544411,220682119,451552657]},
+          {Slot:"chest",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.1,Operation:1,UUID:[I;612933422,616149511,322266400,958220209]}
         ],
         HideFlags:64
       }
@@ -59,21 +62,15 @@ summon zombie ~ ~ ~ {
         display:{
           color:15132390
         },
-        Enchantments:[
-          {id:"protection",lvl:5},
-          {id:"thorns",lvl:3},
-          {id:"unbreaking",lvl:3}
-        ],
         AttributeModifiers:[
-          {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;318343490,220559946,447488809,394951710]},
-          {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:17,Operation:0,UUID:[I;733030029,993235227,598177576,844020269]},
-          {Slot:"head",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.1,Operation:1,UUID:[I;291826172,80594251,811737951,217173960]}
+          {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;16328927,878897270,556708940,203048903]},
+          {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:17,Operation:0,UUID:[I;290569571,880981321,126367082,305543305]},
+          {Slot:"head",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.1,Operation:1,UUID:[I;510393305,641846308,310409633,5657233]}
         ],
         HideFlags:64
       }
     }
   ],
   HandDropChances:[0.0f,0.0f],
-  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-  DeathLootTable:"skyblock:super_tank_zombie"
+  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
 }

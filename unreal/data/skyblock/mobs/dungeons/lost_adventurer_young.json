@@ -1,7 +1,7 @@
 summon zombified_piglin ~ ~ ~ {
   CustomName:"[\"\",{\"text\":\"⭐ \",\"color\":\"yellow\"},{\"text\":\"Lost Adventurer\",\"color\":\"light_purple\"}]",
   CustomNameVisible:true,
-  Tags:["lost_adventurer_young","dungeons"],
+  Tags:["lost_adventurer_young","dungeons","skyblock"],
   Attributes:[
     {Name:"generic.movement_speed",Base:0.43}
   ],
@@ -67,9 +67,22 @@ summon zombified_piglin ~ ~ ~ {
         HideFlags:64
       }
     },
-    {}
+    {
+      id:"leather_helmet",
+      Count:1,
+      tag:{
+        display:{
+          color:14542064
+        },
+        AttributeModifiers:[
+          {Slot:"head",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:14,Operation:0,UUID:[I;455125980,980883262,716391503,279614124]},
+          {Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:22,Operation:0,UUID:[I;745686725,898178075,183328615,930803106]},
+          {Slot:"head",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.2,Operation:1,UUID:[I;381021446,67827789,141589892,918890397]}
+        ],
+        HideFlags:64
+      }
+    },
   ],
   HandDropChances:[0.0f,0.0f],
-  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-  DeathLootTable:"skyblock:lost_adventurer_young"
+  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
 }
