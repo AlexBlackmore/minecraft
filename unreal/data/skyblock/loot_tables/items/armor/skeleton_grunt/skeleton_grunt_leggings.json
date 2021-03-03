@@ -1,0 +1,75 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_leggings",
+          "weight":19,
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Skeleton Grunt Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Increases the damage you deal\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"with arrows by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"5%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"},{\\\"text\\\":\\\" per piece.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ],
+                  color:14805812
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:5},
+                  {id:\"thorns\",lvl:3},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"legs\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:4.4,Operation:0,UUID:[I;911053174,521937451,279876297,902791575]},
+                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6.8,Operation:0,UUID:[I;716476955,986715537,747659896,546015713]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:leather_leggings",
+          "weight":1,
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Skeleton Grunt Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Increases the damage you deal\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"with arrows by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"5%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"},{\\\"text\\\":\\\" per piece.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ],
+                  color:14805812
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:5},
+                  {id:\"thorns\",lvl:3},
+                  {id:\"unbreaking\",lvl:4}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"legs\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:8,Operation:0,UUID:[I;536047359,742130092,679555077,722759686]},
+                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:12.4,Operation:0,UUID:[I;106873585,615306530,761090385,577876788]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

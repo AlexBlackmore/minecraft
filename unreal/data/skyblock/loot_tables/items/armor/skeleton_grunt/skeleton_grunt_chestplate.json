@@ -1,0 +1,75 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_chestplate",
+          "weight":19,
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Skeleton Grunt Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Increases the damage you deal\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"with arrows by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"5%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"},{\\\"text\\\":\\\" per piece.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ],
+                  color:14805812
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:5},
+                  {id:\"thorns\",lvl:3},
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:4.6,Operation:0,UUID:[I;716267505,652660681,832753600,223285275]},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:7.6,Operation:0,UUID:[I;546268141,962455975,525333144,780954663]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        },
+        {
+          "type":"item",
+          "name":"minecraft:leather_chestplate",
+          "weight":1,
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Skeleton Grunt Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Increases the damage you deal\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"with arrows by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"5%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"},{\\\"text\\\":\\\" per piece.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ],
+                  color:14805812
+                },
+                Enchantments:[
+                  {id:\"protection\",lvl:5},
+                  {id:\"thorns\",lvl:3},
+                  {id:\"unbreaking\",lvl:4}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:8.4,Operation:0,UUID:[I;54616146,825321041,254134109,802499800]},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:13.2,Operation:0,UUID:[I;751228330,666013061,994484015,286620235]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
