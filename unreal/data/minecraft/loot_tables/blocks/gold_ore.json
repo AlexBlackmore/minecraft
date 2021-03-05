@@ -2,16 +2,35 @@
   "type":"minecraft:block",
   "pools":[
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:gold_ore"
-        }
-      ],
-      "conditions":[
-        {
-          "condition":"minecraft:survives_explosion"
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:gold_ingot",
+              "conditions": [
+                {
+                  "condition":"entity_properties",
+                  "entity":"this",
+                  "predicate":{
+                    "equipment":{
+                      "mainhand":{
+                        "item":"iron_pickaxe",
+                        "count":1,
+                        "nbt":"{display:{Lore:[\"{\\\"text\\\":\\\"Smelting Touch\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"]}}"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:gold_ore"
+            }
+          ]
         }
       ]
     },
