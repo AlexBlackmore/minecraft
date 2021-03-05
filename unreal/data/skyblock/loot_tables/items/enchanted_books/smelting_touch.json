@@ -1,0 +1,30 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:enchanted_book",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Enchanted Book\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+  								Lore:[
+  									"{\"text\":\"Smelting Touch\",\"italic\":false,\"color\":\"blue\"}",
+  									"{\"text\":\"Automatically smelts mined\",\"italic\":false,\"color\":\"gray\"}",
+  									"{\"text\":\"blocks into their smelted form.\",\"italic\":false,\"color\":\"gray\"}",
+  									"\" \"",
+  									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+  								]
+                }
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

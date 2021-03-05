@@ -1,0 +1,31 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:enchanted_book",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Enchanted Book\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+  								Lore:[
+  									\"{\\\"text\\\":\\\"Harvesting V\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+  									\"{\\\"text\\\":\\\"Increases the chance for crops\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+  									\"{\\\"text\\\":\\\"to drop double the amount of\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"items by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"62.5%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+  									\"\\\" \\\"\",
+  									\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+  								]
+                }
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
