@@ -18,6 +18,44 @@ give @p villager_spawn_egg{
 	  ],
   	Offers:{
   		Recipes:[
+				{
+					buy:{
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"written_book",
+						Count:1,
+						tag:{
+							resolved:1,
+							generation:3,
+							author:"?",
+							title:"Travel Scroll to the Hub",
+							pages: ["{
+									\"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+									\"obfuscated\":true,
+									\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute in skyblock:hub_island run tp @p -3 70 -85\"},
+									\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Click to warp!\"}
+								}"
+							],
+							display:{
+								Name:"{\"text\":\"Travel Scroll to the Hub\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Where everything happens and\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"anything is possible.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Island: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Hub\",\"italic\":false,\"color\":\"green\"}]",
+									"[\"\",{\"text\":\"Teleport: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Spawn\",\"italic\":false,\"color\":\"yellow\"}]",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							HideFlags:63
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
         {
   				buy:{
   					id:"oak_log",
@@ -28,19 +66,19 @@ give @p villager_spawn_egg{
   					Count:2
   				},
   				rewardExp:false,
-  				maxUses:320
+  				maxUses:640
   			},
         {
   				buy:{
   					id:"dirt",
-  					Count:8
+  					Count:4
   				},
   				sell:{
   					id:"grass_block",
   					Count:4
   				},
   				rewardExp:false,
-  				maxUses:160
+  				maxUses:640
   			},
         {
   				buy:{
@@ -52,19 +90,19 @@ give @p villager_spawn_egg{
   					Count:2
   				},
   				rewardExp:false,
-  				maxUses:320
+  				maxUses:0
   			},
         {
   				buy:{
   					id:"wheat_seeds",
-  					Count:24
+  					Count:12
   				},
   				sell:{
   					id:"clay_ball",
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -76,7 +114,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -88,7 +126,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -100,7 +138,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -112,7 +150,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -124,7 +162,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -136,7 +174,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -148,7 +186,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -160,7 +198,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -172,7 +210,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -184,7 +222,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -196,7 +234,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -208,7 +246,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -220,7 +258,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -232,7 +270,19 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
+  			},
+        {
+  				buy:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"milk_bucket",
+  					Count:1
+  				},
+  				rewardExp:false,
+  				maxUses:0
   			},
         {
   				buy:{
@@ -244,7 +294,7 @@ give @p villager_spawn_egg{
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -260,7 +310,7 @@ give @p villager_spawn_egg{
             Count:1
           },
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -269,14 +319,14 @@ give @p villager_spawn_egg{
   				},
   				buyB:{
   					id:"red_mushroom",
-  					Count:2
+  					Count:1
   				},
   				sell:{
   					id:"mycelium",
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
@@ -285,26 +335,26 @@ give @p villager_spawn_egg{
   				},
   				buyB:{
   					id:"brown_mushroom",
-  					Count:2
+  					Count:1
   				},
   				sell:{
   					id:"mycelium",
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			},
         {
   				buy:{
   					id:"netherrack",
-  					Count:2
+  					Count:1
   				},
   				sell:{
   					id:"nether_brick",
   					Count:1
   				},
   				rewardExp:false,
-  				maxUses:640
+  				maxUses:0
   			}
   		]
   	}
