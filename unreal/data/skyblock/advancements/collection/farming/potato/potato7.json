@@ -13,34 +13,13 @@
     "hidden":false
   },
   "criteria":{
-    "potato":{
-      "trigger":"minecraft:tick",
-      "conditions":{
-        "player":[
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "player":{
-                "stats":[
-                  {
-                    "type":"minecraft:mined",
-                    "stat":"minecraft:potatoes",
-                    "value":{
-                      "min":25000
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        ]
-      }
+    "impossible":{
+      "trigger":"minecraft:impossible"
     }
   },
   "requirements":[
     [
-      "potato"
+      "impossible"
     ]
   ]
 }

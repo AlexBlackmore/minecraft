@@ -5,41 +5,20 @@
       "item":"minecraft:carrot"
     },
     "title":"Carrot VIII",
-    "description":"Collect 50,000 carrots.",
+    "description":"Collect 77,696 carrots.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "carrot":{
-      "trigger":"minecraft:tick",
-      "conditions":{
-        "player":[
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "player":{
-                "stats":[
-                  {
-                    "type":"minecraft:mined",
-                    "stat":"minecraft:carrots",
-                    "value":{
-                      "min":50000
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        ]
-      }
+    "impossible":{
+      "trigger":"minecraft:impossible"
     }
   },
   "requirements":[
     [
-      "carrot"
+      "impossible"
     ]
   ]
 }

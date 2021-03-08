@@ -5,41 +5,20 @@
       "item":"minecraft:wheat"
     },
     "title":"Wheat IV",
-    "description":"Collect 500 wheat.",
+    "description":"Collect 1,072 wheat.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "wheat":{
-      "trigger":"minecraft:tick",
-      "conditions":{
-        "player":[
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "player":{
-                "stats":[
-                  {
-                    "type":"minecraft:mined",
-                    "stat":"minecraft:wheat",
-                    "value":{
-                      "min":500
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        ]
-      }
+    "impossible":{
+      "trigger":"minecraft:impossible"
     }
   },
   "requirements":[
     [
-      "wheat"
+      "impossible"
     ]
   ]
 }

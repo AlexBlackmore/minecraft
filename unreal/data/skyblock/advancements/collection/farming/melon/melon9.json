@@ -1,46 +1,27 @@
 {
-  "parent":"skyblock:collection/farming/pumpkin/pumpkin8",
+  "parent":"skyblock:collection/farming/melon/melon8",
   "display":{
     "icon":{
-      "item":"minecraft:leather_boots",
-      "nbt":"{display:{color:13391104}}"
+      "item":"minecraft:melon_slice"
     },
-    "title":"Pumpkin IX",
-    "description":"Collect 50,000 pumpkins.",
+    "title":"Melon IX",
+    "description":"Collect 162,432 melons.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "pumpkin":{
-      "trigger":"minecraft:tick",
-      "conditions":{
-        "player":[
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "player":{
-                "stats":[
-                  {
-                    "type":"minecraft:mined",
-                    "stat":"minecraft:pumpkin",
-                    "value":{
-                      "min":50000
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        ]
-      }
+    "impossible":{
+      "trigger":"minecraft:impossible"
     }
   },
   "requirements":[
     [
-      "pumpkin"
+      "impossible"
     ]
-  ]
+  ],
+  "rewards":{
+    "experience":25000
+  }
 }

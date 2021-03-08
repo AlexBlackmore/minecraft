@@ -1,0 +1,24 @@
+{
+  "parent":"skyblock:collection/farming/seeds/seeds1",
+  "display":{
+    "icon":{
+      "item":"minecraft:clay_ball"
+    },
+    "title":"Seeds II",
+    "description":"Collect 100 seeds.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "impossible":{
+      "trigger":"minecraft:impossible"
+    }
+  },
+  "requirements":[
+    [
+      "impossible"
+    ]
+  ]
+}

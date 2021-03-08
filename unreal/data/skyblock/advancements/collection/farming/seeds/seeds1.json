@@ -1,0 +1,24 @@
+{
+  "parent":"skyblock:collection/farming",
+  "display":{
+    "icon":{
+      "item":"minecraft:wheat_seeds"
+    },
+    "title":"Seeds I",
+    "description":"Collect 50 seeds.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "impossible":{
+      "trigger":"minecraft:impossible"
+    }
+  },
+  "requirements":[
+    [
+      "impossible"
+    ]
+  ]
+}

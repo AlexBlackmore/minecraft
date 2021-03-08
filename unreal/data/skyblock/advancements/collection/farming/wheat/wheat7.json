@@ -6,41 +6,20 @@
       "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Wheat VII",
-    "description":"Collect 10,000 wheat.",
+    "description":"Collect 7,120 wheat.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "wheat":{
-      "trigger":"minecraft:tick",
-      "conditions":{
-        "player":[
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "player":{
-                "stats":[
-                  {
-                    "type":"minecraft:mined",
-                    "stat":"minecraft:wheat",
-                    "value":{
-                      "min":10000
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        ]
-      }
+    "impossible":{
+      "trigger":"minecraft:impossible"
     }
   },
   "requirements":[
     [
-      "wheat"
+      "impossible"
     ]
   ]
 }
