@@ -6,20 +6,36 @@
       "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Melon IV",
-    "description":"Collect 4,224 melons.",
+    "description":"Harvest 5,000 melons.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "impossible":{
-      "trigger":"minecraft:impossible"
+    "melon":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:melon",
+                    "value":{
+                      "min":5000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
     }
-  },
-  "requirements":[
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

@@ -5,20 +5,36 @@
       "item":"minecraft:jack_o_lantern"
     },
     "title":"Pumpkin VII",
-    "description":"Collect 10,000 pumpkins.",
+    "description":"Harvest 10,000 pumpkins.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "impossible":{
-      "trigger":"minecraft:impossible"
+    "pumpkin":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:pumpkin",
+                    "value":{
+                      "min":10000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
     }
-  },
-  "requirements":[
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

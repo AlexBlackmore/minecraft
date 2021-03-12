@@ -1,0 +1,40 @@
+{
+  "parent":"skyblock:collection/mining/iron/iron6",
+  "display":{
+    "icon":{
+      "item":"minecraft:iron_ingot"
+    },
+    "title":"Iron VII",
+    "description":"Mine 10,000 iron ore.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "iron":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:iron_ore",
+                    "value":{
+                      "min":10000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

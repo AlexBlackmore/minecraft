@@ -1,0 +1,41 @@
+{
+  "parent":"skyblock:collection/farming/chicken/chicken2",
+  "display":{
+    "icon":{
+      "item":"minecraft:player_head",
+      "nbt":"{SkullOwner:\"MHF_Chicken\"}"
+    },
+    "title":"Chicken III",
+    "description":"Collect 250 chicken.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "chicken":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:picked_up",
+                    "stat":"minecraft:raw_chicken",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "parent":"skyblock:collection/farming/chicken/chicken4",
+  "display":{
+    "icon":{
+      "item":"minecraft:egg",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Chicken V",
+    "description":"Collect 2,500 chicken.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "chicken":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:picked_up",
+                    "stat":"minecraft:raw_chicken",
+                    "value":{
+                      "min":2500
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "parent":"skyblock:collection/farming/cocoa/cocoa6",
+  "display":{
+    "icon":{
+      "item":"minecraft:potion",
+      "nbt":"{CustomPotionColor:16733525}"
+    },
+    "title":"Cocoa Beans VII",
+    "description":"Harvest 20,000 cocoa beans.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "cocoa":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:cocoa",
+                    "value":{
+                      "min":20000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

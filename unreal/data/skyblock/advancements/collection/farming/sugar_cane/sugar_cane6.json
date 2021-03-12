@@ -1,0 +1,41 @@
+{
+	"parent":"skyblock:collection/farming/sugar_cane/sugar_cane5",
+	"display":{
+		"icon":{
+			"item":"minecraft:bookshelf",
+			"nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+		},
+		"title":"Sugar Cane VI",
+		"description":"Harvest 5,000 sugar cane.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"cactus":{
+			"trigger":"minecraft:item_durability_changed",
+			"conditions":{
+				"player":[
+					{
+						"condition":"minecraft:entity_properties",
+						"entity":"this",
+						"predicate":{
+							"player":{
+								"stats":[
+									{
+										"type":"minecraft:mined",
+										"stat":"minecraft:sugar_cane",
+										"value":{
+											"min":5000
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

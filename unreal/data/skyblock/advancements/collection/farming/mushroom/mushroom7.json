@@ -1,0 +1,70 @@
+{
+  "parent":"skyblock:collection/farming/mushroom/mushroom6",
+  "display":{
+    "icon":{
+      "item":"minecraft:mushroom_stew",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Mushroom III",
+    "description":"Harvest 10,000 mushrooms.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "red_mushroom":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:red_mushroom_block",
+                    "value":{
+                      "min":10000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "brown_mushroom":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate":{
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:brown_mushroom_block",
+                    "value":{
+                      "min":10000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements":[
+	[
+		"red_mushroom","brown_mushroom"
+	]
+  ]
+}

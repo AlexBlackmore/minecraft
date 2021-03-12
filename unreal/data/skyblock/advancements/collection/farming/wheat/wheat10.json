@@ -5,20 +5,36 @@
       "item":"minecraft:wheat"
     },
     "title":"Wheat X",
-    "description":"Collect 42,832 wheat.",
+    "description":"Harvest 50,000 wheat.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "impossible":{
-      "trigger":"minecraft:impossible"
+    "wheat":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:wheat",
+                    "value":{
+                      "min":50000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
     }
-  },
-  "requirements":[
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

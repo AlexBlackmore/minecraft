@@ -1,0 +1,46 @@
+{
+  "parent":"skyblock:commands/root",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Wearing Speedster Armor",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":false,
+    "hidden":false
+  },
+  "criteria":{
+    "wearing_helmet":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "head":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Speedster Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+                },
+                "chest":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Speedster Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+                },
+                "legs":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Speedster Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+                },
+                "feet":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Speedster Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "function":"skyblock:wearing_speedster_armor"
+  }
+}

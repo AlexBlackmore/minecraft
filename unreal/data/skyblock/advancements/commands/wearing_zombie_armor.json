@@ -1,0 +1,48 @@
+{
+  "parent":"skyblock:commands/root",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Wearing Zombie Armor",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":false,
+    "hidden":false
+  },
+  "criteria":{
+    "hit_by_projectile":{
+      "trigger":"minecraft:entity_hurt_player",
+      "conditions":{
+        "damage":{
+          "type":{
+            "is_projectile":true
+          }
+        },
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "chest":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Zombie Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+                },
+                "legs":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Zombie Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+                },
+                "feet":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Zombie Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "function":"skyblock:wearing_zombie_armor"
+  }
+}

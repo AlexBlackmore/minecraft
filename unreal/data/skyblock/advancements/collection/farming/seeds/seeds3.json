@@ -5,20 +5,36 @@
       "item":"minecraft:grass"
     },
     "title":"Seeds III",
-    "description":"Collect 250 seeds.",
+    "description":"Harvest 250 seeds.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "impossible":{
-      "trigger":"minecraft:impossible"
+    "seeds":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:wheat",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
     }
-  },
-  "requirements":[
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

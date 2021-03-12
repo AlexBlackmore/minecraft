@@ -1,0 +1,41 @@
+{
+  "parent":"skyblock:collection/farming/rabbit/rabbit5",
+  "display":{
+    "icon":{
+      "item":"minecraft:rabbit_hide",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Rabbit VI",
+    "description":"Collect 5,000 rabbit.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "rabbit":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:picked_up",
+                    "stat":"minecraft:raw_rabbit",
+                    "value":{
+                      "min":5000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

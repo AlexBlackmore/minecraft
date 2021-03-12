@@ -2,25 +2,41 @@
   "parent":"skyblock:collection/farming/melon/melon2",
   "display":{
     "icon":{
-      "item":"minecraft:melon_slice",
+      "item":"minecraft:melon_slice"
     },
     "title":"Melon III",
-    "description":"Collect 1,920 melons.",
+    "description":"Harvest 1,200 melons.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "impossible":{
-      "trigger":"minecraft:impossible"
+    "melon":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:melon",
+                    "value":{
+                      "min":1200
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
     }
   },
-  "requirements":[
-    [
-      "impossible"
-    ]
-  ],
   "rewards":{
     "experience":125
   }

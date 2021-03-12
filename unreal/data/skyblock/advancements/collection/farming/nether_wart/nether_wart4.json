@@ -1,0 +1,41 @@
+{
+  "parent":"skyblock:collection/farming/nether_wart/nether_wart3",
+  "display":{
+    "icon":{
+      "item":"minecraft:nether_wart",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Nether Wart IV",
+    "description":"Collect 1,000 nether wart.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "nether_wart":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:picked_up",
+                    "stat":"minecraft:nether_wart",
+                    "value":{
+                      "min":1000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

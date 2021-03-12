@@ -1,0 +1,40 @@
+{
+	"parent":"skyblock:collection/mining",
+	"display":{
+		"icon":{
+			"item":"minecraft:cobblestone"
+		},
+		"title":"Cobblestone I",
+		"description":"Mine 50 cobblestone.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"cobblestone":{
+			"trigger":"minecraft:item_durability_changed",
+			"conditions":{
+				"player":[
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"player":{
+								"stats":[
+									{
+										"type":"minecraft:mined",
+										"stat":"minecraft:cobblestone",
+										"value":{
+										  "min":50
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

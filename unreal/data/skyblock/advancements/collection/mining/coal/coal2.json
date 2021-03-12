@@ -1,0 +1,40 @@
+{
+  "parent":"skyblock:collection/mining/coal/coal1",
+  "display":{
+    "icon":{
+      "item":"minecraft:enchanted_book"
+    },
+    "title":"Coal II",
+    "description":"Mine 100 coal.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "coal":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:coal_ore",
+                    "value":{
+                      "min":100
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

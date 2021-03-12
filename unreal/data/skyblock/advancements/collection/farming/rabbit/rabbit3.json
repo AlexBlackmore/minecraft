@@ -1,0 +1,41 @@
+{
+  "parent":"skyblock:collection/farming/rabbit/rabbit2",
+  "display":{
+    "icon":{
+      "item":"minecraft:potion",
+      "nbt":"{CustomPotionColor:5635925}"
+    },
+    "title":"Rabbit III",
+    "description":"Collect 250 rabbit.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "rabbit":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:picked_up",
+                    "stat":"minecraft:raw_rabbit",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

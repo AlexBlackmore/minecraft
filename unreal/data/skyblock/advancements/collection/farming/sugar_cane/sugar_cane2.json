@@ -1,0 +1,40 @@
+{
+	"parent":"skyblock:collection/farming/sugar_cane/sugar_cane1",
+	"display":{
+		"icon":{
+		  "item":"minecraft:sugar_cane"
+		},
+		"title":"Sugar Cane II",
+		"description":"Harvest 250 sugar cane.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"cactus":{
+			"trigger":"minecraft:item_durability_changed",
+			"conditions":{
+				"player":[
+					{
+						"condition":"minecraft:entity_properties",
+						"entity":"this",
+						"predicate":{
+							"player":{
+								"stats":[
+									{
+										"type":"minecraft:mined",
+										"stat":"minecraft:sugar_cane",
+										"value":{
+											"min":250
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

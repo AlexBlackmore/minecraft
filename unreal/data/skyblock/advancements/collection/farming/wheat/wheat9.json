@@ -6,20 +6,36 @@
       "nbt":"{display:{color:16766720}}"
     },
     "title":"Wheat IX",
-    "description":"Collect 22,096 wheat.",
+    "description":"Harvest 25,000 wheat.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "impossible":{
-      "trigger":"minecraft:impossible"
+    "wheat":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:wheat",
+                    "value":{
+                      "min":25000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
     }
-  },
-  "requirements":[
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

@@ -2,23 +2,39 @@
   "parent":"skyblock:collection/farming/potato/potato1",
   "display":{
     "icon":{
-      "item":"minecraft:written_book"
+      "item":"minecraft:potato"
     },
     "title":"Potato II",
-    "description":"Collect 250 potatoes.",
+    "description":"Harvest 250 potatoes.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "impossible":{
-      "trigger":"minecraft:impossible"
+    "potato":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:potatoes",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
     }
-  },
-  "requirements":[
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

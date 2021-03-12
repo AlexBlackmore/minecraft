@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/farming/mutton/mutton2",
+  "display":{
+    "icon":{
+      "item":"minecraft:raw_mutton"
+    },
+    "title":"Mutton III",
+    "description":"Collect 250 mutton.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "mutton":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:picked_up",
+                    "stat":"minecraft:raw_mutton",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":25
+	}
+}

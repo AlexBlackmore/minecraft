@@ -1,0 +1,40 @@
+{
+  "parent":"skyblock:collection/farming/mutton/mutton6",
+  "display":{
+    "icon":{
+      "item":"minecraft:sheep_spawn_egg"
+    },
+    "title":"Mutton VII",
+    "description":"Collect 10,000 mutton.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "mutton":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:picked_up",
+                    "stat":"minecraft:mutton",
+                    "value":{
+                      "min":10000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

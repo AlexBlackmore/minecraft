@@ -1,0 +1,40 @@
+{
+  "parent":"skyblock:collection/farming/porkchop/porkchop4",
+  "display":{
+    "icon":{
+      "item":"minecraft:raw_porkchop"
+    },
+    "title":"Porkchop V",
+    "description":"Collect 2,500 porkchops.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "porkchop":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:picked_up",
+                    "stat":"minecraft:raw_porkchop",
+                    "value":{
+                      "min":2500
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

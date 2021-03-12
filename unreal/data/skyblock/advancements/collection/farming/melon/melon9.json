@@ -5,22 +5,38 @@
       "item":"minecraft:melon_slice"
     },
     "title":"Melon IX",
-    "description":"Collect 162,432 melons.",
+    "description":"Harvest 250,000 melons.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "impossible":{
-      "trigger":"minecraft:impossible"
+    "melon":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:melon",
+                    "value":{
+                      "min":250000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
     }
   },
-  "requirements":[
-    [
-      "impossible"
-    ]
-  ],
   "rewards":{
     "experience":25000
   }

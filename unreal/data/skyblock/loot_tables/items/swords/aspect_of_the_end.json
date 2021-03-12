@@ -1,0 +1,46 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"diamond_sword",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Aspect of the End\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"Sharpness XXXIX\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Unbreaking II\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Item Ability: Instant Transmission\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Teleport \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"8\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" blocks ahead of you\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"and gain \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+50% Speed\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\" for \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"3\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}]\",
+                    \"{\\\"text\\\":\\\"seconds.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"When in Main Hand:\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\" 20 Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_green\\\"}\",
+                    \"{\\\"text\\\":\\\"+20 Strength\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"sharpness\",lvl:39},
+                  {id:\"unbreaking\",lvl:2}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:20,Operation:0,UUID:[I;803111628,612013447,372619330,434837186]}
+                ],
+                HideFlags:3
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

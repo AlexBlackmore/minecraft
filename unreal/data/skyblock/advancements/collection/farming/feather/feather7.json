@@ -1,0 +1,40 @@
+{
+  "parent":"skyblock:collection/farming/feather/feather6",
+  "display":{
+    "icon":{
+      "item":"minecraft:feather"
+    },
+    "title":"Feather VII",
+    "description":"Collect 10,000 feathers.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "feather":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:picked_up",
+                    "stat":"minecraft:feather",
+                    "value":{
+                      "min":10000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

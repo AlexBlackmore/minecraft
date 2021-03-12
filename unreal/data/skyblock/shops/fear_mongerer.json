@@ -1,0 +1,461 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Fear Mongerer\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"cleric",
+			type:"swamp"
+		},
+		Attributes:[
+			{
+				Name:"generic.movementSpeed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"lime_dye",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Green Candy\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"{\"text\":\"Candy can be used to trade with\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"the Fear Mongerer in the Hub.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Spirit Potion\",\"italic\":false,\"color\":\"white\"}"
+							},
+							Potion:"swiftness"
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"lime_dye",
+						Count:10,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Green Candy\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"{\"text\":\"Candy can be used to trade with\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"the Fear Mongerer in the Hub.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Magic Find Potion\",\"italic\":false,\"color\":\"white\"}"
+							},
+							Potion:"luck"
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"lime_dye",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Green Candy\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"{\"text\":\"Candy can be used to trade with\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"the Fear Mongerer in the Hub.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"{\"text\":\"Sugar Rush I\",\"italic\":false,\"color\":\"blue\"}",
+									"[\"\",{\"text\":\"Grants \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+2% Speed\",\"italic\":false,\"color\":\"blue\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"purple_dye",
+						Count:32,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Purple Candy\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Candy can be used to trade with\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"the Fear Mongerer in the Hub.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"torch",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Horseman's Candle\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Can be used in the \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Graveyard\",\"italic\":false,\"color\":\"red\"},{\"text\":\" to\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"summon the Headless Horseman boss.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"purple_dye",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Purple Candy\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Candy can be used to trade with\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"the Fear Mongerer in the Hub.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"leather_helmet",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Spooky Helmet\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Full Set Bonus: Candy Man\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Grants a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+5%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to find rare\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"candy.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"Mobs killed while wearing a\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"piece of Spooky Armor have a\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"chance to drop candy.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								],
+								color:16351261
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							],
+							AttributeModifiers:[
+								{Slot:"head",AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;647182298,283278220,48043916,724413644]}
+							],
+							HideFlags:64
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"purple_dye",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Purple Candy\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Candy can be used to trade with\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"the Fear Mongerer in the Hub.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"leather_chestplate",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Spooky Chestplate\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Full Set Bonus: Candy Man\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Grants a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+5%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to find rare\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"candy.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"Mobs killed while wearing a\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"piece of Spooky Armor have a\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"chance to drop candy.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								],
+								color:6316128
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							],
+							AttributeModifiers:[
+								{Slot:"chest",AttributeName:"generic.armor",Name:"generic.armor",Amount:10,Operation:0,UUID:[I;768471196,327427009,901120297,158866649]}
+							],
+							HideFlags:64
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"purple_dye",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Purple Candy\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Candy can be used to trade with\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"the Fear Mongerer in the Hub.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"leather_leggings",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Spooky Leggings\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Full Set Bonus: Candy Man\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Grants a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+5%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to find rare\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"candy.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"Mobs killed while wearing a\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"piece of Spooky Armor have a\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"chance to drop candy.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								],
+								color:6316128
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							],
+							AttributeModifiers:[
+								{Slot:"legs",AttributeName:"generic.armor",Name:"generic.armor",Amount:7,Operation:0,UUID:[I;454790665,862037999,442879984,376825314]}
+							],
+							HideFlags:64
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+
+				{
+					buy:{
+						id:"purple_dye",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Purple Candy\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Candy can be used to trade with\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"the Fear Mongerer in the Hub.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"leather_boots",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Spooky Boots\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Full Set Bonus: Candy Man\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Grants a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+5%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to find rare\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"candy.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"Mobs killed while wearing a\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"piece of Spooky Armor have a\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"chance to drop candy.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								],
+								color:6316128
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:3}
+							],
+							AttributeModifiers:[
+								{Slot:"feet",AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;420551240,191636259,912056981,366266382]}
+							],
+							HideFlags:64
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"purple_dye",
+						Count:32,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Purple Candy\",\"italic\":false,\"color\":\"light_purple\"}",
+								Lore:[
+									"{\"text\":\"Candy can be used to trade with\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"the Fear Mongerer in the Hub.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"{\"text\":\"Life Steal IV\",\"italic\":false,\"color\":\"blue\"}",
+									"[\"\",{\"text\":\"Grants \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Regeneration IV\",\"italic\":false,\"color\":\"#cd5cab\"},{\"text\":\" for \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"1\",\"italic\":false,\"color\":\"green\"}]",
+									"{\"text\":\"second after hitting a mob.\",\"italic\":false,\"color\":\"gray\"}"
+								]
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"purple_dye",
+						Count:32,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Purple Candy\",\"italic\":false,\"color\":\"gold\"}",
+								Lore:[
+									"{\"text\":\"Candy can be used to trade with\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"the Fear Mongerer in the Hub.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"cat_spawn_egg",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Black Cat Pet\",\"italic\":false,\"color\":\"gold\"}",
+								Lore:[
+									"\" \"",
+									"{\"text\":\"Hunter\",\"italic\":false,\"color\":\"gold\"}",
+									"{\"text\":\"Increases your Speed by +125%.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"Supernatural\",\"italic\":false,\"color\":\"gold\"}",
+									"{\"text\":\"Grants +15% Luck.\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}"
+								]
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				}
+			]
+		}
+	},
+	display:{
+		Name:"{\"text\":\"Fear Mongerer\"}"
+	}
+}
