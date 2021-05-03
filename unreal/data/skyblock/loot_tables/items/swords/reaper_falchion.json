@@ -1,0 +1,45 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:diamond_sword",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Reaper Falchion\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"Sharpness XXXXVII\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"{\\\"text\\\":\\\"Unbreaking III\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Heal \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+4 Health\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"},{\\\"text\\\":\\\" per hit. Deal \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"+200%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" damage for \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"1\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" second after\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"{\\\"text\\\":\\\"hitting a Zombie.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\",
+										\\"\\\" \\\"\\",
+										\\"{\\\"text\\\":\\\"When in Main Hand:\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\\",
+										\\"{\\\"text\\\":\\\" 24 Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_green\\\"}\",
+										\\"{\\\"text\\\":\\\"+20 Strength\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"
+									]
+								},
+								Enchantments:[
+									{id:\"sharpness\",lvl:47},
+									{id:\"unbreaking\",lvl:3}
+								],
+								AttributeModifiers:[
+									{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:20,Operation:0,UUID:[I;482011965,711025372,170096569,716353361]}
+								],
+								HideFlags:3
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

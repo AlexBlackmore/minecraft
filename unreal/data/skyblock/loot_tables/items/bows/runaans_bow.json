@@ -5,7 +5,7 @@
       "entries":[
         {
           "type":"item",
-          "name":"minecraft:bow",
+          "name":"minecraft:crossbow",
           "functions":[
             {
               "function":"minecraft:set_nbt",
@@ -13,6 +13,7 @@
                 display:{
                   Name:\"{\\\"text\\\":\\\"Runaan's Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
                   Lore:[
+                    \"{\\\"text\\\":\\\"Multishot\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
                     \"{\\\"text\\\":\\\"Power XVI\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
                     \"{\\\"text\\\":\\\"Unbreaking IV\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
                     \"\\\" \\\"\",
@@ -25,6 +26,7 @@
                   ]
                 },
                 Enchantments:[
+                  {id:\"multishot\",lvl:1},
                   {id:\"power\",lvl:16},
                   {id:\"unbreaking\",lvl:4}
                 ],

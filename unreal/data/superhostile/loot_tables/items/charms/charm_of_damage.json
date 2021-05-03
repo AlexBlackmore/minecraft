@@ -1,0 +1,30 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:red_dye",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Charm of Damage\\\",\\\"italic\\\":false}\"
+								},
+								Enchantments:[
+									{id:\"vanishing_curse\",lvl:1}
+								],
+								AttributeModifiers:[
+									{Slot:\"offhand\",AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:0.2,Operation:1,UUID:[I;100899396,71102054,171143665,171309336]},
+									{Slot:\"offhand\",AttributeName:\"generic.knockbackResistance\",Name:\"generic.knockbackResistance\",Amount:0.2,Operation:1,UUID:[I;57040325,327970082,400943335,461548965]}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

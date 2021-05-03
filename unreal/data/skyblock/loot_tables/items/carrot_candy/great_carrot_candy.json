@@ -1,0 +1,32 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:carrot",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Great Carrot Candy\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[
+					\"[\\\"\\\",{\\\"text\\\":\\\"Grants \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"100,000 XP\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"},{\\\"text\\\":\\\" when consumed.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+                  ]
+                },
+				Enchantments:[
+					{id:\"unbreaking\",lvl:1}
+				],
+				HideFlags:1
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

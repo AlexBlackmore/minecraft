@@ -33,6 +33,16 @@
           "type":"item",
           "name":"obsidian"
         }
+      ],
+      "conditions":[
+        {
+          "condition":"minecraft:killed_by_player"
+        },
+        {
+          "condition":"minecraft:random_chance_with_looting",
+          "chance":0.025,
+          "looting_multiplier":0.01
+        }
       ]
     },
     {
@@ -40,19 +50,19 @@
       "entries":[
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/miner_helmet_prot5"
+          "name":"skyblock:items/armor/miner/miner_helmet_prot5"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/miner_chestplate_prot5"
+          "name":"skyblock:items/armor/miner/miner_chestplate_prot5"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/miner_leggings_prot5"
+          "name":"skyblock:items/armor/miner/miner_leggings_prot5"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/miner_boots_prot5"
+          "name":"skyblock:items/armor/miner/miner_boots_prot5"
         }
       ],
       "conditions":[

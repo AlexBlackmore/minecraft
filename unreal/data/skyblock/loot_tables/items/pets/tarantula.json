@@ -1,0 +1,71 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:cave_spider_spawn_egg",
+					"weight":1,
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Tarantula Pet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Eight Legs\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Decreases the \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"XP\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"},{\\\"text\\\":\\\" cost of Spider\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"and Tarantula Boots by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"50%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Arachnid Slayer\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Gain \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+40 XP\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"},{\\\"text\\\":\\\" from killing spiders.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+									]
+								},
+								Enchantments:[
+									{id:\"unbreaking\",lvl:1}
+								],
+								HideFlags:1
+							}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:egg",
+					"weight":4,
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Tarantula Pet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"This pet egg can be upgraded\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"{\\\"text\\\":\\\"with Kat to gain it's abilities\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"{\\\"text\\\":\\\"or sold to George for a sizable\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"{\\\"text\\\":\\\"sum.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+									]
+								},
+								Enchantments:[
+									{id:\"unbreaking\",lvl:1}
+								],
+								HideFlags:1
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

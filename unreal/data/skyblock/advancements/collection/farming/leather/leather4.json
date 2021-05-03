@@ -6,7 +6,7 @@
       "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Leather IV",
-    "description":"Collect 1,000 leather.",
+    "description":"Kill 1,000 cows.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -24,8 +24,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:leather",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:cow",
                     "value":{
                       "min":1000
                     }

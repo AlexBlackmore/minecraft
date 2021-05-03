@@ -1,0 +1,3 @@
+execute if entity @p[level=10..] run execute at @e[tag=crypt_ghoul,distance=0..16,limit=1,sort=random] run function skyblock:slayer/revenant/revenant_horror1
+tellraw @p[level=..9] {"text":"You need at least 10 levels to summon this boss.","color":"red"}
+execute unless entity @e[tag=crypt_ghoul,distance=0..16] run tellraw @p {"text":"You must be within 16 blocks of a Crypt Ghoul to spawn this boss.","color":"red"}

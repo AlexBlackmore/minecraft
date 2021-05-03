@@ -1,12 +1,14 @@
 summon creeper ~ ~ ~ {
-  CustomName:"[\"\",{\"text\":\"Sneaky Creeper\",\"color\":\"red\"},{\"text\":\" (level-3)\",\"color\":\"gray\"}]",
-  CustomNameVisible:true,
-  Tags:["skyblock","sneaky_creeper"],
-  Health:23,
-  Attributes:[
-    {Name:"generic.max_health",Base:23}
-  ],
-  ActiveEffects:[
-    {Id:14,Amplifier:0,Duration:180}
-  ]
+	CustomName:"[\"\",{\"text\":\"Sneaky Creeper\",\"color\":\"red\"},{\"text\":\" (level-3)\",\"color\":\"gray\"}]",
+	CustomNameVisible:true,
+	Tags:["skyblock","sneaky_creeper"],
+	Health:3,
+	Attributes:[
+		{Name:"generic.max_health",Base:3},
+		{Name:"generic.attack_damage",Base:3}
+	],
+	ActiveEffects:[
+		{Id:14,Amplifier:0,Duration:1200}
+	],
+	DeathLootTable:"skyblock:mobs/sneaky_creeper"
 }

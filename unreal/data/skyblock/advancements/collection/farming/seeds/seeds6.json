@@ -5,7 +5,7 @@
       "item":"minecraft:tall_grass"
     },
     "title":"Seeds VI",
-    "description":"Harvest 5,000 seeds.",
+    "description":"Collect 5,000 wheat seeds.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -23,8 +23,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:mined",
-                    "stat":"minecraft:wheat",
+                    "type":"minecraft:picked_up",
+                    "stat":"minecraft:wheat_seeds",
                     "value":{
                       "min":5000
                     }

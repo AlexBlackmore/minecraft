@@ -6,7 +6,7 @@
       "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Porkchop VII",
-    "description":"Collect 10,000 porkchops.",
+    "description":"Kill 10,000 pigs.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -24,8 +24,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:porkchop",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:pig",
                     "value":{
                       "min":10000
                     }

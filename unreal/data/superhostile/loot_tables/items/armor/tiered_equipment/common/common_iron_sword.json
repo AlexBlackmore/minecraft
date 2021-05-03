@@ -1,0 +1,28 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:paper",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":iron_sword{
+  display:{
+    Name:\"{\\\"text\\\":\\\"Iron Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+    Lore:[
+      \"\\\" \\\"\",
+      \"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+    ]
+  },
+  Enchantments:[
+    {id:\"sharpness\",lvl:1},
+    {id:\"unbreaking\",lvl:1}
+  ],
+  AttributeModifiers:[
+    {Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:1.6,Operation:0,UUID:[I;989743767,-298779565,-474577282,-916232425]},
+    {Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:7,Operation:0,UUID:[I;87637983,-322123133,-984904330,-28190304]}
+  ]
+}

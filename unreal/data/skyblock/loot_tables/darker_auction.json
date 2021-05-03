@@ -5,15 +5,7 @@
       "entries":[
         {
           "type":"loot_table",
-          "name":"skyblock:items/potions/parrot_potion_epic"
-        },
-        {
-          "type":"loot_table",
           "name":"skyblock:items/pets/parrot"
-        },
-        {
-          "type":"loot_table",
-          "name":"skyblock:items/potions/turtle_potion_epic"
         },
         {
           "type":"loot_table",
@@ -21,7 +13,7 @@
         },
         {
           "type":"loot_table",
-          "name":"skyblock:items/potions/jellyfish_potion_epic"
+          "name":"skyblock:items/pets/jellyfish"
         },
         {
           "type":"loot_table",
@@ -93,217 +85,94 @@
       ]
     },
     {
-      "rolls":21,
+      "rolls":1,
       "entries":[
         {
           "type":"item",
-          "name":"allium",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"dandelion"
         },
         {
           "type":"item",
-          "name":"azure_bluet",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"poppy"
         },
         {
           "type":"item",
-          "name":"blue_orchid",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"blue_orchid"
         },
         {
           "type":"item",
-          "name":"dandelion",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"allium"
         },
         {
           "type":"item",
-          "name":"poppy",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"azure_bluet"
         },
         {
           "type":"item",
-          "name":"peony",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"red_tulip"
         },
         {
           "type":"item",
-          "name":"oxeye_daisy",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"orange_tulip"
         },
         {
           "type":"item",
-          "name":"rose_bush",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"white_tulip"
         },
         {
           "type":"item",
-          "name":"lilac",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"pink_tulip"
         },
         {
           "type":"item",
-          "name":"red_tulip",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"oxeye_daisy"
         },
         {
           "type":"item",
-          "name":"sunflower",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"cornflower"
         },
         {
           "type":"item",
-          "name":"white_tulip",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"lily_of_the_valley"
         },
         {
           "type":"item",
-          "name":"pink_tulip",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"wither_rose"
         },
         {
           "type":"item",
-          "name":"orange_tulip",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":64
-              }
-            }
-          ]
+          "name":"sunflower"
+        },
+        {
+          "type":"item",
+          "name":"lilac"
+        },
+        {
+          "type":"item",
+          "name":"rose_bush"
+        },
+        {
+          "type":"item",
+          "name":"peony"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/enchanted/dandelion",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":1,
-                "max":3
-              }
-            }
-          ]
+          "name":"skyblock:items/enchanted/dandelion"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/enchanted/poppy",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":1,
-                "max":3
-              }
-            }
-          ]
+          "name":"skyblock:items/enchanted/poppy"
         }
-      ]
-    }
+      ],
+	  "functions":[
+		{
+		  "function":"set_count",
+		  "count":{
+			"min":1,
+			"max":64
+		  }
+		}
+	  ]
+	}
   ]
 }

@@ -6,7 +6,7 @@
       "nbt":"{SkullOwner:\"MHF_Chicken\"}"
     },
     "title":"Chicken III",
-    "description":"Collect 250 chicken.",
+    "description":"Kill 250 chicken.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -24,8 +24,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:raw_chicken",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:chicken",
                     "value":{
                       "min":250
                     }

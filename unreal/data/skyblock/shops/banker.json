@@ -58,7 +58,91 @@ give @p villager_spawn_egg{
 					},
 					rewardExp:false,
 					maxUses:2147483647
-				}
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"aqua\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					maxUses:0
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:64
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"aqua\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
 			]
 		}
 	},

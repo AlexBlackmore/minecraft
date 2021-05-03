@@ -1,0 +1,41 @@
+{
+  "parent":"skyblock:collection/mining/lapis/lapis9",
+  "display":{
+    "icon":{
+      "item":"minecraft:book",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Lapis Lazuli X",
+    "description":"Collect 250,000 lapis lazuli.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "lapis":{
+      "trigger":"minecraft:item_durability_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:picked_up",
+                    "stat":"minecraft:lapis_lazuli",
+                    "value":{
+                      "min":250000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@
       "nbt":"{CustomPotionColor:5635925}"
     },
     "title":"Rabbit III",
-    "description":"Collect 250 rabbit.",
+    "description":"Kill 250 rabbits.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -24,8 +24,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:raw_rabbit",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:rabbit",
                     "value":{
                       "min":250
                     }

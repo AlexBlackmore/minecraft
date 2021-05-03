@@ -5,7 +5,7 @@
       "item":"minecraft:enchanted_book"
     },
     "title":"Leather VIII",
-    "description":"Collect 25,000 leather.",
+    "description":"Kill 25,000 cows.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -23,8 +23,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:leather",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:cow",
                     "value":{
                       "min":25000
                     }

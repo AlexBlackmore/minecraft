@@ -1,0 +1,31 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:paper",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":leather_boots{
+  display:{
+    Name:\"{\\\"text\\\":\\\"Leather Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+    Lore:[
+      \"\\\" \\\"\",
+      \"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+    ],
+    color:16777215
+  },
+  Enchantments:[
+    {id:\"depth_strider\",lvl:1},
+    {id:\"feather_falling\",lvl:1},
+    {id:\"unbreaking\",lvl:2},
+    {id:\"respiration\",lvl:1}
+  ],
+  AttributeModifiers:[
+    {Slot:\"feet\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;900895936,405437416,169949324,706383377]},
+    {Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:2,Operation:0,UUID:[I;492460744,-525309878,-474392272,-620317655]}
+  ]
+}

@@ -5,7 +5,7 @@
 			"item":"minecraft:raw_rabbit"
 		},
 		"title":"Rabbit I",
-		"description":"Collect 50 rabbit.",
+		"description":"Kill 50 rabbits.",
 		"frame":"task",
 		"show_toast":true,
 		"announce_to_chat":true,
@@ -23,8 +23,8 @@
 							"player":{
 								"stats":[
 									{
-										"type":"minecraft:picked_up",
-										"stat":"minecraft:raw_rabbit",
+										"type":"minecraft:killed",
+										"stat":"minecraft:rabbit",
 										"value":{
 										  "min":50
 										}

@@ -49,19 +49,19 @@
       "entries":[
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/ender_helmet"
+          "name":"skyblock:items/armor/ender/ender_helmet"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/ender_chestplate"
+          "name":"skyblock:items/armor/ender/ender_chestplate"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/ender_leggings"
+          "name":"skyblock:items/armor/ender/ender_leggings"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/ender_boots"
+          "name":"skyblock:items/armor/ender/ender_boots"
         }
       ],
       "conditions":[
@@ -80,55 +80,22 @@
       "entries":[
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/potions/enderman_rare"
-        }
-      ],
-      "conditions":[
-        {
-          "condition":"minecraft:killed_by_player"
+          "name":"skyblock:items/pets/eggs/enderman_rare",
+		  "weight":50
         },
-        {
-          "condition":"minecraft:random_chance_with_looting",
-          "chance":0.0005,
-          "looting_multiplier":0.01
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
+		{
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/potions/enderman_epic"
-        }
-      ],
-      "conditions":[
-        {
-          "condition":"minecraft:killed_by_player"
+          "name":"skyblock:items/pets/eggs/enderman_epic",
+		  "weight":5
         },
-        {
-          "condition":"minecraft:random_chance_with_looting",
-          "chance":0.00005,
-          "looting_multiplier":0.01
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
+		{
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/pets/enderman"
-        }
-      ],
-      "conditions":[
-        {
-          "condition":"minecraft:killed_by_player"
+          "name":"skyblock:items/pets/enderman",
+		  "weight":3
         },
-        {
-          "condition":"minecraft:random_chance_with_looting",
-          "chance":0.000005,
-          "looting_multiplier":0.01
+		{
+          "type":"minecraft:empty",
+		  "weight":499942
         }
       ]
     }

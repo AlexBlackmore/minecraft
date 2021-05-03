@@ -1,0 +1,32 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:golden_carrot",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Ultimate Carrot Candy\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+					\"[\\\"\\\",{\\\"text\\\":\\\"Grants \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"1,000,000 XP\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"},{\\\"text\\\":\\\" when consumed.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ]
+                },
+				Enchantments:[
+					{id:\"unbreaking\",lvl:1}
+				],
+				HideFlags:1
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

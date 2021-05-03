@@ -6,7 +6,7 @@
       "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Mutton V",
-    "description":"Collect 2,500 mutton.",
+    "description":"Kill 2,500 sheep.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -24,8 +24,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:raw_mutton",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:sheep",
                     "value":{
                       "min":2500
                     }

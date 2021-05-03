@@ -5,7 +5,7 @@
       "item":"minecraft:chicken_spawn_egg"
     },
     "title":"Chicken VI",
-    "description":"Collect 5,000 chicken.",
+    "description":"Kill 5,000 chicken.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -23,8 +23,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:raw_chicken",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:chicken",
                     "value":{
                       "min":5000
                     }

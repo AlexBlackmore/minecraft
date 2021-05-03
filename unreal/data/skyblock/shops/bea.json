@@ -45,21 +45,20 @@ give @p villager_spawn_egg{
 						Count:2
 					},
 					sell:{
-						id:"potion",
+						id:"egg",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Bee Potion\",\"italic\":false,\"color\":\"white\"}",
+								Name:"{\"text\":\"Bee Egg\",\"italic\":false,\"color\":\"white\"}",
 								Lore:[
+									"{\"text\":\"This pet egg can be upgraded\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"with Kat to gain it's abilities\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"or sold to George for a sizable\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"sum.\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
-									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
 								]
-							},
-							CustomPotionEffects:[
-	              {Id:5,Amplifier:0,Duration:9600},
-	              {Id:1,Amplifier:0,Duration:9600}
-	            ],
-	            CustomPotionColor:13881363
+							}
 						}
 					},
 					rewardExp:false,
@@ -76,21 +75,20 @@ give @p villager_spawn_egg{
 						Count:64
 					},
 					sell:{
-						id:"potion",
+						id:"egg",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Bee Potion\",\"italic\":false,\"color\":\"aqua\"}",
+								Name:"{\"text\":\"Bee Egg\",\"italic\":false,\"color\":\"aqua\"}",
 								Lore:[
+									"{\"text\":\"This pet egg can be upgraded\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"with Kat to gain it's abilities\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"or sold to George for a sizable\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"sum.\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
-									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
 								]
-							},
-							CustomPotionEffects:[
-	              {Id:5,Amplifier:1,Duration:19200},
-	              {Id:1,Amplifier:0,Duration:19200}
-	            ],
-	            CustomPotionColor:13036234
+							}
 						}
 					},
 					rewardExp:false,
@@ -124,22 +122,20 @@ give @p villager_spawn_egg{
 						}
 					},
 					sell:{
-						id:"potion",
+						id:"egg",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Bee Potion\",\"italic\":false,\"color\":\"light_purple\"}",
+								Name:"{\"text\":\"Bee Egg\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
+									"{\"text\":\"This pet egg can be upgraded\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"with Kat to gain it's abilities\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"or sold to George for a sizable\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"sum.\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
-									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
 								]
-							},
-							CustomPotionEffects:[
-	              {Id:5,Amplifier:1,Duration:48000},
-	              {Id:1,Amplifier:0,Duration:48000},
-	              {Id:22,Amplifier:0,Duration:48000}
-	            ],
-	            CustomPotionColor:11585546
+							}
 						}
 					},
 					rewardExp:false,
@@ -177,8 +173,9 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Bee Pet\",\"italic\":false,\"color\":\"gold\"}",
+								Name:"{\"text\":\"Bee\",\"italic\":false,\"color\":\"gold\"}",
 								Lore:[
+									"{\"text\":\"Pet\",\"italic\":false,\"color\":\"blue\"}",
 									"\" \"",
 									"{\"text\":\"Hive\",\"italic\":false,\"color\":\"gold\"}",
 									"[\"\",{\"text\":\"Gain \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+15 Strength\",\"italic\":false,\"color\":\"red\"},{\"text\":\" for each\",\"italic\":false,\"color\":\"gray\"}]",

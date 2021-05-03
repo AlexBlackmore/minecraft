@@ -4,21 +4,8 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"rotten_flesh",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":1
-            },
-            {
-              "function":"looting_enchant",
-              "count":{
-                "min":0,
-                "max":1
-              }
-            }
-          ]
+          "type":"minecraft:loot_table",
+          "name":"minecraft:entities/zombie"
         }
       ]
     },
@@ -42,6 +29,16 @@
             }
           ]
         }
+      ],
+      "conditions":[
+        {
+          "condition":"minecraft:killed_by_player"
+        },
+        {
+          "condition":"minecraft:random_chance_with_looting",
+          "chance":0.025,
+          "looting_multiplier":0.01
+        }
       ]
     },
     {
@@ -49,19 +46,19 @@
       "entries":[
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/miner_helmet"
+          "name":"skyblock:items/armor/miner/miner_helmet"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/miner_chestplate"
+          "name":"skyblock:items/armor/miner/miner_chestplate"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/miner_leggings"
+          "name":"skyblock:items/armor/miner/miner_leggings"
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/miner_boots"
+          "name":"skyblock:items/armor/miner/miner_boots"
         }
       ],
       "conditions":[

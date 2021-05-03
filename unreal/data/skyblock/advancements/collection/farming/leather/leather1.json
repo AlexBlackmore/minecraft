@@ -5,7 +5,7 @@
       "item":"minecraft:leather"
     },
     "title":"Leather I",
-    "description":"Collect 50 leather.",
+    "description":"Kill 50 cows.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -23,8 +23,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:leather",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:cow",
                     "value":{
                       "min":50
                     }

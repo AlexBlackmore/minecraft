@@ -1,0 +1,48 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:iron_sword",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Golem Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+                  Lore:[
+                    \"{\\\"text\\\":\\\"Sharpness XXXI\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\"Unbreaking II\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+					\"{\\\"text\\\":\\\"Item Ability: Iron Punch\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Punch the ground, \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"damaging\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"enemies around you for \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"50 damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"red\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"When in Main Hand:\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"{\\\"text\\\":\\\" 16 Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_green\\\"}\",
+                    \"{\\\"text\\\":\\\"+5 Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+                    \"{\\\"text\\\":\\\"+25 Strength\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"sharpness\",lvl:31},
+                  {id:\"unbreaking\",lvl:2}
+                ],
+                AttributeModifiers:[
+					{Slot:\"mainhand\\",AttributeName:\\"generic.armor\\",Name:\\"generic.armor\\",Amount:5,Operation:0,UUID:[I;554025128,720903561,87891800,234173522]},
+					{Slot:\"mainhand\\",AttributeName:\\"generic.attack_damage\\",Name:\\"generic.attack_damage\\",Amount:25,Operation:0,UUID:[I;554025128,720903561,87891800,234173522]}
+                
+                ],
+                HideFlags:3
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

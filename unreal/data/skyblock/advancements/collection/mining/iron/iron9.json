@@ -2,10 +2,11 @@
   "parent":"skyblock:collection/mining/iron/iron8",
   "display":{
     "icon":{
-      "item":"minecraft:iron_ingot"
+      "item":"minecraft:hopper",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Iron IX",
-    "description":"Mine 40,000 iron ore.",
+    "description":"Mine 50,000 iron ore.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -26,7 +27,7 @@
                     "type":"minecraft:mined",
                     "stat":"minecraft:iron_ore",
                     "value":{
-                      "min":40000
+                      "min":50000
                     }
                   }
                 ]

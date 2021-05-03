@@ -6,7 +6,7 @@
       "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Rabbit VI",
-    "description":"Collect 5,000 rabbit.",
+    "description":"Kill 5,000 rabbits.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -24,8 +24,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:raw_rabbit",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:rabbit",
                     "value":{
                       "min":5000
                     }

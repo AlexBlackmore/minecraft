@@ -1,15 +1,16 @@
 summon zombie ~ ~ ~ {
-  CustomName:"[\"\",{\"text\":\"Revenant Horror\",\"color\":\"aqua\"},{\"text\":\" (level-610)\",\"color\":\"#ff0000\"}]",
+  CustomName:"[\"\",{\"text\":\"Revenant Horror\",\"color\":\"aqua\"},{\"text\":\" (level-610)\",\"color\":\"gray\"}]",
   CustomNameVisible:true,
   Tags:["slayer","revenant_horror4","skyblock"],
-  Health:610,
+  Health:630,
   Attributes:[
-    {Name:"generic.max_health",Base:610},
-    {Name:"generic.attack_damage",Base:200},
-    {Name:"generic.movement_speed",Base:0.43}
+    {Name:"generic.max_health",Base:630},
+    {Name:"generic.attack_damage",Base:61}
   ],
   ActiveEffects:[
-    {Id:10,Amplifier:3,Duration:2147483647}
+    {Id:1,Amplifier:3,Duration:2147483647},
+    {Id:10,Amplifier:3,Duration:2147483647},
+    {Id:24,Amplifier:0,Duration:2147483647}
   ],
   HandItems:[
     {
@@ -47,5 +48,6 @@ summon zombie ~ ~ ~ {
     }
   ],
   HandDropChances:[0.0f,0.0f],
-  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
+  ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+  DeathLootTable:"skyblock:mobs/slayer/revenant/revenant_horror4"
 }

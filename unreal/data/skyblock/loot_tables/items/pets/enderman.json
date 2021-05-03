@@ -1,27 +1,41 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"minecraft:enderman_spawn_egg",
-          "functions":[
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{
-  							display:{
-  								Name:\"{\\\"text\\\":\\\"Enderman\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\"
-  							},
-  						  Enchantments:[
-  						    {id:\"unbreaking\",lvl:1}
-  						  ],
-  							HideFlags:1
-              }"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:enderman_spawn_egg",
+					"weight":1,
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Enderman Pet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Teleport Savvy\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+										\"{\\\"text\\\":\\\"Buffs the Aspect of the End\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"ability, granting \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+10 Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_green\\\"},{\\\"text\\\":\\\" for\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"5\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" seconds on use.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Zealot Madness\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+										\"{\\\"text\\\":\\\"Increases the odds of finding a\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Special Zealot by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"25%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+									]
+								},
+								Enchantments:[
+									{id:\"unbreaking\",lvl:1}
+								],
+								HideFlags:1
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

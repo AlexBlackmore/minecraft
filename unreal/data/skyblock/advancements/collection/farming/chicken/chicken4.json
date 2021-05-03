@@ -6,7 +6,7 @@
       "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Chicken IV",
-    "description":"Collect 1,000 chicken.",
+    "description":"Kill 1,000 chicken.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -24,8 +24,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:raw_chicken",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:chicken",
                     "value":{
                       "min":1000
                     }

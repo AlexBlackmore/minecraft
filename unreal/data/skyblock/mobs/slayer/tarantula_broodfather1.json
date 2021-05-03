@@ -1,21 +1,23 @@
 summon spider ~ ~1 ~ {
-  CustomName:"[\"\",{\"text\":\"Tarantula Broodfather\",\"color\":\"aqua\"},{\"text\":\" (level-40)\",\"color\":\"#70ff00\"}]",
+  CustomName:"[\"\",{\"text\":\"Tarantula Broodfather\",\"color\":\"aqua\"},{\"text\":\" (level-40)\",\"color\":\"gray\"}]",
   CustomNameVisible:true,
   Passengers:[
     {
       id:"cave_spider",
-      CustomName:"[\"\",{\"text\":\"Tarantula Broodfather\",\"color\":\"aqua\"},{\"text\":\" (level-40)\",\"color\":\"#80ff00\"}]",
+      CustomName:"[\"\",{\"text\":\"Tarantula Broodfather\",\"color\":\"aqua\"},{\"text\":\" (level-40)\",\"color\":\"gray\"}]",
       CustomNameVisible:true
     }
   ],
   Tags:["slayer","tarantula_broodfather1","skyblock"],
-  Health:40,
+  Health:60,
   Attributes:[
-    {Name:"generic.max_health",Base:40},
-    {Name:"generic.attack_damage",Base:7}
+    {Name:"generic.max_health",Base:60},
+    {Name:"generic.attack_damage",Base:4}
   ],
   ActiveEffects:[
     {Id:1,Amplifier:0,Duration:2147483647},
-    {Id:10,Amplifier:0,Duration:2147483647}
-  ]
+    {Id:10,Amplifier:0,Duration:2147483647},
+    {Id:24,Amplifier:0,Duration:2147483647}
+  ],
+  DeathLootTable:"skyblock:mobs/slayer/tarantula/tarantula_broodfather1"
 }

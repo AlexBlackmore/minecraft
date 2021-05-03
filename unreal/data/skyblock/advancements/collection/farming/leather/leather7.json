@@ -5,7 +5,7 @@
       "item":"minecraft:saddle"
     },
     "title":"Leather VII",
-    "description":"Collect 10,000 leather.",
+    "description":"Kill 10,000 cows.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -23,8 +23,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:leather",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:cow",
                     "value":{
                       "min":10000
                     }

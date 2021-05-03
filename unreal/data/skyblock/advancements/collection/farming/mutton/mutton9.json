@@ -5,7 +5,7 @@
       "item":"minecraft:raw_mutton"
     },
     "title":"Mutton IX",
-    "description":"Collect 50,000 mutton.",
+    "description":"Kill 50,000 sheep.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -23,8 +23,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:raw_mutton",
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:sheep",
                     "value":{
                       "min":50000
                     }
