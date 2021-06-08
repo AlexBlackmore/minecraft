@@ -1,29 +1,36 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"minecraft:paper",
-          "functions":[
-            {
-              "function":"minecraft:set_nbt",
-              "tag":leather_leggings{
-  display:{
-    Name:\"{\\\"text\\\":\\\"Leather Pants\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
-    Lore:[
-      \"\\\" \\\"\",
-      \"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
-    ],
-    color:16777215
-  },
-  Enchantments:[
-    {id:\"projectile_protection\",lvl:1},
-    {id:\"unbreaking\",lvl:2}
-  ],
-  AttributeModifiers:[
-    {Slot:\"legs\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;500874133,-661433046,-519654431,643797705]},
-    {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3,Operation:0,UUID:[I;-661071364,478996271,933830087,-946867089]}
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_leggings",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Leather Pants\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"COMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+									],
+									color:16777215
+								},
+								Enchantments:[
+									{id:\"projectile_protection\",lvl:1},
+									{id:\"unbreaking\",lvl:2}
+								],
+								AttributeModifiers:[
+									{Slot:\"legs\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;500874133,-661433046,-519654431,643797705]},
+									{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3,Operation:0,UUID:[I;-661071364,478996271,933830087,-946867089]}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

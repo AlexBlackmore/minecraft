@@ -1,0 +1,18 @@
+{
+  "parent":"skyblock:commands/root",
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:wolf",
+                    "nbt": "{Tags:[\"pack_enforcer\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience":100,
+		"function":"skyblock:reset_commands"
+    }
+}

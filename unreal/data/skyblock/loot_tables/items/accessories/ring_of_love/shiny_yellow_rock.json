@@ -1,0 +1,33 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:gold_nugget",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Candy Talisman\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+									Lore:[
+										\"[\\\"\\\",{\\\"text\\\":\\\"Increases the chance for mobs to\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"drop Candy by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"5%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\"
+										\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+									]
+								},
+								Enchantments:[
+									{id:\"unbreaking\",lvl:0}
+								],
+								HideFlags:1
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

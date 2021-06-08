@@ -1,0 +1,1 @@
+schedule function skyblock:magma_cube_boss_death 4s

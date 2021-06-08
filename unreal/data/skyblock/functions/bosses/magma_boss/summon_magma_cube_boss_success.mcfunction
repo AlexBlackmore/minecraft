@@ -1,0 +1,2 @@
+tellraw @p[distance=..64] ["",{"text":"The "},{"text":"Magma Cube Boss","color":"red"},{"text":" has spawned in the Magma Fields!"}]
+summon magma_cube -310 83 -597 {Tags:["skyblock","blazing_fortress","magma_cube_boss"],Health:100,Attributes:[{Name:"generic.max_health",Base:100},{Name:"generic.attack_damage",Base:20}],ActiveEffects:[{Id:24,Amplifier:0,Duration:2147483647}],Size:32}

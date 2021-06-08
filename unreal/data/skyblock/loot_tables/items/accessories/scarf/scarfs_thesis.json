@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-835524816,1249198628,-1730738567,-2028930308],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGNlNGM4N2ViNGRkZTI3NDU5ZTNlN2Y4NTkyMWU3ZTU3YjExMTk5MjYwY2FhNWNlNjNmMTM5ZWUzZDE4OGMifX19\"}]}},Base:{Type:\"ACCESSORY\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',Reforge:\"\",AccessoryFamily:\"ScarfsStudies\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Gain dugeon class experience\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+4%\",\"color\":\"green\",\"italic\":false},{\"text\":\" \"},{\"text\":\"faster.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\" \"}]','[{\"text\":\"A research on how to preserve\",\"color\":\"gray\",\"italic\":true}]','[{\"text\":\"and enhance class abilities in\",\"color\":\"gray\",\"italic\":true}]','[{\"text\":\"death\",\"color\":\"gray\",\"italic\":true}]','[{\"text\":\"\"\"italic\":false}]','[{\"text\":\"Right-click to view recipes!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"​ \"}]','[{\"text\":\" \"}]'],display:{Name:'[{\"text\":\"Scarf\\'s Thesis\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Gain dugeon class experience\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+4%\",\"color\":\"green\",\"italic\":false},{\"text\":\" \"},{\"text\":\"faster.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\" \"}]','[{\"text\":\"A research on how to preserve\",\"color\":\"gray\",\"italic\":true}]','[{\"text\":\"and enhance class abilities in\",\"color\":\"gray\",\"italic\":true}]','[{\"text\":\"death\",\"color\":\"gray\",\"italic\":true}]','[{\"text\":\" \"}]','[{\"text\":\"Right-click to view recipes!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\" \"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":\"false\"}]','[{\"text\":\"EPIC ACCESSORY\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":\"false\"}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

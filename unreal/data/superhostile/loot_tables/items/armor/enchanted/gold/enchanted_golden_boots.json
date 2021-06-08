@@ -1,20 +1,27 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"minecraft:paper",
-          "functions":[
-            {
-              "function":"minecraft:set_nbt",
-              "tag":golden_boots{
-  display:{
-    Name:\"{\\\"text\\\":\\\"Enchanted Golden Boots\\\",\\\"italic\\\":false}\"
-  },
-  Enchantments:[
-    {id:\"protection\",lvl:4},
-    {id:\"feather_falling\",lvl:4}
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:golden_boots",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Enchanted Golden Boots\\\",\\\"italic\\\":false}\"
+								},
+								Enchantments:[
+									{id:\"feather_falling\",lvl:4},
+									{id:\"protection\",lvl:4}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

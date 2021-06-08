@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"ACCESSORY\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',Reforge:\"\",Intel:6,BaseIntel:6,AccessoryFamily:\"&d♪Melody'sHair♫\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"A single strand of hair\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"from Melody\\'s head.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"     \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Left-Click: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Tune Up!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"Right-Click: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Play Note!\",\"color\":\"light_purple\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"♪ Melody\\'s Hair ♫\",\"color\":\"light_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+6\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"A single strand of hair\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"from Melody\\'s head.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"     \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Left-Click: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Tune Up!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"Right-Click: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Play Note!\",\"color\":\"light_purple\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC ACCESSORY\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

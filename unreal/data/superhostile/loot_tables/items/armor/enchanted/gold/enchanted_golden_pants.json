@@ -1,19 +1,26 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"minecraft:paper",
-          "functions":[
-            {
-              "function":"minecraft:set_nbt",
-              "tag":golden_leggings{
-  display:{
-    Name:\"{\\\"text\\\":\\\"Enchanted Golden Pants\\\",\\\"italic\\\":false}\"
-  },
-  Enchantments:[
-    {id:\"protection\",lvl:4}
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:golden_leggings",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Enchanted Golden Pants\\\",\\\"italic\\\":false}\"
+								},
+								Enchantments:[
+									{id:\"protection\",lvl:4}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

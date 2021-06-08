@@ -1,34 +1,31 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"minecraft:enchanted_book",
-          "functions":[
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{
-                StoredEnchantments:[
-                  {id:\"bane_of_arthropods\",lvl:6}
-                ],
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Enchanted Book\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
-  								Lore:[
-  									\"{\\\"text\\\":\\\"Bane of Arthropods VI\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
-  									\"[\\\"\\\",{\\\"text\\\":\\\"Deals \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+15 Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_green\\\"},{\\\"text\\\":\\\" to Cave Spiders,\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-  									\"{\\\"text\\\":\\\"Spiders, and Silverfish.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-  									\"\\\" \\\"\",
-  									\"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
-  								]
-                },
-                HideFlags:1
-              }"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:enchanted_book",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								StoredEnchantments:[
+									{id:\"bane_of_arthropods\",lvl:6}
+								],
+								display:{
+									Name:\"{\\\"text\\\":\\\"Enchanted Book\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+									]
+								},
+								HideFlags:1
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

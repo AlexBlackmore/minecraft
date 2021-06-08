@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"ACCESSORY\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',Reforge:\"\",AccessoryFamily:\"&5experienceArtifact\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Increase the experience orbs you\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\" gain by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"25% \",\"color\":\"green\",\"italic\":false},{\"text\":\"while this item\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\" is in your inventory.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Experience Artifact\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Increase the experience orbs you\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"gain by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"25% \",\"color\":\"green\",\"italic\":false},{\"text\":\"while this item\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"is in your inventory.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC ACCESSORY\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+/give @p zombie_spawn_egg{
+  EntityTag:{
+    id:"minecraft:zombie_villager",
+    CustomName:"[\"\",{\"text\":\"Zombie Villager \",\"color\":\"red\"},{\"text\":\"(level 1)\",\"color\":\"gray\"}]",
+    CustomNameVisible:1,
+    DeathLootTable:"superhostile:mobs/stone_tools_and_food/stone_tools_and_food_low",
+    Health:2,
+    Attributes:[
+      {Name:"generic.max_health",Base:2}
+    ],
+    HandItems:[
+      {id:"minecraft:stone_sword",Count:1},
+      {}
+    ],
+    HandDropChances:[0F,0F],
+    ArmorItems:[
+      {},
+      {},
+      {},
+      {}
+    ],
+    ArmorDropChances:[0F,0F,0.0F,0F]
+  },
+  display:{
+    Name:"[\"\",{\"text\":\"Zombie Villager\",\"color\":\"red\"},{\"text\":\"(level 1)\",\"color\":\"gray\"}]"
+  }
+}

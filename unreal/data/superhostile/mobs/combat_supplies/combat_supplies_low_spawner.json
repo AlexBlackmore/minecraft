@@ -1,0 +1,54 @@
+/setblock ~ ~ ~ spawner{
+  SpawnPotentials:[
+    {
+      Entity:{
+		id:"minecraft:zombie",
+		CustomName:"[\"\",{\"text\":\"Zombie \",\"color\":\"red\"},{\"text\":\"(level 1)\",\"color\":\"gray\"}]",
+		CustomNameVisible:1,
+		DeathLootTable:"superhostile:mobs/combat_supplies/combat_supplies_low",
+		Health:2,
+		Attributes:[
+		  {Name:"generic.max_health",Base:2}
+		],
+		HandItems:[
+		  {id:"minecraft:iron_sword",Count:1},
+		  {}
+		],
+		HandDropChances:[0F,0F],
+		ArmorItems:[
+		  {},
+		  {},
+		  {},
+		  {}
+		],
+		ArmorDropChances:[0F,0F,0.0F,0F]
+	  },
+      Weight:1
+    },
+    {
+      Entity:{
+		id:"minecraft:skeleton",
+		CustomName:"[\"\",{\"text\":\"Skeleton \",\"color\":\"red\"},{\"text\":\"(level 1)\",\"color\":\"gray\"}]",
+		CustomNameVisible:1,
+		DeathLootTable:"superhostile:mobs/combat_supplies/combat_supplies_low",
+		Health:2,
+		Attributes:[
+		  {Name:"generic.max_health",Base:2}
+		],
+		HandItems:[
+		  {id:"minecraft:bow",Count:1},
+		  {}
+		],
+		HandDropChances:[0F,0F],
+		ArmorItems:[
+		  {},
+		  {},
+		  {},
+		  {}
+		],
+		ArmorDropChances:[0F,0F,0.0F,0F]
+	  },
+      Weight:1
+    }
+  ]
+}

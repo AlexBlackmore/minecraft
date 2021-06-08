@@ -1,0 +1,15 @@
+/give @p blaze_spawn_egg{
+  EntityTag:{
+    id:"minecraft:blaze",
+    CustomName:"[\"\",{\"text\":\"Blaze \",\"color\":\"red\"},{\"text\":\"(level 1)\",\"color\":\"gray\"}]",
+    CustomNameVisible:1,
+    DeathLootTable:"superhostile:mobs/potions/potions_low",
+    Health:2,
+    ActiveEffects:[
+      {Id:10,Amplifier:0,Duration:2147483647}
+    ]
+  },
+  display:{
+    Name:"[\"\",{\"text\":\"Blaze \",\"color\":\"red\"},{\"text\":\"(level 1)\",\"color\":\"gray\"}]"
+  }
+}

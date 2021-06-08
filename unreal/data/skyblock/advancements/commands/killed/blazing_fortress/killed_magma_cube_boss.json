@@ -1,0 +1,20 @@
+{
+  "parent":"skyblock:commands/root",
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:magma_cube",
+                    "nbt": "{CustomName:\"[\\\"\\\",{\\\"text\\\":\\\"Magma Cube Boss\\\",\\\"color\\\":\\\"red\\\"},{\\\"text\\\":\\\" (level-100)\\\",\\\"color\\\":\\\"gray\\\"}]\"}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "loot":[
+			"skyblock:mobs/blazing_fortress/magma_cube_boss"
+		],
+		"function":"skyblock:reset_commands"
+    }
+}

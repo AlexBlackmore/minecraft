@@ -1,19 +1,26 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"minecraft:paper",
-          "functions":[
-            {
-              "function":"minecraft:set_nbt",
-              "tag":leather_leggings{
-  display:{
-    Name:\"{\\\"text\\\":\\\"Enchanted Leather Pants\\\",\\\"italic\\\":false}\"
-  },
-  Enchantments:[
-    {id:\"protection\",lvl:1}
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_leggings",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Enchanted Leather Pants\\\",\\\"italic\\\":false}\"
+								},
+								Enchantments:[
+									{id:\"protection\",lvl:1}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

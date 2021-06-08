@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{}],Base:{Type:\"ACCESSORY\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Reforge:\"\",AccessoryFamily:\"RingOfLove\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Grants a 1 in 100000000000\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\" chance to deal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100% \",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"damage\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\" \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\" \",\"color\":\"gray\",\"italic\":false},{\"text\":\" True love is tough to find,\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\" but finding it hits you hard!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\" \",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\" \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"Requires quest progress!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Yellow Rock Of Love\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Grants a 1 in 100,000,000,000\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"chance to deal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100% \",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"damage\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\",\"color\":\"gray\",\"italic\":false},{\"text\":\"True love is tough to find,\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"but finding it hits you hard!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"Requires quest progress!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON ACCESSORY\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

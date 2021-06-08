@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-1431166614,-503889500,-1494937201,-1336804771],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2E5NDNiYWY3MTQ1ODU5NmFmZjRlYmE4NzlmOGFjNWQyYmEyNjdjOTgzODVlNjc2NzNmNDhlYmVhNWZhIn19fQ==\"}]}},Base:{Type:\"ACCESSORY\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Reforge:\"\",AccessoryFamily:\"PotionAffinityTalisman\",Abilities:[{Name:\"Potion Affinity\",Activation:\"\",Type:\"Item Ability\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Unique Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Potion Affinity\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Increases the duration of any \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"consumed Potion by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"10% \",\"color\":\"dark_green\",\"italic\":false},{\"text\":\"when \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"held in your inventory\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Potion Affinity Talisman\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Potion Affinity\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Increases the duration of any \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"consumed Potion by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"10% \",\"color\":\"dark_green\",\"italic\":false},{\"text\":\"when \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"held in your inventory\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON ACCESSORY\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

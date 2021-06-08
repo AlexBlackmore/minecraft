@@ -1,19 +1,26 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"minecraft:paper",
-          "functions":[
-            {
-              "function":"minecraft:set_nbt",
-              "tag":iron_leggings{
-  display:{
-    Name:\"{\\\"text\\\":\\\"Enchanted Iron Pants\\\",\\\"italic\\\":false}\"
-  },
-  Enchantments:[
-    {id:\"protection\",lvl:2}
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:iron_leggings",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Enchanted Iron Pants\\\",\\\"italic\\\":false}\"
+								},
+								Enchantments:[
+									{id:\"protection\",lvl:2}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

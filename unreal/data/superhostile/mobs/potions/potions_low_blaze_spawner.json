@@ -1,0 +1,30 @@
+/setblock ~ ~ ~ spawner{
+  SpawnPotentials:[
+    {
+      Entity:{
+		id:"minecraft:blaze",
+		CustomName:"[\"\",{\"text\":\"Blaze \",\"color\":\"red\"},{\"text\":\"(level 1)\",\"color\":\"gray\"}]",
+		CustomNameVisible:1,
+		DeathLootTable:"superhostile:mobs/potions/potions_low",
+		Health:2,
+		ActiveEffects:[
+		  {Id:10,Amplifier:0,Duration:2147483647}
+		]
+	  },
+      Weight:2
+    },
+    {
+      Entity:{
+		id:"minecraft:blaze",
+		CustomName:"[\"\",{\"text\":\"Blaze \",\"color\":\"red\"},{\"text\":\"(level 1)\",\"color\":\"gray\"}]",
+		CustomNameVisible:1,
+		DeathLootTable:"superhostile:mobs/potions/potions_low",
+		Health:2,
+		ActiveEffects:[
+		  {Id:1,Amplifier:0,Duration:2147483647}
+		]
+	  },
+      Weight:1
+    }
+  ]
+}

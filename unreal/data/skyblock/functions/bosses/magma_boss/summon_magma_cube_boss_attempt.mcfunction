@@ -1,0 +1,2 @@
+execute in skyblock:blazing_fortress run execute if data entity @p {SelectedItem:{id:"minecraft:egg",Count:1b,tag:{display:{Name:"{\"text\":\"Magma Cube Pet\",\"italic\":false,\"color\":\"aqua\"}"}}}} run tellraw @p "Success!"
+execute in skyblock:blazing_fortress run execute unless data entity @p {SelectedItem:{id:"minecraft:egg",Count:1b,tag:{display:{Name:"{\"text\":\"Magma Cube Pet\",\"italic\":false,\"color\":\"aqua\"}"}}}} run tellraw @p "Fail!"

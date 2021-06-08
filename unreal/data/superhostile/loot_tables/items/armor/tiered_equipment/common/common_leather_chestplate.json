@@ -1,29 +1,36 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"minecraft:paper",
-          "functions":[
-            {
-              "function":"minecraft:set_nbt",
-              "tag":leather_chestplate{
-  display:{
-    Name:\"{\\\"text\\\":\\\"Leather Chestpiece\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
-    Lore:[
-      \"\\\" \\\"\",
-      \"{\\\"text\\\":\\\"COMMON\\\",\\\"italic\\\":false,\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
-    ],
-    color:16777215
-  },
-  Enchantments:[
-    {id:\"protection\",lvl:2},
-    {id:\"unbreaking\",lvl:2}
-  ],
-  AttributeModifiers:[
-    {Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;-203197723,-673395101,-294509934,-381870072]},
-    {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;-872713492,186837531,387103357,-86752781]}
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_chestplate",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Leather Chestpiece\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"COMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+									],
+									color:16777215
+								},
+								Enchantments:[
+									{id:\"protection\",lvl:2},
+									{id:\"unbreaking\",lvl:2}
+								],
+								AttributeModifiers:[
+									{Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;-203197723,-673395101,-294509934,-381870072]},
+									{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;-872713492,186837531,387103357,-86752781]}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

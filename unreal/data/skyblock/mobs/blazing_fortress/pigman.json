@@ -1,0 +1,34 @@
+summon zombified_piglin ~ ~ ~ {
+	CustomName:"[\"\",{\"text\":\"Pigman\",\"color\":\"red\"},{\"text\":\" (level-12)\",\"color\":\"gray\"}]",
+	CustomNameVisible:true,
+	Tags:["skyblock","blazing_fortress"],
+	Health:32,
+	Attributes:[
+		{Name:"generic.max_health",Base:32},
+		{Name:"generic.attack_damage",Base:2}
+	],
+	HandItems:[
+		{
+			id:"golden_sword",
+			Count:1,
+			tag:{
+				Enchantments:[
+					{id:"unbreaking",lvl:1}
+				]
+			}
+		},
+		{}
+	],
+	ArmorItems:[
+		{},
+		{},
+		{
+			id:"golden_chestplate",
+			Count:1
+		},
+		{}
+	],
+	HandDropChances:[0.0f,0.0f],
+	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+	DeathLootTable:"skyblock:mobs/blazing_fortress/pigman"
+}

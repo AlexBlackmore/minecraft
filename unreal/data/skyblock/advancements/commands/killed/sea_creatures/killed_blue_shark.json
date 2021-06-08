@@ -1,0 +1,18 @@
+{
+  "parent":"skyblock:commands/root",
+  "criteria": {
+      "killentity": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:drowned",
+                  "nbt": "{Tags:[\"blue_shark\"]}"
+              }
+          }
+      }
+  },
+  "rewards": {
+		"experience":810,
+		"function":"skyblock:reset_commands"
+  }
+}

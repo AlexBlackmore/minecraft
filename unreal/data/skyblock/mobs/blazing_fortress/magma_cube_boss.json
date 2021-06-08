@@ -1,0 +1,14 @@
+summon magma_cube ~ ~ ~ {
+	CustomName:"[\"\",{\"text\":\"Magma Cube Boss\",\"color\":\"red\"},{\"text\":\" (level-100)\",\"color\":\"gray\"}]",
+	CustomNameVisible:true,
+	Tags:["skyblock","blazing_fortress","magma_cube_boss"],
+	Health:100,
+	Attributes:[
+		{Name:"generic.max_health",Base:100},
+		{Name:"generic.attack_damage",Base:20}
+	],
+	ActiveEffects:[
+		{Id:24,Amplifier:0,Duration:2147483647}
+	],
+	Size:32
+}

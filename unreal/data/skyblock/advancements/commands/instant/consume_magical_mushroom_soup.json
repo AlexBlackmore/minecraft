@@ -1,0 +1,27 @@
+{
+  "parent":"skyblock:commands/root",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Consume Magical Mushroom Soup",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "criterion":{
+      "trigger":"minecraft:comsume_item",
+      "conditions":{
+        "item":{
+          "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Magical Mushroom Soup\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function":"skyblock:abilities/instant/magical_mushroom_soup"
+  }
+}
