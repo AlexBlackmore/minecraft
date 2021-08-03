@@ -1,0 +1,46 @@
+{
+  "parent":"skyblock:commands/ambient",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Health",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "criterion":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "head":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Lapis Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+                },
+                "chest":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Lapis Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+                },
+                "legs":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Lapis Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+                },
+                "feet":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Lapis Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "function":"skyblock:abilities/ambient/health"
+  }
+}

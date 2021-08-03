@@ -1,0 +1,36 @@
+{
+	"pools":[
+		{
+		  "rolls":1,
+		  "entries":[
+				{
+					"type":"item",
+					"name":"book",
+					"quality":1,
+					"functions":[
+						{
+							"function":"enchant_with_levels",
+							"treasure":true,
+							"levels":21
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Snake Rune\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Obtained very rarely from\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"{\\\"text\\\":\\\"slaying Revenant Horrors.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+									]
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"pools":[
+		{
+		  "rolls":1,
+		  "entries":[
+				{
+					"type":"item",
+					"name":"book",
+					"quality":1,
+					"functions":[
+						{
+							"function":"enchant_with_levels",
+							"treasure":true,
+							"levels":25
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Enchant Rune\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Obtained very rarely from\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"{\\\"text\\\":\\\"slaying Voidgloom Seraphs.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+									]
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

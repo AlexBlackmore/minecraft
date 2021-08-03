@@ -1,0 +1,53 @@
+{
+  "parent":"skyblock:commands/ambient",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Ghast Head",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "wearing_helmet":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "head":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Ghast Head\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+                }
+              }
+            }
+          },
+			{
+				"condition":"inverted",
+				"term":{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"effects":{
+							"minecraft:regeneration":{
+								"amplifier":{
+									"min":1
+								}
+							}
+						}
+					}
+				}
+			}
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "function":"skyblock:abilities/ambient/ghast_head"
+  }
+}

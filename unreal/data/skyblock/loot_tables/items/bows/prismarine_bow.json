@@ -1,0 +1,38 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:bow",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Prismarine Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Will consume Prismarine Shards\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"from your off-hand to deal \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+300%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}]\",
+					\"{\\\"text\\\":\\\"damage to Squids, Guardians, and\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+					\"{\\\"text\\\":\\\"Elder Guardians.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"power\",lvl:1}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:5,Operation:0,UUID:[I;572368602,107680899,585773861,316502730]}
+                ]
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

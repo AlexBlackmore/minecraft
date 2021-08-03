@@ -1,0 +1,787 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+    CustomName:"{\"text\":\"Apothecary\"}",
+    CustomNameVisible:true,
+    PersistenceRequired:true,
+    Silent:true,
+    CanPickUpLoot:false,
+    Willing:false,
+    NoAI:false,
+    VillagerData:{
+      level:5,
+      profession:"cleric",
+      type:"jungle"
+    },
+    Attributes:[
+      {Name:"generic.movement_speed",Base:"0f"}
+    ],
+  	Offers:{
+  		Recipes:[
+        {
+					buy:{
+  					id:"wither_rose",
+  					Count:1
+  				},
+  				buyB:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"potion",
+  					Count:3,
+  					tag:{
+              Potion:"minecraft:empty",
+              display:{
+                Name:"{\"text\":\"Potion of Decay\",\"italic\":false}",
+                Lore:[
+  								"{\"text\":\"Wither (0:40)\",\"italic\":false,\"color\":\"red\"}"
+  							]
+              },
+              CustomPotionEffects:[
+                {
+                  Id:20,
+                  Amplifier:0,
+                  Duration:800
+                }
+              ],
+              CustomPotionColor:3484199,
+              HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+          buy:{
+            id:"milk_bucket",
+            Count:1
+          },
+					buyB:{
+						id:"emerald",
+						Count:1
+					},
+  				sell:{
+  					id:"splash_potion",
+  					Count:3,
+  					tag:{
+              Potion:"minecraft:empty",
+              display:{
+                Name:"{\"text\":\"Antidote\",\"italic\":false,\"color\":\"yellow\"}",
+                Lore:[
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"Clears all negative effects\",\"italic\":false,\"color\":\"blue\"}"
+                ]
+              },
+              CustomPotionEffects:[
+                {
+                  Id:2,
+                  Amplifier:4,
+                  Duration:30
+                },
+                {
+                  Id:4,
+                  Amplifier:4,
+                  Duration:30
+                },
+                {
+                  Id:9,
+                  Amplifier:4,
+                  Duration:30
+                },
+                {
+                  Id:15,
+                  Amplifier:4,
+                  Duration:30
+                },
+                {
+                  Id:17,
+                  Amplifier:4,
+                  Duration:30
+                },
+                {
+                  Id:18,
+                  Amplifier:4,
+                  Duration:30
+                },
+                {
+                  Id:19,
+                  Amplifier:4,
+                  Duration:30
+                },
+                {
+                  Id:20,
+                  Amplifier:4,
+                  Duration:30
+                },
+                {
+                  Id:25,
+                  Amplifier:4,
+                  Duration:30
+                },
+                {
+                  Id:27,
+                  Amplifier:4,
+                  Duration:30
+                }
+              ],
+              CustomPotionColor:16777215,
+              HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+          buy:{
+            id:"potion",
+            Count:1,
+            tag:{
+              Potion:"leaping"
+            }
+          },
+          buyB:{
+            id:"emerald",
+            Count:1
+          },
+          sell:{
+            id:"potion",
+            Count:1,
+            tag:{
+              Potion:"minecraft:luck"
+            }
+          },
+          rewardExp:false,
+          maxUses:2147483647
+        },
+        {
+          maxUses:0
+        },
+        {
+					buy:{
+						id:"scute",
+						Count:1
+					},
+  				buyB:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"potion",
+  					Count:3,
+  					tag:{
+              Potion:"minecraft:empty",
+              display:{
+                Name:"{\"text\":\"Potion of Resistance\",\"italic\":false}",
+                Lore:[
+  								"{\"text\":\"Resistance (3:00)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"-20% Damage Taken\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+              },
+              CustomPotionEffects:[
+                {
+                  Id:11,
+                  Amplifier:0,
+                  Duration:3600
+                }
+              ],
+              CustomPotionColor:10044730,
+              HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+          buy:
+          {
+            id:"potion",
+            Count:1,
+            tag:
+            {
+              Potion:"minecraft:empty",
+              display:
+              {
+                Name:"{\"text\":\"Potion of Resistance\",\"italic\":false}",
+                Lore:[
+                  "{\"text\":\"Resistance (3:00)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"-20% Damage Taken\",\"italic\":false,\"color\":\"blue\"}"
+                ]
+              },
+              CustomPotionEffects:[
+                {
+                  Id:11,
+                  Amplifier:0,
+                  Duration:3600
+                }
+              ],
+              CustomPotionColor:10044730,
+              HideFlags:32
+            }
+          },
+          buyB:
+          {
+            id:"emerald",
+            Count:1
+          },
+          sell:
+          {
+            id:"potion",
+            Count:1,
+            tag:
+            {
+              Potion:"minecraft:empty",
+              display:
+              {
+                Name:"{\"text\":\"Potion of Resistance +\",\"italic\":false}",
+                Lore:[
+                  "{\"text\":\"Resistance (8:00)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"-20% Damage Taken\",\"italic\":false,\"color\":\"blue\"}"
+                ]
+              },
+              CustomPotionEffects:[
+                {
+                  Id:11,
+                  Amplifier:0,
+                  Duration:9600
+                }
+              ],
+              CustomPotionColor:10044730,
+              HideFlags:32
+            }
+          },
+          rewardExp:false,
+          maxUses:2147483647
+        },
+        {
+          buy:
+          {
+            id:"potion",
+            Count:1,
+            tag:
+            {
+              Potion:"minecraft:empty",
+              display:
+              {
+                Name:"{\"text\":\"Potion of Resistance\",\"italic\":false}",
+                Lore:[
+                  "{\"text\":\"Resistance (3:00)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"-20% Damage Taken\",\"italic\":false,\"color\":\"blue\"}"
+                ]
+              },
+              CustomPotionEffects:[
+                {
+                  Id:11,
+                  Amplifier:0,
+                  Duration:3600
+                }
+              ],
+              CustomPotionColor:10044730,
+              HideFlags:32
+            }
+          },
+  				buyB:
+  				{
+  					id:"emerald",
+  					Count:1
+  				},
+          sell:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+              Potion:"minecraft:empty",
+              display:
+              {
+                Name:"{\"text\":\"Potion of Resistance II\",\"italic\":false}",
+                Lore:[
+  								"{\"text\":\"Resistance II (1:30)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"-40% Damage Taken\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+              },
+              CustomPotionEffects:[
+                {
+                  Id:11,
+                  Amplifier:1,
+                  Duration:1800
+                }
+              ],
+              CustomPotionColor:10044730,
+              HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+          maxUses:0
+        },
+  			{
+  				buy:{
+  					id:"potion",
+  					Count:1,
+  					tag:{
+  						Potion:"minecraft:slowness"
+  					}
+  				},
+  				buyB:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:{
+  					id:"potion",
+  					Count:1,
+  					tag:{
+  						Potion:"minecraft:empty",
+  						display:{
+  							Name:"{\"text\":\"Potion of Haste\",\"italic\":false}",
+  							Lore:[
+  								"{\"text\":\"Haste (1:30)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"+10% Mining and Attack Speed\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+  						},
+  						CustomPotionEffects:[
+  							{
+  								Id:3,
+  								Amplifier:0,
+  								Duration:1800
+  							}
+  						],
+  						CustomPotionColor:28557379,
+  						HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+  				buy:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						Potion:"minecraft:long_slowness"
+  					}
+  				},
+  				buyB:
+  				{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						Potion:"minecraft:empty",
+  						display:
+  						{
+  							Name:"{\"text\":\"Potion of Haste +\",\"italic\":false}",
+  							Lore:[
+  								"{\"text\":\"Haste (4:00)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"+10% Mining and Attack Speed\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+  						},
+  						CustomPotionEffects:[
+  							{
+  								Id:3,
+  								Amplifier:0,
+  								Duration:4800
+  							}
+  						],
+  						CustomPotionColor:28557379,
+  						HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+  				buy:{
+  					id:"potion",
+  					Count:1,
+  					tag:{
+  						Potion:"minecraft:strong_slowness"
+  					}
+  				},
+  				buyB:{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						Potion:"minecraft:empty",
+  						display:
+  						{
+  							Name:"{\"text\":\"Potion of Haste IV\",\"italic\":false}",
+  							Lore:[
+  								"{\"text\":\"Haste IV (0:20)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"+40% Mining and Attack Speed\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+  						},
+  						CustomPotionEffects:[
+  							{
+  								Id:3,
+  								Amplifier:3,
+  								Duration:400
+  							}
+  						],
+  						CustomPotionColor:28557379,
+  						HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+          maxUses:0
+        },
+  			{
+  				buy:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						Potion:"minecraft:poison"
+  					}
+  				},
+  				buyB:
+  				{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						CustomPotionEffects:[
+  							{
+  								Id:22,
+  								Amplifier:0,
+  								Duration:900
+  							}
+  						],
+  						display:
+  						{
+  							Name:"{\"text\":\"Potion of Absorption\",\"italic\":false}",
+  							Lore:[
+  								"{\"text\":\"Absorption (0:45)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"+1 Absorption Heart\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+  						},
+  						CustomPotionColor:2445989,
+  						HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+  				buy:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						Potion:"minecraft:long_poison"
+  					}
+  				},
+  				buyB:
+  				{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						CustomPotionEffects:[
+  							{
+  								Id:22,
+  								Amplifier:0,
+  								Duration:1800
+  							}
+  						],
+  						display:
+  						{
+  							Name:"{\"text\":\"Potion of Absorption +\",\"italic\":false}",
+  							Lore:[
+  								"{\"text\":\"Absorption (1:30)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"+1 Absorption Heart\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+  						},
+  						CustomPotionColor:2445989,
+  						HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+  				buy:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						Potion:"minecraft:strong_poison"
+  					}
+  				},
+  				buyB:
+  				{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						CustomPotionEffects:[
+  							{
+  								Id:22,
+  								Amplifier:1,
+  								Duration:450
+  							}
+  						],
+  						display:
+  						{
+  							Name:"{\"text\":\"Potion of Absorption II\",\"italic\":false}",
+  							Lore:[
+  								"{\"text\":\"Absorption II (0:21)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"+2 Absorption Hearts\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+  						},
+  						CustomPotionColor:2445989,
+  						HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+          maxUses:0
+        },
+  			{
+  				buy:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						Potion:"minecraft:weakness"
+  					}
+  				},
+  				buyB:
+  				{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						CustomPotionEffects:[
+  							{
+  								Id:21,
+  								Amplifier:0,
+  								Duration:1800
+  							}
+  						],
+  						display:
+  						{
+  							Name:"{\"text\":\"Potion of Health Boost\",\"italic\":false}",
+  							Lore:[
+  								"{\"text\":\"Health Boost (1:30)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"+2 Hearts\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+  						},
+  						CustomPotionColor:16284963,
+  						HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+  				buy:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						Potion:"minecraft:long_weakness"
+  					}
+  				},
+  				buyB:
+  				{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						CustomPotionEffects:[
+  							{
+  								Id:21,
+  								Amplifier:1,
+  								Duration:4800
+  							}
+  						],
+  						display:
+  						{
+  							Name:"{\"text\":\"Potion of Health Boost +\",\"italic\":false}",
+  							Lore:[
+  								"{\"text\":\"Health Boost (4:00)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"+2 Hearts\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+  						},
+  						CustomPotionColor:16284963,
+  						HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+  				buy:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						Potion:"minecraft:harming"
+  					}
+  				},
+  				buyB:
+  				{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						CustomPotionEffects:[
+  							{
+  								Id:21,
+  								Amplifier:1,
+  								Duration:900
+  							}
+  						],
+  						display:
+  						{
+  							Name:"{\"text\":\"Potion of Health Boost II\",\"italic\":false}",
+  							Lore:[
+  								"{\"text\":\"Health Boost II (0:45)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"+4 Hearts\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+  						},
+  						CustomPotionColor:16284963,
+  						HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			},
+        {
+  				buy:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						Potion:"minecraft:strong_harming"
+  					}
+  				},
+  				buyB:
+  				{
+  					id:"emerald",
+  					Count:1
+  				},
+  				sell:
+  				{
+  					id:"potion",
+  					Count:1,
+  					tag:
+  					{
+  						CustomPotionEffects:[
+  							{
+  								Id:21,
+  								Amplifier:1,
+  								Duration:2400
+  							}
+  						],
+  						display:
+  						{
+  							Name:"{\"text\":\"Potion of Health Boost II+\",\"italic\":false}",
+  							Lore:[
+  								"{\"text\":\"Health Boost II (2:00)\",\"italic\":false,\"color\":\"blue\"}",
+                  "\" \"",
+                  "{\"text\":\"When Applied:\",\"italic\":false,\"color\":\"magenta\"}",
+                  "{\"text\":\"+4 Hearts\",\"italic\":false,\"color\":\"blue\"}"
+  							]
+  						},
+  						CustomPotionColor:16284963,
+  						HideFlags:32
+  					}
+  				},
+  				rewardExp:false,
+  				maxUses:2147483647
+  			}
+  		]
+  	}
+  },
+	display:{
+		Name:"{\"text\":\"Apothecary\"}"
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "parent":"skyblock:commands/instant",
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:skeleton",
+                    "nbt": "{Tags:[\"phantom_fisher\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience":2525,
+		"function":"skyblock:abilities/reset_instant"
+    }
+}

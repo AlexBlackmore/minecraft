@@ -1,0 +1,68 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Wither Bow",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"player_hurt_wither":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"entity":{
+					"type":"wither"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Wither Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"player_hurt_wither_skeleton":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"entity":{
+					"type":"wither_skeleton"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Wither Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"requirements":[
+		[
+			"player_hurt_wither",
+			"player_hurt_wither_skeleton"
+		]
+	],
+	"rewards":{
+		"function":"skyblock:arrow_hit"
+	}
+}

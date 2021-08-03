@@ -1,0 +1,81 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Blacksmith\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"weaponsmith",
+			type:"plains"
+		},
+		Offers:{
+			Recipes:[
+				{
+					buyB:{
+						id:"writable_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Blacksmith>\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"I'm the town Blacksmith! I can\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"reforge items for you, for a\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"price.\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Reforging usually costs Emeralds,\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"but since I'm feeling friendly I\",\"italic\":false,\"color\":\"white\"}",
+									"[\"\",{\"text\":\"can reforge a \",\"italic\":false,\"color\":\"white\"},{\"text\":\"Common\",\"bold\":true,\"color\":\"white\"},{\"text\":\" reforge for\",\"italic\":false,\"color\":\"white\"}]",
+									"{\"text\":\"10 Coal.\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"Reforging items allows you to\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"get the most out of your weapons,\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"armor, and other items by\",\"italic\":false,\"color\":\"white\"}",
+									"{\"text\":\"applying stat modifiers to them!\",\"italic\":false,\"color\":\"white\"}"
+			
+								]
+							},
+							HideFlags:32
+						}
+					},
+					rewardExp:false,
+					maxUses:0
+				},
+				{
+					buy:{
+						id:"diamond_sword",
+						Count:1
+					},
+					buyB:{
+						id:"coal",
+						Count:10
+					},
+					sell:{
+						id:"chest",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"{\"text\":\"Common Diamond Sword Reforge\",\"italic\":false,\"underlined\":true,\"color\":\"white\"}",
+									"{\"text\":\"Reforged Diamond Sword x1\",\"italic\":false,\"color\":\"gray\"}",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							},
+							BlockEntityTag:{
+								LootTable:"skyblock:reforging/sword_reforge/common"
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				}
+			]
+		}
+	},
+	display:{
+		Name:"{\"text\":\"Blacksmith\"}"
+	}
+}

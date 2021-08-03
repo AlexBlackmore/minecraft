@@ -1,0 +1,47 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:dolphin_spawn_egg",
+					"weight":1,
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Dolphin Pet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"Pod Tactics\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Grants permanent \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"Dolphin's Grace\\\",\\\"italic\\\":false,\\\"color\\\":\\\"#88A3BE\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Echolocation\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Increases \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"Luck\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\" by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"1%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" every \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"10\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}]\",
+										\"{\\\"text\\\":\\\"levels.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Splash Surprise\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Stuns surrounding mobs for 5s\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"5\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\"seconds\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"{\\\"text\\\":\\\"after hooking a fish.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"+100 Intelligence\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+									]
+								},
+								AttributeModifiers:[
+									{Slot:\"offhand\",AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:5,Operation:0,UUID:[I;393146392,389500827,957706253,798686519]}
+								],
+								Enchantments:[
+									{id:\"unbreaking\",lvl:1}
+								],
+								HideFlags:1
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

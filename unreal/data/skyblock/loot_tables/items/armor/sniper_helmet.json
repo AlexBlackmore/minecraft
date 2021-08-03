@@ -1,71 +1,39 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"leather_helmet",
-          "weight":20,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Sniper Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
-                  Lore:[
-                    \"\\\" \\\"\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"Increases arrow damage by 1%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"1%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}]\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"every \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"2\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" blocks that the arrow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"travelled above \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"20\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\" blocks.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-                    \"\\\" \\\"\"
-                    \"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
-                  ]
-                },
-                Enchantments:[
-                  {id:\"unbreaking\",lvl:2}
-                ],
-                AttributeModifiers:[
-                  {Slot:\"head\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:30,Operation:0,UUID:[I;526150889,438009915,678684546,834346409]},
-                  {Slot:\"head\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:4,Operation:0,UUID:[I;526150889,438009915,678684546,834346409]}
-                ],
-                HideFlags:64
-              }"
-            }
-          ]
-        },
-        {
-          "type":"item",
-          "name":"leather_helmet",
-          "weight":1,
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Sniper Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
-                  Lore:[
-                    \"\\\" \\\"\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"Increases arrow damage by 1%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"1%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}]\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"every \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"2\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" blocks that the arrow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"travelled above \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"20\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\" blocks.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-                    \"\\\" \\\"\"
-                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
-                  ]
-                },
-                Enchantments:[
-                  {id:\"unbreaking\",lvl:3}
-                ],
-                AttributeModifiers:[
-                  {Slot:\"head\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:45,Operation:0,UUID:[I;526150889,438009915,678684546,834346409]},
-                  {Slot:\"head\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6,Operation:0,UUID:[I;526150889,438009915,678684546,834346409]}
-                ],
-                HideFlags:64
-              }"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"player_head",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-1711669266,-880982734,-1884993447,-835162161],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI0Yzg2OWI5YzBmYmE1OTJjOTY4NTQ0ZmM1MTFkNTdkYmFmNzU3Zjg0YzY0NWNkYWM0MDgzYjQzNjI4Mzk1MSJ9fX0=\"}]}},
+								display:{
+									Name:\"{\\\"text\\\":\\\"Sniper Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+										\"\\\" \\\"\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Dealing damage to a mob from\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"over \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"20\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"},{\\\"text\\\":\\\" blocks away grants you\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"temporary \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"Absorption\\\",\\\"italic\\\":false,\\\"color\\\":\\\"#2552A5\\\"},{\\\"text\\\":\\\" and\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Regeneration II\\\",\\\"italic\\\":false,\\\"color\\\":\\\"#CD5CAB\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+									]
+								},
+								AttributeModifiers:[
+									{Slot:\"head\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:20,Operation:0,UUID:[I;108595022,847594777,669457502,130674277]},
+									{Slot:\"head\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:2,Operation:0,UUID:[I;315631855,282116513,428678368,7353892]},
+									{Slot:\"head\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;681996412,419449809,129021245,91864953]}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

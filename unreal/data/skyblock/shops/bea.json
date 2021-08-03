@@ -45,20 +45,33 @@ give @p villager_spawn_egg{
 						Count:2
 					},
 					sell:{
-						id:"egg",
+						id:"bee_spawn_egg",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Bee Egg\",\"italic\":false,\"color\":\"white\"}",
+								Name:"{\"text\":\"Bee Pet\",\"italic\":false,\"color\":\"white\"}",
 								Lore:[
-									"{\"text\":\"This pet egg can be upgraded\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"with Kat to gain it's abilities\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"or sold to George for a sizable\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"sum.\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"This egg's rarity can be\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"upgraded by Kat to improve it's\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"abilities.\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
-									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+									"{\"text\":\"Busy Buzz Buzz\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Flowers have a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"drop an extra one.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}",
+									"\" \"",
+									"{\"text\":\"+10 Intelligence\",\"italic\":false,\"color\":\"blue\"}",
 								]
-							}
+							},
+							AttributeModifiers:[
+								{Slot:"offhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:1,Operation:0,UUID:[I;845380219,913866269,648453457,901991524]},
+								{Slot:"offhand",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.02,Operation:1,UUID:[I;38811474,852390965,575632240,674935793]}
+							],
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
 						}
 					},
 					rewardExp:false,
@@ -75,32 +88,52 @@ give @p villager_spawn_egg{
 						Count:64
 					},
 					sell:{
-						id:"egg",
+						id:"bee_spawn_egg",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Bee Egg\",\"italic\":false,\"color\":\"aqua\"}",
+								Name:"{\"text\":\"Bee Pet\",\"italic\":false,\"color\":\"aqua\"}",
 								Lore:[
-									"{\"text\":\"This pet egg can be upgraded\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"with Kat to gain it's abilities\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"or sold to George for a sizable\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"sum.\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"This egg's rarity can be\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"upgraded by Kat to improve it's\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"abilities.\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
+									"{\"text\":\"Busy Buzz Buzz\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Flowers have a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"drop an extra one.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"Weaponized Honey\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Gives a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"25%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to grant\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Absorption\",\"italic\":false,\"color\":\"#2552A5\"},{\"text\":\" when hit.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}",
+									"\" \"",
+									"{\"text\":\"+30 Intelligence\",\"italic\":false,\"color\":\"blue\"}",
+								]
+							},
+							AttributeModifiers:[
+								{Slot:"offhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;845380219,913866269,648453457,901991524]},
+								{Slot:"offhand",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.06,Operation:1,UUID:[I;38811474,852390965,575632240,674935793]}
+							],
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"coal_block",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
 									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
 								]
-							}
-						}
-					},
-					rewardExp:false,
-					maxUses:640
-				},
-				{
-					buy:{
-						id:"coal_block",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}"
 							},
 							Enchantments:[
 								{id:"unbreaking",lvl:1}
@@ -113,54 +146,10 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Enchanted Block of Gold\",\"italic\":false,\"color\":\"aqua\"}"
-							},
-							Enchantments:[
-								{id:"unbreaking",lvl:1}
-							],
-							HideFlags:1
-						}
-					},
-					sell:{
-						id:"egg",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"text\":\"Bee Egg\",\"italic\":false,\"color\":\"light_purple\"}",
+								Name:"{\"text\":\"Enchanted Block of Gold\",\"italic\":false,\"color\":\"aqua\"}",
 								Lore:[
-									"{\"text\":\"This pet egg can be upgraded\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"with Kat to gain it's abilities\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"or sold to George for a sizable\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"sum.\",\"italic\":false,\"color\":\"gray\"}",
-									"\" \"",
-									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
 								]
-							}
-						}
-					},
-					rewardExp:false,
-					maxUses:640
-				},
-				{
-					buy:{
-						id:"coal_block",
-						Count:8,
-						tag:{
-							display:{
-								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}"
-							},
-							Enchantments:[
-								{id:"unbreaking",lvl:1}
-							],
-							HideFlags:1
-						}
-					},
-					buyB:{
-						id:"gold_block",
-						Count:8,
-						tag:{
-							display:{
-								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}"
 							},
 							Enchantments:[
 								{id:"unbreaking",lvl:1}
@@ -173,28 +162,104 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Bee\",\"italic\":false,\"color\":\"gold\"}",
+								Name:"{\"text\":\"Bee Pet\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
-									"{\"text\":\"Pet\",\"italic\":false,\"color\":\"blue\"}",
-									"\" \"",
-									"{\"text\":\"Hive\",\"italic\":false,\"color\":\"gold\"}",
-									"[\"\",{\"text\":\"Gain \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+15 Strength\",\"italic\":false,\"color\":\"red\"},{\"text\":\" for each\",\"italic\":false,\"color\":\"gray\"}]",
-									"[\"\",{\"text\":\"nearby bee. \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"(max 15 bees)\",\"italic\":false,\"color\":\"dark_gray\"}]",
+									"{\"text\":\"This egg's rarity can be\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"upgraded by Kat to improve it's\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"abilities.\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
 									"{\"text\":\"Busy Buzz Buzz\",\"italic\":false,\"color\":\"gold\"}",
-									"[\"\",{\"text\":\"Has \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance for flowers to\",\"italic\":false,\"color\":\"gray\"}]",
-									"{\"text\":\"drop an extra one.\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"Flowers have a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"drop an extra one.\",\"italic\":false,\"color\":\"gray\"}]",
 									"\" \"",
 									"{\"text\":\"Weaponized Honey\",\"italic\":false,\"color\":\"gold\"}",
-									"[\"\",{\"text\":\"Gain \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"25%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" of recieved damage as\",\"italic\":false,\"color\":\"gray\"}]",
-									"[\"\",{\"text\":\"Absorption\",\"italic\":false,\"color\":\"yellow\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Gives a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"25%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to grant\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Absorption\",\"italic\":false,\"color\":\"#2552A5\"},{\"text\":\" when hit.\",\"italic\":false,\"color\":\"gray\"}]",
 									"\" \"",
-									"{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}",
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}",
+									"\" \"",
+									"{\"text\":\"+40 Intelligence\",\"italic\":false,\"color\":\"blue\"}",
 								]
 							},
-						  Enchantments:[
-						    {id:"unbreaking",lvl:1}
-						  ],
+							AttributeModifiers:[
+								{Slot:"offhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;845380219,913866269,648453457,901991524]},
+								{Slot:"offhand",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.08,Operation:1,UUID:[I;38811474,852390965,575632240,674935793]}
+							],
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"coal_block",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Coal\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"gold_block",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Gold\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"bee_spawn_egg",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Bee Pet\",\"italic\":false,\"color\":\"gold\"}",
+								Lore:[
+									"{\"text\":\"Busy Buzz Buzz\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Flowers have a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"drop an extra one.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"Weaponized Honey\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Gives a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"25%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to grant\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Absorption\",\"italic\":false,\"color\":\"#2552A5\"},{\"text\":\" when hit.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"Hive\",\"italic\":false,\"color\":\"gold\"}",
+									"[\"\",{\"text\":\"Gain \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+20 Intelligence\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" and\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"+3 Attack Damage\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" for every \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"6\",\"italic\":false,\"color\":\"green\"}]",
+									"[\"\",{\"text\":\"levels.\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"(Max: 90 levels)\",\"italic\":false,\"color\":\"dark_gray\"}]",
+									"\" \"",
+									"{\"text\":\"LEGENDARY\",\"bold\":true,\"color\":\"gold\"}",
+									"\" \"",
+									"{\"text\":\"+50 Intelligence\",\"italic\":false,\"color\":\"blue\"}",
+								]
+							},
+							AttributeModifiers:[
+								{Slot:"offhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:6,Operation:0,UUID:[I;845380219,913866269,648453457,901991524]},
+								{Slot:"offhand",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.1,Operation:1,UUID:[I;38811474,852390965,575632240,674935793]}
+							],
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
 							HideFlags:1
 						}
 					},

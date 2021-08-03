@@ -52,14 +52,14 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"text\":\"Iron Pickaxe\",\"italic\":false,\"color\":\"white\"}",
 								Lore:[
-									"\" \"",
-									"{\"text\":\"Smelting Touch\",\"italic\":false,\"color\":\"blue\"}",
-									"{\"text\":\"Automatically smelts mined\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"blocks into their smelted form.\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"Smelting Touch\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
 									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
 								]
-							}
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							]
 						}
 					},
 					rewardExp:false,

@@ -1,0 +1,35 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"diamond_sword",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Legendary Diamond Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"+25 Intelligence\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+									]
+								},
+								AttributeModifiers:[
+									{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:13,Operation:0,UUID:[I;267791043,926935285,231871868,951826298]},
+									{Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-2.4,Operation:0,UUID:[I;635965444,814261563,416331872,44649989]},
+									{Slot:\"mainhand\",AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:0.15,Operation:1,UUID:[I;348231426,559896929,668689570,691051036]},
+									{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:0.28,Operation:1,UUID:[I;974524386,376177295,507490871,41407371]},
+									{Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:0.1,Operation:1,UUID:[I;42252529,894123053,476597112,612084216]}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,38 +1,38 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"minecraft:leather_leggings",
-          "functions":[
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Pumpkin Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
-                  Lore:[
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"Full Set Bonus: Pumpkin Buff\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"Grants \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"-20%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" damage taken from\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"all damage sources and \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+10%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}]\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"COMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
-                  ],
-                  color:15575606
-                },
-                AttributeModifiers:[
-                  {Slot:\"legs\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:2,Operation:0,UUID:[I;687268289,511934231,908771371,650755913]},
-                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:2,Operation:0,UUID:[I;289984284,501641723,656012985,267962532]}
-                ],
-                HideFlags:64
-              }"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_leggings",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Pumpkin Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Full Set Bonus: Pumpkin Buff\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Grants \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+2 Armor Toughness\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\" and\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"+10% Attack Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"COMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+									],
+									color:15575606
+								},
+								AttributeModifiers:[
+									{Slot:\"legs\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:2,Operation:0,UUID:[I;687268289,511934231,908771371,650755913]},
+									{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:2,Operation:0,UUID:[I;289984284,501641723,656012985,267962532]},
+									{Slot:\"legs\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;951407759,932451195,958462566,23527422]}
+								],
+								HideFlags:64
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

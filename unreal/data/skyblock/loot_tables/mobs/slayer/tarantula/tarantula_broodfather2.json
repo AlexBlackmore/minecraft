@@ -5,7 +5,7 @@
       "entries":[
         {
           "type":"loot_table",
-          "name":"tarantula_web",
+          "name":"skyblock:items/tarantula_web",
           "functions":[
             {
               "function":"set_count",
@@ -31,45 +31,38 @@
       "entries":[
         {
           "type":"loot_table",
-          "name":"tipped_arrow",
+          "name":"skyblock:items/toxic_arrow",
           "functions":[
-            {
-              "type":"loot_table",
-              "name":"toxic_arrow",
-            },
             {
               "function":"set_count",
               "count":16
             }
-          ],
-          "conditions":[
-            {
-              "condition":"random_chance_with_looting",
-              "chance":0.2,
-              "looting_multiplier":0.01
-            }
           ]
         }
-      ]
+      ],
+	  "conditions":[
+		{
+		  "condition":"random_chance_with_looting",
+		  "chance":0.2,
+		  "looting_multiplier":0.01
+		}
+	  ]
     },
     {
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"experience_bottle",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":3,
-                "max":4,
-                "type":"uniform"
-              }
-            }
-          ]
+          "type":"loot_table",
+          "name":"skyblock:items/runes/bite_rune"
         }
-      ]
+      ],
+	  "conditions":[
+		{
+		  "condition":"random_chance_with_looting",
+		  "chance":0.05,
+		  "looting_multiplier":0.01
+		}
+	  ]
     }
   ]
 }

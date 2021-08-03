@@ -1,0 +1,38 @@
+{
+  "parent":"skyblock:commands/instant",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Creeper Hat +5 Intelligence",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "killentity":{
+      "trigger":"minecraft:player_killed_entity",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "head":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Creeper Hat\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{
+	"experience":5,
+	"function":"skyblock:abilities/reset_instant"
+  }
+}

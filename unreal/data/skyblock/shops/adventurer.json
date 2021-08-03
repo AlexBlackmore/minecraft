@@ -49,7 +49,7 @@ give @p villager_spawn_egg{
 						Count:32
 					},
 					rewardExp:false,
-					maxUses:20
+					maxUses:640
 				},
 				{
 					buy:
@@ -63,7 +63,7 @@ give @p villager_spawn_egg{
 						Count:10
 					},
 					rewardExp:false,
-					maxUses:64
+					maxUses:640
 				},
 				{
 					buy:
@@ -77,7 +77,7 @@ give @p villager_spawn_egg{
 						Count:10
 					},
 					rewardExp:false,
-					maxUses:64
+					maxUses:640
 				},
 				{
 					buy:
@@ -91,7 +91,7 @@ give @p villager_spawn_egg{
 						Count:5
 					},
 					rewardExp:false,
-					maxUses:128
+					maxUses:640
 				},
 				{
 					buy:
@@ -105,7 +105,205 @@ give @p villager_spawn_egg{
 						Count:5
 					},
 					rewardExp:false,
-					maxUses:128
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:10
+					},
+					sell:
+					{
+						id:"zombie_head",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Zombie Talisman\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"Accessory\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Reduces damage taken from\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Zombies by \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"5%\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:10
+					},
+					sell:
+					{
+						id:"skeleton_skull",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Skeleton Talisman\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"Accessory\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Reduces damage taken from\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Skeletons by \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"5%\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:50
+					},
+					sell:
+					{
+						id:"player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-310853510,39013615,-1984251039,1359573347],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWMxMWQ2Yzc5YjhhMWYxODkwMmQ3ODNjZGRhNGJkZmI5ZDQ3MzM3YjczNzkxMDI4YTEyNmE2ZTZjZjEwMWRlZiJ9fX0="}]}},
+							display:{
+								Name:"{\"text\":\"Village Affinity Talisman\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"Accessory\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Increases your \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Speed\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" by \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+10%\",\"italic\":false,\"color\":\"green\"}]",
+									"[\"\",{\"text\":\"when in a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Village\",\"italic\":false,\"color\":\"aqua\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:50
+					},
+					sell:
+					{
+						id:"player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;1074056113,1030504737,-1226700340,-912984062],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDk1NjNmZGM0YWNhYjZkYjMyNGIyMWJjNDNiMjM4ZmU0NjVlNTMwYTYzMjdlN2VlZjExZDJkMGM0ZWEifX19"}]}},
+							display:{
+								Name:"{\"text\":\"Mine Affinity Talisman\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"Accessory\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Increases your \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Speed\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" by \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+10%\",\"italic\":false,\"color\":\"green\"}]",
+									"[\"\",{\"text\":\"when in a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Mineshaft\",\"italic\":false,\"color\":\"aqua\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:
+					{
+						id:"emerald",
+						Count:8
+					},
+					sell:
+					{
+						id:"player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1849310786,430911623,-1937546898,-807402896],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjkzMWNhOWU0NmZjZjM1MTM1NGZhMDIyOTkyZmEwN2NjNTliZTUwZmZiODBlOWRkOGFmNDk3MzM3OGNmODlkNSJ9fX0="}]}},
+							display:{
+								Name:"{\"text\":\"Intimidation Talisman\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"Accessory\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Level \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"1\",\"italic\":false,\"color\":\"green\"},{\"text\":\" monsters will no longer\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"target you.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:640
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Emerald\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:
+					{
+						id:"emerald",
+						Count:8
+					},
+					sell:
+					{
+						id:"player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;2133404510,-1977660317,-1552838271,1663028613],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjExYWIzYTExMzJjOWQxZWY4MzVlYTgxZDk3MmVkOWI1Y2Q4ZGRmZjBhMDdjNTVhNzQ5YmNmY2Y4ZGY1In19fQ=="}]}},
+							display:{
+								Name:"{\"text\":\"Scavenger Talisman\",\"italic\":false,\"color\":\"white\"}",
+								Lore:[
+									"{\"text\":\"Accessory\",\"italic\":false,\"color\":\"blue\"}",
+									"\" \"",
+									"[\"\",{\"text\":\"Monsters have a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"0.5%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"drop an \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Emerald\",\"italic\":false,\"color\":\"gold\"},{\"text\":\" when killed.\",\"italic\":false,\"color\":\"gray\"}]",
+									"\" \"",
+									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
+								]
+							}
+						}
+					},
+					rewardExp:false,
+					maxUses:640
 				}
 			]
 		}

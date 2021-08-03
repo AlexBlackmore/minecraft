@@ -1,0 +1,36 @@
+{
+	"pools":[
+		{
+		  "rolls":1,
+		  "entries":[
+				{
+					"type":"item",
+					"name":"book",
+					"quality":1,
+					"functions":[
+						{
+							"function":"enchant_with_levels",
+							"treasure":true,
+							"levels":10
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Pestilence Rune\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Obtained rarely from slaying\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"{\\\"text\\\":\\\"Revenant Horrors.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+									]
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

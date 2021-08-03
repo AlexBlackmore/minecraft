@@ -43,13 +43,13 @@
       "entries":[
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/strong_dragon_fragment",
+          "name":"skyblock:items/crystal_fragment",
           "functions":[
             {
               "function":"set_count",
               "count":{
-                "min":3,
-                "max":32,
+                "min":1,
+                "max":10,
                 "type":"uniform"
               }
             }
@@ -61,13 +61,14 @@
       "rolls":1,
       "entries":[
         {
-          "type":"empty",
-          "weight":450,
-        },
-        {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/swords/aspect_of_the_dragons",
-          "weight":1
+          "name":"skyblock:items/dragon_fragments/strong_dragon_fragment",
+          "functions":[
+            {
+              "function":"set_count",
+              "count":3
+            }
+          ]
         }
       ]
     },
@@ -75,83 +76,59 @@
       "rolls":1,
       "entries":[
         {
-          "type":"empty",
-          "weight":450,
+          "type":"minecraft:loot_table",
+          "name":"skyblock:items/swords/aspect_of_the_dragons",
+          "weight":3640
         },
         {
           "type":"minecraft:loot_table",
           "name":"skyblock:items/reforge_stones/dragon_scale",
-          "weight":1
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"empty",
-          "weight":450,
+          "weight":3640
         },
         {
           "type":"minecraft:loot_table",
           "name":"skyblock:items/reforge_stones/dragon_claw",
-          "weight":1
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"empty",
-          "weight":325,
+          "weight":3640
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/dragon/helmet_strong",
-          "weight":1
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"empty",
-          "weight":400,
+          "name":"skyblock:items/pets/eggs/ender_dragon_epic",
+          "weight":3640
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/dragon/chestplate_strong",
-          "weight":1
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"empty",
-          "weight":350,
+          "name":"skyblock:items/armor/dragon/strong/strong_dragon_helmet",
+          "weight":5040
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/dragon/leggings_strong",
-          "weight":1
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"empty",
-          "weight":300,
+          "name":"skyblock:items/armor/dragon/strong/strong_dragon_chestplate",
+          "weight":4095
         },
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/armor/dragon/boots_strong",
-          "weight":1
+          "name":"skyblock:items/armor/dragon/strong/strong_dragon_leggings",
+          "weight":4680
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"skyblock:items/armor/dragon/strong/strong_dragon_boots",
+          "weight":5460
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"skyblock:items/dragon_fragments/strong_dragon_fragment"
+          "weight":6552,
+          "functions":[
+            {
+              "function":"set_count",
+              "count":{
+                "min":0,
+                "max":29,
+                "type":"uniform"
+              }
+            }
+          ]
         }
       ]
     }

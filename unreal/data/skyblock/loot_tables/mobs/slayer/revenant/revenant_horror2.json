@@ -47,7 +47,23 @@
       "entries":[
         {
           "type":"loot_table",
-          "name":"skyblock:items/materials/undead_catalyst"
+          "name":"skyblock:items/runes/pestilence_rune"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"random_chance_with_looting",
+          "chance":0.05,
+          "looting_multiplier":0.01
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"loot_table",
+          "name":"skyblock:items/undead_catalyst"
         }
       ],
       "conditions":[
@@ -63,7 +79,7 @@
       "entries":[
         {
           "type":"loot_table",
-          "name":"skyblock:items/materials/revenant_catalyst"
+          "name":"skyblock:items/revenant_catalyst"
         }
       ],
       "conditions":[
@@ -71,25 +87,6 @@
           "condition":"random_chance_with_looting",
           "chance":0.01,
           "looting_multiplier":0.01
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"experience_bottle",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":3,
-                "max":4,
-                "type":"uniform"
-              }
-            }
-          ]
         }
       ]
     }

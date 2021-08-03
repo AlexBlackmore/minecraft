@@ -83,7 +83,23 @@
       "entries":[
         {
           "type":"loot_table",
-          "name":"skyblock:items/materials/undead_catalyst"
+          "name":"skyblock:items/runes/pestilence_rune"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"random_chance_with_looting",
+          "chance":0.05,
+          "looting_multiplier":0.01
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"loot_table",
+          "name":"skyblock:items/undead_catalyst"
         }
       ],
       "conditions":[
@@ -115,37 +131,7 @@
       "entries":[
         {
           "type":"loot_table",
-          "name":"skyblock:items/enchanted_books/smite7"
-        }
-      ],
-      "conditions":[
-        {
-          "condition":"random_chance_with_looting",
-          "chance":0.005,
-          "looting_multiplier":0.01
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"loot_table",
-          "name":"skyblock:items/materials/beheaded_horror",
-		  "weight":21
-        },
-		{
-          "type":"empty",
-		  "weight":12979
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"loot_table",
-          "name":"skyblock:items/materials/revenant_catalyst"
+          "name":"skyblock:items/revenant_catalyst"
         }
       ],
       "conditions":[
@@ -159,23 +145,25 @@
     {
       "rolls":1,
       "entries":[
+		{
+          "type":"loot_table",
+          "name":"skyblock:items/runes/snake_rune",
+		  "weight":10
+        },
         {
           "type":"loot_table",
-          "name":"skyblock:items/materials/scythe_blade",
-		  "weight":7
+          "name":"skyblock:items/enchanted_books/smite7",
+		  "weight":10
         },
 		{
-          "type":"empty",
-		  "weight":12993
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
           "type":"loot_table",
-          "name":"skyblock:items/materials/shard_of_the_shredded"
+          "name":"skyblock:items/shard_of_the_shredded",
+		  "weight":10
+        },
+		{
+          "type":"loot_table",
+          "name":"skyblock:items/warden_heart",
+		  "weight":1
         }
       ],
       "conditions":[
@@ -190,18 +178,20 @@
       "rolls":1,
       "entries":[
         {
-          "type":"item",
-          "name":"experience_bottle",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":214,
-                "max":215,
-                "type":"uniform"
-              }
-            }
-          ]
+          "type":"loot_table",
+          "name":"skyblock:items/scythe_blade",
+		  "quality":4,
+		  "weight":7
+        },
+		{
+          "type":"loot_table",
+          "name":"skyblock:items/beheaded_horror",
+		  "quality:3,
+		  "weight":21
+        }
+		{
+          "type":"empty",
+		  "weight":12972
         }
       ]
     }

@@ -1,1 +1,1 @@
-advancement revoke @a from skyblock:commands/root
+advancement revoke @a from skyblock:commands/instant

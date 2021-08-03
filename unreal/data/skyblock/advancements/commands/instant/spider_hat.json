@@ -1,0 +1,72 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Spider Hat",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"spider_hurt_player":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"damage":{
+					"source_entity":{
+						"type":"spider"
+					}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"head":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Spider Hat\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"cave_spider_hurt_player":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"damage":{
+					"source_entity":{
+						"type":"cave_spider"
+					}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"head":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Spider Hat\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"requirements":[
+		[
+			"spider_hurt_player",
+			"cave_spider_hurt_player"
+		]
+	],
+	"rewards":{
+		"function":"skyblock:abilities/instant/spider_hat"
+	}
+}

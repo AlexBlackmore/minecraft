@@ -27,19 +27,27 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/armor/miner/miner_helmet_prot5"
+					"name":"skyblock:items/armor/miner/miner_helmet"
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/armor/miner/miner_chestplate_prot5"
+					"name":"skyblock:items/armor/miner/miner_chestplate"
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/armor/miner/miner_leggings_prot5"
+					"name":"skyblock:items/armor/miner/miner_leggings"
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/armor/miner/miner_boots_prot5"
+					"name":"skyblock:items/armor/miner/miner_boots"
+				}
+			],
+			"functions":[
+				{
+				  "function":"minecraft:set_enchantments",
+				  "enchantments":{
+					"protection":5
+				  }
 				}
 			],
 			"conditions":[

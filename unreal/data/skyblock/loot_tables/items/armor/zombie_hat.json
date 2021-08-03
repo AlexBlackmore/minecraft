@@ -1,0 +1,35 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:zombie_head",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Zombie Hat\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+										\"\\\" \\\"\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Gives \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+2 Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\" for \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"8\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" seconds\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"after damaging or being damaged\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"by a Zombie.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"COMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+									]
+								},
+								AttributeModifiers:[
+								  {Slot:\"head\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:2,Operation:0,UUID:[I;496777909,365938650,691629239,342322955]}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

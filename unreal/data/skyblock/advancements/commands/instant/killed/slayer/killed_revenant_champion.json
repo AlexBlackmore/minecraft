@@ -1,0 +1,18 @@
+{
+  "parent":"skyblock:commands/instant",
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:zombie",
+                    "nbt": "{Tags:[\"revenant_champion\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience":600,
+		"function":"skyblock:abilities/reset_instant"
+    }
+}

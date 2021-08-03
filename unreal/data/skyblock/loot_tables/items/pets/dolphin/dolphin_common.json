@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:dolphin_spawn_egg",
+					"weight":1,
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Dolphin Pet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"This egg's rarity can be\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"{\\\"text\\\":\\\"upgraded by Kat to improve it's\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"{\\\"text\\\":\\\"abilities.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Pod Tactics\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Grants permanent \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"Dolphin's Grace\\\",\\\"italic\\\":false,\\\"color\\\":\\\"#88A3BE\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"COMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"+20 Intelligence\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+									]
+								},
+								AttributeModifiers:[
+									{Slot:\"offhand\",AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:1,Operation:0,UUID:[I;393146392,389500827,957706253,798686519]}
+								],
+								Enchantments:[
+									{id:\"unbreaking\",lvl:1}
+								],
+								HideFlags:1
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

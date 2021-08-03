@@ -1,33 +1,31 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"minecraft:enchanted_book",
-          "functions":[
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{
-                StoredEnchantments:[
-                  {id:\"power\",lvl:6}
-                ],
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Enchanted Book\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
-  								Lore:[
-  									\"{\\\"text\\\":\\\"Power VI\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
-  									\"[\\\"\\\",{\\\"text\\\":\\\"Increases bow damage by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"175%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-  									\"\\\" \\\"\",
-  									\"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
-  								]
-                },
-                HideFlags:1
-              }"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:enchanted_book",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								StoredEnchantments:[
+									{id:\"power\",lvl:6}
+								],
+								display:{
+									Name:\"{\\\"text\\\":\\\"Enchanted Book\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+									]
+								},
+								HideFlags:1
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

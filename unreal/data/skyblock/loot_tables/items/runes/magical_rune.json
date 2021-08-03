@@ -1,0 +1,35 @@
+{
+	"pools":[
+		{
+		  "rolls":1,
+		  "entries":[
+				{
+					"type":"item",
+					"name":"book",
+					"quality":1,
+					"functions":[
+						{
+							"function":"enchant_with_levels",
+							"treasure":true,
+							"levels":12
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Magical Rune\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Your items have a magical shine!\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+									]
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

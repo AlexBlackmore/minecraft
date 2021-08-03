@@ -1,0 +1,1 @@
+attribute @p minecraft:generic.attack_damage modifier remove 6-72-5-59-64

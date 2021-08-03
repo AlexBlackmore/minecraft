@@ -1,0 +1,37 @@
+{
+  "parent":"skyblock:commands/ambient",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Hive (ambient)",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "criterion":{
+      "trigger":"minecraft:tick",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "offhand":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Bee Pet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\"}}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "function":"skyblock:abilities/ambient/hive"
+  }
+}

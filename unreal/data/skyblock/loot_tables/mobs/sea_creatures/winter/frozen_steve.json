@@ -43,6 +43,15 @@
           "type":"minecraft:loot_table",
           "name":"skyblock:items/hunk_of_ice"
         }
+      ],
+      "functions":[
+        {
+          "function":"looting_enchant",
+          "count":{
+            "min":0,
+            "max":1
+          }
+        }
       ]
     },
     {
@@ -59,6 +68,10 @@
         {
           "type":"item",
           "name":"salmon"
+        },
+        {
+          "type":"loot_table",
+          "name":"skyblock:items/gifts/white_gift"
         }
       ],
       "functions":[
@@ -74,19 +87,6 @@
     {
       "rolls":1,
       "entries":[
-        {
-          "type":"loot_table",
-          "name":"skyblock:items/white_gift",
-          "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":1
-              }
-            }
-          ]
-        }
       ]
     },
     {

@@ -1,0 +1,1 @@
+attribute @p minecraft:generic.armor modifier remove 752-801-932-993-802

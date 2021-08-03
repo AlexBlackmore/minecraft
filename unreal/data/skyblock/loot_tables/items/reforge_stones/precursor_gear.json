@@ -1,32 +1,33 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"minecraft:enchanted_book",
-          "functions":[
-            {
-              "function":"minecraft:set_nbt",
-              "tag":"{
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Precursor Gear\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
-                  Lore:[
-                    \"{\\\"text\\\":\\\"Reforge Stone\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
-					\"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"Can be used to apply the\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"Ancient\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\" reforge to Netherite\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-                    \"{\\\"text\\\":\\\"armor.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
-                  ]
-                }
-              }"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-462661371,985482505,-1632948779,-1392113971],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRmODkwOTQ5OGMyNWY2ZTc1ZWYxOWUzNzZhN2Y4NGY2MWFmMjM0NTI1ZDYzOWJhNDYzZjk5MWY0YzgyZDAifX19\"}]}},
+								display:{
+									Name:\"{\\\"text\\\":\\\"Precursor Gear\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"Reforge Stone\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Can be used to apply the\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Ancient\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\" reforge to Netherite\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"{\\\"text\\\":\\\"armor.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+									]
+								}
+							}"
+						}	
+					]
+				}
+			]
+		}
+	]
 }

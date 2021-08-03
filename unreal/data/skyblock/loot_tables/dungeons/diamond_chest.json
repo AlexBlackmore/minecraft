@@ -27,33 +27,10 @@
 					"quality":3
 				},
 				{
-					"type":"item",
-					"name":"book",
-					"weight":2,
-					"quality":1,
-					"functions":[
-						{
-							"function":"enchant_with_levels",
-							"treasure":true,
-							"levels":30
-						}
-					]
-				},
-				{
-					"type":"item",
-					"name":"book",
-					"weight":1,
-					"quality":0,
-					"functions":[
-						{
-							"function":"enchant_with_levels",
-							"treasure":true,
-							"levels":{
-								"min":1,
-								"max":30
-							}
-						}
-					]
+					"type":"loot_table",
+					"name":"skyblock:experiments/high_experiments",
+					"weight":3,
+					"quality":1
 				},
 				{
 					"type":"loot_table",
@@ -75,20 +52,13 @@
 					"type":"loot_table",
 					"name":"skyblock:items/armor/adaptive/adaptive_boots",
 					"weight":1,
-					"quality":3
+					"quality":1
 				},
 				{
-					"type":"item",
-					"name":"book",
+					"type":"loot_table",
+					"name":"skyblock:experiments/grand_experiments",
 					"weight":1,
-					"quality":1,
-					"functions":[
-						{
-							"function":"enchant_with_levels",
-							"treasure":true,
-							"levels":30
-						}
-					]
+					"quality":2
 				}
 			],
 			"conditions":[
@@ -101,21 +71,14 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"book",
+					"type":"loot_table",
+					"name":"skyblock:experiments/supreme_experiments",
 					"weight":2,
-					"quality":1,
-					"functions":[
-						{
-							"function":"enchant_with_levels",
-							"treasure":true,
-							"levels":30
-						}
-					]
+					"quality":1
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:items/pets/spirit",
+					"name":"skyblock:pets/spirit",
 					"weight":1,
 					"quality":3
 				}
@@ -130,33 +93,10 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"book",
-					"weight":12,
-					"quality":1,
-					"functions":[
-						{
-							"function":"enchant_with_levels",
-							"treasure":true,
-							"levels":30
-						}
-					]
-				},
-				{
-					"type":"item",
-					"name":"book",
-					"weight":6,
-					"quality":0,
-					"functions":[
-						{
-							"function":"enchant_with_levels",
-							"treasure":true,
-							"levels":{
-								"min":1,
-								"max":30
-							}
-						}
-					]
+					"type":"loot_table",
+					"name":"skyblock:experiments/transcendent_experiments",
+					"weight":18,
+					"quality":1
 				},
 				{
 					"type":"loot_table",
@@ -174,18 +114,9 @@
 		{
 			"rolls":1,
 			"entries":[
-			{
-					"type":"item",
-					"name":"book",
-					"weight":1,
-					"quality":1,
-					"functions":[
-						{
-							"function":"enchant_with_levels",
-							"treasure":true,
-							"levels":30
-						}
-					]
+				{
+					"type":"loot_table",
+					"name":"skyblock:experiments/metaphysical_experiments"
 				}
 			],
 			"conditions":[

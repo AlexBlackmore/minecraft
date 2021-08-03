@@ -1,0 +1,1 @@
+scoreboard players operation @p damage += @p damage

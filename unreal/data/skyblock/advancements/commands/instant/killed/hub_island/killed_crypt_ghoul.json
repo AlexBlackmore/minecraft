@@ -1,0 +1,29 @@
+{
+  "parent":"skyblock:commands/instant",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Killed Crypt Ghoul",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "killentity":{
+      "trigger":"minecraft:player_killed_entity",
+      "conditions":{
+        "entity":{
+          "type":"minecraft:zombie",
+          "nbt":"{Tags:[\"crypt_ghoul\"]}"
+        }
+      }
+    }
+  },
+  "rewards":{
+    "experience":32,
+		"function":"skyblock:abilities/reset_instant"
+  }
+}

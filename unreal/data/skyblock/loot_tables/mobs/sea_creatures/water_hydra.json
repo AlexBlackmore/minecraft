@@ -113,6 +113,44 @@
       "entries":[
         {
           "type":"loot_table",
+          "name":"skyblock:experiments/grand_experiments"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"minecraft:killed_by_player"
+        },
+        {
+          "condition":"minecraft:random_chance_with_looting",
+          "chance":0.2,
+          "looting_multiplier":0.01
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"loot_table",
+          "name":"skyblock:items/accessories/fish_affinity_talisman"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"minecraft:killed_by_player"
+        },
+        {
+          "condition":"minecraft:random_chance_with_looting",
+          "chance":0.2,
+          "looting_multiplier":0.01
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"loot_table",
           "name":"skyblock:items/armor/water_hydra_head"
         }
       ],
@@ -123,30 +161,6 @@
         {
           "condition":"minecraft:random_chance_with_looting",
           "chance":0.05,
-          "looting_multiplier":0.01
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"minecraft:item",
-          "name":"minecraft:book",
-          "functions":[
-            {
-              "function":"minecraft:enchant_randomly"
-            }
-          ]
-        }
-      ],
-      "conditions":[
-        {
-          "condition":"minecraft:killed_by_player"
-        },
-        {
-          "condition":"minecraft:random_chance_with_looting",
-          "chance":0.2,
           "looting_multiplier":0.01
         }
       ]

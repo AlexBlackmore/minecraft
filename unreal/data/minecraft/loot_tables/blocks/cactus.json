@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cactus"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:cactus"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"entity_properties",
+          "entity":"this",
+          "predicate":{
+            "equipment":{
+              "mainhand":{
+                "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Cactus Knife\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+              }
+            }
+          }
+        },
+		{
+		  "condition":"random_chance",
+		  "chance":0.3
+		}
+      ]
+    }
+  ]
+}

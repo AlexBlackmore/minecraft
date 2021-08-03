@@ -1,0 +1,58 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Titanic Experience Bottle",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:tick",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Titanic Experience Bottle\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\"}}"
+								}
+							},
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					},
+					{
+						"condition":"inverted",
+						"term":{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"effects":{
+									"minecraft:nausea":{
+										"amplifier":{
+											"min":0
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"rewards":{
+		"experience":250000,
+		"function":"skyblock:abilities/instant/subtract_item"
+	}
+}

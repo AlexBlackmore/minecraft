@@ -1,44 +1,31 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "item",
-          "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{SkullOwner:{Id:[I;-903112851,1937327098,-1258035656,1495487699],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWI3ZmY4OGQxNTRkMDRhOGEyNjk5NWM5OWY2NGU1M2I1NzRjN2I4MmVjMjFhMTJhOWU0NDhiY2ExZTcwZjQ2MSJ9fX0=\"}]}},Base:{Type:\"ACCESSORY\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',Reforge:\"\",AccessoryFamily:\"ShadyRing\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Get 2% off on most shops.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Crooked Artifact\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Get 2% off on most shops.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE ACCESSORY\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
-            },
-            {
-                "function": "minecraft:set_attributes",
-                "modifiers": [
-                  {
-                    "attribute": "minecraft:zombie.spawn_reinforcements",
-                    "name": "",
-                    "amount": {
-                      "min": 0,
-                      "max": 1000000000
-                    },
-                    "operation": "addition",
-                    "slot": "feet"
-                  },
-                  {
-                    "attribute": "minecraft:horse.jump_strength",
-                    "name": "",
-                    "amount": {
-                      "min": 0,
-                      "max": 1000000000
-                    },
-                    "operation": "addition",
-                    "slot": "feet"
-                  }
-                ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:player_head",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{
+								SkullOwner:{Id:[I;-903112851,1937327098,-1258035656,1495487699],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWI3ZmY4OGQxNTRkMDRhOGEyNjk5NWM5OWY2NGU1M2I1NzRjN2I4MmVjMjFhMTJhOWU0NDhiY2ExZTcwZjQ2MSJ9fX0=\"}]}},
+								display:{
+									Name:\"{\\\"text\\\":\\\"Crooked Artifact\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"Accessory\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+										\"\\\" \\\"\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Get \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"2%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" off most shops.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\"
+									]
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

@@ -1,0 +1,36 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:player_head",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{
+								SkullOwner:{Id:[I;-2094978945,1481330305,-2101253845,-849097528],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTIwZTg0ZDMyZDFlOWM5MTlkM2ZkYmI1M2YyYjM3YmEyNzRjMTIxYzU3YjI4MTBlNWE0NzJmNDBkYWNmMDA0ZiJ9fX0=\"}]}},
+								display:{
+									Name:\"{\\\"text\\\":\\\"Slime Hat\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+										\"\\\" \\\"\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Provides immunity to knockback\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"from mobs.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"COMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+									]
+								},
+								AttributeModifiers:[
+									{Slot:\"head\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10,Operation:0,UUID:[I;587298951,835538907,199423750,42105734]},
+									{Slot:\"head\",AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:1.0,Operation:1,UUID:[I;205308229,23574158,701221345,891758745]}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

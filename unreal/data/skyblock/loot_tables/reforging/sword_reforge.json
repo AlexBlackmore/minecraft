@@ -1,0 +1,59 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"loot_table",
+							"name":"skyblock:reforging/sword_reforge/legendary",
+							"conditions": [
+								{
+								  "condition":"random_chance",
+								  "chance":0.001
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:reforging/sword_reforge/epic",
+							"conditions": [
+								{
+								  "condition":"random_chance",
+								  "chance":0.01
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:reforging/sword_reforge/rare",
+							"conditions": [
+								{
+								  "condition":"random_chance",
+								  "chance":0.05
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:reforging/sword_reforge/uncommon",
+							"conditions": [
+								{
+								  "condition":"random_chance",
+								  "chance":0.2
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:reforging/sword_reforge/common"
+						}
+				  
+					]
+				}
+			]
+		}
+	]
+}

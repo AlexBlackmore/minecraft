@@ -54,15 +54,13 @@ give @p villager_spawn_egg{
 								Name:"{\"text\":\"Undead Sword\",\"italic\":false,\"color\":\"white\"}",
 								Lore:[
 									"\" \"",
-									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+5 Damage\",\"italic\":false,\"color\":\"dark_green\"},{\"text\":\" to Withers,\",\"italic\":false,\"color\":\"gray\"}]",
-									"{\"text\":\"Zombie Pigmen, Skeletons, and\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Zombies.\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+2.5\",\"italic\":false,\"color\":\"red\"},{\"text\":\" damage to Undead mobs.\",\"italic\":false,\"color\":\"gray\"}]",
 									"\" \"",
 									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
 								]
 							},
 							Enchantments:[
-								{id:"smite",lvl:2}
+								{id:"smite",lvl:1}
 							]
 						}
 					},
@@ -82,16 +80,12 @@ give @p villager_spawn_egg{
 								Name:"{\"text\":\"End Sword\",\"italic\":false,\"color\":\"yellow\"}",
 								Lore: [
 									"\" \"",
-									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"dark_gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to Enderman,\",\"italic\":false,\"color\":\"dark_gray\"}]",
-									"{\"text\":\"Ender Dragons, and Endermites.\",\"italic\":false,\"color\":\"dark_gray\"}",
+									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to Enderman,\",\"italic\":false,\"color\":\"gray\"}]",
+									"{\"text\":\"Ender Dragons, and Endermites.\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
 									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
 								]
-							},
-							Enchantments:[
-								{id:"sharpness",lvl:1},
-								{id:"unbreaking",lvl:1}
-							]
+							}
 						}
 					},
 					rewardExp:false,
@@ -110,15 +104,13 @@ give @p villager_spawn_egg{
 								Name:"{\"text\":\"Spider Sword\",\"italic\":false,\"color\":\"white\"}",
 								Lore:[
 									"\" \"",
-									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+5 Damage\",\"italic\":false,\"color\":\"dark_green\"},{\"text\":\" to Cave\",\"italic\":false,\"color\":\"gray\"}]",
-									"{\"text\":\"Spiders, Spiders, and\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Silverfish.\",\"italic\":false,\"color\":\"gray\"}",
+									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+2.5\",\"italic\":false,\"color\":\"red\"},{\"text\":\" damage to Arthropods.\",\"italic\":false,\"color\":\"gray\"}]",
 									"\" \"",
 									"{\"text\":\"COMMON\",\"bold\":true,\"color\":\"white\"}"
 								]
 							},
 							Enchantments:[
-	              {id:"bane_of_arthropods",lvl:2}
+								{id:"bane_of_arthropods",lvl:1}
 							]
 						}
 					},
@@ -140,10 +132,7 @@ give @p villager_spawn_egg{
 									"\" \"",
 									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
 								]
-							},
-							Enchantments:[
-								{id:"unbreaking",lvl:1}
-							]
+							}
 						}
 					},
 					rewardExp:false,
@@ -191,10 +180,7 @@ give @p villager_spawn_egg{
 									"\" \"",
 									"{\"text\":\"UNCOMMON\",\"bold\":true,\"color\":\"yellow\"}"
 								]
-							},
-							Enchantments:[
-								{id:"unbreaking",lvl:1}
-							]
+							}
 						}
 					},
 					rewardExp:false,

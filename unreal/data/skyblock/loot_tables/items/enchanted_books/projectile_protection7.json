@@ -1,0 +1,31 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:enchanted_book",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								StoredEnchantments:[
+									{id:\"projectile_protection\",lvl:7}
+								],
+								display:{
+									Name:\"{\\\"text\\\":\\\"Enchanted Book\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+									]
+								},
+								HideFlags:1
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

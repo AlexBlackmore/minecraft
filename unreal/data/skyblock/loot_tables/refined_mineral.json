@@ -5,35 +5,14 @@
       "entries":[
         {
           "type":"minecraft:loot_table",
-          "name":"skyblock:items/refined_mineral"
-        },
-        {
-          "type":"minecraft:loot_table",
           "name":"skyblock:items/refined_mineral",
           "functions":[
-            {
-              "function":"set_count",
-              "count":{
-                "min":0,
-                "max":1
-              }
-            }
-          ],
-          "conditions":[
-            {
-              "condition":"minecraft:match_tool",
-              "predicate":{
-                "enchantments":[
-                  {
-                    "enchantment":"minecraft:fortune",
-                    "levels":{
-                      "min":1
-                    }
-                  }
-                ]
-              }
-            }
-          ]
+			{
+			  "function":"apply_bonus",
+			  "enchantment":"fortune",
+			  "formula":"ore_drops"
+			}
+		  ]
         }
       ]
     }

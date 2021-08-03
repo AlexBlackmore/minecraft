@@ -1,0 +1,44 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:creeper_head",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Creeper Hat\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+										\"\\\" \\\"\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Grants immunity to explosion\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"damage.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"COMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\",
+										\"\\\" \\\"\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"+5 Intelligence\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}]\"
+									]
+								},
+								AttributeModifiers:[
+									{Slot:\"head\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:1,Operation:0,UUID:[I;205308229,23574158,701221345,891758745]},
+									{Slot:\"head\",AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:0.05,Operation:2,UUID:[I;635886,236809016,121284558,981343426]},
+									{Slot:\"head\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:0.05,Operation:2,UUID:[I;602327348,879417247,624666134,294021074]},
+									{Slot:\"head\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:1,Operation:0,UUID:[I;587298951,835538907,199423750,42105734]},
+									{Slot:\"head\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:1,Operation:0,UUID:[I;496777909,365938650,691629239,342322955]},
+									{Slot:\"head\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;681996412,419449809,129021245,91864953]}
+								],
+								Enchantments:[
+									{id:\"blast_protection\",lvl:10}
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

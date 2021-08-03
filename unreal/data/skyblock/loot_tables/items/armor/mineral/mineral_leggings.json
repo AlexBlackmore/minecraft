@@ -1,0 +1,40 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_leggings",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Mineral Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+                  Lore:[
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Each piece of this armor grants\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"the ability to automatically\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"mine \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"2\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" extra ghost blocks while\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"mining.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\"
+                  ],
+                  color:13428223
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:3}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:25,Operation:0,UUID:[I;594856759,383999199,811903973,46328114]},
+                  {Slot:\"legs\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.15,Operation:1,UUID:[I;241419060,762033804,928814610,855400222]}
+                ],
+                HideFlags:64
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

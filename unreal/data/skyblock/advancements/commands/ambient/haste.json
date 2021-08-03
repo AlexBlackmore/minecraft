@@ -1,0 +1,62 @@
+{
+  "parent":"skyblock:commands/ambient",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Haste",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "criterion":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "head":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Miner's Outfit Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+                },
+				"chest":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Miner's Outfit Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+                },
+				"legs":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Miner's Outfit Leggings\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+                },
+				"feet":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Miner's Outfit Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+                }
+              }
+            }
+          },
+			{
+				"condition":"inverted",
+				"term":{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"effects":{
+							"minecraft:haste":{
+								"amplifier":{
+									"min":2
+								}
+							}
+						}
+					}
+				}
+			}
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "function":"skyblock:abilities/ambient/haste"
+  }
+}

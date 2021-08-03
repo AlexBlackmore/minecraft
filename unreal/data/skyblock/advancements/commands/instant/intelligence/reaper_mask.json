@@ -1,0 +1,38 @@
+{
+  "parent":"skyblock:commands/instant",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Reaper Mask +100 Intelligence",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "killentity":{
+      "trigger":"minecraft:player_killed_entity",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "head":{
+                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Reaper Mask\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\"}}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{
+	"experience":100,
+	"function":"skyblock:abilities/reset_instant"
+  }
+}
