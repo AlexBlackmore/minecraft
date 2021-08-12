@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/combat/spider_eye/spider_eye2",
+  "display":{
+    "icon":{
+      "item":"minecraft:player_head",
+	  "nbt":"{SkullOwner:{Id:[I;-1397633820,-1501739549,-2103914891,803055110],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQ3ZTNiMTlhYzRmM2RlZTljNTY3N2MxMzUzMzNiOWQzNWE3ZjU2OGI2M2QxZWY0YWRhNGIwNjhiNWEyNSJ9fX0=\"}]}}}"
+    },
+    "title":"Spider Eye III",
+    "description":"Kill 250 cave spiders. Unlocks Spider Hat recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "spider_eye":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:cave_spider",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":25
+	}
+}

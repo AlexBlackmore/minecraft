@@ -6,7 +6,7 @@
       "nbt":"{CustomPotionColor:16777045}"
     },
     "title":"Coal III",
-    "description":"Mine 250 coal ore.",
+    "description":"Mine 250 coal ore. Unlocks Haste Potion recipe.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -14,7 +14,7 @@
   },
   "criteria":{
     "coal":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -37,5 +37,8 @@
         ]
       }
     }
-  }
+  },
+	"rewards":{
+		"experience":25
+	}
 }

@@ -9,7 +9,7 @@
     "frame":"task",
     "show_toast":false,
     "announce_to_chat":true,
-    "hidden":false
+    "hidden":true
   },
   "criteria":{
     "killentity":{
@@ -22,7 +22,7 @@
             "predicate":{
               "equipment":{
                 "mainhand":{
-                  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Odd Diamond Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+					"nbt":"{Reforge:\"Odd\",display:{Lore:[\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"]}}"
                 }
               }
             }

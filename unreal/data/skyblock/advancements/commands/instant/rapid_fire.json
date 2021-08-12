@@ -1,0 +1,64 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Rapid Fire",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"damage":{
+					"type":{
+						"direct_entity":{
+							"type":"snowball"
+						}
+					}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Machine Gun Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\"}}"
+								}
+							},
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					},
+					{
+						"condition":"inverted",
+						"term":{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"effects":{
+									"minecraft:hunger":{
+										"amplifier":{
+											"min":0
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"rewards":{
+		"function":"skyblock:abilities/instant/rapid_fire"
+	}
+}

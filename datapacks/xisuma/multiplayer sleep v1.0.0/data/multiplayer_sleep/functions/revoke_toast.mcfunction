@@ -1,1 +1,0 @@
-advancement revoke @s only multiplayer_sleep:toast

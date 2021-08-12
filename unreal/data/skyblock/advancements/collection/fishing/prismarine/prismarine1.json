@@ -1,0 +1,43 @@
+{
+	"parent":"skyblock:collection/fishing",
+	"display":{
+		"icon":{
+			"item":"minecraft:prismarine_shard"
+		},
+		"title":"Prismarine I",
+		"description":"Kill 10 guardians. Unlocks Impaling I and Sea Lantern Hat recipes.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"prismarine":{
+			"trigger":"minecraft:slept_in_bed",
+			"conditions":{
+				"player":[
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"player":{
+								"stats":[
+									{
+										"type":"minecraft:killed",
+										"stat":"minecraft:guardian",
+										"value":{
+										  "min":10
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":1
+	}
+}

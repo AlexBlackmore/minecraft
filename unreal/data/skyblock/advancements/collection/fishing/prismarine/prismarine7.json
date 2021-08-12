@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/fishing/prismarine/prismarine6",
+  "display":{
+    "icon":{
+      "item":"minecraft:enchanted_book"
+    },
+    "title":"Prismarine VII",
+    "description":"Kill 800 guardians. Unlocks Blessing I recipe.",
+    "frame":"challenge",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "prismarine":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:guardian",
+                    "value":{
+                      "min":800
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":80
+	}
+}

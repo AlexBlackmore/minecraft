@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/fishing/fish/fish6",
+  "display":{
+    "icon":{
+      "item":"minecraft:pufferfish",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Fish VII",
+    "description":"Catch 2,500 fish. Unlocks Salmon Hat and Rod of Champions recipes.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "fish":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:custom",
+                    "stat":"minecraft:fish_caught",
+                    "value":{
+                      "min":2500
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":250
+	}
+}

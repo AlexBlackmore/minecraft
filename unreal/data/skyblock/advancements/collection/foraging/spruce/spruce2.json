@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/foraging/spruce/spruce1",
+  "display":{
+    "icon":{
+      "item":"minecraft:spruce_leaves"
+    },
+    "title":"Spruce II",
+    "description":"Chop 100 spruce logs. Unlocks Spruce Sapling to Leaves trade.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "spruce":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:spruce_log",
+                    "value":{
+                      "min":100
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":10
+	}
+}

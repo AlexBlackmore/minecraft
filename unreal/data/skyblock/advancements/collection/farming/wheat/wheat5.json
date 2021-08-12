@@ -6,7 +6,7 @@
       "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Wheat V",
-    "description":"Harvest 1,000 wheat.",
+    "description":"Harvest 1,000 wheat. Unlocks Enchanted Bread recipe.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -14,7 +14,7 @@
   },
   "criteria":{
     "wheat":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -37,5 +37,8 @@
         ]
       }
     }
-  }
+  },
+	"rewards":{
+		"experience":100
+	}
 }

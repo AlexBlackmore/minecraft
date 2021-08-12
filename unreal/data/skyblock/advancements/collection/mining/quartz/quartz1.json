@@ -1,0 +1,43 @@
+{
+	"parent":"skyblock:collection/mining",
+	"display":{
+		"icon":{
+			"item":"minecraft:quartz"
+		},
+		"title":"Quartz I",
+		"description":"Mine 50 quartz ore.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"cobblestone":{
+			"trigger":"minecraft:slept_in_bed",
+			"conditions":{
+				"player":[
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"player":{
+								"stats":[
+									{
+										"type":"minecraft:mined",
+										"stat":"minecraft:quartz_ore",
+										"value":{
+										  "min":50
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":5
+	}
+}

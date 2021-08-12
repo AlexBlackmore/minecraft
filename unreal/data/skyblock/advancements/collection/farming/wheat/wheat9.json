@@ -6,7 +6,7 @@
       "nbt":"{display:{color:16766720}}"
     },
     "title":"Wheat IX",
-    "description":"Harvest 25,000 wheat.",
+    "description":"Harvest 25,000 wheat. Unlocks Farm Armor recipes.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -14,7 +14,7 @@
   },
   "criteria":{
     "wheat":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -37,5 +37,8 @@
         ]
       }
     }
-  }
+  },
+	"rewards":{
+		"experience":2500
+	}
 }

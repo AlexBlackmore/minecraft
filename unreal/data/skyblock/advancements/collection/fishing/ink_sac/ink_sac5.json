@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/fishing/ink_sac/ink_sac4",
+  "display":{
+    "icon":{
+      "item":"minecraft:enchanted_book"
+    },
+    "title":"Ink Sac V",
+    "description":"Kill 400 squid.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "ink_sac":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:squid",
+                    "value":{
+                      "min":400
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":40
+	}
+}

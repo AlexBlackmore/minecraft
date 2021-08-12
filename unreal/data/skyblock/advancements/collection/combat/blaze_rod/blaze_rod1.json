@@ -1,0 +1,43 @@
+{
+	"parent":"skyblock:collection/combat",
+	"display":{
+		"icon":{
+			"item":"minecraft:blaze_rod"
+		},
+		"title":"Blaze I",
+		"description":"Kill 50 blaze.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"blaze_rod":{
+			"trigger":"minecraft:slept_in_bed",
+			"conditions":{
+				"player":[
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"player":{
+								"stats":[
+									{
+										"type":"minecraft:killed",
+										"stat":"minecraft:blaze",
+										"value":{
+										  "min":50
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":5
+	}
+}

@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/fishing/ink_sac/ink_sac1",
+  "display":{
+    "icon":{
+      "item":"minecraft:player_head",
+      "nbt":"{SkullOwner:{Id:[I;956322998,1653425550,-1533354428,-931061094],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzMzYzUxNmYzZjM4MDkxNmQ0MWE5MzU1YTMxOWY4NTk0M2FhY2M4YTljMWI0YTEzODAxNzQ4NGI2MTExNGY2OCJ9fX0=\"}]}}}"
+    },
+    "title":"Ink Sac II",
+    "description":"Kill 40 squid. Unlocks Dark Bait recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "ink_sac":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:squid",
+                    "value":{
+                      "min":40
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":4
+	}
+}

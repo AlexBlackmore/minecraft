@@ -1,1 +1,0 @@
-attribute @p minecraft:generic.attack_damage modifier remove 90-48-830-943-122

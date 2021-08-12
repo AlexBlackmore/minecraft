@@ -5,7 +5,7 @@
       "item":"minecraft:enchanted_book"
     },
     "title":"Diamond V",
-    "description":"Mine 2,500 diamond ore.",
+    "description":"Mine 2,500 diamond ore. Unlocks Critival IV recipe.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -13,7 +13,7 @@
   },
   "criteria":{
     "diamond":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -36,5 +36,8 @@
         ]
       }
     }
-  }
+  },
+	"rewards":{
+		"experience":250
+	}
 }

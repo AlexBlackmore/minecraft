@@ -6,7 +6,7 @@
       "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Gold II",
-    "description":"Mine 100 gold ore.",
+    "description":"Mine 100 gold ore. Unlocks Cleaver recipe.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -14,7 +14,7 @@
   },
   "criteria":{
     "gold":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -37,5 +37,8 @@
         ]
       }
     }
-  }
+  },
+	"rewards":{
+		"experience":10
+	}
 }

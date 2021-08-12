@@ -5,15 +5,15 @@
       "item":"minecraft:raw_chicken"
     },
     "title":"Chicken IX",
-    "description":"Kill 50,000 chicken.",
-    "frame":"task",
+    "description":"Kill 50,000 chickens. Unlocks Feather Artifact recipe.",
+    "frame":"challenge",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "chicken":{
-      "trigger":"minecraft:item_durability_changed",
+    "cocoa":{
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -36,5 +36,8 @@
         ]
       }
     }
+  },
+  "rewards":{
+	"experience":5000
   }
 }

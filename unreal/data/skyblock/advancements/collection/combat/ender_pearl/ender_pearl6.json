@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/combat/ender_pearl/ender_pearl5",
+  "display":{
+    "icon":{
+      "item":"minecraft:ender_eye",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Ender Pearl VI",
+    "description":"Kill 10,000 enderman.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "ender_pearl":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:enderman",
+                    "value":{
+                      "min":10000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":1000
+	}
+}

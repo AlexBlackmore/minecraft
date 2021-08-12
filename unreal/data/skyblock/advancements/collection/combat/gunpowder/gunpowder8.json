@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/combat/gunpowder/gunpowder7",
+  "display":{
+    "icon":{
+      "item":"minecraft:leather_leggings",
+	  "nbt":"{display:{color:8054828}}"
+    },
+    "title":"Gunpowder VIII",
+    "description":"Kill 25,000 creepers. Unlocks Creeper Pants recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "gunpowder":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:creeper",
+                    "value":{
+                      "min":25000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":2500
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Ice Bolt",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"damage":{
+					"type":{
+						"direct_entity":{
+							"type":"snowball"
+						}
+					}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Frozen Scythe\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\"}}"
+								}
+							},
+							"player":{
+								"level":{
+									"min":5
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"rewards":{
+		"function":"skyblock:abilities/instant/ice_bolt"
+	}
+}

@@ -5,7 +5,7 @@
       "item":"minecraft:silverfish_spawn_egg"
     },
     "title":"Cobblestone VI",
-    "description":"Mine 5,000 cobblestone.",
+    "description":"Mine 5,000 cobblestone. Unlocks Silverfish Pet recipe.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -13,7 +13,7 @@
   },
   "criteria":{
     "cobblestone":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -36,5 +36,8 @@
         ]
       }
     }
-  }
+  },
+	"rewards":{
+		"experience":500
+	}
 }

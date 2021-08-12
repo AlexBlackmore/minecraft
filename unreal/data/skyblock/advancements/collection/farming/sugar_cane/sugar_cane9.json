@@ -6,15 +6,15 @@
 			"nbt":"{display:{color:14744823}}"
 		},
 		"title":"Sugar Cane IX",
-		"description":"Harvest 50,000 sugar cane.",
-		"frame":"task",
+		"description":"Harvest 50,000 sugar cane. Unlocks Speedster Armor recipes.",
+		"frame":"challenge",
 		"show_toast":true,
 		"announce_to_chat":true,
 		"hidden":false
 	},
 	"criteria":{
 		"cactus":{
-			"trigger":"minecraft:item_durability_changed",
+			"trigger":"minecraft:slept_in_bed",
 			"conditions":{
 				"player":[
 					{
@@ -37,5 +37,8 @@
 				]
 			}
 		}
+	},
+	"rewards":{
+		"experience":5000
 	}
 }

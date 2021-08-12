@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/combat/ender_pearl/ender_pearl3",
+  "display":{
+    "icon":{
+      "item":"minecraft:end_stone"
+    },
+    "title":"Ender Pearl IV",
+    "description":"Kill 2,500 enderman. ",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "ender_pearl":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:enderman",
+                    "value":{
+                      "min":2500
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":250
+	}
+}

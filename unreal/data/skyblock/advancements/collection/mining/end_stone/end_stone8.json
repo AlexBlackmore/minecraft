@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/mining/end_stone/end_stone7",
+  "display":{
+    "icon":{
+      "item":"minecraft:written_book"
+    },
+    "title":"End Stone VIII",
+    "description":"Mine 15,000 end stone. Unlocks Travel Scroll to the End recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "end_stone":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:end_stone",
+                    "value":{
+                      "min":15000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":1500
+	}
+}

@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/mining/redstone/redstone5",
+  "display":{
+    "icon":{
+      "item":"minecraft:stick",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Redstone VI",
+    "description":"Mine 5,000 redstone ore. Unlocks Weather Stick recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "redstone":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:redstone_ore",
+                    "value":{
+                      "min":5000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":500
+	}
+}

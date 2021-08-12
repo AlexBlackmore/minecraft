@@ -5,7 +5,7 @@
       "item":"minecraft:enchanted_book"
     },
     "title":"Gold VIII",
-    "description":"Mine 25,000 gold ore.",
+    "description":"Mine 25,000 gold ore. Unlocks Fortune II recipe.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -13,7 +13,7 @@
   },
   "criteria":{
     "gold":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -36,5 +36,8 @@
         ]
       }
     }
-  }
+  },
+	"rewards":{
+		"experience":2500
+	}
 }

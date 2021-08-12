@@ -1,0 +1,43 @@
+{
+	"parent":"skyblock:collection/combat",
+	"display":{
+		"icon":{
+			"item":"minecraft:slime_ball"
+		},
+		"title":"Slime Ball I",
+		"description":"Kill 50 slimes.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"slime_ball":{
+			"trigger":"minecraft:slept_in_bed",
+			"conditions":{
+				"player":[
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"player":{
+								"stats":[
+									{
+										"type":"minecraft:killed",
+										"stat":"minecraft:slime",
+										"value":{
+										  "min":50
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":5
+	}
+}

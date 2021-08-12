@@ -1,0 +1,42 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Super Undead Bow",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"arrow_bounce":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Super Undead Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+								}
+							}
+						}
+					},
+					{
+						"condition":"random_chance",
+						"chance":0.25
+					}
+				]
+			}
+		}
+
+	},
+	"rewards":{
+		"function":"skyblock:arrow_hit"
+	}
+}

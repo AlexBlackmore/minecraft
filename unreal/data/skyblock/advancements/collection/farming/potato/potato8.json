@@ -6,7 +6,7 @@
       "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Potato VIII",
-    "description":"Harvest 50,000 potatoes.",
+    "description":"Harvest 50,000 potatoes. Unlocks Hot Potato Book recipe.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -14,7 +14,7 @@
   },
   "criteria":{
     "potato":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -37,5 +37,8 @@
         ]
       }
     }
-  }
+  },
+	"rewards":{
+		"experience":5000
+	}
 }

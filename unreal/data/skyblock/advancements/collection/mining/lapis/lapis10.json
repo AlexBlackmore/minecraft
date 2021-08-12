@@ -6,7 +6,7 @@
       "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
     },
     "title":"Lapis Lazuli X",
-    "description":"Collect 250,000 lapis lazuli.",
+    "description":"Mine 250,000 lapis lazuli ore. Unlocks Textbook recipe.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -14,7 +14,7 @@
   },
   "criteria":{
     "lapis":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -24,8 +24,8 @@
               "player":{
                 "stats":[
                   {
-                    "type":"minecraft:picked_up",
-                    "stat":"minecraft:lapis_lazuli",
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:lapis_lazuli_ore",
                     "value":{
                       "min":250000
                     }
@@ -37,5 +37,8 @@
         ]
       }
     }
-  }
+  },
+	"rewards":{
+		"experience":25000
+	}
 }

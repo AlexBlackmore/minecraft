@@ -1,0 +1,40 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:iron_sword",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Yeti Sword\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Item Ability: Terrain Toss\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Throws a chunk of terrain in the direction you are facing! Deals up to 3000 ability damage.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"200\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"Cost: \\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_gray\\\"},{\\\"text\\\":\\\"250 XP\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}]\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Cooldown: \\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_gray\\\"},{\\\"text\\\":\\\"1s\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}]\",
+					\"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\",
+					\"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"+50 Intelligence\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"sharpness\",lvl:59}
+                ],
+                AttributeModifiers:[
+                  {Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:34,Operation:0,UUID:[I;233288417,259929776,710642715,119225690]}
+                ]
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "parent":"skyblock:collection/mining/netherrack/netherrack2",
+  "display":{
+    "icon":{
+      "item":"minecraft:nether_brick"
+    },
+    "title":"Netherrack III",
+    "description":"Mine 500 netherrack. Unlocks Netherrack to Nether Brick recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "netherrack":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:netherrack",
+                    "value":{
+                      "min":500
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":50,
+		"recipes":[
+			"skyblock:nether_brick_trade"
+		]
+	}
+}

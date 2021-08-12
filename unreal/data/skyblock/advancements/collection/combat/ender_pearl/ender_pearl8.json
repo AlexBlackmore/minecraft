@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/combat/ender_pearl/ender_pearl7",
+  "display":{
+    "icon":{
+      "item":"minecraft:diamond_sword"
+    },
+    "title":"Ender Pearl VIII",
+    "description":"Kill 25,000 enderman. Unlocks Aspect of the End recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "ender_pearl":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:enderman",
+                    "value":{
+                      "min":25000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":2500
+	}
+}

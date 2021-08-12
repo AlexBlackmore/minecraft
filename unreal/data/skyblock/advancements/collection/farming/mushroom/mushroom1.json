@@ -13,7 +13,7 @@
   },
   "criteria":{
     "red_mushroom":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -37,7 +37,7 @@
       }
     },
     "brown_mushroom":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -65,5 +65,8 @@
 	[
 		"red_mushroom","brown_mushroom"
 	]
-  ]
+  ],
+  "rewards":{
+	"experience":5
+  }
 }

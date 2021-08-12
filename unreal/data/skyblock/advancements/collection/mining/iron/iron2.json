@@ -6,7 +6,7 @@
       "nbt":"{SkullOwner:\"MHF_Golem\"}"
     },
     "title":"Iron II",
-    "description":"Mine 100 iron ore.",
+    "description":"Mine 100 iron ore. Unlocks Golem Hat recipe.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -14,7 +14,7 @@
   },
   "criteria":{
     "iron":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -36,6 +36,9 @@
           }
         ]
       }
-    }
+    },
+	"rewards":{
+		"experience":10
+	}
   }
 }

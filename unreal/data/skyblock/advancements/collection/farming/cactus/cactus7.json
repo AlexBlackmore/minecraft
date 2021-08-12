@@ -4,16 +4,16 @@
     "icon":{
       "item":"minecraft:enchanted_book"
     },
-    "title":"Cactus VI",
-    "description":"Harvest 10,000 cactus.",
+    "title":"Cactus VII",
+    "description":"Harvest 10,000 cactus. Unlocks Thorns II recipe.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
-    "cactus":{
-      "trigger":"minecraft:item_durability_changed",
+    "cocoa":{
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -36,5 +36,8 @@
         ]
       }
     }
+  },
+  "rewards":{
+	"experience":1000
   }
 }

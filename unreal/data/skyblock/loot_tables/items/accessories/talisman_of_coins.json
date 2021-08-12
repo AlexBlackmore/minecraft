@@ -1,44 +1,32 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "item",
-          "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{SkullOwner:{Id:[I;-1216848306,-242201994,-1689440894,507381092],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDUyZGNhNjhjOGY4YWY1MzNmYjczN2ZhZWVhY2JlNzE3Yjk2ODc2N2ZjMTg4MjRkYzJkMzdhYzc4OWZjNzcifX19\"}]}},Base:{Type:\"ACCESSORY\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Reforge:\"\",AccessoryFamily:\"TalismanofCoins\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Coins start appearing around you\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"occasionally on public islands.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Lucky!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Talisman of Coins\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Coins start appearing around you\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"occasionally on public islands.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Lucky!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON ACCESSORY\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
-            },
-            {
-                "function": "minecraft:set_attributes",
-                "modifiers": [
-                  {
-                    "attribute": "minecraft:zombie.spawn_reinforcements",
-                    "name": "",
-                    "amount": {
-                      "min": 0,
-                      "max": 1000000000
-                    },
-                    "operation": "addition",
-                    "slot": "feet"
-                  },
-                  {
-                    "attribute": "minecraft:horse.jump_strength",
-                    "name": "",
-                    "amount": {
-                      "min": 0,
-                      "max": 1000000000
-                    },
-                    "operation": "addition",
-                    "slot": "feet"
-                  }
-                ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:player_head",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{
+								SkullOwner:{Id:[I;-1216848306,-242201994,-1689440894,507381092],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDUyZGNhNjhjOGY4YWY1MzNmYjczN2ZhZWVhY2JlNzE3Yjk2ODc2N2ZjMTg4MjRkYzJkMzdhYzc4OWZjNzcifX19\"}]}},
+								display:{
+									Name:\"{\\\"text\\\":\\\"Talisman of Coins\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"Accessory\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+										\"\\\" \\\"\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Emeralds\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"},{\\\"text\\\":\\\" start appearing around\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"you while exploring. Lucky!\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\"
+										\"{\\\"text\\\":\\\"COMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\"
+									]
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
 }

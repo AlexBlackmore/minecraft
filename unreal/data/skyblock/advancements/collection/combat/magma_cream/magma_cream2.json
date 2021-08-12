@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/combat/magma_cream/magma_cream1",
+  "display":{
+    "icon":{
+      "item":"minecraft:player_head",
+	  "nbt":"{SkullOwner:{Id:[I;-1767051932,1535462297,-1205513267,2057279270],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0=\"}]}}}"
+    },
+    "title":"Magma Cream II",
+    "description":"Kill 100 magma cubes. Unlocks Magma Cube Head recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "magma_cream":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:magma_cube",
+                    "value":{
+                      "min":100
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":10
+	}
+}

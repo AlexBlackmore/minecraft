@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/fishing/clay/clay3",
+  "display":{
+    "icon":{
+      "item":"minecraft:enchanted_book"
+    },
+    "title":"Clay IV",
+    "description":"Dig 1,000 clay.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "clay":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:clay",
+                    "value":{
+                      "min":1000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":100
+	}
+}

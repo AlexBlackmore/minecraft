@@ -70,7 +70,7 @@ give @p villager_spawn_egg{
 								Lore:[
 									"\" \"",
 									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Undead\",\"italic\":false,\"color\":\"green\"}]",
-									"[\"\",{\"text\":\"monsters\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"monsters.\",\"italic\":false,\"color\":\"gray\"}]",
 									"\" \"",
 									"{\"text\":\"RARE\",\"italic\":true,\"bold\":true,\"color\":\"aqua\"}"
 								]
@@ -121,31 +121,22 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"text\":\"Super Cleaver\",\"italic\":false,\"color\":\"aqua\"}",
 								Lore:[
-									"{\"text\":\"Sharpness XXXIII\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Sweeping Edge II\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Unbreaking II\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
 									"{\"text\":\"Item Ability: Cleave\",\"italic\":false,\"color\":\"gold\"}",
 									"{\"text\":\"When hitting an entity, monsters\",\"italic\":false,\"color\":\"gray\"}",
 									"[\"\",{\"text\":\"in a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"3\",\"italic\":false,\"color\":\"green\"},{\"text\":\" block range will be hit\",\"italic\":false,\"color\":\"gray\"}]",
 									"{\"text\":\"for a portion of that damage too.\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
-									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}",
-									"\" \"",
-									"{\"text\":\"When in Main Hand:\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\" 17 Damage\",\"italic\":false,\"color\":\"dark_green\"}",
-									"{\"text\":\"+4 Strength\",\"italic\":false,\"color\":\"blue\"}"
+									"{\"text\":\"RARE\",\"bold\":true,\"color\":\"aqua\"}"
 								]
 							},
 							Enchantments:[
 								{id:"sharpness",lvl:33},
-								{id:"sweeping",lvl:2},
-								{id:"unbreaking",lvl:2}
+								{id:"sweeping",lvl:2}
 							],
 						  AttributeModifiers:[
 						    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;220080633,596613996,8024673,-453369204]}
-						  ],
-							HideFlags:3
+						  ]
 						}
 					},
 					rewardExp:false,
@@ -185,9 +176,6 @@ give @p villager_spawn_egg{
 								],
 								color:14277081
 							},
-							Enchantments:[
-								{id:"unbreaking",lvl:2}
-							],
 						  AttributeModifiers:[
 						    {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:26,Operation:0,UUID:[I;563576793,-95394663,12896641,695292725]}
 						  ],
@@ -648,9 +636,6 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"text\":\"Super Undead Bow\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
-									"{\"text\":\"Power XXIV\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Smite V\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Unbreaking III\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
 									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Undead\",\"italic\":false,\"color\":\"green\"}]",
 									"[\"\",{\"text\":\"monsters\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
@@ -659,9 +644,7 @@ give @p villager_spawn_egg{
 								]
 							},
 							Enchantments:[
-								{id:"power",lvl:24},
-								{id:"smite",lvl:5},
-								{id:"unbreaking",lvl:3}
+								{id:"power",lvl:24}
 							],
 							HideFlags:1
 						}
@@ -697,9 +680,6 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"text\":\"Hyper Cleaver\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
-									"{\"text\":\"Sharpness LVII\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Sweeping Edge III\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Unbreaking III\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
 									"{\"text\":\"Item Ability: Cleave\",\"italic\":false,\"color\":\"gold\"}",
 									"{\"text\":\"When hitting an entity, monsters\",\"italic\":false,\"color\":\"gray\"}",
@@ -715,8 +695,7 @@ give @p villager_spawn_egg{
 							},
 							Enchantments:[
 								{id:"sharpness",lvl:57},
-								{id:"sweeping",lvl:3},
-								{id:"unbreaking",lvl:3}
+								{id:"sweeping",lvl:3}
 							],
 						  AttributeModifiers:[
 						    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:10,Operation:0,UUID:[I;241489777,-745137765,797745674,995897850]}
@@ -764,9 +743,6 @@ give @p villager_spawn_egg{
 								],
 								color:14277081
 							},
-							Enchantments:[
-								{id:"unbreaking",lvl:3}
-							],
 						  AttributeModifiers:[
 						    {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:46,Operation:0,UUID:[I;122101825,-595789245,-620564312,-672557471]}
 						  ],
@@ -895,9 +871,6 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"text\":\"Death Bow\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
-									"{\"text\":\"Power XXXV\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Smite V\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Unbreaking III\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
 									"[\"\",{\"text\":\"Deals \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Undead\",\"italic\":false,\"color\":\"green\"}]",
 									"[\"\",{\"text\":\"monsters\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]",
@@ -910,9 +883,7 @@ give @p villager_spawn_egg{
 								]
 							},
 							Enchantments:[
-								{id:"power",lvl:35},
-								{id:"smite",lvl:5},
-								{id:"unbreaking",lvl:3}
+								{id:"power",lvl:35}
 							],
 							HideFlags:1
 						}
@@ -948,26 +919,18 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"text\":\"Giant Cleaver\",\"italic\":false,\"color\":\"light_purple\"}",
 								Lore:[
-									"{\"text\":\"Sharpness LXVII\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Sweeping Edge IV\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\"Unbreaking III\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
 									"{\"text\":\"Item Ability: Cleave\",\"italic\":false,\"color\":\"gold\"}",
 									"{\"text\":\"When hitting an entity, monsters\",\"italic\":false,\"color\":\"gray\"}",
 									"[\"\",{\"text\":\"in a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"5\",\"italic\":false,\"color\":\"green\"},{\"text\":\" block range will be hit\",\"italic\":false,\"color\":\"gray\"}]",
 									"{\"text\":\"for a portion of that damage too.\",\"italic\":false,\"color\":\"gray\"}",
 									"\" \"",
-									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}",
-									"\" \"",
-									"{\"text\":\"When in Main Hand:\",\"italic\":false,\"color\":\"gray\"}",
-									"{\"text\":\" 34 Damage\",\"italic\":false,\"color\":\"dark_green\"}",
-									"{\"text\":\"+12 Strength\",\"italic\":false,\"color\":\"blue\"}"
+									"{\"text\":\"EPIC\",\"bold\":true,\"color\":\"light_purple\"}"
 								]
 							},
 							Enchantments:[
 								{id:"sharpness",lvl:67},
-								{id:"sweeping",lvl:4},
-								{id:"unbreaking",lvl:3}
+								{id:"sweeping",lvl:4}
 							],
 						  AttributeModifiers:[
 						    {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:12,Operation:0,UUID:[I;134725804,451742885,121658881,726685598]}
@@ -1015,9 +978,6 @@ give @p villager_spawn_egg{
 								],
 								color:14277081
 							},
-							Enchantments:[
-								{id:"unbreaking",lvl:3}
-							],
 						  AttributeModifiers:[
 						    {Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:66,Operation:0,UUID:[I;478535887,729062554,637298103,491882381]}
 						  ],

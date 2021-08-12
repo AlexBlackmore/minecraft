@@ -1,0 +1,1 @@
+item replace entity @p weapon.offhand with air

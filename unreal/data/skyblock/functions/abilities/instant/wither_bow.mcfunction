@@ -6,7 +6,7 @@ scoreboard players operation @p[predicate=skyblock:wither_bow] damage = @p[predi
 scoreboard players add @p[predicate=skyblock:wither_bow] damage 6
 
 execute store result score @e[tag=wither_bow] health run data get entity @e[limit=1,tag=wither_bow] Health
-execute if score @e[tag=wither_bow] health < @p[predicate=skyblock:wither_bow] damage run kill @e[tag=wither_bow]
+execute if score @e[limit=1,tag=wither_bow] health < @p[predicate=skyblock:wither_bow] damage run kill @e[tag=wither_bow]
 scoreboard players operation @e[tag=wither_bow] health -= @p[predicate=skyblock:wither_bow] damage
 execute store result entity @e[limit=1,tag=wither_bow] Health float 1 run scoreboard players get @e[limit=1,tag=wither_bow] health
 

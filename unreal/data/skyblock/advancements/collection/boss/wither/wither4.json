@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/boss/wither/wither3",
+  "display":{
+    "icon":{
+      "item":"minecraft:wither_skeleton_skull"
+    },
+    "title":"Wither IV",
+    "description":"Kill 250 Withers.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "wither":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:wither",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":2500
+	}
+}

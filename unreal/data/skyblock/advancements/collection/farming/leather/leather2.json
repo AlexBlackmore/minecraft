@@ -6,7 +6,7 @@
       "nbt":"{SkullOwner:\"MHF_Cow\"}"
     },
     "title":"Leather II",
-    "description":"Kill 100 cows.",
+    "description":"Kill 100 cows. Unlocks Cow Head recipe.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -14,7 +14,7 @@
   },
   "criteria":{
     "leather":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -37,5 +37,8 @@
         ]
       }
     }
+  },
+  "rewards":{
+	"experience":10
   }
 }

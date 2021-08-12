@@ -6,14 +6,14 @@
     },
     "title":"Mutton IX",
     "description":"Kill 50,000 sheep.",
-    "frame":"task",
+    "frame":"challenge",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
     "mutton":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -36,5 +36,8 @@
         ]
       }
     }
-  }
+  },
+	"rewards":{
+		"experience":5000
+	}
 }

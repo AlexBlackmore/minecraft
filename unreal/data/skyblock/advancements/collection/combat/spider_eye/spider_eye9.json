@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/combat/spider_eye/spider_eye8",
+  "display":{
+    "icon":{
+      "item":"minecraft:leather_chestplate",
+	  "nbt":"{display:{color:10541807}}"
+    },
+    "title":"Spider Eye IX",
+    "description":"Kill 50,000 cave spiders. Unlocks Leaping Sword recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "spider_eye":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:cave_spider",
+                    "value":{
+                      "min":50000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":5000
+	}
+}

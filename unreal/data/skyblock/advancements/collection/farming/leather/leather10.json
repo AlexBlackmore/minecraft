@@ -6,14 +6,14 @@
     },
     "title":"Leather X",
     "description":"Kill 100,000 cows.",
-    "frame":"task",
+    "frame":"challenge",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
     "leather":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -36,5 +36,8 @@
         ]
       }
     }
+  },
+  "rewards":{
+	"experience":10000
   }
 }

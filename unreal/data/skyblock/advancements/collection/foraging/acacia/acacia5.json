@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/foraging/diamond/diamond4",
+  "display":{
+    "icon":{
+      "item":"minecraft:stick",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Acacia V",
+    "description":"Chop 1,000 acacia logs.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "acacia":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:acacia_log",
+                    "value":{
+                      "min":1000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":100
+	}
+}

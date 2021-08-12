@@ -10,8 +10,8 @@ execute as @e[tag=ender_warp_radius] run execute store result entity @s Health f
 
 execute at @e[limit=1,tag=ender_warp] run tp @p[predicate=skyblock:ender_bow] ~ ~ ~
 execute at @e[predicate=skyblock:ender_bow] run playsound minecraft:entity.enderman.teleport player @p[predicate=skyblock:ender_bow]
-xp add @p[predicate=skyblock:ender_bow] -50 points
 effect give @p[predicate=skyblock:ender_bow] hunger 45
+xp add @p[predicate=skyblock:ender_bow] -50 points
 
 effect clear @e[tag=ender_warp_radius] nausea
 tag @e[tag=ender_warp_radius] remove ender_warp_radius

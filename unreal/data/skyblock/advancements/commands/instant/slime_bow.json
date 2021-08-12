@@ -1,0 +1,74 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Slime Bow",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"player_hurt_slime":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"entity":{
+					"type":"slime"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Slime Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+								},
+								"offhand":{
+									"items":["minecraft:slime_ball"]
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"player_hurt_magma_cube":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"entity":{
+					"type":"magma_cube"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Slime Bow\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+								},
+								"offhand":{
+									"items":["minecraft:slime_ball"]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"requirements":[
+		[
+			"player_hurt_slime",
+			"player_hurt_magma_cube"
+		]
+	],
+	"rewards":{
+		"function":"skyblock:arrow_hit"
+	}
+}

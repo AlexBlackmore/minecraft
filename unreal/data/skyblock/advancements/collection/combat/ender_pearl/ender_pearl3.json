@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/combat/ender_pearl/ender_pearl2",
+  "display":{
+    "icon":{
+      "item":"minecraft:enchanted_book"
+    },
+    "title":"Ender Pearl III",
+    "description":"Kill 1,000 enderman. Unlocks Ender Slayer IV recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "ender_pearl":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:enderman",
+                    "value":{
+                      "min":1000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":100
+	}
+}

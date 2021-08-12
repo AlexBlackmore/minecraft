@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/mining/obsidian/obsidian2",
+  "display":{
+    "icon":{
+      "item":"minecraft:player_head",
+	  "nbt":"{SkullOwner:{Id:[I;-903112851,1937327098,-1258035656,1495487699],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE1MjYzMmE5YzhmN2JkZTk0NzE5MDY0MjM0OTIwZGVkNDg2MTRlMmJkOGJjOTFhZmU3ZmZjMmNkOGE0NmYxOSJ9fX0\"}]}}}"
+    },
+    "title":"Obsidian III",
+    "description":"Mine 250 obsidian. Unlocks Gravity Talisman recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "obsidian":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:obsidian",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":25
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"parent":"skyblock:collection/mining",
+	"display":{
+		"icon":{
+			"item":"minecraft:netherrack"
+		},
+		"title":"Netherrack I",
+		"description":"Mine 50 netherrack.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"netherrack":{
+			"trigger":"minecraft:slept_in_bed",
+			"conditions":{
+				"player":[
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"player":{
+								"stats":[
+									{
+										"type":"minecraft:mined",
+										"stat":"minecraft:netherrack",
+										"value":{
+										  "min":50
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":5
+	}
+}

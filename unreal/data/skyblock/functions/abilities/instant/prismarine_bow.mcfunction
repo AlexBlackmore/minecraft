@@ -9,7 +9,7 @@ scoreboard players operation @p[predicate=skyblock:prismarine_bow] damage += @p[
 scoreboard players add @p[predicate=skyblock:prismarine_bow] damage 30
 
 execute store result score @e[tag=prismarine_bow] health run data get entity @e[limit=1,tag=prismarine_bow] Health
-execute if score @e[tag=prismarine_bow] health < @p[predicate=skyblock:prismarine_bow] damage run kill @e[tag=prismarine_bow]
+execute if score @e[limit=1,tag=prismarine_bow] health < @p[predicate=skyblock:prismarine_bow] damage run kill @e[tag=prismarine_bow]
 scoreboard players operation @e[tag=prismarine_bow] health -= @p[predicate=skyblock:prismarine_bow] damage
 execute store result entity @e[limit=1,tag=prismarine_bow] Health float 1 run scoreboard players get @e[limit=1,tag=prismarine_bow] health
 

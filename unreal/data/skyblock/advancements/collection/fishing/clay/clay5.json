@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/fishing/clay/clay4",
+  "display":{
+    "icon":{
+      "item":"minecraft:fishing_rod"
+    },
+    "title":"Clay V",
+    "description":"Dig 2,500 clay. Unlocks Farmer's Rod recipe.",
+    "frame":"challenge",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "clay":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:clay",
+                    "value":{
+                      "min":2500
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":250
+	}
+}

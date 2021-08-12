@@ -6,15 +6,15 @@
       "nbt":"{display:{color:13391104}}"
     },
     "title":"Pumpkin XI",
-    "description":"Harvest 250,000 pumpkins.",
-    "frame":"task",
+    "description":"Harvest 250,000 pumpkins. Unlocks Ranger's Boots recipe.",
+    "frame":"challenge",
     "show_toast":true,
     "announce_to_chat":true,
     "hidden":false
   },
   "criteria":{
     "pumpkin":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -37,5 +37,8 @@
         ]
       }
     }
-  }
+  },
+	"rewards":{
+		"experience":25000
+	}
 }

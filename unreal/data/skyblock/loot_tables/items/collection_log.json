@@ -1,0 +1,41 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:book",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+				  display:{
+                  Name:\"{\\\"text\\\":\\\"Collection Log\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+					\"\\\" \\\"\",
+					\"{\\\"text\\\":\\\"Ability: Collector\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"{\\\"text\\\":\\\"Sleeping in a bed while holding\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+					\"{\\\"text\\\":\\\"this book can be used to advance\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+					\"{\\\"text\\\":\\\"that item's Collection. If your\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+					\"{\\\"text\\\":\\\"offhand matches the requirements\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+					\"{\\\"text\\\":\\\"for a locked Collection\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+					\"{\\\"text\\\":\\\"advancement, the items are\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+					\"{\\\"text\\\":\\\"consumed and the advancement is\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+					\"{\\\"text\\\":\\\"granted.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+					\"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
+                  ]
+                },
+                Enchantments:[
+                  {id:\"unbreaking\",lvl:1}
+                ],
+                HideFlags:1
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

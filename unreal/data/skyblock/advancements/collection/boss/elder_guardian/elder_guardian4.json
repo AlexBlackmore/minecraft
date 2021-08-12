@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/boss/elder_guardian/elder_guardian3",
+  "display":{
+    "icon":{
+      "item":"minecraft:boss_rod"
+    },
+    "title":"Elder Guardian IV",
+    "description":"Kill 250 Elder Guardians. Unlocks Stereo Pants recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "elder_guardian":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:elder_guardian",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":2500
+	}
+}

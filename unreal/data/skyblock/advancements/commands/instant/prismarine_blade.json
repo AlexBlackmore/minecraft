@@ -1,0 +1,43 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Prismarine Blade",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"cleaver":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Prismarine Blade\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+								}
+							},
+							"location":{
+								"fluid":{
+									"tag":"minecraft:water"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"rewards":{
+		"function":"skyblock:abilities/instant/prismarine_blade"
+	}
+}

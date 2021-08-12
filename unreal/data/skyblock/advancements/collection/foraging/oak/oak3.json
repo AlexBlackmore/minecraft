@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/foraging/oak/oak2",
+  "display":{
+    "icon":{
+      "item":"minecraft:leather_chestplate",
+      "nbt":"{display:{color:5098573}}"
+    },
+    "title":"Oak III",
+    "description":"Chop 250 oak logs. Unlocks Leaflet Armor recipes.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "oak":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:oak_log",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":25
+	}
+}

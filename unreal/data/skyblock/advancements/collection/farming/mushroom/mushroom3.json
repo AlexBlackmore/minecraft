@@ -6,7 +6,7 @@
       "nbt":"{display:{color:16711680}}"
     },
     "title":"Mushroom III",
-    "description":"Harvest 250 mushroom blocks.",
+    "description":"Harvest 250 mushroom blocks. Unlocks Mushroom Armor recipes.",
     "frame":"task",
     "show_toast":true,
     "announce_to_chat":true,
@@ -14,7 +14,7 @@
   },
   "criteria":{
     "red_mushroom":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -38,7 +38,7 @@
       }
     },
     "brown_mushroom":{
-      "trigger":"minecraft:item_durability_changed",
+      "trigger":"minecraft:slept_in_bed",
       "conditions":{
         "player":[
           {
@@ -66,5 +66,8 @@
 	[
 		"red_mushroom","brown_mushroom"
 	]
-  ]
+  ],
+  "rewards":{
+	"experience":25
+  }
 }
