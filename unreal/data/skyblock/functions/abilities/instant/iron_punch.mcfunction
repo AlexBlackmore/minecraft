@@ -1,6 +1,6 @@
 execute at @p[predicate=skyblock:golem_sword] run tag @e[type=!player,distance=0..3] add iron_punch
 
-execute at @p[predicate=skyblock:golem_sword] run playsound minecraft:entity.iron_golem.attack player @p
+execute at @p[predicate=skyblock:golem_sword] run playsound minecraft:entity.iron_golem.damage player @p
 execute at @p[predicate=skyblock:golem_sword] run particle minecraft:explosion_emitter ~ ~ ~
 
 execute store result score @p[predicate=skyblock:golem_sword] damage run data get entity @p[predicate=skyblock:golem_sword] XpLevel

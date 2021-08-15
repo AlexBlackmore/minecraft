@@ -1,0 +1,33 @@
+{
+	"function":"set_attributes",
+	"modifiers":[
+		{
+			"name":"Light",
+			"attribute":"generic.max_health",
+			"operation":"addition",
+			"amount":3,
+			"slot":"feet"
+		},
+		{
+			"name":"Light",
+			"attribute":"generic.armor",
+			"operation":"addition",
+			"amount":0.8,
+			"slot":"feet"
+		},
+		{
+			"name":"Light",
+			"attribute":"generic.movement_speed",
+			"operation":"multiply_base",
+			"amount":0.04,
+			"slot":"feet"
+		},
+		{
+			"name":"Light",
+			"attribute":"generic.attack_speed",
+			"operation":"multiply",
+			"amount":0.04,
+			"slot":"feet"
+		}
+	]
+}
