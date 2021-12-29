@@ -1,0 +1,128 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_chestplate",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Rotten Chestplate","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"This rotten piece of armor","italic":false,"color":"gray"},
+										["",{"text":"grants ","italic":false,"color":"gray"},{"text":"15%","italic":false,"color":"yellow"},{"text":" knockback resistance","italic":false,"color":"gray"}],
+										{"text":"to arrows per piece worn.","italic":false,"color":"gray"},
+										{"text":" "},
+										{"text":"Full Set Bonus: Sieve Body","italic":false,"color":"gold"},
+										["",{"text":"Grants an additional ","italic":false,"color":"gray"},{"text":"20%","italic":false,"color":"yellow"}],
+										{"text":"knockback resistance to arrows.","italic":false,"color":"gray"},
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								}
+							],
+							"conditions":[
+								{
+									"condition":"random_chance_with_looting",
+									"chance":0.05,
+									"looting_multiplier":0.01
+								}
+							]
+						},
+						{
+							"type":"item",
+							"name":"minecraft:leather_chestplate",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Rotten Chestplate","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"This rotten piece of armor","italic":false,"color":"gray"},
+										["",{"text":"grants ","italic":false,"color":"gray"},{"text":"15%","italic":false,"color":"yellow"},{"text":" knockback resistance","italic":false,"color":"gray"}],
+										{"text":"to arrows per piece worn.","italic":false,"color":"gray"},
+										{"text":" "},
+										{"text":"Full Set Bonus: Sieve Body","italic":false,"color":"gold"},
+										["",{"text":"Grants an additional ","italic":false,"color":"gray"},{"text":"20%","italic":false,"color":"yellow"}],
+										{"text":"knockback resistance to arrows.","italic":false,"color":"gray"},
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"functions":[
+		{
+			"function":"minecraft:set_nbt",
+			"tag":"{
+				display:{
+					color:97585
+				},
+				HideFlags:64,
+				Name:\"Rotten Chestplate\"
+			}"
+		},
+		{
+			"function":"minecraft:enchant_with_levels",
+			"treasure":true,
+			"levels":30
+		},
+		{
+			"function":"minecraft:set_attributes",
+			"modifiers":[
+				{
+					"name":"Max Health",
+					"attribute":"generic.max_health",
+					"operation":"addition",
+					"amount":25,
+					"slot":"chest"
+				},
+				{
+					"name":"Attack Damage",
+					"attribute":"generic.attack_damage",
+					"operation":"addition",
+					"amount":4,
+					"slot":"chest"
+				},
+				{
+					"name":"Knockback Resistance",
+					"attribute":"generic.knockback_resistance",
+					"operation":"addition",
+					"amount":0.15,
+					"slot":"chest"
+				}
+			]
+		},
+		{
+			"function":"minecraft:set_damage",
+			"damage":{
+						"type":"uniform",
+						"min":0.0,
+						"max":1.0
+			}
+		}
+	]
+}

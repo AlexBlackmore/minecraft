@@ -1,0 +1,89 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mooshroom_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Tier III amount: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "1",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Minimum: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Tier III",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Odds: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Pray RNGesus ",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Required LVL: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "5",
+                    "color": "yellow",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Red Claw Egg",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

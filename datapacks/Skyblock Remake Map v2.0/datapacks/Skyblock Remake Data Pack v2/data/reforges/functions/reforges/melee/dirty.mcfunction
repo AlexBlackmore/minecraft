@@ -1,0 +1,39 @@
+function reforges:store_stats
+data modify storage blue:reforge Item.tag.Base.Reforge set value "Dirty"
+execute if data storage blue:reforge Item.tag.Base{Rarity:"COMMON"} run scoreboard players add Strength ReforgeStats 2
+execute if data storage blue:reforge Item.tag.Base{Rarity:"COMMON"} run scoreboard players add Strength BReforgeStats 2
+execute if data storage blue:reforge Item.tag.Base{Rarity:"COMMON"} run scoreboard players add AtkSpd ReforgeStats 2
+execute if data storage blue:reforge Item.tag.Base{Rarity:"COMMON"} run scoreboard players add AtkSpd BReforgeStats 2
+execute if data storage blue:reforge Item.tag.Base{Rarity:"COMMON"} run scoreboard players add Ferocity ReforgeStats 2
+execute if data storage blue:reforge Item.tag.Base{Rarity:"COMMON"} run scoreboard players add Ferocity BReforgeStats 2
+execute if data storage blue:reforge Item.tag.Base{Rarity:"UNCOMMON"} run scoreboard players add Strength ReforgeStats 4
+execute if data storage blue:reforge Item.tag.Base{Rarity:"UNCOMMON"} run scoreboard players add Strength BReforgeStats 4
+execute if data storage blue:reforge Item.tag.Base{Rarity:"UNCOMMON"} run scoreboard players add AtkSpd ReforgeStats 3
+execute if data storage blue:reforge Item.tag.Base{Rarity:"UNCOMMON"} run scoreboard players add AtkSpd BReforgeStats 3
+execute if data storage blue:reforge Item.tag.Base{Rarity:"UNCOMMON"} run scoreboard players add Ferocity ReforgeStats 3
+execute if data storage blue:reforge Item.tag.Base{Rarity:"UNCOMMON"} run scoreboard players add Ferocity BReforgeStats 3
+execute if data storage blue:reforge Item.tag.Base{Rarity:"RARE"} run scoreboard players add Strength ReforgeStats 6
+execute if data storage blue:reforge Item.tag.Base{Rarity:"RARE"} run scoreboard players add Strength BReforgeStats 6
+execute if data storage blue:reforge Item.tag.Base{Rarity:"RARE"} run scoreboard players add AtkSpd ReforgeStats 5
+execute if data storage blue:reforge Item.tag.Base{Rarity:"RARE"} run scoreboard players add AtkSpd BReforgeStats 5
+execute if data storage blue:reforge Item.tag.Base{Rarity:"RARE"} run scoreboard players add Ferocity ReforgeStats 6
+execute if data storage blue:reforge Item.tag.Base{Rarity:"RARE"} run scoreboard players add Ferocity BReforgeStats 6
+execute if data storage blue:reforge Item.tag.Base{Rarity:"EPIC"} run scoreboard players add Strength ReforgeStats 10
+execute if data storage blue:reforge Item.tag.Base{Rarity:"EPIC"} run scoreboard players add Strength BReforgeStats 10
+execute if data storage blue:reforge Item.tag.Base{Rarity:"EPIC"} run scoreboard players add AtkSpd ReforgeStats 10
+execute if data storage blue:reforge Item.tag.Base{Rarity:"EPIC"} run scoreboard players add AtkSpd BReforgeStats 10
+execute if data storage blue:reforge Item.tag.Base{Rarity:"EPIC"} run scoreboard players add Ferocity ReforgeStats 9
+execute if data storage blue:reforge Item.tag.Base{Rarity:"EPIC"} run scoreboard players add Ferocity BReforgeStats 9
+execute if data storage blue:reforge Item.tag.Base{Rarity:"LEGENDARY"} run scoreboard players add Strength ReforgeStats 12
+execute if data storage blue:reforge Item.tag.Base{Rarity:"LEGENDARY"} run scoreboard players add Strength BReforgeStats 12
+execute if data storage blue:reforge Item.tag.Base{Rarity:"LEGENDARY"} run scoreboard players add AtkSpd ReforgeStats 15
+execute if data storage blue:reforge Item.tag.Base{Rarity:"LEGENDARY"} run scoreboard players add AtkSpd BReforgeStats 15
+execute if data storage blue:reforge Item.tag.Base{Rarity:"LEGENDARY"} run scoreboard players add Ferocity ReforgeStats 12
+execute if data storage blue:reforge Item.tag.Base{Rarity:"LEGENDARY"} run scoreboard players add Ferocity BReforgeStats 12
+execute if data storage blue:reforge Item.tag.Base{Rarity:"MYTHIC"} run scoreboard players add Strength ReforgeStats 15
+execute if data storage blue:reforge Item.tag.Base{Rarity:"MYTHIC"} run scoreboard players add Strength BReforgeStats 15
+execute if data storage blue:reforge Item.tag.Base{Rarity:"MYTHIC"} run scoreboard players add AtkSpd ReforgeStats 20
+execute if data storage blue:reforge Item.tag.Base{Rarity:"MYTHIC"} run scoreboard players add AtkSpd BReforgeStats 20
+execute if data storage blue:reforge Item.tag.Base{Rarity:"MYTHIC"} run scoreboard players add Ferocity ReforgeStats 15
+execute if data storage blue:reforge Item.tag.Base{Rarity:"MYTHIC"} run scoreboard players add Ferocity BReforgeStats 15
+function reforges:apply_stats

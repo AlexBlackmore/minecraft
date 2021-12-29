@@ -1,0 +1,67 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:skeleton_skull",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Skeleton Hat","italic":false,"color":"white"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Your arrows have a ","italic":false,"color":"gray"},{"text":"20%","italic":false,"color":"green"},{"text":" chance to","italic":false,"color":"gray"}],
+										["",{"text":"explode on impact, dealing","italic":false,"color":"gray"}],
+										["",{"text":"10","italic":false,"color":"red"},{"text":" ability damage to all mobs","italic":false,"color":"gray"}],
+										["",{"text":"within ","italic":false,"color":"gray"},{"text":"8","italic":false,"color":"yellow"},{"text":" blocks. Damage","italic":false,"color":"gray"}],
+										["",{"text":"increases based on your current","italic":false,"color":"gray"}],
+										["",{"text":"XP","italic":false,"color":"aqua"},{"text":" level.","italic":false,"color":"gray"}],
+										["",{"text":"(+1% damage/level)","italic":false,"color":"dark_gray"}],
+										{"text":" "},
+										{"text":"COMMON","bold":true,"color":"white"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Skeleton Hat\",
+										Intelligence:10
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+10 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Speed",
+											"attribute":"generic.movement_speed",
+											"operation":"multiply_base",
+											"amount":0.02,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

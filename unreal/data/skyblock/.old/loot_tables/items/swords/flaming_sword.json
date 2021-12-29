@@ -1,0 +1,61 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:iron_sword",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Flaming Sword","italic":false,"color":"yellow"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ignites mobs on fire for","italic":false,"color":"gray"}],
+										["",{"text":"4","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"UNCOMMON","bold":true,"color":"yellow"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Flaming Sword\"
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"fire_aspect":1,
+										"sharpness":20
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":4,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

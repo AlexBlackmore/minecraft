@@ -1,0 +1,2 @@
+execute if data storage skyblock:personal_compactors {slot:"minecraft:brown_mushroom"} run function personal_compactors:compact/materials/brown_mushroom
+execute if data storage skyblock:personal_compactors {slot:"minecraft:glowstone_dust"} run function personal_compactors:compact/materials/glowstone_dust

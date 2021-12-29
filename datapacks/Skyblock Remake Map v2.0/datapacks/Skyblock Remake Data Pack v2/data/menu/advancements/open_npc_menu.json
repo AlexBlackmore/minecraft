@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "h": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:chest_minecart",
+                    "nbt": "{Tags:[\"NPCMenu\",\"MenuChest\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "menu:open_npc_menu"
+    }
+}

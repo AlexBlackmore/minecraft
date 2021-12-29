@@ -1,0 +1,46 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:leather_chestplate"
+		},
+		"title":"Gottagofast",
+		"description":"Wear the full Speedster Armor.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"head":{
+									"nbt":"{Name:\"Speedster Helmet\"}"
+								},
+								"chest":{
+									"nbt":"{Name:\"Speedster Chestplate\"}"
+								},
+								"legs":{
+									"nbt":"{Name:\"Speedster Leggings\"}"
+								},
+								"feet":{
+									"nbt":"{Name:\"Speedster Boots\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+    "rewards": {
+        "experience":5
+    }
+}

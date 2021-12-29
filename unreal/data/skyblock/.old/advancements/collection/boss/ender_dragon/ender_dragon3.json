@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/boss/ender_dragon/ender_dragon2",
+  "display":{
+    "icon":{
+      "item":"minecraft:dragon_head"
+	},
+    "title":"Ender Dragon III",
+    "description":"Kill 150 Ender Dragons.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "ender_dragon":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:ender_dragon",
+                    "value":{
+                      "min":150
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":1500
+	}
+}

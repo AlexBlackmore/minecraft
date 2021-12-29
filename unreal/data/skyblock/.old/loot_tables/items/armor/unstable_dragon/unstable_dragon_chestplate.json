@@ -1,0 +1,47 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_chestplate",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Unstable Dragon Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Ability: Unstable Blood\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Strikes nearby mobs with\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"lightning. It's unstable!\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"Deals 600 damage to all mobs\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"within 7 blocks.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"Cooldown: \\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_gray\\\"},{\\\"text\\\":\\\"10s\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\",
+					\"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"+5% Crit Chance\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+                    \"{\\\"text\\\":\\\"+15% Crit Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"
+                  ],
+                  color:11670243
+                },
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:24,Operation:0,UUID:[I;713486813,516178374,64679703,689283060]},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:32,Operation:0,UUID:[I;368734456,225241802,518124146,328364501]},
+                  {Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;351899239,523753251,554841624,270818497]}
+                ],
+                HideFlags:64,
+				Name:\"Unstable Dragon Chestplate\",
+				Crit_Chance:5,
+				Crit_Damage:15
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

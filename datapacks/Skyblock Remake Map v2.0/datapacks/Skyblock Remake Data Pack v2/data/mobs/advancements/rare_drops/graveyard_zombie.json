@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:zombie",
+                    "nbt": "{Tags:[\"GraveyardZombie\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mobs:rare_drops/graveyard_zombie"
+    }
+}

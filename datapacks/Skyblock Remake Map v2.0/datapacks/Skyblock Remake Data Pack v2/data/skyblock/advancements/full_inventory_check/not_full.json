@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "inventory_not_full": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "slots": {
+                    "occupied": {
+                        "max": 35
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "skyblock:full_inventory_check/not_full"
+    }
+}

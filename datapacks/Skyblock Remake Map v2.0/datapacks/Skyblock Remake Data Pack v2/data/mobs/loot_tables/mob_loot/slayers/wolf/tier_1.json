@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{}],Base:{Type:\"\",Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Wolf Tooth\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"UNCOMMON\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

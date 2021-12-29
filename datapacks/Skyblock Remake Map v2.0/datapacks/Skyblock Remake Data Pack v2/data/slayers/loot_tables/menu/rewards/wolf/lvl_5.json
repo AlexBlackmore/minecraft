@@ -1,0 +1,149 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Bulldozer",
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Rewards:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " Permanent +1% Crit Damage",
+                  "color": "blue",
+                  "italic": false
+                },
+                [           
+                  {
+                    "text": " Red Claw Ring",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " Edible Mace",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " Weird Tuba",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " Red Claw Artifact",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                }            
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Rewards claimed!",
+                  "color": "green",
+                  "italic": false
+                }    
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_WolfLvl": {
+                      "min": 5,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Level not reached!",
+                  "color": "red",
+                  "italic": false
+                }    
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_WolfLvl": 4
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Wolf Slayer LVL 5",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,SkullOwner:{Id:[I;-903112851,1937327098,-1258035656,1495487699],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2FmNTliOGFhMGY4MzU0NmVmMGQxNzhjY2Y4N2U3ZWQ4OGNmNzg1OGNhYWU3OWIzNjMzY2JkNzViNjUwNTI1ZiJ9fX0\"}]}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

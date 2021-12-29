@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "h": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:furnace_minecart",
+                    "nbt": "{Tags:[\"AddPetClickDetect\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pets:pet_click_detection/add_pet"
+    }
+}

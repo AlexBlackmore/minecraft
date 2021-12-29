@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+
+                    "type": "minecraft:zombified_piglin",
+                    "nbt": "{Tags:[\"Pigman\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mobs:combat_xp_drop/deep_caverns/pigman"
+    }
+}

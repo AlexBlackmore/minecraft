@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"CHESTPLATE\",Rarity:\"LEGENDARY\",RarityColor:'{\"text\":\"\",\"color\":\"gold\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Health:120,Defense:185,BaseHealth:120,BaseDefense:185,Abilities:[{Name:\"Protective Blood\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:[],display:{Name:'[{\"text\":\"Protector Dragon Chetsplate\",\"color\":\"gold\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+120 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+185\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Protective Blood\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Increases the defense of each \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"armor piece by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+1% ❈ \",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"for each missing \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"percent of HP.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"LEGENDARY CHESTPLATE\",\"color\":\"gold\",\"italic\":false,\"bold\":true}]'],color:10065803}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

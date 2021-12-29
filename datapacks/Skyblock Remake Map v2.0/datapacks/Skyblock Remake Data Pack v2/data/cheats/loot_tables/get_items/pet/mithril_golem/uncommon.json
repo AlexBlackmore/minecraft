@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-172545706,-983283734,-2008399980,-754564622],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzFiMmRmZThlZDVkZmZjNWIxNjg3YmMxYzI0OWMzOWRlMmQ4YTZjM2Q5MDMwNWM5NWY2ZDFhMWEzMzBhMGIxIn19fQ==\"}]}},Base:{Type:\"PET\",PetData:{MinRarity:\"COMMON\",MaxRarity:\"LEGENDARY\",Name:\"Mithril Golem\",Skill:\"Mining\",Mount:0b,Current:{PetItem:\"\",Level:1,Ability:[[0d],[0d],[0d]],XP:0,NextLevelXP:175},XPTable:\"UNCOMMON\",Stats:{TrueDef:0.5d}},Rarity:\"UNCOMMON\",RarityID:2,RarityColor:'{\"text\":\"\",\"color\":\"green\"}',TrueDef:0d,AbilitiesAmount:3,Abilities:[{Name:\"Mithril Affinity\",Type:\"Pet Ability\",Description:['[{\"text\":\"Mithril Affinity\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility1\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\" \",\"color\":\"green\",\"italic\":false},{\"text\":\"⸕ Mining Speed\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"when mining \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Mithril\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:1},{Name:\"The Smell Of Powder\",Type:\"Pet Ability\",Description:['[{\"text\":\"The Smell Of Powder\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility2\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\"% \",\"color\":\"green\",\"italic\":false},{\"text\":\"more \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Mithril\",\"color\":\"dark_green\",\"italic\":false}]','[{\"text\":\"Powder\",\"color\":\"dark_green\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:3},{Name:\"Danger Averse\",Type:\"Pet Ability\",Description:['[{\"text\":\"Danger Averse\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Increases your combat stats by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility3\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\"% \",\"color\":\"green\",\"italic\":false},{\"text\":\"on mining islands\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:5}],AbilityBonuses:[[1d],[0.2d],[0.2d]]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"[Lvl 1] \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Mithril Golem\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Mining Pet\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"True Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Mithril Affinity\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+1 \",\"color\":\"green\",\"italic\":false},{\"text\":\"⸕ Mining Speed\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"when mining \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Mithril\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"UNCOMMON\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:zombie.spawn_reinforcements",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

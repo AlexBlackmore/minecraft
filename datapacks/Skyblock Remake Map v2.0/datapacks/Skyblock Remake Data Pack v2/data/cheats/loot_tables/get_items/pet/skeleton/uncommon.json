@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-1721420959,2132232296,-1355036325,-1032568994],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAxMjY4ZTljNDkyZGExZjBkODgyNzFjYjQ5MmE0YjMwMjM5NWY1MTVhN2JiZjc3ZjRhMjBiOTVmYzAyZWIyIn19fQ==\"}]}},Base:{Type:\"PET\",PetData:{MinRarity:\"COMMON\",MaxRarity:\"LEGENDARY\",Name:\"Skeleton\",Skill:\"Combat\",Mount:0b,Current:{PetItem:\"\",Level:1,Ability:[[0d],[0d],[]],XP:0,NextLevelXP:100},XPTable:\"COMMON\",Stats:{CritChan:0.15d,CritDmg:0.3d}},Rarity:\"COMMON\",RarityID:1,RarityColor:'{\"text\":\"\",\"color\":\"white\"}',CritChan:0d,CritDmg:0d,AbilitiesAmount:3,Abilities:[{Name:\"Bone Arrows\",Type:\"Pet Ability\",Description:['[{\"text\":\"Bone Arrows\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Increase arrow damage by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility1\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\"%\",\"color\":\"green\",\"italic\":false},{\"text\":\" which is tripled while\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"in dungeons\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:1},{Name:\"Combo\",Type:\"Pet Ability\",Description:['[{\"text\":\"Combo\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Gain a combo stack for every\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"bow hit granting +\",\"color\":\"gray\",\"italic\":false},{\"text\":\"3 \",\"color\":\"green\",\"italic\":false},{\"text\":\"❁\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Strength\",\"color\":\"red\",\"italic\":false},{\"text\":\". Max \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility2\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\" \",\"color\":\"green\",\"italic\":false},{\"text\":\"stacks,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"stacks disappear after 8\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"seconds.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:3},{Name:\"Skeletal Defense\",Type:\"Pet Ability\",Description:['[{\"text\":\"Skeletal Defense\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Your skeleton shoots an arrow\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"dealing \",\"color\":\"gray\",\"italic\":false},{\"text\":\"60x \",\"color\":\"green\",\"italic\":false},{\"text\":\"your \",\"color\":\"gray\",\"italic\":false},{\"text\":\"☠ Crit\",\"color\":\"blue\",\"italic\":false}]','[{\"text\":\"Damage \",\"color\":\"blue\",\"italic\":false},{\"text\":\"when a mob gets close\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"to you (5s cooldown)\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:5}],AbilityBonuses:[[0.2d],[0.2d],[]]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"[Lvl 1] \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Skeleton\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Combat Pet\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Crit Chance: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Crit Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Bone Arrows\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Increase arrow damage by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"0%\",\"color\":\"green\",\"italic\":false},{\"text\":\" which is tripled while\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"in dungeons\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:zombie.spawn_reinforcements",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

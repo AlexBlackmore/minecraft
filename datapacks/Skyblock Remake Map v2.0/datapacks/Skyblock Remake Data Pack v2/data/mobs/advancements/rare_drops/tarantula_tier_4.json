@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:zombie",
+                    "nbt": "{Tags:[\"TarantulaBroodfather\",\"Tier4\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mobs:rare_drops/tarantula/tier_4"
+    }
+}

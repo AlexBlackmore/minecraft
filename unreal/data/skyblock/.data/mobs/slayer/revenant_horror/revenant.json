@@ -1,0 +1,24 @@
+summon zombie ~ ~ ~ {
+	CustomName:"{\"text\":\"Revenant\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock","revenant"],
+	AbsorptionAmount:976,
+	Health:1024,
+	Attributes:[
+		{Name:"generic.max_health",Base:1024},
+		{Name:"generic.attack_damage",Base:40}
+	],
+	HandItems:[
+		{},
+		{}
+	],
+	ArmorItems:[
+		{},
+		{},
+		{},
+		{}
+	],
+	HandDropChances:[0.0f,0.0f],
+	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+	DeathLootTable:"skyblock:mobs/slayer/revenant_horror/revenant"
+}

@@ -1,0 +1,2 @@
+execute if score @s WitherPos matches ..251 run function armor:full_set_bonus/abilities/witherborn/witherpos/8/178
+execute if score @s WitherPos matches 252.. run function armor:full_set_bonus/abilities/witherborn/witherpos/8/179

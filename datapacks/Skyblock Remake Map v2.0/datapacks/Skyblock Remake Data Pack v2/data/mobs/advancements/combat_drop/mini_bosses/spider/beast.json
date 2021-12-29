@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+
+                    "type": "minecraft:spider",
+                    "nbt": "{Tags:[\"TarantulaBeast\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mobs:combat_xp_drop/mini_bosses/spider/beast"
+    }
+}

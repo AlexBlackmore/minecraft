@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;1831929395,-1049277625,-1834256510,-2017756578],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzZmY2QzZWMzYmM4NGJhZmI0MTIzZWE0Nzk0NzFmOWQyZjQyZDhmYjljNWYxMWNmNWY0ZTBkOTMyMjYifX19\"}]}},Base:{Type:\"PET\",PetData:{MinRarity:\"COMMON\",MaxRarity:\"LEGENDARY\",Name:\"Horse\",Skill:\"Combat\",Mount:1b,Current:{PetItem:\"\",Level:1,Ability:[[0d],[0d]],XP:0,NextLevelXP:100},XPTable:\"COMMON\",Stats:{Speed:0.25d,Intel:0.5d}},Rarity:\"COMMON\",RarityID:1,RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Speed:0d,Intel:0d,AbilitiesAmount:2,Abilities:[{Name:\"Run\",Type:\"Pet Ability\",Description:['[{\"text\":\"Run\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Increases the speed of\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"your mount by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility1\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\"%\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:3},{Name:\"Ride Into Battle\",Type:\"Pet Ability\",Description:['[{\"text\":\"Ride Into Battle\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"While riding your horse, gain\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"gain +\",\"color\":\"gray\",\"italic\":false},{\"text\":\"\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility2\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\"%\",\"color\":\"green\",\"italic\":false},{\"text\":\" bow damage.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:5}],AbilityBonuses:[[1.2d],[0.25d]]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"[Lvl 1] \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Horse\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Combat Pet\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Speed: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:zombie.spawn_reinforcements",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

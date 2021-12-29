@@ -1,0 +1,179 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+		CustomName:"{\"text\":\"Gold Forger\"}"
+		CustomNameVisible:true
+		PersistenceRequired:true
+		Silent:true
+		CanPickUpLoot:false
+		Willing:false
+		NoAI:false
+		VillagerData:{
+			level:5
+			profession:"armorer"
+			type:"plains"
+		}
+		Attributes:[
+			{
+				Name:"generic.movement_speed"
+				Base:0
+			}
+		]
+		Offers:{
+			Recipes:[
+				{
+					buyB:{
+						id:"writable_book"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Gold Forger>\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"{\"text\":\"I love goooold!\"\"italic\":false\"color\":\"white\"}"
+								]
+							}
+							HideFlags:32
+						}
+					}
+					rewardExp:false
+					maxUses:0
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:7
+					}
+					sell:{
+						id:"gold_ingot"
+						Count:20
+					}
+					rewardExp:false
+					maxUses:32
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:2
+					}
+					sell:{
+						id:"golden_helmet"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Golden Helmet\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+									"\" \""
+								]
+							}
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:3
+					}
+					sell:{
+						id:"golden_chestplate"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Golden Chestplate\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+									"\" \""
+								]
+							}
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:3
+					}
+					sell:{
+						id:"golden_leggings"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Golden Leggings\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+									"\" \""
+								]
+							}
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:2
+					}
+					sell:{
+						id:"golden_boots"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Golden Boots\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+									"\" \""
+								]
+							}
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:2
+					}
+					sell:{
+						id:"golden_sword"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Fancy Sword\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+									"\" \""
+									"{\"text\":\"First Strike\"\"italic\":false\"color\":\"blue\"}"
+									"{\"text\":\"Scavenger\"\"italic\":false\"color\":\"blue\"}"
+									"{\"text\":\"Vampirism\"\"italic\":false\"color\":\"blue\"}"
+								]
+							}
+							Enchantments:[
+								{id:"sharpness"lvl:2}
+							]
+							Name:"Fancy Sword"
+							First_Strike:1
+							Scavenger:1
+							Vampirism:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+			]
+		}
+	}
+	display:{
+		Name:"{\"text\":\"Gold Forager\"}"
+	}
+}

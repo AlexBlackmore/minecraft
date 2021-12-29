@@ -1,0 +1,76 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_helmet",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Salmon Helmet","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Water Burst","italic":false,"color":"gold"},{"text":" SNEAK","bold":true,"color":"yellow"}],
+										["",{"text":"Sneaking in water while wearing","italic":false,"color":"gray"}],
+										["",{"text":"the full set grants ","italic":false,"color":"gray"},{"text":"5","italic":false,"color":"green"},{"text":" seconds of","italic":false,"color":"gray"}],
+										["",{"text":"Dolphin's Grace","italic":false,"color":"#88A3BE"},{"text":".","italic":false,"color":"gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"20 XP","italic":false,"color":"aqua"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:12663823
+										},
+										HideFlags:64,
+										Name:\"Salmon Helmet\",
+										Ability:true
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":7,
+											"slot":"head"
+										},
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":16,
+											"slot":"head"
+										},
+										{
+											"name":"Luck",
+											"attribute":"generic.luck",
+											"operation":"addition",
+											"amount":1.5,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

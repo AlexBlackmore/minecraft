@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_chestplate",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Sponge Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Full Set Bonus: Absorb\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Doubles your \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\" while in\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"{\\\"text\\\":\\\"water.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\",
+										\"\\\" \\\"\",
+									],
+									color:16768081
+								},
+								AttributeModifiers:[
+									{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:29,Operation:0,UUID:[I;907346316,891726802,463612406,292238881]},
+									{Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;521499699,82509285,949138009,887226172]},
+									{Slot:\"chest\",AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:0.018,Operation:2,UUID:[I;225315995,422616537,820418412,499731239]}
+								],
+								HideFlags:64,
+								Name:\"Sponge Chestplate\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

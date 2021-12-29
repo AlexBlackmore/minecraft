@@ -1,0 +1,46 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:leather_chestplate"
+		},
+		"title":"Absorb it all!",
+		"description":"Wear a full set of Sponge Armor.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"head":{
+									"nbt":"{Name:\"Sponge Helmet\"}"
+								},
+								"chest":{
+									"nbt":"{Name:\"Sponge Chestplate\"}"
+								},
+								"legs":{
+									"nbt":"{Name:\"Sponge Leggings\"}"
+								},
+								"feet":{
+									"nbt":"{Name:\"Sponge Boots\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+    "rewards": {
+        "experience":10
+    }
+}

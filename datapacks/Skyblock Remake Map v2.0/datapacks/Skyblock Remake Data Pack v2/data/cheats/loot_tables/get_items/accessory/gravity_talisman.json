@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-903112851,1937327098,-1258035656,1495487699],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE1MjYzMmE5YzhmN2JkZTk0NzE5MDY0MjM0OTIwZGVkNDg2MTRlMmJkOGJjOTFhZmU3ZmZjMmNkOGE0NmYxOSJ9fX0\"}]}},Base:{Type:\"ACCESSORY\",Rarity:\"UNCOMMON\",CraftingRemoveCounts:[16,16,16,16,16,16,16,16,16],RarityColor:'{\"text\":\"\",\"color\":\"green\"}',Reforge:\"\",AccessoryFamily:\"GravityTalisman\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Gives between \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+1 \",\"color\":\"green\",\"italic\":false},{\"text\":\"and \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+10 \",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"❁Strength \",\"color\":\"red\",\"italic\":false},{\"text\":\"and \",\"color\":\"gray\",\"italic\":false},{\"text\":\"❈ Defense\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"the closer you are to the\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Spawn ofan Island\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Gravity Talisman\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Gives between \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+1 \",\"color\":\"green\",\"italic\":false},{\"text\":\"and \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+10 \",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"❁ Strength \",\"color\":\"red\",\"italic\":false},{\"text\":\"and \",\"color\":\"gray\",\"italic\":false},{\"text\":\"❈Defense\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"the closer you are to the\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"spawn of an Island\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"UNCOMMON ACCESSORY\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

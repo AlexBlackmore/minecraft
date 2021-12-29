@@ -1,0 +1,68 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Mushroom Leggings","italic":false,"color":"white"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Night Affinity","italic":false,"color":"gold"},
+										{"text":"Grants the wearer with permanent","italic":false,"color":"gray"},
+										["",{"text":"Night Vision","italic":false,"color":"#1f1fa1"},{"text":" while worn, and","italic":false,"color":"gray"}],
+										{"text":"during the night, the stats of","italic":false,"color":"gray"},
+										["",{"text":"the armor pieces are ","italic":false,"color":"gray"},{"text":"tripled","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"COMMON","bold":true,"color":"white"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:16711680
+										},
+										HideFlags:64,
+										Name:\"Mushroom Leggings\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Heath",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":2,
+											"slot":"legs"
+										},
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":1,
+											"slot":"legs"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

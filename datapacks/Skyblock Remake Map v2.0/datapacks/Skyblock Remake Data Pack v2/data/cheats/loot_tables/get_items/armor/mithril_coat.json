@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"CHESTPLATE\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\",Defense:125,BaseDefense:125,Speed:15,BaseSpeed:15,Abilities:[{Name:\"Mithril's Protection\",Activation:\"\",Type:\"Item Ability\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Mithril\\'s Protection\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Any damage taken is max \",\"color\":\"gray\",\"italic\":false},{\"text\":\"40%\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"of the wearer\\'s \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"❤ Health\",\"color\":\"red\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"Regeneration\",\"color\":\"red\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" when this\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"ability activates.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Mithril Coat\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+125\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Speed: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+15\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Mithril\\'s Protection\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Any damage taken is max \",\"color\":\"gray\",\"italic\":false},{\"text\":\"40%\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"of the wearer\\'s \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"❤ Health\",\"color\":\"red\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"Regeneration\",\"color\":\"red\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" when this\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"ability activates.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC CHESTPLATE\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet",
+                    "legs",
+                    "chest",
+                    "head"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

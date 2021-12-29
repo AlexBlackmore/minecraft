@@ -1,0 +1,65 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:warped_fungus_on_a_stick",
+			"functions": [
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "text": "Currently: ",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+					  "text": "Enabled",
+					  "color": "green",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": "If enabled, players will need to slay",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "the previous slayer tiers first.",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Click to toggle!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": {
+				  "text": "Slayer Requirements",
+				  "color": "gold",
+				  "italic": false
+				}
+			  },
+			  {
+				  "function": "set_nbt",
+				  "entity" : "this",
+				  "tag" : "{SkyblockMenu:1b,CustomModelData:40}"
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

@@ -1,0 +1,78 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+		CustomName:"{\"text\":\"Walter\"}"
+		CustomNameVisible:true
+		PersistenceRequired:true
+		Silent:true
+		CanPickUpLoot:false
+		Willing:false
+		NoAI:false
+		VillagerData:{
+			level:5
+			profession:"nitwit"
+			type:"plains"
+		}
+		Attributes:[
+			{
+				Name:"generic.movement_speed"
+				Base:0
+			}
+		]
+		Offers:{
+			Recipes:[
+				{
+					buyB:
+					{
+						id:"writable_book"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Walter>\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"{\"text\":\"With the right tools you can\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"get through anything!\"\"italic\":false\"color\":\"white\"}"
+								]
+							}
+							HideFlags:32
+						}
+					}
+					rewardExp:false
+					maxUses:0
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:50
+					}
+					sell:{
+						id:"tnt"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Superboom TNT\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"{\"text\":\"Fuse will ignite once placed.\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+								]
+							}
+							BlockEntityTag:{
+								Fuse:80
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+			]
+		}
+	}
+	display:{
+		Name:"\"Walter\""
+	}
+}

@@ -1,0 +1,4026 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Beginner",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Health: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " ???",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Damage ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "???",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "???",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPReward",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "TempXPReward": {
+                      "min": 1,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000,
+                      "max": 999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000,
+                      "max": 999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000,
+                      "max": 999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": 0,
+                    "1TempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": 0,
+                    "1TempComma": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": 0,
+                    "1TempComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": 0,                 
+                    "1TempComma": {
+                      "min": 100,
+                      "max": 999
+                    }
+                 }
+                } 
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1TempComma": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            }, 
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1TempComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1TempComma": {
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1TempComma": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1TempComma": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1TempComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1TempComma": {
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },  
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1TempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1TempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1TempComma": 0
+                  }
+                }
+              ]
+            },       
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1TempBeforeComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1TempComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1TempBeforeComma": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1TempComma": {
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1TempBeforeComma": 0,
+                    "1TempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1TempBeforeComma": 0,
+                    "1TempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1TempBeforeComma": 0,
+                    "1TempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1TempComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1TempComma2": {
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPReward",
+                      "objective": "S_ZInfos"
+                  },
+                      "color": "light_purple",
+                      "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPReward",
+                      "objective": "S_ZInfos"
+                  },
+                      "color": "light_purple",
+                      "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPReward",
+                      "objective": "S_ZInfos"
+                  },
+                      "color": "light_purple",
+                      "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                  },
+                      "color": "light_purple",
+                      "italic": false
+                  },
+                  {
+                    "text": ",000",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                      "1TempComma" :{
+                        "min": 1,
+                        "max": 999
+                      },
+                      "1TempBeforeComma": 0,
+                      "1TempComma2": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Reward: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "0",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1XPRewardBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Zombie Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempXPReward": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1TempBeforeComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1TempComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "   + Boss drops",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1Cost",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "TempXPReward": {
+                      "min": 1,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000,
+                      "max": 999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000,
+                      "max": 999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000,
+                      "max": 999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": 0,
+                    "1CTempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": 0,
+                    "1CTempComma": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": 0,
+                    "1CTempComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": 0,                 
+                    "1CTempComma": {
+                      "min": 100,
+                      "max": 999
+                    }
+                 }
+                } 
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1CTempComma": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            }, 
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1CTempComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1CTempComma": {
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1CTempComma": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1CTempComma": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1CTempComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1CTempComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1CTempComma2" :{
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1CTempComma": {
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },  
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",00",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1CTempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1CTempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1CTempComma": 0
+                  }
+                }
+              ]
+            },       
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1CTempBefComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1CTempComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1CTempBefComma": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1CTempComma": {
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1,
+                      "max": 9
+                    },
+                    "1CTempBefComma": 0,
+                    "1CTempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1CTempBefComma": 0,
+                    "1CTempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostBefComma",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1000000,
+                      "max": 999999999
+                    },
+                    "1CTempBefComma": {
+                      "min": 10,
+                      "max": 99
+                    },
+                    "1CTempComma": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma2",
+                      "objective": "S_ZInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ",",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": "000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 100,
+                      "max": 999
+                    },
+                    "1CTempBefComma": 0,
+                    "1CTempComma": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1Cost",
+                      "objective": "S_ZInfos"
+                  },
+                      "color": "gold",
+                      "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 10,
+                      "max": 99
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1Cost",
+                      "objective": "S_ZInfos"
+                  },
+                      "color": "gold",
+                      "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 100,
+                      "max": 999
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1Cost",
+                      "objective": "S_ZInfos"
+                  },
+                      "color": "gold",
+                      "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "1TempCost": {
+                      "min": 1,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier1CostComma",
+                      "objective": "S_ZInfos"
+                  },
+                      "color": "gold",
+                      "italic": false
+                  },
+                  {
+                    "text": ",000",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                      "1CTempComma" :{
+                        "min": 1,
+                        "max": 999
+                      },
+                      "1CTempBefComma": 0,
+                      "1CTempComma2": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "FREE!",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                      "1TempCost" : 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Cannot afford quest!",
+                  "color": "red",
+                  "italic": false
+                }
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "Tier1Test": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Click to slay!",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "Tier1Test": 1
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Revenant Horror I",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

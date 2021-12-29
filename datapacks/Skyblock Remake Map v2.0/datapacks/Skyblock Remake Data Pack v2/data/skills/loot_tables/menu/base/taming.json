@@ -1,0 +1,101 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:ghast_spawn_egg",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{Damage:0,SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"Taming " ,"color":"green","italic":false},{"score": {"name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4,limit=1]","objective": "S_Taming"},"color": "green","italic": false}],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "S_Taming": {
+						"min": 1,
+						"max": 10000
+					  }
+					}
+				  }
+				]
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"Taming" ,"color":"green","italic":false}],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "S_Taming": 0
+					}
+				  }
+				]
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Level up pets to earn Taming XP!","color":"gray","italic":false}, {"text":" "}, [{"text":"Progress to Level ","color":"gray","italic":false},{"score": {"name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]","objective": "S_TamingN"},"color": "gray","italic": false},{"text":": ","color":"gray","italic":false},{"score": {"name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]","objective": "S_TamingP"},"color": "yellow","italic": false},{"text":"%","color":"gold"}],[{"score": {"name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]","objective": "S_TamingEXP"},"color": "yellow","italic": false},{"text": "/","color": "gold","italic": false},{"score": {"name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]","objective": "S_TamingEXPN"},"color": "yellow","italic": false}]],
+				"entity": "this",
+			    "conditions": [
+				{
+				  "condition": "minecraft:inverted",
+				  "term": {
+				    "condition": "minecraft:value_check",
+				    "value": {
+					  "type": "minecraft:score",
+					  "target": "this",
+					  "score": "S_Taming"
+				    },
+				    "range": {
+				  	  "min": {
+					    "type": "minecraft:score",
+					    "target": "this",
+					    "score": "S_MaxTaming"
+					  },
+					  "max": 10000
+					}
+				  }
+				}
+			  ]
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Level up pets to earn Taming XP!","color":"gray","italic":false}, {"text":" "},[{"text":"You have reached the max","color":"dark_gray","italic":true}],[{"text":"level for this Skill!","color":"dark_gray","italic":true}]],
+				"entity": "this",
+			    "conditions": [
+				{
+				    "condition": "minecraft:value_check",
+				    "value": {
+					  "type": "minecraft:score",
+					  "target": "this",
+					  "score": "S_Taming"
+				    },
+				    "range": {
+				  	  "min": {
+					    "type": "minecraft:score",
+					    "target": "this",
+					    "score": "S_MaxTaming"
+					  },
+					  "max": 10000
+					}
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

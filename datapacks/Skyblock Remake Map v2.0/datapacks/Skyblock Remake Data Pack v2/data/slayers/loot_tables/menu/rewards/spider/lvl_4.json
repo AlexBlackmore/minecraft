@@ -1,0 +1,125 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Destroyer",
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Rewards:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " Permanent +1% Crit Damage",
+                  "color": "blue",
+                  "italic": false
+                },
+                [           
+                  {
+                    "text": " Tarantula Leggings",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " Tarantula Boots",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                }            
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Rewards claimed!",
+                  "color": "green",
+                  "italic": false
+                }    
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_SpiderLvl": {
+                      "min": 4,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Level not reached!",
+                  "color": "red",
+                  "italic": false
+                }    
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_SpiderLvl": 3
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Spider Slayer LVL 4",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,display:{color:0},HideFlags:63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

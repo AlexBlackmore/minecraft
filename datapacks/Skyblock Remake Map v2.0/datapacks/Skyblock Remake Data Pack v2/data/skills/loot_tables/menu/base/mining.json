@@ -1,0 +1,101 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{Damage:0,SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"Mining " ,"color":"green","italic":false},{"score": {"name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]","objective": "S_Mining"},"color": "green","italic": false}],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "S_Mining": {
+						"min": 1,
+						"max": 10000
+					  }
+					}
+				  }
+				]
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"Mining" ,"color":"green","italic":false}],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "S_Mining": 0
+					}
+				  }
+				]
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Spelunk islands for ores and","color":"gray","italic":false}, {"text":"valuable materials to earn","color":"gray","italic":false}, {"text":"Mining XP!","color":"gray","italic":false}, {"text":" "}, [{"text":"Progress to Level ","color":"gray","italic":false},{"score": {"name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]","objective": "S_MiningN"},"color": "gray","italic": false},{"text":": ","color":"gray","italic":false},{"score": {"name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]","objective": "S_MiningP"},"color": "yellow","italic": false},{"text":"%","color":"gold"}],[{"score":{"name":"@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]","objective":"S_MiningEXPp"},"color":"yellow","italic":false},{"text":".","color":"yellow","italic":false},{"score":{"name":"@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]","objective":"S_MiningEXPa"},"color":"yellow","italic":false},{"text":"/","color":"gold","italic":false},{"score":{"name":"@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]","objective":"S_MiningEXPNp"},"color":"yellow","italic":false},{"text":".","color":"yellow","italic":false},{"score":{"name":"@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]","objective":"S_MiningEXPNa"},"color":"yellow","italic":false}]],
+				"entity": "this",
+			    "conditions": [
+				{
+				  "condition": "minecraft:inverted",
+				  "term": {
+				    "condition": "minecraft:value_check",
+				    "value": {
+					  "type": "minecraft:score",
+					  "target": "this",
+					  "score": "S_Mining"
+				    },
+				    "range": {
+				  	  "min": {
+					    "type": "minecraft:score",
+					    "target": "this",
+					    "score": "S_MaxMining"
+					  },
+					  "max": 10000
+					}
+				  }
+				}
+			  ]
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Spelunk islands for ores and","color":"gray","italic":false}, {"text":"valuable materials to earn","color":"gray","italic":false}, {"text":"Mining XP!","color":"gray","italic":false}, {"text":" "},[{"text":"You have reached the max","color":"dark_gray","italic":true}],[{"text":"level for this Skill!","color":"dark_gray","italic":true}]],
+				"entity": "this",
+			    "conditions": [
+				{
+				    "condition": "minecraft:value_check",
+				    "value": {
+					  "type": "minecraft:score",
+					  "target": "this",
+					  "score": "S_Mining"
+				    },
+				    "range": {
+				  	  "min": {
+					    "type": "minecraft:score",
+					    "target": "this",
+					    "score": "S_MaxMining"
+					  },
+					  "max": 10000
+					}
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

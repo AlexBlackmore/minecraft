@@ -1,0 +1,68 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_chestplate",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Goblin Chestplate","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Smart Miner","italic":false,"color":"gold"}],
+										["",{"text":"Grants permanent ","italic":false,"color":"gray"},{"text":"Haste II","italic":false,"color":"#D9C043"},{"text":" and","italic":false,"color":"gray"}],
+										["",{"text":"Hunger","italic":false,"color":"#587653"},{"text":". The level of ","italic":false,"color":"gray"},{"text":"Haste","italic":false,"color":"#D9C043"},{"text":" given","italic":false,"color":"gray"}],
+										["",{"text":"increases based on your current","italic":false,"color":"gray"}],
+										["",{"text":"XP","italic":false,"color":"aqua"},{"text":" level, divided by ","italic":false,"color":"gray"},{"text":"15","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:3649602
+										},
+										HideFlags:64,
+										Name:\"Goblin Chestplate\",
+										Intelligence:-1
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"-1 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":28,
+											"slot":"chest"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

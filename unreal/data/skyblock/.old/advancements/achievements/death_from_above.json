@@ -1,0 +1,22 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+		  "item":"minecraft:iron_sword"
+		},
+		"title":"Death From Above",
+		"description":"Damage a mob using the Leaping Sword's ability.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:impossible"
+		}
+	},
+	"rewards":{
+		"experience":5
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"CryptGhoul\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mobs:rare_drops/crypt_ghoul"
+    }
+}

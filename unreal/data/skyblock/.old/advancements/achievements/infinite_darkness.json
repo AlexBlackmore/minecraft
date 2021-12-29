@@ -1,0 +1,23 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+		  "item":"minecraft:stick",
+		  "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+		},
+		"title":"Infinite Darkness",
+		"description":"Damage a squid with the Ink Wand ability.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:impossible"
+		}
+	},
+	"rewards":{
+		"experience":5
+	}
+}

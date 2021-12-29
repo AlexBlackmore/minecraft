@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+
+                    "type": "minecraft:enderman",
+                    "nbt": "{Tags:[\"StrongEnderman\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mobs:combat_xp_drop/the_end/strong_enderman"
+    }
+}

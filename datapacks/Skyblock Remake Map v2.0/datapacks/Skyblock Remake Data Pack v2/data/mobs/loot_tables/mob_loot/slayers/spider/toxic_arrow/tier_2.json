@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 16
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"\",Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Consumed on arrow shot\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"Arrows deal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+10%\",\"color\":\"dark_green\",\"italic\":false},{\"text\":\" damage\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"and reduces healing by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"24%\",\"color\":\"dark_green\",\"italic\":false}]','[{\"text\":\"over \",\"color\":\"gray\",\"italic\":false},{\"text\":\"4 \",\"color\":\"aqua\",\"italic\":false},{\"text\":\"seconds.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Toxic Arrow Poison\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Consumed on arrow shot\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"Arrows deal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+10%\",\"color\":\"dark_green\",\"italic\":false},{\"text\":\" damage\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"and reduces healing by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"24%\",\"color\":\"dark_green\",\"italic\":false}]','[{\"text\":\"over \",\"color\":\"gray\",\"italic\":false},{\"text\":\"4 \",\"color\":\"aqua\",\"italic\":false},{\"text\":\"seconds.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"UNCOMMON ARROW POISON\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+summon zombie ~ ~ ~ {
+	CustomName:"{\"text\":\"Crypt Ghoul\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock","crypt_ghoul"],
+	Health:400,
+	Attributes:[
+		{Name:"generic.max_health",Base:400},
+		{Name:"generic.attack_damage",Base:70}
+	],
+	HandItems:[
+		{
+		  id:"iron_sword",
+		  Count:1
+		},
+		{}
+	],
+	ArmorItems:[
+		{
+		  id:"chainmail_boots",
+		  Count:1
+		},
+		{
+		  id:"chainmail_leggings",
+		  Count:1
+		},
+		{
+		  id:"chainmail_chestplate",
+		  Count:1
+		},
+		{}
+	],
+	HandDropChances:[0.0f,0.0f],
+	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+	DeathLootTable:"skyblock:mobs/hub_island/crypt_ghoul"
+}

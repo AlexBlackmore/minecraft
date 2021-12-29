@@ -1,0 +1,53 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:diamond_sword",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Dark Katana","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"A blade that will not rest until"},
+								{"text":"the battle has been won."}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								CustomModelData:2,
+								Name:\"Dark Katana\",
+								Smiting:1
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":9.5,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-3,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

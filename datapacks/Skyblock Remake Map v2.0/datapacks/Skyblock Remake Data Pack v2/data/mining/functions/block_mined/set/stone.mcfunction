@@ -1,0 +1,2 @@
+setblock ~ ~ ~ stone
+kill @s

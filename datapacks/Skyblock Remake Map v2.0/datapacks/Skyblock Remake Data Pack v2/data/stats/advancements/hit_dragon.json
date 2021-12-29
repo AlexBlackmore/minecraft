@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "dragonhit": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:ender_dragon"
+                },
+                "damage": {
+                    "type": {
+                        "is_projectile": false
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "public_islands:the_end/main_sequence/dragon_hit"
+    }
+}

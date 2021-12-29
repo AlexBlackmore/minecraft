@@ -1,0 +1,54 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:diamond_sword",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Battlestaff of Terror","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"This staff overwhelms its target"},
+								{"text":"in battle to explosive effect."}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								CustomModelData:1,
+								Name:\"Battlestaff of Terror\",
+								Exploding:1
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":6.5,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-1.2,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

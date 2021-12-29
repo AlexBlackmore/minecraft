@@ -1,0 +1,3 @@
+execute if score @s P_ExtraSpeed matches 451 run attribute @s[scores={P_ExtraSpeed=451}] minecraft:generic.movement_speed base set 0.551
+execute if score @s P_ExtraSpeed matches 452 run attribute @s[scores={P_ExtraSpeed=452}] minecraft:generic.movement_speed base set 0.552
+execute if score @s P_ExtraSpeed matches 453 run attribute @s[scores={P_ExtraSpeed=453}] minecraft:generic.movement_speed base set 0.553

@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "shot": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "equipment": {
+                            "mainhand": {
+                                "item": "minecraft:bow"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "enchanting:temporary_defense/was_shot"
+    }
+}

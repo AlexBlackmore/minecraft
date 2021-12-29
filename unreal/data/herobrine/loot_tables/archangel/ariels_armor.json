@@ -1,35 +1,30 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"diamond_chestplate",
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{
-								display:{
-									Name:\"{\\\"text\\\":\\\"Ariel's Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
-									Lore:[
-                    \"{\\\"text\\\":\\\"Archangel Set\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_aqua\\\"}\",
-										\"\\\" \\\"\",
-										\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\"
-									]
-								},
-								Enchantments:[
-									{id:\"protection\",lvl:3},
-									{id:\"projectile_protection\",lvl:2},
-									{id:\"blast_protection\",lvl:2},
-									{id:\"thorns\",lvl:3},
-									{id:\"unbreaking\",lvl:6}
-								]
-							}"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:diamond_chestplate",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Ariel's Armor","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"protection":3,
+								"projectile_protection":2,
+								"blast_protection":2,
+								"thorns":3,
+								"unbreaking":10
+							}
+						}
+					]
+				}
+			]
+		}
+	]
 }
+

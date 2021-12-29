@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/armor/miner/boots",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Lore:['[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Protection 5\",\"italic\":false,\"color\":\"blue\"}]','[{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+\"},{\"italic\":false,\"color\":\"green\",\"text\":\"15\"},{\"italic\":false,\"color\":\"green\",\"text\":\" ❈ Defense\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Regeneration\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Regenerates \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5% \",\"color\":\"green\",\"italic\":false},{\"text\":\"of your max \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Health \",\"color\":\"red\",\"italic\":false},{\"text\":\"every second if you \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"have been out of combat for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"8 \",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"seconds.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Each piece of this armor \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"dramatically increases your \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"defense bonus when inside of a \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"mine.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE BOOTS\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']},Enchantments:[{}],Base:{Defense:20,Enchantments:[{protection:{identifier:1b,level:5,bonus:15}}]}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

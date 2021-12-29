@@ -1,0 +1,26 @@
+execute as @e[type=item,tag=!Treecapitator,distance=..7] store result score @s Temp run data get entity @s Age
+execute if entity @s[scores={U_WPick=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_SPick=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_GPick=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_IPick=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_DPick=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_NPick=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_WAxe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_SAxe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_GAxe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_IAxe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_DAxe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_NAxe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_WHoe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_SHoe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_GHoe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_IHoe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_DHoe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_NHoe=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_WShovel=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_SShovel=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_GShovel=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_IShovel=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_DShovel=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_NShovel=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items
+execute if entity @s[scores={U_Shears=1..}] if entity @e[type=item,scores={Temp=0..10},distance=..7] run function enchanting:enchants/telekinesis/items

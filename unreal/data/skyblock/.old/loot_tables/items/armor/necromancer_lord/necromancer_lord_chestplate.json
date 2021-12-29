@@ -1,0 +1,84 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_chestplate",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Necromancer Lord Chestplate","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Soul Whisper","italic":false,"color":"gold"},
+										["",{"text":"Increases the damage of","italic":false,"color":"gray"}],
+										["",{"text":"Necromancy Golems by +20%.","italic":false,"color":"gray"},{"text":"+20%","italic":false,"color":"red"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Allows you to summon ","italic":false,"color":"gray"},{"text":"1","italic":false,"color":"green"},{"text":" extra","italic":false,"color":"gray"}],
+										["",{"text":"Golem when using Necromancy.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:0
+										},
+										HideFlags:64,
+										Name:\"Necromancer Lord Chestplate\"
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+10 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Max Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":60,
+											"slot":"chest"
+										},
+										{
+											"name":"Armor",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":50,
+											"slot":"chest"
+										},
+										{
+											"name":"Armor Toughness",
+											"attribute":"generic.armor_toughness",
+											"operation":"addition",
+											"amount":2,
+											"slot":"chest"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

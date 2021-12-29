@@ -1,0 +1,171 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:golden_hoe",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{Damage:0,SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": [
+				  {
+					"text": "Farming Collection",
+					"color": "green",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "View your Farming Collection!",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": " "
+				  },
+				  [
+					{
+					  "text": "Collection Unlocked: ",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_FarmingP"
+					  },
+					  "color": "yellow"
+					},
+					{
+					  "text": "%",
+					  "color": "gold"
+					}
+				  ],
+				  [
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_Farming"
+					  },
+					  "color": "yellow",
+					  "italic": false
+					},
+					{
+					  "text": "/",
+					  "color": "gold",
+					  "italic": false
+					},
+					{
+					  "text": "17",
+					  "color": "yellow",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": " "
+				  },
+				  {
+					"text": "Click to view!",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_Farming": {
+						"min": 0,
+						"max": 16
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "View your Farming Collection!",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": " "
+				  },
+				  [
+					{
+					  "text": "Collection Maxed Out: ",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_Farming_MaxP"
+					  },
+					  "color": "yellow"
+					},
+					{
+					  "text": "%",
+					  "color": "gold"
+					}
+				  ],
+				  [
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_Farming_Max"
+					  },
+					  "color": "yellow",
+					  "italic": false
+					},
+					{
+					  "text": "/",
+					  "color": "gold",
+					  "italic": false
+					},
+					{
+					  "text": "17",
+					  "color": "yellow",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": " "
+				  },
+				  {
+					"text": "Click to view!",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_Farming": 17
+					}
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

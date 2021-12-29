@@ -1,0 +1,477 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobweb",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "You've slain the boss!",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "SkyBlock is now a little",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "safer thanks to you!",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Boss:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Tarantula Broodfather I",
+                    "color": "green",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_CQuestTier": 1
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Boss:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Tarantula Broodfather II",
+                    "color": "yellow",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_CQuestTier": 2
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Boss:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Tarantula Broodfather III",
+                    "color": "red",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_CQuestTier": 3
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Boss:",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " Tarantula Broodfather IV",
+                    "color": "dark_red",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_CQuestTier": 4
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                {
+                  "text": "Time to spawn: ",
+                  "color": "dark_gray",
+                  "italic": false
+                  
+                },
+                {
+                  "score": {
+                    "name": "Minutes",
+                    "objective": "S_TimeToSpawn"
+                  },
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": "m",
+                  "color": "dark_gray",
+                  "italic": false
+                  
+                },
+                {
+                  "score": {
+                    "name": "Seconds",
+                    "objective": "S_TimeToSpawn"
+                  },
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": "s",
+                  "color": "dark_gray",
+                  "italic": false
+                  
+                }
+              ]
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                {
+                  "text": "Time to kill: ",
+                  "color": "dark_gray",
+                  "italic": false
+                  
+                },
+                {
+                  "score": {
+                    "name": "Minutes",
+                    "objective": "S_TimeToKill"
+                  },
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": "m",
+                  "color": "dark_gray",
+                  "italic": false
+                  
+                },
+                {
+                  "score": {
+                    "name": "Seconds",
+                    "objective": "S_TimeToKill"
+                  },
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": "s",
+                  "color": "dark_gray",
+                  "italic": false
+                  
+                }
+              ]
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "",
+                  "color": "red",
+                  "bold": true,
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                {
+                  "text": "Reward: ",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false
+                },
+                {
+                  "score": {
+                    "name": "Tier1XPReward",
+                    "objective": "S_SInfos"
+                  },
+                  "color": "dark_purple",
+                  "italic": false
+                },
+                {
+                  "text": " Spider Slayer XP",
+                  "color": "dark_purple",
+                  "bold": false,
+                  "italic": false
+                }
+              ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_CQuestTier": 1
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                {
+                  "text": "Reward: ",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false
+                },
+                {
+                  "score": {
+                    "name": "Tier2XPReward",
+                    "objective": "S_SInfos"
+                  },
+                  "color": "dark_purple",
+                  "italic": false
+                },
+                {
+                  "text": " Spider Slayer XP",
+                  "color": "dark_purple",
+                  "bold": false,
+                  "italic": false
+                }
+              ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_CQuestTier": 2
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                {
+                  "text": "Reward: ",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false
+                },
+                {
+                  "score": {
+                    "name": "Tier3XPReward",
+                    "objective": "S_SInfos"
+                  },
+                  "color": "dark_purple",
+                  "italic": false
+                },
+                {
+                  "text": " Spider Slayer XP",
+                  "color": "dark_purple",
+                  "bold": false,
+                  "italic": false
+                }
+              ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_CQuestTier": 3
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                {
+                  "text": "Reward: ",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false
+                },
+                {
+                  "score": {
+                    "name": "Tier4XPReward",
+                    "objective": "S_SInfos"
+                  },
+                  "color": "dark_purple",
+                  "italic": false
+                },
+                {
+                  "text": " Spider Slayer XP",
+                  "color": "dark_purple",
+                  "bold": false,
+                  "italic": false
+                }
+              ]
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_CQuestTier": 4
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "",
+                  "color": "red",
+                  "bold": true,
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                {
+                  "text": "Click to claim reward!",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false
+                }
+              ]
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Slayer Quest Complete!",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

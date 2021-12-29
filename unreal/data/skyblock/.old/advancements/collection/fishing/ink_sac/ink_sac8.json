@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/fishing/ink_sac/ink_sac7",
+  "display":{
+    "icon":{
+      "item":"minecraft:player_head",
+	  "nbt":"{SkullOwner:{Id:[I;179050314,-1693233975,-1733827507,-258087747],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWEzMTZkNTg1Yjc4OWI1ODJmMmQ5OWU4ZTZjYjJkNzA0MzNlODk5NmZhYjAyNGE3NGJjNzkwZTIyYWVkY2RlYiJ9fX0=\"}]}}}"
+    },
+    "title":"Ink Sac VIII",
+    "description":"Kill 2,500 squid. Unlocks Bait Ring recipe.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "ink_sac":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:squid",
+                    "value":{
+                      "min":2500
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":250
+	}
+}

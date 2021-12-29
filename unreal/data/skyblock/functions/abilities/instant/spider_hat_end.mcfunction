@@ -1,1 +1,0 @@
-attribute @p minecraft:generic.armor_toughness modifier remove 603-316-330-164-28

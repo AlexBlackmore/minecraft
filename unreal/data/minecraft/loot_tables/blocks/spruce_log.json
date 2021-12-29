@@ -1,90 +1,82 @@
 {
-  "type": "minecraft:block",
-  "pools":[
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:spruce_planks",
-              "conditions": [
-                {
-                  "condition":"entity_properties",
-                  "entity":"this",
-                  "predicate":{
-                    "equipment":{
-                      "mainhand":{
-                        "item":"iron_axe",
-                        "count":1,
-                        "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Efficient Axe\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
-                      }
-                    }
-                  }
-                }
-              ],
-              "functions":[
-                {
-                  "function":"set_count",
-                  "count":5
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:spruce_log"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"loot_table",
-          "name":"skyblock:sweet_axe"
-        }
-      ],
-      "conditions":[
-        {
-          "condition":"entity_properties",
-          "entity":"this",
-          "predicate":{
-            "equipment":{
-              "mainhand":{
-                "item":"iron_axe",
-                "count":1,
-                "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Sweet Axe\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
-              }
-            }
-          }
-        }
-      ]
-    },
-	{
-		"rolls":1,
-		"entries":[
-			{
-				"type":"loot_table",
-				"name":"skyblock:krampus_helmet"
-			}
-		],
-		"conditions":[
-			{
-				"condition":"entity_properties",
-				"entity":"this",
-				"predicate":{
-					"equipment":{
-						"head":{
-							"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Krampus Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+	"type": "minecraft:block",
+	"pools":[
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:spruce_planks",
+							"conditions": [
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"mainhand":{
+												"nbt":"{Name:\"Efficient Axe\"}"
+											}
+										}
+									}
+								}
+							],
+							"functions":[
+								{
+									"function":"set_count",
+									"count":5
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:spruce_log",
+							"functions":[
+								{
+									"function":"furnace_smelt",
+									"conditions": [
+										{
+											"condition":"entity_properties",
+											"entity":"this",
+											"predicate":{
+												"equipment":{
+													"mainhand":{
+														"nbt":"{Smelting_Touch:true}"
+													}
+												}
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:sweet_axe"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Name:\"Sweet Axe\"}"
+							}
 						}
 					}
 				}
-			}
-		]
-	}
-  ]
+			]
+		}
+	]
 }

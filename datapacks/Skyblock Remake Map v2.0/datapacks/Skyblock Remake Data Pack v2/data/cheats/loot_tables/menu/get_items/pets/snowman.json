@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/pet/missing/common"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/pet/missing/uncommon"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/pet/missing/rare"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/pet/missing/epic"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/pet/snowman/legendary"
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": "_________________",
+          "color": "dark_gray",
+          "bold": true,
+          "italic": false,
+          "underlined": true
+        },
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "NOTE: ",
+            "color": "red",
+            "bold": true,
+            "italic": false
+          },
+          {
+            "text": "The Ability of this pet",
+            "bold": false
+          }
+        ],
+        {
+          "text": "has not been coded yet.",
+          "color": "red",
+          "italic": false
+        },
+        {
+          "text": "BlueCommander on Youtube for updates.",
+          "color": "gray"
+        }
+      ],
+      "replace": false
+    },
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{SkyblockMenu:1b}"
+    }
+  ]
+}

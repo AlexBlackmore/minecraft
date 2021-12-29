@@ -1,0 +1,71 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tnt",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "Reset all stats!",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
+                "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [{
+                  "text": "Clicking this will reset all",
+                  "color": "gray",
+                  "italic": false
+                }],
+                [{
+                  "text": "slayer stats.",
+                  "color": "gray",
+                  "italic": false
+                }]
+             ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "",
+                  "color": "gray",
+                  "italic": false
+                }
+             ],
+             "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Click to reset!",
+                  "color": "yellow",
+                  "italic": false
+                }
+             ],
+             "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }    
+        ]
+      }
+    ]
+  }
+]
+}

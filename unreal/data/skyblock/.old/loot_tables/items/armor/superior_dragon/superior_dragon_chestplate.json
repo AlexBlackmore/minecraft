@@ -1,0 +1,47 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_chestplate",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Superior Dragon Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Bonus: Superior Blood\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Increases all stats by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+5%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\". Grants \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+50%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" ability damage when\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"using the Aspect of the Dragons.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\",
+					\"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"+2% Crit Chance\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+                    \"{\\\"text\\\":\\\"+10% Crit Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+                    \"{\\\"text\\\":\\\"+25 Intelligence\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"
+                  ],
+                  color:15916817
+                },
+                AttributeModifiers:[
+                  {Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:30,Operation:0,UUID:[I;713486813,516178374,64679703,689283060]},
+                  {Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:38,Operation:0,UUID:[I;368734456,225241802,518124146,328364501]},
+                  {Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;351899239,523753251,554841624,270818497]},
+                  {Slot:\"chest\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:2,Operation:0,UUID:[I;614555945,835029848,252318638,660915093]},
+                  {Slot:\"chest\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.03,Operation:1,UUID:[I;687802069,522694298,822686617,104009296]}
+                ],
+                HideFlags:64,
+				Name:\"Superior Dragon Chestplate\",
+				Crit_Chance:2,
+				Crit_Damage:10
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

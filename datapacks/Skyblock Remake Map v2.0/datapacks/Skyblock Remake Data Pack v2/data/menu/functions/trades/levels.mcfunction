@@ -1,0 +1,16 @@
+scoreboard players operation @p C_SeedsL = @s C_SeedsL
+scoreboard players operation @p C_OakL = @s C_OakL
+scoreboard players operation @p C_SpruceL = @s C_SpruceL
+scoreboard players operation @p C_BirchL = @s C_BirchL
+scoreboard players operation @p C_DarkoakL = @s C_DarkoakL
+scoreboard players operation @p C_AcaciaL = @s C_AcaciaL
+scoreboard players operation @p C_JungleL = @s C_JungleL
+scoreboard players operation @p C_BoneL = @s C_BoneL
+scoreboard players operation @p C_TropicalfishL = @s C_TropicalfishL
+scoreboard players operation @p C_MagmacreamL = @s C_MagmacreamL
+scoreboard players operation @p C_LeatherL = @s C_LeatherL
+scoreboard players operation @p C_SandL = @s C_SandL
+scoreboard players operation @p C_MushroomL = @s C_MushroomL
+scoreboard players operation @p C_NetherrackL = @s C_NetherrackL
+scoreboard players operation @p C_SpongeL = @s C_SpongeL
+scoreboard players operation @p C_EnderpearlL = @s C_EnderpearlL

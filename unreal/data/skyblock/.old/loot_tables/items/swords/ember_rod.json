@@ -1,0 +1,76 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:blaze_rod",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Ember Rod","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Fire Blast ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Shoots ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"green"},{"text":" Fireballs in rapid","italic":false,"color":"gray"}],
+										["",{"text":"succession in front of you,","italic":false,"color":"gray"}],
+										["",{"text":"dealing ","italic":false,"color":"gray"},{"text":"6","italic":false,"color":"red"},{"text":" ability damage.","italic":false,"color":"gray"}],
+										["",{"text":"Damage increases based on your","italic":false,"color":"gray"}],
+										["",{"text":"current ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" level, divided by ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+										["",{"text":"(Ability Damage: +1%/level)","italic":false,"color":"dark_gray"},{"text":"150 XP","italic":false,"color":"aqua"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"150 XP","italic":false,"color":"aqua"}],
+										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"30s","italic":false,"color":"green"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Ember Rod\",
+										Ability:true,
+										Intelligence:50
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+50 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":32
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":7,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

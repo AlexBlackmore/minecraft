@@ -1,0 +1,26 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "blue:block_helmet"
+    },
+    "ops": [
+      {
+        "source": "HelmetData",
+        "target": "Base",
+        "op": "replace"
+      },
+      {
+        "source": "HelmetLore",
+        "target": "display.Lore",
+        "op": "replace"
+      },
+      {
+        "source": "HelmetName",
+        "target": "display.Name",
+        "op": "replace"
+      }
+    ]
+  }
+]

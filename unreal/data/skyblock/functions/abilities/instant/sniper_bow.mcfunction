@@ -1,1 +1,0 @@
-data merge entity @e[limit=1,tag=calc] {NoGravity:true}

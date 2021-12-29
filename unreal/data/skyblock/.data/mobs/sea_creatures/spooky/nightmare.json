@@ -1,0 +1,12 @@
+summon zombie_horse ~ ~ ~ {
+	CustomName:"{\"text\":\"Nightmare\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock","sea_creature","nightmare"],
+	AbsorptionAmount:5976,
+	Health:1024,
+	Attributes:[
+		{Name:"generic.max_health",Base:1024},
+		{Name:"generic.attack_damage",Base:24}
+	],
+	DeathLootTable:"skyblock:mobs/sea_creatures/spooky/nightmare"
+}

@@ -1,0 +1,35 @@
+summon zombie ~ ~ ~ {
+	CustomName:"{\"text\":\"Knifethrower\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock","knifethrower"],
+	Health:160,
+	Attributes:[
+		{Name:"generic.max_health",Base:160},
+		{Name:"generic.attack_damage",Base:60}
+	],
+	HandItems:[
+		{
+			id:"iron_pickaxe",
+			Count:1
+		},
+		{}
+	],
+	ArmorItems:[
+		{
+			id:"leather_boots",
+			Count:1
+		},
+		{},
+		{},
+		{
+			id:"player_head",
+			Count:1,
+			tag:{
+				SkullOwner:{Id:[I;1642851210,-643216546,-1405170743,-286360250],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTcyODUwOTA2YjdmMGQ5NTJjMGU1MDgwNzNjYzQzOWZkMzM3NGNjZjViODg5YzA2ZjdlOGQ5MGNjMGNjMjU1YyJ9fX0="}]}}
+			}
+		}
+	],
+	HandDropChances:[0.0f,0.0f],
+	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+	DeathLootTable:"skyblock:mobs/dwarven_mines/goblin"
+}

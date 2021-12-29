@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"Enable this setting and","color":"gray","italic":false},{"text":"click any pet to convert it","color":"gray","italic":false},{"text":"to an item.","color":"gray","italic":false},{"text":""},{"text":"Enabled","color":"green","italic":false}
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [{"text":"Convert Pet to an Item","color":"green","italic":false}],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

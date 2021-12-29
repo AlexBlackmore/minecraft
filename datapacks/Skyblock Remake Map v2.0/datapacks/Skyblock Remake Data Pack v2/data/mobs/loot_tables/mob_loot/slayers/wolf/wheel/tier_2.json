@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_trapdoor",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{}],Base:{Type:\"\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"increases the speed of\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"your minion by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"50%\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"for 24 hours!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Hamster Wheel\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"increases the speed of\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"your minion by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"50%\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"for 24 hours!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

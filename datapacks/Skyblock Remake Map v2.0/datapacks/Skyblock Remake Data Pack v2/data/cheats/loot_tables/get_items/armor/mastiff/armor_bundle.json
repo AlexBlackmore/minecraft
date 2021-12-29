@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,SkullOwner: {Id: \"27508566-a773-3516-8903-9e405064893e\",Properties: {textures: [{Value: \"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzI4NTk1MGZkNjc4NThlNzZjNDM5YjBiNWI4N2M2OWE2YzUyYTRkZjkzNmUyMjRkODQzYjE0YzIyNTY1OTQ5ZSJ9fX0=\"}]}},Base:{Type:\"ARMOR SET\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",SlayerRequired:{Type:\"Wolf\",LVL:4},Health:500,Defense:-10000,Intel:125,BaseHealth:500,BaseDefense:-10000,BaseIntel:125,Abilities:[{Name:\"Absolute Unit\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Absolute Unit\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"+50❤ \",\"color\":\"red\",\"italic\":false},{\"text\":\"per \",\"color\":\"gray\",\"italic\":false},{\"text\":\"1% Crit Damage\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Regain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"2% \",\"color\":\"red\",\"italic\":false},{\"text\":\"of \",\"color\":\"gray\",\"italic\":false},{\"text\":\"max ❤ \",\"color\":\"red\",\"italic\":false},{\"text\":\"when hit. \",\"color\":\"gray\",\"italic\":false},{\"text\":\"(1s cd)\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"Receive \",\"color\":\"gray\",\"italic\":false},{\"text\":\"-20% \",\"color\":\"green\",\"italic\":false},{\"text\":\"damage from wolves.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Your crit damage is \",\"color\":\"gray\",\"italic\":false},{\"text\":\"50% \",\"color\":\"blue\",\"italic\":false},{\"text\":\"less effective.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Mastiff Armor Set\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+2000 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"-40000\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+150\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Absolute Unit\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"+50❤ \",\"color\":\"red\",\"italic\":false},{\"text\":\"per \",\"color\":\"gray\",\"italic\":false},{\"text\":\"1% Crit Damage\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Regain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"2% \",\"color\":\"red\",\"italic\":false},{\"text\":\"of \",\"color\":\"gray\",\"italic\":false},{\"text\":\"max ❤ \",\"color\":\"red\",\"italic\":false},{\"text\":\"when hit. \",\"color\":\"gray\",\"italic\":false},{\"text\":\"(1s cd)\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"Receive \",\"color\":\"gray\",\"italic\":false},{\"text\":\"-20% \",\"color\":\"green\",\"italic\":false},{\"text\":\"damage from wolves.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Your crit damage is \",\"color\":\"gray\",\"italic\":false},{\"text\":\"50% \",\"color\":\"blue\",\"italic\":false},{\"text\":\"less effective.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Wolf LVL 4\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"EPIC ARMOR SET\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']},SkullOwner:{Id:[I;-1681586911,1277641724,-1734706158,1434629882],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM5ZTQzZGI4M2E5NjZjNWI2ZjZjMDNhMTdkN2M2ZGE0YmExYjYyMmU2N2MyOGNlNjAxNzYwNzY4OWY2ZTIzMiJ9fX0=\"}]}}}"
+            }
+            ,
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": ["feet","legs","chest","head"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

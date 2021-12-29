@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+
+                    "type": "minecraft:zombie_villager",
+                    "nbt": "{Tags:[\"ZombieVillager\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mobs:combat_xp_drop/graveyard/zombie_villager"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+
+                    "type": "minecraft:skeleton",
+                    "nbt": "{Tags:[\"JockeySkeleton\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mobs:combat_xp_drop/spiders_den/jockey_skeleton"
+    }
+}

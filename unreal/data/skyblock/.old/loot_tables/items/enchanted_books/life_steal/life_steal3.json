@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:enchanted_book",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Enchanted Book","italic":false,"color":"white"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"Life Steal III","italic":false,"color":"blue"},
+										{"text":" "},
+										{"text":"COMMON","bold":true,"color":"white"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Enchanted Book\",
+										Life_Steal:3
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

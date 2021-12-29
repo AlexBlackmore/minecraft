@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-77257264,-1923593218,-1340379741,-1380803999],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTYyMDExNTI5NDE1NiwKICAicHJvZmlsZUlkIiA6ICI0NWY3YTJlNjE3ODE0YjJjODAwODM5MmRmN2IzNWY0ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJfSnVzdERvSXQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTA3NGE3YmQ5NzZmZTZhYmExNjI0MTYxNzkzYmU1NDdkNTRjODM1Y2Y0MjIyNDNhODUxYmEwOWQxZTY1MDU1MyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9\"}]}},Base:{Type:\"PET\",PetData:{MinRarity:\"LEGENDARY\",MaxRarity:\"LEGENDARY\",Name:\"Ammonite\",Skill:\"Fishing\",Mount:0b,Current:{PetItem:\"\",Level:1,Ability:[[],[],[]],XP:0,NextLevelXP:660},XPTable:\"LEGENDARY\",Stats:{SCChance:0.07d}},Rarity:\"LEGENDARY\",RarityID:5,RarityColor:'{\"text\":\"\",\"color\":\"gold\"}',SCChance:0d,AbilitiesAmount:3,Abilities:[{Name:\"Heart of the Sea\",Type:\"Pet Ability\",Description:['[{\"text\":\"Heart of the Sea\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Each Heart of the Mountain\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"level grants \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+\",\"color\":\"dark_aqua\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility1\",\"objective\":\"Temp\"},\"color\":\"dark_aqua\",\"italic\":false},{\"text\":\"α Sea Creature\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"Chance\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:5},{Name:\"Not a Snail\",Type:\"Pet Ability\",Description:['[{\"text\":\"Not a Snail\",\"color\":\"gold\",\"italic\":false}]','[]','[{\"text\":\"\"}]'],RarityID:5},{Name:\"Gift of the Ammonite\",Type:\"Pet Ability\",Description:['[{\"text\":\"Gift of the Ammonite\",\"color\":\"gold\",\"italic\":false}]','[]','[{\"text\":\"\"}]'],RarityID:5}],AbilityBonuses:[[0.01d],[0.02d],[0.006d]]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"[Lvl 1] \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Ammonite\",\"color\":\"gold\",\"italic\":false}]',Lore:['[{\"text\":\"Fishing Pet\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Sea Creature Chance: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Heart of the Sea\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Each Heart of the Mountain\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"level grants \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0α Sea Creature\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"Chance\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Not a Snail\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[]','[{\"text\":\"\"}]','[{\"text\":\"Gift of the Ammonite\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[]','[{\"text\":\"\"}]','[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"LEGENDARY\",\"color\":\"gold\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:zombie.spawn_reinforcements",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

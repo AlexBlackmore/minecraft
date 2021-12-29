@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "shot": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "bypasses_armor": true
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "stats:manual_damage/overrides/drown"
+    }
+}

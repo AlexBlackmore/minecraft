@@ -1,0 +1,27 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+		  "item":"minecraft:dragon_head",
+		},
+		"title":"Explosive Ending",
+		"description":"Survive a hit from an Unstable Dragon.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+    "criteria": {
+        "criterion": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"unstable_dragon\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience":5
+    }
+}

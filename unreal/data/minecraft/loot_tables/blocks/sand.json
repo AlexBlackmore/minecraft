@@ -1,63 +1,41 @@
 {
-  "type": "minecraft:block",
-  "pools": [
-  {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:glass",
-              "conditions": [
-                {
-                  "condition":"entity_properties",
-                  "entity":"this",
-                  "predicate":{
-                    "equipment":{
-                      "mainhand":{
-                        "nbt":"{display:{Lore:[\"{\\\"text\\\":\\\"Smelting Touch\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\"]}}"
-                      }
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:sand"
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ]
-    },
-	{
-		"rolls":1,
-		"entries":[
-			{
-				"type":"loot_table",
-				"name":"skyblock:krampus_helmet
-			}
-		],
-		"conditions":[
-			{
-				"condition":"entity_properties",
-				"entity":"this",
-				"predicate":{
-					"equipment":{
-						"head":{
-						  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Krampus Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1.0,
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:sand"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		}
+	],
+	"functions":[
+		{
+			"function":"explosion_decay"
+		},
+		{
+			"function":"furnace_smelt",
+			"conditions": [
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Smelting_Touch:true}"
+							}
 						}
 					}
 				}
-			}
-		]
-	}
-  ]
+			]
+		}
+	]
 }

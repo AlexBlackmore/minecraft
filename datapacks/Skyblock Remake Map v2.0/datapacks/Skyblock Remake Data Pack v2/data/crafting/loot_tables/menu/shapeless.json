@@ -1,0 +1,1313 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:5,RecipeData:[{id:\"minecraft:brown_mushroom\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:red_mushroom\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:redstone\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:glowstone_dust\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:bowl\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+								  "condition": "minecraft:entity_scores",
+								  "entity": "this",
+								  "scores": {
+									"C_MushroomL": {
+									  "min": 4,
+									  "max": 9
+									}
+								  }
+								}
+							],
+							"type": "item",
+							"name": "minecraft:map",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:1,mush:1b,mush1:1b,Base:{Type:\"\",Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,Unbreakable:1b,Enchantments:[{}],Description:['[{\"text\":\"Consuming this Mushroom Soup on your private island allows the player to fly for 2 minutes. Leaving the private island will pause the effect!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Magical Mushroom Soup\",\"color\":\"green\",\"italic\":false}]',Lore:['{\"text\":\"Consuming this Mushroom Soup on\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"your private island allows the\",\"color\":\"gray\",\"italic\":false}','[{\"text\":\"player to fly for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"2 minutes\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','{\"text\":\"Leaving the private island will\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"pause the effect!\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"UNCOMMON\",\"color\":\"green\",\"bold\":true,\"italic\":false}']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:5,RecipeData:[{id:\"minecraft:stick\",tag:{CustomModelData:7,Base:{Skyblock:1b}}},{id:\"minecraft:stick\",tag:{CustomModelData:58,Base:{Skyblock:1b}}},{id:\"minecraft:stick\",tag:{CustomModelData:60,Base:{Skyblock:1b}}},{id:\"minecraft:glowstone_dust\",tag:{Base:{Skyblock:1b}}},{id:\"minecraft:bowl\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+								  "condition": "minecraft:entity_scores",
+								  "entity": "this",
+								  "scores": {
+									"C_MushroomL": {
+									  "min": 7,
+									  "max": 9
+									}
+								  }
+								}
+							],
+							"type": "item",
+							"name": "minecraft:map",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:1,mush:1b,mush2:1b,Base:{Type:\"\",Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,Unbreakable:1b,Enchantments:[{}],Description:['[{\"text\":\"Consuming this Mushroom Soup on your private island allows the player to fly for 200 minutes. Leaving the private island will pause the effect!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Mystical Mushroom Soup\",\"color\":\"blue\",\"italic\":false}]',Lore:['{\"text\":\"Consuming this Mushroom Soup on\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"your private island allows the\",\"color\":\"gray\",\"italic\":false}','[{\"text\":\"player to fly for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"200 minutes\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','{\"text\":\"Leaving the private island will\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"pause the effect!\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"RARE\",\"color\":\"blue\",\"bold\":true,\"italic\":false}']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:3,RecipeData:[{id:\"minecraft:brown_mushroom\",tag:{RecipeTags:[\"COUNT_64+\"],Base:{Vanilla:1b}}},{id:\"minecraft:sugar\",tag:{RecipeTags:[\"COUNT_64+\"],Base:{Vanilla:1b}}},{id:\"minecraft:stick\",tag:{CustomModelData:68,RecipeTags:[\"COUNT_64+\"],Base:{Skyblock:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_SpidereyeL": {
+										"min": 7,
+										"max": 9
+									  }
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:fermented_spider_eye",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Enchantments:[{}],Base:{Skyblock:1b,Type:\"BREWING INGREDIENT\",Rarity:\"UNCOMMON\",CraftingRemoveCounts:[64,64,64],RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,display:{Name:'[{\"text\":\"Enchanted Fermented Spider Eye\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Brewing Ingredient\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"UNCOMMON\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:diorite\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:quartz\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:granite",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Granite\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:diorite\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:cobblestone\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:andesite",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Andesite\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:blaze_rod\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:popped_chorus_fruit\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:end_rod",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},display:{Name:'{\"text\":\"End Rod\",\"color\":\"blue\",\"italic\":false}',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:vine\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:cobblestone\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:mossy_cobblestone",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Mossy Cobblestone\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:vine\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:stone_bricks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:mossy_stone_bricks",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Mossy Stone Bricks\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:flint\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:flint_and_steel",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{HideFlags:63,Unbreakable:1b,Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Flint And Steel\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:tripwire_hook\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:chest\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:trapped_chest",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:3,RecipeData:[{id:\"minecraft:brown_mushroom\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:red_mushroom\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:bowl\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:mushroom_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Mushroom Stew\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:3,RecipeData:[{id:\"minecraft:pumpkin\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:sugar\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:egg\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:pumpkin_pie",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Pumpkin Pie\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:5,RecipeData:[{id:\"minecraft:cooked_rabbit\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:carrot\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:baked_potato\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:red_mushroom\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:bowl\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:rabbit_stew",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Rabbit Stew\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:3,RecipeData:[{id:\"minecraft:feather\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:ink_sac\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:book\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:writable_book",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Writable Book\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:ender_pearl\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:blaze_powder\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:ender_eye",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Ender Eye\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:3,RecipeData:[{id:\"minecraft:blaze_powder\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:coal\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gunpowder\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:fire_charge",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Fire Charge\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:carrot\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:fishing_rod\",tag:{Base:{Vanilla:1b},Damage:0}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:carrot_on_a_stick",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Carrot On A Stick\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:white_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:white_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"White Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:orange_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:orange_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Orange Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:magenta_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:magenta_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Magenta Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:light_blue_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:light_blue_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Light Blue Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:lime_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:lime_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Lime Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:yellow_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:yellow_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Yellow Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:pink_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:pink_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Pink Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:gray_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:gray_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Gray Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:light_gray_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:light_gray_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Light Gray Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:cyan_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:cyan_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Cyan Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:purple_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:purple_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Purple Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:blue_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:blue_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Blue Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:brown_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:brown_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Brown Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:green_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:green_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Green Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:red_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:red_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Red Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:9,RecipeData:[{id:\"minecraft:sand\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gravel\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:black_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:black_concrete_powder",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Black Concrete Powder\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:gray_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:light_gray_dye",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Light Gray Dye\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:black_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:gray_dye",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Gray Dye\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:red_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:yellow_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:orange_dye",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Orange Dye\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:green_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:lime_dye",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Lime Dye\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:blue_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:light_blue_dye",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Light Blue Dye\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:blue_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:green_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:cyan_dye",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Cyan Dye\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:blue_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:red_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:purple_dye",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Purple Dye\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:purple_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:pink_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:magenta_dye",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Magenta Dye\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:red_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_dye\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:pink_dye",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Pink Dye\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:light_gray_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:light_gray_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Light Gray Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:gray_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:gray_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Gray Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:black_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:black_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Black Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:red_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:red_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Red Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:orange_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:orange_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Orange Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:yellow_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:yellow_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Yellow Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:lime_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:lime_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Lime Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:green_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:green_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Green Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:light_blue_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:light_blue_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Light Blue Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:cyan_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:cyan_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Cyan Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:blue_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:blue_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Blue Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:purple_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:purple_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Purple Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:magenta_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:magenta_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Magenta Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:pink_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:pink_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Pink Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:brown_dye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:white_wool\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:brown_wool",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Brown Wool\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:2,RecipeData:[{id:\"minecraft:slime_ball\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:blaze_powder\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:magma_cream",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"BREWING INGREDIENT\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'[{\"text\":\"Magma Cream\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Brewing Ingredient\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:3,RecipeData:[{id:\"minecraft:spider_eye\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:brown_mushroom\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:sugar\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:fermented_spider_eye",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"BREWING INGREDIENT\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'[{\"text\":\"Fermented Spider Eye\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Brewing Ingredient\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeFilledSlots:8,RecipeData:[{id:\"minecraft:netherite_scrap\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:netherite_scrap\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:netherite_scrap\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:netherite_scrap\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:netherite_ingot",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'[{\"text\":\"Netherite Ingot\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Brewing Ingredient\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

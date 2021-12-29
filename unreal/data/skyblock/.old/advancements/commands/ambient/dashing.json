@@ -1,0 +1,98 @@
+{
+  "parent":"skyblock:commands/ambient",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Dashing",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":true
+  },
+  "criteria":{
+    "cheap_tuxedo":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "chest":{
+                  "nbt":"{Name:\"Cheap Tuxedo Jacket\"}"
+                },
+                "legs":{
+                  "nbt":"{Name:\"Cheap Tuxedo Pants\"}"
+                },
+                "feet":{
+                  "nbt":"{Name:\"Cheap Tuxedo Oxfords\"}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+	"fancy_tuxedo":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "chest":{
+                  "nbt":"{Name:\"Fancy Tuxedo Jacket\"}"
+                },
+                "legs":{
+                  "nbt":"{Name:\"Fancy Tuxedo Pants\"}"
+                },
+                "feet":{
+                  "nbt":"{Name:\"Fancy Tuxedo Oxfords\"}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+	"elegant_tuxedo":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "chest":{
+                  "nbt":"{Name:\"Elegant Tuxedo Jacket\"}"
+                },
+                "legs":{
+                  "nbt":"{Name:\"Elegant Tuxedo Pants\"}"
+                },
+                "feet":{
+                  "nbt":"{Name:\"Elegant Tuxedo Oxfords\"}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements":[
+	[
+		"cheap_tuxedo",
+		"fancy_tuxedo",
+		"elegant_tuxedo"
+	]
+  ],
+  "rewards":{
+    "function":"skyblock:abilities/ambient/dashing"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:golden_apple",
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"❤ Base Health ","color":"red","italic":false},{"score":{"name":"@s","objective":"P_BaseHealth"},"italic":false,"color":"white"},{"text":" HP","color":"white","italic":false}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Health is your total maximum","color":"gray","italic":false},{"text":"health. Your natural","color":"gray","italic":false},[{"text":"regeneration gives ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_RegenAmount"},"italic":false,"color":"green"},{"text":" HP","color":"green"}],[{"text":"every ","color":"gray","italic":false},{"text":"2s.","color":"green","italic":false}]],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:chainmail_chestplate",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Ember Ash Chestplate","italic":false,"color":"yellow"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Haste III","italic":false,"color":"gold"}],
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+60% Mining Speed","italic":false,"color":"blue"},{"text":" and","italic":false,"color":"gray"}],
+										["",{"text":"+30% Attack Speed","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"An old charred shadow of the","italic":false,"color":"gray"}],
+										["",{"text":"real thing leaving behind","italic":false,"color":"gray"}],
+										["",{"text":"streaks of coal on the wearer","italic":false,"color":"gray"}],
+										["",{"text":"from its shoddy construction.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"UNCOMMON","bold":true,"color":"yellow"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Ember Ash Chestplate\"
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"fortune":1
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":0,
+											"slot":"chest"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:name_tag",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Jacob's Ticket","italic":false,"color":"yellow"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"UNCOMMON","bold":true,"color":"yellow"}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										HideFlags:1,
+										Name:\"Jacob's Ticket\"
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"unbreaking":1
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

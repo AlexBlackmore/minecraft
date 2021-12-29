@@ -1,0 +1,489 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+    CustomName:"{\"text\":\"Jacob\"}"
+    CustomNameVisible:true
+    PersistenceRequired:true
+    Silent:true
+    CanPickUpLoot:false
+    Willing:false
+    NoAI:false
+    VillagerData:{
+      level:5
+      profession:"farmer"
+      type:"plains"
+    }
+    Attributes:[
+      {Name:"generic.movementSpeed"Base:0}
+    ]
+  	Offers:{
+  		Recipes:[
+			{
+				buyB:{
+					id:"writable_book"
+					Count:1
+					tag:{
+						display:{
+							Name:"{\"text\":\"<Jacob> Howdy!! Fine day eh?\"\"italic\":false\"color\":\"white\"}"
+							Lore:[
+								"[\"\"{\"text\":\"You wouldn't happen to be one\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"mighty find farmer eh?\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"Bring me \"\"italic\":false\"color\":\"white\"}{\"text\":\"rare enchanted crops\"\"italic\":false\"color\":\"aqua\"}{\"text\":\" to\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"earn \"\"italic\":false\"color\":\"white\"}{\"text\":\"Jacob's Tickets\"\"italic\":false\"color\":\"green\"}{\"text\":\" eh!\"\"italic\":false\"color\":\"white\"}]"
+							]
+						}
+						HideFlags:32
+					}
+				}
+				rewardExp:false
+				maxUses:0
+			}
+			{
+  				buy:{
+  					id:"player_head"
+  					Count:1
+					tag:{
+						SkullOwner:{Id:[I;-836258249-1454551839-1934061901-2067062849]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdjMzNjZDBjMTRiYTgzMGRhMTQ5OTA3ZjdhNmFhZTgzNWI2YTM1YWVhMDFlMGNlMDczZmIzYzU5Y2M0NjMyNiJ9fX0="}]}}
+						display:{
+							Name:"{\"text\":\"Tightly-Tied Hay Bale\"\"italic\":false\"color\":\"aqua\"}"
+							Lore:[
+								"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+							]
+						}
+						
+					}
+  				}
+  				sell:{
+  					id:"chest"
+  					Count:1
+					tag:{
+						display:{
+							Lore:[
+								"{\"text\":\"Jacob's Farming Contest Reward Chest\"\"italic\":false\"underlined\":true\"color\":\"red\"}"
+								"[\"\"{\"text\":\"Loot Chest\"\"italic\":false\"color\":\"blue\"}]"
+								"\" \""
+								"[\"\"{\"text\":\"1-25x Jacob's Tickets\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"1x Enchanted Book\"\"italic\":false\"color\":\"white\"}]"
+								"\" \""
+								"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+							]
+						}
+						BlockEntityTag:{
+							LootTable:"skyblock:farming_contest"
+						}
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+  					id:"golden_carrot"
+  					Count:1
+					tag:{
+						display:{
+							Name:"{\"text\":\"Enchanted Golden Carrot\"\"italic\":false\"color\":\"aqua\"}"
+							Lore:[
+								"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+							]
+						}
+						Enchantments:[
+							{id:"unbreaking"lvl:1}
+						]
+						HideFlags:1
+						
+					}
+  				}
+  				sell:{
+  					id:"chest"
+  					Count:1
+					tag:{
+						display:{
+							Lore:[
+								"{\"text\":\"Jacob's Farming Contest Reward Chest\"\"italic\":false\"underlined\":true\"color\":\"red\"}"
+								"[\"\"{\"text\":\"Loot Chest\"\"italic\":false\"color\":\"blue\"}]"
+								"\" \""
+								"[\"\"{\"text\":\"1-25x Jacob's Tickets\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"1x Enchanted Book\"\"italic\":false\"color\":\"white\"}]"
+								"\" \""
+								"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+							]
+						}
+						BlockEntityTag:{
+							LootTable:"skyblock:farming_contest"
+						}
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+  					id:"baked_potato"
+  					Count:1
+					tag:{
+						display:{
+							Name:"{\"text\":\"Enchanted Baked Potato\"\"italic\":false\"color\":\"aqua\"}"
+							Lore:[
+								"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+							]
+						}
+						Enchantments:[
+							{id:"unbreaking"lvl:1}
+						]
+						HideFlags:1
+						
+					}
+  				}
+  				sell:{
+  					id:"chest"
+  					Count:1
+					tag:{
+						display:{
+							Lore:[
+								"{\"text\":\"Jacob's Farming Contest Reward Chest\"\"italic\":false\"underlined\":true\"color\":\"red\"}"
+								"[\"\"{\"text\":\"Loot Chest\"\"italic\":false\"color\":\"blue\"}]"
+								"\" \""
+								"[\"\"{\"text\":\"1-25x Jacob's Tickets\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"1x Enchanted Book\"\"italic\":false\"color\":\"white\"}]"
+								"\" \""
+								"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+							]
+						}
+						BlockEntityTag:{
+							LootTable:"skyblock:farming_contest"
+						}
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+  					id:"player_head"
+  					Count:1
+					tag:{
+						SkullOwner:{Id:[I;-31486350-878359077-2118775567-958017758]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGRiNzExZmY1MmVlZGRhNTljNDM0YmIwMzE2OTc2M2Q3YzQwYjViODkxMjc3NzhmZWFjZDYzYWE5NGRmYyJ9fX0="}]}}
+						display:{
+							Name:"{\"text\":\"Polished Pumpkin\"\"italic\":false\"color\":\"aqua\"}"
+							Lore:[
+								"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+							]
+						}
+						
+					}
+  				}
+  				sell:{
+  					id:"chest"
+  					Count:1
+					tag:{
+						display:{
+							Lore:[
+								"{\"text\":\"Jacob's Farming Contest Reward Chest\"\"italic\":false\"underlined\":true\"color\":\"red\"}"
+								"[\"\"{\"text\":\"Loot Chest\"\"italic\":false\"color\":\"blue\"}]"
+								"\" \""
+								"[\"\"{\"text\":\"1-25x Jacob's Tickets\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"1x Enchanted Book\"\"italic\":false\"color\":\"white\"}]"
+								"\" \""
+								"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+							]
+						}
+						BlockEntityTag:{
+							LootTable:"skyblock:farming_contest"
+						}
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+  					id:"melon"
+  					Count:1
+					tag:{
+						display:{
+							Name:"{\"text\":\"Enchanted Melon\"\"italic\":false\"color\":\"aqua\"}"
+							Lore:[
+								"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+							]
+						}
+						Enchantments:[
+							{id:"unbreaking"lvl:1}
+						]
+						HideFlags:1
+						
+					}
+  				}
+  				sell:{
+  					id:"chest"
+  					Count:1
+					tag:{
+						display:{
+							Lore:[
+								"{\"text\":\"Jacob's Farming Contest Reward Chest\"\"italic\":false\"underlined\":true\"color\":\"red\"}"
+								"[\"\"{\"text\":\"Loot Chest\"\"italic\":false\"color\":\"blue\"}]"
+								"\" \""
+								"[\"\"{\"text\":\"1-25x Jacob's Tickets\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"1x Enchanted Book\"\"italic\":false\"color\":\"white\"}]"
+								"\" \""
+								"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+							]
+						}
+						BlockEntityTag:{
+							LootTable:"skyblock:farming_contest"
+						}
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+  					id:"red_mushroom_block"
+  					Count:1
+					tag:{
+						display:{
+							Name:"{\"text\":\"Enchanted Red Mushroom Block\"\"italic\":false\"color\":\"aqua\"}"
+							Lore:[
+								"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+							]
+						}
+						Enchantments:[
+							{id:"unbreaking"lvl:1}
+						]
+						HideFlags:1
+						
+					}
+  				}
+  				sell:{
+  					id:"chest"
+  					Count:1
+					tag:{
+						display:{
+							Lore:[
+								"{\"text\":\"Jacob's Farming Contest Reward Chest\"\"italic\":false\"underlined\":true\"color\":\"red\"}"
+								"[\"\"{\"text\":\"Loot Chest\"\"italic\":false\"color\":\"blue\"}]"
+								"\" \""
+								"[\"\"{\"text\":\"1-25x Jacob's Tickets\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"1x Enchanted Book\"\"italic\":false\"color\":\"white\"}]"
+								"\" \""
+								"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+							]
+						}
+						BlockEntityTag:{
+							LootTable:"skyblock:farming_contest"
+						}
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+  					id:"brown_mushroom_block"
+  					Count:1
+					tag:{
+						display:{
+							Name:"{\"text\":\"Enchanted Brown Mushroom Block\"\"italic\":false\"color\":\"aqua\"}"
+							Lore:[
+								"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+							]
+						}
+						Enchantments:[
+							{id:"unbreaking"lvl:1}
+						]
+						HideFlags:1
+						
+					}
+  				}
+  				sell:{
+  					id:"chest"
+  					Count:1
+					tag:{
+						display:{
+							Lore:[
+								"{\"text\":\"Jacob's Farming Contest Reward Chest\"\"italic\":false\"underlined\":true\"color\":\"red\"}"
+								"[\"\"{\"text\":\"Loot Chest\"\"italic\":false\"color\":\"blue\"}]"
+								"\" \""
+								"[\"\"{\"text\":\"1-25x Jacob's Tickets\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"1x Enchanted Book\"\"italic\":false\"color\":\"white\"}]"
+								"\" \""
+								"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+							]
+						}
+						BlockEntityTag:{
+							LootTable:"skyblock:farming_contest"
+						}
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+  					id:"cactus"
+  					Count:1
+					tag:{
+						display:{
+							Name:"{\"text\":\"Enchanted Cactus\"\"italic\":false\"color\":\"aqua\"}"
+							Lore:[
+								"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+							]
+						}
+						Enchantments:[
+							{id:"unbreaking"lvl:1}
+						]
+						HideFlags:1
+						
+					}
+  				}
+  				sell:{
+  					id:"chest"
+  					Count:1
+					tag:{
+						display:{
+							Lore:[
+								"{\"text\":\"Jacob's Farming Contest Reward Chest\"\"italic\":false\"underlined\":true\"color\":\"red\"}"
+								"[\"\"{\"text\":\"Loot Chest\"\"italic\":false\"color\":\"blue\"}]"
+								"\" \""
+								"[\"\"{\"text\":\"1-25x Jacob's Tickets\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"1x Enchanted Book\"\"italic\":false\"color\":\"white\"}]"
+								"\" \""
+								"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+							]
+						}
+						BlockEntityTag:{
+							LootTable:"skyblock:farming_contest"
+						}
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+  					id:"sugar_cane"
+  					Count:1
+					tag:{
+						display:{
+							Name:"{\"text\":\"Enchanted Sugar Cane\"\"italic\":false\"color\":\"aqua\"}"
+							Lore:[
+								"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+							]
+						}
+						Enchantments:[
+							{id:"unbreaking"lvl:1}
+						]
+						HideFlags:1
+						
+					}
+  				}
+  				sell:{
+  					id:"chest"
+  					Count:1
+					tag:{
+						display:{
+							Lore:[
+								"{\"text\":\"Jacob's Farming Contest Reward Chest\"\"italic\":false\"underlined\":true\"color\":\"red\"}"
+								"[\"\"{\"text\":\"Loot Chest\"\"italic\":false\"color\":\"blue\"}]"
+								"\" \""
+								"[\"\"{\"text\":\"1-25x Jacob's Tickets\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"1x Enchanted Book\"\"italic\":false\"color\":\"white\"}]"
+								"\" \""
+								"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+							]
+						}
+						BlockEntityTag:{
+							LootTable:"skyblock:farming_contest"
+						}
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+  					id:"player_head"
+  					Count:1
+					tag:{
+						SkullOwner:{Id:[I;-1337244671562120200-15084502932011608202]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExYTNjZWM3YWFmOTA0MjEyY2NmOTNiYjY3YTNjYWYzZDY0OTc4M2JhOTBiOGI2MGJiNjNjNzY4N2ViMzlmIn19fQ=="}]}}
+						display:{
+							Name:"{\"text\":\"Mutant Nether Wart\"\"italic\":false\"color\":\"aqua\"}"
+							Lore:[
+								"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+							]
+						}
+						
+					}
+  				}
+  				sell:{
+  					id:"chest"
+  					Count:1
+					tag:{
+						display:{
+							Lore:[
+								"{\"text\":\"Jacob's Farming Contest Reward Chest\"\"italic\":false\"underlined\":true\"color\":\"red\"}"
+								"[\"\"{\"text\":\"Loot Chest\"\"italic\":false\"color\":\"blue\"}]"
+								"\" \""
+								"[\"\"{\"text\":\"1-25x Jacob's Tickets\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"1x Enchanted Book\"\"italic\":false\"color\":\"white\"}]"
+								"\" \""
+								"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+							]
+						}
+						BlockEntityTag:{
+							LootTable:"skyblock:farming_contest"
+						}
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+  					id:"cookie"
+  					Count:1
+					tag:{
+						display:{
+							Name:"{\"text\":\"Enchanted Cookie\"\"italic\":false\"color\":\"aqua\"}"
+							Lore:[
+								"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+							]
+						}
+						Enchantments:[
+							{id:"unbreaking"lvl:1}
+						]
+						HideFlags:1
+						
+					}
+  				}
+  				sell:{
+  					id:"chest"
+  					Count:1
+					tag:{
+						display:{
+							Lore:[
+								"{\"text\":\"Jacob's Farming Contest Reward Chest\"\"italic\":false\"underlined\":true\"color\":\"red\"}"
+								"[\"\"{\"text\":\"Loot Chest\"\"italic\":false\"color\":\"blue\"}]"
+								"\" \""
+								"[\"\"{\"text\":\"1-25x Jacob's Tickets\"\"italic\":false\"color\":\"white\"}]"
+								"[\"\"{\"text\":\"1x Enchanted Book\"\"italic\":false\"color\":\"white\"}]"
+								"\" \""
+								"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+							]
+						}
+						BlockEntityTag:{
+							LootTable:"skyblock:farming_contest"
+						}
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+  		]
+  	}
+  }
+	display:{
+		Name:"{\"text\":\"Jacob\"}"
+	}
+}

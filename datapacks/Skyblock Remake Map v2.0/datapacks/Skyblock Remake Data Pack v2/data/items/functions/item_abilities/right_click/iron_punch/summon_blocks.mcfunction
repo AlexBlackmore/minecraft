@@ -1,0 +1,5 @@
+summon armor_stand ~2 ~3 ~ {Invulnerable:1b,Marker:0b,Invisible:1b,Tags:["golem_block"],DisabledSlots:4144959,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:iron_block"},Time:1,DropItem:0b,HurtEntities:0b,Tags:["golem_block","ability_block"]}]}
+summon armor_stand ~-2 ~3 ~ {Invulnerable:1b,Marker:0b,Invisible:1b,Tags:["golem_block"],DisabledSlots:4144959,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:iron_block"},Time:1,DropItem:0b,HurtEntities:0b,Tags:["golem_block","ability_block"]}]}
+summon armor_stand ~ ~3 ~-2 {Invulnerable:1b,Marker:0b,Invisible:1b,Tags:["golem_block"],DisabledSlots:4144959,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:iron_block"},Time:1,DropItem:0b,HurtEntities:0b,Tags:["golem_block","ability_block"]}]}
+summon armor_stand ~ ~3 ~2 {Invulnerable:1b,Marker:0b,Invisible:1b,Tags:["golem_block"],DisabledSlots:4144959,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:iron_block"},Time:1,DropItem:0b,HurtEntities:0b,Tags:["golem_block","ability_block"]}]}
+schedule function items:item_abilities/right_click/iron_punch/kill_blocks 20t

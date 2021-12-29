@@ -1,0 +1,221 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:stone_sword",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{Damage:0,SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Combat ",
+					"color": "green",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]",
+					  "objective": "S_Combat"
+					},
+					"color": "green",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "S_Combat": {
+						"min": 1,
+						"max": 10000
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": [
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Combat",
+					"color": "green",
+					"italic": false
+				  }
+				],
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "S_Combat": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "Fight mobs and players to earn",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "Combat XP!",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": " "
+				  },
+				  [
+					{
+					  "text":"Progress to Level ",
+					  "color":"gray",
+					  "italic":false
+					},
+					{
+					  "score": {
+						"name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]",
+						"objective": "S_CombatN"
+					  },
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text":": ",
+					  "color":"gray",
+					  "italic":false},
+					{
+					  "score": {
+						"name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]",
+						"objective": "S_CombatP"
+					  },
+					  "color": "yellow",
+					  "italic": false
+					},
+					{
+					  "text": "%",
+					  "color": "gold"
+					}
+				  ],
+				  [
+					{
+					"score": {
+					  "name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]",
+					  "objective": "S_CombatEXP"
+					},
+					"color": "yellow",
+					"italic": false
+					},
+					{
+					  "text": "/",
+					  "color": "gold",
+					  "italic": false
+					},
+					{
+					"score": {
+					  "name": "@p[nbt={SelectedItemSlot:8},tag=Menu,distance=..4]",
+					  "objective": "S_CombatEXPN"
+					},
+					"color": "yellow",
+					"italic": false
+					}
+				  ]
+				],
+			    "conditions": [
+				  {
+				    "condition": "minecraft:inverted",
+					"term": {
+				      "condition": "minecraft:value_check",
+				      "value": {
+					    "type": "minecraft:score",
+					    "target": "this",
+					    "score": "S_Combat"
+				      },
+				      "range": {
+				  	    "min": {
+					      "type": "minecraft:score",
+					      "target": "this",
+					      "score": "S_MaxCombat"
+					    },
+					    "max": 10000
+				      }
+				    }
+				  }
+			    ]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "Fight mobs and players to earn",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "Combat XP!",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": " "
+				  },
+				  [
+					{
+					  "text":"You have reached the max",
+					  "color":"dark_gray",
+					  "italic":true
+					}
+				  ],
+				  [
+					{
+					  "text":"level for this Skill!",
+					  "color":"dark_gray",
+					  "italic":true
+					}
+				  ]
+				],
+			    "conditions": [
+				  {
+				    "condition": "minecraft:value_check",
+				    "value": {
+					  "type": "minecraft:score",
+					  "target": "this",
+					  "score": "S_Combat"
+				    },
+				    "range": {
+				  	  "min": {
+					    "type": "minecraft:score",
+					    "target": "this",
+					    "score": "S_MaxCombat"
+					  },
+					  "max": 10000
+				    }
+				  }
+			    ]
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

@@ -1,0 +1,46 @@
+{
+  "parent":"skyblock:commands/ambient",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Monster Hunter Armor",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":true
+  },
+  "criteria":{
+    "criterion":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "head":{
+                  "nbt":"{Name:\"Skeleton's Helmet\"}"
+                },
+				"chest":{
+                  "nbt":"{Name:\"Guardian Chestplate\"}"
+                },
+				"legs":{
+                  "nbt":"{Name:\"Creeper Pants\"}"
+                },
+				"feet":{
+                  "nbt":"{Name:\"Spider's Boots\"}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "function":"skyblock:abilities/ambient/monster_hunter_armor"
+  }
+}

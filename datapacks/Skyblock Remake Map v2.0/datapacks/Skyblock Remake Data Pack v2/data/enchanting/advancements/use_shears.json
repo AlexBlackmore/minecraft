@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "h": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:shears"
+                },
+                "entity": {
+                    "type": "minecraft:sheep"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "enchanting:enchants/telekinesis/use_shears"
+    }
+}

@@ -1,0 +1,45 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:carrot_on_a_stick",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Shiny Rod","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"Interact with a Pig while","italic":false,"color":"gray"},
+										{"text":"holding this to give the Pig","italic":false,"color":"gray"},
+										["",{"text":"+30% Speed","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"Increases the amount of any","italic":false,"color":"gray"},
+										["",{"text":"Emeralds","italic":false,"color":"gold"},{"text":" you recieve from Shiny","italic":false,"color":"gray"}],
+										["",{"text":"Orbs by ","italic":false,"color":"gray"},{"text":"+25%","italic":false,"color":"green"},{"text":" while held in your","italic":false,"color":"gray"}],
+										["",{"text":"off-hand.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Shiny Rod\"
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

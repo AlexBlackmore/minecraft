@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;2092362149,-1722859307,-1677964379,-677981666],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkwOTFkNzllYTBmNTllZjdlZjk0ZDdiYmE2ZTVmMTdmMmY3ZDQ1NzJjNDRmOTBmNzZjNDgxOWE3MTQifX19\"}]}},Base:{Type:\"HELMET\",Rarity:\"COMMON\",CraftingRemoveCounts:[8,8,8,8,0,8],RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Drops an \",\"color\":\"gray\",\"italic\":false},{\"text\":\"iron ingot \",\"color\":\"green\",\"italic\":false},{\"text\":\"when you sneak!\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"5s\",\"color\":\"green\",\"italic\":false}]'],display:{Name:'[{\"text\":\"Golem Hat\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Drops an \",\"color\":\"gray\",\"italic\":false},{\"text\":\"iron ingot \",\"color\":\"green\",\"italic\":false},{\"text\":\"when you sneak!\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"5s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\" \"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON HELMET\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": ["feet","legs","chest","head"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

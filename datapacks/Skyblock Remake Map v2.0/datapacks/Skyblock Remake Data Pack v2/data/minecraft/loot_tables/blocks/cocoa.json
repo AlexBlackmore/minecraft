@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+     {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cocoa_beans",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Vanilla:1b,Type:\"BREWING INGREDIENT\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Cocoa Beans\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"Brewing Ingredient\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}",
+				"conditions": [
+					{
+					  "condition": "minecraft:inverted",
+					  "term": {
+						  "condition": "minecraft:entity_properties",
+						  "entity": "this",
+						  "predicate": {
+							"type": "minecraft:player",
+							"equipment": {
+							  "mainhand": {
+								"nbt": "{Base:{Enchantments:[{telekinesis:{identifier:1b}},{replenish:{identifier:1b}}]}}"
+							  }
+							}
+						  }
+					  }
+					}
+				  ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1,Base:{Vanilla:1b,Type:\"BREWING INGREDIENT\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Cocoa Beans\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}",
+				"conditions": [
+					{
+					  "condition": "minecraft:entity_properties",
+					  "entity": "this",
+					  "predicate": {
+						"type": "minecraft:player",
+						"equipment": {
+						  "mainhand": {
+							"nbt": "{Base:{Enchantments:[{telekinesis:{identifier:1b}},{replenish:{identifier:1b}}]}}"
+						  }
+						}
+					  }
+					}
+				  ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+		  "conditions": [
+			{
+			  "condition": "minecraft:block_state_property",
+			  "block": "minecraft:cocoa",
+			  "properties": {
+				"age": "2"
+			  }
+			}
+		  ],
+          "name": "minecraft:cocoa_beans"
+        }
+      ]
+    }
+  ]
+}

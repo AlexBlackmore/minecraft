@@ -1,0 +1,56 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:anvil",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Place an item above to reforge",
+                  "color": "gray",
+                  "italic": false
+                },
+
+                {
+                  "text": "it! Reforging items adds a",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "random modifier to the item that",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "grants stat boosts.",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Reforge Item",
+                "color": "yellow",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"lapis_lazuli",
+					"functions":[
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4.0,
+								"max": 9.0,
+								"type": "minecraft:uniform"
+							}
+						},
+						{
+							"function":"apply_bonus",
+							"enchantment":"fortune",
+							"formula":"ore_drops"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":0,
+			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"lapis_lazuli",
+					"weight":1
+				},
+				{
+					"type":"loot_table",
+					"name":"minecraft:empty",
+					"weight":99
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:refined_mineral"
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:lapis_armor"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Base:{Type:\"ARMOR SET\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\",Health:345,BaseHealth:345,Defense:60,BaseDefense:60,DungeonItem:1b,Abilities:[{Name:\"Bouncing Arrow\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Bouncing Arrow\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Your arrows have a \",\"color\":\"gray\",\"italic\":false},{\"text\":\"25%\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"chance to bounce to another\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"target after it hits something.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Bouncy Armor Set\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+345 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+60\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Bouncing Arrow\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Your arrows have a \",\"color\":\"gray\",\"italic\":false},{\"text\":\"25%\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"chance to bounce to another\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"target after it hits something.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE DUNGEON ARMOR SET\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]'],color:11403055}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": ["feet","legs","chest","head"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

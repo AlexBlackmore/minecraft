@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Base:{Type:\"ARMOR SET\",Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"An old charred shadow of the \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"real thing leaving behind \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"streaks of coal on the wearer \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"from its shoddy construction.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Ember Ash Armor Set\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"An old charred shadow of the \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"real thing leaving behind \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"streaks of coal on the wearer \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"from its shoddy construction.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"UNCOMMON ARMOR SET\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet",
+                    "legs",
+                    "chest",
+                    "head"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

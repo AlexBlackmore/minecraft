@@ -1,0 +1,12 @@
+summon zombified_pigman ~ ~ ~ {
+	CustomName:"{\"text\":\"Lava Pigman\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock","sea_creature","lava_pigman"],
+	AbsorptionAmount:88976,
+	Health:1024,
+	Attributes:[
+		{Name:"generic.max_health",Base:1024},
+		{Name:"generic.attack_damage",Base:100}
+	],
+	DeathLootTable:"skyblock:mobs/sea_creatures/crystal_hollows/lava_pigman"
+}

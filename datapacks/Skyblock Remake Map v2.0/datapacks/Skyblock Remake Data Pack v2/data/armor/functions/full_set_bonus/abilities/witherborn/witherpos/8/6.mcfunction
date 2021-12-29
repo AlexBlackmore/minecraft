@@ -1,0 +1,2 @@
+execute if score @s WitherPos matches 9 run execute if score @e[tag=witherborn,limit=1,sort=nearest] WitherID = @s WitherID run tp @e[tag=witherborn,limit=1,sort=nearest] ~0.839332945462443 ~-3.2 ~1.1382092104096415
+execute if score @s WitherPos matches 10 run execute if score @e[tag=witherborn,limit=1,sort=nearest] WitherID = @s WitherID run tp @e[tag=witherborn,limit=1,sort=nearest] ~0.8202470988695101 ~-3.2 ~1.15203936425634

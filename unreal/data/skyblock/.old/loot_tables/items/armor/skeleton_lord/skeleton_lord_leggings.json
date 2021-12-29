@@ -1,0 +1,132 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Skeleton Lord Legging","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Dungeon Lord","italic":false,"color":"gold"},
+										["",{"text":"Gains ","italic":false,"color":"gray"},{"text":"+1 Attack Damage","italic":false,"color":"blue"},{"text":" and","italic":false,"color":"gray"}],
+										["",{"text":"+10% Crit Damage","italic":false,"color":"blue"},{"text":" for every ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"}],
+										{"text":"level being held.","italic":false,"color":"gray"},
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								}
+							],
+							"conditions":[
+								{
+									"condition":"random_chance_with_looting",
+									"chance":0.05,
+									"looting_multiplier":0.01
+								}
+							]
+						},
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Skeleton Lord Legging","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Dungeon Lord","italic":false,"color":"gold"},
+										["",{"text":"Gains ","italic":false,"color":"gray"},{"text":"+1 Attack Damage","italic":false,"color":"blue"},{"text":" and","italic":false,"color":"gray"}],
+										["",{"text":"+10% Crit Damage","italic":false,"color":"blue"},{"text":" for every ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"}],
+										{"text":"level being held.","italic":false,"color":"gray"},
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"functions":[
+		{
+			"function":"minecraft:set_nbt",
+			"tag":"{
+				display:{
+					color:2523397
+				},
+				HideFlags:64,
+				Name:\"Skeleton Lord Leggings\",
+				Crit_Chance:1,
+				Crit_Damage:19
+			}"
+		},
+		{
+			"function":"minecraft:set_lore",
+			"lore":[
+				{"text":"+1% Crit Chance","italic":false,"color":"blue"},
+				{"text":"+19% Crit Damage","italic":false,"color":"blue"}
+			],
+			"replace":false
+		},
+		{
+			"function":"minecraft:enchant_with_levels",
+			"treasure":true,
+			"levels":30
+		},
+		{
+			"function":"minecraft:set_attributes",
+			"modifiers":[
+				{
+					"name":"Max Health",
+					"attribute":"generic.max_health",
+					"operation":"addition",
+					"amount":5,
+					"slot":"legs"
+				},
+				{
+					"name":"Armor",
+					"attribute":"generic.armor",
+					"operation":"addition",
+					"amount":15,
+					"slot":"legs"
+				},
+				{
+					"name":"Armor Toughness",
+					"attribute":"generic.armor_toughness",
+					"operation":"addition",
+					"amount":1,
+					"slot":"legs"
+				}
+			]
+		},
+		{
+			"function":"minecraft:set_damage",
+			"damage":{
+						"type":"uniform",
+						"min":0.0,
+						"max":1.0
+			}
+		}
+	]
+}

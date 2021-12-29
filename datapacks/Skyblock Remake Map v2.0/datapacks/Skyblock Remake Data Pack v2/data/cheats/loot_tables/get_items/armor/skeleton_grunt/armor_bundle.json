@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Base:{Type:\"ARMOR SET\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\",CritDmg:60,BaseCritDmg:60,Health:72,BaseHealth:72,Defense:160,BaseDefense:160,DungeonItem:1b},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Increase the damage you deal\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"with arrows by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5%\",\"color\":\"red\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Skeleton Grunt Armor Set\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Crit Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+60%\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+72 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+160\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Increase the damage you deal\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"with arrows by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5%\",\"color\":\"red\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC DUNGEON ARMOR SET\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]'],color:14805812}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": ["feet","legs","chest","head"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

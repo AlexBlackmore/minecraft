@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-85253288,-622771756,-1322857271,-848863799],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FmZDIyNzA0ZWViNWM2N2JlNjQ5ZGRmZTFkYTBjNjU4MTU4YTcwNThkMDE3MzlkZTMxYzk0ZjZiOTgwODg2OSJ9fX0=\"}]}},Base:{Type:\"ACCESSORY\",Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}',Reforge:\"\",Speed:1,BaseSpeed:1,AccessoryFamily:\"WolfPaw\"},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Wolf Paw\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Speed: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+1\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"UNCOMMON ACCESSORY\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

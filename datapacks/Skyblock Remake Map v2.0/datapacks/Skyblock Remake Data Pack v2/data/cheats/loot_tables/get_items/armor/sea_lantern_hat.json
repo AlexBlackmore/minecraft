@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1,BlockHelmetItem:1,Base:{Type:\"HELMET\",Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Breathe \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5x \",\"color\":\"green\",\"italic\":false},{\"text\":\"as long \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"underwater when wearing!\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]'],display:{Name:'[{\"text\":\"Sea Lantern Hat\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Breathe \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5x \",\"color\":\"green\",\"italic\":false},{\"text\":\"as long \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"underwater when wearing!\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\" \"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"UNCOMMON HELMET\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": ["feet","legs","chest","head"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

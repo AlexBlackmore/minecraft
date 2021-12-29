@@ -1,0 +1,2 @@
+summon minecraft:boat ~ ~-1.7 ~ {NoGravity:1b,Invulnerable:1b,Type:"acacia",Tags:["SoupWalkOn","SoupBoat"],Passengers:[{id:"minecraft:area_effect_cloud",Duration:1000000,Tags:["SoupWalkOn","SoupPassenger"]},{id:"minecraft:area_effect_cloud",Duration:1000000,Tags:["SoupWalkOn","SoupPassenger"]}]}
+execute as @s[scores={sneak=1..,SoupFlightTime=1..}] at @s at @e[tag=GrapplingAnchor,distance=..15] if score @e[tag=GrapplingAnchor,distance=..1.5,sort=nearest,limit=1] UUID = @s UUID at @s run function items:item_abilities/soup/flight/grapple_clear

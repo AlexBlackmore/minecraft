@@ -1,0 +1,63 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rabbit_stew",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{ExtraAttributes:{id:\"JUMBO_BACKPACK\"},Unbreakable:1b,HideFlags:63,Pages:3,Items:{Page1:[],Page2:[],Page3:[]},CustomModelData:66,Base:{Color:\"blue\",Type:\"backpack\",Rarity:\"LEGENDARY\",RarityColor:'{\"text\":\"\",\"color\":\"gold\"}'},Description:['[{\"text\":\"A special portable bag with,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"54 \",\"color\":\"green\",\"italic\":false},{\"text\":\"slots which can hold any\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"item within.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]']}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "A special portable bag with,",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": "54",
+                      "color": "green",
+                      "italic": false
+                    },
+                    {
+                      "text": " slots which can hold any",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": "item within.",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "LEGENDARY",
+                    "color": "gold",
+                    "italic": false,
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "Jumbo Backpack",
+                  "color": "gold",
+                  "italic": false
+                  }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

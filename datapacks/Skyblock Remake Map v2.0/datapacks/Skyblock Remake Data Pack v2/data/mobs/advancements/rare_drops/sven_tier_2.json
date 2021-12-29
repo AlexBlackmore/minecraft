@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:zombie",
+                    "nbt": "{Tags:[\"SvenPackmaster\",\"Tier4\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mobs:rare_drops/sven/tier_2"
+    }
+}

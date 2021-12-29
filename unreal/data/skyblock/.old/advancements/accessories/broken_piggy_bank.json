@@ -1,0 +1,31 @@
+{
+	"parent":"skyblock:accessories/cracked_piggy_bank",
+	"display":{
+		"icon":{
+			"item":"minecraft:player_head",
+			"nbt":"{SkullOwner:{Id:[I;-1411654837,728712113,-1263724528,-1589525090],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODYwN2E3OThjMDgwMjk5NzEwMGU5ZTdjMTRlZTM4NjRmNTBhYTg0ODU5MzEwNzljNmQ4YWY3YTRjYzUyNTlkMCJ9fX0=\"}]}}}"
+		},
+		"title":"Broken Piggy Bank",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"broken_piggy_bank":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"items":[
+					{
+						"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Broken Piggy Bank\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\"}}"
+					}
+				]
+			}
+		}
+
+	},
+	"rewards":{
+		"function":"skyblock:abilities/reset_accessories"
+	}
+}

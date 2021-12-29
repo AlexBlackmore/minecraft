@@ -1,0 +1,1339 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gold_block",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "Boss Leveling Rewards",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "entity": "this",
+                "tag": "{SkyblockMenu:1b}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "Wolf Slayer LVL",
+                    "color": "dark_gray",
+                    "bold": false,
+                    "italic": false
+                  }
+                ],
+                "replace": false
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": " ",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  }
+                ],
+                "replace": false
+              }, 
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "1. ",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "Kill boss to get XP",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  }]
+                ],
+                "replace": false
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                  {
+                    "text": "2. ",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "Gain LVL from XP",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+                ],
+                "replace": false
+              },   
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "3.",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " Unlock rewards per LVL",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  }]
+                ],
+                "replace": false
+              },   
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": " ",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  }
+                ],
+                "replace": false
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "Current LVL: ",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective": "S_WolfLvl"
+                    },
+                    "color": "yellow",
+                    "italic": false
+                  }]
+                ],
+                "replace": false
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": " ",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  }
+                ],
+                "replace": false
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "Wolf Slayer XP to LVL ",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "$NextSlayerLVL",
+                      "objective": "Temp"
+                    },
+                    "color": "_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": ":",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  }]
+                ],
+                "replace": false
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "--------------------",
+  "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": 0
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+[                  {
+                    "text": "-",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "-------------------",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 1,
+                        "max": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "--",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "------------------",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 6,
+                        "max": 10
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "---",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "-----------------",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 11,
+                        "max": 15
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                 [ {
+                    "text": "----",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "----------------",
+  "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 16,
+                        "max": 20
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "-----",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "---------------",
+  "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 21,
+                        "max": 25
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "--------------",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }]
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 26,
+                        "max": 30
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "-------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "-------------",
+  "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 31,
+                        "max": 35
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "--------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "------------",
+  "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 36,
+                        "max": 40
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "---------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "-----------",
+  "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 41,
+                        "max": 45
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "----------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "----------",
+  "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 46,
+                        "max": 50
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+[                  {
+                    "text": "-----------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "---------",
+  "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 51,
+                        "max": 55
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "------------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "--------",
+  "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 56,
+                        "max": 60
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "-------------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "-------",
+  "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }] 
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 61,
+                        "max": 65
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "--------------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "------",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }]      
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 66,
+                        "max": 70
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "---------------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "-----",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }]      
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 71,
+                        "max": 75
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "----------------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "----",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }]      
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 76,
+                        "max": 80
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "-----------------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "---",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }]      
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 81,
+                        "max": 85
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "------------------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "--",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }]      
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 86,
+                        "max": 90
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+[                  {
+                    "text": "-------------------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "-",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }]      
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 91,
+                        "max": 95
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [{
+                    "text": "--------------------",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " ",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXP"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "/",
+                    "color" :"light_purple",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective" : "S_WolfEXPN"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  }]      
+                ],
+                "replace": false,
+                "conditions": [
+                  {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "S_NLvlPercent": {
+                        "min": 96,
+                        "max": 100
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": " ",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                  }
+                ],
+                "replace": false
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "Click to view levels!",
+                    "color": "yellow",
+                    "bold": false,
+                    "italic": false
+                  }
+                ],
+                "replace": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

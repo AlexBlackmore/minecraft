@@ -1,0 +1,1768 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:rotten_flesh",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Rotten Flesh ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_RottenfleshL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_RottenfleshL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Rottenflesh Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Rottenflesh ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RottenfleshNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RottenfleshP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RottenfleshS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_RottenfleshN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_RottenfleshL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Rotten Flesh ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_RottenfleshL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Rottenflesh Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_RottenfleshL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_RottenfleshS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Rotten Flesh ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_RottenfleshS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:bone",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Bone ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_BoneL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_BoneL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Bone Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Bone ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_BoneNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_BoneP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_BoneS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_BoneN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_BoneL": 10
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Bone ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_BoneL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Bone Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_BoneL": 10
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_BoneS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Bone ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_BoneS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:string",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "String ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_StringL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_StringL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your String Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to String ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_StringNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_StringP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_StringS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_StringN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_StringL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "String ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_StringL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your String Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_StringL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_StringS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "String ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_StringS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:spider_eye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Spider Eye ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_SpidereyeL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_SpidereyeL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Spidereye Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Spidereye ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_SpidereyeNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_SpidereyeP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_SpidereyeS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_SpidereyeN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_SpidereyeL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Spider Eye ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_SpidereyeL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Spidereye Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_SpidereyeL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_SpidereyeS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Spider Eye ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_SpidereyeS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gunpowder",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Gunpowder ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_GunpowderL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GunpowderL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Gunpowder Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Gunpowder ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GunpowderNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GunpowderP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GunpowderS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GunpowderN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_GunpowderL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Gunpowder ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GunpowderL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Gunpowder Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GunpowderL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_GunpowderS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Gunpowder ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_GunpowderS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:ender_pearl",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Ender Pearl ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_EnderpearlL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_EnderpearlL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Enderpearl Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Enderpearl ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_EnderpearlNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_EnderpearlP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_EnderpearlS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_EnderpearlN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_EnderpearlL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Ender Pearl ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_EnderpearlL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Enderpearl Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_EnderpearlL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_EnderpearlS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Ender Pearl ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_EnderpearlS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:ghast_tear",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Ghast Tear ",
+					"color": "yellow",
+					"italic": false
+				  },
+				  {
+					"score": {
+					  "name": "@s",
+					  "objective": "C_GhasttearL"
+					},
+					"color": "yellow"
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GhasttearL": {
+						"min": 1,
+						"max": 20
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Ghasttear Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					[
+					  {
+						"text": "Progress to Ghasttear ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GhasttearNL"
+						},
+						"color": "gray"
+					  },
+					  {
+						"text": ": ",
+						"color": "gray",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GhasttearP"
+						},
+						"color": "yellow"
+					  },
+					  {
+						"text": "%",
+						"color": "gold"
+					  }
+					],
+					[
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GhasttearS"
+						},
+						"italic": false,
+						"color": "yellow"
+					  },
+					  {
+						"text": "/",
+						"color": "gold",
+						"italic": false
+					  },
+					  {
+						"score": {
+						  "name": "@s",
+						  "objective": "C_GhasttearN"
+						},
+						"color": "yellow"
+					  }
+					],
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:inverted",
+					"term": {
+					  "condition": "minecraft:entity_scores",
+					  "entity": "this",
+					  "scores": {
+						"C_GhasttearL": 9
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Ghast Tear ",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GhasttearL": 0
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "View all your Ghasttear Collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "progress and rewards!",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "text": "Click to view!",
+					  "color": "yellow",
+					  "italic": false
+					}
+				],
+				"entity": "this",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_GhasttearL": 9
+					}
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_GhasttearS": 0
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"text": "Ghast Tear ",
+					"color": "red",
+					"italic": false
+				  }
+				],
+				"entity": "this"
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+					{
+					  "text": "Find this item to add it to your",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "collection and unlock collection",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": "rewards!",
+					  "color": "gray",
+					  "italic": false
+					}
+				],
+				"entity": "this"
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_GhasttearS": 0
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

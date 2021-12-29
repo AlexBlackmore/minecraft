@@ -1,0 +1,134 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_chestplate",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Skeleton Soldier Chestplate","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Increases arrow damage by ","italic":false,"color":"gray"},{"text":"5%","italic":false,"color":"yellow"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"Full Set Bonus: Skeleton Soldier","italic":false,"color":"gold"}
+										{"text":"Increases arrow damage by an","italic":false,"color":"gray"}
+										["",{"text":"extra ","italic":false,"color":"gray"},{"text":"25%","italic":false,"color":"yellow"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								}
+							],
+							"conditions":[
+								{
+									"condition":"random_chance_with_looting",
+									"chance":0.05,
+									"looting_multiplier":0.01
+								}
+							]
+						},
+						{
+							"type":"item",
+							"name":"minecraft:leather_chestplate",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Skeleton Soldier Chestplate","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Increases arrow damage by ","italic":false,"color":"gray"},{"text":"5%","italic":false,"color":"yellow"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"Full Set Bonus: Skeleton Soldier","italic":false,"color":"gold"}
+										{"text":"Increases arrow damage by an","italic":false,"color":"gray"}
+										["",{"text":"extra ","italic":false,"color":"gray"},{"text":"25%","italic":false,"color":"yellow"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"functions":[
+		{
+			"function":"minecraft:set_nbt",
+			"tag":"{
+				display:{
+					color:16759819
+				},
+				HideFlags:64,
+				Name:\"Skeleton Soldier Chestplate\",
+				Crit_Chance:2,
+				Crit_Damage:17
+			}"
+		},
+		{
+			"function":"minecraft:set_lore",
+			"lore":[
+				{"text":"+2% Crit Chance","italic":false,"color":"blue"},
+				{"text":"+17% Crit Damage","italic":false,"color":"blue"}
+			],
+			"replace":false
+		},
+		{
+			"function":"minecraft:enchant_with_levels",
+			"treasure":true,
+			"levels":30
+		},
+		{
+			"function":"minecraft:set_attributes",
+			"modifiers":[
+				{
+					"name":"Max Health",
+					"attribute":"generic.max_health",
+					"operation":"addition",
+					"amount":5,
+					"slot":"chest"
+				},
+				{
+					"name":"Armor",
+					"attribute":"generic.armor",
+					"operation":"addition",
+					"amount":7,
+					"slot":"chest"
+				},
+				{
+					"name":"Armor Toughness",
+					"attribute":"generic.armor_toughness",
+					"operation":"addition",
+					"amount":1,
+					"slot":"chest"
+				}
+			]
+		},
+		{
+			"function":"minecraft:set_damage",
+			"damage":{
+						"type":"uniform",
+						"min":0.0,
+						"max":1.0
+			}
+		}
+	]
+}

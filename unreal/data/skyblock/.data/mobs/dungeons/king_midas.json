@@ -1,0 +1,39 @@
+summon zombie ~ ~ ~ {
+	CustomName:"{\"text\":\"King Midas\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock","king_midas"],
+	AbsorptionAmount:58976,
+	Health:1024,
+	Attributes:[
+		{Name:"generic.max_health",Base:1024},
+		{Name:"generic.attack_damage",Base:10}
+	],
+	HandItems:[
+		{
+			id:"golden_sword",
+			Count:1
+		},
+		{}
+	],
+	ArmorItems:[
+		{
+			id:"leather_boots",
+			Count:1
+		},
+		{
+			id:"leather_leggings",
+			Count:1
+		},
+		{
+			id:"leather_chestplate",
+			Count:1
+		},
+		{
+			id:"golden_helmet",
+			Count:1
+		}
+	],
+	HandDropChances:[0.0f,0.0f],
+	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+	DeathLootTable:"skyblock:mobs/dungeons/king_midas"
+}

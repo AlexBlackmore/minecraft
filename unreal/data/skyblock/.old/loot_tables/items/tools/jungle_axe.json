@@ -1,0 +1,44 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:wooden_axe",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Jungle Axe","italic":false,"color":"yellow"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"A powerful Wooden Axe which can","italic":false,"color":"gray"}],
+										["",{"text":"break multiple logs in a single","italic":false,"color":"gray"}],
+										["",{"text":"hit!","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"UNCOMMON","bold":true,"color":"yellow"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Jungle Axe\",
+										Timber:true
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

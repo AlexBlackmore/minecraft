@@ -1,0 +1,59 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:pufferfish",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Voodoo Doll","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Acupuncture ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Shoots poison needles in every","italic":false,"color":"gray"}],
+										["",{"text":"direction, hitting up to ","italic":false,"color":"gray"},{"text":"9","italic":false,"color":"green"},{"text":" mobs","italic":false,"color":"gray"}],
+										["",{"text":"within ","italic":false,"color":"gray"},{"text":"18","italic":false,"color":"yellow"},{"text":" blocks. Deals","italic":false,"color":"gray"}],
+										["",{"text":"600","italic":false,"color":"red"},{"text":" ability damage and inflicts","italic":false,"color":"gray"}],
+										["",{"text":"Poison","italic":false,"color":"#4E9331"},{"text":" for ","italic":false,"color":"gray"},{"text":"10","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+										["",{"text":"Damage increases based on your","italic":false,"color":"gray"}],
+										["",{"text":"current ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" level.","italic":false,"color":"gray"}],
+										["",{"text":"(Ability Damage: +1%/level)","italic":false,"color":"dark_gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"200 XP","italic":false,"color":"aqua"}],
+										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"5s","italic":false,"color":"green"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										HideFlags:1,
+										Name:\"Voodoo Doll\",
+										Ability:true
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"unbreaking":1
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

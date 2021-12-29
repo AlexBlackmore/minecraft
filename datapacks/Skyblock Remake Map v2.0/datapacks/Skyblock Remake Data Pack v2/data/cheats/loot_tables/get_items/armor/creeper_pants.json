@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"LEGGINGS\",Rarity:\"RARE\",CraftingRemoveCounts:[32,32,32,32,0,32,32,0,32],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\",Health:200,BaseHealth:200,Defense:65,BaseDefense:65,Abilities:[{Name:\"Detonate\",Activation:\"\",Type:\"Item Ability\",Cooldown:60}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Detonate\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Causes an explosion when \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"dropping below \",\"color\":\"gray\",\"italic\":false},{\"text\":\"20% HP\",\"color\":\"green\",\"italic\":false},{\"text\":\", \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"damaging and knocking back all \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"monsters around you. \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"60s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Creeper Pants\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+200 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+65\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Detonate\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Causes an explosion when \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"dropping below \",\"color\":\"gray\",\"italic\":false},{\"text\":\"20% HP\",\"color\":\"green\",\"italic\":false},{\"text\":\", \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"damaging and knocking back all \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"monsters around you. \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"60s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE LEGGINGS\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]'],color:65280}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": ["feet","legs","chest","head"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:anvil",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Reforges the above item, giving",
+                  "color": "gray",
+                  "italic": false
+                },
+
+                {
+                  "text": "it a random item modifier that",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "boosts its stats.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Cost",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "score": {
+                      "name": "$ReforgeCost",
+                      "objective": "Temp"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " Coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Click to reforge!",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Reforge Item",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

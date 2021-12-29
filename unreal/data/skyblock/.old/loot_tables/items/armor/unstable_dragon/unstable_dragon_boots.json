@@ -1,0 +1,47 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_boots",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Unstable Dragon Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Ability: Unstable Blood\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Strikes nearby mobs with\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"lightning. It's unstable!\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"Deals 600 damage to all mobs\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"within 8 blocks.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"Cooldown: \\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_gray\\\"},{\\\"text\\\":\\\"10s\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"}]\",
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\",
+					\"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"+5% Crit Chance\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+                    \"{\\\"text\\\":\\\"+15% Crit Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"
+                  ],
+                  color:11670243
+                },
+                AttributeModifiers:[
+                  {Slot:\"feet\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:12,Operation:0,UUID:[I;116859862,751175880,709896264,177585338]},
+                  {Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:18,Operation:0,UUID:[I;785064761,101325966,151737111,120087278]},
+                  {Slot:\"feet\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;644806088,536263453,202351938,390287703]}
+                ],
+                HideFlags:64,
+				Name:\"Unstable Dragon Boots\",
+				Crit_Chance:5,
+				Crit_Damage:15
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

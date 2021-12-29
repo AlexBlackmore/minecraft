@@ -1,0 +1,37 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:leather_chestplate"
+		},
+		"title":"Hsssss",
+		"description":"Wear the Creeper Pants.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"legs":{
+									"nbt":"{Name:\"Creeper Pants\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+    "rewards": {
+        "experience":5
+    }
+}

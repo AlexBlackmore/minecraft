@@ -1,0 +1,2 @@
+execute positioned ^ ^ ^.0001 unless block ~ ~ ~ air positioned ^ ^ ^-.0001 run function items:item_abilities/builders_wand/click/priminary_faces
+execute positioned ^ ^ ^.0001 if block ~ ~ ~ air run function items:item_abilities/builders_wand/click/raycast/10000raycast

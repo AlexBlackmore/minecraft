@@ -1,0 +1,72 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Effect Immunity",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"obsidian_chestplate":{
+			"trigger":"minecraft:effects_changed",
+			"conditions":{
+				"effects":{
+					"wither":{
+						"amplifier":{
+							"min":0
+						}
+					}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"chest":{
+									"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Obsidian Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"vaccine_talisman":{
+			"trigger":"minecraft:effects_changed",
+			"conditions":{
+				"effects":{
+					"poison":{
+						"amplifier":{
+							"min":0
+						}
+					}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{Inventory:[{tag:{display:{Name:\"{\\\"text\\\":\\\"Vaccine Talisman\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}}]}"
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"requirements":[
+		[
+			"obsidian_chestplate",
+			"vaccine_talisman"
+		]
+	],
+	"rewards":{
+		"function":"skyblock:abilities/instant/effect_immunity"
+	}
+}

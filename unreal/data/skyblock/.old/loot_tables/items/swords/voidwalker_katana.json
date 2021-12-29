@@ -1,0 +1,67 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:iron_sword",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Voidwalker Katana","italic":false,"color":"yellow"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Deals ","italic":false,"color":"gray"},{"text":"+100%","italic":false,"color":"green"},{"text":" damage to Endermen.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"UNCOMMON","bold":true,"color":"yellow"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Voidwalker Katana\",
+										Crit_Damage:10
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+10% Crit Damage","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":32
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":8,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

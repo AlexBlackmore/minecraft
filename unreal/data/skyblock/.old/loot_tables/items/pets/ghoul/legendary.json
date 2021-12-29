@@ -1,0 +1,59 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:player_head",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Ghoul","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										["",{"text":"Pet","italic":false,"color":"blue"}],
+										{"text":" "},
+										["",{"text":"Amplified Healing","italic":false,"color":"gold"}],
+										["",{"text":"Increases all healing by ","italic":false,"color":"gray"},{"text":"25%","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Zombie Arm","italic":false,"color":"gold"}],
+										["",{"text":"Increases the health and range","italic":false,"color":"gray"}],
+										["",{"text":"of the Zombie Sword by ","italic":false,"color":"gray"},{"text":"50%","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Reaper Soul","italic":false,"color":"gold"}],
+										["",{"text":"Increases the health of all","italic":false,"color":"gray"}],
+										["",{"text":"summoned Golems by ","italic":false,"color":"gray"},{"text":"100%","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Bonus Stats:","italic":false}],
+										["",{"text":"+1% Max Health","italic":false,"color":"gray"},{"text":"(5 levels)","italic":false,"color":"dark_gray"}],
+										["",{"text":"+7 Intelligence","italic":false,"color":"gray"},{"text":"(10 levels)","italic":false,"color":"dark_gray"}],
+										["",{"text":"+1% Attack Damage","italic":false,"color":"gray"},{"text":"(20 levels)","italic":false,"color":"dark_gray"}],
+										["",{"text":"(Max: Level 100)","italic":false,"color":"dark_gray"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"ghoul"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										SkullOwner:{Id:[I;740566524,1309558315,-1915132552,-327099348],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWUxMTA5YmJkMWY4MmMxODIzNjNlZDUzYjYyNGI2ODg5MjQ0NDdmOWY2OGI5Mjk2NzRhZDM3ZjNjZWY3NjJhOCJ9fX0=\"}]}},
+										Name:\"Legendary Ghoul Pet\",
+										Pet:true
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

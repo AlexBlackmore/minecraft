@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-1632755781,-1507507936,-1465917663,1030830416],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmE1ZWY4Njk0ZWNjYTIyNzM3OGQzN2EwOGI1MWQ4ODZiOTQ3ZTdkNGIzYTEzNDI1NmE5YzY3NGQ3OWRiZGY3In19fQ==\"}]}},Base:{Type:\"PET\",PetData:{MinRarity:\"COMMON\",MaxRarity:\"LEGENDARY\",Name:\"Giraffe\",Skill:\"Foraging\",Mount:0b,Current:{PetItem:\"\",Level:1,Ability:[[0d],[0d, 0d],[0d]],XP:0,NextLevelXP:440},XPTable:\"EPIC\",Stats:{Health:1d,CritChan:0.05d}},Rarity:\"EPIC\",RarityID:4,RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',Health:1d,CritChan:0d,BaseHealth:0d,BaseCritChan:0d,AbilitiesAmount:3,Abilities:[{Name:\"Good Heart\",Type:\"Pet Ability\",Description:['[{\"text\":\"Good Heart\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Regen \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\",\"color\":\"red\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility1\",\"objective\":\"Temp\"},\"color\":\"red\",\"italic\":false},{\"text\":\"❤ \",\"color\":\"red\",\"italic\":false},{\"text\":\"per second\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:1},{Name:\"Higher Ground\",Type:\"Pet Ability\",Description:['[{\"text\":\"Higher Ground\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Grants \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+\",\"color\":\"red\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility2\",\"objective\":\"Temp\"},\"color\":\"red\",\"italic\":false},{\"text\":\"❁ \",\"color\":\"red\",\"italic\":false},{\"text\":\"and\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+\",\"color\":\"blue\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility2_2\",\"objective\":\"Temp\"},\"color\":\"blue\",\"italic\":false},{\"text\":\"☠ Crit Damage §when mid\",\"color\":\"blue\",\"italic\":false}]','[{\"text\":\"ir or jumping\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:3},{Name:\"Long Neck\",Type:\"Pet Ability\",Description:['[{\"text\":\"Long Neck\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"See enemies from afar and gain\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility3\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\"% \",\"color\":\"green\",\"italic\":false},{\"text\":\"dodge chance\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:5}],AbilityBonuses:[[0.25d],[0.5d, 0.4d],[0.25d]]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"[Lvl 1] \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Giraffe\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Foraging Pet\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"1\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Crit Chance: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Good Heart\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Regen \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0❤ \",\"color\":\"red\",\"italic\":false},{\"text\":\"per second\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Higher Ground\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Grants \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0❁ \",\"color\":\"red\",\"italic\":false},{\"text\":\"and\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+0☠ Crit Damage §when mid\",\"color\":\"blue\",\"italic\":false}]','[{\"text\":\"ir or jumping\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"EPIC\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:zombie.spawn_reinforcements",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

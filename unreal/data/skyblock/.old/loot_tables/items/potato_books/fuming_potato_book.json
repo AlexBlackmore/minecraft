@@ -1,0 +1,51 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:book",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Fuming Potato Book","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"Combine with a weapon or armor","italic":false,"color":"gray"},
+										{"text":"piece to grant a permanent stat","italic":false,"color":"gray"},
+										["",{"text":"boost. Stacks up to ","italic":false,"color":"gray"},{"text":"2","italic":false,"color":"green"},{"text":" times.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"When Applied:","italic":false},
+										["",{"text":"+2 Max Health","italic":false,"color":"blue"},{"text":" (Armor)","italic":false,"color":"dark_gray"}],
+										["",{"text":"+1 Armor","italic":false,"color":"blue"},{"text":" (Armor)","italic":false,"color":"dark_gray"}],
+										["",{"text":"+1 Attack Damage","italic":false,"color":"blue"},{"text":" (Weapon)","italic":false,"color":"dark_gray"}],
+										["",{"text":"+1 Sharpness","italic":false,"color":"dark_green"},{"text":" (Sword)","italic":false,"color":"dark_gray"}],
+										["",{"text":"+1 Power","italic":false,"color":"dark_green"},{"text":" (Bow)","italic":false,"color":"dark_gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Enchantments:[
+											{id:\"fire_aspect\",lvl:1}
+										],
+										HideFlags:1,
+										Name:\"Fuming Potato Book\"
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1 @@
+scoreboard players add @s P_Speed 20

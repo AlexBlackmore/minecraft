@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;965089473,-315014293,-1143220446,987127652],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGZkODVhOTY4MzM0ZmZhODc0ZDYzZTgwNjhjNGQxODM1ZTI5YjhkYTE3Y2Y1OGQ4ZGUwYTcxMzM4ZWNiZjYwIn19fQ==\"}]}},AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:0,Operation:0,UUID:[I;1118204109,-1347860123,-1572996500,-2102187826]}],Base:{Type:\"HELMET\",Rarity:\"LEGENDARY\",RarityColor:'{\"text\":\"\",\"color\":\"gold\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\",SlayerRequired:{Type:\"Zombie\",LVL:8},Health:375,BaseHealth:375,Defense:115,BaseDefense:115,Abilities:[{Name:\"Brute Force\",Activation:\"\",Type:\"Item Ability\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Brute Force\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Halves your speed but grants\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+20%\",\"color\":\"red\",\"italic\":false},{\"text\":\" base weapon damage for\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"every\",\"color\":\"gray\",\"italic\":false},{\"text\":\" 25 \",\"color\":\"green\",\"italic\":false},{\"text\":\"speed\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Warden Helmet\",\"color\":\"gold\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+375 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+115\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Brute Force\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Halves your speed but grants\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+20%\",\"color\":\"red\",\"italic\":false},{\"text\":\" base weapon damage for\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"every\",\"color\":\"gray\",\"italic\":false},{\"text\":\" 25 \",\"color\":\"green\",\"italic\":false},{\"text\":\"speed\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Zombie LVL 8\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"LEGENDARY HELMET\",\"color\":\"gold\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

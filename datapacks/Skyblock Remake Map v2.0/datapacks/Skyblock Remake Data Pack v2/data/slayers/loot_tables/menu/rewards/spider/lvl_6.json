@@ -1,0 +1,130 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Terminator",
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Rewards:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " Permanent +2% Crit Damage",
+                  "color": "blue",
+                  "italic": false
+                },
+                [           
+                  {
+                    "text": " Scorpion Foil",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " Flycatcher",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                {
+                    "text": " Medium Slayer Sack",
+                    "color": "blue",
+                    "italic": false
+                },
+                {
+                  "text": ""
+                }            
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Rewards claimed!",
+                  "color": "green",
+                  "italic": false
+                }    
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_SpiderLvl": {
+                      "min": 6,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Level not reached!",
+                  "color": "red",
+                  "italic": false
+                }    
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_SpiderLvl": 5
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Spider Slayer LVL 6",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63,SkullOwner:{Id:[I;-794521730,12535338,-2048896477,-1270737149],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRiMmI3OWE0ZTA2MGFiYjAwYWE4OGU3YzRjZDVjMDAzOWY1ZTVjYWQyZDQ1YzFjZmY1Njc2Y2I4M2ExODE1ZSJ9fX0=\"}]}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

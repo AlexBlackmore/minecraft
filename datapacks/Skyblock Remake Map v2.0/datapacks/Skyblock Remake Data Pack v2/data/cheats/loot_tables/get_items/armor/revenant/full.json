@@ -1,0 +1,85 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"CHESTPLATE\",Rarity:\"EPIC\",CraftingRemoveCounts:[32,0,32,32,0,32,0,0,0],RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",SlayerRequired:{Type:\"Zombie\",LVL:4},Health:180,Defense:70,BaseHealth:180,BaseDefense:70,Abilities:[{Name:\"Trolling The Reaper\",Activation:\"\",Type:\"Full Set Bonus\"},{Name:\"ZombieBulwark\",Activation:\"\",Type:\"Piece Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Trolling The Reaper\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Healing Wands heal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50%\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"against Zombies.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Zombie Bulwark\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Kill Zombies to accumulate\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"defense against them.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0❈\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Next Upgrade: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"(\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"red\",\"italic\":false},{\"text\":\")\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Revenant Chestplate\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+180 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+70\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Trolling The Reaper\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Healing Wands heal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50%\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"against Zombies.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Zombie Bulwark\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Kill Zombies to accumulate\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"defense against them.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0❈\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Next Upgrade: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"(\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"red\",\"italic\":false},{\"text\":\")\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Zombie LVL 4\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"EPIC CHESTPLATE\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"LEGGINGS\",Rarity:\"EPIC\",CraftingRemoveCounts:[0,0,0,16,0,16,16,0,16],RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",SlayerRequired:{Type:\"Zombie\",LVL:4},Health:120,Defense:50,BaseHealth:120,BaseDefense:50,Abilities:[{Name:\"Trolling The Reaper\",Activation:\"\",Type:\"Full Set Bonus\"},{Name:\"ZombieBulwark\",Activation:\"\",Type:\"Piece Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Trolling The Reaper\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Healing Wands heal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50%\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"against Zombies.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Zombie Bulwark\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Kill Zombies to accumulate\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"defense against them.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0❈\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Next Upgrade: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"(\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"red\",\"italic\":false},{\"text\":\")\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Revenant Leggings\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+120 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Trolling The Reaper\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Healing Wands heal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50%\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"against Zombies.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Zombie Bulwark\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Kill Zombies to accumulate\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"defense against them.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0❈\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Next Upgrade: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"(\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"red\",\"italic\":false},{\"text\":\")\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Zombie LVL 4\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"EPIC LEGGINGS\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"BOOTS\",Rarity:\"EPIC\",CraftingRemoveCounts:[32,0,32,0,0,0],RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",SlayerRequired:{Type:\"Zombie\",LVL:4},Health:100,Defense:30,BaseHealth:100,BaseDefense:30,Abilities:[{Name:\"Trolling The Reaper\",Activation:\"\",Type:\"Full Set Bonus\"},{Name:\"ZombieBulwark\",Activation:\"\",Type:\"Piece Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Trolling The Reaper\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Healing Wands heal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50%\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"against Zombies.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Zombie Bulwark\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Kill Zombies to accumulate\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"defense against them.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0❈\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Next Upgrade: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"(\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"red\",\"italic\":false},{\"text\":\")\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Revenant Boots\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+30\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Trolling The Reaper\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Healing Wands heal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50%\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"against Zombies.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Zombie Bulwark\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Kill Zombies to accumulate\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"defense against them.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0❈\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Next Upgrade: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"(\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"red\",\"italic\":false},{\"text\":\")\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Zombie LVL 4\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"EPIC BOOTS\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

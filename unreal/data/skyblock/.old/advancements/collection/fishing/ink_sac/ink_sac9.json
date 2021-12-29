@@ -1,0 +1,44 @@
+{
+  "parent":"skyblock:collection/fishing/ink_sac/ink_sac8",
+  "display":{
+    "icon":{
+      "item":"minecraft:stick",
+      "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+    },
+    "title":"Ink Sac IX",
+    "description":"Kill 4,000 squid. Unlocks Ink Wand recipe.",
+    "frame":"challenge",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "ink_sac":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:killed",
+                    "stat":"minecraft:squid",
+                    "value":{
+                      "min":4000
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":400
+	}
+}

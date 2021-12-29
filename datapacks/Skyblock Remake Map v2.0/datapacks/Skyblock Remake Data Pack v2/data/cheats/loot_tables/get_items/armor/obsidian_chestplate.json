@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"CHESTPLATE\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Defense:250,BaseDefense:250},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"While worn, you will gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+1\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"✦ Speed \",\"color\":\"white\",\"italic\":false},{\"text\":\"for every \",\"color\":\"gray\",\"italic\":false},{\"text\":\"20\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"pieces of Obsidian in your\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"inventory!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\".\",\"color\":\"black\",\"italic\":false},{\"text\":\".\",\"color\":\"black\",\"italic\":false}]','[{\"text\":\"Bonus Speed: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Obsidian Chestplate\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+250\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"While worn, you will gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+1\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"✦ Speed \",\"color\":\"white\",\"italic\":false},{\"text\":\"for every \",\"color\":\"gray\",\"italic\":false},{\"text\":\"20\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"pieces of Obsidian in your\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"inventory!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\".\",\"color\":\"black\",\"italic\":false},{\"text\":\".\",\"color\":\"black\",\"italic\":false}]','[{\"text\":\"Bonus Speed: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC CHESTPLATE\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]'],color:0}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

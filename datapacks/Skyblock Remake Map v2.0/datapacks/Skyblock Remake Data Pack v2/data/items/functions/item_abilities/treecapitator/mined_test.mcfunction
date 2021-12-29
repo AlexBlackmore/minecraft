@@ -1,0 +1,12 @@
+execute if entity @s[scores={B_OakL=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:oak_log"}}] run function items:item_abilities/treecapitator/main
+execute if entity @s[scores={B_BirchL=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:birch_log"}}] run function items:item_abilities/treecapitator/main
+execute if entity @s[scores={B_SpruceL=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:spruce_log"}}] run function items:item_abilities/treecapitator/main
+execute if entity @s[scores={B_JungleL=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:jungle_log"}}] run function items:item_abilities/treecapitator/main
+execute if entity @s[scores={B_AcaciaL=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:acacia_log"}}] run function items:item_abilities/treecapitator/main
+execute if entity @s[scores={B_DarkoakL=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:dark_oak_log"}}] run function items:item_abilities/treecapitator/main
+execute if entity @s[scores={B_OakW=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:oak_wood"}}] run function items:item_abilities/treecapitator/main
+execute if entity @s[scores={B_BirchW=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:birch_wood"}}] run function items:item_abilities/treecapitator/main
+execute if entity @s[scores={B_SpruceW=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:spruce_wood"}}] run function items:item_abilities/treecapitator/main
+execute if entity @s[scores={B_JungleW=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:jungle_wood"}}] run function items:item_abilities/treecapitator/main
+execute if entity @s[scores={B_AcaciaW=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:acacia_wood"}}] run function items:item_abilities/treecapitator/main
+execute if entity @s[scores={B_DarkoakW=1..,PassiveCooldown=..0}] at @e[distance=..7,type=item,nbt={Age:0s,Item:{id:"minecraft:dark_oak_wood"}}] run function items:item_abilities/treecapitator/main

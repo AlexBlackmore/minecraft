@@ -1,0 +1,112 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"HELMET\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Defense:110,BaseDefense:110},HideFlags:63,Unbreakable:1b,Description:[],display:{Name:'[{\"text\":\"Perfect Helmet - Tier 1\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+110\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE HELMET\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"CHESTPLATE\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Defense:160,BaseDefense:160},HideFlags:63,Unbreakable:1b,Description:[],display:{Name:'[{\"text\":\"Perfect Chestplate - Tier 1\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+160\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE CHESTPLATE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"LEGGINGS\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Defense:140,BaseDefense:140},HideFlags:63,Unbreakable:1b,Description:[],display:{Name:'[{\"text\":\"Perfect Leggings - Tier 1\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+140\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE LEGGINGS\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"BOOTS\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Defense:90,BaseDefense:90},HideFlags:63,Unbreakable:1b,Description:[],display:{Name:'[{\"text\":\"Perfect Boots - Tier 1\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+90\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE BOOTS\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

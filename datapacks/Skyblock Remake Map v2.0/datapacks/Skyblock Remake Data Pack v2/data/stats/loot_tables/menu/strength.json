@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:blaze_powder",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"❁ Strength ","color":"red","italic":false},{"score":{"name":"@s","objective":"P_Strength"},"italic":false,"color":"white"}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Strength increases your base","color":"gray","italic":false},{"text":"melee damage, including punching","color":"gray","italic":false},{"text":"and weapons.","color":"gray","italic":false},{"text":""},[{"text":"Base Strength: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_BaseStrength"},"italic":false,"color":"green"}],{"text":" Increase your base Strength","color":"dark_gray","italic":true},{"text":" by leveling your Foraging Skill","color":"dark_gray","italic":true},[{"text":" and contributing to the","color":"dark_gray","italic":true},{"text":" Fairy ","color":"light_purple","italic":false}],[{"text":" in the","color":"dark_gray","italic":true},{"text":" Wilderness","color":"dark_green","italic":false}],{"text":""},[{"text":"Bonus Strength: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_BonusStrength"},"italic":false,"color":"yellow"}],{"text":" Increase your bonus Strength","color":"dark_gray","italic":true},{"text":" by equipping items and armor,","color":"dark_gray","italic":true},{"text":" and storing accessories in your","color":"dark_gray","italic":true},{"text":" inventory.","color":"dark_gray","italic":true},{"text":""},[{"text":"Base Damage: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_BaseDamage"},"italic":false,"color":"green"}]],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:leather_chestplate"
+		},
+		"title":"I believe I can fly!",
+		"description":"Wear a full set of Bat Person Armor.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"head":{
+									"nbt":"{Name:\"Bat Person Helmet\"}"
+								},
+								"chest":{
+									"nbt":"{Name:\"Bat Person Chestplate\"}"
+								},
+								"legs":{
+									"nbt":"{Name:\"Bat Person Leggings\"}"
+								},
+								"feet":{
+									"nbt":"{Name:\"Bat Person Boots\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+    "rewards": {
+        "experience":5
+    }
+}

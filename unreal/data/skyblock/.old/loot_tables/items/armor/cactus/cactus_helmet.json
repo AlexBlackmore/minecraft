@@ -1,0 +1,67 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_helmet",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Cactus Helmet","italic":false,"color":"white"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Deflect","italic":false,"color":"gold"},
+										["",{"text":"Rebounds ","italic":false,"color":"gray"},{"text":"33%","italic":false,"color":"green"},{"text":" of your ","italic":false,"color":"gray"},{"text":"Attack","italic":false,"color":"blue"}],
+										["",{"text":"Damage","italic":false,"color":"blue"},{"text":" back at any mob that hits","italic":false,"color":"gray"}],
+										["",{"text":"you.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"COMMON","bold":true,"color":"white"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:65280
+										},
+										HideFlags:64,
+										Name:\"Cactus Helmet\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":1,
+											"slot":"head"
+										},
+										{
+											"name":"Defense",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":2,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

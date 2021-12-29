@@ -1,0 +1,1 @@
+execute if data storage skyblock:personal_compactors {slot:"minecraft:tropical_fish"} run function personal_compactors:compact/materials/clownfish

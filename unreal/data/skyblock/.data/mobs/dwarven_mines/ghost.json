@@ -1,0 +1,19 @@
+summon creeper ~ ~ ~ {
+	CustomName:"{\"text\":\"Ghost\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock","ghost"],
+	powered:true,
+	AbsorptionAmount:198976,
+	Health:1024,
+	Attributes:[
+		{Name:"generic.max_health",Base:1024},
+		{Name:"generic.attack_damage",Base:120}
+	],
+	ActiveEffects:[
+		{
+			Id:14,
+			Duration:2147483646
+		}
+	],
+	DeathLootTable:"skyblock:mobs/dwarven_mines/ghost"
+}

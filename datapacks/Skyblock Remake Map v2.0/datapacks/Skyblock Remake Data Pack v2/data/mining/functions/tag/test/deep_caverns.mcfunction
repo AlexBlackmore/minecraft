@@ -1,0 +1,1 @@
+execute unless data entity @s SelectedItem.tag{Location:"minecraft:deep_caverns"} run function mining:tag/set/deep_caverns

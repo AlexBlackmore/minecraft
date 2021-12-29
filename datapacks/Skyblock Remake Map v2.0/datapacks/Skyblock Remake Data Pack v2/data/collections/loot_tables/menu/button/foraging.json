@@ -1,0 +1,171 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:jungle_sapling",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{Damage:0,SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": [
+				  {
+					"text": "Foraging Collection",
+					"color": "green",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "View your Foraging Collection!",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": " "
+				  },
+				  [
+					{
+					  "text": "Collection Unlocked: ",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_ForagingP"
+					  },
+					  "color": "yellow"
+					},
+					{
+					  "text": "%",
+					  "color": "gold"
+					}
+				  ],
+				  [
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_Foraging"
+					  },
+					  "color": "yellow",
+					  "italic": false
+					},
+					{
+					  "text": "/",
+					  "color": "gold",
+					  "italic": false
+					},
+					{
+					  "text": "6",
+					  "color": "yellow",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": " "
+				  },
+				  {
+					"text": "Click to view!",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_Foraging": {
+						"min": 0,
+						"max": 5
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "View your Foraging Collection!",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": " "
+				  },
+				  [
+					{
+					  "text": "Collection Maxed Out: ",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_Foraging_MaxP"
+					  },
+					  "color": "yellow"
+					},
+					{
+					  "text": "%",
+					  "color": "gold"
+					}
+				  ],
+				  [
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_Foraging_Max"
+					  },
+					  "color": "yellow",
+					  "italic": false
+					},
+					{
+					  "text": "/",
+					  "color": "gold",
+					  "italic": false
+					},
+					{
+					  "text": "6",
+					  "color": "yellow",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": " "
+				  },
+				  {
+					"text": "Click to view!",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_Foraging": 6
+					}
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

@@ -1,0 +1,51 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:stick",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Wand of Healing","italic":false,"color":"yellow"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Small Heal ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Heals ","italic":false,"color":"gray"},{"text":"+12 Health","italic":false,"color":"red"},{"text":".","italic":false,"color":"gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"60 XP","italic":false,"color":"aqua"}],
+										{"text":" "},
+										{"text":"UNCOMMON","bold":true,"color":"yellow"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										HideFlags:1,
+										Name:\"Wand of Healing\",
+										Ability:true
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"unbreaking":1
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

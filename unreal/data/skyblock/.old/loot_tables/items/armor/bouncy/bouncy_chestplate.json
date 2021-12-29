@@ -1,0 +1,116 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_chestplate",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Bouncy Chestplate","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Bouncing Arrow","italic":false,"color":"gold"},
+										["",{"text":"Your arrows have a ","italic":false,"color":"gray"},{"text":"25%","italic":false,"color":"yellow"},{"text":" chance to","italic":false,"color":"gray"}],
+										{"text":"bounce to another target after","italic":false,"color":"gray"},
+										{"text":"hitting a mob.","italic":false,"color":"gray"},
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								}
+							],
+							"conditions":[
+								{
+									"condition":"random_chance_with_looting",
+									"chance":0.05,
+									"looting_multiplier":0.01
+								}
+							]
+						},
+						{
+							"type":"item",
+							"name":"minecraft:leather_chestplate",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Bouncy Chestplate","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Bouncing Arrow","italic":false,"color":"gold"},
+										["",{"text":"Your arrows have a ","italic":false,"color":"gray"},{"text":"25%","italic":false,"color":"yellow"},{"text":" chance to","italic":false,"color":"gray"}],
+										{"text":"bounce to another target after","italic":false,"color":"gray"},
+										{"text":"hitting a mob.","italic":false,"color":"gray"},
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"functions":[
+		{
+			"function":"minecraft:set_nbt",
+			"tag":"{
+				display:{
+					color:10383363
+				},
+				HideFlags:64,
+				Name:\"Bouncy Chestplate\",
+				Crit_Chance:5
+			}"
+		},
+		{
+			"function":"minecraft:set_lore",
+			"lore":[
+				{"text":"+5% Crit Chance","italic":false,"color":"blue"}
+			],
+			"replace":false
+		},
+		{
+			"function":"minecraft:enchant_with_levels",
+			"treasure":true,
+			"levels":30
+		},
+		{
+			"function":"minecraft:set_attributes",
+			"modifiers":[
+				{
+					"name":"Max Health",
+					"attribute":"generic.max_health",
+					"operation":"addition",
+					"amount":24,
+					"slot":"chest"
+				}
+			]
+		},
+		{
+			"function":"minecraft:set_damage",
+			"damage":{
+						"type":"uniform",
+						"min":0.0,
+						"max":1.0
+			}
+		}
+	]
+}

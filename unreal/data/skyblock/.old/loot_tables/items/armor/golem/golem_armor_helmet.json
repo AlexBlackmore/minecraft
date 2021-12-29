@@ -1,0 +1,62 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:iron_helmet",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Golem Armor Helmet","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Absorption","italic":false,"color":"gold"},
+										["",{"text":"Killing a mob grants","italic":false,"color":"gray"}],
+										["",{"text":"Absorption III","italic":false,"color":"yellow"},{"text":" for ","italic":false,"color":"gray"},{"text":"20","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Golem Armor Helmet\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":9,
+											"slot":"head"
+										},
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":9,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

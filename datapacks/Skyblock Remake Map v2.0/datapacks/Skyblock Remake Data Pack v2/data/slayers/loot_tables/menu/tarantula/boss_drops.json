@@ -1,0 +1,103 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Tarantula Broodfather",
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Usually, the boss will drop",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "Tarantula Web ",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": "which",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "are used for slayer crafts.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "If you're lucky, you may get",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "one out of ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "8 ",
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "possible",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "drops from this boss!",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Click to view drops!",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Boss Drops",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

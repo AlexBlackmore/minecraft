@@ -1,0 +1,3 @@
+execute if entity @e[type=ender_pearl,distance=..6,nbt={Item:{tag:{Base:{Skyblock:1b}}}}] run give @s[gamemode=!creative] ender_pearl{Base:{Skyblock:1b,Type:"",Rarity:"UNCOMMON",CraftingRemoveCounts:[0,4,0,4,4,4,0,4,0],RarityColor:'{"text":"","color":"green"}'},Enchantments:[{}],display:{Name:'{"text":"Enchanted Ender Pearl","color":"green","italic":false}',Lore:['[{"text":"UNCOMMON","color":"green","italic":false,"bold":true}]']}}
+kill @e[type=ender_pearl,distance=..6,nbt={Item:{tag:{Base:{Skyblock:1b}}}}]
+scoreboard players set @s ender_pearl_use 0

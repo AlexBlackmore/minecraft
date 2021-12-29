@@ -1,0 +1,63 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:bow",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Scorpion Bow","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Stinger","italic":false,"color":"gold"}],
+										["",{"text":"Deals ","italic":false,"color":"gray"},{"text":"35x","italic":false,"color":"red"},{"text":" your ","italic":false,"color":"gray"},{"text":"Attack Damage","italic":false,"color":"blue"},{"text":" as","italic":false,"color":"gray"}],
+										["",{"text":"damage and inflicts ","italic":false,"color":"gray"},{"text":"Slowness IV","italic":false,"color":"#5A6C81"}],
+										["",{"text":"and ","italic":false,"color":"gray"},{"text":"Poison V","italic":false,"color":"#4E9331"},{"text":" for ","italic":false,"color":"gray"},{"text":"6","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"150 XP","italic":false,"color":"aqua"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Scorpion Bow\"
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"power":9
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":2,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

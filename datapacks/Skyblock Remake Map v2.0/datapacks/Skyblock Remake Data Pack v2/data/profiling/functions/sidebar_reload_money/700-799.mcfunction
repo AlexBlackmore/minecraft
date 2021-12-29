@@ -1,0 +1,10 @@
+execute if score @s Coins matches 700..709 run function profiling:sidebar_reload_money/700-709
+execute if score @s Coins matches 710..719 run function profiling:sidebar_reload_money/710-719
+execute if score @s Coins matches 720..729 run function profiling:sidebar_reload_money/720-729
+execute if score @s Coins matches 730..739 run function profiling:sidebar_reload_money/730-739
+execute if score @s Coins matches 740..749 run function profiling:sidebar_reload_money/740-749
+execute if score @s Coins matches 750..759 run function profiling:sidebar_reload_money/750-759
+execute if score @s Coins matches 760..769 run function profiling:sidebar_reload_money/760-769
+execute if score @s Coins matches 770..779 run function profiling:sidebar_reload_money/770-779
+execute if score @s Coins matches 780..789 run function profiling:sidebar_reload_money/780-789
+execute if score @s Coins matches 790..799 run function profiling:sidebar_reload_money/790-799

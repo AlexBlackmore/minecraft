@@ -1,0 +1,72 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:chainmail_helmet",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Sorrow Helmet","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Ability: Mist Aura","italic":false,"color":"gold"},
+										["",{"text":"Hides the wearer in a guise of","italic":false,"color":"gray"}],
+										["",{"text":"mist.","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Haste X","italic":false,"color":"gold"}],
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+200% Mining Speed","italic":false,"color":"blue"},{"text":" and","italic":false,"color":"gray"}],
+										["",{"text":"+100% Attack Speed","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Sorrow Helmet\"
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"fortune":4
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"True Defense",
+											"attribute":"generic.armor_toughness",
+											"operation":"addition",
+											"amount":20,
+											"slot":"head"
+										},
+										{
+											"name":"Magic Find",
+											"attribute":"generic.luck",
+											"operation":"addition",
+											"amount":5,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

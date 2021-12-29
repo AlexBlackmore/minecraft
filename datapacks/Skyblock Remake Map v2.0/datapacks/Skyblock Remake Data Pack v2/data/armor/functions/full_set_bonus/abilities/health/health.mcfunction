@@ -1,0 +1,1 @@
+scoreboard players add @s P_Health 60

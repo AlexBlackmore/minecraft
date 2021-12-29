@@ -1,0 +1,3 @@
+scoreboard players operation .search backpacks.cartid = @s backpacks.cartid
+execute if score @s backpacks.pages matches 1 as @e[type=armor_stand,tag=BackpackMove,sort=nearest] if score @s backpacks.cartid = .search backpacks.cartid positioned ^ ^ ^ run function backpacks:holding/single_page/locked_slots/main
+execute if score @s backpacks.pages matches 2.. as @e[type=armor_stand,tag=BackpackMove,sort=nearest] if score @s backpacks.cartid = .search backpacks.cartid positioned ^ ^ ^ run function backpacks:holding/multiple_page/pages/locked_slots/main

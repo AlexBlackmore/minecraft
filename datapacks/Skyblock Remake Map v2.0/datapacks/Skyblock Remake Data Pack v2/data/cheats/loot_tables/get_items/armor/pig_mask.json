@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;0,0,0,0],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTYxODQ5OTM0MzY2MiwKICAicHJvZmlsZUlkIiA6ICI0MWQzYWJjMmQ3NDk0MDBjOTA5MGQ1NDM0ZDAzODMxYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNZWdha2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjUzZjNhMWNlYWUwZjlhOTgzMjBmYTIxYmYyMTYyYzVjZTY5MjkzM2I2MjA1YzQ3Mjg2ZDc4ZGFhMmUyMDczMiIKICAgIH0KICB9Cn0=\"}]}},Base:{Type:\"HELMET\",Rarity:\"LEGENDARY\",RarityColor:'{\"text\":\"\",\"color\":\"gold\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\",Speed:1,BaseSpeed:1},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Wear this mask to show your\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"support for the Dante\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"resistance.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\" \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Cosmetic item!\",\"color\":\"blue\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Pig Mask\",\"color\":\"gold\",\"italic\":false}]',Lore:['[{\"text\":\"Speed: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+1\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Wear this mask to show your\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"support for the Dante\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"resistance.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\" \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Cosmetic item!\",\"color\":\"blue\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"LEGENDARY HELMET\",\"color\":\"gold\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet",
+                    "legs",
+                    "chest",
+                    "head"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

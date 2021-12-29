@@ -1,0 +1,46 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:fishing_rod",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Grappling Hook","italic":false,"color":"yellow"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Travel around in style using","italic":false,"color":"gray"}],
+										["",{"text":"this Grappling Hook. Cast the","italic":false,"color":"gray"}],
+										["",{"text":"rod into the air and Sneak to","italic":false,"color":"gray"}],
+										["",{"text":"teleport to the fishing bobber.","italic":false,"color":"gray"}],
+										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"2s","italic":false,"color":"green"}],
+										{"text":" "},
+										{"text":"UNCOMMON","bold":true,"color":"yellow"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Grappling Hook\",
+										Ability:true
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

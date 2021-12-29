@@ -1,0 +1,86 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier4XPReward",
+                      "objective": "S_RInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier4Cost",
+                      "objective": "S_RInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Click to edit!",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Random Tier IV Boss",
+                "color": "dark_red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

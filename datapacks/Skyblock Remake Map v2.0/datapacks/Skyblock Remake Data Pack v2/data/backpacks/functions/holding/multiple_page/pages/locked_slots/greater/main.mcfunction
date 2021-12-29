@@ -1,0 +1,2 @@
+execute if score @p backpacks.currpg matches 1 run function backpacks:holding/multiple_page/pages/locked_slots/greater/1
+execute if score @p backpacks.currpg matches 2 run function backpacks:holding/multiple_page/pages/locked_slots/greater/2

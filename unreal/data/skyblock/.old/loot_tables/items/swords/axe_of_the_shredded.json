@@ -1,0 +1,72 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:diamond_axe",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Axe of the Shredded","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"Instant Health II","italic":false,"color":"#F82423"},{"text":" every hit.","italic":false,"color":"gray"}],
+										["",{"text":"Deals ","italic":false,"color":"gray"},{"text":"+250%","italic":false,"color":"green"},{"text":" damage to Zombies.","italic":false,"color":"gray"}],
+										["",{"text":"Recieve ","italic":false,"color":"gray"},{"text":"+5 Armor Toughness","italic":false,"color":"blue"},{"text":" while","italic":false,"color":"gray"}],
+										["",{"text":"fighting Zombies.","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Ability: Throw","italic":false,"color":"gold"}],
+										["",{"text":"Hitting a mob while sneaking","italic":false,"color":"gray"}],
+										["",{"text":"will throw your axe forward,","italic":false,"color":"gray"}],
+										["",{"text":"damaging all enemies within","italic":false,"color":"gray"}],
+										["",{"text":"9","italic":false,"color":"yellow"},{"text":" blocks for ","italic":false,"color":"gray"},{"text":"10%","italic":false,"color":"green"},{"text":" of your","italic":false,"color":"gray"}],
+										["",{"text":"Attack Damage","italic":false,"color":"blue"},{"text":". Consecutive","italic":false,"color":"gray"}],
+										["",{"text":"throws stack up to ","italic":false,"color":"gray"},{"text":"16","italic":false,"color":"green"},{"text":" times","italic":false,"color":"gray"}],
+										["",{"text":"damage and cost.","italic":false,"color":"gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"20 XP","italic":false,"color":"aqua"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Axe of the Shredded\"
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":56
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":23,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

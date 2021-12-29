@@ -1,0 +1,52 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+		CustomName:"{\"text\":\"Gladiator\"}"
+		CustomNameVisible:true
+		PersistenceRequired:true
+		Silent:true
+		CanPickUpLoot:false
+		Willing:false
+		NoAI:false
+		VillagerData:
+		{
+			level:5
+			profession:"weaponsmith"
+			type:"plains"
+		}
+		Attributes: [
+			{
+				Name:"generic.movementSpeed"
+				Base:"0f"
+			}
+		]
+		Offers:
+		{
+			Recipes: [
+				{
+					buyB:
+					{
+						id:"writable_book"
+						Count:1
+						tag:{
+							display:{
+								Name:"[\"\"{\"text\":\"<\"\"italic\":false\"color\":\"white\"}{\"text\":\"Gladiator\"\"italic\":false\"color\":\"aqua\"}{\"text\":\">\"\"italic\":false\"color\":\"white\"}]"
+								Lore:[
+									"{\"text\":\"Welcome to the Colosseum!\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"Here you can test your fighting\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"skills against various monsters.\"\"italic\":false\"color\":\"white\"}"
+								]
+							}
+							HideFlags:32
+						}
+					}
+					rewardExp:false
+					maxUses:0
+				}
+			]
+		}
+	}
+	display:{
+		Name:"{\"text\":\"Gladiator\"}"
+	}
+}

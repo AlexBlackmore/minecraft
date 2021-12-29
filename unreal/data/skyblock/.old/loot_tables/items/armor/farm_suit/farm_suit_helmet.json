@@ -1,0 +1,66 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_helmet",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Farm Suit Helmet","italic":false,"color":"white"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Bonus Speed","italic":false,"color":"gold"}],
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+20% Speed","italic":false,"color":"blue"},{"text":" while in a","italic":false,"color":"gray"}],
+										["",{"text":"Jungle, Mushroom, Plains, or","italic":false,"color":"gray"}],
+										["",{"text":"Desert biome.","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Farmer Aura ","italic":false,"color":"gold"},{"text":"SNEAK","bold":true,"color":"yellow"}],
+										["",{"text":"Increases the growth rate of","italic":false,"color":"gray"}],
+										["",{"text":"nearby crops.","italic":false,"color":"gray"}],
+										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"3s","italic":false,"color":"green"}],
+										{"text":" "},
+										{"text":"COMMON","bold":true,"color":"white"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:16776960
+										},
+										HideFlags:64,
+										Name:\"Farm Suit Helmet\",
+										Ability:true
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":3,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

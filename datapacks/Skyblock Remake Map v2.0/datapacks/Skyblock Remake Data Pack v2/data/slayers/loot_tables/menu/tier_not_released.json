@@ -1,0 +1,60 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:coal_block",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "Not released yet!",
+                    "color": "dark_purple",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "entity": "this",
+            "tag": "{SkyblockMenu:1b}"
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "This unimaginably difficult",
+                "color": "gray",
+                "bold": false,
+                "italic": false
+              }
+            ],
+            "replace": false
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "slayer boss will release on a later date.",
+                "color": "gray",
+                "bold": false,
+                "italic": false
+              }
+            ],
+            "replace": false
+          }      
+        ]
+      }
+    ]
+  }

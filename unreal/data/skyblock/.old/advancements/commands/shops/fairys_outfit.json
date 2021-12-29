@@ -1,0 +1,123 @@
+{
+	"parent":"skyblock:commands/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Fairy's Outfit",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"fedora":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"color\\\":\\\"light_purple\\\",\\\"text\\\":\\\"Tia the Fairy\\\"}\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{Name:\"Fairy's Fedora\"}"
+								},
+								"offhand":{
+									"nbt":"{Name:\"Fairy Soul\"}"
+								}
+							}	
+						}
+					}
+				]
+			}
+		},
+		"polo":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"color\\\":\\\"light_purple\\\",\\\"text\\\":\\\"Tia the Fairy\\\"}\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{Name:\"Fairy's Polo\"}"
+								},
+								"offhand":{
+									"nbt":"{Name:\"Fairy Soul\"}"
+								}
+							}	
+						}
+					}
+				]
+			}
+		},
+		"trousers":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"color\\\":\\\"light_purple\\\",\\\"text\\\":\\\"Tia the Fairy\\\"}\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{Name:\"Fairy's Trousers\"}"
+								},
+								"offhand":{
+									"nbt":"{Name:\"Fairy Soul\"}"
+								}
+							}	
+						}
+					}
+				]
+			}
+		},
+		"galoshes":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"color\\\":\\\"light_purple\\\",\\\"text\\\":\\\"Tia the Fairy\\\"}\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{Name:\"Fairy's Galoshes\"}"
+								},
+								"offhand":{
+									"nbt":"{Name:\"Fairy Soul\"}"
+								}
+							}	
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements":[
+		[
+			"fedora",
+			"polo",
+			"trousers",
+			"galoshes"
+		]
+	],
+	"rewards":{
+		"function":"skyblock:shops/fairys_outfit"
+	}
+}

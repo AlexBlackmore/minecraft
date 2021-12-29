@@ -1,0 +1,43 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:leather_chestplate"
+		},
+		"title":"Glass Cannon",
+		"description":"Wear an Elegant Tux.",
+		"frame":"challenge",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"chest":{
+									"nbt":"{Name:\"Elegant Tuxedo Jacket\"}"
+								},
+								"legs":{
+									"nbt":"{Name:\"Elegant Tuxedo Pants\"}"
+								},
+								"feet":{
+									"nbt":"{Name:\"Elegant Tuxedo Oxfords\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+    "rewards": {
+        "experience":15
+    }
+}

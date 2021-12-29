@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:player_head",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:fill_player_head",
+				"entity": "this"
+			},
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkullOwner:{Id:[I;1766059203,1341869357,-2143464818,-1242958154],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRhZmIyM2VmYzU3ZjI1MTg3OGU1MzI4ZDExY2IwZWVmODdiNzljODdiMjU0YTdlYzcyMjk2ZjkzNjNlZjdjIn19fQ==\"}]}},SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"☠ Crit Damage ","color":"blue","italic":false},{"score":{"name":"@s","objective":"P_CritDamage"},"italic":false,"color":"white"},{"text":"%","color":"white","italic":false}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Crit Damage is the amount of","color":"gray","italic":false},{"text":"extra damage you deal when","color":"gray","italic":false},{"text":"landing a critical hit.","color":"gray","italic":false},{"text":"","color":"yellow","italic":false},[{"text":"Base Crit Damage: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_BaseCritDamage"},"italic":false,"color":"green"},{"text":"%","color":"green","italic":false}],{"text":" Increase your base Crit","color":"dark_gray","italic":true},[{"text":" Damage by exploring the world!","color":"dark_gray","italic":true}],{"text":"","color":"light_purple","italic":false},[{"text":"Bonus Crit Damage: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_BonusCritDmg"},"italic":false,"color":"yellow"},{"text":"%","color":"yellow","italic":false}],{"text":" Increase your bonus Crit","color":"dark_gray","italic":true},{"text":" Damage by equipping items and","color":"dark_gray","italic":true},{"text":" armor, and storing accessories","color":"dark_gray","italic":true},{"text":" in your inventory.","color":"dark_gray","italic":true}],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

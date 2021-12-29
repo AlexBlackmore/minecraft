@@ -1,0 +1,69 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [{"text":"Go Back","color":"green","italic":false}],
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+					  "condition": "minecraft:entity_properties",
+					  "entity": "this",
+					  "predicate": {
+						"nbt": "{Tags:[\"RecipeMenu\"]}"
+					  }
+                  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_name",
+              "name": [{"text":"Previous Item","color":"green","italic":false}],
+              "entity": "this",
+              "conditions": [
+                {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					"nbt": "{Tags:[\"RecipeMenu\"]}"
+				  }
+                }
+              ]
+            },
+			{
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"To ","color":"gray","italic":false}
+              ],
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+					  "condition": "minecraft:entity_properties",
+					  "entity": "this",
+					  "predicate": {
+						"nbt": "{Tags:[\"RecipeMenu\"]}"
+					  }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

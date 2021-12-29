@@ -1,0 +1,751 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:44,Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:44,Base:{Skyblock:1b}}},{Slot:2b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_IceL": {
+										"min": 8,
+										"max": 10
+									  }
+									}
+								  }
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:24,Base:{Type:\"SWORD\",Rarity:\"RARE\",CraftingRemoveCounts:[32,32,1,1,1,1],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:80,BaseDamage:80,Abilities:[{Name:\"Ice Bolt\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\",Mana:50}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Ice Bolt\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Shoots \",\"color\":\"gray\",\"italic\":false},{\"text\":\"1 \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Ice Bolt that deals \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"500 \",\"color\":\"red\",\"italic\":false},{\"text\":\"damage and slows enemies \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"hit for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5 \",\"color\":\"yellow\",\"italic\":false},{\"text\":\"seconds!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Frozen Scythe\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+80\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Ice Bolt\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Shoots \",\"color\":\"gray\",\"italic\":false},{\"text\":\"1 \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Ice Bolt that deals \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"500 \",\"color\":\"red\",\"italic\":false},{\"text\":\"damage and slows enemies \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"hit for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5 \",\"color\":\"yellow\",\"italic\":false},{\"text\":\"seconds!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE SWORD\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:44,Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:44,Base:{Skyblock:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_IceL": {
+										"min": 8,
+										"max": 10
+									  }
+									}
+								  }
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:24,Base:{Type:\"SWORD\",Rarity:\"RARE\",CraftingRemoveCounts:[32,32,1,1,1,1],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:80,BaseDamage:80,Abilities:[{Name:\"Ice Bolt\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\",Mana:50}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Ice Bolt\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Shoots \",\"color\":\"gray\",\"italic\":false},{\"text\":\"1 \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Ice Bolt that deals \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"500 \",\"color\":\"red\",\"italic\":false},{\"text\":\"damage and slows enemies \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"hit for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5 \",\"color\":\"yellow\",\"italic\":false},{\"text\":\"seconds!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Frozen Scythe\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+80\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Ice Bolt\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Shoots \",\"color\":\"gray\",\"italic\":false},{\"text\":\"1 \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Ice Bolt that deals \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"500 \",\"color\":\"red\",\"italic\":false},{\"text\":\"damage and slows enemies \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"hit for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5 \",\"color\":\"yellow\",\"italic\":false},{\"text\":\"seconds!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE SWORD\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:36,Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:36,Base:{Skyblock:1b}}},{Slot:2b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:36,Base:{Skyblock:1b}}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_JungleL": {
+										"min": 7,
+										"max": 9
+									  }
+									}
+								  }
+							],
+							"type": "item",
+							"name": "minecraft:wooden_axe",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"A powerful Wooden Axe which\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"can break multiple logs in a\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"single hit!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"2s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Jungle Axe\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"A powerful Wooden Axe which\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"can break multiple logs in a\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"single hit!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"2s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"UNCOMMON AXE\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:36,Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:36,Base:{Skyblock:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:36,Base:{Skyblock:1b}}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_JungleL": {
+										"min": 7,
+										"max": 9
+									  }
+									}
+								  }
+							],
+							"type": "item",
+							"name": "minecraft:wooden_axe",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"A powerful Wooden Axe which\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"can break multiple logs in a\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"single hit!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"2s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Jungle Axe\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"A powerful Wooden Axe which\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"can break multiple logs in a\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"single hit!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"2s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"UNCOMMON AXE\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:oak_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:oak_door",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Oak Door\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:spruce_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:spruce_planks\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:spruce_planks\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:spruce_planks\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:spruce_planks\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:spruce_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:spruce_door",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Spruce Door\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:birch_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:birch_planks\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:birch_planks\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:birch_planks\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:birch_planks\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:birch_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:birch_door",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Birch Door\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:jungle_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:jungle_planks\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:jungle_planks\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:jungle_planks\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:jungle_planks\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:jungle_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:jungle_door",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Jungle Door\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:dark_oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:dark_oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:dark_oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:dark_oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:dark_oak_planks\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:dark_oak_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:dark_oak_door",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Dark Oak Door\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:acacia_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:acacia_planks\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:acacia_planks\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:acacia_planks\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:acacia_planks\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:acacia_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:acacia_door",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Acacia Door\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:2b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:wooden_axe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:10,BaseDamage:10},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Wooden Axe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+10\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON AXE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:2b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stone_axe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:15,BaseDamage:15},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Stone Axe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+15\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON AXE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:golden_axe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:20,BaseDamage:20},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Golden Axe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON AXE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:iron_axe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:25,BaseDamage:25},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Iron Axe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+25\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON AXE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:diamond_axe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}',Damage:30,BaseDamage:30},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Diamond Axe\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+30\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"UNCOMMON AXE\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:wooden_axe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:10,BaseDamage:10},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Wooden Axe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+10\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON AXE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stone_axe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:15,BaseDamage:15},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Stone Axe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+15\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON AXE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:golden_axe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:20,BaseDamage:20},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Golden Axe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON AXE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:iron_axe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:20,BaseDamage:20},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Iron Axe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON AXE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:diamond_axe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"AXE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}',Damage:30,BaseDamage:30},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Diamond Axe\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+30\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"UNCOMMON AXE\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:wooden_hoe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"HOE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Wooden Hoe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"COMMON HOE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stone_hoe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"HOE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Stone Hoe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"COMMON HOE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"HOE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Golden Hoe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"COMMON HOE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:iron_hoe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"HOE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Iron Hoe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"COMMON HOE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:3b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:diamond_hoe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"HOE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Diamond Hoe\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"UNCOMMON HOE\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:wooden_hoe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"HOE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Wooden Hoe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"COMMON HOE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stone_hoe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"HOE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Stone Hoe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"COMMON HOE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"HOE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Golden Hoe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"COMMON HOE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:iron_hoe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"HOE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Iron Hoe\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"COMMON HOE\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:4b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:air\",tag:{no_nbt:1b}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:diamond_hoe",
+							"functions": [
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"HOE\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Diamond Hoe\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"UNCOMMON HOE\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:paper\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:2b,id:\"minecraft:paper\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:4b,id:\"minecraft:paper\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:leather\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:book",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Book\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:crimson_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:crimson_planks\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:crimson_planks\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:crimson_planks\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:crimson_planks\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:crimson_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:crimson_door",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Crimson Door\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:flint\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:flint\",tag:{Base:{Vanilla:1b}}},{Slot:2b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:3b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:4b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:5b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:fletching_table",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Fletching Table\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:3b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:4b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:5b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:smithing_table",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Smithing Table\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:paper\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:paper\",tag:{Base:{Vanilla:1b}}},{Slot:2b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:3b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:4b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:5b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:cartography_table",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Cartography Table\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:warped_planks\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:warped_planks\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:warped_planks\",tag:{Base:{Vanilla:1b}}},{Slot:3b,id:\"minecraft:warped_planks\",tag:{Base:{Vanilla:1b}}},{Slot:4b,id:\"minecraft:warped_planks\",tag:{Base:{Vanilla:1b}}},{Slot:5b,id:\"minecraft:warped_planks\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_door",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Warped Door\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 3
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

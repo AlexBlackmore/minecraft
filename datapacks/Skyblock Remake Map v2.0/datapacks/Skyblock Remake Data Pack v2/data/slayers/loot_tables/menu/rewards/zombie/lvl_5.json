@@ -1,0 +1,154 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Bulldozer",
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Rewards:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " Permanent +4 HP",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": " Revenant Minion I (Not added yet.)",
+                  "color": "blue",
+                  "italic": false
+                },
+                [           
+                  {
+                    "text": " Devour Ring",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " Revenant Chestplate",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " Voodoo Doll",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " Small Slayer Sack",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                }            
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Rewards claimed!",
+                  "color": "green",
+                  "italic": false
+                }    
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_ZombieLvl": {
+                      "min": 5,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Level not reached!",
+                  "color": "red",
+                  "italic": false
+                }    
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_ZombieLvl": 4
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Zombie Slayer LVL 5",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,SkullOwner:{Id:[I;-1378727616,1132020418,-1773794713,-1347713217],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWI4ZjQ1MmM5ZDZiNjI1NGI1NDc4NTY5YTYwYjBiNmZiMDMxYzdhZDJmMDZlYTNkYWNmMmNlODc0Y2E3MDgzIn19fQ==\"}]}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+	"parent":"skyblock:commands/crafting",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Speed Artifact",
+		"description":"[::]",
+		"frame":"challenge",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:crafting_table"
+					]
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{Slot:15b,Count:6b,tag:{Name:\"Enchanted Sugar Cane\"}},
+									{Slot:16b,Count:6b,tag:{Name:\"Enchanted Sugar Cane\"}},
+									{Slot:17b,Count:6b,tag:{Name:\"Enchanted Sugar Cane\"}},
+									{Slot:24b,Count:6b,tag:{Name:\"Enchanted Sugar Cane\"}},
+									{Slot:25b,Count:1b,tag:{Name:\"Speed Ring\"}},
+									{Slot:26b,Count:6b,tag:{Name:\"Enchanted Sugar Cane\"}},
+									{Slot:33b,Count:6b,tag:{Name:\"Enchanted Sugar Cane\"}},
+									{Slot:34b,Count:6b,tag:{Name:\"Enchanted Sugar Cane\"}},
+									{Slot:35b,Count:6b,tag:{Name:\"Enchanted Sugar Cane\"}}
+								]
+							}",
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"loot":[
+			"skyblock:items/accessories/speed/speed_artifact"
+		],
+		"function":"skyblock:crafting"
+	}
+}

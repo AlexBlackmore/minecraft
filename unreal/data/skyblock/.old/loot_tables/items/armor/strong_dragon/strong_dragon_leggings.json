@@ -1,0 +1,79 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Strong Dragon Leggings","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Strong Blood","italic":false,"color":"gold"},
+										["",{"text":"Adds ","italic":false,"color":"gray"},{"text":"+15","italic":false,"color":"red"},{"text":" damage to the Aspect of","italic":false,"color":"gray"}],
+										["",{"text":"the End and improves the range","italic":false,"color":"gray"}],
+										["",{"text":"of Instant Transmission by","italic":false,"color":"gray"}],
+										["",{"text":"+2","italic":false,"color":"yellow"},{"text":" blocks. Grants ","italic":false,"color":"gray"},{"text":"+1 Attack","italic":false,"color":"blue"}],
+										["",{"text":"Damage","italic":false,"color":"blue"},{"text":" on cast and prolongs","italic":false,"color":"gray"}],
+										["",{"text":"teleport effects by ","italic":false,"color":"gray"},{"text":"+3","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:14717977
+										},
+										HideFlags:64,
+										Name:\"Strong Dragon Leggings\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":20,
+											"slot":"legs"
+										},
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":28,
+											"slot":"legs"
+										},
+										{
+											"name":"Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":5,
+											"slot":"legs"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
+
+

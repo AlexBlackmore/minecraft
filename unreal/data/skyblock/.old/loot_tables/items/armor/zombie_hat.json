@@ -1,0 +1,54 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:zombie_head",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Zombie Hat","italic":false,"color":"white"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Gives up to ","italic":false,"color":"gray"},{"text":"+2 Armor","italic":false,"color":"blue"},{"text":" for each","italic":false,"color":"gray"}],
+										["",{"text":"Zombie within ","italic":false,"color":"gray"},{"text":"8","italic":false,"color":"yellow"},{"text":" blocks.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"COMMON","bold":true,"color":"white"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Zombie Hat\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":2,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

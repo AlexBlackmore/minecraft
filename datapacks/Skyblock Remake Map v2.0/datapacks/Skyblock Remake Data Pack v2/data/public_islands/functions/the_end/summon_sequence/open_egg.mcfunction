@@ -1,0 +1,474 @@
+#===================NOTE===================#
+# This function was coded by BlueCommander #
+# Please don't claim this as your own work #
+#   LINK www.youtube.com/c/BlueCommander   #
+#==========================================#
+#-----------------GENERIC------------------#
+kill @e[tag=End_CrackStand]
+scoreboard players set Global End_DragSeq -5
+#----------------BREAK EGG-----------------#
+execute as @a[scores={SubLocation=35}] at @s run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 1 1 1
+execute in skyblock:the_end run fill 7 80 9 -7 45 -7 air
+
+summon falling_block 0 73 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 73 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 73 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 73 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 73 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 73 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 72 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 72 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 72 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 72 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 72 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 71 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 71 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 71 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 71 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 71 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 71 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 70 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 70 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 70 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 70 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 70 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 70 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 70 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 70 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 70 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 69 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 69 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 69 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 69 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 69 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 69 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 69 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 69 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 69 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 68 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 68 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 68 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 68 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 68 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 68 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 68 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 68 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 68 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 68 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 68 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 67 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 67 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 67 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 67 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 67 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 67 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 67 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 67 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 67 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 67 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 67 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 67 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 67 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 66 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 66 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 66 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 66 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 66 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 66 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 66 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 66 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 66 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 66 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 66 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 66 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 66 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 65 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 65 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 65 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 65 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 65 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 65 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 65 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 65 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 65 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 65 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 65 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 65 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 65 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 65 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 64 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 64 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 64 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 64 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 64 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 64 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 64 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 64 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 64 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 64 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 64 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 64 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 64 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 64 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 63 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 63 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 63 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 63 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 63 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 63 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 63 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 63 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 63 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 62 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 62 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 62 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 62 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 62 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 62 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 62 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 62 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 62 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 62 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 62 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 61 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 61 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 61 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 61 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 61 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 61 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 61 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 61 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 61 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 61 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 61 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 61 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 60 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 60 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 60 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 60 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 60 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 60 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 60 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 60 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 60 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 60 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 60 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 60 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 60 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 59 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 59 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 59 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 59 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 59 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 59 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 59 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 59 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 59 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 59 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 59 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 59 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 59 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 59 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 58 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 58 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 58 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 58 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 58 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 5 58 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 58 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 58 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 58 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 58 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 58 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 58 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 58 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 57 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 57 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 57 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 57 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 57 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 57 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 57 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 57 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 57 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -5 57 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 57 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 56 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 56 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 56 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 56 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 56 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 56 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 56 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 56 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 56 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 55 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 55 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 55 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 4 55 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 55 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 55 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 55 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 55 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 55 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 54 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 54 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 54 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 54 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 54 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 54 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 54 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 54 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -4 54 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -3 53 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 53 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 53 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 53 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 53 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 53 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 52 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 52 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 52 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 52 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 52 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 51 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 51 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 51 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 51 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 51 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 3 51 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 51 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 50 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 50 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 50 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -2 50 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 50 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 2 50 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 0 49 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 49 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block -1 49 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+summon falling_block 1 49 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:coal_block"},Time:1,DropItem:0b}
+
+summon falling_block 1 73 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 2 73 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 0 73 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 2 72 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -3 71 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -3 71 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 2 71 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 3 71 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -2 70 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -2 70 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 1 70 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 1 69 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 3 69 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -2 69 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -3 69 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 3 68 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -2 68 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -4 68 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -4 67 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 4 67 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -4 67 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 0 66 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 4 66 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 5 66 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -3 66 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -5 66 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 0 65 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 5 65 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 3 65 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -5 65 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -4 64 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 5 64 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -2 64 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -3 63 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -5 63 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -5 63 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -2 63 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -1 63 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 1 63 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 5 63 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 5 63 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -1 62 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -5 62 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 2 62 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 5 62 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 5 61 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 0 61 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 3 61 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 3 60 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 1 60 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -5 60 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -4 59 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 5 59 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -3 59 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 2 58 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -2 58 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -3 57 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 2 57 5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 0 57 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -1 57 -5 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -4 56 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 0 56 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 3 56 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 2 56 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -4 55 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 2 55 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 3 55 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -4 54 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 2 54 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 3 53 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -3 53 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -4 53 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -3 52 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 1 52 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 2 52 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -2 51 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -1 51 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 0 50 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block -2 49 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+summon falling_block 2 49 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_stained_glass"},Time:1,DropItem:0b}
+
+summon falling_block -1 73 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -2 72 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 1 72 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -1 71 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -2 71 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -2 70 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -1 70 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 2 69 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -2 69 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -3 69 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 1 68 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -4 67 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -3 67 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 3 67 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -4 66 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -3 66 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -3 66 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -4 66 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 0 65 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 4 65 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -3 65 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -4 64 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 2 63 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -4 63 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 4 63 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -1 62 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -4 62 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -3 62 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 0 61 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -2 60 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 3 59 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 1 59 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -3 58 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 3 58 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 2 57 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -2 57 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -2 57 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 2 56 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 1 56 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 0 54 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 2 53 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -2 53 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 1 53 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 2 52 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block 0 52 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+summon falling_block -1 51 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:purple_wool"},Time:1,DropItem:0b}
+
+summon falling_block 1 73 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -1 72 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 2 72 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 2 71 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 1 69 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 2 68 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -2 68 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -3 68 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 3 67 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -3 67 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -4 67 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 4 66 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -4 65 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 4 64 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -4 64 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 3 64 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 4 63 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -2 63 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -4 63 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -2 63 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 4 62 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 2 62 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -3 61 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -4 61 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 4 61 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 1 60 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -4 60 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 4 60 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -3 59 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -2 58 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 2 57 4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -1 57 -4 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -1 56 3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 2 56 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 1 55 -3 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -3 55 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 2 54 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -3 54 -2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -3 53 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -1 52 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 1 52 2 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 1 50 0 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block -1 49 1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+summon falling_block 1 49 -1 {Tags:["End_EggBlock"],BlockState:{Name:"minecraft:sea_lantern"},Time:1,DropItem:0b}
+
+summon tnt 0 47 0
+summon tnt 0 49 0
+summon tnt 0 51 0
+summon tnt 0 53 0
+summon tnt 0 55 0
+summon tnt 0 57 0
+summon tnt 0 59 0
+summon tnt 0 61 0
+summon tnt 0 63 0
+summon tnt 0 65 0
+summon tnt 0 67 0
+summon tnt 0 69 0
+summon tnt 0 71 0
+summon tnt 0 73 0
+#--------------PLAYER MOTION---------------#
+function public_islands:the_end/launch_player/start
+#---------RANDOM NUMBER FROM 0..99---------#
+scoreboard players set in RandMath 0
+scoreboard players set in1 RandMath 99
+function skyblock:random/range_lcg
+#--------------SUMMON DRAGON---------------#
+execute if score out RandMath < SuperiorDragChances Setting run schedule function public_islands:the_end/summon_sequence/dragon/superior 2t
+execute if score out RandMath >= SuperiorDragChances Setting run function public_islands:the_end/summon_sequence/not_superior
+
+bossbar set dragon name {"text":"","color":"red"}
+function public_islands:the_end/main_sequence/attack/generate_timer
+
+tellraw @a ["",{"text":"NOTE: ","color":"red"},{"text":"Fighting with a ","color":"white"},{"score":{"name":"DragonDamageMultiplier","objective":"Setting"},"color":"blue"},{"text":"x","color":"blue"},{"text":" Dragon Damage Multiplier!","color":"white"},{"text":"\nHover for more information.","color":"yellow","hoverEvent":{"action":"show_text","contents":["",{"text":"You can edit this in the Cheats GUI Settings Page."},{"text":"\n"},{"text":"It is not recommended to be 1x as the dragon","italic":true,"color":"gray"},{"text":"\n"},{"text":"typically heals faster than you can damage it.","italic":true,"color":"gray"}]}}]
+
+function mobs:summon/npcs/nonhuman/gregory
+execute as @e[tag=End_CrystalLocation,sort=random,limit=5] at @s run function public_islands:the_end/main_sequence/summon_crystal
+#------------SCOREBOARD STATS--------------#
+team modify drag_health suffix [{"text":" ❤","color":"red"}]
+team modify dd_aqua suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_black suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_blue suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_dark_aqua suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_dark_blue suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_dark_gray suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_dark_green suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_dark_purple suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_dark_red suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_gold suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_gray suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_green suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_light_purple suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_red suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_white suffix [{"text":" "},{"text":"0","color":"red"}]
+team modify dd_yellow suffix [{"text":" "},{"text":"0","color":"red"}]
+#------------------------------------------#

@@ -1,0 +1,88 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:bow",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Terminator","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Instantly shoots ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"green"},{"text":" arrows at","italic":false,"color":"gray"}],
+										["",{"text":"once.","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Divides your Crit Chance by 4!","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Ability: Salvation","italic":false,"color":"gold"}],
+										["",{"text":"Triggers every ","italic":false,"color":"gray"},{"text":"1/3","italic":false,"color":"green"},{"text":" hits,","italic":false,"color":"gray"}],
+										["",{"text":"consuming an Enchanted Ender","italic":false,"color":"gray"}],
+										["",{"text":"Pearl from your off-hand. Shoots","italic":false,"color":"gray"}],
+										["",{"text":"a beam up to ","italic":false,"color":"gray"},{"text":"32","italic":false,"color":"yellow"},{"text":" blocks in front","italic":false,"color":"gray"}],
+										["",{"text":"of you, penetrating up to 5 mobs","italic":false,"color":"gray"}],
+										["",{"text":"and dealing ","italic":false,"color":"gray"},{"text":"2x","italic":false,"color":"red"},{"text":" the damage an","italic":false,"color":"gray"}],
+										["",{"text":"arrow would with a ","italic":false,"color":"gray"},{"text":"100% Crit","italic":false,"color":"blue"}],
+										["",{"text":"Chance","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Terminator\",
+										Shortbow:true,
+										Crit_Damage:250
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+250% Crit Damage","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"power":36
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":10,
+											"slot":"mainhand"
+										},
+										{
+											"name":"Attack Speed",
+											"attribute":"generic.attack_speed",
+											"operation":"multiply_base",
+											"amount":0.4,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,685 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:31,RecipeTags:[\"COUNT_24+\"],Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:31,RecipeTags:[\"COUNT_24+\"],Base:{Skyblock:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_PorkchopL": 9
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:3,Base:{Type:\"SWORD\",Rarity:\"LEGENDARY\",CraftingRemoveCounts:[24,24,1],RarityColor:'{\"text\":\"\",\"color\":\"gold\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:200,Strength:100,CritChan:5,CritDmg:30,BaseDamage:200,BaseStrength:100,BaseCritChan:5,BaseCritDmg:30,Abilities:[{Name:\"Burning Souls\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\",Mana:70}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Burning Souls\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"for \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"5\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"s\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"and cast vortex of flames\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"towards enemies, dealing up to\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"1,500\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" over \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"5 \",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"seconds.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"70\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Pigman Sword\",\"color\":\"gold\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+200\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Strength: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Crit Chance: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+5%\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Crit Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+30%\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Burning Souls\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"for \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"5\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"s\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"and cast vortex of flames\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"towards enemies, dealing up to\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"1,500\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" over \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"5 \",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"seconds.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"70\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"LEGENDARY SWORD\",\"color\":\"gold\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:35,Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:35,Base:{Skyblock:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_IronL": {
+										  "min": 8,
+										  "max": 9
+									  }
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:4,Base:{Type:\"SWORD\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:80,Strength:125,Defense:25,BaseDamage:80,BaseStrength:125,BaseDefense:25,Abilities:[{Name:\"Iron Punch\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\",Mana:70}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Iron Punch\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Punch the ground, damaging \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"enemies in a hexagon around you \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"100 \",\"color\":\"green\",\"italic\":false},{\"text\":\"base Magic Damage.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"70\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Golem Sword\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+80\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Strength: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+125\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+25\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Iron Punch\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Punch the ground, damaging \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"enemies in a hexagon around you \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"100 \",\"color\":\"green\",\"italic\":false},{\"text\":\"base Magic Damage.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"70\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE SWORD\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:24,Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:24,Base:{Skyblock:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_EmeraldL": {
+										  "min": 8,
+										  "max": 9
+									  }
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:30,Base:{Type:\"SWORD\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:130,BaseDamage:130},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"A powerful blade made from pure\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Emeralds\",\"color\":\"dark_green\",\"italic\":false},{\"text\":\". This blade becomes\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"stronger as you carry more\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"coins\",\"color\":\"gold\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" in your purse.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\" \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Current Damage Bonus: \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\" \",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]'],display:{Name:'[{\"text\":\"Emerald Blade\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+130\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"A powerful blade made from pure\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Emeralds\",\"color\":\"dark_green\",\"italic\":false},{\"text\":\". This blade becomes\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"stronger as you carry more\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"coins\",\"color\":\"gold\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" in your purse.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\" \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Current Damage Bonus: \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\" \",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC SWORD\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:flint\",tag:{RecipeTags:[\"COUNT_10+\"],Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_GravelL": {
+										  "min": 2,
+										  "max": 9
+									  }
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:iron_shovel",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Type:\"SHOVEL\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",CraftingRemoveCounts:[10,0,0],RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Grants a \",\"color\":\"gray\",\"italic\":false},{\"text\":\"100% \",\"color\":\"green\",\"italic\":false},{\"text\":\"chance of \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"receiving flint from gravel. \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"This item can also be used as a \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"minion upgrade to allow gravel \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"minions to always receive flint.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Flint Shovel\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Grants a \",\"color\":\"gray\",\"italic\":false},{\"text\":\"100% \",\"color\":\"green\",\"italic\":false},{\"text\":\"chance of \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"receiving flint from gravel. \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"This item can also be used as a \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"minion upgrade to allow gravel \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"minions to always receive flint.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON SHOVEL\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:player_head\",tag:{Base:{Type:\"HELMET\",Rarity:\"RARE\",CraftingRemoveCounts:[32,32,32,32,0,32,32,32,32],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Health:50,BaseHealth:50,Abilities:[{Name:\"Healing Boost\",Activation:\"\",Type:\"Item Ability\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Healing Boost\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Doubles all healing effects,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"including your natural\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"regeneration and healing you\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"deal to others, while wearing.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Zombie\\'s Heart\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Healing Boost\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Doubles all healing effects,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"including your natural\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"regeneration and healing you\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"deal to others, while wearing.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE HELMET\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']},SkullOwner:{Id:[I;1275683968,1255558020,-1180031804,-266380137],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFkN2M4MTZmYzhjNjM2ZDdmNTBhOTNhMGJhN2FhZWZmMDZjOTZhNTYxNjQ1ZTllYjFiZWYzOTE2NTVjNTMxIn19fQ==\"}]}}}},{Slot:1b,id:\"minecraft:player_head\",tag:{Base:{Type:\"HELMET\",Rarity:\"RARE\",CraftingRemoveCounts:[32,32,32,32,0,32,32,32,32],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Health:50,BaseHealth:50,Abilities:[{Name:\"Healing Boost\",Activation:\"\",Type:\"Item Ability\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Healing Boost\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Doubles all healing effects,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"including your natural\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"regeneration and healing you\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"deal to others, while wearing.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Zombie\\'s Heart\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Healing Boost\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Doubles all healing effects,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"including your natural\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"regeneration and healing you\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"deal to others, while wearing.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE HELMET\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']},SkullOwner:{Id:[I;1275683968,1255558020,-1180031804,-266380137],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFkN2M4MTZmYzhjNjM2ZDdmNTBhOTNhMGJhN2FhZWZmMDZjOTZhNTYxNjQ1ZTllYjFiZWYzOTE2NTVjNTMxIn19fQ==\"}]}}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_RottenfleshL": {
+										"min": 7,
+										"max": 9
+									  }
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:4,Base:{Type:\"SWORD\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:100,Strength:50,Intel:50,BaseDamage:100,BaseStrength:50,BaseIntel:50,Abilities:[{Name:\"Instant Heal\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\",Mana:70,UsesActionbar:1b}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Instant Heal\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Heal for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"120\",\"color\":\"red\",\"italic\":false},{\"text\":\" + \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5%❤\",\"color\":\"red\",\"italic\":false},{\"text\":\" and\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"heal players within \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"7\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" blocks\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"for \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"40❤\",\"color\":\"red\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Mana cost:\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\" 70\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"Charges: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"4\",\"color\":\"yellow\",\"italic\":false},{\"text\":\" / \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"15s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Zombie Sword\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Strength: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Instant Heal\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Heal for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"120\",\"color\":\"red\",\"italic\":false},{\"text\":\" + \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5%❤\",\"color\":\"red\",\"italic\":false},{\"text\":\" and\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"heal players within \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"7\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" blocks\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"for \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"40❤\",\"color\":\"red\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Mana cost:\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\" 70\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"Charges: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"4\",\"color\":\"yellow\",\"italic\":false},{\"text\":\" / \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"15s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE SWORD\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:spider_eye\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:spider_eye\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_SpidereyeL": {
+										"min": 2,
+										"max": 9
+									  }
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:4,Base:{Type:\"SWORD\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:30,BaseDamage:30},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Deals \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100% \",\"color\":\"green\",\"italic\":false},{\"text\":\"damage to\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Spiders, Cave Spiders \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"and Silverfish.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Spider Sword\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+30\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Deals \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100% \",\"color\":\"green\",\"italic\":false},{\"text\":\"damage to\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Spiders, Cave Spiders \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"and Silverfish.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON SWORD\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},						
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:fermented_spider_eye\",tag:{RecipeTags:[\"COUNT_12+\"],Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:fermented_spider_eye\",tag:{RecipeTags:[\"COUNT_12+\"],Base:{Skyblock:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_SpidereyeL": 9
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:3,Base:{Type:\"SWORD\",Rarity:\"EPIC\",CraftingRemoveCounts:[12,12,1],RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:150,Strength:100,CritDmg:25,BaseDamage:150,BaseStrength:100,BaseCritDmg:25,Abilities:[{Name:\"Leap\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\",Mana:50,Cooldown:1}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Leap\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Leap into the air and deal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"350\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"base Magic Damage to nearby\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"enemies upon landing on the\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"ground. Damaged enemies will\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"also be frozen for \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"1.0\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"second.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"1s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Leaping Sword\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+150\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Strength: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Crit Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+25%\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Leap\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Leap into the air and deal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"350\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"base Magic Damage to nearby\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"enemies upon landing on the\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"ground. Damaged enemies will\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"also be frozen for \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"1.0\",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"second.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"1s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC SWORD\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},	
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:ender_eye\",tag:{RecipeTags:[\"COUNT_16+\"],Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:ender_eye\",tag:{RecipeTags:[\"COUNT_16+\"],Base:{Skyblock:1b}}},{Slot:2b,id:\"minecraft:diamond\",tag:{Base:{Skyblock:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_EnderpearlL": {
+										"min": 8,
+										"max": 9
+									  }
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:5,Base:{Type:\"SWORD\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',CraftingRemoveCounts:[16,16,1],AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:100,BaseDamage:100,Strength:100,BaseStrength:100,Abilities:[{Name:\"Instant Transmission\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\",Mana:50}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Instant Transmission\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Teleport \",\"color\":\"gray\",\"italic\":false},{\"text\":\"8 blocks \",\"color\":\"green\",\"italic\":false},{\"text\":\"ahead of\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you and gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50 \",\"color\":\"green\",\"italic\":false},{\"text\":\"✦ Speed\",\"color\":\"white\",\"italic\":false}]','[{\"text\":\"for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"3 seconds\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Aspect of the End\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Strength: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Instant Transmission\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Teleport \",\"color\":\"gray\",\"italic\":false},{\"text\":\"8 blocks \",\"color\":\"green\",\"italic\":false},{\"text\":\"ahead of\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you and gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50 \",\"color\":\"green\",\"italic\":false},{\"text\":\"✦ Speed\",\"color\":\"white\",\"italic\":false}]','[{\"text\":\"for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"3 seconds\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE SWORD\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:25,RecipeTags:[\"COUNT_64+\"],Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:iron_nugget\",tag:{CustomModelData:25,RecipeTags:[\"COUNT_64+\"],Base:{Skyblock:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_EndstoneL": 10
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:3,Base:{Type:\"SWORD\",Rarity:\"EPIC\",CraftingRemoveCounts:[64,64,1],RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:120,Strength:80,BaseDamage:120,BaseStrength:80,Abilities:[{Name:\"Extreme Focus\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Extreme Focus\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Consumes all your remaining mana\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"to grant Damage Resistance for\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"5 \",\"color\":\"green\",\"italic\":false},{\"text\":\"seconds and extra damage\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"on your next hit (Within 5\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"seconds) depending on how much\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"mana was consumed!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"End Stone Sword\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+120\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Strength: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+80\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Extreme Focus\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Consumes all your remaining mana\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"to grant Damage Resistance for\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"5 \",\"color\":\"green\",\"italic\":false},{\"text\":\"seconds and extra damage\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"on your next hit (Within 5\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"seconds) depending on how much\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"mana was consumed!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC SWORD\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:prismarine_shard\",tag:{RecipeTags:[\"COUNT_32+\"],Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:prismarine_shard\",tag:{RecipeTags:[\"COUNT_32+\"],Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_PshardL": {
+										  "min": 2,
+										  "max": 5
+									  }
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:31,Base:{Type:\"SWORD\",Rarity:\"UNCOMMON\",CraftingRemoveCounts:[32,32,1],RarityColor:'{\"text\":\"\",\"color\":\"green\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:50,Strength:25,BaseDamage:50,BaseStrength:25},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Deals \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+200%\",\"color\":\"green\",\"italic\":false},{\"text\":\" damage while in\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"water.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Prismarine Blade\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Strength: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+25\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Deals \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+200%\",\"color\":\"green\",\"italic\":false},{\"text\":\" damage while in\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"water.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"UNCOMMON SWORD\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:ink_sac\",tag:{RecipeTags:[\"COUNT_32+\"],Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:ink_sac\",tag:{RecipeTags:[\"COUNT_32+\"],Base:{Skyblock:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								},
+								{
+									"condition": "minecraft:entity_scores",
+									"entity": "this",
+									"scores": {
+									  "C_InksacL": 9
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:28,Base:{Type:\"SWORD\",Rarity:\"EPIC\",CraftingRemoveCounts:[32,32,1],RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:130,Strength:90,BaseDamage:130,BaseStrength:90,Abilities:[{Name:\"Ink Bomb\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\",Mana:60,Cooldown:30s}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Ink Bomb\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Shoot an ink bomb in front of\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you dealing \",\"color\":\"gray\",\"italic\":false},{\"text\":\"10,000 \",\"color\":\"green\",\"italic\":false},{\"text\":\"damage\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"and giving blindness!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"60\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"30s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Ink Wand\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+130\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Strength: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+90\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Ink Bomb\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Shoot an ink bomb in front of\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"you dealing \",\"color\":\"gray\",\"italic\":false},{\"text\":\"10,000 \",\"color\":\"green\",\"italic\":false},{\"text\":\"damage\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"and giving blindness!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Mana cost: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"60\",\"color\":\"dark_aqua\",\"italic\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"30s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC SWORD\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:wooden_shovel",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"SHOVEL\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:15,BaseDamage:15},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Wooden Shovel\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+15\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON SHOVEL\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stone_shovel",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"SHOVEL\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:20,BaseDamage:20},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Stone Shovel\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON SHOVEL\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:golden_shovel",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"SHOVEL\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:15,BaseDamage:15},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Golden Shovel\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+15\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON SHOVEL\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:iron_shovel",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"SHOVEL\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Damage:25,BaseDamage:25},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Iron Shovel\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+25\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"COMMON SHOVEL\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:diamond_shovel",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"SHOVEL\",AnvilUses:0,RepairCost:0,Enchantments:[],Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}',Damage:30,BaseDamage:30},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Diamond Shovel\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+30\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"UNCOMMON SHOVEL\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:1,Base:{Vanilla:1b,Type:\"SWORD\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:20,BaseDamage:20},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Wooden Sword\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON SWORD\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:1b,tag:{RecipeTags:[\"STONE_TOOL_MATERIALS\"],Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:2,Base:{Vanilla:1b,Type:\"SWORD\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:25,BaseDamage:25},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Stone Sword\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+25\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON SWORD\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:gold_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:3,Base:{Vanilla:1b,Type:\"SWORD\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:20,BaseDamage:20},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Golden Sword\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON SWORD\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:4,Base:{Vanilla:1b,Type:\"SWORD\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:30,BaseDamage:30},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Iron Sword\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+30\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON SWORD\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:diamond\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:warped_fungus_on_a_stick",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 1
+								},
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{CustomModelData:5,Base:{Vanilla:1b,Type:\"SWORD\",Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Damage:35,BaseDamage:35},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Diamond Sword\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+35\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"UNCOMMON SWORD\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:shulker_shell\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:chest\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:shulker_shell\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:shulker_box",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},display:{Name:'{\"text\":\"Shulker Box\",\"color\":\"blue\",\"italic\":false}',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:flint\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:feather\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:arrow",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Arrow\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,tag:{RecipeTags:[\"PLANKS\"],Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:tripwire_hook",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Tripwire Hook\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:iron_nugget\",tag:{Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:iron_ingot\",tag:{Base:{Vanilla:1b}}},{Slot:2b,id:\"minecraft:iron_nugget\",tag:{Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:chain",
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Chain\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								},
+								{
+									"function": "set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{RecipeData:[{Slot:0b,tag:{RecipeTags:[\"COALS\"],Base:{Vanilla:1b}}},{Slot:1b,id:\"minecraft:stick\",tag:{Base:{Vanilla:1b}}},{Slot:2b,tag:{RecipeTags:[\"SOUL_FIRE_BASE_BLOCKS\"],Base:{Vanilla:1b}}}]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:soul_torch",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 4
+								},
+								{
+									"function": "set_nbt",
+									"tag": "{Base:{Vanilla:1b,Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}'},display:{Name:'{\"text\":\"Soul Torch\",\"color\":\"white\",\"italic\":false}',Lore:['[{\"text\":\"COMMON\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

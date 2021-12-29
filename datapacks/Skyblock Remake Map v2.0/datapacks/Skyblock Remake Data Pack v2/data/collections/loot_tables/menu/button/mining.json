@@ -1,0 +1,171 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:stone_pickaxe",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{Damage:0,SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": [
+				  {
+					"text": "Mining Collection",
+					"color": "green",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "View your Mining Collection!",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": " "
+				  },
+				  [
+					{
+					  "text": "Collection Unlocked: ",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_MiningP"
+					  },
+					  "color": "yellow"
+					},
+					{
+					  "text": "%",
+					  "color": "gold"
+					}
+				  ],
+				  [
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_Mining"
+					  },
+					  "color": "yellow",
+					  "italic": false
+					},
+					{
+					  "text": "/",
+					  "color": "gold",
+					  "italic": false
+					},
+					{
+					  "text": "17",
+					  "color": "yellow",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": " "
+				  },
+				  {
+					"text": "Click to view!",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_Mining": {
+						"min": 0,
+						"max": 16
+					  }
+					}
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "View your Mining Collection!",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": " "
+				  },
+				  [
+					{
+					  "text": "Collection Maxed Out: ",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_Mining_MaxP"
+					  },
+					  "color": "yellow"
+					},
+					{
+					  "text": "%",
+					  "color": "gold"
+					}
+				  ],
+				  [
+					{
+					  "score": {
+						"name": "@s",
+						"objective": "C_Mining_Max"
+					  },
+					  "color": "yellow",
+					  "italic": false
+					},
+					{
+					  "text": "/",
+					  "color": "gold",
+					  "italic": false
+					},
+					{
+					  "text": "17",
+					  "color": "yellow",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": " "
+				  },
+				  {
+					"text": "Click to view!",
+					"color": "yellow",
+					"italic": false
+				  }
+				],
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "C_Mining": 17
+					}
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

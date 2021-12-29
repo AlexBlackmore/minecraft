@@ -1,0 +1,35 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:enchanted_book",
+							"functions":[
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										["",{"text":"Rainbow","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"UNCOMMON","bold":true,"color":"yellow"}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Enchanted Book\",
+										Rainbow:true
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

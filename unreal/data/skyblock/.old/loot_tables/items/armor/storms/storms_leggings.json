@@ -1,0 +1,86 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Storm's Leggings","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Witherborn","italic":false,"color":"gold"},
+										["",{"text":"Sacrifices a Wither at a random","italic":false,"color":"gray"}],
+										["",{"text":"enemy, dealing massive explosive","italic":false,"color":"gray"}],
+										["",{"text":"damage and inflicting ","italic":false,"color":"gray"},{"text":"Wither II","italic":false,"color":"#352A27"}],
+										["",{"text":"on all nearby mobs.","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+2 Armor Toughness","italic":false,"color":"blue"},{"text":" while","italic":false,"color":"gray"}],
+										{"text":"fighting Withers.","italic":false,"color":"gray"},
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:6643802
+										},
+										HideFlags:64,
+										Name:\"Storm's Leggings\"
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+250 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Max Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":26,
+											"slot":"legs"
+										},
+										{
+											"name":"Armor",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":21,
+											"slot":"legs"
+										},
+										{
+											"name":"Armor Toughness",
+											"attribute":"generic.armor_toughness",
+											"operation":"addition",
+											"amount":1,
+											"slot":"legs"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,92 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:player_head",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Necron's Helmet","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Witherborn","italic":false,"color":"gold"},
+										["",{"text":"Sacrifices a Wither at a random","italic":false,"color":"gray"}],
+										["",{"text":"enemy, dealing massive explosive","italic":false,"color":"gray"}],
+										["",{"text":"damage and inflicting ","italic":false,"color":"gray"},{"text":"Wither II","italic":false,"color":"#352A27"}],
+										["",{"text":"on all nearby mobs.","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+2 Armor Toughness","italic":false,"color":"blue"},{"text":" while","italic":false,"color":"gray"}],
+										{"text":"fighting Withers.","italic":false,"color":"gray"},
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										SkullOwner:{Id:[I;1874729782,-1681897997,-2080604201,1264460609],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2VkZTk1NDliZTczZDlhOWIyMzExYjQ1ZmY4ODcxNjFmMTFiYzU2MzYxYjk4MGNmN2M3MzczN2IyMjgwNDAwNCJ9fX0=\"}]}},
+										Name:\"Necron's Helmet\",
+										Crit_Damage:30
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+30% Crit Damage","italic":false,"color":"blue"},
+										{"text":"+30 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Max Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":36,
+											"slot":"head"
+										},
+										{
+											"name":"Armor",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":20,
+											"slot":"head"
+										},
+										{
+											"name":"Armor Toughness",
+											"attribute":"generic.armor_toughness",
+											"operation":"addition",
+											"amount":1,
+											"slot":"head"
+										},
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":8,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

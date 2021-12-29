@@ -1,0 +1,317 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+		CustomName:"Elizabeth"
+		CustomNameVisible:true
+		PersistenceRequired:true
+		Silent:true
+		CanPickUpLoot:false
+		Willing:false
+		NoAI:false
+		VillagerData:
+		{
+			level:5
+			profession:"cleric"
+			type:"plains"
+		}
+		Attributes:[
+			{
+				Name:"generic.movement_speed"
+				Base:0
+			}
+		]
+		Offers:
+		{
+			Recipes: [
+				{
+					buyB:{
+						id:"knowledge_book"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"gray\"\"text\":\"Cost:\"}"
+								Lore:[
+									"[\"\"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Cookie\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x1\"}]"
+									"[\"\"{\"italic\":false\"color\":\"green\"\"text\":\"325 levels\"}]"
+								]
+							}
+						}
+					}
+					sell:
+					{
+						id:"cookie"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Booster Cookie\"\"italic\":false\"color\":\"gold\"}"
+								Lore:[
+									"[\"\"{\"text\":\"Consume to recieve the \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Cookie\"\"italic\":false\"color\":\"light_purple\"}]"
+									"[\"\"{\"text\":\"Buff\"\"italic\":false\"color\":\"light_purple\"}{\"text\":\" for \"\"italic\":false\"color\":\"gray\"}{\"text\":\"80\"\"italic\":false\"color\":\"green\"}{\"text\":\" minutes:\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"> \"\"italic\":false\"color\":\"dark_gray\"}{\"text\":\"Keep all \"\"italic\":false\"color\":\"gray\"}{\"text\":\"XP\"\"italic\":false\"color\":\"aqua\"}{\"text\":\" levels after death.\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"> \"\"italic\":false\"color\":\"dark_gray\"}{\"text\":\"+15 Luck\"\"italic\":false\"color\":\"blue\"}]"
+									"{\"text\":\" \"}"
+									"{\"text\":\"LEGENDARY\"\"bold\":true\"color\":\"gold\"}"
+									"{\"text\":\" \"}"
+								]
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+							Name:"Booster Cookie"
+						}
+					}
+					rewardExp:false
+					maxUses:0
+				}
+				{
+					buy:{
+						id:"diamond"
+						Count:23
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Diamond\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Diamond"
+						}
+					}
+					buyB:
+					{
+						id:"diamond"
+						Count:28
+					}
+					sell:{
+						id:"potion"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"God Potion\"\"italic\":false\"color\":\"red\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"Additional Effects:\"\"italic\":false}"
+									"{\"text\":\"Critical IV (20:00)\"\"italic\":false\"color\":\"blue\"}"
+									"{\"text\":\"Experience IV (20:00)\"\"italic\":false\"color\":\"blue\"}"
+									"{\"text\":\"Spirit IV (20:00)\"\"italic\":false\"color\":\"blue\"}"
+									"{\"text\":\"Adrenaline VIII (20:00)\"\"italic\":false\"color\":\"blue\"}"
+									"{\"text\":\"Spirit IV (20:00)\"\"italic\":false\"color\":\"blue\"}"
+									"{\"text\":\"True Resistance IV (20:00)\"\"italic\":false\"color\":\"blue\"}"
+									"\" \""
+									"{\"text\":\"Bonus Stats:\"\"italic\":false}"
+									"{\"text\":\"+4 Attack Damage\"\"italic\":false\"color\":\"blue\"}"
+									"{\"text\":\"+2% Attack Damage\"\"italic\":false\"color\":\"blue\"}"
+									"{\"text\":\"+100 Intelligence\"\"italic\":false\"color\":\"blue\"}"
+									"{\"text\":\"+3 Luck\"\"italic\":false\"color\":\"blue\"}"
+									"\" \""
+									"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+								]
+							}
+							CustomPotionEffects:[
+								{Id:10Amplifier:7Duration:24000}
+								{Id:5Amplifier:7Duration:24000}
+								{Id:16Amplifier:0Duration:24000}
+								{Id:22Amplifier:7Duration:24000}
+								{Id:1Amplifier:7Duration:24000}
+								{Id:13Amplifier:5Duration:24000}
+								{Id:11Amplifier:7Duration:24000}
+								{Id:8Amplifier:3Duration:24000}
+								{Id:26Amplifier:3Duration:24000}
+								{Id:12Amplifier:0Duration:24000}
+								{Id:3Amplifier:3Duration:24000}
+								{Id:21Amplifier:4Duration:24000}
+							]
+							Potion:"empty"
+							CustomPotionColor:8131492
+							Name:"God Potion"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"diamond_block"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Diamond Block\"}"
+								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Diamond Block"
+						}
+					}
+					buyB:{
+						id:"diamond"
+						Count:61
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Diamond\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Diamond"
+						}
+					}
+					sell:{
+						id:"player_head"
+						Count:1
+						tag:{
+							SkullOwner:{Id:[I;1577229615580142202-12488458931000535693]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjFlNmYwNjg0YmE3ZDUxZmI3YjBhNzk0ZTRkZmEzZGE3Y2UyMzYxYmQwNGE3NmIzNzYyOWYwMWIyNWI5NmQwMCJ9fX0="}]}}
+							display:{
+								Name:"{\"text\":\"Ultimate Carrot Candy Upgrade\"\"italic\":false\"color\":\"red\"}"
+								Lore:[
+									"[\"\"{\"text\":\"Craft with \"\"italic\":false\"color\":\"gray\"}{\"text\":\"8 Superb Carrot\"\"italic\":false\"color\":\"light_purple\"}]"
+									"[\"\"{\"text\":\"Candies\"\"italic\":false\"color\":\"light_purple\"}{\"text\":\" to upgrade them to\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"Ultimate Carrot Candies\"\"italic\":false\"color\":\"gold\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+								]
+							}
+							Name:"Ultimate Carrot Candy Upgrade"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"diamond"
+						Count:18
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Diamond\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Diamond"
+						}
+					}
+					buyB:{
+						id:"diamond"
+						Count:48
+					}
+					sell:{
+						id:"player_head"
+						Count:1
+						tag:{
+							SkullOwner:{Id:[I;187939042063024251-1184810469-1689271189]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA1NGMyOWM3ODA5MDQ3MWMxZWEwNThiZDY0MTg5NzM5MWM5ZTQ2OTRhYTlkMTQwYWZiYmE4ZDBjYzQzNjM3In19fQ=="}]}}
+							display:{
+								Name:"{\"text\":\"Colossal Experience Bottle Upgrade\"\"italic\":false\"color\":\"red\"}"
+								Lore:[
+									"[\"\"{\"text\":\"Combine with a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Titanic\"\"italic\":false\"color\":\"aqua\"}]"
+									"[\"\"{\"text\":\"Experience Bottle\"\"italic\":false\"color\":\"aqua\"}{\"text\":\" to craft a\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"Colossal Experience Bottle\"\"italic\":false\"color\":\"light_purple\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"SPECIAL\"\"bold\":true\"color\":\"red\"}"
+								]
+							}
+							Name:"Colossal Experience Bottle Upgrade"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"diamond_block"
+						Count:3
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Diamond Block\"}"
+								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Diamond Block"
+						}
+					}
+					buyB:{
+						id:"diamond"
+						Count:43
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Diamond\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Diamond"
+						}
+					}
+					sell:{
+						id:"player_head"
+						Count:1
+						tag:{
+							SkullOwner:{Id:[I;-13378383331615806639-14727899661440919789]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmViYWRiMTcyNWFhODViYjI4MTBkMGI3M2JmN2NkNzRkYjNkOWQ4ZmM2MWM0Y2Y5ZTU0M2RiY2MxOTkxODdjYyJ9fX0="}]}}
+							display:{
+								Name:"{\"text\":\"Diamond Talisman\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"[\"\"{\"text\":\"Grants a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"10%\"\"italic\":false\"color\":\"green\"}{\"text\":\" chance to recieve\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"2x\"\"italic\":false\"color\":\"green\"}{\"text\":\" diamonds when mining Diamond\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"Ore.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+								]
+							}
+							Name:"Diamond Talisman"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"diamond"
+						Count:21
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Diamond\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Diamond"
+						}
+					}
+					buyB:{
+						id:"diamond"
+						Count:6
+					}
+					sell:{
+						id:"feather"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Kismet Feather\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"[\"\"{\"text\":\"When held in your off-hand while\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"opening a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Dungeon Reward Chest\"\"italic\":false\"color\":\"red\"}{\"text\":\"\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"this \"\"italic\":false\"color\":\"gray\"}{\"text\":\"feather\"\"italic\":false\"color\":\"blue\"}{\"text\":\" will be consumed\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"instead of the chest.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+								]
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+							Name:"Kismet Feather"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+			]
+		}
+	}
+	display:{
+		Name:"{\"text\":\"Elizabeth\"}"
+	}
+}

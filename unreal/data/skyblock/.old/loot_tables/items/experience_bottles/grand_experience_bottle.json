@@ -1,0 +1,39 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:experience_bottle",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Grand Experience Bottle","italic":false,"color":"yellow"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										["",{"text":"Sneak to recieve ","italic":false,"color":"gray"},{"text":"1,500 XP","italic":false,"color":"aqua"},{"text":"!","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"UNCOMMON","bold":true,"color":"yellow"}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Grand Experience Bottle\",
+										Ability:true
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

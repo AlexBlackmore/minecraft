@@ -1,0 +1,1 @@
+execute if data entity @s SelectedItem.tag.Base{Type:PICKAXE} run function mining:check_location

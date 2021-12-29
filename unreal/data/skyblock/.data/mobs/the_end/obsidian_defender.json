@@ -1,0 +1,35 @@
+summon wither_skeleton ~ ~ ~ {
+	CustomName:"{\"text\":\"Obsidian Defender\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock","obsidian_defender"],
+	AbsorptionAmount:976,
+	Health:1024,
+	Attributes:[
+		{Name:"generic.max_health",Base:1024},
+		{Name:"generic.attack_damage",Base:40}
+	],
+	HandItems:[
+		{},
+		{}
+	],
+	ArmorItems:[
+		{},
+		{},
+		{
+			id:"leather_chestplate",
+			Count:1,
+			tag:{
+				display:{
+					color:0
+				}
+			}
+		},
+		{
+			id:"obsidian",
+			Count:1
+		}
+	],
+	HandDropChances:[0.0f,0.0f],
+	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+	DeathLootTable:"skyblock:mobs/the_end/obsidian_defender"
+}

@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-1129253526,1381451256,-1675078697,-60930453],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjRlMjJhNDYwNDdkMjcyZTg5YTFjZmExM2U5NzM0YjdlMTI4MjdlMjM1YzIwMTJjMWE5NTk2Mjg3NGRhMCJ9fX0=\"}]}},Base:{Type:\"PET\",PetData:{MinRarity:\"COMMON\",MaxRarity:\"LEGENDARY\",Name:\"Sheep\",Skill:\"Alchemy\",Mount:0b,Current:{PetItem:\"\",Level:1,Ability:[[0d],[0d],[0d]],XP:0,NextLevelXP:175},XPTable:\"UNCOMMON\",Stats:{AtkSpd:1d,Intel:0d,AbilDmg:0.2d}},Rarity:\"UNCOMMON\",RarityID:2,RarityColor:'{\"text\":\"\",\"color\":\"green\"}',AtkSpd:1d,Intel:0d,AbilDmg:0d,BaseAbilDmg:0d,AbilitiesAmount:3,Abilities:[{Name:\"Mana Saver\",Type:\"Pet Ability\",Description:['[{\"text\":\"Mana Saver\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Reduces the mana cost of\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"abilities by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility1\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\"%\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:1},{Name:\"Overheal\",Type:\"Pet Ability\",Description:['[{\"text\":\"Overheal\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Gives a \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility2\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\"% \",\"color\":\"green\",\"italic\":false},{\"text\":\"shield after\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"not taking damage for 10s\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:3},{Name:\"Dungeon Wizard\",Type:\"Pet Ability\",Description:['[{\"text\":\"Dungeon Wizard\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Increases your total mana by\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility3\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\"% \",\"color\":\"green\",\"italic\":false},{\"text\":\"while in dungeons\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:5}],AbilityBonuses:[[0.2d],[0.1d],[0.25d]]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"[Lvl 1] \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Sheep\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Alchemy Pet\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Attack Speed: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"1\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Ability Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Mana Saver\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Reduces the mana cost of\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"abilities by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0%\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"UNCOMMON\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:zombie.spawn_reinforcements",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

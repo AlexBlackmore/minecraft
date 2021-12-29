@@ -79,7 +79,7 @@
           "predicate":{
             "equipment":{
               "mainhand":{
-                "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Fungi Cutter\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\"}}"
+                "nbt":"{Name:\"Fungi Cutter\"}"
               }
             }
           }
@@ -89,28 +89,6 @@
 		  "chance":0.3
 		}
       ]
-    },
-	{
-		"rolls":1,
-		"entries":[
-			{
-				"type":"loot_table",
-				"name":"skyblock:krampus_helmet
-			}
-		],
-		"conditions":[
-			{
-				"condition":"entity_properties",
-				"entity":"this",
-				"predicate":{
-					"equipment":{
-						"head":{
-						  "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Krampus Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
-						}
-					}
-				}
-			}
-		]
-	}
+    }
   ]
 }

@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:enchanted_book",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Enchanted Book","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"Thunderbolt VI","italic":false,"color":"blue"},
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Enchanted Book\",
+										Thunderbolt:6
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

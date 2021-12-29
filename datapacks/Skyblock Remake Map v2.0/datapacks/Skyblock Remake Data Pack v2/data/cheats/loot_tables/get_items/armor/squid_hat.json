@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"HELMET\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Speed:1,BaseSpeed:1},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Extra chance to fish up Squids!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Squid Hat\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Speed: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+1\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Extra chance to fish up Squids!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON HELMET\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']},SkullOwner:{Id:[I;307521972,-1457961559,-2055518770,-450152061],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg3MDU2MjRkYWEyOTU2YWE0NTk1NmM4MWJhYjVmNGZkYjJjNzRhNTk2MDUxZTI0MTkyMDM5YWVhM2E4YjgifX19\"}]}}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": ["feet","legs","chest","head"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

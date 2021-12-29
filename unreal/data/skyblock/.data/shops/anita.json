@@ -1,0 +1,408 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+    CustomName:"{\"text\":\"Anita\"}"
+    CustomNameVisible:true
+    PersistenceRequired:true
+    Silent:true
+    CanPickUpLoot:false
+    Willing:false
+    NoAI:false
+    VillagerData:{
+      level:5
+      profession:"farmer"
+      type:"plains"
+    }
+    Attributes:[
+      {Name:"generic.movementSpeed"Base:0}
+    ]
+  	Offers:{
+  		Recipes:[
+			{
+				buyB:{
+					id:"writable_book"
+					Count:1
+					tag:{
+						display:{
+							Name:"{\"text\":\"<Anita> Hey hey hey!\"\"italic\":false\"color\":\"white\"}"
+							Lore:[
+								"[\"\"{\"text\":\"I'll trade your \"\"italic\":false\"color\":\"white\"}{\"text\":\"Jacob's Tickets\"\"italic\":false\"color\":\"yellow\"}]"
+								"[\"\"{\"text\":\"for farming tools!\"\"italic\":false\"color\":\"white\"}]"
+							]
+						}
+						HideFlags:32
+					}
+				}
+				rewardExp:false
+				maxUses:0
+			}
+			{
+  				buy:{
+					id:"name_tag"
+					Count:1
+					tag:{
+						display:{
+							Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Jacob's Ticket\"}"
+							Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+						}
+						Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+						HideFlags:1
+						Name:"Jacob's Ticket"
+					}
+				}
+  				sell:{
+  					id:"stick"
+  					Count:1
+					tag:{
+						display:{
+							Name:"{\"text\":\"InfiniDirt Wand\"\"italic\":false\"color\":\"yellow\"}"
+							Lore:[
+								"\" \""
+								"[\"\"{\"text\":\"Item Ability: Get Dirt\"\"italic\":false\"color\":\"gold\"}]"
+								"[\"\"{\"text\":\"Gives 1 stack of dirt.\"\"italic\":false\"color\":\"gray\"}]"
+								"[\"\"{\"text\":\"Cost: \"\"italic\":false\"color\":\"dark_gray\"}{\"text\":\"64 XP\"\"italic\":false\"color\":\"aqua\"}]"
+								"\" \""
+								"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
+								"\" \""
+							]
+						}
+						Enchantments:[
+							{id:"unbreaking"lvl:1}
+						]
+						HideFlags:1
+					}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+					id:"name_tag"
+					Count:5
+					tag:{
+						display:{
+							Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Jacob's Ticket\"}"
+							Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+						}
+						Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+						HideFlags:1
+						Name:"Jacob's Ticket"
+					}
+				}
+  				sell:{
+  					id:"stone_hoe"
+  					Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Hoe of Great Tilling\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Tills a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"3x3\"\"italic\":false\"color\":\"blue\"}{\"text\":\" area of farmland\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"around you.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							Name:"Hoe of Great Tilling"
+						}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+					id:"name_tag"
+					Count:10
+					tag:{
+						display:{
+							Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Jacob's Ticket\"}"
+							Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+						}
+						Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+						HideFlags:1
+						Name:"Jacob's Ticket"
+					}
+				}
+  				sell:{
+  					id:"diamond_hoe"
+  					Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Hoe of Greater Tilling\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Tills a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"5x5\"\"italic\":false\"color\":\"blue\"}{\"text\":\" area of farmland\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"around you.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+								]
+							}
+							Name:"Hoe of Greater Tilling"
+						}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+					id:"name_tag"
+					Count:30
+					tag:{
+						display:{
+							Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Jacob's Ticket\"}"
+							Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+						}
+						Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+						HideFlags:1
+						Name:"Jacob's Ticket"
+					}
+				}
+  				sell:{
+  					id:"player_head"
+  					Count:1
+						tag:{
+							SkullOwner:{Id:[I;4715491781179272149-19092235601702024030]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E2YmY5MTZlMjhjY2I4MGI0ZWJmYWNmOTg2ODZhZDZhZjdjNGZiMjU3ZTU3YThjYjc4YzcxZDE5ZGNjYjIifX19"}]}}
+							display:{
+								Name:"{\"text\":\"Basket of Seeds\"\"italic\":false\"color\":\"light_purple\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Ability: Farmer's Delight\"\"italic\":false\"color\":\"gold\"}]"
+									"[\"\"{\"text\":\"Plants seeds from your off-hand\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"in a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"9x9\"\"italic\":false\"color\":\"blue\"}{\"text\":\" area around you.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
+									"\" \""
+								]
+							}
+						}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+					id:"name_tag"
+					Count:32
+					tag:{
+						display:{
+							Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Jacob's Ticket\"}"
+							Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+						}
+						Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+						HideFlags:1
+						Name:"Jacob's Ticket"
+					}
+				}
+  				sell:{
+  					id:"wooden_hoe"
+  					Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Mathematical Hoe Blueprint\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"{\"text\":\"Can be adapted into 5\"\"italic\":false\"color\":\"gray\"}"
+									"{\"text\":\"specialized hoes with 3 tiers\"\"italic\":false\"color\":\"gray\"}"
+									"{\"text\":\"each.\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+									"\" \""
+								]
+							}
+						}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+					id:"name_tag"
+					Count:32
+					tag:{
+						display:{
+							Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Jacob's Ticket\"}"
+							Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+						}
+						Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+						HideFlags:1
+						Name:"Jacob's Ticket"
+					}
+				}
+  				sell:{
+  					id:"golden_axe"
+  					Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Coco Chopper\"\"italic\":false\"color\":\"light_purple\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Increases cocoa bean drops by \"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"20%\"\"italic\":false\"color\":\"green\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
+									"\" \""
+								]
+							}
+							Name:"Coco Chopper"
+						}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+					id:"name_tag"
+					Count:32
+					tag:{
+						display:{
+							Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Jacob's Ticket\"}"
+							Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+						}
+						Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+						HideFlags:1
+						Name:"Jacob's Ticket"
+					}
+				}
+  				sell:{
+  					id:"diamond_axe"
+  					Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Melon Dicer\"\"italic\":false\"color\":\"light_purple\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Gives a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"5%\"\"italic\":false\"color\":\"green\"}{\"text\":\" chance to find \"\"italic\":false\"color\":\"gray\"}{\"text\":\"XP\"\"italic\":false\"color\":\"aqua\"}]"
+									"[\"\"{\"text\":\"while farming melons.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"Item Ability: Roll em'\"\"italic\":false\"color\":\"gold\"}"
+									"{\"text\":\"Every melon you break you make\"\"italic\":false\"color\":\"gray\"}"
+									"[\"\"{\"text\":\"a wish to \"\"italic\":false\"color\":\"gray\"}{\"text\":\"RNGesus\"\"italic\":false\"color\":\"gold\"}{\"text\":\" which may\"\"italic\":false\"color\":\"gray\"}]"
+									"{\"text\":\"grant you with a few or TONS of\"\"italic\":false\"color\":\"gray\"}"
+									"{\"text\":\"extra melons!\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
+									"\" \""
+								]
+							}
+							Name:"Melon Dicer"
+						}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+					id:"name_tag"
+					Count:32
+					tag:{
+						display:{
+							Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Jacob's Ticket\"}"
+							Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+						}
+						Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+						HideFlags:1
+						Name:"Jacob's Ticket"
+					}
+				}
+  				sell:{
+  					id:"golden_axe"
+  					Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Pumpkin Dicer\"\"italic\":false\"color\":\"light_purple\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Gives a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"5%\"\"italic\":false\"color\":\"green\"}{\"text\":\" chance to find \"\"italic\":false\"color\":\"gray\"}{\"text\":\"XP\"\"italic\":false\"color\":\"aqua\"}]"
+									"[\"\"{\"text\":\"while farming pumpkins.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"Item Ability: Roll em'\"\"italic\":false\"color\":\"gold\"}"
+									"{\"text\":\"Every pumpkin you break you make\"\"italic\":false\"color\":\"gray\"}"
+									"[\"\"{\"text\":\"a wish to \"\"italic\":false\"color\":\"gray\"}{\"text\":\"RNGesus\"\"italic\":false\"color\":\"light_purple\"}{\"text\":\" which may\"\"italic\":false\"color\":\"gray\"}]"
+									"{\"text\":\"grant you with a few or TONS of\"\"italic\":false\"color\":\"gray\"}"
+									"{\"text\":\"extra pumpkins!\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
+									"\" \""
+								]
+							}
+							Name:"Pumpkin Dicer"
+						}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+					id:"name_tag"
+					Count:32
+					tag:{
+						display:{
+							Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Jacob's Ticket\"}"
+							Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+						}
+						Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+						HideFlags:1
+						Name:"Jacob's Ticket"
+					}
+				}
+  				sell:{
+  					id:"golden_axe"
+  					Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Fungi Cutter\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Increases mushroom drops by \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+30%\"\"italic\":false\"color\":\"green\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+								]
+							}
+							Name:"Fungi Cutter"
+						}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+			{
+  				buy:{
+					id:"name_tag"
+					Count:32
+					tag:{
+						display:{
+							Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Jacob's Ticket\"}"
+							Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+						}
+						Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+						HideFlags:1
+						Name:"Jacob's Ticket"
+					}
+				}
+  				sell:{
+  					id:"golden_hoe"
+  					Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Cactus Knife\"\"italic\":false\"color\":\"light_purple\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Increases cactus drops by \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+30%\"\"italic\":false\"color\":\"green\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
+								]
+							}
+							Name:"Cactus Knife"
+						}
+  				}
+  				rewardExp:false
+  				maxUses:640
+  			}
+  		]
+  	}
+  }
+	display:{
+		Name:"{\"text\":\"Anita\"}"
+	}
+}

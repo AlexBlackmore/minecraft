@@ -1,0 +1,349 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Base:{Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Vanilla:1b}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Coal",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": " x2",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "Brewing Ingredient","color": "dark_gray","italic": false},{"text": "increases the speed of","color": "gray","italic": false},[{"text": "your minion by ","color": "gray","italic": false},{"text": "5%","color": "green","italic": false}],{"text": "for 30 minutes!","color": "gray","italic": false},{"text": ""},{"text": "COMMON","color": "white","italic": false,"bold": true},{"text":""},{"text":"Cost:","color":"gray","italic":false},{"text":"8 Coins","color":"gold","italic":false},{"text":""},{"text":"Click to trade!","color":"yellow","italic":false},{"text":"Right-Click for more trading options!","color":"yellow","italic":false}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Base:{Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Vanilla:1b}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 4
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Iron Ingot",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": " x4",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "COMMON","color": "white","italic": false,"bold": true},{"text":""},{"text":"Cost:","color":"gray","italic":false},{"text":"22 Coins","color":"gold","italic":false},{"text":""},{"text":"Click to trade!","color":"yellow","italic":false},{"text":"Right-Click for more trading options!","color":"yellow","italic":false}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Base:{Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Vanilla:1b}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Gold Ingot",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": " x2",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "Brewing Ingredient","color": "dark_gray","italic": false},{"text": "COMMON","color": "white","italic": false,"bold": true},{"text":""},{"text":"Cost:","color":"gray","italic":false},{"text":"12 Coins","color":"gold","italic":false},{"text":""},{"text":"Click to trade!","color":"yellow","italic":false},{"text":"Right-Click for more trading options!","color":"yellow","italic":false}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/pickaxes/rookie_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":""},{"text":"Cost:","color":"gray","italic":false},{"text":"12 Coins","color":"gold","italic":false},{"text":""},{"text":"Click to trade!","color":"yellow","italic":false}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/pickaxes/promising_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":""},{"text":"Cost:","color":"gray","italic":false},{"text":"35 Coins","color":"gold","italic":false},{"text":""},{"text":"Click to trade!","color":"yellow","italic":false}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/pickaxes/golden_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":""},{"text":"Cost:","color":"gray","italic":false},[{"text": "Gold Ingot","color": "white","italic": false},{"text": " x3","color": "dark_gray","italic": false}],{"text":""},{"text":"Click to trade!","color":"yellow","italic":false}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:torch",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Base:{Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Vanilla:1b}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 32
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Torch",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": " x32",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "COMMON","color": "white","italic": false,"bold": true},{"text":""},{"text":"Cost:","color":"gray","italic":false},{"text":"16 Coins","color":"gold","italic":false},{"text":""},{"text":"Click to trade!","color":"yellow","italic":false},{"text":"Right-Click for more trading options!","color":"yellow","italic":false}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gravel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Base:{Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Vanilla:1b}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Gravel",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": " x2",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "COMMON","color": "white","italic": false,"bold": true},{"text":""},{"text":"Cost:","color":"gray","italic":false},{"text":"12 Coins","color":"gold","italic":false},{"text":""},{"text":"Click to trade!","color":"yellow","italic":false},{"text":"Right-Click for more trading options!","color":"yellow","italic":false}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobblestone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Base:{Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Vanilla:1b}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Cobblestone",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "COMMON","color": "white","italic": false,"bold": true},{"text":""},{"text":"Cost:","color":"gray","italic":false},{"text":"3 Coins","color":"gold","italic":false},{"text":""},{"text":"Click to trade!","color":"yellow","italic":false},{"text":"Right-Click for more trading options!","color":"yellow","italic":false}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Base:{Type:\"\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Vanilla:1b}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Stone",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": " x2",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "COMMON","color": "white","italic": false,"bold": true},{"text":""},{"text":"Cost:","color":"gray","italic":false},{"text":"4 Coins","color":"gold","italic":false},{"text":""},{"text":"Click to trade!","color":"yellow","italic":false},{"text":"Right-Click for more trading options!","color":"yellow","italic":false}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

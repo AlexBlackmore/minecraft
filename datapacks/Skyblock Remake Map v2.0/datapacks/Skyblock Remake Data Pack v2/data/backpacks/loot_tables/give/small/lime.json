@@ -1,0 +1,63 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rabbit_stew",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{ExtraAttributes:{id:\"SMALL_BACKPACK\"},Unbreakable:1b,HideFlags:63,Pages:1,Items:[],CustomModelData:6,Base:{Color:\"lime\",Type:\"backpack\",Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},Description:['[{\"text\":\"A special portable bag with,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"7 \",\"color\":\"green\",\"italic\":false},{\"text\":\"slots which can hold any\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"item within.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]']}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "A special portable bag with,",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": "7",
+                      "color": "green",
+                      "italic": false
+                    },
+                    {
+                      "text": " slots which can hold any",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": "item within.",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "UNCOMMON",
+                    "color": "green",
+                    "italic": false,
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "Small Backpack",
+                  "color": "green",
+                  "italic": false
+                  }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

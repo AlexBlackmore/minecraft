@@ -1,0 +1,2 @@
+execute if score @s S_KillAmount matches 1424..1427 run function slayers:scoreboard/tree/l2/l2_356
+execute if score @s S_KillAmount matches 1428..1431 run function slayers:scoreboard/tree/l2/l2_357

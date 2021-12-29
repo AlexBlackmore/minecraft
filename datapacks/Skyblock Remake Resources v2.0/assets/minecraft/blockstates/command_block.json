@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "conditional=false,facing=down":  { "model": "block/ice" },
+        "conditional=false,facing=up":    { "model": "block/command_block", "x": 270 },
+        "conditional=false,facing=north": { "model": "block/command_block" },
+        "conditional=false,facing=south": { "model": "block/anvil" },
+        "conditional=false,facing=west":  { "model": "block/enchanting_table" },
+        "conditional=false,facing=east":  { "model": "block/crafting_table"},
+        "conditional=true,facing=down":  { "model": "blue/minecart/empty" },
+        "conditional=true,facing=up":    { "model": "blue/minecart/chest" },
+        "conditional=true,facing=north": { "model": "blue/minecart/furnace" },
+        "conditional=true,facing=south": { "model": "blue/minecart/tnt" },
+        "conditional=true,facing=west":  { "model": "blue/minecart/hopper" },
+        "conditional=true,facing=east":  { "model": "minecraft:block/command_block_conditional", "y": 90 }
+    }
+}

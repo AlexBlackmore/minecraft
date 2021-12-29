@@ -1,0 +1,37 @@
+{
+  "parent":"skyblock:commands/instant",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Viking's Tear +20 Intelligence",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":true
+  },
+  "criteria":{
+    "criterion":{
+      "trigger":"minecraft:player_killed_entity",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+				"nbt":"{Tags:[\"vikings_tear\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{
+	"loot":[
+		"skyblock:bonus_xp"
+	],
+	"experience":20,
+	"function":"skyblock:abilities/reset_instant"
+  }
+}

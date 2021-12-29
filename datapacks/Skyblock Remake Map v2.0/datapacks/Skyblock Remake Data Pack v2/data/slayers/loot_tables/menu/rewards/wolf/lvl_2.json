@@ -1,0 +1,125 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Novice",
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Rewards:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " Permanent +2 HP",
+                  "color": "red",
+                  "italic": false
+                }, 
+                [
+                  {
+                    "text": " Radiant Power Orb",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " Golden Tooth",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": " Recipe",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                }            
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Rewards claimed!",
+                  "color": "green",
+                  "italic": false
+                }    
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_WolfLvl": {
+                      "min": 2,
+                      "max": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [ 
+                {
+                  "text": "Level not reached!",
+                  "color": "red",
+                  "italic": false
+                }    
+              ],
+              "replace": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "S_WolfLvl": 1
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Wolf Slayer LVL 2",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:potion",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Dungeon II Potion","italic":false,"color":"white"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"Regeneration II (40:00)","italic":false,"color":"blue"},
+										{"text":"Strength III (40:00)","italic":false,"color":"blue"},
+										{"text":"Critical (40:00)","italic":false,"color":"blue"},
+										{"text":"Speed II (40:00)","italic":false,"color":"blue"},
+										{"text":"Resistance (40:00)","italic":false,"color":"blue"},
+										{"text":" "},
+										{"text":"When Applied:","italic":false},
+										{"text":"+9 Attack Damage","italic":false,"color":"blue"},
+										{"text":"+40% Speed","italic":false,"color":"blue"},
+										{"text":"+10% Crit Chance","italic":false,"color":"blue"},
+										{"text":"+10% Crit Damage","italic":false,"color":"blue"},
+										{"text":" "},
+										{"text":"COMMON","italic":true,"bold":true,"color":"white"}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										CustomPotionEffects:[
+											{Id:10,Amplifier:1,Duration:48000},
+											{Id:5,Amplifier:2,Duration:48000},
+											{Id:1,Amplifier:1,Duration:48000},
+											{Id:11,Amplifier:0,Duration:48000}
+										],
+										Potion:\"empty\",
+										CustomPotionColor:1284002,
+										HideFlags:32,
+										Name:\"Dungeon I Potion\"
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

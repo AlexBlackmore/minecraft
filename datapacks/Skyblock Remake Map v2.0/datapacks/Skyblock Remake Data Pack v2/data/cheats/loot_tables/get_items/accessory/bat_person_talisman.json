@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:zombie.spawn_reinforcements",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-1706647020,-280940402,-1621398623,-994453795],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTYwMzg5ODY4OTY3NiwKICAicHJvZmlsZUlkIiA6ICJhMmY4MzQ1OTVjODk0YTI3YWRkMzA0OTcxNmNhOTEwYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJiUHVuY2giLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg0MWE0OWIxOTlhNTljNDMxYmYzZmMzNzgzZjZiNjU0NWNlNzhjMzgwNDI2MTdmNjZlYmQ4N2NkZDU0OGU4YyIKICAgIH0KICB9Cn0=\"}]}},Base:{Type:\"ACCESSORY\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',Reforge:\"\",AccessoryFamily:\"BatPersonTalisman\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+2 ❈ Defense\",\"color\":\"green\",\"italic\":false},{\"text\":\", \",\"color\":\"gray\",\"italic\":false},{\"text\":\"❁\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Strength, \",\"color\":\"red\",\"italic\":false},{\"text\":\"and \",\"color\":\"gray\",\"italic\":false},{\"text\":\"✎ Intelligence\",\"color\":\"aqua\",\"italic\":false}]','[{\"text\":\"for every bat that you have\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"summoned.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\" \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Works with \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Sprit Sceptre\",\"color\":\"gold\",\"italic\":false},{\"text\":\",\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Witch Mask\",\"color\":\"blue\",\"italic\":false},{\"text\":\", and the \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Bat\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Pet\",\"color\":\"green\",\"italic\":false},{\"text\":\"!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Bat Person Talisman\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+2 ❈ Defense\",\"color\":\"green\",\"italic\":false},{\"text\":\", \",\"color\":\"gray\",\"italic\":false},{\"text\":\"❁\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Strength, \",\"color\":\"red\",\"italic\":false},{\"text\":\"and \",\"color\":\"gray\",\"italic\":false},{\"text\":\"✎ Intelligence\",\"color\":\"aqua\",\"italic\":false}]','[{\"text\":\"for every bat that you have\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"summoned.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\" \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Works with \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Sprit Sceptre\",\"color\":\"gold\",\"italic\":false},{\"text\":\",\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Witch Mask\",\"color\":\"blue\",\"italic\":false},{\"text\":\", and the \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Bat\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Pet\",\"color\":\"green\",\"italic\":false},{\"text\":\"!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON ACCESSORY\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

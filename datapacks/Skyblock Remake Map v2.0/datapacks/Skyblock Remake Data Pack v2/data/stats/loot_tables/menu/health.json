@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:golden_apple",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"❤ Health ","color":"red","italic":false},{"score":{"name":"@s","objective":"P_Health"},"italic":false,"color":"white"},{"text":" HP","color":"white","italic":false}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Health is your total maximum","color":"gray","italic":false},{"text":"health. Your natural","color":"gray","italic":false},[{"text":"regeneration gives ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_RegenAmount"},"italic":false,"color":"green"},{"text":" HP","color":"green"}],[{"text":"every ","color":"gray","italic":false},{"text":"2s.","color":"green","italic":false}],{"text":"","color":"yellow","italic":false},[{"text":"Base Health: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_BaseHealth"},"italic":false,"color":"green"},{"text":" HP","color":"green","italic":false}],{"text":" Increase your base Health by","color":"dark_gray","italic":true},{"text":" leveling your Farming and","color":"dark_gray","italic":true},{"text":" Fishing Skills and contributing","color":"dark_gray","italic":true},[{"text":" to the","color":"dark_gray","italic":true},{"text":" Fairy ","color":"light_purple","italic":false},{"text":"in the","color":"dark_gray","italic":true}],{"text":" Wilderness","color":"dark_green","italic":false},{"text":"","color":"light_purple","italic":false},[{"text":"Bonus Health: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_BonusHealth"},"italic":false,"color":"yellow"},{"text":" HP","color":"yellow","italic":false}],{"text":" Increase your bonus Health","color":"dark_gray","italic":true},{"text":" by equipping items and armor,","color":"dark_gray","italic":true},{"text":" and storing accessories in your","color":"dark_gray","italic":true},{"text":" inventory.","color":"dark_gray","italic":true}],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+execute if score @s Coins matches 0..99 run function profiling:sidebar_reload_money/0-99
+execute if score @s Coins matches 100..199 run function profiling:sidebar_reload_money/100-199
+execute if score @s Coins matches 200..299 run function profiling:sidebar_reload_money/200-299
+execute if score @s Coins matches 300..399 run function profiling:sidebar_reload_money/300-399
+execute if score @s Coins matches 400..499 run function profiling:sidebar_reload_money/400-499
+execute if score @s Coins matches 500..599 run function profiling:sidebar_reload_money/500-599
+execute if score @s Coins matches 600..699 run function profiling:sidebar_reload_money/600-699
+execute if score @s Coins matches 700..799 run function profiling:sidebar_reload_money/700-799
+execute if score @s Coins matches 800..899 run function profiling:sidebar_reload_money/800-899
+execute if score @s Coins matches 900..999 run function profiling:sidebar_reload_money/900-999

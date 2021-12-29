@@ -1,0 +1,39 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:experience_bottle",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Colossal Experience Bottle","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										["",{"text":"Sneak to recieve ","italic":false,"color":"gray"},{"text":"500,000 XP","italic":false,"color":"aqua"},{"text":"!","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Colossal Experience Bottle\",
+										Ability:true
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

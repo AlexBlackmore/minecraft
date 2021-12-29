@@ -1,0 +1,22 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+		  "item":"minecraft:brown_mushroom"
+		},
+		"title":"Existential Revelations",
+		"description":"Discover the mushroom dream.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:impossible"
+		}
+	},
+	"rewards":{
+		"experience":5
+	}
+}

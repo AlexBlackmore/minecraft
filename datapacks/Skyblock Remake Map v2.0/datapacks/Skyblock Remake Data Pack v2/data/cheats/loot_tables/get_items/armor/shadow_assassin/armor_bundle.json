@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,SkullOwner:{Id:[I;0,0,0,0],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWI4YWY1MmVmMmY3MmMzYmY1ZWNlNmU3MGE4MmYxMzcxOTU5Y2UzZmNiNzM2YzUwMDMwNWNhZGRjNTA1YzVlMiJ9fX0\"}]}},Base:{Type:\"ARMOR SET\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\",Strength:25,BaseStrength:25,CritDmg:25,BaseCritDmg:25,Health:160,BaseHealth:160,Defense:70,BaseDefense:70,Speed:7,BaseSpeed:7,DungeonItem:1b,Abilities:[{Name:\"Shadow Assassin\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Shadow Assassin\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Collect the shadows of the\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"enemies you kill increasing your\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"damage for the rest of the\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"dungeon while wearing this set.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+1❁Strength\",\"color\":\"red\",\"italic\":false},{\"text\":\" every kill\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\" \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"On teleport: Grants invisibility\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"and \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"+20✦Speed\",\"color\":\"white\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" for \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"10\",\"color\":\"aqua\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"seconds.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Shadow Assassin Armor Set\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Strength: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"Crit Damage: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100%\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+735 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+330\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Speed: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+28\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Shadow Assassin\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Collect the shadows of the\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"enemies you kill increasing your\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"damage for the rest of the\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"dungeon while wearing this set.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+1❁Strength\",\"color\":\"red\",\"italic\":false},{\"text\":\" every kill\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\" \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"On teleport: Grants invisibility\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"and \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"+20✦Speed\",\"color\":\"white\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\" for \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"10\",\"color\":\"aqua\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"seconds.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC DUNGEON ARMOR SET\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet",
+                    "legs",
+                    "chest",
+                    "head"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

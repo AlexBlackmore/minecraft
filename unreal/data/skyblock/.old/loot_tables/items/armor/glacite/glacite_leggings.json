@@ -1,0 +1,79 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Glacite Leggings","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"The ","italic":false,"color":"gray"},{"text":"Armor","italic":false,"color":"blue"},{"text":" of this piece is","italic":false,"color":"gray"}],
+										["",{"text":"doubled while in a Mountain,","italic":false,"color":"gray"}],
+										["",{"text":"Badlands, or Cave biome.","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Expert Miner","italic":false,"color":"gold"}],
+										["",{"text":"Grants permanent ","italic":false,"color":"gray"},{"text":"Haste II","italic":false,"color":"#D9C043"},{"text":". The","italic":false,"color":"gray"}],
+										["",{"text":"level of ","italic":false,"color":"gray"},{"text":"Haste","italic":false,"color":"#D9C043"},{"text":" given increases","italic":false,"color":"gray"}],
+										["",{"text":"based on your current ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" level,","italic":false,"color":"gray"}],
+										["",{"text":"divided by ","italic":false,"color":"gray"},{"text":"10","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+										["",{"text":"(Max level: 60)","italic":false,"color":"dark_gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:261368
+										},
+										Name:\"Glacite Leggings\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":25,
+											"slot":"legs"
+										},
+										{
+											"name":"Speed",
+											"attribute":"generic.movement_speed",
+											"operation":"multiply_base",
+											"amount":0.15,
+											"slot":"legs"
+										},
+										{
+											"name":"True Defense",
+											"attribute":"generic.armor_toughness",
+											"operation":"addition",
+											"amount":2,
+											"slot":"legs"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

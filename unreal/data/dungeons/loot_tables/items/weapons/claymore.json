@@ -1,0 +1,54 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:iron_sword",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Claymore","italic":false}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"A massive sword that seems"},
+								{"text":"impossibly heavy yet rests"},
+								{"text":"easily in a just warrior's hands."}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								CustomModelData:1,
+								Name:\"Claymore\"
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":10.4,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-3,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

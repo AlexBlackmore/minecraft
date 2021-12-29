@@ -1,0 +1,23 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+		  "item":"minecraft:book",
+		  "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+		},
+		"title":"Every little bit helps.",
+		"description":"Apply a Hot Potato Book to an item.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:impossible"
+		}
+	},
+	"rewards":{
+		"experience":5
+	}
+}

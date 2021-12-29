@@ -1,0 +1,70 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_chestplate",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Chestplate of Growth","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Growth","italic":false,"color":"gold"}],
+										["",{"text":"Killing a mob has a ","italic":false,"color":"gray"},{"text":"1/5","italic":false,"color":"green"},{"text":" chance","italic":false,"color":"gray"}],
+										["",{"text":"to grant ","italic":false,"color":"gray"},{"text":"Instant Health","italic":false,"color":"#F82423"},{"text":" and add","italic":false,"color":"gray"}],
+										["",{"text":"+1 Max Health","italic":false,"color":"blue"},{"text":" to this armor","italic":false,"color":"gray"}],
+										["",{"text":"piece.","italic":false,"color":"gray"}],
+										["",{"text":"(Max: +40 Max Health)","italic":false,"color":"dark_gray"}],
+										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"4s","italic":false,"color":"green"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:48640
+										},
+										HideFlags:64,
+										Name:\"Chestplate of Growth\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":20,
+											"slot":"chest"
+										},
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":10,
+											"slot":"chest"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

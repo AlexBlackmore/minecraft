@@ -1,0 +1,72 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:dragon_head",
+			"functions": [
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "text": "Currently: ",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+						"score": {
+						  "name": "DragonDamageMultiplier",
+						  "objective": "Setting"
+						},
+						"color": "blue",
+						"italic": false
+					},
+					{
+					  "text": "x",
+					  "color": "blue",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": "Controls how much additional",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "damage you deal to dragons.",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": ""
+				  },
+				  {
+					"text": "Click to change!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": {
+				  "text": "Damage Boost During Dragons",
+				  "color": "gold",
+				  "italic": false
+				}
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

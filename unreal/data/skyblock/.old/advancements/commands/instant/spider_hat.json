@@ -1,0 +1,70 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Spider Hat",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":false,
+		"hidden":true
+	},
+	"criteria":{
+		"player_hurt_spider":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"entity":{
+					"type":"#skyblock:spiders"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"head":{
+									"nbt":"{Name:\"Spider Hat\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"spider_hurt_player":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"damage":{
+					"source_entity":{
+						"type":"#skyblock:spiders"
+					}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"head":{
+									"nbt":"{Name:\"Spider Hat\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"requirements":[
+		[
+			"player_hurt_spider",
+			"spider_hurt_player"
+		]
+	],
+	"rewards":{
+		"function":"skyblock:abilities/instant/spider_hat"
+	}
+}

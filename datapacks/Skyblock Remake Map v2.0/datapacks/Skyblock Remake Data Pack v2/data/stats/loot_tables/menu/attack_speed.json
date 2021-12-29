@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:golden_axe",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"⚔ Bonus Attack Speed ","color":"yellow","italic":false},{"score":{"name":"@s","objective":"P_AtkSpeed"},"italic":false,"color":"white"},{"text":"%","color":"white","italic":false}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Bonus Attack Speed decreases the","color":"gray","italic":false},{"text":"time between hits on your","color":"gray","italic":false},{"text":"opponent.","color":"gray","italic":false},{"text":""},[{"text":"Base Bonus Attack Speed: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_BaseAtkSpeed"},"italic":false,"color":"green"},{"text":"%","color":"green","italic":false}],{"text":" All players have the same","color":"dark_gray","italic":true},{"text":" base bonus speed.","color":"dark_gray","italic":true},{"text":""},[{"text":"Bonus Bonus Attack Speed: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_BonusAtkSpeed"},"italic":false,"color":"yellow"},{"text":"%","color":"yellow","italic":false}],{"text":" Increase your bonus Bonus","color":"dark_gray","italic":true},{"text":" Attack Speed by equipping items","color":"dark_gray","italic":true},{"text":" and armor, and storing","color":"dark_gray","italic":true},{"text":" accessories in your inventory.","color":"dark_gray","italic":true},{"text":""},[{"text":"You now attack ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_AtkSpeed"},"italic":false,"color":"green"},{"text":"%","color":"green","italic":false},{"text":" faster!","color":"gray","italic":false}]],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

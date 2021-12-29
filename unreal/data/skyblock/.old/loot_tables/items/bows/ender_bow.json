@@ -1,0 +1,51 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:bow",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Ender Bow","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Ender Warp ","italic":false,"color":"gold"},{"text":"SNEAK","bold":true,"color":"yellow"}],
+										["",{"text":"Shoots an Ender Pearl. Upon","italic":false,"color":"gray"}],
+										["",{"text":"landing, all mobs within","italic":false,"color":"gray"}],
+										["",{"text":"8","italic":false,"color":"yellow"},{"text":" blocks have their ","italic":false,"color":"gray"},{"text":"Health","italic":false,"color":"red"}],
+										["",{"text":"reduced by ","italic":false,"color":"gray"},{"text":"10%","italic":false,"color":"red"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Ender Bow\"
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"power":3
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,106 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Adaptive Leggings","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Efficient Training","italic":false,"color":"gold"},
+										["",{"text":"This armor piece gains ","italic":false,"color":"gray"},{"text":"+2%","italic":false,"color":"green"},{"text":" stats","italic":false,"color":"gray"}],
+										["",{"text":"for every ","italic":false,"color":"gray"},{"text":"5","italic":false,"color":"green"},{"text":" levels being held.","italic":false,"color":"gray"}],
+										{"text":"(Max level: 50)","italic":false,"color":"dark_gray"},
+										{"text":" "},
+										{"text":"Full Set Bonus: Adaptive","italic":false,"color":"gold"},
+										["",{"text":"Grants a permanent status effect","italic":false,"color":"gray"}],
+										["",{"text":"that changes depending on","italic":false,"color":"gray"}],
+										["",{"text":"specific triggers.","italic":false,"color":"gray"}],
+										["",{"text":"> ","italic":false,"color":"dark_gray"},{"text":"Strength","italic":false,"color":"#932423"},{"text":" after dealing damage","italic":false,"color":"gray"}],
+										["",{"text":" with a sword,","italic":false,"color":"gray"}],
+										["",{"text":"> ","italic":false,"color":"dark_gray"},{"text":"Health Boost II","italic":false,"color":"#F87D23"},{"text":" and ","italic":false,"color":"gray"},{"text":"Resistance","italic":false,"color":"#99453A"}],
+										["",{"text":" after being damaged by a mob.","italic":false,"color":"gray"}],
+										["",{"text":"> ","italic":false,"color":"dark_gray"},{"text":"+50 Intelligence","italic":false,"color":"blue"},{"text":" after killing a","italic":false,"color":"gray"}],
+										["",{"text":" mob.","italic":false,"color":"gray"}],
+										["",{"text":"> ","italic":false,"color":"dark_gray"},{"text":"+5% Crit Chance","italic":false,"color":"blue"},{"text":" and ","italic":false,"color":"gray"},{"text":"+15% Crit","italic":false,"color":"blue"}],
+										["",{"text":" Damage","italic":false,"color":"blue"},{"text":" after firing an arrow.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"Upgrade this set using Scarf","italic":false,"color":"gold"},
+										{"text":"Fragments to apply these bonuses","italic":false,"color":"gold"},
+										{"text":"to each piece seperately.","italic":false,"color":"gold"},
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:12565682
+										},
+										HideFlags:64,
+										Name:\"Adaptive Leggings\"
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+15 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Max Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":29,
+											"slot":"legs"
+										},
+										{
+											"name":"Armor",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":13,
+											"slot":"legs"
+										},
+										{
+											"name":"Armor Toughness",
+											"attribute":"generic.armor_toughness",
+											"operation":"addition",
+											"amount":1,
+											"slot":"legs"
+										},
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":3,
+											"slot":"legs"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

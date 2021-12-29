@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;1047516664,-1946996166,-1231275455,-1659878955],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTQ1NzNkNjU0NmJhNzFlZmYzYjY3ZTUxMTZiMGQ3NWUyOWFkZjY3MTM1ZTk1MzM4ZGNhODNlZWMyODhmMjcifX19\"}]}},Base:{Type:\"ACCESSORY\",Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}',Reforge:\"\",AccessoryFamily:\"NewYearCakeBag\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Holds \",\"color\":\"gray\",\"italic\":false},{\"text\":\"New Year Cake\",\"color\":\"light_purple\",\"italic\":false},{\"text\":\". Each\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"unique New Year Cake within this\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"bag grants \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"+1 \",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"❤ Health\",\"color\":\"red\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"New Year Cake Bag\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"Holds \",\"color\":\"gray\",\"italic\":false},{\"text\":\"New Year Cake\",\"color\":\"light_purple\",\"italic\":false},{\"text\":\". Each\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"unique New Year Cake within this\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"bag grants \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"+1 \",\"color\":\"green\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\"❤ Health\",\"color\":\"red\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"UNCOMMON ACCESSORY\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

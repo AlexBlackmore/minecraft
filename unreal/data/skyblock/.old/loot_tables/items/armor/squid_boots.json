@@ -1,0 +1,37 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"leather_boots",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Squid Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+									Lore:[
+										\"{\\\"text\\\":\\\"Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"Your shoes spit out Squid ink!\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\"
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\"
+									],
+									color:0
+								},
+								AttributeModifiers:[
+									{Slot:\"feet\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:20,Operation:0,UUID:[I;545074170,119628173,654155383,599369331]},
+									{Slot:\"feet\",AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:0.015,Operation:2,UUID:[I;151078374,81549169,415611722,69511720]}
+								],
+								HideFlags:64,
+								Name:\"Squid Boots\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

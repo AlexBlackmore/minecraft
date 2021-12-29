@@ -1,0 +1,70 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:diamond_sword",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Reaper Falchion","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"Instant Health","italic":false,"color":"#F82423"},{"text":" every","italic":false,"color":"gray"}],
+										["",{"text":"1/2","italic":false,"color":"green"},{"text":" hits.","italic":false,"color":"gray"}],
+										["",{"text":"Deals ","italic":false,"color":"gray"},{"text":"+200%","italic":false,"color":"green"},{"text":" damage to Zombies.","italic":false,"color":"gray"}],
+										["",{"text":"Recieve ","italic":false,"color":"gray"},{"text":"+4 Armor Toughness","italic":false,"color":"blue"},{"text":" while","italic":false,"color":"gray"}],
+										["",{"text":"fighting Zombies.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Reaper Falchion\"
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+200 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":48
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":20,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

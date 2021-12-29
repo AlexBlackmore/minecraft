@@ -1,0 +1,3 @@
+execute in minecraft:overworld run data modify block 29999980 1 29832 Items[{Slot:0b}].tag.Items.Page2 set from entity @s Items
+execute as @p in minecraft:overworld run data modify block 29999980 1 29832 Items[{Slot:0b}].tag.Items.Page1 set from entity @s SelectedItem.tag.Items.Page1
+execute as @p in minecraft:overworld run data modify block 29999980 1 29832 Items[{Slot:0b}].tag.Items.Page3 set from entity @s SelectedItem.tag.Items.Page3

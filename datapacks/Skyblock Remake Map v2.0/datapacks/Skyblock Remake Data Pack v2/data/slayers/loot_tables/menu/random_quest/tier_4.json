@@ -1,0 +1,138 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Random Boss",
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Extra items",
+                  "color": "gold",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "Revenant Horror: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "+12 Revenant Flesh",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Tarantula Broodfather: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "+12 Tarantula Web",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Sven Packmaster: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "+12 Wolf Tooth",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier4XPReward",
+                      "objective": "S_RInfos"
+                    },
+                    "color": "light_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": " Slayer XP",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "text": "Cost to start: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "Tier4Cost",
+                      "objective": "S_RInfos"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": " coins",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Click to slay random!",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Tier IV",
+                "color": "dark_red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,HideFlags:63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

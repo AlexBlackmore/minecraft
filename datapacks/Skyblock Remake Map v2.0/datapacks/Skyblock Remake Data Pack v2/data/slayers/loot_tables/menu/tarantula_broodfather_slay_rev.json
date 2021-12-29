@@ -1,0 +1,86 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cobweb",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "☠",
+                    "color": "red",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": " Tarantula Broodfather",
+                    "color": "red",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "Monstrous Spider who poisons",
+                "color": "gray",
+                "bold": false,
+                "italic": false
+              }
+            ],
+            "replace": false
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "and devour its victims.",
+                "color": "gray",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": ""
+              }
+            ],
+            "replace": false
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "Slay Revenant Horror II!",
+                "color": "red",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{SkyblockMenu:1b}"
+          }
+        ]
+      }
+    ]
+  }

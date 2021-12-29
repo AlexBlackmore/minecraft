@@ -1,0 +1,89 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Tier IV amount: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "1",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Minimum: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Tier IV",
+                    "color": "dark_red",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Odds: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Pray RNGesus",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Required LVL: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "7",
+                    "color": "yellow",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Scythe Blade",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+execute if score @s P_ExtraSpeed matches ..432 run function stats:set_attribute/speed/speedcap_increased/l4/l4_10
+execute if score @s P_ExtraSpeed matches 433.. run function stats:set_attribute/speed/speedcap_increased/l4/l4_11

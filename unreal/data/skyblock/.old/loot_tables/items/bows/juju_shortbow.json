@@ -1,0 +1,71 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:bow",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Juju Shortbow","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Hits an additional ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"green"},{"text":" mobs within .","italic":false,"color":"gray"}],
+										["",{"text":"3","italic":false,"color":"yellow"},{"text":" blocks of your target.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Juju Shortbow\",
+										Shortbow:true,
+										Crit_Chance:10,
+										Crit_Damage:110
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+10% Crit Chance","italic":false,"color":"blue"},
+										{"text":"+110% Crit Damage","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"power":36
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":8,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

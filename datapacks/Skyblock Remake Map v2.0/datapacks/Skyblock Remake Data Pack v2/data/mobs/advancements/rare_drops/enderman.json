@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "killentity": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:enderman",
+                    "nbt": "{Tags:[\"Enderman\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mobs:rare_drops/enderman"
+    }
+}

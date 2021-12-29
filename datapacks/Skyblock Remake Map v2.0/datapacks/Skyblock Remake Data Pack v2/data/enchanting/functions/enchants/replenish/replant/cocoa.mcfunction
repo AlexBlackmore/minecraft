@@ -1,0 +1,11 @@
+execute unless data entity @s SelectedItem.tag.Base.Enchantments[{telekinesis:{identifier:1b}}] if data entity @s Inventory[{id:"minecraft:cocoa_beans"}] if block ~ ~ ~1 minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=south] keep
+execute unless data entity @s SelectedItem.tag.Base.Enchantments[{telekinesis:{identifier:1b}}] if data entity @s Inventory[{id:"minecraft:cocoa_beans"}] if block ~ ~ ~-1 minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=north] keep
+execute unless data entity @s SelectedItem.tag.Base.Enchantments[{telekinesis:{identifier:1b}}] if data entity @s Inventory[{id:"minecraft:cocoa_beans"}] if block ~1 ~ ~ minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=east] keep
+execute unless data entity @s SelectedItem.tag.Base.Enchantments[{telekinesis:{identifier:1b}}] if data entity @s Inventory[{id:"minecraft:cocoa_beans"}] if block ~-1 ~ ~ minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=west] keep
+execute unless data entity @s SelectedItem.tag.Base.Enchantments[{telekinesis:{identifier:1b}}] run clear @s minecraft:cocoa_beans 1
+
+execute if data entity @s SelectedItem.tag.Base.Enchantments[{telekinesis:{identifier:1b}}] if block ~ ~ ~1 minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=south] keep
+execute if data entity @s SelectedItem.tag.Base.Enchantments[{telekinesis:{identifier:1b}}] if block ~ ~ ~-1 minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=north] keep
+execute if data entity @s SelectedItem.tag.Base.Enchantments[{telekinesis:{identifier:1b}}] if block ~1 ~ ~ minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=east] keep
+execute if data entity @s SelectedItem.tag.Base.Enchantments[{telekinesis:{identifier:1b}}] if block ~-1 ~ ~ minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=west] keep
+execute if data entity @s SelectedItem.tag.Base.Enchantments[{telekinesis:{identifier:1b}}] run kill @e[type=item,tag=!InventoryItem,nbt={Age:0s,Item:{id:"minecraft:cocoa_beans",Count:1b,tag:{CustomModelData:1,Base:{Vanilla:1b}}}}]

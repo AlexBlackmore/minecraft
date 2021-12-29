@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:blaze_powder",
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"❁ Base Strength ","color":"red","italic":false},{"score":{"name":"@s","objective":"P_BaseStrength"},"italic":false,"color":"white"}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Strength increases your base","color":"gray","italic":false},{"text":"melee damage, including punching","color":"gray","italic":false},{"text":"and weapons.","color":"gray","italic":false}],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

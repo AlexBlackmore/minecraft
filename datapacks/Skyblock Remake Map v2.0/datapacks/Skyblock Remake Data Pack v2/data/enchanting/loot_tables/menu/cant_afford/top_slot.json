@@ -1,0 +1,57 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"Guarantees at least:","color":"gray","italic":false},[{"text":" * ","color":"gray","italic":false},{"nbt":"FirstEnchant[0]","storage":"blue:enchanting","interpret":true}],{"text":""},{"text":"You don't have enough Levels!","color":"red","italic":false}
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [{"text":"Enchant Item","color":"green","italic":false},{"text":" - ","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"E_TopSlot"},"color":"gold"},{"text":" Levels","color":"gold","italic":false}],
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                      "E_TopSlot": 1
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [{"text":"Enchant Item","color":"green","italic":false},{"text":" - ","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"E_TopSlot"},"color":"gold"},{"text":" Level","color":"gold","italic":false}],
+              "entity": "this",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "E_TopSlot": 1
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{EnchantOption:1b,SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

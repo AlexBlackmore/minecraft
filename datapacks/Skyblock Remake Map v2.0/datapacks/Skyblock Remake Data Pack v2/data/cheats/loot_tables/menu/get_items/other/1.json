@@ -1,0 +1,411 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_block",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Cheat in Raw Materials",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "from Skyblock!",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Click to view!",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Materials",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "backpacks:give/small/plain",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Backpacks",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Cheat in Backpacks",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "from Skyblock!",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Click to view!",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "replace": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Cheat in Rare Slayer",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Drops from Skyblock!",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Click to view!",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Rare Slayer Drops",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/grappling_hook",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/summoning_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/remnant_of_the_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/magical_mushroom_soup",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/mystical_mushroom_soup",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/maddox_batphone",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Base:{Type:\"\",Rarity:\"LEGENDARY\",RarityColor:'{\"text\":\"\",\"color\":\"gold\"}',Abilities:[{Name:\"Grand Architect\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\"},{Name:\"Built-in Storage\",Activation:\"LOOK UP + RIGHT CLICK\",Type:\"Item Ability\"}]},HideFlags:63,Unbreakable:1b,Description:['{\"text\":\" \",\"color\":\"gray\",\"italic\":false}','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Grand Architect\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"bold\":true,\"italic\":false}]','{\"text\":\"Right-Click the face of a block \",\"color\":\"gray\",\"italic\":false}','{\"text\":\"to extend all connected block \",\"color\":\"gray\",\"italic\":false}','{\"text\":\"faces.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \",\"color\":\"gray\",\"italic\":false}','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Built-in Storage\",\"color\":\"gold\",\"italic\":false},{\"text\":\" LOOK UP + RIGHT CLICK\",\"color\":\"yellow\",\"bold\":true,\"italic\":false}]','{\"text\":\"Opens the wand storage. Blocks \",\"color\":\"gray\",\"italic\":false}','{\"text\":\"will be placed from your \",\"color\":\"gray\",\"italic\":false}','{\"text\":\"inventory or the wand storage.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \",\"color\":\"gray\",\"italic\":false}','{\"text\":\"LEGENDARY\",\"color\":\"gold\",\"bold\":true,\"italic\":false}'],display:{Name:'[{\"text\":\"Builder\\'s Wand\",\"color\":\"gold\",\"italic\":false}]',Lore:['{\"text\":\" \",\"color\":\"gray\",\"italic\":false}','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Grand Architect\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"bold\":true,\"italic\":false}]','{\"text\":\"Right-Click the face of a block \",\"color\":\"gray\",\"italic\":false}','{\"text\":\"to extend all connected block \",\"color\":\"gray\",\"italic\":false}','{\"text\":\"faces.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \",\"color\":\"gray\",\"italic\":false}','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Built-in Storage\",\"color\":\"gold\",\"italic\":false},{\"text\":\" LOOK UP + RIGHT CLICK\",\"color\":\"yellow\",\"bold\":true,\"italic\":false}]','{\"text\":\"Opens the wand storage. Blocks \",\"color\":\"gray\",\"italic\":false}','{\"text\":\"will be placed from your \",\"color\":\"gray\",\"italic\":false}','{\"text\":\"inventory or the wand storage.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \",\"color\":\"gray\",\"italic\":false}','{\"text\":\"LEGENDARY\",\"color\":\"gold\",\"bold\":true,\"italic\":false}']},Enchantments:[{}],CustomModelData:27}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/wood_singularity",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"_________________","color":"dark_gray","bold":true,"italic":false,"underlined":true},{"text":""},[{"text":"NOTE: ","color":"red","italic":false,"bold":true},{"text":"The functionality of this","bold":false}],{"text":"item has not been coded yet.","color":"red","italic":false},{"text":"BlueCommander on Youtube for updates.","color":"gray"}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/catalyst",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"_________________","color":"dark_gray","bold":true,"italic":false,"underlined":true},{"text":""},[{"text":"NOTE: ","color":"red","italic":false,"bold":true},{"text":"The functionality of this","bold":false}],{"text":"item has not been coded yet.","color":"red","italic":false},{"text":"BlueCommander on Youtube for updates.","color":"gray"}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/flycatcher",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"_________________","color":"dark_gray","bold":true,"italic":false,"underlined":true},{"text":""},[{"text":"NOTE: ","color":"red","italic":false,"bold":true},{"text":"The functionality of this","bold":false}],{"text":"item has not been coded yet.","color":"red","italic":false},{"text":"BlueCommander on Youtube for updates.","color":"gray"}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/scrolls/implosion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"_________________","color":"dark_gray","bold":true,"italic":false,"underlined":true},{"text":""},[{"text":"NOTE: ","color":"red","italic":false,"bold":true},{"text":"The functionality of this","bold":false}],{"text":"item has not been coded yet.","color":"red","italic":false},{"text":"BlueCommander on Youtube for updates.","color":"gray"}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/scrolls/wither_shield",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"_________________","color":"dark_gray","bold":true,"italic":false,"underlined":true},{"text":""},[{"text":"NOTE: ","color":"red","italic":false,"bold":true},{"text":"The functionality of this","bold":false}],{"text":"item has not been coded yet.","color":"red","italic":false},{"text":"BlueCommander on Youtube for updates.","color":"gray"}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/scrolls/shadow_warp",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"_________________","color":"dark_gray","bold":true,"italic":false,"underlined":true},{"text":""},[{"text":"NOTE: ","color":"red","italic":false,"bold":true},{"text":"The functionality of this","bold":false}],{"text":"item has not been coded yet.","color":"red","italic":false},{"text":"BlueCommander on Youtube for updates.","color":"gray"}
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/hot_potato_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/other/fuming_potato_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

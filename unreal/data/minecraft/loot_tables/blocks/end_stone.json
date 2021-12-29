@@ -30,7 +30,7 @@
 					"predicate":{
 						"equipment":{
 							"mainhand":{
-								"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Stonk\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+								"nbt":"{Name:\"Stonk\"}"
 							}
 						}
 					}
@@ -39,16 +39,22 @@
 		},
 		{
 			"rolls":1,
+			"bonus_rolls":{
+				"type":"uniform",
+				"min":0.0,
+				"max":1.0
+			},
 			"entries":[
+				{
+					"type":"empty",
+					"quality":0,
+					"weight":99
+				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:glowing_blocks/glowing_end_stone",
-					"conditions":[
-						{
-							"condition":"random_chance",
-							"chance":0.01
-						}
-					]
+					"quality":1,
+					"weight":1
 				}
 			]
 		},
@@ -58,28 +64,6 @@
 				{
 					"type":"loot_table",
 					"name":"skyblock:mineral_armor/mineral_armor_end_stone"
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"loot_table",
-					"name":"skyblock:krampus_helmet"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"equipment":{
-							"head":{
-								"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Krampus Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
-							}
-						}
-					}
 				}
 			]
 		}

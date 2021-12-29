@@ -1,0 +1,36 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:book",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Farming for Dummies","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"EPIC","bold":true,"color":"light_purple"}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Farming for Dummies\"
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

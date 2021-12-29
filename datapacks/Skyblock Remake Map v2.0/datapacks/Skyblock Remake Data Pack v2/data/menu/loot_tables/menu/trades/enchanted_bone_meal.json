@@ -1,0 +1,147 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:bone_meal",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63,Enchantments:[{}]}"
+			  },
+			  {
+				"function": "minecraft:set_count",
+				"count": 1
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": [
+				  {
+					"text": "Enchanted Bone Meal ",
+					"color": "white",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "Instantly grows crops and",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "saplings.",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": " "
+				  },
+				  {
+					"text": "Cost:",
+					"color": "gray",
+					"italic": false
+				  },
+				  [
+					{
+					  "text": "Bone ",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+					  "text": "x64",
+					  "color": "gray",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": " "
+				  },
+				  {
+					"text": "Click to trade!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_BoneL": {
+					  "min": -1,
+					  "max": 1
+					}
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": [
+				  {
+					"text": "???",
+					"color": "red",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "Progress through your item",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "collections and explore the",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "world to unlock new trades!",
+					"color": "gray",
+					"italic": false
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_BoneL": {
+					"min": -1,
+					"max": 1
+				  }
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

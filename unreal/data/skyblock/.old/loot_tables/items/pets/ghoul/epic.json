@@ -1,0 +1,46 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:vex_spawn_egg",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Ghoul Egg","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										["",{"text":"Pet","italic":false,"color":"blue"}],
+										{"text":" "},
+										["",{"text":"Caretaking Cost:","italic":false,"color":"gray"}],
+										["",{"text":"Revenant Flesh","italic":false,"color":"yellow"},{"text":" x512","italic":false,"color":"dark_gray"}],
+										["",{"text":"Enchanted Emerald","italic":false,"color":"aqua"},{"text":" x24","italic":false,"color":"dark_gray"}],
+										["",{"text":"Enchanted Emerald","italic":false,"color":"yellow"},{"text":" x26","italic":false,"color":"dark_gray"}],
+										["",{"text":"Emerald","italic":false,"color":"white"},{"text":" x32","italic":false,"color":"dark_gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Epic Ghoul Pet\"
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

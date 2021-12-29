@@ -1,0 +1,115 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Revenant Horror",
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "There are ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "19 ",
+                    "color": "yellow",
+                    "italic": false
+                  },
+                  {
+                    "text": "recipes",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "related to the Zombie boss.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Unlock recipes and collect",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "rare drops in order to",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "craft powerful items.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Unlocked: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "name": "@s",
+                      "objective": "S_ZRecipes"
+                    },
+                    "color": "yellow",
+                    "italic": false
+                  },
+                  {
+                    "text": " recipes",
+                    "color": "yellow",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "text": "COMING WITH RECIPE MENU",
+                  "color": "red",
+                  "italic": false,
+                  "bold": true
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Slayer Recipes",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

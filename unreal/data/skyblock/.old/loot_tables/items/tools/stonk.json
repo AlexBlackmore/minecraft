@@ -1,0 +1,68 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:golden_pickaxe",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Stonk","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Grants bonus ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" when mining End","italic":false,"color":"gray"}],
+										["",{"text":"Stone and a ","italic":false,"color":"gray"},{"text":"5%","italic":false,"color":"green"},{"text":" chance to drop an","italic":false,"color":"gray"}],
+										["",{"text":"extra block.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"UNCOMMON","bold":true,"color":"yellow"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Stonk\"
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"efficiency":6
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":1,
+											"slot":"mainhand"
+										},
+										{
+											"name":"Attack Speed",
+											"attribute":"generic.attack_speed",
+											"operation":"addition",
+											"amount":-2.8,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

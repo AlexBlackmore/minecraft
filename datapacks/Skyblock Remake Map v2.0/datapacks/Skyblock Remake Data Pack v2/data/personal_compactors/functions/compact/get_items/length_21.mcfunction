@@ -1,0 +1,9 @@
+execute if data storage skyblock:personal_compactors {slot:"minecraft:cobblestone"} run function personal_compactors:compact/materials/cobblestone
+execute if data storage skyblock:personal_compactors {slot:"minecraft:cocoa_beans"} run function personal_compactors:compact/materials/cocoa_beans
+execute if data storage skyblock:personal_compactors {slot:"minecraft:ender_pearl"} run function personal_compactors:compact/materials/ender_pearl
+execute if data storage skyblock:personal_compactors {slot:"minecraft:magma_cream"} run function personal_compactors:compact/materials/magma_cream
+execute if data storage skyblock:personal_compactors {slot:"minecraft:melon_slice"} run function personal_compactors:compact/materials/melon
+execute if data storage skyblock:personal_compactors {slot:"minecraft:nether_wart"} run function personal_compactors:compact/materials/nether_wart
+execute if data storage skyblock:personal_compactors {slot:"minecraft:rabbit_foot"} run function personal_compactors:compact/materials/rabbit_foot
+execute if data storage skyblock:personal_compactors {slot:"minecraft:rabbit_hide"} run function personal_compactors:compact/materials/rabbit_hide
+execute if data storage skyblock:personal_compactors {slot:"minecraft:wheat_seeds"} run function personal_compactors:compact/materials/wheat_seeds

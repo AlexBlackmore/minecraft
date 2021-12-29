@@ -1,0 +1,4 @@
+execute if entity @s[nbt={Inventory:[{tag:{Base:{Type:"ACCESSORY",AccessoryFamily:"Compactor",Rarity:"UNCOMMON"}}}]}] run function personal_compactors:compact/get_items/p4000
+execute if entity @s[nbt={Inventory:[{tag:{Base:{Type:"ACCESSORY",AccessoryFamily:"Compactor",Rarity:"RARE"}}}]}] run function personal_compactors:compact/get_items/p5000
+execute if entity @s[nbt={Inventory:[{tag:{Base:{Type:"ACCESSORY",AccessoryFamily:"Compactor",Rarity:"EPIC"}}}]}] run function personal_compactors:compact/get_items/p6000
+execute if entity @s[nbt={Inventory:[{tag:{Base:{Type:"ACCESSORY",AccessoryFamily:"Compactor",Rarity:"LEGENDARY"}}}]}] run function personal_compactors:compact/get_items/p7000

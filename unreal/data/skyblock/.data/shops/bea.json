@@ -1,0 +1,233 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+		CustomName:"{\"text\":\"Bea\"}"
+		CustomNameVisible:true
+		PersistenceRequired:true
+		Silent:true
+		CanPickUpLoot:false
+		Willing:false
+		NoAI:false
+		VillagerData:{
+			level:5
+			profession:"nitwit"
+			type:"plains"
+		}
+		Offers:{
+			Recipes:[
+				{
+					buyB:{
+						id:"writable_book"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Bea>\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"{\"text\":\"Hello! Do you have a pet?\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"Pets are little compansions for\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"your adventures.\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"Personally I prefer the bee pet!\"\"italic\":false\"color\":\"white\"}"
+								]
+							}
+							HideFlags:32
+						}
+					}
+					rewardExp:false
+					maxUses:0
+				}
+				{
+					buy:{
+						id:"coal_block"
+						Count:2
+					}
+					buyB:{
+						id:"gold_block"
+						Count:2
+					}
+					sell:{
+						id:"bee_spawn_egg"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Bee Egg\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"{\"text\":\"Pet\"\"italic\":false\"color\":\"blue\"}"
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+								]
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"coal_block"
+						Count:64
+					}
+					buyB:
+					{
+						id:"gold_block"
+						Count:64
+					}
+					sell:{
+						id:"bee_spawn_egg"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Bee Egg\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"{\"text\":\"Pet\"\"italic\":false\"color\":\"blue\"}"
+									"\" \""
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+								]
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"coal_block"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Coal\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+								]
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+						}
+					}
+					buyB:{
+						id:"gold_block"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Gold\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+								]
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+						}
+					}
+					sell:{
+						id:"bee_spawn_egg"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Bee Egg\"\"italic\":false\"color\":\"light_purple\"}"
+								Lore:[
+									"{\"text\":\"Pet\"\"italic\":false\"color\":\"blue\"}"
+									"\" \""
+									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
+								]
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"coal_block"
+						Count:8
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Coal\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+								]
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+						}
+					}
+					buyB:{
+						id:"gold_block"
+						Count:8
+						tag:{
+							display:{
+								Name:"{\"text\":\"Enchanted Block of Gold\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+								]
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+						}
+					}
+					sell:{
+						id:"player_head"
+						Count:1
+						tag:{
+							SkullOwner:{Id:[I;-2035748654659900019-1593269834-847119877]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI3MjRhOWE0Y2RkNjhiYTQ5NDE1NTYwZTViZTQwYjRhMWM0N2NiNWJlMWQ2NmFlZGI1MmEzMGU2MmVmMmQ0NyJ9fX0="}]}}
+							display:{
+								Name:"{\"text\":\"Bee\"\"italic\":false\"color\":\"gold\"}"
+								Lore:[
+									"{\"text\":\"Pet\"\"italic\":false\"color\":\"blue\"}"
+									"\" \""
+									"[\"\"{\"text\":\"Bonus stats increase based on\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"your current \"\"italic\":false\"color\":\"gray\"}{\"text\":\"XP\"\"italic\":false\"color\":\"aqua\"}{\"text\":\" level:\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"+1 Attack Damage\"\"italic\":false\"color\":\"blue\"}{\"text\":\" every \"\"italic\":false\"color\":\"gray\"}{\"text\":\"4\"\"italic\":false\"color\":\"green\"}{\"text\":\" levels.\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"+1 Intelligence\"\"italic\":false\"color\":\"blue\"}{\"text\":\" every \"\"italic\":false\"color\":\"gray\"}{\"text\":\"2\"\"italic\":false\"color\":\"green\"}{\"text\":\" levels.\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"+1% Speed\"\"italic\":false\"color\":\"blue\"}{\"text\":\" every \"\"italic\":false\"color\":\"gray\"}{\"text\":\"10\"\"italic\":false\"color\":\"green\"}{\"text\":\" levels.\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"(Max level: 100)\"\"italic\":false\"color\":\"dark_gray\"}]"
+									"\" \""
+									"{\"text\":\"Hive\"\"italic\":false\"color\":\"gold\"}"
+									"[\"\"{\"text\":\"Gain \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+20 Intelligence\"\"italic\":false\"color\":\"blue\"}{\"text\":\" and\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"+3 Attack Damage\"\"italic\":false\"color\":\"blue\"}{\"text\":\" for each nearby\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"bee.\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"(Max: 15 bees)\"\"italic\":false\"color\":\"dark_gray\"}]"
+									"\" \""
+									"{\"text\":\"Busy Buzz Buzz\"\"italic\":false\"color\":\"gold\"}"
+									"[\"\"{\"text\":\"Mobs have a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"100%\"\"italic\":false\"color\":\"green\"}{\"text\":\" chance to drop\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"a flower when killed.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"Weaponized Honey\"\"italic\":false\"color\":\"gold\"}"
+									"[\"\"{\"text\":\"Gain \"\"italic\":false\"color\":\"gray\"}{\"text\":\"25%\"\"italic\":false\"color\":\"green\"}{\"text\":\" of your missing health\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"back as \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Absorption\"\"italic\":false\"color\":\"#2552A5\"}{\"text\":\" when hit.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"LEGENDARY\"\"bold\":true\"color\":\"gold\"}"
+								]
+							}
+							Pet:true
+							Name:"Bee"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+			]
+		}
+	}
+	display:{
+		Name:"{\"text\":\"Bea\"}"
+	}
+}

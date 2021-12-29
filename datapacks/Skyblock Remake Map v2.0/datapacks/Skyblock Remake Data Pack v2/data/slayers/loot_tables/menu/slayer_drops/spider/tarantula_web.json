@@ -1,0 +1,127 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:string",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "Tarantula Web",
+                    "color": "green",
+                    "italic": false
+                  }
+                ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                [
+                  {
+                  "text": "Tier I amount: ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "1 to 3",
+                  "color": "green",
+                  "italic": false
+                }
+              ]
+              ],
+              [
+                [
+                  {
+                  "text": "Tier IY amount: ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "9 to 18",
+                  "color": "green",
+                  "italic": false
+                }
+              ]
+              ],
+              [
+                [
+                  {
+                  "text": "Tier III amount: ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "28 to 48",
+                  "color": "green",
+                  "italic": false
+                }
+              ]
+              ],  
+              [
+                [
+                  {
+                  "text": "Tier IV amount: ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "52 to 64",
+                  "color": "green",
+                  "italic": false
+                }
+              ]
+              ],
+              [
+                  {
+                  "text": "",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              [
+                [
+                  {
+                  "text": "Minimum: ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Tier I",
+                  "color": "green",
+                  "italic": false
+                }
+              ]
+              ],
+              [
+                [
+                  {
+                  "text": "Odds: ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Guaranteed",
+                  "color": "green",
+                  "italic": false
+                }
+              ]
+              ]
+              ]
+          },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Enchantments:[{}]}"
+            }    
+        ]
+      }
+    ]
+  }
+]
+}

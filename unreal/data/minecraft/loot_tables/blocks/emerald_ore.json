@@ -1,90 +1,38 @@
 {
-  "type": "minecraft:block",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "enchantments": [
-                      {
-                        "enchantment": "minecraft:silk_touch",
-                        "levels": {
-                          "min": 1
-                        }
-                      }
-                    ]
-                  }
-                }
-              ],
-              "name": "minecraft:emerald_ore"
-            },
-            {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "minecraft:emerald"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"loot_table",
-          "name":"skyblock:items/refined_mineral",
-		  "quality":2,
-		  "weight":1
-        },
+	"type":"block",
+	"pools":[
 		{
-          "type":"empty",
-		  "weight":374
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"loot_table",
-          "name":"skyblock:lapis_armor"
-        }
-      ],
-      "conditions":[
-        {
-          "condition":"minecraft:inverted",
-          "term":{
-            "condition":"minecraft:match_tool",
-            "predicate":{
-              "enchantments":[
-                {
-                  "enchantment":"minecraft:silk_touch",
-                  "levels":{
-                    "min":1
-                  }
-                }
-              ]
-            }
-          }
-        }
-      ]
-    }
-  ]
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"emerald_ore",
+							"conditions":[
+								{
+									"condition":"match_tool",
+									"predicate":{
+										"enchantments":[
+											{
+												"enchantment":"silk_touch",
+												"levels":{
+													"min":1
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:blocks/emerald_ore"
+						}
+					]
+				}
+			]
+		}
+	]
 }

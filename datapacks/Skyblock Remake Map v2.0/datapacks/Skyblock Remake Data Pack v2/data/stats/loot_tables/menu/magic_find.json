@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:stick",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"✯ Magic Find ","color":"aqua","italic":false},{"score":{"name":"@s","objective":"P_MagicFind"},"italic":false,"color":"white"}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Magic Find increases how many","color":"gray","italic":false},{"text":"rare items you find.","color":"gray","italic":false},{"text":""},[{"text":"Base Magic Find: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_BaseMagicFind"},"italic":false,"color":"green"}],{"text":" Increase your base Magic","color":"dark_gray","italic":true},{"text":" Find by collecting unique pets.","color":"dark_gray","italic":true},{"text":""},[{"text":"Bonus Magic Find: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_BonusMagicFind"},"italic":false,"color":"yellow"}],{"text":" Increase your bonus Magic","color":"dark_gray","italic":true},{"text":" Find by equipping items and","color":"dark_gray","italic":true},{"text":" armor, and storing accessories","color":"dark_gray","italic":true},{"text":" in your inventory.","color":"dark_gray","italic":true}],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

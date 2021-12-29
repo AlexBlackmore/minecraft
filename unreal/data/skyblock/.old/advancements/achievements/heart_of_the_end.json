@@ -1,0 +1,30 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+		  "item":"minecraft:end_stone"
+		},
+		"title":"Heart of The End",
+		"description":"Reach the Dragon's Nest in The End.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:location",
+			"conditions":{
+				"dimension":"skyblock:the_end",
+				"position":{
+					"y":{
+						"min":220
+					}
+				}
+			}
+		}
+	},
+	"rewards":{
+		"experience":5
+	}
+}

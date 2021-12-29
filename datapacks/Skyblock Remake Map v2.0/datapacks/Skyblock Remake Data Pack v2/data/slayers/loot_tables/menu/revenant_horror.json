@@ -1,0 +1,139 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rotten_flesh",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "☠",
+                    "color": "red",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": " Revenant Horror",
+                    "color": "yellow",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "Abhorrant Zombie stuck",
+                "color": "gray",
+                "bold": false,
+                "italic": false
+              }
+            ],
+            "replace": false
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "between life and death for",
+                "color": "gray",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "an enternity.",
+                "color": "gray",
+                "bold": false,
+                "italic": false
+              }
+            ],
+            "replace": false
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": ""
+              }
+            ],
+            "replace": false
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              [
+                {
+                  "text": "Zombie Slayer:",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false
+                },
+                {
+                  "text": " LVL ",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false
+                },
+                {
+                  "score": {
+                    "name": "@p",
+                    "objective": "S_ZombieLvl"
+                  },
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false
+                }
+              ]
+            ],
+            "replace": false
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": ""
+              }
+            ],
+            "replace": false
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "Click to view boss!",
+                "color": "yellow",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{SkyblockMenu:1b}"
+          }
+        ]
+      }
+    ]
+  }

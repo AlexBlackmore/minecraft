@@ -1,0 +1,21 @@
+summon spider ~ ~ ~ {
+	CustomName:"{\"text\":\"Spider\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock"],
+	DeathLootTable:"skyblock:mobs/spiders_den/spider",
+	Passengers:[
+		{
+			id:"minecraft:cave_spider",
+			CustomName:"{\"text\":\"Tarantula Broodfather\"}",
+			CustomNameVisible:true,
+			Tags:["skyblock","tarantula_broodfather"],
+			AbsorptionAmount:4976,
+			Health:1024,
+			Attributes:[
+				{Name:"generic.max_health",Base:1024},
+				{Name:"generic.attack_damage",Base:22}
+			],
+			DeathLootTable:"skyblock:mobs/slayer/tarantula_broodfather/tier2"
+		}
+	]
+}

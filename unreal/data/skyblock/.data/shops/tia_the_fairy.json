@@ -1,0 +1,60 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+		CustomName:"{\"text\":\"Tia the Fairy\"\"color\":\"light_purple\"}"
+		CustomNameVisible:true
+		PersistenceRequired:true
+		Silent:true
+		CanPickUpLoot:false
+		Willing:false
+		NoAI:false
+		VillagerData:{
+			level:5
+			profession:"nitwit"
+			type:"plains"
+		}
+		Attributes:[
+			{
+				Name:"generic.movement_speed"
+				Base:0
+			}
+		]
+		Offers:{
+			Recipes:[
+				{
+					buyB:
+					{
+						id:"writable_book"
+						Count:1
+						tag:{
+							display:{
+								Name:"[\"\"{\"text\":\"<\"\"italic\":false\"color\":\"white\"}{\"text\":\"Tia the Fairy\"\"italic\":false\"color\":\"light_purple\"}{\"text\":\">\"\"italic\":false\"color\":\"white\"}]"
+								Lore:[
+									"{\"text\":\"Welcome to the Fairy Pond! I am\"\"italic\":false\"color\":\"white\"}"
+									"[\"\"{\"text\":\"Tia\"\"italic\":false\"color\":\"light_purple\"}{\"text\":\".\"\"italic\":false\"color\":\"white\"}]"
+									"{\"text\":\"During your travels you may come\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"across some strange colourful\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"orbs.\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"These are the souls of my fallen\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"sisters.\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"If you find any please bring\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"them back to me!\"\"italic\":false\"color\":\"white\"}"
+									"[\"\"{\"text\":\"I can buff any piece of \"\"italic\":false\"color\":\"white\"}{\"text\":\"Fairy\"\"italic\":false\"color\":\"aqua\"}]"
+									"[\"\"{\"text\":\"Armor\"\"italic\":false\"color\":\"aqua\"}{\"text\":\" you are holding if you\"\"italic\":false\"color\":\"white\"}]"
+									"[\"\"{\"text\":\"talk to me while holding \"\"italic\":false\"color\":\"white\"}{\"text\":\"5x Fairy\"\"italic\":false\"color\":\"red\"}]"
+									"[\"\"{\"text\":\"Souls\"\"italic\":false\"color\":\"red\"}{\"text\":\" in your off-hand.\"\"italic\":false\"color\":\"white\"}]"
+								]
+							}
+							HideFlags:32
+						}
+					}
+					rewardExp:false
+					maxUses:0
+				}
+			]
+		}
+	}
+	display:{
+		Name:"\"Tia the Fairy\""
+	}
+}

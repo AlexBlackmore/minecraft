@@ -1,0 +1,71 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+		CustomName:"Winona"
+		CustomNameVisible:true
+		PersistenceRequired:true
+		Silent:true
+		CanPickUpLoot:false
+		Willing:false
+		NoAI:false
+		VillagerData:
+		{
+			level:5
+			profession:"cleric"
+			type:"plains"
+		}
+		Attributes:[
+			{
+				Name:"generic.movement_speed"
+				Base:0
+			}
+		]
+		Offers:
+		{
+			Recipes: [
+				{
+					buy:{
+						id:"emerald"
+						Count:31
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:16
+					}
+					sell:{
+						id:"totem_of_undying"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Revive Stone\"\"italic\":false\"color\":\"gold\"}"
+								Lore:[
+									"{\"text\":\" \"}"
+									"{\"text\":\"Ability: Revive\"\"italic\":false\"color\":\"gold\"}"
+									"{\"text\":\"Hold to revive yourself right\"\"italic\":false\"color\":\"gray\"}"
+									"[\"\"{\"text\":\"before death.\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"ONE TIME USE!\"\"italic\":false\"color\":\"red\"}]"
+									"{\"text\":\" \"}"
+									"{\"text\":\"LEGENDARY\"\"bold\":true\"color\":\"gold\"}"
+								]
+							}
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+			]
+		}
+	}
+	display:{
+		Name:"{\"text\":\"Winona\"}"
+	}
+}

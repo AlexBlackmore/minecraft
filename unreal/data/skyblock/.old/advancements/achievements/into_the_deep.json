@@ -1,0 +1,30 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+		  "item":"minecraft:obsidian",
+		},
+		"title":"Into the Deep",
+		"description":"Reach the Obsidian Sanctuary in the Deep Caverns.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+    "criteria": {
+       "criterion":{
+			"trigger":"minecraft:location",
+			"conditions":{
+				"dimension":"skyblock:deep_caverns",
+				"position":{
+					"y":{
+						"min":220
+					}
+				}
+			}
+		}
+    },
+    "rewards": {
+        "experience":5
+    }
+}

@@ -1,0 +1,127 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:golden_helmet",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Zombie Knight Helmet","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Zombie Knight","italic":false,"color":"gold"},
+										["",{"text":"Gains ","italic":false,"color":"gray"},{"text":"+10 Armor","italic":false,"color":"blue"},{"text":" when used with","italic":false,"color":"gray"}],
+										["",{"text":"the Zombie Knight Sword.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								}
+							],
+							"conditions":[
+								{
+									"condition":"random_chance_with_looting",
+									"chance":0.05,
+									"looting_multiplier":0.01
+								}
+							]
+						},
+						{
+							"type":"item",
+							"name":"minecraft:golden_helmet",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Zombie Knight Helmet","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Zombie Knight","italic":false,"color":"gold"},
+										["",{"text":"Gains ","italic":false,"color":"gray"},{"text":"+10 Armor","italic":false,"color":"blue"},{"text":" when used with","italic":false,"color":"gray"}],
+										["",{"text":"the Zombie Knight Sword.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"functions":[
+		{
+			"function":"minecraft:set_nbt",
+			"tag":"{
+				display:{
+					color:13963824
+				},
+				HideFlags:64,
+				Name:\"Zombie Knight Helmet\"
+			}"
+		},
+		{
+			"function":"minecraft:enchant_with_levels",
+			"treasure":true,
+			"levels":30
+		},
+		{
+			"function":"minecraft:set_attributes",
+			"modifiers":[
+				{
+					"name":"Armor",
+					"attribute":"generic.armor",
+					"operation":"addition",
+					"amount":12,
+					"slot":"feet"
+				},
+				{
+					"name":"Armor Toughness",
+					"attribute":"generic.armor_toughness",
+					"operation":"addition",
+					"amount":1,
+					"slot":"feet"
+				},
+				{
+					"name":"Attack Damage",
+					"attribute":"generic.attack_damage",
+					"operation":"addition",
+					"amount":2,
+					"slot":"feet"
+				},
+				{
+					"name":"Movement Speed",
+					"attribute":"generic.movement_speed",
+					"operation":"multiply_base",
+					"amount":0.05,
+					"slot":"feet"
+				}
+			]
+		},
+		{
+			"function":"minecraft:set_damage",
+			"damage":{
+						"type":"uniform",
+						"min":0.0,
+						"max":1.0
+			}
+		}
+	]
+}

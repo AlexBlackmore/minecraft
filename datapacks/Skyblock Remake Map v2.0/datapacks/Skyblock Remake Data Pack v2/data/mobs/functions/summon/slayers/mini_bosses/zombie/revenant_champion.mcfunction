@@ -1,0 +1,6 @@
+playsound minecraft:entity.generic.explode hostile @a[distance=..10] ~ ~ ~ 2 1 1
+execute anchored eyes run particle minecraft:explosion ~ ~ ~ 0.5 0.5 0.5 1 10 normal
+execute anchored eyes run summon minecraft:zombie ~ ~ ~ {DeathLootTable:"mobs:mob_loot/mini_bosses/champion",Tags:["MiniBoss","RevenantChampion"],PortalCooldown:150,CustomName:'[{"text":"Revenant Champion"}]',Health:24000,HandItems:[{id:diamond_sword,tag:{Enchantments:[{}]},Count:1}],HandDropChances:[0.00F],ArmorItems:[{id:iron_boots,Count:1},{id:chainmail_leggings,tag:{Enchantments:[{}]},Count:1},{id:diamond_chestplate,tag:{Enchantments:[{}]},Count:1},{}],ArmorDropChances:[0.00F,0.00F,0.00F,0.00F],Attributes:[{Name:"generic.attack_damage",Base:2200.0F},{Name:"generic.movement_speed",Base:0.7F},{Name:"generic.max_health",Base:90000F}]}
+
+execute as @e[tag=MiniBoss,tag=!ID] at @s run function slayers:set_miniboss_id
+execute as @e[tag=MiniBoss,tag=!Veteran] at @s as @a if score @s PlayerID = @e[tag=MiniBoss,sort=nearest,limit=1] PlayerID if entity @s[tag=SlayerVeteranBonus] as @e[tag=MiniBoss,sort=nearest,limit=1] run function slayers:veteran_bonus

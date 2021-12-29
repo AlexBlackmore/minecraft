@@ -1,0 +1,14 @@
+execute if score slot pcompact.strlgth matches 13 run function personal_compactors:compact/get_items/length_13
+execute if score slot pcompact.strlgth matches 14 run function personal_compactors:compact/get_items/length_14
+execute if score slot pcompact.strlgth matches 15 run function personal_compactors:compact/get_items/length_15
+execute if score slot pcompact.strlgth matches 16 run function personal_compactors:compact/get_items/length_16
+execute if score slot pcompact.strlgth matches 17 run function personal_compactors:compact/get_items/length_17
+execute if score slot pcompact.strlgth matches 18 run function personal_compactors:compact/get_items/length_18
+execute if score slot pcompact.strlgth matches 19 run function personal_compactors:compact/get_items/length_19
+execute if score slot pcompact.strlgth matches 20 run function personal_compactors:compact/get_items/length_20
+execute if score slot pcompact.strlgth matches 21 run function personal_compactors:compact/get_items/length_21
+execute if score slot pcompact.strlgth matches 22 run function personal_compactors:compact/get_items/length_22
+execute if score slot pcompact.strlgth matches 23 run function personal_compactors:compact/get_items/length_23
+execute if score slot pcompact.strlgth matches 24 run function personal_compactors:compact/get_items/length_24
+execute if score slot pcompact.strlgth matches 26 run function personal_compactors:compact/get_items/length_26
+execute if score slot pcompact.strlgth matches 29 run function personal_compactors:compact/get_items/length_29

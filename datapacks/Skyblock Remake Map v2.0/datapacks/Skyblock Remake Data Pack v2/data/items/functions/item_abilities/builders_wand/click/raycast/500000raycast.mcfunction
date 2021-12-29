@@ -1,0 +1,2 @@
+execute positioned ^ ^ ^.005 unless block ~ ~ ~ air positioned ^ ^ ^-.005 run function items:item_abilities/builders_wand/click/raycast/100000raycast
+execute positioned ^ ^ ^.005 if block ~ ~ ~ air run function items:item_abilities/builders_wand/click/raycast/500000raycast

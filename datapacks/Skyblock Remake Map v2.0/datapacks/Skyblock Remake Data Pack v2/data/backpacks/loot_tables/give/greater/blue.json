@@ -1,0 +1,63 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rabbit_stew",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{ExtraAttributes:{id:\"GREATER_BACKPACK\"},Unbreakable:1b,HideFlags:63,Pages:2,Items:{Page1:[],Page2:[]},CustomModelData:50,Base:{Color:\"blue\",Type:\"backpack\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}'},Description:['[{\"text\":\"A special portable bag with,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"36 \",\"color\":\"green\",\"italic\":false},{\"text\":\"slots which can hold any\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"item within.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]']}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "A special portable bag with,",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": "36",
+                      "color": "green",
+                      "italic": false
+                    },
+                    {
+                      "text": " slots which can hold any",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": "item within.",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "EPIC",
+                    "color": "dark_purple",
+                    "italic": false,
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "Greater Backpack",
+                  "color": "dark_purple",
+                  "italic": false
+                  }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"BOOTS\",Rarity:\"LEGENDARY\",RarityColor:'{\"text\":\"\",\"color\":\"gold\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\",Defense:125,BaseDefense:125,Intel:50,BaseIntel:50,Abilities:[{Name:\"Regenerative Howl\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Regenerative Howl\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Upon Activating \",\"color\":\"gray\",\"italic\":false},{\"text\":\"⫽ Ferocity\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"heal players within \",\"color\":\"gray\",\"italic\":false},{\"text\":\"25\",\"color\":\"blue\",\"italic\":false}]','[{\"text\":\"blocks for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"10% \",\"color\":\"blue\",\"italic\":false},{\"text\":\"of your \",\"color\":\"gray\",\"italic\":false},{\"text\":\"❈\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"and gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"50❈ Defense\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"for 5s (stacking).\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{color:3746854, Name:'[{\"text\":\"Werewolf Boots\",\"color\":\"gold\",\"italic\":false}]',Lore:['[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+125\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Regenerative Howl\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Upon Activating \",\"color\":\"gray\",\"italic\":false},{\"text\":\"⫽ Ferocity\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"heal players within \",\"color\":\"gray\",\"italic\":false},{\"text\":\"25\",\"color\":\"blue\",\"italic\":false}]','[{\"text\":\"blocks for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"10% \",\"color\":\"blue\",\"italic\":false},{\"text\":\"of your \",\"color\":\"gray\",\"italic\":false},{\"text\":\"❈\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"and gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"50❈ Defense\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"for 5s (stacking).\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"LEGENDARY BOOTS\",\"color\":\"gold\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

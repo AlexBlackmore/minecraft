@@ -13,7 +13,7 @@
 		"hidden":false
 	},
 	"criteria":{
-		"criterion":{
+		"effects_changed":{
 			"trigger":"minecraft:effects_changed",
 			"conditions":{
 				"effects":{
@@ -28,14 +28,34 @@
 						"condition":"entity_properties",
 						"entity":"this",
 						"predicate":{
-							"nbt":"{Inventory:[{tag:{display:{Name:\"{\\\"text\\\":\\\"Vaccine Talisman\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}}]}"
+							"nbt":"{
+								Inventory:[
+									{tag:{Name:\"Vaccine Talisman\"}}
+								]
+							}"
 						}
+					}
+				]
+			}
+		},
+		"inventory_changed":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"items":[
+					{
+						"nbt":"{Name:\"Vaccine Talisman\"}"
 					}
 				]
 			}
 		}
 
 	},
+	"requirements":[
+		[
+			"effects_changed",
+			"inventory_changed"
+		]
+	],
 	"rewards":{
 		"function":"skyblock:abilities/accessories/vaccine_talisman"
 	}

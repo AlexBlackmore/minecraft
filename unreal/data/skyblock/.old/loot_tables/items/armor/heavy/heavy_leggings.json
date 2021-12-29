@@ -1,0 +1,120 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Heavy Legging","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Vindicate","italic":false,"color":"gold"},
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+1% Speed","italic":false,"color":"blue"},{"text":" for every","italic":false,"color":"gray"}],
+										["",{"text":"10 Armor","italic":false,"color":"blue"},{"text":" you have.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								}
+							],
+							"conditions":[
+								{
+									"condition":"random_chance_with_looting",
+									"chance":0.05,
+									"looting_multiplier":0.01
+								}
+							]
+						},
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Heavy Legging","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Vindicate","italic":false,"color":"gold"},
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+1% Speed","italic":false,"color":"blue"},{"text":" for every","italic":false,"color":"gray"}],
+										["",{"text":"10 Armor","italic":false,"color":"blue"},{"text":" you have.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"functions":[
+		{
+			"function":"minecraft:set_nbt",
+			"tag":"{
+				display:{
+					color:8553090
+				},
+				HideFlags:64,
+				Name:\"Heavy Leggings\"
+			}"
+		},
+		{
+			"function":"minecraft:enchant_with_levels",
+			"treasure":true,
+			"levels":30
+		},
+		{
+			"function":"minecraft:set_attributes",
+			"modifiers":[
+				{
+					"name":"Armor",
+					"attribute":"generic.armor",
+					"operation":"addition",
+					"amount":21,
+					"slot":"legs"
+				},
+				{
+					"name":"Armor Toughness",
+					"attribute":"generic.armor_toughness",
+					"operation":"addition",
+					"amount":1,
+					"slot":"legs"
+				},
+				{
+					"name":"Movement Speed",
+					"attribute":"generic.movement_speed",
+					"operation":"multiply_base",
+					"amount":-0.05,
+					"slot":"legs"
+				}
+			]
+		},
+		{
+			"function":"minecraft:set_damage",
+			"damage":{
+						"type":"uniform",
+						"min":0.0,
+						"max":1.0
+			}
+		}
+	]
+}

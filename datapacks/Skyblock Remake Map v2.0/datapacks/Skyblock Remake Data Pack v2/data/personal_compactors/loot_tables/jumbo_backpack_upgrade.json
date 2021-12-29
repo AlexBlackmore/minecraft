@@ -1,0 +1,80 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  [
+                    {
+                      "text": "Craft with a ",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text": "Greater Backpack",
+                      "color": "dark_purple",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "to upgrade it to ",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "text": "54 ",
+                      "color": "yellow",
+                      "italic": false
+                    },
+                    {
+                      "text": "slots",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Right-click to view recipes!",
+                    "color": "yellow",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "SPECIAL",
+                    "color": "red",
+                    "bold": true,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Jumbo Backpack Upgrade",
+                  "color": "red",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Enchantments:[{}],HideFlags:254,Base:{Type:\"\",Rarity:\"SPECIAL\",RarityColor:'{\"text\":\"\",\"color\":\"red\"}'},SkullOwner:{Id:[I;-395045577,716520451,-1456046726,419012374],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZhY2ZjNjQzZjYwOGUxNmRlMTkzMzVkZGNhNzFhODI4ZGZiOGRhY2E1NzkzZWI1YmJjYjBjN2QxNTU5MjQ5In19fQ==\"}]}}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

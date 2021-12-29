@@ -1,0 +1,2 @@
+execute if data storage skyblock:personal_compactors {slot:"minecraft:poisonous_potato"} run function personal_compactors:compact/materials/poisonous_potato
+execute if data storage skyblock:personal_compactors {slot:"minecraft:prismarine_shard"} run function personal_compactors:compact/materials/prismarine_shard

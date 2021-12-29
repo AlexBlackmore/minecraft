@@ -1,0 +1,35 @@
+summon zombie_villager ~ ~ ~ {
+	CustomName:"{\"text\":\"Zombie Villager\",\"color\":\"red\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock"],
+	Health:24,
+	Attributes:[
+		{Name:"generic.max_health",Base:24},
+		{Name:"generic.attack_damage",Base:5}
+	],
+	HandItems:[
+		{},
+		{}
+	],
+	ArmorItems:[
+		{
+		  id:"leather_boots",
+		  Count:1
+		},
+		{
+		  id:"leather_leggings",
+		  Count:1
+		},
+		{
+		  id:"leather_chestplate",
+		  Count:1
+		},
+		{
+		  id:"leather_helmet",
+		  Count:1
+		}
+	],
+	HandDropChances:[0.0f,0.0f],
+	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+	DeathLootTable:"skyblock:mobs/hub_island/zombie_villager"
+}

@@ -1,0 +1,18 @@
+#Summon Item
+execute in minecraft:overworld run summon minecraft:item 29999977 1 29832 {Tags:["IDchange"],Item:{Count:1b,id:"minecraft:warped_fungus_on_a_stick",tag:{builder:1b,ID:0b,Base:{Type:"",Rarity:"LEGENDARY",RarityColor:'{"text":"","color":"gold"}',Abilities:[{Name:"Grand Architect",Activation:"RIGHT CLICK",Type:"Item Ability"},{Name:"Built-in Storage",Activation:"LOOK UP + RIGHT CLICK",Type:"Item Ability"}]},HideFlags:63,Unbreakable:1b,Description:['{"text":" ","color":"gray","italic":false}','[{"text":"Item Ability: ","color":"gold","italic":false},{"text":"Grand Architect","color":"gold","italic":false},{"text":" RIGHT CLICK","color":"yellow","bold":true,"italic":false}]','{"text":"Right-Click the face of a block ","color":"gray","italic":false}','{"text":"to extend all connected block ","color":"gray","italic":false}','{"text":"faces.","color":"gray","italic":false}','{"text":" ","color":"gray","italic":false}','[{"text":"Item Ability: ","color":"gold","italic":false},{"text":"Built-in Storage","color":"gold","italic":false},{"text":" LOOK UP + RIGHT CLICK","color":"yellow","bold":true,"italic":false}]','{"text":"Opens the wand storage. Blocks ","color":"gray","italic":false}','{"text":"will be placed from your ","color":"gray","italic":false}','{"text":"inventory or the wand storage.","color":"gray","italic":false}','{"text":" ","color":"gray","italic":false}','{"text":"LEGENDARY","color":"gold","bold":true,"italic":false}'],display:{Name:'[{"text":"Builder\'s Wand","color":"gold","italic":false}]',Lore:['{"text":" ","color":"gray","italic":false}','[{"text":"Item Ability: ","color":"gold","italic":false},{"text":"Grand Architect","color":"gold","italic":false},{"text":" RIGHT CLICK","color":"yellow","bold":true,"italic":false}]','{"text":"Right-Click the face of a block ","color":"gray","italic":false}','{"text":"to extend all connected block ","color":"gray","italic":false}','{"text":"faces.","color":"gray","italic":false}','{"text":" ","color":"gray","italic":false}','[{"text":"Item Ability: ","color":"gold","italic":false},{"text":"Built-in Storage","color":"gold","italic":false},{"text":" LOOK UP + RIGHT CLICK","color":"yellow","bold":true,"italic":false}]','{"text":"Opens the wand storage. Blocks ","color":"gray","italic":false}','{"text":"will be placed from your ","color":"gray","italic":false}','{"text":"inventory or the wand storage.","color":"gray","italic":false}','{"text":" ","color":"gray","italic":false}','{"text":"LEGENDARY","color":"gold","bold":true,"italic":false}']},Enchantments:[{}],CustomModelData:27}}}
+#Store ID from Menu in item
+execute in minecraft:overworld store result entity @e[tag=IDchange,limit=1] Item.tag.ID double 1 run scoreboard players get @s I_BWandID
+#Store Storage in Item
+execute in minecraft:overworld run data modify entity @e[tag=IDchange,limit=1] Item.tag.store set from entity @s Items
+#Store Item in Shulker Box
+execute in minecraft:overworld run data modify block 29999977 1 29832 Items[{Slot:0b}] set from entity @e[type=item,limit=1,sort=nearest,tag=IDchange] Item
+#Kill Item
+execute in minecraft:overworld run kill @e[type=item,tag=IDchange]
+#Summon item
+execute at @p run summon minecraft:item ~ ~ ~ {PickupDelay:0s,Item:{id:"minecraft:stick",Count:1b,tag:{killme:1b}}}
+#Set Item to Selected Item Of Player
+data modify entity @e[type=item,nbt={Item:{tag:{killme:1b}}},limit=1] Item set from entity @p SelectedItem
+#Kill item
+kill @e[type=item,nbt={Item:{tag:{killme:1b}}}]
+#Set player SelectedItem to Shulker Box 
+execute as @p in minecraft:overworld run loot replace entity @s weapon 1 mine 29999977 1 29832 minecraft:golden_pickaxe{drop_contents:1b}

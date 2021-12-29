@@ -1,0 +1,2 @@
+execute if score @s S_Kills matches 1236 run function slayers:scoreboard/tree2/l0/l0_1236
+execute if score @s S_Kills matches 1237 run function slayers:scoreboard/tree2/l0/l0_1237

@@ -32,34 +32,12 @@
               "mainhand":{
                 "item":"golden_axe",
                 "count":1,
-                "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Pumpkin Dicer\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+                "nbt":"{Name:\"Pumpkin Dicer\"}"
               }
             }
           }
         }
       ]
-    },
-	{
-		"rolls":1,
-		"entries":[
-			{
-				"type":"loot_table",
-				"name":"skyblock:krampus_helmet"
-			}
-		],
-		"conditions":[
-			{
-				"condition":"entity_properties",
-				"entity":"this",
-				"predicate":{
-					"equipment":{
-						"head":{
-							"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Krampus Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
-						}
-					}
-				}
-			}
-		]
-	}
+    }
   ]
 }

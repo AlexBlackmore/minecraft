@@ -1,0 +1,95 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_terracotta",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "Slayer Quest Failed",
+                    "color": "red",
+                    "italic": false
+                  }
+                ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "You didn't succeed in",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "killing the boss on your",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "last Slayer quest.",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                [
+                {
+                  "text": "Quest From: ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "score": {
+                    "name": "$Minutes",
+                    "objective": "S_SinceStart"
+                  },
+                  "color": "aqua",
+                  "italic": false
+                },
+                {
+                  "text": " mins ago",
+                  "color": "aqua",
+                  "italic": false
+                }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "text": "It's no big deal! You can",
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": "always try again!",
+                  "color": "dark_gray",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Ok, thanks for reminding me!",
+                  "color": "yellow",
+                  "italic": false
+                }              
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }    
+        ]
+      }
+    ]
+  }
+]
+}

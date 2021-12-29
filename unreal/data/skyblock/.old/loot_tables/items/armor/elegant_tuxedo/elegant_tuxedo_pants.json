@@ -1,0 +1,70 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Elegant Tuxedo Pants","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Dashing!","italic":false,"color":"gold"}],
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+150% Attack Damage","italic":false,"color":"blue"},{"text":", sets","italic":false,"color":"gray"}],
+										["",{"text":"Max Health","italic":false,"color":"blue"},{"text":" base to ","italic":false,"color":"gray"},{"text":"50","italic":false,"color":"red"},{"text":".","italic":false,"color":"gray"}],
+										["",{"text":"Very stylish.","italic":false,"color":"dark_gray"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:16711164
+										},
+										HideFlags:64,
+										Name:\"Elegant Tuxedo Pants\",
+										Crit_Damage:50,
+										Intelligence:100
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+50% Crit Damage","italic":false,"color":"blue"},
+										{"text":"+100 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":0,
+											"slot":"legs"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

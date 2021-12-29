@@ -1,0 +1,164 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:end_portal_frame",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63,Enchantments:[{}]}"
+			  },
+			  {
+				"function": "minecraft:set_count",
+				"count": 2
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": [
+				  {
+					"text": "Teleport Pad ",
+					"color": "green",
+					"italic": false
+				  },
+				  {
+					"text": "x2",
+					"color": "gray",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "Places a Teleport Pad down,",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "allowing you to teleport to any",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "other Teleport Pad on your",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "private island!",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "Maximum of 12 per island.",
+					"color": "dark_gray",
+					"italic": false
+				  },
+				  {
+					"text": " ",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "Cost:",
+					"color": "gray",
+					"italic": false
+				  },
+				  [
+					{
+					  "text": "Enchanted Eye of Ender",
+					  "color": "green",
+					  "italic": false
+					}
+				  ],
+				  {
+					"text": " "
+				  },
+				  {
+					"text": "Click to trade!",
+					"color": "yellow",
+					"italic": false
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:entity_scores",
+				  "entity": "this",
+				  "scores": {
+					"C_EnderpearlL": {
+					  "min": -1,
+					  "max": 6
+					}
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:gray_dye",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": [
+				  {
+					"text": "???",
+					"color": "red",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  {
+					"text": "Progress through your item",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "collections and explore the",
+					"color": "gray",
+					"italic": false
+				  },
+				  {
+					"text": "world to unlock new trades!",
+					"color": "gray",
+					"italic": false
+				  }
+				]
+			  }
+			],
+			"conditions": [
+			  {
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+				  "C_EnderpearlL": {
+					"min": -1,
+					"max": 6
+				  }
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 8
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{}],Base:{Type:\"\",Rarity:\"UNCOMMON\",RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Revenant Flesh\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"UNCOMMON\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

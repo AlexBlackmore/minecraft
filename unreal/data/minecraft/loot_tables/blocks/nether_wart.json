@@ -86,7 +86,7 @@
 							"mainhand":{
 								"item":"stone_hoe",
 								"count":1,
-								"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Rookie Hoe\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+								"nbt":"{Name:\"Rookie Hoe\"}"
 							}
 						}
 					}
@@ -108,32 +108,14 @@
 					"properties":{
 						"age":"3"
 					}
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"loot_table",
-					"name":"skyblock:krampus_helmet"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"block_state_property",
-					"block":"nether_wart",
-					"properties":{
-						"age":"3"
-					}
 				},
 				{
 					"condition":"entity_properties",
 					"entity":"this",
 					"predicate":{
 						"equipment":{
-							"head":{
-								"nbt":"{display:{Name:\"{\\\"text\\\":\\\"Krampus Helmet\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
+							"mainhand":{
+								"nbt":"{Name:\"Newton Nether Wart Hoe\"}"
 							}
 						}
 					}

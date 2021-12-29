@@ -1,0 +1,69 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Yog Leggings","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Haste V","italic":false,"color":"gold"}],
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+100% Mining Speed","italic":false,"color":"blue"},{"text":" and","italic":false,"color":"gray"}],
+										["",{"text":"+50% Attack Speed","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Heat Resistance","italic":false,"color":"gold"}],
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"Resistance IV","italic":false,"color":"#99453A"},{"text":" while on","italic":false,"color":"gray"}],
+										["",{"text":"fire.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:13120000
+										},
+										Name:\"Yog Leggings\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Max Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":10,
+											"slot":"legs"
+										},
+										{
+											"name":"Armor",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":3,
+											"slot":"legs"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

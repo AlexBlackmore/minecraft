@@ -1,0 +1,44 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:wooden_axe",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Treecapitator","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"A forceful Golden Axe which can","italic":false,"color":"gray"}],
+										["",{"text":"break a large amount of logs in","italic":false,"color":"gray"}],
+										["",{"text":"a single hit!","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Treecapitator\",
+										Timber:true
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

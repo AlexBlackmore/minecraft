@@ -1,0 +1,59 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_chestplate",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Leaflet Tunic","italic":false,"color":"white"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Energy of the Forest","italic":false,"color":"gold"}],
+										["",{"text":"Grants permanent ","italic":false,"color":"gray"},{"text":"Regeneration II","italic":false,"color":"#CD5CAB"}],
+										["",{"text":"while in a Forest biome.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"COMMON","bold":true,"color":"white"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:5098573
+										},
+										HideFlags:64,
+										Name:\"Leaflet Tunic\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":7,
+											"slot":"chest"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

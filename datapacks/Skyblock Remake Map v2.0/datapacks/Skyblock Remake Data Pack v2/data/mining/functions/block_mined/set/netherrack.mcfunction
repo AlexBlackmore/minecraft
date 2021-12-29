@@ -1,0 +1,2 @@
+setblock ~ ~ ~ netherrack
+kill @s

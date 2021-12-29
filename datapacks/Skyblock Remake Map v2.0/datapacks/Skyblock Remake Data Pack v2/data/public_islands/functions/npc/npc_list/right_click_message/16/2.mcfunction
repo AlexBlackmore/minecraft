@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"[NPC] ","color":"yellow"},{"text":"Elle of the Nether","color":"red"},{"text":": Use them in a Brewing Stand to brew strong potions that will aid in your journey.","color":"white"}]

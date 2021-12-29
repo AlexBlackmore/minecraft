@@ -1,0 +1,16 @@
+execute if predicate backpacks:color/black run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/black
+execute if predicate backpacks:color/blue run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/blue
+execute if predicate backpacks:color/gray run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/gray
+execute if predicate backpacks:color/green run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/green
+execute if predicate backpacks:color/light_blue run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/light_blue
+execute if predicate backpacks:color/light_gray run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/light_gray
+execute if predicate backpacks:color/lime run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/lime
+execute if predicate backpacks:color/magenta run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/magenta
+execute if predicate backpacks:color/orange run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/orange
+execute if predicate backpacks:color/pink run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/pink
+execute if predicate backpacks:color/plain run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/plain
+execute if predicate backpacks:color/red run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/red
+execute if predicate backpacks:color/white run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/white
+execute if predicate backpacks:color/yellow run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/yellow
+execute if predicate backpacks:color/brown run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/brown
+execute if predicate backpacks:color/cyan run loot replace block 29999980 1 29832 container.0 loot backpacks:give/small/cyan

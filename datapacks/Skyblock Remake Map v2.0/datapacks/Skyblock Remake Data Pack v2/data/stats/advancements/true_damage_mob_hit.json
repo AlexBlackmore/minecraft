@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "crystalbreak": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"DealTrueDamage\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "stats:damage_update/true_damage_mob_hit"
+    }
+}

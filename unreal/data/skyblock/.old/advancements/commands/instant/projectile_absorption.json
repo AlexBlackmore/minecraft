@@ -1,0 +1,82 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Projectile Protection",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"zombie_armor":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"damage":{
+					"type":{
+						"is_projectile":true
+					}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"chest":{
+									"nbt":"{Name:\"Zombie Chestplate\"}"
+								},
+								"legs":{
+									"nbt":"{Name:\"Zombie Leggings\"}"
+								},
+								"feet":{
+									"nbt":"{Name:\"Zombie Boots\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"reaper_mask":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"head":{
+									"nbt":"{Name:\"Reaper Mask\"}"
+								},
+								"chest":{
+									"nbt":"{Name:\"Zombie Chestplate\"}"
+								},
+								"legs":{
+									"nbt":"{Name:\"Zombie Leggings\"}"
+								},
+								"feet":{
+									"nbt":"{Name:\"Zombie Boots\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"requirements":[
+		[
+			"zombie_armor",
+			"reaper_mask"
+		]
+	],
+	"rewards":{
+		"function":"skyblock:abilities/instant/projectile_absorption"
+	}
+}

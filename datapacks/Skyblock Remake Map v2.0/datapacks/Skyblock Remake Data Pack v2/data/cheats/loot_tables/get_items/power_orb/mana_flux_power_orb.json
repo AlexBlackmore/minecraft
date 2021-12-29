@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;556917219,-854638062,-1239053109,1076791646],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJhZGExYzdmY2M4Y2YzNWRlZmViOTQ0YTRmOGZmYTlhOWQyNjA1NjBmYzdmNWY1ODI2ZGU4MDg1NDM1OTY3YyJ9fX0=\"}]}},Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,8,0,8,0,8,0,8,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',SlayerRequired:{Type:\"Wolf\",LVL:6},Abilities:[{Name:\"Deploy\",Activation:\"RIGHT CLICK\",Type:\"Item Ability\"}]},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Mana Flux Power Orb\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Deploy\",\"color\":\"gold\",\"italic\":false},{\"text\":\" RIGHT CLICK\",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\" Place an orb for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"30s \",\"color\":\"green\",\"italic\":false},{\"text\":\"buffing \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"up to \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5 \",\"color\":\"aqua\",\"italic\":false},{\"text\":\"players within \",\"color\":\"gray\",\"italic\":false},{\"text\":\"18 \",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"blocks. \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Costs 50% of max mana. \",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"Only one orb applies per player.\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Orb Buff: Mana Flux \",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Grants \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50% \",\"color\":\"aqua\",\"italic\":false},{\"text\":\"base mana regen. \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Heals \",\"color\":\"gray\",\"italic\":false},{\"text\":\"2% \",\"color\":\"red\",\"italic\":false},{\"text\":\"of max \",\"color\":\"gray\",\"italic\":false},{\"text\":\"❤ \",\"color\":\"red\",\"italic\":false},{\"text\":\"per second. \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Grants \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+10❁ Strength\",\"color\":\"red\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Wolf LVL 6\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

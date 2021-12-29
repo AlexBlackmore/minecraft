@@ -1,0 +1,71 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_boots",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Yog Boots","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Absorb","italic":false,"color":"gold"}],
+										["",{"text":"Every Magma Cube killed while","italic":false,"color":"gray"}],
+										["",{"text":"wearing this set has a ","italic":false,"color":"gray"},{"text":"1/200","italic":false,"color":"green"}],
+										["",{"text":"chance to increase the level of","italic":false,"color":"gray"}],
+										["",{"text":"permanent ","italic":false,"color":"gray"},{"text":"Haste","italic":false,"color":"#D9C043"},{"text":" this set gives.","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Full Set Bonus: Heat Resistance","italic":false,"color":"gold"}],
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"Resistance V","italic":false,"color":"#99453A"},{"text":" while on","italic":false,"color":"gray"}],
+										["",{"text":"fire.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:13120000
+										},
+										Name:\"Yog Boots\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Max Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":10,
+											"slot":"feet"
+										},
+										{
+											"name":"Armor",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":3,
+											"slot":"feet"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

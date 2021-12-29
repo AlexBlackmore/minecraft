@@ -1,0 +1,47 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"item",
+          "name":"minecraft:leather_boots",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{
+                display:{
+                  Name:\"{\\\"text\\\":\\\"Superior Dragon Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                  Lore:[
+                    \"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"Full Set Bonus: Superior Blood\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+                    \"[\\\"\\\",{\\\"text\\\":\\\"Increases all stats by \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+5%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\". Grants \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+50%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" ability damage when\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"[\\\"\\\",{\\\"text\\\":\\\"using the Aspect of the Dragons.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+					\"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\",
+					\"\\\" \\\"\",
+                    \"{\\\"text\\\":\\\"+2% Crit Chance\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+                    \"{\\\"text\\\":\\\"+10% Crit Damage\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
+                    \"{\\\"text\\\":\\\"+25 Intelligence\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"
+                  ],
+                  color:15883544
+                },
+                AttributeModifiers:[
+                  {Slot:\"feet\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:16,Operation:0,UUID:[I;116859862,751175880,709896264,177585338]},
+                  {Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:22,Operation:0,UUID:[I;785064761,101325966,151737111,120087278]},
+                  {Slot:\"feet\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;644806088,536263453,202351938,390287703]},
+                  {Slot:\"feet\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:2,Operation:0,UUID:[I;116182032,337521822,983871711,726630896]},
+                  {Slot:\"feet\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.03,Operation:1,UUID:[I;43934153,748114292,658783418,14537398]}
+                ],
+                HideFlags:64,
+				Name:\"Superior Dragon Boots\",
+				Crit_Chance:2,
+				Crit_Damage:10
+              }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

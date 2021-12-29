@@ -1,0 +1,94 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Tier III amount: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "1",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Minimum: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Tier III",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Odds: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Extraordinary ",
+                    "color": "dark_purple",
+                    "italic": false
+                  },
+                  {
+                    "text": "(1%)",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Required LVL: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "4",
+                    "color": "yellow",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Enchanted Book",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

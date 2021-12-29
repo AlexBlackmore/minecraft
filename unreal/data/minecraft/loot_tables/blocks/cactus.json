@@ -1,46 +1,74 @@
 {
-  "type": "minecraft:block",
-  "pools": [
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:cactus"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"minecraft:item",
-          "name":"minecraft:cactus"
-        }
-      ],
-      "conditions":[
-        {
-          "condition":"entity_properties",
-          "entity":"this",
-          "predicate":{
-            "equipment":{
-              "mainhand":{
-                "nbt":"{display:{Name:\"{\\\"text\\\":\\\"Cactus Knife\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
-              }
-            }
-          }
-        },
+	"type": "minecraft:block",
+	"pools": [
 		{
-		  "condition":"random_chance",
-		  "chance":0.3
+			"rolls": 1.0,
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cactus"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:cactus"
+				}
+			],
+			"conditions":[
+				{
+					"condition": "minecraft:block_state_property",
+					"block": "minecraft:cactus",
+					"properties": {
+						"age": "15"
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Name:\"Cactus Knife\"}"
+							}
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.3
+				}
+			]
 		}
-      ]
-    }
-  ]
+	],
+	"functions":[
+		{
+			"function":"explosion_decay"
+		},
+		{
+			"function":"furnace_smelt",
+			"conditions": [
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Smelting_Touch:true}"
+							}
+						}
+					}
+				}
+			]
+		}
+	]
 }

@@ -1,0 +1,111 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:mutton",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "☠",
+                    "color": "red",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": " Sven Packmaster",
+                    "color": "yellow",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "Rabid Wolf genetically",
+                "color": "gray",
+                "bold": false,
+                "italic": false
+              }
+            ],
+            "replace": false
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "modified by a famous mad",
+                "color": "gray",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "scientist. Eats bone and",
+                "color": "gray",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "flesh.",
+                "color": "gray",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": ""
+              }
+            ],
+            "replace": false
+          },
+          {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+              {
+                "text": "Click to edit boss!",
+                "color": "yellow",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{SkyblockMenu:1b}"
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,23 @@
+{
+	"parent":"skyblock:achievements/root",
+	"display":{
+		"icon":{
+		  "item":"minecraft:pufferfish",
+		  "nbt":"{Enchantments:[{id:\"unbreaking\",lvl:1}]}"
+		},
+		"title":"Do you even Voodoo?",
+		"description":"Damage a mob using the Voodoo Doll.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:impossible"
+		}
+	},
+	"rewards":{
+		"experience":10
+	}
+}

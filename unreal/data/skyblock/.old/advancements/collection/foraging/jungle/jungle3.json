@@ -1,0 +1,43 @@
+{
+  "parent":"skyblock:collection/foraging/jungle/jungle2",
+  "display":{
+    "icon":{
+      "item":"minecraft:jungle_log"
+    },
+    "title":"Jungle III",
+    "description":"Chop 250 jungle logs.",
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":false
+  },
+  "criteria":{
+    "jungle":{
+      "trigger":"minecraft:slept_in_bed",
+      "conditions":{
+        "player":[
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "player":{
+                "stats":[
+                  {
+                    "type":"minecraft:mined",
+                    "stat":"minecraft:jungle_log",
+                    "value":{
+                      "min":250
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+	"rewards":{
+		"experience":25
+	}
+}

@@ -1,0 +1,187 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Lumber Merchant\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"toolsmith",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:5
+					},
+					sell:{
+						id:"oak_log",
+						Count:5
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:5
+					},
+					sell:{
+						id:"birch_log",
+						Count:5
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:5
+					},
+					sell:{
+						id:"spruce_log",
+						Count:5
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:5
+					},
+					sell:{
+						id:"dark_oak_log",
+						Count:5
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:5
+					},
+					sell:{
+						id:"acacia_log",
+						Count:5
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:5
+					},
+					sell:{
+						id:"jungle_log",
+						Count:5
+					}
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"stone_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Rookie Axe\"}"
+							},
+							Enchantments:[
+								{id:"efficiency",lvl:1}
+							],
+							Name:"Rookie Axe"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:6
+					},
+					sell:{
+						id:"iron_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Promising Axe\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Breaking blocks has a chance to\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"increase the Efficiency level on\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"this axe.\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"(Max: Efficiency II)\"}]"
+								]
+							},
+							Name:"Promising Axe",
+							Promising:0
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:4
+					},
+					sell:{
+						id:"podzol",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:17
+					},
+					sell:{
+						id:"iron_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sweet Axe\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Chopping logs with this axe has\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"20%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop an apple.\"}]"
+								]
+							},
+							Name:"Sweet Axe"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:17
+					},
+					sell:{
+						id:"iron_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Efficient Axe\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Logs chopped with this axe drop\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"5\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" planks instead of logs.\"}]"
+								]
+							},
+							Name:"Efficient Axe"
+						}
+					}
+				}
+			]
+		}
+	}
+}

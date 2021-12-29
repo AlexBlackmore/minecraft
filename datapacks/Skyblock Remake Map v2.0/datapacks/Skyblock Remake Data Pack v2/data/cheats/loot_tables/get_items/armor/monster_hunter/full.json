@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"HELMET\",Rarity:\"RARE\",RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Defense:75,BaseDefense:75,Abilities:[{Name:\"Bone Shield\",Activation:\"\",Type:\"Item Ability\"},{Name:\"MonsterHunter\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Bone Shield\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"A Bone Shield will surround you,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"nullifying damage you take but\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"consuming a bone in the process.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Bones regenerate every \",\"color\":\"gray\",\"italic\":false},{\"text\":\"30\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"seconds.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"red\",\"italic\":false},{\"text\":\"Monster Hunter\",\"color\":\"red\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Take \",\"color\":\"gray\",\"italic\":false},{\"text\":\"-25%\",\"color\":\"green\",\"italic\":false},{\"text\":\" damage when\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"being attacked by Monsters,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"and deal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+25%\",\"color\":\"green\",\"italic\":false},{\"text\":\" damage\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"when attacking Monsters.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Skeleton\\'s Helmet\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+75\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Item Ability: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Bone Shield\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"A Bone Shield will surround you,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"nullifying damage you take but\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"consuming a bone in the process.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Bones regenerate every \",\"color\":\"gray\",\"italic\":false},{\"text\":\"30\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"seconds.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"red\",\"italic\":false},{\"text\":\"Monster Hunter\",\"color\":\"red\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Take \",\"color\":\"gray\",\"italic\":false},{\"text\":\"-25%\",\"color\":\"green\",\"italic\":false},{\"text\":\" damage when\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"being attacked by Monsters,\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"and deal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+25%\",\"color\":\"green\",\"italic\":false},{\"text\":\" damage\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"when attacking Monsters.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"RARE HELMET\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/armor/guardian_chestplate"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/armor/creeper_pants"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cheats:get_items/armor/spider_boots"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+summon pillager ~ ~ ~ {
+	CustomName:"{\"text\":\"Armored Pillager\",\"color\":\"red\"}",
+	CustomNameVisible:true,
+	Tags:["dungeons"],
+	Health:36,
+	Attributes:[
+		{Name:"generic.max_health",Base:177},
+		{Name:"generic.attack_damage",Base:100}
+	],
+	HandItems:[
+		{
+			id:"crossbow",
+			Count:1
+		},
+		{}
+	],
+	ArmorItems:[
+		{
+			id:"golden_boots",
+			Count:1
+		},
+		{
+			id:"golden_leggings",
+			Count:1
+		},
+		{
+			id:"golden_chestplate",
+			Count:1
+		},
+		{
+			id:"golden_helmet",
+			Count:1
+		}
+	],
+	HandDropChances:[0.0f,0.0f],
+	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]
+}

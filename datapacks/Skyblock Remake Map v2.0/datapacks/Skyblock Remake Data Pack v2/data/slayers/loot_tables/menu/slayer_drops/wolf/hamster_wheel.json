@@ -1,0 +1,103 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_trapdoor",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Tier II amount: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "1",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Tier III amount: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "2 to 4",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Tier IV amount: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "4 to 5",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "text": "Minimum: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Tier II",
+                    "color": "yellow",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "Odds: ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Occasional ",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "(20%)",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Hamster Wheel",
+                "color": "blue",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkyblockMenu:1b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

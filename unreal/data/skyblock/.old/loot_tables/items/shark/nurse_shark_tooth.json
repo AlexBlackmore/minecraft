@@ -1,0 +1,44 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:ghast_tear",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Nurse Shark Tooth","italic":false,"color":"yellow"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"UNCOMMON","bold":true,"color":"yellow"}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										HideFlags:1,
+										Name:\"Nurse Shark Tooth\"
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"unbreaking":1
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

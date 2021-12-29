@@ -1,0 +1,2 @@
+setblock ~ ~ ~ obsidian
+kill @s

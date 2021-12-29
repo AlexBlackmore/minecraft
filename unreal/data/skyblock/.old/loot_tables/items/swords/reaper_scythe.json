@@ -1,0 +1,65 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:diamond_hoe",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Reaper Scythe","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Raise Souls ","italic":false,"color":"gold"},{"text":"SNEAK","bold":true,"color":"yellow"}],
+										["",{"text":"Mobs killed with this weapon","italic":false,"color":"gray"}],
+										["",{"text":"will reincarnate as Iron Golems","italic":false,"color":"gray"}],
+										["",{"text":"to fight by your side. A max of","italic":false,"color":"gray"}],
+										["",{"text":"3","italic":false,"color":"green"},{"text":" Golems may be summoned at a","italic":false,"color":"gray"}],
+										["",{"text":"time.","italic":false,"color":"gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"1 Level","italic":false,"color":"aqua"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Reaper Scythe\"
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":133
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Speed",
+											"attribute":"generic.movement_speed",
+											"operation":"multiply_base",
+											"amount":0.1,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

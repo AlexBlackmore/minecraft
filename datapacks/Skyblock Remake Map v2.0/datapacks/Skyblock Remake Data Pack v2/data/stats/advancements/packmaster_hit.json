@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "crystalbreak": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"SvenPackmaster\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "stats:damage_update/sven_hit"
+    }
+}

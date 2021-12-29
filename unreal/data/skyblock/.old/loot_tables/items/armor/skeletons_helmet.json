@@ -1,0 +1,55 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:iron_helmet",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Skeleton's Helmet","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Bone Shield","italic":false,"color":"gold"}],
+										["",{"text":"Gives an increasing level of","italic":false,"color":"gray"}],
+										["",{"text":"Absorption","italic":false,"color":"#2552A5"},{"text":" every ","italic":false,"color":"gray"},{"text":"30","italic":false,"color":"green"},{"text":" seconds, up","italic":false,"color":"gray"}],
+										["",{"text":"to ","italic":false,"color":"gray"},{"text":"Absorption III","italic":false,"color":"#2552A5"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Skeleton's Helmet\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":15,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

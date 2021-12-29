@@ -1,0 +1,120 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_helmet",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Super Heavy Helmet","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Vindicate","italic":false,"color":"gold"},
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+1% Speed","italic":false,"color":"blue"},{"text":" for every","italic":false,"color":"gray"}],
+										["",{"text":"10 Armor","italic":false,"color":"blue"},{"text":" you have.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								}
+							],
+							"conditions":[
+								{
+									"condition":"random_chance_with_looting",
+									"chance":0.05,
+									"looting_multiplier":0.01
+								}
+							]
+						},
+						{
+							"type":"item",
+							"name":"minecraft:leather_helmet",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Super Heavy Helmet","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Full Set Bonus: Vindicate","italic":false,"color":"gold"},
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+1% Speed","italic":false,"color":"blue"},{"text":" for every","italic":false,"color":"gray"}],
+										["",{"text":"10 Armor","italic":false,"color":"blue"},{"text":" you have.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"functions":[
+		{
+			"function":"minecraft:set_nbt",
+			"tag":"{
+				display:{
+					color:15132390
+				},
+				HideFlags:64,
+				Name:\"Super Heavy Helmet\"
+			}"
+		},
+		{
+			"function":"minecraft:enchant_with_levels",
+			"treasure":true,
+			"levels":30
+		},
+		{
+			"function":"minecraft:set_attributes",
+			"modifiers":[
+				{
+					"name":"Armor",
+					"attribute":"generic.armor",
+					"operation":"addition",
+					"amount":17,
+					"slot":"head"
+				},
+				{
+					"name":"Armor Toughness",
+					"attribute":"generic.armor_toughness",
+					"operation":"addition",
+					"amount":1,
+					"slot":"head"
+				},
+				{
+					"name":"Movement Speed",
+					"attribute":"generic.movement_speed",
+					"operation":"multiply_base",
+					"amount":-0.1,
+					"slot":"head"
+				}
+			]
+		},
+		{
+			"function":"minecraft:set_damage",
+			"damage":{
+						"type":"uniform",
+						"min":0.0,
+						"max":1.0
+			}
+		}
+	]
+}

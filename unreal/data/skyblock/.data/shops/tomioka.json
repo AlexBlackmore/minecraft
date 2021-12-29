@@ -1,0 +1,219 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+		CustomName:"Tomioka"
+		CustomNameVisible:true
+		PersistenceRequired:true
+		Silent:true
+		CanPickUpLoot:false
+		Willing:false
+		NoAI:false
+		VillagerData:
+		{
+			level:5
+			profession:"librarian"
+			type:"plains"
+		}
+		Attributes: [
+			{
+				Name:"generic.movement_speed"
+				Base:0
+			}
+		]
+		Offers:
+		{
+			Recipes: [
+				{
+					buy:{
+						id:"emerald"
+						Count:48
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Rare Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:53
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					sell:
+					{
+						id:"enchanted_book"
+						Count:1
+						tag:{
+						  display:{
+								Name:"{\"text\":\"Enchanted Book\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+								]
+							}
+							StoredEnchantments:[
+								{id:"sharpness"lvl:6}
+							]
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					
+					buy:{
+						id:"emerald"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"light_purple\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"light_purple\"\"text\":\"EPIC\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Epic Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:10
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Rare Enchanted Emerald"
+						}
+					}
+					sell:
+					{
+						id:"enchanted_book"
+						Count:1
+						tag:{
+						  display:{
+								Lore:[
+									"{\"text\":\"Scavenger V\"\"italic\":false\"color\":\"blue\"}"
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
+								]
+							}
+							Scavenger:5
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:19
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Rare Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:34
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					sell:
+					{
+						id:"enchanted_book"
+						Count:1
+						tag:{
+						  display:{
+								Name:"{\"text\":\"Enchanted Book\"\"italic\":false\"color\":\"aqua\"}"
+						    Lore:[
+						      "\" \""
+						      "{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+						    ]
+						  }
+							StoredEnchantments:[
+								{id:"protection"lvl:6}
+							]
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"light_purple\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"light_purple\"\"text\":\"EPIC\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Epic Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:59
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Rare Enchanted Emerald"
+						}
+					}
+					sell:
+					{
+						id:"enchanted_book"
+						Count:1
+						tag:{
+						  display:{
+								Name:"{\"text\":\"Enchanted Book\"\"italic\":false\"color\":\"light_purple\"}"
+						    Lore:[
+									"\" \""
+						      "{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
+						    ]
+						  }
+							StoredEnchantments:[
+								{id:"smite"lvl:7}
+							]
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+			]
+		}
+	}
+	display:{
+		Name:"{\"text\":\"Tomioka\"}"
+	}
+}

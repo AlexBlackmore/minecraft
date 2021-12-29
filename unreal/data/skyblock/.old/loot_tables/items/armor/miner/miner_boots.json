@@ -1,0 +1,64 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:diamond_boots",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Miner Boots","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Each piece of this armor grants","italic":false,"color":"gray"},
+										["",{"text":"a massive ","italic":false,"color":"gray"},{"text":"Armor","italic":false,"color":"blue"},{"text":" bonus while in a","italic":false,"color":"gray"}],
+										{"text":"Mountain, Badlands, or Cave","italic":false,"color":"gray"},
+										{"text":"biome.","italic":false,"color":"gray"},
+										{"text":" "},
+										{"text":"Full Set Bonus: Regeneration","italic":false,"color":"gold"},
+										["",{"text":"Grants permanent ","italic":false,"color":"gray"},{"text":"Regeneration","italic":false,"color":"#CD5CAB"}],
+										["",{"text":"when out of combat for at least","italic":false,"color":"gray"}],
+										["",{"text":"8","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+										["",{"text":"The level of ","italic":false,"color":"gray"},{"text":"Regeneration","italic":false,"color":"#CD5CAB"},{"text":" given","italic":false,"color":"gray"}],
+										["",{"text":"increases based on your ","italic":false,"color":"gray"},{"text":"Max","italic":false,"color":"gray"}],
+										["",{"text":"Health","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Miner Boots\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":1,
+											"slot":"feet"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

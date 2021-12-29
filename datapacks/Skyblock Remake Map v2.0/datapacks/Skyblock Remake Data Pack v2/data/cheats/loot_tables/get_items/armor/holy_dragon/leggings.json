@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"LEGGINGS\",Rarity:\"LEGENDARY\",RarityColor:'{\"text\":\"\",\"color\":\"gold\"}',Enchantments:[],AnvilUses:0,RepairCost:0,Reforge:\"\",Health:155,BaseHealth:155,Defense:140,BaseDefense:140,Abilities:[{Name:\"Holy Blood\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Holy Blood\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Increases the natural health\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"regeneration of you and all\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"players in a \",\"color\":\"gray\",\"italic\":false},{\"text\":\"6 \",\"color\":\"green\",\"italic\":false},{\"text\":\"block radius\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"3x\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{color:7315738, Name:'[{\"text\":\"Holy Dragon Leggings\",\"color\":\"gold\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+155 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+140\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Holy Blood\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Increases the natural health\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"regeneration of you and all\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"players in a \",\"color\":\"gray\",\"italic\":false},{\"text\":\"6 \",\"color\":\"green\",\"italic\":false},{\"text\":\"block radius\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"3x\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"LEGENDARY LEGGINGS\",\"color\":\"gold\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.armor",
+                    "name": "",
+                    "amount": 0,
+                    "operation": "multiply_total",
+                    "slot": ["feet","legs","chest","head"]
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

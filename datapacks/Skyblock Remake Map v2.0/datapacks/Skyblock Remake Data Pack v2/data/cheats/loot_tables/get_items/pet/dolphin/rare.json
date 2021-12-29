@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-772367055,-1852161923,-1360026840,-731492989],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQxNWQyYzU0M2UzNGJiODhlZGU5NGQ3OWI5NDI3NjkxZmM5YmU3MmRhYWQ4ODMxYTllZjI5NzE4MDU0NmUxOCJ9fX0=\"}]}},Base:{Type:\"PET\",PetData:{MinRarity:\"COMMON\",MaxRarity:\"LEGENDARY\",Name:\"Dolphin\",Skill:\"Fishing\",Mount:0b,Current:{PetItem:\"\",Level:1,Ability:[[0d],[0d],[]],XP:0,NextLevelXP:275},XPTable:\"RARE\",Stats:{Intel:1d,SCChance:0.05d}},Rarity:\"RARE\",RarityID:3,RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',Intel:1d,SCChance:0d,AbilitiesAmount:3,Abilities:[{Name:\"Pod Tactics\",Type:\"Pet Ability\",Description:['[{\"text\":\"Pod Tactics\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Increases your fishing speed\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility1\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\"% \",\"color\":\"green\",\"italic\":false},{\"text\":\"for each player\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"within 10 blocks up to \",\"color\":\"gray\",\"italic\":false},{\"text\":\"25%\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:1},{Name:\"Echolocation\",Type:\"Pet Ability\",Description:['[{\"text\":\"Echolocation\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Increases sea creatures catch\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"chance by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"\",\"color\":\"green\",\"italic\":false},{\"score\":{\"name\":\"$PetAbility2\",\"objective\":\"Temp\"},\"color\":\"green\",\"italic\":false},{\"text\":\"%\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:3},{Name:\"Splash Surprise\",Type:\"Pet Ability\",Description:['[{\"text\":\"Splash Surprise\",\"color\":\"gold\",\"italic\":false}]','[{\"text\":\"Stun sea creatures for \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5s\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"after fishing them up\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],RarityID:5}],AbilityBonuses:[[0.03d],[0.07d],[]]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"[Lvl 1] \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Dolphin\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Fishing Pet\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"1\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Sea Creature Chance: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Pod Tactics\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Increases your fishing speed\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0% \",\"color\":\"green\",\"italic\":false},{\"text\":\"for each player\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"within 10 blocks up to \",\"color\":\"gray\",\"italic\":false},{\"text\":\"25%\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Echolocation\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Increases sea creatures catch\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"chance by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"0%\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Right-click to add this pet to\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"your pet menu!\",\"color\":\"yellow\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:zombie.spawn_reinforcements",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:horse.jump_strength",
+                  "name": "",
+                  "amount": {
+                    "min": 0,
+                    "max": 1000000000
+                  },
+                  "operation": "addition",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

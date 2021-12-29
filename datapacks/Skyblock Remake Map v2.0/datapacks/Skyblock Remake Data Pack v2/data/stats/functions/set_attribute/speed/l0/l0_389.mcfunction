@@ -1,0 +1,1 @@
+attribute @s[scores={P_ExtraSpeed=289}] minecraft:generic.movement_speed base set 0.389

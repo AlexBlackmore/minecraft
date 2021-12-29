@@ -1,0 +1,31 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+            "type": "item",
+            "name": "minecraft:emerald",
+            "weight": 1000,
+            "quality": -1000,
+            "functions": [
+              {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{SkyblockMenu:1b,HideFlags:63}"
+              },
+              {
+                  "function": "set_name",
+                  "name": [{"text":"Trades","color":"green","italic":false}],
+                  "entity": "this"
+              },
+              {
+                  "function": "set_lore",
+                  "lore": [{"text":"View your available trades.","color":"gray","italic":false}, {"text":"These thared are always","color":"gray","italic":false}, {"text":"available and accessible through","color":"gray","italic":false}, {"text":"the Skyblock Menu.","color":"gray","italic":false}, {"text":" "}, [{"text":"Trades Unlocked: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"TradesP"},"color":"yellow"},{"text":"%","color":"gold"}], [{"score":{"name":"@s","objective":"Trades"},"italic":false,"color":"yellow"},{"text":"/","color":"gold","italic":false},{"text":"25","color":"yellow","italic":false}], {"text":" "}, {"text":"Click to view!","color":"yellow","italic":false}],
+                  "entity": "this"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

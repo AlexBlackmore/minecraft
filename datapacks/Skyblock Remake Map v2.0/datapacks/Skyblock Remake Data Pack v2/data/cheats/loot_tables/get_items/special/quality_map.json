@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"\",Rarity:\"SPECIAL\",RarityColor:'{\"text\":\"\",\"color\":\"red\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Quality Map\",\"color\":\"red\",\"italic\":false}]',Lore:['[{\"text\":\"It took motivation, skills, effort\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"and a lot of love and caring to\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"create this map. By far the best\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"quality on the market!\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"SPECIAL\",\"color\":\"red\",\"italic\":false,\"bold\":true}]']},Enchantments:[{}]}"
+            },
+            {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:zombie.spawn_reinforcements",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:horse.jump_strength",
+                    "name": "",
+                    "amount": {
+                      "min": 0,
+                      "max": 1000000000
+                    },
+                    "operation": "addition",
+                    "slot": "feet"
+                  }
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

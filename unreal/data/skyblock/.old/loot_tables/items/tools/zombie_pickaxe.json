@@ -1,0 +1,62 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:iron_pickaxe",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Zombie Pickaxe","italic":false,"color":"white"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Every time this pickaxe loses","italic":false,"color":"gray"}],
+										["",{"text":"durability it grants ","italic":false,"color":"gray"},{"text":"5","italic":false,"color":"green"},{"text":" seconds","italic":false,"color":"gray"}],
+										["",{"text":"of ","italic":false,"color":"gray"},{"text":"Haste II","italic":false,"color":"#D9C043"},{"text":".","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"COMMON","bold":true,"color":"white"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Zombie Pickaxe\"
+									}"
+								,
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":3,
+											"slot":"mainhand"
+										},
+										{
+											"name":"Attack Speed",
+											"attribute":"generic.attack_speed",
+											"operation":"addition",
+											"amount":-2.8,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

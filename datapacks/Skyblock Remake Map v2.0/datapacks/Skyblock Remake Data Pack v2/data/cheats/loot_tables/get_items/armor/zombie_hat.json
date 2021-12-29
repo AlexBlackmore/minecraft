@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"HELMET\",Rarity:\"COMMON\",RarityColor:'{\"text\":\"\",\"color\":\"white\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Defense:10,BaseDefense:10},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Gives \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+10 ❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"for\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"each Zombie within \",\"color\":\"gray\",\"italic\":false},{\"text\":\"8\",\"color\":\"yellow\",\"italic\":false},{\"text\":\" blocks.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Zombie Hat\",\"color\":\"white\",\"italic\":false}]',Lore:['[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+10\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Gives \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+10 ❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"for\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"each Zombie within \",\"color\":\"gray\",\"italic\":false},{\"text\":\"8\",\"color\":\"yellow\",\"italic\":false},{\"text\":\" blocks.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"COMMON HELMET\",\"color\":\"white\",\"italic\":false,\"bold\":true}]']},SkullOwner:{Id:[I;-1722163816,-273461527,-1459933222,35179936],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ==\"}]}}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": ["feet","legs","chest","head"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

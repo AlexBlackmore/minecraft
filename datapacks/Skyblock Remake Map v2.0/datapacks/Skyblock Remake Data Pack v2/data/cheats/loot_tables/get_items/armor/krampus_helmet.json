@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Base:{Type:\"HELMET\",Rarity:\"EPIC\",RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",Health:5,BaseHealth:5},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Gains \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+1❤ \",\"color\":\"red\",\"italic\":false},{\"text\":\"per 50 gifts given\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"by wearer.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Max 500❤\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Krampus Helmet\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+5 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Gains \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+1❤ \",\"color\":\"red\",\"italic\":false},{\"text\":\"per 50 gifts given\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"by wearer.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Max 500❤\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"EPIC HELMET\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']},SkullOwner:{Id:[I;452690322,1745437228,-1899884149,651889013],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWYxODk5OGE1MWEyZjI5MTJmMzlhMjk0MjEyYzdlOWQxOTQ3ODlmZTA1M2ZjZjg1MzgyYTllZjIxOWQ5MyJ9fX0=\"}]}}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": 0,
+                  "operation": "multiply_total",
+                  "slot": ["feet","legs","chest","head"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

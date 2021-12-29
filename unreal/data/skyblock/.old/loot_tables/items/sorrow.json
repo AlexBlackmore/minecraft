@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:ghast_tear",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Sorrow","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"To become a ghost, one must go","italic":true,"color":"gray"},
+										{"text":"through unimaginable distress.","italic":true,"color":"gray"},
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Sorrow\"
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

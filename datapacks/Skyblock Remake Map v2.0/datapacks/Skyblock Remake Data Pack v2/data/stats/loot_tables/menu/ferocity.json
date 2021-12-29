@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+	  	{
+          "type": "item",
+          "name": "minecraft:red_dye",
+          "weight": 1000,
+          "quality": -1000,
+          "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{SkyblockMenu:1b,HideFlags:63}"
+			},
+			{
+				"function": "set_name",
+				"name": [{"text":"⫽ Ferocity ","color":"red","italic":false},{"score":{"name":"@s","objective":"P_Ferocity"},"italic":false,"color":"white"}],
+				"entity": "this"
+			},
+			{
+				"function": "set_lore",
+				"lore": [{"text":"Ferocity grants percent chance","color":"gray","italic":false},{"text":"to double-strike enemies.","color":"gray","italic":false},{"text":"Increments of 100 increases the","color":"gray","italic":false},{"text":"base number of strikes.","color":"gray","italic":false},{"text":""},[{"text":"Base Ferocity: ","color":"gray","italic":false},{"score":{"name":"@s","objective":"P_BaseFerocity"},"italic":false,"color":"green"}],{"text":" Increase your base Ferocity","color":"dark_gray","italic":true},{"text":" by exploring the world!","color":"dark_gray","italic":true},{"text":""},[{"text":"Bonus Ferocity: ","color":"gray","italic":false},{"text":"+","color":"dark_gray","italic":false},{"score":{"name":"@s","objective":"P_BonusFerocity"},"italic":false,"color":"yellow"}],{"text":" Increase your bonus Ferocity","color":"dark_gray","italic":true},{"text":" by equipping items and armor,","color":"dark_gray","italic":true},{"text":" and storing accessories in your","color":"dark_gray","italic":true},{"text":" inventory.","color":"dark_gray","italic":true},{"text":""},[{"text":"Base extra strikes: ","color":"gray","italic":false},{"score":{"name":"$BaseFeroStrikes","objective":"Temp"},"italic":false,"color":"red"}],[{"text":"Chance for 1 more: ","color":"gray","italic":false},{"score":{"name":"$ChanceFor1MoreFero","objective":"Temp"},"italic":false,"color":"red"},{"text":"%","color":"red","italic":false}]],
+				"entity": "this"
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

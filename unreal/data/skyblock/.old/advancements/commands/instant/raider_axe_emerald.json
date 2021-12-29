@@ -1,0 +1,41 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Raider Axe (Emerald)",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_killed_entity",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{SelectedItem:{tag:{Name:\"Raider Axe\"}}}"
+						}
+					},
+					{
+						"condition":"random_chance_with_looting",
+						"chance":0.2,
+						"looting_multiplier":0.01
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"loot":[
+			"minecraft:blocks/emerald_ore"
+		],
+		"function":"skyblock:abilities/reset_instant"
+	}
+}

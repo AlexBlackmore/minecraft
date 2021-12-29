@@ -1,0 +1,3 @@
+execute as @e[type=area_effect_cloud,tag=BirchTree,scores={Date=0},tag=!Checked_Temp,distance=..20,sort=nearest,limit=1] at @s run function public_islands:map_regeneration/birch_park/check_tree
+execute at @s unless entity @e[type=area_effect_cloud,tag=BirchTree,scores={Date=0},tag=!Checked_Temp,distance=..20] run tag @e[type=area_effect_cloud,tag=BirchTree,tag=Checked_Temp] remove Checked_Temp
+execute at @s if entity @e[type=area_effect_cloud,tag=BirchTree,scores={Date=0},tag=!Checked_Temp,distance=..20] if entity @e[type=area_effect_cloud,tag=BirchTree,tag=Checked_Temp,distance=..20] run function public_islands:map_regeneration/birch_park/check_tree_loop

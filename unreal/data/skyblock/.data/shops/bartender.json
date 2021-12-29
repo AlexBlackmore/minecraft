@@ -1,0 +1,222 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+		CustomName:"{\"text\":\"Bartender\"}"
+		CustomNameVisible:true
+		PersistenceRequired:true
+		Silent:true
+		CanPickUpLoot:false
+		Willing:false
+		NoAI:false
+		VillagerData:{
+			level:5
+			profession:"cleric"
+			type:"plains"
+		}
+		Attributes:[
+			{
+				Name:"generic.movementSpeed"
+				Base:"0f"
+			}
+		]
+		Offers:
+		{
+			Recipes:[
+				{
+					buyB:{
+						id:"writable_book"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Bartender>\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"{\"text\":\"Welcome the the Bar friend!\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"These are trying times indeed.\"\"italic\":false\"color\":\"white\"}"
+									"[\"\"{\"text\":\"The \"\"italic\":false\"color\":\"white\"}{\"text\":\"Graveyard\"\"italic\":false\"color\":\"dark_red\"}{\"text\":\" is overflowing\"\"italic\":false\"color\":\"white\"}]"
+									"{\"text\":\"with monters! Anyone who comes\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"in is spooked off by the grunts\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"of zombies in the distance.\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"Could you give me a hand? If you\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"help clear out some of these\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"monters I'll pay you for it!\"\"italic\":false\"color\":\"white\"}"
+								]
+							}
+							HideFlags:32
+						}
+					}
+					rewardExp:false
+					maxUses:0
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:20
+					}
+					sell:{
+						id:"potion"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Cheap Coffee\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+								]
+							}
+							Potion:"swiftness"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:20
+					}
+					sell:{
+						id:"potion"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Tepid Green Tea\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"When Applied:\"\"italic\":false\"color\":\"dark_purple\"}"
+									"{\"text\":\"+20% Defense\"\"italic\":false\"color\":\"blue\"}"
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+								]
+							}
+              CustomPotionEffects:[
+                {Id:11Amplifier:0Duration:3600}
+              ]
+							Potion:"empty"
+              CustomPotionColor:10044730
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:20
+					}
+					sell:{
+						id:"potion"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Pulpous Orange Juice\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+								]
+							}
+							Potion:"healing"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:24
+					}
+					sell:{
+						id:"potion"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Bitter Ice Tea\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+								]
+							}
+              CustomPotionEffects:[
+                {Id:10Amplifier:0Duration:3600}
+              ]
+							Potion:"empty"
+              CustomPotionColor:3381504
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:30
+					}
+					sell:{
+						id:"potion"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Knock-Off Cola\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
+								]
+							}
+							Potion:"strength"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:64
+					}
+					buyB:{
+						id:"emerald"
+						Count:36
+					}
+					sell:{
+						id:"potion"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Decent Coffee\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
+								]
+							}
+              CustomPotionEffects:[
+                {Id:1Amplifier:1Duration:9600}
+              ]
+							Potion:"empty"
+              CustomPotionColor:8171462
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					maxUses:0
+				}
+				{
+					buy:{
+						id:"rotten_flesh"
+						Count:10
+					}
+					sell:{
+						id:"emerald"
+						Count:2
+					}
+					rewardExp:false
+					maxUses:640
+				}
+			]
+		}
+	}
+	display:{
+		Name:"{\"text\":\"Bartender\"}"
+	}
+}

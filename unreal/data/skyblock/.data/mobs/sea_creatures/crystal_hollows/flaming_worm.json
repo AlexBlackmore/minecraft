@@ -1,0 +1,19 @@
+summon silverfish ~ ~ ~ {
+	CustomName:"{\"text\":\"Flaming Worm\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock","sea_creature","flaming_worm"],
+	Fire:32000,
+	AbsorptionAmount:18976,
+	Health:1024,
+	Attributes:[
+		{Name:"generic.max_health",Base:1024},
+		{Name:"generic.attack_damage",Base:50}
+	],
+	ActiveEffects:[
+		{
+			Id:12,
+			Duration:32000
+		}
+	],
+	DeathLootTable:"skyblock:mobs/sea_creatures/crystal_hollows/flaming_worm"
+}

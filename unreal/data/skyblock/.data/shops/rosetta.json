@@ -1,0 +1,1125 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+		CustomName:"{\"text\":\"Rosetta\"}"
+		CustomNameVisible:true
+		PersistenceRequired:true
+		Silent:true
+		CanPickUpLoot:false
+		Willing:false
+		NoAI:false
+		VillagerData:{
+			level:5
+			profession:"armorer"
+			type:"plains"
+		}
+		Attributes:[
+			{
+				Name:"generic.movement_speed"
+				Base:0
+			}
+		]
+		Offers:{
+			Recipes:[
+				{
+					buyB:{
+						id:"writable_book"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"<Rosetta>\"\"italic\":false\"color\":\"white\"}"
+								Lore:[
+									"{\"text\":\"Hey!!!\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"Don't know what equipment to aim\"\"italic\":false\"color\":\"white\"}"
+									"{\"text\":\"for?\"\"italic\":false\"color\":\"white\"}"
+									"[\"\"{\"text\":\"Try some of my\"\"italic\":false\"color\":\"white\"}{\"text\":\"starter gear\"\"italic\":false\"color\":\"green\"}{\"text\":\"!\"\"italic\":false\"color\":\"white\"}]"
+								]
+							}
+							HideFlags:32
+						}
+					}
+					rewardExp:false
+					maxUses:0
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:1
+					}
+					sell:{
+						id:"iron_helmet"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Iron Helmet\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"{\"text\":\"Growth\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"head"AttributeName:"generic.max_health"Name:"Growth"Amount:3Operation:0UUID:[I;-660836151508362164-784748146-482407743]}
+								{Slot:"head"AttributeName:"generic.armor"Name:"generic.armor"Amount:2Operation:0UUID:[I;676858768-847351290-26499661184662995]}
+							]
+							Name:"Iron Helmet"
+							Growth:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:1
+					}
+					sell:{
+						id:"iron_chestplate"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Iron Chestplate\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"{\"text\":\"Growth\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"chest"AttributeName:"generic.max_health"Name:"Growth"Amount:3Operation:0UUID:[I;212316644-910962951-985330741-287247742]}
+								{Slot:"chest"AttributeName:"generic.armor"Name:"generic.armor"Amount:6Operation:0UUID:[I;-974175023815244368-145045438-5368056]}
+							]
+							Name:"Iron Chestplate"
+							Growth:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:1
+					}
+					sell:{
+						id:"iron_leggings"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Iron Leggings\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"{\"text\":\"Growth\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"legs"AttributeName:"generic.max_health"Name:"Growth"Amount:3Operation:0UUID:[I;-219735657757677998962330731-604603035]}
+								{Slot:"legs"AttributeName:"generic.armor"Name:"generic.armor"Amount:5Operation:0UUID:[I;891958157862337248-440815388529761124]}
+							]
+							Name:"Iron Leggings"
+							Growth:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:1
+					}
+					sell:{
+						id:"iron_boots"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Iron Boots\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"{\"text\":\"Growth\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"feet"AttributeName:"generic.max_health"Name:"Growth"Amount:3Operation:0UUID:[I;886578369977771781-54929752450208370]}
+								{Slot:"feet"AttributeName:"generic.armor"Name:"generic.armor"Amount:2Operation:0UUID:[I;-279731868773202510614493331263277080]}
+							]
+							Name:"Iron Boots"
+							Growth:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:21
+					}
+					sell:{
+						id:"diamond_helmet"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Rosetta's Helmet\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"{\"text\":\"Growth\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"head"AttributeName:"generic.max_health"Name:"Growth"Amount:3Operation:0UUID:[I;-660836151508362164-784748146-482407743]}
+								{Slot:"head"AttributeName:"generic.armor"Name:"generic.armor"Amount:4Operation:0UUID:[I;676858768-847351290-26499661184662995]}
+							]
+							Name:"Rosetta's Helmet"
+							Growth:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:27
+					}
+					sell:{
+						id:"diamond_chestplate"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Rosetta's Chestplate\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"{\"text\":\"Growth\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"chest"AttributeName:"generic.max_health"Name:"Growth"Amount:3Operation:0UUID:[I;212316644-910962951-985330741-287247742]}
+								{Slot:"chest"AttributeName:"generic.armor"Name:"generic.armor"Amount:8Operation:0UUID:[I;-974175023815244368-145045438-5368056]}
+							]
+							Name:"Rosetta's Chestplate"
+							Growth:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:24
+					}
+					sell:{
+						id:"diamond_leggings"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Rosetta's Leggings\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"{\"text\":\"Growth\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"legs"AttributeName:"generic.max_health"Name:"Growth"Amount:3Operation:0UUID:[I;-219735657757677998962330731-604603035]}
+								{Slot:"legs"AttributeName:"generic.armor"Name:"generic.armor"Amount:6Operation:0UUID:[I;891958157862337248-440815388529761124]}
+							]
+							Name:"Rosetta's Leggings"
+							Growth:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:20
+					}
+					sell:{
+						id:"diamond_boots"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Rosetta's Boots\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"{\"text\":\"Growth\"\"italic\":false\"color\":\"gray\"}"
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"feet"AttributeName:"generic.max_health"Name:"Growth"Amount:3Operation:0UUID:[I;886578369977771781-54929752450208370]}
+								{Slot:"feet"AttributeName:"generic.armor"Name:"generic.armor"Amount:4Operation:0UUID:[I;-279731868773202510614493331263277080]}
+							]
+							Name:"Rosetta's Boots"
+							Growth:1
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:64
+					}
+					buyB:{
+						id:"emerald"
+						Count:36
+					}
+					sell:{
+						id:"iron_sword"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Squire Sword\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							Enchantments:[
+								{id:"sharpness"lvl:20}
+							]
+							AttributeModifiers:[
+								{Slot:"mainhand"AttributeName:"generic.attack_speed"Name:"Attack Speed"Amount:-2.4Operation:0UUID:[I;11350969156451755231610491577983941]}
+								{Slot:"mainhand"AttributeName:"generic.attack_damage"Name:"Strength"Amount:2Operation:0UUID:[I;660382634717646534263299838764808242]}
+							]
+							Name:"Squire Sword"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:64
+					}
+					buyB:{
+						id:"emerald"
+						Count:36
+					}
+					sell:{
+						id:"chainmail_helmet"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Squire Helmet\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"head"AttributeName:"generic.max_health"Name:"Health"Amount:5Operation:0UUID:[I;-660836151508362164-784748146-482407743]}
+								{Slot:"head"AttributeName:"generic.armor"Name:"Defense"Amount:5Operation:0UUID:[I;676858768-847351290-26499661184662995]}
+							]
+							Name:"Squire Helmet"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:2
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:32
+					}
+					sell:{
+						id:"iron_chestplate"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Squire Chestplate\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"chest"AttributeName:"generic.max_health"Name:"Health"Amount:8Operation:0UUID:[I;212316644-910962951-985330741-287247742]}
+								{Slot:"chest"AttributeName:"generic.armor"Name:"Defense"Amount:8Operation:0UUID:[I;-974175023815244368-145045438-5368056]}
+							]
+							Name:"Squire Chestplate"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:2
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:12
+					}
+					sell:{
+						id:"chainmail_leggings"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Squire Leggings\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"legs"AttributeName:"generic.max_health"Name:"Health"Amount:6Operation:0UUID:[I;-219735657757677998962330731-604603035]}
+								{Slot:"legs"AttributeName:"generic.armor"Name:"Defense"Amount:6Operation:0UUID:[I;891958157862337248-440815388529761124]}
+							]
+							Name:"Squire Leggings"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:64
+					}
+					buyB:{
+						id:"emerald"
+						Count:16
+					}
+					sell:{
+						id:"leather_boots"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Squire Boots\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+								color:5526612
+							}
+							AttributeModifiers:[
+								{Slot:"feet"AttributeName:"generic.max_health"Name:"Health"Amount:4Operation:0UUID:[I;886578369977771781-54929752450208370]}
+								{Slot:"feet"AttributeName:"generic.armor"Name:"Defense"Amount:4Operation:0UUID:[I;-279731868773202510614493331263277080]}
+							]
+							HideFlags:64
+							Name:"Squire Boots"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:64
+					}
+					buyB:{
+						id:"emerald"
+						Count:36
+					}
+					sell:{
+						id:"stick"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Celeste Wand\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Ability: Lightning Strike \"\"italic\":false\"color\":\"gold\"}{\"text\":\"SNEAK\"\"bold\":true\"color\":\"yellow\"}]"
+									"[\"\"{\"text\":\"Strikes lightning at the closest\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"mob up to \"\"italic\":false\"color\":\"gray\"}{\"text\":\"10\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" blocks away\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"dealing \"\"italic\":false\"color\":\"gray\"}{\"text\":\"8\"\"italic\":false\"color\":\"red\"}{\"text\":\" ability damage. Damage\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"scales based on your current \"\"italic\":false\"color\":\"gray\"}{\"text\":\"XP\"\"italic\":false\"color\":\"aqua\"}]"
+									"[\"\"{\"text\":\"level.\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"(Damage: +1%/level)\"\"italic\":false\"color\":\"dark_gray\"}]"
+									"[\"\"{\"text\":\"Cost: \"\"italic\":false\"color\":\"dark_gray\"}{\"text\":\"70 XP\"\"italic\":false\"color\":\"aqua\"}]"
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+								]
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+							Name:"Celeste Wand"
+							Ability:true
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:64
+					}
+					buyB:{
+						id:"emerald"
+						Count:36
+					}
+					sell:{
+						id:"leather_helmet"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Celeste Helmet\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+									"{\"text\":\"+30 Intelligence\"\"italic\":false\"color\":\"blue\"}"
+								]
+								color:13930226
+							}
+							AttributeModifiers:[
+								{Slot:"head"AttributeName:"generic.armor"Name:"Defense"Amount:2Operation:0UUID:[I;676858768-847351290-26499661184662995]}
+							]
+							HideFlags:64
+							Name:"Celeste Helmet"
+							Intelligence:30
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:2
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:32
+					}
+					sell:{
+						id:"leather_chestplate"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Celeste Chestplate\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+									"{\"text\":\"+60 Intelligence\"\"italic\":false\"color\":\"blue\"}"
+								]
+								color:16748254
+							}
+							AttributeModifiers:[
+								{Slot:"chest"AttributeName:"generic.max_health"Name:"Health"Amount:4Operation:0UUID:[I;212316644-910962951-985330741-287247742]}
+								{Slot:"chest"AttributeName:"generic.armor"Name:"Defense"Amount:4Operation:0UUID:[I;-974175023815244368-145045438-5368056]}
+							]
+							HideFlags:64
+							Name:"Celeste Chestplate"
+							Intelligence:60
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:2
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:12
+					}
+					sell:{
+						id:"leather_leggings"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Celeste Leggings\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+									"{\"text\":\"+40 Intelligence\"\"italic\":false\"color\":\"blue\"}"
+								]
+								color:16748234
+							}
+							AttributeModifiers:[
+								{Slot:"legs"AttributeName:"generic.max_health"Name:"Health"Amount:3Operation:0UUID:[I;-219735657757677998962330731-604603035]}
+								{Slot:"legs"AttributeName:"generic.armor"Name:"Defense"Amount:3Operation:0UUID:[I;891958157862337248-440815388529761124]}
+							]
+							HideFlags:64
+							Name:"Celeste Leggings"
+							Intelligence:40
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:64
+					}
+					buyB:{
+						id:"emerald"
+						Count:16
+					}
+					sell:{
+						id:"leather_boots"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Celeste Boots\"\"italic\":false\"color\":\"yellow\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
+									"\" \""
+									"{\"text\":\"+20 Intelligence\"\"italic\":false\"color\":\"blue\"}"
+								]
+								color:16748214
+							}
+							AttributeModifiers:[
+								{Slot:"feet"AttributeName:"generic.max_health"Name:"Health"Amount:1Operation:0UUID:[I;886578369977771781-54929752450208370]}
+								{Slot:"feet"AttributeName:"generic.armor"Name:"Defense"Amount:1Operation:0UUID:[I;-279731868773202510614493331263277080]}
+							]
+							HideFlags:64
+							Name:"Celeste Boots"
+							Intelligence:20
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:9
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:24
+					}
+					sell:{
+						id:"iron_axe"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Mercenary Axe\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+								]
+							}
+							Enchantments:[
+								{id:"sharpness"lvl:28}
+							]
+							AttributeModifiers:[
+								{Slot:"mainhand"AttributeName:"generic.attack_speed"Name:"Attack Speed"Amount:-3Operation:0UUID:[I;11350969156451755231610491577983941]}
+								{Slot:"mainhand"AttributeName:"generic.attack_damage"Name:"Strength"Amount:4Operation:0UUID:[I;660382634717646534263299838764808242]}
+							]
+							Name:"Mercenary Axe"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:10
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:60
+					}
+					sell:{
+						id:"iron_helmet"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Mercenary Helmet\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Full Set Bonus: Death Tax\"\"italic\":false\"color\":\"gold\"}]"
+									"[\"\"{\"text\":\"Killing mobs grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Instant\"\"italic\":false\"color\":\"#F82423\"}]"
+									"[\"\"{\"text\":\"Health\"\"italic\":false\"color\":\"#F82423\"}{\"text\":\" and a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"5%\"\"italic\":false\"color\":\"green\"}{\"text\":\" chance to find\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"an \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Emerald\"\"italic\":false\"color\":\"gold\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"head"AttributeName:"generic.max_health"Name:"Health"Amount:8Operation:0UUID:[I;-660836151508362164-784748146-482407743]}
+								{Slot:"head"AttributeName:"generic.armor"Name:"Defense"Amount:8Operation:0UUID:[I;676858768-847351290-26499661184662995]}
+							]
+							Name:"Mercenary Helmet"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:21
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:56
+					}
+					sell:{
+						id:"iron_chestplate"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Mercenary Chestplate\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Full Set Bonus: Death Tax\"\"italic\":false\"color\":\"gold\"}]"
+									"[\"\"{\"text\":\"Killing mobs grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Instant\"\"italic\":false\"color\":\"#F82423\"}]"
+									"[\"\"{\"text\":\"Health\"\"italic\":false\"color\":\"#F82423\"}{\"text\":\" and a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"5%\"\"italic\":false\"color\":\"green\"}{\"text\":\" chance to find\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"an \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Emerald\"\"italic\":false\"color\":\"gold\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"italic\":true\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"chest"AttributeName:"generic.max_health"Name:"Health"Amount:14Operation:0UUID:[I;212316644-910962951-985330741-287247742]}
+								{Slot:"chest"AttributeName:"generic.armor"Name:"Defense"Amount:14Operation:0UUID:[I;-974175023815244368-145045438-5368056]}
+							]
+							Name:"Mercenary Chestplate"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:14
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:4
+					}
+					sell:{
+						id:"chainmail_leggings"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Mercenary Leggings\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Full Set Bonus: Death Tax\"\"italic\":false\"color\":\"gold\"}]"
+									"[\"\"{\"text\":\"Killing mobs grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Instant\"\"italic\":false\"color\":\"#F82423\"}]"
+									"[\"\"{\"text\":\"Health\"\"italic\":false\"color\":\"#F82423\"}{\"text\":\" and a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"5%\"\"italic\":false\"color\":\"green\"}{\"text\":\" chance to find\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"an \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Emerald\"\"italic\":false\"color\":\"gold\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"italic\":true\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"legs"AttributeName:"generic.max_health"Name:"Health"Amount:12Operation:0UUID:[I;-219735657757677998962330731-604603035]}
+								{Slot:"legs"AttributeName:"generic.armor"Name:"Defense"Amount:12Operation:0UUID:[I;891958157862337248-440815388529761124]}
+							]
+							Name:"Mercenary Leggings"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:9
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:24
+					}
+					sell:{
+						id:"leather_boots"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Mercenary Boots\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Full Set Bonus: Death Tax\"\"italic\":false\"color\":\"gold\"}]"
+									"[\"\"{\"text\":\"Killing mobs grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Instant\"\"italic\":false\"color\":\"#F82423\"}]"
+									"[\"\"{\"text\":\"Health\"\"italic\":false\"color\":\"#F82423\"}{\"text\":\" and a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"5%\"\"italic\":false\"color\":\"green\"}{\"text\":\" chance to find\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"an\"\"italic\":false\"color\":\"gray\"}{\"text\":\"Emerald\"\"italic\":false\"color\":\"gold\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"italic\":true\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+								]
+								color:14744823
+							}
+							AttributeModifiers:[
+								{Slot:"feet"AttributeName:"generic.max_health"Name:"Health"Amount:6Operation:0UUID:[I;886578369977771781-54929752450208370]}
+								{Slot:"feet"AttributeName:"generic.armor"Name:"Defense"Amount:6Operation:0UUID:[I;-279731868773202510614493331263277080]}
+							]
+							HideFlags:64
+							Name:"Mercenary Boots"
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:9
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:24
+					}
+					sell:{
+						id:"stick"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Starlight Wand\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Ability: Starfall \"\"italic\":false\"color\":\"gold\"}{\"text\":\"SNEAK\"\"bold\":true\"color\":\"yellow\"}]"
+									"[\"\"{\"text\":\"Showers stars on all mobs in a\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"3\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" block radius inflicting\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"10\"\"italic\":false\"color\":\"red\"}{\"text\":\" ability damage and \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Wither III\"\"italic\":false\"color\":\"#352A27\"}]"
+									"[\"\"{\"text\":\"for \"\"italic\":false\"color\":\"gray\"}{\"text\":\"5\"\"italic\":false\"color\":\"green\"}{\"text\":\" seconds.\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"Damage scales based on your\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"current \"\"italic\":false\"color\":\"gray\"}{\"text\":\"XP\"\"italic\":false\"color\":\"aqua\"}{\"text\":\" level.\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"(Damage: +1%/level)\"\"italic\":false\"color\":\"dark_gray\"}]"
+									"[\"\"{\"text\":\"Cost: \"\"italic\":false\"color\":\"dark_gray\"}{\"text\":\"120 XP\"\"italic\":false\"color\":\"aqua\"}]"
+									"[\"\"{\"text\":\"Cooldown: \"\"italic\":false\"color\":\"dark_gray\"}{\"text\":\"2s\"\"italic\":false\"color\":\"green\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+								]
+							}
+							Enchantments:[
+								{id:"unbreaking"lvl:1}
+							]
+							HideFlags:1
+							Name:"Starlight Wand"
+							Ability:true
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:10
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:60
+					}
+					sell:{
+						id:"golden_helmet"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Starlight Helmet\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Full Set Bonus: Starpower\"\"italic\":false\"color\":\"gold\"}]"
+									"[\"\"{\"text\":\"Increases Starfall's duration by\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"+5\"\"italic\":false\"color\":\"green\"}{\"text\":\" seconds and range by \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+1\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" block.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+									"{\"text\":\"+50 Intelligence\"\"italic\":false\"color\":\"blue\"}"
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"head"AttributeName:"generic.max_health"Name:"Health"Amount:6Operation:0UUID:[I;-660836151508362164-784748146-482407743]}
+								{Slot:"head"AttributeName:"generic.armor"Name:"Defense"Amount:6Operation:0UUID:[I;676858768-847351290-26499661184662995]}
+							]
+							HideFlags:64
+							Name:"Starlight Helmet"
+							Intelligence:50
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:21
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:56
+					}
+					sell:{
+						id:"leather_chestplate"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Starlight Chestplate\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Full Set Bonus: Starpower\"\"italic\":false\"color\":\"gold\"}]"
+									"[\"\"{\"text\":\"Increases Starfall's duration by\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"+5\"\"italic\":false\"color\":\"green\"}{\"text\":\" seconds and range by \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+1\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" block.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"italic\":true\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+									"{\"text\":\"+50 Intelligence\"\"italic\":false\"color\":\"blue\"}"
+								]
+								color:13893887
+							}
+							AttributeModifiers:[
+								{Slot:"chest"AttributeName:"generic.max_health"Name:"Health"Amount:6Operation:0UUID:[I;212316644-910962951-985330741-287247742]}
+								{Slot:"chest"AttributeName:"generic.armor"Name:"Defense"Amount:6Operation:0UUID:[I;-974175023815244368-145045438-5368056]}
+							]
+							HideFlags:64
+							Name:"Starlight Chestplate"
+							Intelligence:50
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:14
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:4
+					}
+					sell:{
+						id:"golden_leggings"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Starlight Leggings\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Full Set Bonus: Starpower\"\"italic\":false\"color\":\"gold\"}]"
+									"[\"\"{\"text\":\"Increases Starfall's duration by\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"+5\"\"italic\":false\"color\":\"green\"}{\"text\":\" seconds and range by \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+1\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" block.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"italic\":true\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+									"{\"text\":\"+50 Intelligence\"\"italic\":false\"color\":\"blue\"}"
+								]
+							}
+							AttributeModifiers:[
+								{Slot:"legs"AttributeName:"generic.max_health"Name:"Health"Amount:6Operation:0UUID:[I;-219735657757677998962330731-604603035]}
+								{Slot:"legs"AttributeName:"generic.armor"Name:"Defense"Amount:6Operation:0UUID:[I;891958157862337248-440815388529761124]}
+							]
+							HideFlags:64
+							Name:"Starlight Leggings"
+							Intelligence:50
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buy:{
+						id:"emerald"
+						Count:9
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:{
+						id:"emerald"
+						Count:24
+					}
+					sell:{
+						id:"leather_boots"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Starlight Boots\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"\" \""
+									"[\"\"{\"text\":\"Full Set Bonus: Starpower\"\"italic\":false\"color\":\"gold\"}]"
+									"[\"\"{\"text\":\"Increases Starfall's duration by\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"+5\"\"italic\":false\"color\":\"green\"}{\"text\":\" seconds and range by \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+1\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" block.\"\"italic\":false\"color\":\"gray\"}]"
+									"\" \""
+									"{\"text\":\"RARE\"\"italic\":true\"bold\":true\"color\":\"aqua\"}"
+									"\" \""
+									"{\"text\":\"+50 Intelligence\"\"italic\":false\"color\":\"blue\"}"
+								]
+								color:13893887
+							}
+							AttributeModifiers:[
+								{Slot:"feet"AttributeName:"generic.max_health"Name:"Health"Amount:6Operation:0UUID:[I;886578369977771781-54929752450208370]}
+								{Slot:"feet"AttributeName:"generic.armor"Name:"Defense"Amount:6Operation:0UUID:[I;-279731868773202510614493331263277080]}
+							]
+							HideFlags:64
+							Name:"Starlight Boots"
+							Intelligence:50
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+			]
+		}
+	}
+	display:{
+		Name:"{\"text\":\"Rosetta\"}"
+	}
+}

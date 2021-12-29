@@ -1,0 +1,200 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:alternatives",
+			"children": [
+			  {
+				"conditions": [
+				  {
+					"condition": "minecraft:match_tool",
+					"predicate": {
+					  "nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:diamond\",tag:{RecipeTags:[\"COUNT_32+\"],Base:{Skyblock:1b}}},{Slot:1b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:2b,id:\"minecraft:diamond\",tag:{RecipeTags:[\"COUNT_32+\"],Base:{Skyblock:1b}}},{Slot:3b,id:\"minecraft:stick\",tag:{Enchantments:[{}],CustomModelData:31,Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Revenant Viscera\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{Enchantments:[{}],CustomModelData:31,Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Revenant Viscera\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}}]}"
+					}
+				  },
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "S_ZombieLvl": {
+						  "min": 4,
+						  "max": 9
+					  }
+					}
+				  }
+				],
+				"type": "item",
+				"name": "minecraft:diamond_boots",
+				"functions": [
+				  {
+					"function": "minecraft:set_nbt",
+					"tag": "{Base:{Type:\"BOOTS\",Rarity:\"EPIC\",CraftingRemoveCounts:[32,0,32,0,0,0],RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",SlayerRequired:{Type:\"Zombie\",LVL:4},Health:100,Defense:30,BaseHealth:100,BaseDefense:30,Abilities:[{Name:\"Trolling The Reaper\",Activation:\"\",Type:\"Full Set Bonus\"},{Name:\"ZombieBulwark\",Activation:\"\",Type:\"Piece Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Trolling The Reaper\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Healing Wands heal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50%\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"against Zombies.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Zombie Bulwark\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Kill Zombies to accumulate\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"defense against them.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0❈\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Next Upgrade: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"(\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"red\",\"italic\":false},{\"text\":\")\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Revenant Boots\",\"color\":\"dark_purple\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+30\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Trolling The Reaper\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Healing Wands heal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50%\",\"color\":\"green\",\"italic\":false},{\"text\":\".\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"against Zombies.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Zombie Bulwark\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Kill Zombies to accumulate\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"defense against them.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0❈\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Next Upgrade: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20❈ \",\"color\":\"green\",\"italic\":false},{\"text\":\"(\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"text\":\"50\",\"color\":\"red\",\"italic\":false},{\"text\":\")\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Zombie LVL 4\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"EPIC BOOTS\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']}}"
+				  },
+				  {
+					"function": "set_count",
+					"count": 1
+				  }
+				]
+            },
+            {
+				"conditions": [
+				  {
+					"condition": "minecraft:match_tool",
+					"predicate": {
+					  "nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:1b,id:\"minecraft:stick\",tag:{RecipeTags:[\"COUNT_2+\"],CustomModelData:53,Enchantments:[{}],Base:{Skyblock:1b,Type:\"\",Rarity:\"UNCOMMON\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,display:{Name:'[{\"text\":\"Enchanted Raw Chicken\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"UNCOMMON\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}},{Slot:2b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:3b,id:\"minecraft:stick\",tag:{RecipeTags:[\"COUNT_4+\"],CustomModelData:57,Enchantments:[{}],Base:{Skyblock:1b,Type:\"\",Rarity:\"UNCOMMON\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,display:{Name:'[{\"text\":\"Enchanted Raw Salmon\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"UNCOMMON\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}},{Slot:4b,id:\"minecraft:stick\",tag:{RecipeTags:[\"COUNT_39+\"],Enchantments:[{}],CustomModelData:31,Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Revenant Viscera\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}},{Slot:5b,id:\"minecraft:stick\",tag:{RecipeTags:[\"COUNT_4+\"],CustomModelData:57,Enchantments:[{}],Base:{Skyblock:1b,Type:\"\",Rarity:\"UNCOMMON\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"green\"}'},HideFlags:63,display:{Name:'[{\"text\":\"Enchanted Raw Salmon\",\"color\":\"green\",\"italic\":false}]',Lore:['[{\"text\":\"UNCOMMON\",\"color\":\"green\",\"italic\":false,\"bold\":true}]']}}}]}"
+					}
+				  },
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "S_ZombieLvl": {
+						  "min": 5,
+						  "max": 9
+					  }
+					}
+				  }
+				],
+				"type": "item",
+				"name": "minecraft:player_head",
+				"functions": [
+				  {
+					"function": "minecraft:set_nbt",
+					"tag": "{SkullOwner:{Id:[I;1600601647,-493667845,-1320735255,-1094627229],Properties:{textures:[{Value:\"eyJ0aW1lc3RhbXAiOjE1NjgzNDkwODM1MTksInByb2ZpbGVJZCI6IjQxZDNhYmMyZDc0OTQwMGM5MDkwZDU0MzRkMDM4MzFiIiwicHJvZmlsZU5hbWUiOiJNZWdha2xvb24iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzhhN2QxYTUyZThjOGRkYWFmMGM0MjhlMWZlNDkwMWVmMzNlZmYyNTFmMjg5ZGUyNzE2Mzk1Y2FkMjBiZjMwOWIifX19\"}]}},Base:{Type:\"ACCESSORY\",Rarity:\"RARE\",CraftingRemoveCounts:[0,2,0,4,39,4],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',Reforge:\"\",SlayerRequired:{Type:\"Zombie\",LVL:5},AccessoryFamily:\"DevourRing\"},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Heal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5❤ \",\"color\":\"red\",\"italic\":false},{\"text\":\"when killing a \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"monster.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0.5s\",\"color\":\"green\",\"italic\":false}]'],display:{Name:'[{\"text\":\"Devour Ring\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Heal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"5❤ \",\"color\":\"red\",\"italic\":false},{\"text\":\"when killing a \",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[{\"text\":\"monster.\",\"color\":\"gray\",\"bold\":false,\"strikethrough\":false,\"underlined\":false,\"italic\":false}]','[]','[{\"text\":\"Cooldown: \",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0.5\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Zombie LVL 5\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"RARE ACCESSORY\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+				  },
+				  {
+					"function": "set_count",
+					"count": 1
+				  },
+				  {
+					  "function": "minecraft:set_attributes",
+					  "modifiers": [
+						{
+						  "attribute": "minecraft:zombie.spawn_reinforcements",
+						  "name": "",
+						  "amount": {
+							"min": 0,
+							"max": 1000000000
+						  },
+						  "operation": "addition",
+						  "slot": "feet"
+						},
+						{
+						  "attribute": "minecraft:horse.jump_strength",
+						  "name": "",
+						  "amount": {
+							"min": 0,
+							"max": 1000000000
+						  },
+						  "operation": "addition",
+						  "slot": "feet"
+						}
+					  ]
+				  }
+				]
+			},
+			{
+				"conditions": [
+				  {
+					"condition": "minecraft:match_tool",
+					"predicate": {
+					  "nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:cobweb\",tag:{Enchantments:[{}],Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Tarantula Silk\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}},{Slot:1b,id:\"minecraft:cobweb\",tag:{Enchantments:[{}],Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Tarantula Silk\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}},{Slot:2b,id:\"minecraft:cobweb\",tag:{Enchantments:[{}],Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Tarantula Silk\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}},{Slot:3b,id:\"minecraft:iron_ingot\",tag:{RecipeTags:[\"COUNT_64+\"],Base:{Skyblock:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:iron_ingot\",tag:{RecipeTags:[\"COUNT_64+\"],Base:{Skyblock:1b}}}]}"
+					}
+				  },
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "S_SpiderLvl": {
+						  "min": 5,
+						  "max": 9
+					  }
+					}
+				  }
+				],
+				"type": "item",
+				"name": "minecraft:leather_helmet",
+				"functions": [
+				  {
+					"function": "minecraft:set_nbt",
+					"tag": "{Base:{Type:\"HELMET\",Rarity:\"EPIC\",CraftingRemoveCounts:[0,0,0,64,0,64,0,0,0],RarityColor:'{\"text\":\"\",\"color\":\"dark_purple\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",SlayerRequired:{Type:\"Spider\",LVL:4},Health:100,Defense:80,Intel:100,BaseHealth:100,BaseDefense:80,BaseIntel:100,Abilities:[{Name:\"Octodexterity\",Activation:\"\",Type:\"Full Set Bonus\"},{Name:\"Spider Bulwark\",Activation:\"\",Type:\"Piece Bonus\"},{Name:\"Radioactive\",Activation:\"\",Type:\"Piece Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Octodexterity\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Every 4th strike, deal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"double \",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"damage \",\"color\":\"red\",\"italic\":false},{\"text\":\"and apply \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Venom \",\"color\":\"dark_green\",\"italic\":false}]','[{\"text\":\"reducing healing by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"40% \",\"color\":\"dark_green\",\"italic\":false},{\"text\":\"for \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"4 \",\"color\":\"aqua\",\"italic\":false},{\"text\":\"seconds.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Spider Bulwark\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Kill spiders to accumulate \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"defense against them. \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Piece bonus \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0 \",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Next Upgrade \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20 \",\"color\":\"green\",\"italic\":false},{\"text\":\"(\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"text\":\"20\",\"color\":\"red\",\"italic\":false},{\"text\":\")\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Extra Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Radioactive\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"+1% Crit Damage \",\"color\":\"red\",\"italic\":false},{\"text\":\"per \",\"color\":\"gray\",\"italic\":false},{\"text\":\"10 Strength\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Tarantula Helmet\",\"color\":\"dark_purple\",\"italic\":false}]',color:0,Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+80\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Intelligence: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+100\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Octodexterity\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Every 4th strike, deal \",\"color\":\"gray\",\"italic\":false},{\"text\":\"double \",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"damage \",\"color\":\"red\",\"italic\":false},{\"text\":\"and apply \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Venom \",\"color\":\"dark_green\",\"italic\":false}]','[{\"text\":\"reducing healing by \",\"color\":\"gray\",\"italic\":false},{\"text\":\"40% \",\"color\":\"dark_green\",\"italic\":false},{\"text\":\"for \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"4 \",\"color\":\"aqua\",\"italic\":false},{\"text\":\"seconds.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Piece Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Spider Bulwark\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Kill spiders to accumulate \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"defense against them. \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Piece bonus \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+0 \",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Next Upgrade \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+20 \",\"color\":\"green\",\"italic\":false},{\"text\":\"(\",\"color\":\"dark_gray\",\"italic\":false},{\"text\":\"0\",\"color\":\"green\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"text\":\"20\",\"color\":\"red\",\"italic\":false},{\"text\":\")\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Extra Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Radioactive\",\"color\":\"gold\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"+1% Crit Damage \",\"color\":\"red\",\"italic\":false},{\"text\":\"per \",\"color\":\"gray\",\"italic\":false},{\"text\":\"10 Strength\",\"color\":\"red\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Spider LVL 4\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"EPIC HELMET\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]'],color:0}}"
+				  },
+				  {
+					"function": "set_count",
+					"count": 1
+				  }
+				]
+			},
+			{
+				"conditions": [
+				  {
+					"condition": "minecraft:match_tool",
+					"predicate": {
+					  "nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:gold_nugget\",tag:{Enchantments:[{}],Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Golden Tooth\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}},{Slot:1b,id:\"minecraft:gold_nugget\",tag:{Enchantments:[{}],Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Golden Tooth\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}},{Slot:2b,id:\"minecraft:gold_nugget\",tag:{Enchantments:[{}],Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Golden Tooth\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}},{Slot:3b,id:\"minecraft:stick\",tag:{CustomModelData:55,RecipeTags:[\"COUNT_32+\"],Base:{Skyblock:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{CustomModelData:55,RecipeTags:[\"COUNT_32+\"],Base:{Skyblock:1b}}}]}"
+					}
+				  },
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "S_WolfLvl": {
+						  "min": 6,
+						  "max": 9
+					  }
+					}
+				  }
+				],
+				"type": "item",
+				"name": "minecraft:leather_helmet",
+				"functions": [
+				  {
+					"function": "minecraft:set_nbt",
+					"tag": "{Base:{Type:\"HELMET\",Rarity:\"RARE\",CraftingRemoveCounts:[0,0,0,32,0,32],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",SlayerRequired:{Type:\"Wolf\",LVL:4},Health:70,Defense:65,BaseHealth:70,BaseDefense:65,Abilities:[{Name:\"Armor of the Pack\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Armor of the Pack\",\"color\":\"red\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+35❁ Strength \",\"color\":\"red\",\"italic\":false},{\"text\":\"and \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+80❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"for each \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Armor of the Pack \",\"color\":\"red\",\"italic\":false},{\"text\":\"wearers \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"within \",\"color\":\"gray\",\"italic\":false},{\"text\":\"24 \",\"color\":\"green\",\"italic\":false},{\"text\":\"blocks. \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Max of 3 players.\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"against animals.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Helmet of the Pack\",\"color\":\"blue\",\"italic\":false}]',color:16777215,Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+70 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+65\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Armor of the Pack\",\"color\":\"red\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+35❁ Strength \",\"color\":\"red\",\"italic\":false},{\"text\":\"and \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+80❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"for each \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Armor of the Pack \",\"color\":\"red\",\"italic\":false},{\"text\":\"wearers \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"within \",\"color\":\"gray\",\"italic\":false},{\"text\":\"24 \",\"color\":\"green\",\"italic\":false},{\"text\":\"blocks. \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Max of 3 players.\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"against animals.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Wolf LVL 4\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"RARE HELMET\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]'],color:16777215}}"
+				  },
+				  {
+					"function": "set_count",
+					"count": 1
+				  }
+				]
+			},
+			{
+				"conditions": [
+				  {
+					"condition": "minecraft:match_tool",
+					"predicate": {
+					  "nbt": "{RecipeData:[{Slot:0b,id:\"minecraft:gold_nugget\",tag:{Enchantments:[{}],Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Golden Tooth\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}},{Slot:1b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:2b,id:\"minecraft:gold_nugget\",tag:{Enchantments:[{}],Base:{Type:\"\",Rarity:\"RARE\",CraftingRemoveCounts:[0,32,0,32,32,32,0,32,0],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}'},HideFlags:63,Unbreakable:1b,display:{Name:'[{\"text\":\"Golden Tooth\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"RARE\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}},{Slot:3b,id:\"minecraft:stick\",tag:{CustomModelData:55,RecipeTags:[\"COUNT_32+\"],Base:{Skyblock:1b}}},{Slot:4b,id:\"minecraft:air\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:stick\",tag:{CustomModelData:55,RecipeTags:[\"COUNT_32+\"],Base:{Skyblock:1b}}}]}"
+					}
+				  },
+				  {
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+					  "S_WolfLvl": {
+						  "min": 6,
+						  "max": 9
+					  }
+					}
+				  }
+				],
+				"type": "item",
+				"name": "minecraft:iron_boots",
+				"functions": [
+				  {
+					"function": "minecraft:set_nbt",
+					"tag": "{Base:{Type:\"BOOTS\",Rarity:\"RARE\",CraftingRemoveCounts:[0,0,0,32,0,32],RarityColor:'{\"text\":\"\",\"color\":\"blue\"}',AnvilUses:0,RepairCost:0,Enchantments:[],Reforge:\"\",SlayerRequired:{Type:\"Wolf\",LVL:4},Health:50,Defense:45,BaseHealth:50,BaseDefense:45,Abilities:[{Name:\"Armor of the Pack\",Activation:\"\",Type:\"Full Set Bonus\"}]},HideFlags:63,Unbreakable:1b,Description:['[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Armor of the Pack\",\"color\":\"red\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+35❁ Strength \",\"color\":\"red\",\"italic\":false},{\"text\":\"and \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+80❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"for each \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Armor of the Pack \",\"color\":\"red\",\"italic\":false},{\"text\":\"wearers \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"within \",\"color\":\"gray\",\"italic\":false},{\"text\":\"24 \",\"color\":\"green\",\"italic\":false},{\"text\":\"blocks. \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Max of 3 players.\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"against animals.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]'],display:{Name:'[{\"text\":\"Boots of the Pack\",\"color\":\"blue\",\"italic\":false}]',Lore:['[{\"text\":\"Health: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50 HP\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"Defense: \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+45\",\"color\":\"green\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Full Set Bonus: \",\"color\":\"gold\",\"italic\":false},{\"text\":\"Armor of the Pack\",\"color\":\"red\",\"italic\":false},{\"text\":\" \",\"color\":\"yellow\",\"italic\":false,\"bold\":true}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+35❁ Strength \",\"color\":\"red\",\"italic\":false},{\"text\":\"and \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"+80❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"for each \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Armor of the Pack \",\"color\":\"red\",\"italic\":false},{\"text\":\"wearers \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"within \",\"color\":\"gray\",\"italic\":false},{\"text\":\"24 \",\"color\":\"green\",\"italic\":false},{\"text\":\"blocks. \",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"Max of 3 players.\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"Gain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"+50❈ Defense \",\"color\":\"green\",\"italic\":false},{\"text\":\"against animals.\",\"color\":\"gray\",\"italic\":false}]','[{\"text\":\"\"}]','[{\"text\":\"This item can be reforged!\",\"color\":\"dark_gray\",\"italic\":false}]','[{\"text\":\"☠\",\"color\":\"red\",\"italic\":false},{\"text\":\" Requires Wolf LVL 4\",\"color\":\"dark_purple\",\"italic\":false}]','[{\"text\":\"RARE BOOTS\",\"color\":\"blue\",\"italic\":false,\"bold\":true}]']}}"
+				  },
+				  {
+					"function": "set_count",
+					"count": 1
+				  }
+				]
+			}
+        ]
+      }
+    ]
+  }
+]
+}
