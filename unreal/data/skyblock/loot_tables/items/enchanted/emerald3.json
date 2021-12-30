@@ -1,0 +1,33 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:emerald",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Enchanted Emerald","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Enchanted Emerald Epic\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

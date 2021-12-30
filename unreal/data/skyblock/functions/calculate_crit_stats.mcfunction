@@ -7,6 +7,7 @@ scoreboard players set @a crit_chance 0
 
 #Base Crit Chance
 execute as @a run execute store result score @s dummy run data get entity @s XpLevel 0.5
+execute as @a[level=60..] run scoreboard players set @s dummy 30
 execute as @a run scoreboard players operation @s crit_chance += @s dummy
 
 execute as @a run execute store result score @s dummy run data get entity @s SelectedItem.tag.Crit_Chance

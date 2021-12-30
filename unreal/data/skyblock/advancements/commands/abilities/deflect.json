@@ -1,0 +1,54 @@
+{
+	"parent":"skyblock:commands/abilities",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Deflect",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":false,
+		"hidden":true
+	},
+	"criteria":{
+		"entity_hurt_player":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"damage":{
+					"source_entity":{
+						"type":"#skyblock:hostile"
+					},
+					"type":{
+						"is_projectile":false
+					}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"head":{
+									"nbt":"{Name:\"Cactus Helmet\"}"
+								},
+								"chest":{
+									"nbt":"{Name:\"Cactus Chestplate\"}"
+								},
+								"legs":{
+									"nbt":"{Name:\"Cactus Leggings\"}"
+								},
+								"feet":{
+									"nbt":"{Name:\"Cactus Boots\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:abilities/instant/deflect"
+	}
+}

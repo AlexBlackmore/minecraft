@@ -1,0 +1,33 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:melon_slice",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Enchanted Melon Slice","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Enchanted Melon Slice\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

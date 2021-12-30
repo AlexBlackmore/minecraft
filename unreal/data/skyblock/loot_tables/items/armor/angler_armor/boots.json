@@ -1,0 +1,64 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_boots",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Angler Boots","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								{"text":"Full Set Bonus: Depth Champion","italic":false,"color":"gold"},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+6 Armor Toughness","italic":false,"color":"blue"},{"text":" when","italic":false,"color":"gray"}],
+								["",{"text":"fighting Aquatic Mobs.","italic":false,"color":"gray"}],
+								{"text":" "},
+								{"text":"Full Set Bonus: Deepness Within","italic":false,"color":"gold"},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+2 Max Health","italic":false,"color":"blue"},{"text":" per ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"}],
+								["",{"text":"level held and ","italic":false,"color":"gray"},{"text":"+4 Luck","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+								{"text":"(Max level: 50)","italic":false,"color":"dark_gray"},
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									color:720975
+								},
+								HideFlags:64,
+								Name:\"Angler Boots\"
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":3,
+									"slot":"feet"
+								},
+								{
+									"name":"Luck",
+									"attribute":"generic.luck",
+									"operation":"addition",
+									"amount":1,
+									"slot":"feet"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

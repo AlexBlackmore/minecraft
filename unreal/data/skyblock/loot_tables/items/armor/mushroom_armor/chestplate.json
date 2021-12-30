@@ -1,0 +1,61 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_chestplate",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Mushroom Chestplate","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								{"text":"Full Set Bonus: Night Affinity","italic":false,"color":"gold"},
+								{"text":"Grants the wearer with permanent","italic":false,"color":"gray"},
+								["",{"text":"Night Vision","italic":false,"color":"#1f1fa1"},{"text":" while worn, and","italic":false,"color":"gray"}],
+								{"text":"during the night, the stats of","italic":false,"color":"gray"},
+								["",{"text":"the armor pieces are ","italic":false,"color":"gray"},{"text":"tripled","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									color:16711680
+								},
+								HideFlags:64,
+								Name:\"Mushroom Chestplate\"
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Max Health",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":2,
+									"slot":"chest"
+								},
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":2,
+									"slot":"chest"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

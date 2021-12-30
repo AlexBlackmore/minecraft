@@ -1,0 +1,46 @@
+{
+  "parent":"skyblock:commands/abilities",
+  "display":{
+    "icon":{
+      "item":"minecraft:command_block"
+    },
+    "title":"Haste",
+    "description":"[::]",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":true,
+    "hidden":true
+  },
+  "criteria":{
+    "criterion":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "player":[
+          {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate":{
+              "equipment":{
+                "head":{
+                  "nbt":"{Name:\"Miner's Outfit Helmet\"}"
+                },
+                "chest":{
+                  "nbt":"{Name:\"Miner's Outfit Chestplate\"}"
+                },
+                "legs":{
+                  "nbt":"{Name:\"Miner's Outfit Leggings\"}"
+                },
+                "feet":{
+                  "nbt":"{Name:\"Miner's Outfit Boots\"}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "function":"skyblock:abilities/ambient/haste"
+  }
+}

@@ -1,0 +1,33 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:dark_oak_log",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Enchanted Dark Oak Log","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Enchanted Dark Oak Log\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
