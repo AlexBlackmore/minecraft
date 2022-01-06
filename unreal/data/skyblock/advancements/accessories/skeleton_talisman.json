@@ -1,0 +1,70 @@
+{
+	"parent":"skyblock:accessories/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:skeleton_skull"
+		},
+		"title":"Skeleton Talisman",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"player_hurt_skeleton":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"entity":{
+					"type":"#skyblock:skeletons"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{tag:{Name:\"Skeleton Talisman\"}}
+								]
+							}"
+						}
+					}
+				]
+			}
+		},
+		"skeleton_hurt_player":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"damage":{
+					"source_entity":{
+						"type":"#skyblock:skeletons"
+					}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{tag:{Name:\"Skeleton Talisman\"}}
+								]
+							}"
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"requirements":[
+		[
+			"player_hurt_skeleton",
+			"skeleton_hurt_player"
+		]
+	],
+	"rewards":{
+		"function":"skyblock:abilities/accessories/skeleton_talisman"
+	}
+}

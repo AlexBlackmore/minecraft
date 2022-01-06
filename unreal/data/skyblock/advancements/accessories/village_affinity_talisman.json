@@ -1,0 +1,31 @@
+{
+	"parent":"skyblock:accessories/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:player_head",
+			"nbt":"{SkullOwner:{Id:[I;-1815128489,-544718155,-1150629972,-514904074],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzgxNDlkNzU4N2Q4ZGU3Mzc2MTI2MWJkMmQ0Y2QzZjllOTc5NzllNTk5ODg4ZTZmYWE0YmM2ZjljZGYxMDE0MiJ9fX0=\"}]}}}"	
+		},
+		"title":"Village Affinity Talisman",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"items":[
+					{
+						"nbt":"{Name:\"Village Affinity Talisman\"}"
+					}
+				]
+			}
+		}
+
+	},
+	"rewards":{
+		"function":"skyblock:abilities/accessories/village_affinity_talisman"
+	}
+}

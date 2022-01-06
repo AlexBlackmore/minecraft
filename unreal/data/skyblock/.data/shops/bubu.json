@@ -1,209 +1,114 @@
 give @p villager_spawn_egg{
 	EntityTag:{
-		id:"minecraft:villager"
-		CustomName:"{\"text\":\"Bubu\"}"
-		CustomNameVisible:true
-		PersistenceRequired:true
-		Silent:true
-		CanPickUpLoot:false
-		Willing:false
-		NoAI:false
-		VillagerData:
-		{
-			level:5
-			profession:"toolsmith"
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Bubu\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"toolsmith",
 			type:"plains"
-		}
+		},
 		Attributes:[
 			{
-				Name:"generic.movement_speed"
+				Name:"generic.movement_speed",
 				Base:0
 			}
-		]
+		],
 		Offers:
 		{
-			Recipes: [
+			Recipes:[
 				{
 					buy:{
-						id:"emerald"
-						Count:3
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"diamond_pickaxe",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
-						}
-					}
-					buyB:
-					{
-						id:"emerald"
-						Count:8
-					}
-					sell:
-					{
-						id:"diamond_pickaxe"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"Fractured Diamond Pickaxe\"\"italic\":false\"color\":\"yellow\"}"
-								Lore:[
-									"{\"text\":\" \"}"
-									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
-									"{\"text\":\" \"}"
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Fractured Copper Pickaxe\"}"
+							},
 							AttributeModifiers:[
-								{Slot:"mainhand"AttributeName:"generic.attack_damage"Name:"Attack Damage"Amount:6Operation:0UUID:[I;2561840136847644215820535593028865]}
-								{Slot:"mainhand"AttributeName:"generic.attack_speed"Name:"Attack Speed"Amount:-2.8Operation:0UUID:[I;981651566483697224617502453904330553]}
-							]
-							Name:"Fractured Diamond Pickaxe"
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:6,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							Name:"Fractured Copper Pickaxe"
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:31
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"diamond_pickaxe",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
-						}
-					}
-					buyB:
-					{
-						id:"emerald"
-						Count:16
-					}
-					sell:
-					{
-						id:"diamond_pickaxe"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"Bandaged Diamond Pickaxe\"\"italic\":false\"color\":\"yellow\"}"
-								Lore:[
-									"{\"text\":\" \"}"
-									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
-									"{\"text\":\" \"}"
-								]
-							}
-							Enchantments:[
-								{id:"efficiency"lvl:2}
-							]
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Bandaged Copper Pickaxe\"}"
+							},
 							AttributeModifiers:[
-								{Slot:"mainhand"AttributeName:"generic.attack_damage"Name:"Attack Damage"Amount:6Operation:0UUID:[I;2561840136847644215820535593028865]}
-								{Slot:"mainhand"AttributeName:"generic.attack_speed"Name:"Attack Speed"Amount:-2.8Operation:0UUID:[I;981651566483697224617502453904330553]}
-							]
-							Name:"Bandaged Diamond Pickaxe"
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:6,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							Enchantments:[
+								{id:"efficiency",lvl:2}
+							],
+							Name:"Bandaged Copper Pickaxe"
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
-					buyB:{
-						id:"knowledge_book"
-						Count:1
+					buy:{
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"netherite_pickaxe",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"gray\"\"text\":\"Hotbar:\"}"
-								Lore:[
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"0: \"}{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x4\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"1: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x56\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"2: \"}{\"italic\":false\"color\":\"white\"\"text\":\"Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x32\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"3: \"}{\"italic\":false\"color\":\"white\"\"text\":\"Netherite Scrap\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"4: \"}{\"italic\":false\"color\":\"white\"\"text\":\"Netherite Scrap\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x36\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"5: \"}{\"italic\":false\"color\":\"aqua\"\"text\":\"Bejeweled Handle\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x1\"}]"
-								]
-							}
-						}
-					}
-					sell:
-					{
-						id:"netherite_pickaxe"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"Enchanted Netherite Pickaxe\"\"italic\":false\"color\":\"aqua\"}"
-								Lore:[
-									"{\"text\":\" \"}"
-									"[\"\"{\"text\":\"Grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+10% Mining Fortune\"\"italic\":false\"color\":\"blue\"}{\"text\":\" when\"\"italic\":false\"color\":\"gray\"}]"
-									"{\"text\":\"mining Ancient Debris.\"\"italic\":false\"color\":\"gray\"}"
-									"{\"text\":\" \"}"
-									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
-									"{\"text\":\" \"}"
-								]
-							}
-							Enchantments:[
-								{id:"efficiency"lvl:5}
-							]
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Netherite Pickaxe\"}"
+							},
 							AttributeModifiers:[
-								{Slot:"mainhand"AttributeName:"generic.attack_damage"Name:"Attack Damage"Amount:12Operation:0UUID:[I;2561840136847644215820535593028865]}
-								{Slot:"mainhand"AttributeName:"generic.attack_speed"Name:"Attack Speed"Amount:-2.8Operation:0UUID:[I;981651566483697224617502453904330553]}
-							]
-							Name:"Enchanted Netherite Pickaxe"
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:10,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							Name:"Netherite Pickaxe"
 						}
 					}
-					rewardExp:false
-					maxUses:0
-				}
+				},
 				{
-					buyB:{
-						id:"knowledge_book"
-						Count:1
+					buy:{
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"netherite_pickaxe",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"gray\"\"text\":\"Hotbar:\"}"
-								Lore:[
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"0: \"}{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Netherite Pickaxe\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x1\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"1: \"}{\"italic\":false\"color\":\"gold\"\"text\":\"Refined Netherite Ingot\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x3\"}]"
-								]
-							}
-						}
-					}
-					sell:
-					{
-						id:"netherite_pickaxe"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"Refined Netherite Pickaxe\"\"italic\":false\"color\":\"aqua\"}"
-								Lore:[
-									"{\"text\":\" \"}"
-									"[\"\"{\"text\":\"Grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+15% Mining Fortune\"\"italic\":false\"color\":\"blue\"}{\"text\":\" when\"\"italic\":false\"color\":\"gray\"}]"
-									"{\"text\":\"mining Ancient Debris.\"\"italic\":false\"color\":\"gray\"}"
-									"{\"text\":\" \"}"
-									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
-									"{\"text\":\" \"}"
-								]
-							}
-							Enchantments:[
-								{id:"efficiency"lvl:10}
-							]
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Refined Netherite Pickaxe\"}"
+							},
 							AttributeModifiers:[
-								{Slot:"mainhand"AttributeName:"generic.attack_damage"Name:"Attack Damage"Amount:13Operation:0UUID:[I;2561840136847644215820535593028865]}
-								{Slot:"mainhand"AttributeName:"generic.attack_speed"Name:"Attack Speed"Amount:-2.8Operation:0UUID:[I;981651566483697224617502453904330553]}
-							]
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:13,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							Enchantments:[
+								{id:"efficiency",lvl:4}
+							],
 							Name:"Refined Netherite Pickaxe"
 						}
 					}
-					rewardExp:false
-					maxUses:0
 				}
 			]
 		}
-	}
-	display:{
-		Name:"{\"text\":\"Bubu\"}"
 	}
 }

@@ -1,0 +1,56 @@
+{
+	"pools":[
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:empty",
+					"quality":0,
+					"weight":99835
+				},
+				{
+					"type": "minecraft:items",
+					"name": "minecraft:pumpkin",
+					"quality":0,
+					"weight":114,
+					"functions":[
+						{
+							"function":"set_count",
+							"count":64
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "skyblock:items/enchanted/pumpkin",
+					"quality":1,
+					"weight":43
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "skyblock:items/enchanted/pumpkin",
+					"quality":1,
+					"weight":7,
+					"functions":[
+						{
+							"function":"set_count",
+							"count":10
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "skyblock:items/enchanted/pumpkin",
+					"quality":1,
+					"weight":1,
+					"functions":[
+						{
+							"function":"set_count",
+							"count":64
+						}
+					]
+				}
+			]
+		}
+	]
+}

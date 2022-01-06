@@ -23,22 +23,6 @@ give @p villager_spawn_egg{
 		{
 			Recipes:[
 				{
-					buyB:{
-						id:"knowledge_book",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"<Armorsmith>\"}",
-								Lore:[
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"A great warrior is nothing\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"without their armor!\"}"
-								]
-							}
-						}
-					},
-					maxUses:0
-				},
-				{
 					buy:
 					{
 						id:"emerald",
@@ -136,13 +120,18 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Helmet\"}"
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Helmet\"}",
+								Lore:[
+									"{\"text\":\" \"}",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Growth\"}]"
+								]
 							},
 							AttributeModifiers:[
 							  {Slot:"head",AttributeName:"generic.armor",Name:"Armor",Amount:3,Operation:0,UUID:[I;880547910,254663267,40696167,292863750]},
 							  {Slot:"head",AttributeName:"generic.max_health",Name:"Max Health",Amount:3,Operation:0,UUID:[I;941011704,360787613,230178741,12182078]}
 							],
-							Name:"Diamond Helmet"
+							Name:"Diamond Helmet",
+							Growth:1
 						}
 					}
 				},
@@ -160,13 +149,18 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Chestplate\"}"
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Chestplate\"}",
+								Lore:[
+									"{\"text\":\" \"}",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Growth\"}]"
+								]
 							},
 							AttributeModifiers:[
 							  {Slot:"chest",AttributeName:"generic.armor",Name:"Armor",Amount:8,Operation:0,UUID:[I;459825707,292939929,604046520,252951343]},
 							  {Slot:"chest",AttributeName:"generic.max_health",Name:"Max Health",Amount:3,Operation:0,UUID:[I;801235678,679902970,226128757,959818657]}
 							],
-							Name:"Diamond Chestplate"
+							Name:"Diamond Chestplate",
+							Growth:1
 						}
 					}
 				},
@@ -184,13 +178,18 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Leggings\"}"
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Leggings\"}",
+								Lore:[
+									"{\"text\":\" \"}",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Growth\"}]"
+								]
 							},
 							AttributeModifiers:[
 							  {Slot:"legs",AttributeName:"generic.armor",Name:"Armor",Amount:6,Operation:0,UUID:[I;873443260,868321765,329979993,744153641]},
 							  {Slot:"legs",AttributeName:"generic.max_health",Name:"Max Health",Amount:3,Operation:0,UUID:[I;58386279,207698003,215523430,116431303]}
 							],
-							Name:"Diamond Leggings"
+							Name:"Diamond Leggings",
+							Growth:1
 						}
 					}
 				},
@@ -204,13 +203,18 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Boots\"}"
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Boots\"}",
+								Lore:[
+									"{\"text\":\" \"}",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Growth\"}]"
+								]
 							},
 							AttributeModifiers:[
 							  {Slot:"feet",AttributeName:"generic.armor",Name:"Armor",Amount:3,Operation:0,UUID:[I;988898580,954164967,812416676,703851964]},
 							  {Slot:"feet",AttributeName:"generic.max_health",Name:"Max Health",Amount:3,Operation:0,UUID:[I;491221130,267563167,114492629,645446134]}
 							],
-							Name:"Diamond Boots"
+							Name:"Diamond Boots",
+							Growth:1
 						}
 					}
 				}

@@ -1,0 +1,46 @@
+{
+	"pools":[
+		{
+		  "rolls":1,
+		  "entries":[
+				{
+					"type":"item",
+					"name":"book",
+					"quality":1,
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Pestilence Rune","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Obtained rarely from slaying the","italic":false,"color":"gray"}],
+								["",{"text":"Revenant Horror.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"enchant_randomly",
+							"enchantments":[
+								"unbreaking",
+								"bane_of_arthropods",
+								"fire_aspect",
+								"knockback",
+								"looting",
+								"sharpness",
+								"smite",
+								"sweeping_edge",
+								"vanishing_curse",
+								"mending",
+								"channeling",
+								"impaling",
+								"loyalty",
+								"riptide"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

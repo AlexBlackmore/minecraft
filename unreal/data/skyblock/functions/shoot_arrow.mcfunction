@@ -6,7 +6,8 @@ scoreboard objectives add x dummy "X"
 scoreboard objectives add y dummy "Y"
 scoreboard objectives add z dummy "Z"
 
-execute at @p[tag=bow] run summon arrow ~ ~1.7 ~ {Tags:["calc"],Passengers:[{id:"minecraft:armor_stand",Tags:["projectile"],Marker:true,Invulnerable:true}]}
+#execute at @p[tag=bow] run summon arrow ~ ~1.7 ~ {Tags:["calc"],Passengers:[{id:"minecraft:armor_stand",Tags:["projectile"],Marker:true,Invulnerable:true}]}
+execute at @p[tag=bow] run summon arrow ~ ~1.7 ~ {Tags:["calc"]}
 execute at @p[tag=bow] run summon armor_stand ^ ^ ^1.8 {Tags:["motion"]}
 
 execute store result score @e[tag=calc,limit=1] x run data get entity @e[tag=motion,limit=1] Pos[0] 100

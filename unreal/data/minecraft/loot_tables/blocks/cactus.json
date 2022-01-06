@@ -1,72 +1,36 @@
 {
-	"type": "minecraft:block",
-	"pools": [
-		{
-			"rolls": 1.0,
-			"bonus_rolls": 0.0,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:cactus"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:survives_explosion"
-				}
-			]
-		},
+	"type":"block",
+	"pools":[
 		{
 			"rolls":1,
 			"entries":[
 				{
-					"type":"minecraft:item",
-					"name":"minecraft:cactus"
-				}
-			],
-			"conditions":[
-				{
-					"condition": "minecraft:block_state_property",
-					"block": "minecraft:cactus",
-					"properties": {
-						"age": "15"
-					}
-				},
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"equipment":{
-							"mainhand":{
-								"nbt":"{Name:\"Cactus Knife\"}"
-							}
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"cactus",
+							"conditions":[
+								{
+									"condition":"match_tool",
+									"predicate":{
+										"enchantments":[
+											{
+												"enchantment":"silk_touch",
+												"levels":{
+													"min":1
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:blocks/cactus"
 						}
-					}
-				},
-				{
-					"condition":"random_chance",
-					"chance":0.3
-				}
-			]
-		}
-	],
-	"functions":[
-		{
-			"function":"explosion_decay"
-		},
-		{
-			"function":"furnace_smelt",
-			"conditions": [
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"equipment":{
-							"mainhand":{
-								"nbt":"{Smelting_Touch:true}"
-							}
-						}
-					}
+					]
 				}
 			]
 		}

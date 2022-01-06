@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:ancient_debris"
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:refined_mineral"
+				}
+			]
+		}
+	],
+	"conditions": [
+		{
+			"condition": "minecraft:survives_explosion"
+		}
+	]
+}

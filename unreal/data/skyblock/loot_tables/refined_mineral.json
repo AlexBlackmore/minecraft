@@ -1,0 +1,28 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"quality":0,
+					"weight":374
+				},
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/refined_mineral",
+					"quality":2,
+					"weight":1,
+					"functions":[
+						{
+							"function":"apply_bonus",
+							"enchantment":"fortune",
+							"formula":"ore_drops"
+						}
+					]
+				}
+			]
+		}
+	]
+}

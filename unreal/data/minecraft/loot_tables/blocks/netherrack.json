@@ -2,43 +2,35 @@
 	"type":"block",
 	"pools":[
 		{
-		  "rolls": 1,
-		  "entries": [
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:netherrack"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"survives_explosion"
-				}
-			]
-		},
-		{
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:mineral_armor/mineral_armor_netherrack"
-				}
-			]
-		}
-	],
-	"functions":[
-		{
-			"function":"furnace_smelt",
-			"conditions": [
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"equipment":{
-							"mainhand":{
-								"nbt":"{Smelting_Touch:true}"
-							}
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"netherrack",
+							"conditions":[
+								{
+									"condition":"match_tool",
+									"predicate":{
+										"enchantments":[
+											{
+												"enchantment":"silk_touch",
+												"levels":{
+													"min":1
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:blocks/netherrack"
 						}
-					}
+					]
 				}
 			]
 		}

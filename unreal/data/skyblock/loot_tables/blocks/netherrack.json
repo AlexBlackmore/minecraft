@@ -1,0 +1,37 @@
+{
+	"type":"block",
+	"pools":[
+		{
+		  "rolls": 1,
+		  "entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:netherrack"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"survives_explosion"
+				}
+			]
+		}
+	],
+	"functions":[
+		{
+			"function":"furnace_smelt",
+			"conditions": [
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Smelting_Touch:true}"
+							}
+						}
+					}
+				}
+			]
+		}
+	]
+}

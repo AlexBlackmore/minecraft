@@ -1,0 +1,41 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:salmon",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Egg the Fish","italic":false,"color":"red"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Egg the Fish\"
+							}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"This delicate, painted fish was","italic":false,"color":"gray"}],
+								["",{"text":"found in the depth of The Hub","italic":false,"color":"gray"}],
+								["",{"text":"during the Easter season.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

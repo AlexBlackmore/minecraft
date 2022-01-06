@@ -1,0 +1,42 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:poppy",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Endstone Rose","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Endstone Rose"
+							}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"\"The Zealots have shown me so","italic":false,"color":"gray"}],
+								["",{"text":"much love, I hope this simple","italic":false,"color":"gray"}],
+								["",{"text":"rose shows how much I care for","italic":false,"color":"gray"}],
+								["",{"text":"them\" -Endstone Protector","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

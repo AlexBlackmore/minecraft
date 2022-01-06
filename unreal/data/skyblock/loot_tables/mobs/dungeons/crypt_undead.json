@@ -1,0 +1,23 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:loot_table",
+          "name":"skyblock:items/enchanted/rotten_flesh",
+          "functions":[
+            {
+              "function":"set_count",
+              "count":{
+                "min":0,
+                "max":1,
+                "type":"uniform"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

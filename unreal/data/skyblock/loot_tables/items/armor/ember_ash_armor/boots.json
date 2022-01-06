@@ -29,16 +29,8 @@
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
-								Name:\"Ember Ash Boots\",
-								Mining_Fortune:5
+								Name:\"Ember Ash Boots\"
 							}"
-						},
-						{
-							"function":"minecraft:set_lore",
-							"lore":[
-								{"text":"+5% Mining Fortune","italic":false,"color":"blue"}
-							],
-							"replace":false
 						},
 						{
 							"function":"minecraft:set_attributes",
@@ -48,6 +40,13 @@
 									"attribute":"generic.armor",
 									"operation":"addition",
 									"amount":0,
+									"slot":"feet"
+								},
+								{
+									"name":"Luck",
+									"attribute":"generic.luck",
+									"operation":"addition",
+									"amount":1,
 									"slot":"feet"
 								}
 							]

@@ -1,0 +1,1 @@
+advancement revoke @p[advancements={skyblock:accessories/scavenger_talisman=true}] only skyblock:accessories/scavenger_talisman

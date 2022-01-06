@@ -23,23 +23,6 @@ give @p villager_spawn_egg{
 		{
 			Recipes:[
 				{
-					buyB:{
-						id:"knowledge_book",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"<Fish Merchant>\"}",
-								Lore:[
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"Fishing is my trade. I buy and\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"sell any fish, rod, or treasure\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"you can find!\"}"
-								]
-							}
-						}
-					},
-					maxUses:0
-				},
-				{
 					buy:{
 						id:"emerald",
 						Count:17
@@ -51,8 +34,8 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Fishing Rod\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Fish caught with this rod grant\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"an additional \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"+1 XP\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]"
+									"{\"text\":\" \"}",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Magnet\"}]"
 								]
 							},
 							AttributeModifiers:[

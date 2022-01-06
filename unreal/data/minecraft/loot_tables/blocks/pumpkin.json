@@ -1,43 +1,38 @@
 {
-  "type": "minecraft:block",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:pumpkin"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ]
-    },
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"minecraft:loot_table",
-          "name":"skyblock:pumpkin_dicer"
-        }
-      ],
-      "conditions":[
-        {
-          "condition":"entity_properties",
-          "entity":"this",
-          "predicate":{
-            "equipment":{
-              "mainhand":{
-                "item":"golden_axe",
-                "count":1,
-                "nbt":"{Name:\"Pumpkin Dicer\"}"
-              }
-            }
-          }
-        }
-      ]
-    }
-  ]
+	"type":"block",
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"pumpkin",
+							"conditions":[
+								{
+									"condition":"match_tool",
+									"predicate":{
+										"enchantments":[
+											{
+												"enchantment":"silk_touch",
+												"levels":{
+													"min":1
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:blocks/pumpkin"
+						}
+					]
+				}
+			]
+		}
+	]
 }

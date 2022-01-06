@@ -1,25 +1,24 @@
 {
-	"type": "minecraft:block",
-	"pools": [
+	"type":"block",
+	"pools":[
 		{
-			"rolls": 1.0,
-			"bonus_rolls": 0.0,
-			"entries": [
+			"rolls":1,
+			"entries":[
 				{
-					"type": "minecraft:alternatives",
-					"children": [
+					"type":"alternatives",
+					"children":[
 						{
-							"type": "minecraft:item",
-							"name": "minecraft:stone",
-							"conditions": [
+							"type":"item",
+							"name":"stone",
+							"conditions":[
 								{
-									"condition": "minecraft:match_tool",
-									"predicate": {
-										"enchantments": [
+									"condition":"match_tool",
+									"predicate":{
+										"enchantments":[
 											{
-												"enchantment": "minecraft:silk_touch",
-												"levels": {
-													"min": 1
+												"enchantment":"silk_touch",
+												"levels":{
+													"min":1
 												}
 											}
 										]
@@ -28,43 +27,10 @@
 							]
 						},
 						{
-							"type": "minecraft:item",
-							"name": "minecraft:cobblestone",
-							"conditions": [
-								{
-									"condition": "minecraft:survives_explosion"
-								}
-							]
+							"type":"loot_table",
+							"name":"skyblock:blocks/stone"
 						}
 					]
-				}
-			]
-		},
-		{
-			"rolls": 1.0,
-			"bonus_rolls": 0.0,
-			"entries": [
-				{
-					"type": "minecraft:loot_table",
-					"name": "skyblock:mineral_armor/mineral_armor_stone"
-				}
-			]
-		}
-	],
-	"functions":[
-		{
-			"function":"furnace_smelt",
-			"conditions": [
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"equipment":{
-							"mainhand":{
-								"nbt":"{Smelting_Touch:true}"
-							}
-						}
-					}
 				}
 			]
 		}

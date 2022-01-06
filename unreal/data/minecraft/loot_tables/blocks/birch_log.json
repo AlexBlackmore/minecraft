@@ -1,80 +1,36 @@
 {
-	"type": "minecraft:block",
+	"type":"block",
 	"pools":[
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:alternatives",
-					"children": [
-						{
-							"type": "minecraft:item",
-							"name": "minecraft:birch_planks",
-							"conditions": [
-								{
-									"condition":"entity_properties",
-									"entity":"this",
-									"predicate":{
-										"equipment":{
-											"mainhand":{
-												"nbt":"{Name:\"Efficient Axe\"}"
-											}
-										}
-									}
-								}
-							],
-							"functions":[
-								{
-									"function":"set_count",
-									"count":5
-								}
-							]
-						},
-						{
-							"type": "minecraft:item",
-							"name": "minecraft:birch_log",
-							"functions":[
-								{
-									"function":"furnace_smelt",
-									"conditions": [
-										{
-											"condition":"entity_properties",
-											"entity":"this",
-											"predicate":{
-												"equipment":{
-													"mainhand":{
-														"nbt":"{Smelting_Touch:true}"
-													}
-												}
-											}
-										}
-									]
-								}
-							]
-						}
-					]
-				}
-			]
-		},
 		{
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:sweet_axe"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"equipment":{
-							"mainhand":{
-								"nbt":"{Name:\"Sweet Axe\"}"
-							}
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"birch_log",
+							"conditions":[
+								{
+									"condition":"match_tool",
+									"predicate":{
+										"enchantments":[
+											{
+												"enchantment":"silk_touch",
+												"levels":{
+													"min":1
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:blocks/birch_log"
 						}
-					}
+					]
 				}
 			]
 		}

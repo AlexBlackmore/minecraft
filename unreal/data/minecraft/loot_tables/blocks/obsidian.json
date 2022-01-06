@@ -1,38 +1,36 @@
 {
-	"type": "minecraft:block",
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:obsidian"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:survives_explosion"
-				}
-			]
-		},
+	"type":"block",
+	"pools":[
 		{
 			"rolls":1,
-			"bonus_rolls":{
-				"type":"uniform",
-				"min":0.0,
-				"max":1.0
-			},
 			"entries":[
 				{
-					"type":"empty",
-					"quality":0,
-					"weight":99
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:glowing_blocks/glowing_obsidian",
-					"quality":1,
-					"weight":1
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"obsidian",
+							"conditions":[
+								{
+									"condition":"match_tool",
+									"predicate":{
+										"enchantments":[
+											{
+												"enchantment":"silk_touch",
+												"levels":{
+													"min":1
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:blocks/obsidian"
+						}
+					]
 				}
 			]
 		}

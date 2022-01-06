@@ -1,0 +1,40 @@
+{
+	"parent":"skyblock:commands/abilities",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Shiny Orb",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"entity":{
+					"type":"minecraft:pig"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{Name:\"Shiny Orb\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:abilities/instant/shiny_orb"
+	}
+}

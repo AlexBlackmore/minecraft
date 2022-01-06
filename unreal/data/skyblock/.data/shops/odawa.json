@@ -1,0 +1,158 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Odawa\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"weaponsmith",
+			type:"jungle"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"oak_planks",
+						Count:20
+					},
+					buyB:{
+						id:"slime_ball",
+						Count:20
+					},
+					sell:{
+						id:"player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;1215877810,1732001892,-1578884947,1067106468],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY1ODcwNjE5YjBjMmRiODIyNDc5ZDJjYjM4MjEyNmJkNzk5YzU4MjM3OGI1YjFkZjkzZTc1YjdkMDE1NTFiNyJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Kalhuiki Mask\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"A ceremonial mask worn by the\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"members of the Kalhuiki Tribe.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							AttributeModifiers:[
+								{Slot:"head",AttributeName:"generic.max_health",Name:"Max Health",Amount:20,Operation:0,UUID:[I;955981749,993574859,519846983,165976519]},
+								{Slot:"head",AttributeName:"generic.armor",Name:"Armor",Amount:10,Operation:0,UUID:[I;783790130,988637803,285433884,494668629]}
+							],
+							Name:"Kalhuiki Mask"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"oak_planks",
+						Count:20
+					},
+					buyB:{
+						id:"slime_ball",
+						Count:20
+					},
+					sell:{
+						id:"player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;1396064463,1698581469,-1320158436,-1805367771],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWJmZjY1NDc5ZmI3MDI5ZGVjZmU2Nzc5MzgyNzYyYTA4ZmM3YzhlY2VmZjU0NDhkZTI2M2Q5ZDM3NTA2NmY3YSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Kalhuiki Mask\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Accessory\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+2 Luck\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" when mining\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Amethysts\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]"
+								]
+							},
+							Name:"Jungle Amulet",
+							Accessory:true
+						}
+					}
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"trident",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Tribal Spear\"}"
+							},
+							Enchantments:[
+								{id:"loyalty",lvl:1}
+							],
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:20,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.9,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							Name:"Tribal Spear"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"diamond_pickaxe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jungle Pickaxe\"}"
+							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:10,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							Enchantments:[
+								{id:"efficiency",lvl:5}
+							],
+							Name:"Jungle Pickaxe"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"tripwire_hook",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Jungle Key\"}"
+							},
+							Name:"Jungle Key"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"amethyst_shard",
+						Count:1
+					}
+				}
+			]
+		}
+	}
+}

@@ -1,47 +1,36 @@
 {
-	"type": "minecraft:block",
-	"pools": [
-		{
-			"rolls": 1.0,
-			"bonus_rolls": 0.0,
-			"entries": [
-				{
-				  "type": "minecraft:item",
-				  "name": "minecraft:sugar_cane"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:survives_explosion"
-				}
-			]
-		},
+	"type":"block",
+	"pools":[
 		{
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:mathematical_hoes/turing_sugar_cane_hoe"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"block_state_property",
-					"block":"sugar_cane",
-					"properties":{
-						"age":"15"
-					}
-				},
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"equipment":{
-							"mainhand":{
-								"nbt":"{Name:\"Turing Sugar Cane Hoe\"}"
-							}
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"sugar_cane",
+							"conditions":[
+								{
+									"condition":"match_tool",
+									"predicate":{
+										"enchantments":[
+											{
+												"enchantment":"silk_touch",
+												"levels":{
+													"min":1
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:blocks/sugar_cane"
 						}
-					}
+					]
 				}
 			]
 		}

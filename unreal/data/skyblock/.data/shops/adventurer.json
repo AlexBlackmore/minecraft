@@ -23,26 +23,6 @@ give @p villager_spawn_egg{
 		{
 			Recipes:[
 				{
-					buyB:{
-						id:"knowledge_book",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"<Adventurer>\"}",
-								Lore:[
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"I've seen it all - every island\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"from here to the edge of the\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"world! Over the years I've\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"acquired a variety of Talismans\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"and Artifacts. For a price, you\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"can have it all!\"}"
-								]
-							}
-						}
-					},
-					maxUses:0
-				},
-				{
 					buy:
 					{
 						id:"emerald",
@@ -118,7 +98,7 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"fighting Zombies.\"}]"
 								]
 							},
-							Accessory:"Zombie Talisman"
+							Name:"Zombie Talisman"
 						}
 					}
 				},
@@ -143,7 +123,7 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"fighting Skeletons.\"}]"
 								]
 							},
-							Accessory:"Skeleton Talisman"
+							Name:"Skeleton Talisman"
 						}
 					}
 				},
@@ -178,7 +158,7 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Villagers.\"}]"
 								]
 							},
-							Accessory:"Village Affinity Talisman"
+							Name:"Village Affinity Talisman"
 						}
 					}
 				},
@@ -213,7 +193,7 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"aqua\",\"text\":\"Mountain\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" or \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Cave\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" biome.\"}]"
 								]
 							},
-							Accessory:"Mine Affinity Talisman"
+							Name:"Mine Affinity Talisman"
 						}
 					}
 				},
@@ -246,7 +226,7 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Accessory\"}]"
 								]
 							},
-							Accessory:"Intimidation Talisman"
+							Name:"Intimidation Talisman"
 						}
 					}
 				},
@@ -281,7 +261,7 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"an \"},{\"italic\":false,\"color\":\"gold\",\"text\":\"Emerald\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" when killed.\"}]"
 								]
 							},
-							Accessory:"Scavenger Talisman"
+							Name:"Scavenger Talisman"
 						}
 					}
 				}

@@ -1,0 +1,31 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:experience_bottle",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Titanic Experience Bottle","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Titanic Experience Bottle\",
+										Ability:true
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

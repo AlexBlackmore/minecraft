@@ -23,24 +23,6 @@ give @p villager_spawn_egg{
 		{
 			Recipes:[
 				{
-					buyB:{
-						id:"knowledge_book",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"<Farm Merchant>\"}",
-								Lore:[
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"You can buy and sell harvested\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"crops with me! Wheat, carrots,\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"potatoes, and melon are my\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"specialties!\"}"
-								]
-							}
-						}
-					},
-					maxUses:0
-				},
-				{
 					buy:
 					{
 						id:"emerald",
@@ -192,10 +174,14 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Rookie Hoe\"}",
 								Lore:[
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Crops have a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"50%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop\"}]",
 									"{\"italic\":false,\"color\":\"gray\",\"text\":\"an extra seed.\"}"
 								]
 							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
 							Name:"Rookie Hoe"
 						}
 					}

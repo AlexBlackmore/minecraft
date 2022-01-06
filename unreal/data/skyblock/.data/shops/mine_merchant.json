@@ -23,22 +23,6 @@ give @p villager_spawn_egg{
 		{
 			Recipes:[
 				{
-					buyB:{
-						id:"knowledge_book",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"<Farm Merchant>\"}",
-								Lore:[
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"My specialties are ores, stone,\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"and mining equipment.\"}"
-								]
-							}
-						}
-					},
-					maxUses:0
-				},
-				{
 					buy:
 					{
 						id:"emerald",
@@ -86,6 +70,10 @@ give @p villager_spawn_egg{
 							Enchantments:[
 								{id:"efficiency",lvl:1}
 							],
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:2,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
 							Name:"Rookie Pickaxe"
 						}
 					}
@@ -102,12 +90,17 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Promising Pickaxe\"}",
 								Lore:[
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Breaking blocks has a chance to\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"increase the Efficiency level on\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"this pickaxe.\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"(Max: Efficiency II)\"}]"
 								]
 							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:3,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
 							Name:"Promising Pickaxe",
 							Promising:0
 						}
@@ -121,7 +114,17 @@ give @p villager_spawn_egg{
 					},
 					sell:{
 						id:"golden_pickaxe",
-						Count:1
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Golden Pickaxe\"}"
+							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:1,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							Name:"Golden Pickaxe"
+						}
 					}
 				},
 				{
@@ -186,8 +189,9 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Fruitful\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" reforge to a pickaxe.\"}]",
 									"[\"\",{\"text\":\" \"}]",
 									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+3-9 Defense\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Intelligence\"}]"
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Armor\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Intelligence\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+0.6 Luck\"}]"
 								]
 							},
 							Name:"Onyx",

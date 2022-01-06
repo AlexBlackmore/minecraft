@@ -103,6 +103,10 @@ give @p villager_spawn_egg{
 							Enchantments:[
 								{id:"efficiency",lvl:1}
 							],
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.2,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
 							Name:"Rookie Axe"
 						}
 					}
@@ -119,12 +123,17 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Promising Axe\"}",
 								Lore:[
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Breaking blocks has a chance to\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"increase the Efficiency level on\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"this axe.\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"(Max: Efficiency II)\"}]"
 								]
 							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.1,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
 							Name:"Promising Axe",
 							Promising:0
 						}
@@ -153,10 +162,15 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sweet Axe\"}",
 								Lore:[
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Chopping logs with this axe has\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"20%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop an apple.\"}]"
 								]
 							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.1,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
 							Name:"Sweet Axe"
 						}
 					}
@@ -173,10 +187,15 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Efficient Axe\"}",
 								Lore:[
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Logs chopped with this axe drop\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"5\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" planks instead of logs.\"}]"
 								]
 							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.1,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
 							Name:"Efficient Axe"
 						}
 					}

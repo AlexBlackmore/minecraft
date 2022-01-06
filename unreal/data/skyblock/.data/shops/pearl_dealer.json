@@ -1,174 +1,270 @@
 give @p villager_spawn_egg{
 	EntityTag:{
-		id:"minecraft:villager"
-    CustomName:"{\"text\":\"Pearl Dealer\"\"color\":\"dark_purple\"}"
-    CustomNameVisible:true
-    PersistenceRequired:true
-    Silent:true
-    CanPickUpLoot:false
-    Willing:false
-    NoAI:false
-    VillagerData:{
-      level:5
-      profession:"cleric"
-      type:"plains"
-    }
-    Attributes:[
-      {Name:"generic.movementSpeed"Base:"0f"}
-    ]
-  	Offers:{
-  		Recipes:[
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Pearl Dealer\",\"color\":\"dark_purple\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"cleric",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
 				{
+					buy:
+					{
+						id:"emerald",
+						Count:2
+					},
+					sell:{
+						id:"end_stone",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:9
+					},
+					sell:{
+						id:"obsidian",
+						Count:1
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:26,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
 					buyB:
 					{
-						id:"writable_book"
-						Count:1
-						tag:{
-							display:{
-								Name:"[\"\"{\"text\":\"<\"\"italic\":false\"color\":\"white\"}{\"text\":\"Pearl Dealer\"\"italic\":false\"color\":\"dark_purple\"}{\"text\":\">\"\"italic\":false\"color\":\"white\"}]"
-								Lore:[
-									"{\"text\":\"The End has endless End Stone\"\"italic\":false\"color\":\"white\"}"
-									"{\"text\":\"and Obsidian. You may find a\"\"italic\":false\"color\":\"white\"}"
-									"{\"text\":\"special type of these resources\"\"italic\":false\"color\":\"white\"}"
-									"{\"text\":\"deep in the caves.\"\"italic\":false\"color\":\"white\"}"
-									"{\"text\":\"The items in my shop may be of\"\"italic\":false\"color\":\"white\"}"
-									"{\"text\":\"help as you descent into the\"\"italic\":false\"color\":\"white\"}"
-									"{\"text\":\"depths of The End.\"\"italic\":false\"color\":\"white\"}"
-								]
-							}
-							HideFlags:32
-						}
-					}
-					rewardExp:false
-					maxUses:0
-				}
-				{
-  				buy:{
-  					id:"emerald"
-  					Count:1
-  				}
-  				sell:{
-  					id:"end_stone"
-  					Count:5
-  				}
-  				rewardExp:false
-  				maxUses:128
-  			}
-        {
-  				buy:{
-  					id:"emerald"
-  					Count:1
-  				}
-  				sell:{
-  					id:"obsidian"
-  					Count:1
-  				}
-  				rewardExp:false
-  				maxUses:640
-  			}
-        {
-  				buy:{
-  					id:"emerald"
-  					Count:8
-  				}
-  				sell:{
-  					id:"ender_pearl"
-  					Count:8
-						tag:{
-							display:{
-								Name:"{\"text\":\"Silent Pearl\"\"italic\":false\"color\":\"aqua\"}"
-								Lore:[
-									"{\"text\":\"Endermen won't be attracted to\"\"italic\":false\"color\":\"gray\"}"
-									"{\"text\":\"you when used.\"\"italic\":false\"color\":\"gray\"}"
-									"\" \""
-									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
-								]
-							}
-						}
-  				}
-  				rewardExp:false
-  				maxUses:640
-				}
-				{
-						buy:{
-							id:"emerald"
-							Count:62
-							tag:{
-								display:{
-									Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-									Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-								}
-								Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-								HideFlags:1
-								Name:"Enchanted Emerald"
-							}
-						}
-						buyB:{
-							id:"emerald"
-							Count:32
-						}
+						id:"emerald",
+						Count:3
+					},
 					sell:{
-						id:"totem_of_undying"
-						Count:1
-							tag:{
-								display:{
-									Name:"{\"text\":\"Remnant of the Eye\"\"italic\":false\"color\":\"light_purple\"}"
-									Lore:[
-										"{\"text\":\"Keeps you alive when you're on\"\"italic\":false\"color\":\"gray\"}"
-										"{\"text\":\"death's door granting a short\"\"italic\":false\"color\":\"gray\"}"
-										"{\"text\":\"period of invincibility.\"\"italic\":false\"color\":\"gray\"}"
-										"{\"text\":\"Consumed on use.\"\"italic\":false\"color\":\"gray\"}"
-										"\" \""
-										"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
-									]
-								}
-							}
-					}
-					rewardExp:false
-					maxUses:640
-				}
-				{
-					buyB:{
-						id:"knowledge_book"
-						Count:1
+						id:"ender_pearl",
+						Count:8,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"gray\"\"text\":\"Hotbar:\"}"
-								Lore:[
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"0: \"}{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x2\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"1: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x28\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"2: \"}{\"italic\":false\"color\":\"white\"\"text\":\"Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x16\"}]"
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Silent Pearl\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1,
+							Name:"Silent Pearl"
 						}
 					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:
+					{
+						id:"emerald",
+						Count:9,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
 					sell:{
-						id:"golden_pickaxe"
-						Count:1
-							tag:{
-								display:{
-									Name:"{\"text\":\"Stonk\"\"italic\":false\"color\":\"light_purple\"}"
-									Lore:[
-										"\" \""
-										"[\"\"{\"text\":\"Grants bonus \"\"italic\":false\"color\":\"gray\"}{\"text\":\"XP\"\"italic\":false\"color\":\"aqua\"}{\"text\":\" when mining End\"\"italic\":false\"color\":\"gray\"}]"
-										"[\"\"{\"text\":\"Stone and a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"5%\"\"italic\":false\"color\":\"green\"}{\"text\":\" chance to drop an\"\"italic\":false\"color\":\"gray\"}]"
-										"[\"\"{\"text\":\"extra block.\"\"italic\":false\"color\":\"gray\"}]"
-										"\" \""
-										"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
-									]
-								}
-								Enchantments:[
-									{id:"efficiency"lvl:6}
+						id:"totem_of_undying",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Remnant of the Eye\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Keeps you alive when you are on\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"death's door, granting a short\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"period of invincibility.\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Consumed on use.\"}]"
 								]
-							}
+							},
+							Name:"Remnant of the Eye"
+						}
 					}
-					rewardExp:false
-					maxUses:640
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:20,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:
+					{
+						id:"emerald",
+						Count:23,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"golden_pickaxe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Stonk\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Mining End Stone with this\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"pickaxe will grant experience,\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"won't spawn Endermites, and has\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"5%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop an extra\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"block.\"}]"
+								]
+							},
+							Enchantments:[
+								{id:"efficiency",lvl:6},
+								{id:"unbreaking",lvl:1}
+							],
+							Name:"Stonk"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:40,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:
+					{
+						id:"emerald",
+						Count:45,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Dragon Hunter I\"}]"
+								]
+							},
+							Name:"Enchanted Book",
+							Dragon_Hunter:1
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:40,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:
+					{
+						id:"emerald",
+						Count:45,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Book\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Ender Slayer VI\"}]"
+								]
+							},
+							Name:"Enchanted Book",
+							Ender_Slayer:6
+						}
+					}
 				}
 			]
 		}
-	}
-	display:{
-		Name:"{\"text\":\"Pearl Dealer\"}"
 	}
 }

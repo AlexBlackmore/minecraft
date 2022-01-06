@@ -1,174 +1,138 @@
 give @p villager_spawn_egg{
 	EntityTag:{
-		id:"minecraft:villager"
-		CustomName:"{\"text\":\"Iron Forger\"}"
-		CustomNameVisible:true
-		PersistenceRequired:true
-		Silent:true
-		CanPickUpLoot:false
-		Willing:false
-		NoAI:false
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Iron Forager\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
 		VillagerData:{
-			level:5
-			profession:"armorer"
+			level:5,
+			profession:"toolsmith",
 			type:"plains"
-		}
+		},
 		Attributes:[
 			{
-				Name:"generic.movement_speed"
+				Name:"generic.movement_speed",
 				Base:0
 			}
-		]
-		Offers:{
+		],
+		Offers:
+		{
 			Recipes:[
 				{
-					buyB:{
-						id:"writable_book"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"<Iron Forger>\"\"italic\":false\"color\":\"white\"}"
-								Lore:[
-									"{\"text\":\"For my wares you'll have to pay\"\"italic\":false\"color\":\"white\"}"
-									"{\"text\":\"the iron price!\"\"italic\":false\"color\":\"white\"}"
-									"[\"\"{\"text\":\"Seriously though I accept \"\"italic\":false\"color\":\"white\"}{\"text\":\"Emeralds\"\"italic\":false\"color\":\"gold\"}{\"text\":\".\"\"italic\":false\"color\":\"white\"}]"
-								]
-							}
-							HideFlags:32
-						}
-					}
-					rewardExp:false
-					maxUses:0
-				}
-				{
-					buy:{
-						id:"emerald"
-						Count:6
-					}
+					buy:
+					{
+						id:"emerald",
+						Count:10
+					},
 					sell:{
-						id:"iron_pickaxe"
-						Count:1
+						id:"iron_pickaxe",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Iron Pickaxe\"\"italic\":false\"color\":\"white\"}"
 								Lore:[
-									"{\"text\":\"Smelting Touch\"\"italic\":false\"color\":\"gray\"}"
-									"\" \""
-									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
-									"\" \""
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Smelting Touch\"}]"
 								]
-							}
+							},
 							Smelting_Touch:true
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
-					buy:{
-						id:"emerald"
-						Count:1
-					}
+					buy:
+					{
+						id:"emerald",
+						Count:17
+					},
 					sell:{
-						id:"iron_ingot"
+						id:"iron_ingot",
 						Count:20
 					}
-					rewardExp:false
-					maxUses:32
-				}
+				},
 				{
-					buy:{
-						id:"emerald"
-						Count:6
-					}
+					buy:
+					{
+						id:"emerald",
+						Count:9
+					},
 					sell:{
-						id:"chainmail_helmet"
-						Count:1
+						id:"chainmail_helmet",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Chainmail Helmet\"\"italic\":false\"color\":\"yellow\"}"
-								Lore:[
-									"\" \""
-									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
-									"\" \""
-									
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Chainmail Helmet\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"head",AttributeName:"generic.armor",Name:"Armor",Amount:2.4,Operation:0,UUID:[I;152320651,595767322,449176475,625640546]}
+							],
+							Name:"Chainmail Helmet"
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
-					buy:{
-						id:"emerald"
-						Count:10
-					}
+					buy:
+					{
+						id:"emerald",
+						Count:17
+					},
 					sell:{
-						id:"chainmail_chestplate"
-						Count:1
+						id:"chainmail_chestplate",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Chainmail Chestplate\"\"italic\":false\"color\":\"yellow\"}"
-								Lore:[
-									"\" \""
-									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
-									"\" \""
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Chainmail Chestplate\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"chest",AttributeName:"generic.armor",Name:"Armor",Amount:6,Operation:0,UUID:[I;160068627,212924053,704488500,873731856]}
+							],
+							Name:"Chainmail Chestplate"
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
-					buy:{
-						id:"emerald"
-						Count:8
-					}
+					buy:
+					{
+						id:"emerald",
+						Count:13
+					},
 					sell:{
-						id:"chainmail_leggings"
-						Count:1
+						id:"chainmail_leggings",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Chainmail Leggings\"\"italic\":false\"color\":\"yellow\"}"
-								Lore:[
-									"\" \""
-									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
-									"\" \""
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Chainmail Leggings\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"legs",AttributeName:"generic.armor",Name:"Armor",Amount:4,Operation:0,UUID:[I;784918952,96631970,897220843,359792637]}
+							],
+							Name:"Chainmail Leggings"
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:6
-					}
+						id:"emerald",
+						Count:9
+					},
 					sell:{
-						id:"chainmail_boots"
-						Count:1
+						id:"chainmail_boots",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Chainmail Boots\"\"italic\":false\"color\":\"yellow\"}"
-								Lore:[
-									"\" \""
-									"{\"text\":\"UNCOMMON\"\"italic\":true\"bold\":true\"color\":\"yellow\"}"
-									"\" \""
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Chainmail Boots\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"feet",AttributeName:"generic.armor",Name:"Armor",Amount:1.4,Operation:0,UUID:[I;998405001,804390455,722567098,179914747]}
+							],
+							Name:"Chainmail Boots"
 						}
 					}
-					rewardExp:false
-					maxUses:640
 				}
 			]
 		}
-	}
-	display:{
-		Name:"{\"text\":\"Iron Forager\"}"
 	}
 }

@@ -1,0 +1,31 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:experience_bottle",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Colossal Experience Bottle","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Colossal Experience Bottle\",
+										Ability:true
+									}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"loot_table",
+          "name":"minecraft:entities/chicken"
+        },
+        {
+          "type":"loot_table",
+          "name":"minecraft:entities/cow"
+        },
+        {
+          "type":"loot_table",
+          "name":"minecraft:entities/pig"
+        },
+        {
+          "type":"loot_table",
+          "name":"minecraft:entities/rabbit"
+        },
+        {
+          "type":"loot_table",
+          "name":"minecraft:entities/sheep"
+        }
+      ],
+      "conditions":[
+        {
+          "condition":"random_chance",
+          "chance":0.2
+        }
+      ]
+    }
+  ]
+}

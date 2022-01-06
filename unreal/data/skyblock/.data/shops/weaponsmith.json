@@ -23,23 +23,6 @@ give @p villager_spawn_egg{
 		{
 			Recipes:[
 				{
-					buyB:{
-						id:"knowledge_book",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"<Weaponsmith>\"}",
-								Lore:[
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"You'll need some strong weapons\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"to survive out in the wild!\"}",
-									"{\"italic\":false,\"color\":\"white\",\"text\":\"Lucky for you, I've got some!\"}"
-								]
-							}
-						}
-					},
-					maxUses:0
-				},
-				{
 					buy:{
 						id:"emerald",
 						Count:17
@@ -51,15 +34,14 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Undead Sword\"}",
 								Lore:[
+									"[\"\",{\"text\":\" \"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Undead\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]"
 								]
 							},
-							Enchantments:[
-								{id:"sharpness",lvl:12}
-							],
 							AttributeModifiers:[
-								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;941011704,360787613,230178741,12182078]}
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:5,Operation:0,UUID:[I;985409519,403253302,575782629,998070088]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;684961272,846201049,604752410,496819681]}
 							],
 							Name:"Undead Sword"
 						}
@@ -77,15 +59,14 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"End Sword\"}",
 								Lore:[
+									"[\"\",{\"text\":\" \"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Ender\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]"
 								]
 							},
-							Enchantments:[
-								{id:"sharpness",lvl:14}
-							],
 							AttributeModifiers:[
-								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;941011704,360787613,230178741,12182078]}
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:6,Operation:0,UUID:[I;263635626,569197502,847680450,906034241]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;732666889,781481416,404192695,534427835]}
 							],
 							Name:"End Sword"
 						}
@@ -103,15 +84,14 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Spider Sword\"}",
 								Lore:[
+									"[\"\",{\"text\":\" \"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Arthropods.\"}]"
 								]
 							},
-							Enchantments:[
-								{id:"sharpness",lvl:12}
-							],
 							AttributeModifiers:[
-								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;941011704,360787613,230178741,12182078]}
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:5,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
 							],
 							Name:"Spider Sword"
 						}
@@ -128,7 +108,12 @@ give @p villager_spawn_egg{
 						tag:{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Sword\"}"
-							}
+							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:6,Operation:0,UUID:[I;263635626,569197502,847680450,906034241]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;732666889,781481416,404192695,534427835]}
+							],
+							Name:"Diamond Sword"
 						}
 					}
 				},
@@ -172,6 +157,7 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Wither Bow\"}",
 								Lore:[
+									"[\"\",{\"text\":\" \"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Wither mobs.\"}]"
 								]
@@ -190,7 +176,7 @@ give @p villager_spawn_egg{
 						Count:36
 					},
 					sell:{
-						id:"diamond_sword",
+						id:"bow",
 						Count:1,
 						tag:{
 							display:{

@@ -1,39 +1,36 @@
 {
-	"type": "minecraft:block",
-	"pools": [
+	"type":"block",
+	"pools":[
 		{
-			"rolls": 1.0,
-			"bonus_rolls": 0.0,
-			"entries": [
+			"rolls":1,
+			"entries":[
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:sand"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:survives_explosion"
-				}
-			]
-		}
-	],
-	"functions":[
-		{
-			"function":"explosion_decay"
-		},
-		{
-			"function":"furnace_smelt",
-			"conditions": [
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"equipment":{
-							"mainhand":{
-								"nbt":"{Smelting_Touch:true}"
-							}
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"sand",
+							"conditions":[
+								{
+									"condition":"match_tool",
+									"predicate":{
+										"enchantments":[
+											{
+												"enchantment":"silk_touch",
+												"levels":{
+													"min":1
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:blocks/sand"
 						}
-					}
+					]
 				}
 			]
 		}
