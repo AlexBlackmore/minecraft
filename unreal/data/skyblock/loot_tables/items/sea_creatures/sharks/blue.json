@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:drowned_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Blue Shark","italic":false,"color":"red"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Blue Shark\",
+								Sea_Creature:true
+							}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Level 20 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"You spot a fin as blue as the","italic":false,"color":"gray"}],
+								["",{"text":"water it came from, it's a Blue","italic":false,"color":"gray"}],
+								["",{"text":"Shark.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,74 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:iron_sword",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Golem Sword","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Iron Punch ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Punch the ground, dealing","italic":false,"color":"gray"}],
+										["",{"text":"50","italic":false,"color":"red"},{"text":" ability damage to all mobs","italic":false,"color":"gray"}],
+										["",{"text":"in a ","italic":false,"color":"gray"},{"text":"5","italic":false,"color":"yellow"},{"text":" block radius. Damage","italic":false,"color":"gray"}],
+										["",{"text":"increases based on your current","italic":false,"color":"gray"}],
+										["",{"text":"XP","italic":false,"color":"aqua"},{"text":" level.","italic":false,"color":"gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"70 XP","italic":false,"color":"aqua"}],
+										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"3s","italic":false,"color":"green"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Goldem Sword\",
+										Ability:true
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":32
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":5,
+											"slot":"mainhand"
+										},
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":25,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

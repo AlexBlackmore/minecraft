@@ -1,0 +1,68 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:stick",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Ink Wand","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Ink Bomb ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Shoots an Ink Bomb in front of","italic":false,"color":"gray"}],
+										["",{"text":"you, dealing ","italic":false,"color":"gray"},{"text":"400","italic":false,"color":"red"},{"text":" ability damage","italic":false,"color":"gray"}],
+										["",{"text":"and inflicting ","italic":false,"color":"gray"},{"text":"Blindness","italic":false,"color":"#1F1F23"},{"text":"!","italic":false,"color":"gray"}],
+										["",{"text":"Damage increases based on your","italic":false,"color":"gray"}],
+										["",{"text":"current ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" level.","italic":false,"color":"gray"}],
+										["",{"text":"(Ability Damage: +1%/level)","italic":false,"color":"dark_gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"60 XP","italic":false,"color":"aqua"}],
+										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"30s","italic":false,"color":"green"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Ink Wand\",
+										Ability:true
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":52
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":18,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,38 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"The Fast","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;1604965204,2009287146,-1815911096,-511372272],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzdkNmQ0YzhiOWEyMTNlOTQzMWIzMTVkYzViYjg2YjJhMmQ2ZTRiOWM4MDYzODVmNmVmOWI3MzYxOTE0NTZjMCJ9fX0=\"}]}},
+								Name:\"The Fast\"
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Movement Speed",
+									"attribute":"generic.movement_speed",
+									"operation":"multiply_base",
+									"amount":4.0,
+									"slot":"head"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

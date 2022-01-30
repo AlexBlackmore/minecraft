@@ -22,7 +22,14 @@ execute as @p[level=4..,tag=ability,nbt={Inventory:[{Slot:100b,tag:{Name:"Tarant
 
 
 #SWORDS
-execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Midas' Sword"}},Inventory:[{Slot:-106b,tag:{Name:"Rare Enchanted Emerald"}}]}] run function skyblock:abilities/instant/greed
+execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Midas' Sword"}},Inventory:[{Slot:-106b,tag:{Name:"Enchanted Emerald Rare"}}]}] run function skyblock:abilities/instant/greed
+
+execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Raider Axe"}},Inventory:[{Slot:-106b,Count:40b,tag:{Name:"Enchanted Oak Log"}}]}] run function skyblock:abilities/instant/raider_axe_attack_damage
+execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Raider Axe"}},Inventory:[{Slot:-106b,Count:40b,tag:{Name:"Enchanted Spruce Log"}}]}] run function skyblock:abilities/instant/raider_axe_attack_damage
+execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Raider Axe"}},Inventory:[{Slot:-106b,Count:40b,tag:{Name:"Enchanted Birch Log"}}]}] run function skyblock:abilities/instant/raider_axe_attack_damage
+execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Raider Axe"}},Inventory:[{Slot:-106b,Count:40b,tag:{Name:"Enchanted Dark Oak Log"}}]}] run function skyblock:abilities/instant/raider_axe_attack_damage
+execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Raider Axe"}},Inventory:[{Slot:-106b,Count:40b,tag:{Name:"Enchanted Acacia Log"}}]}] run function skyblock:abilities/instant/raider_axe_attack_damage
+execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Raider Axe"}},Inventory:[{Slot:-106b,Count:40b,tag:{Name:"Enchanted Jungle Log"}}]}] run function skyblock:abilities/instant/raider_axe_attack_damage
 
 execute as @p[tag=ability,level=5..,nbt={SelectedItem:{tag:{Name:"Rogue Sword"}}}] run function skyblock:abilities/instant/speed_boost
 
@@ -32,6 +39,7 @@ execute as @p[tag=ability,level=5..,nbt={SelectedItem:{tag:{Name:"Aspect of the 
 execute as @p[tag=ability,level=5..,nbt={SelectedItem:{tag:{Name:"Aspect of the Void"}}}] run function skyblock:abilities/instant/instant_transmission
 
 execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Aspect of the Jerry"}}}] run function skyblock:abilities/instant/parley
+
 
 execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Scorpion Foil"}}}] run function skyblock:abilities/instant/heartstopper
 
@@ -43,35 +51,9 @@ execute as @p[tag=ability,level=4..,nbt={SelectedItem:{tag:{Name:"Dreadlord Swor
 
 execute as @p[tag=ability,level=8..,nbt={SelectedItem:{tag:{Name:"Edible Mace"}}}] run function skyblock:abilities/instant/me_smash_head
 
-
-execute as @p[tag=ability,level=5..,nbt={SelectedItem:{tag:{Name:"Frozen Scythe"}}}] run function skyblock:abilities/shoot_projectile
-execute if entity @p[tag=ability,level=5..,nbt={SelectedItem:{tag:{Name:"Frozen Scythe"}}}] run function skyblock:abilities/instant/ice_bolt
-xp add @p[level=5..,tag=ability,nbt={SelectedItem:{tag:{Name:"Frozen Scythe"}}}] -50 points
-
-tag @p[level=10..,tag=ability,nbt={SelectedItem:{tag:{Name:"Ember Rod"}}}] add fire_blast
-execute as @p[tag=fire_blast] run schedule function skyblock:abilities/shoot_projectile 1t append
-execute as @p[tag=fire_blast] run schedule function skyblock:abilities/shoot_projectile 5t append
-execute as @p[tag=fire_blast] run schedule function skyblock:abilities/shoot_projectile 9t append
-execute as @p[tag=fire_blast] run schedule function skyblock:abilities/instant/fire_blast_end 10t append
-effect give @p[tag=fire_blast] hunger 30
-xp add @p[tag=fire_blast] -150 points
-
-execute as @p[tag=ability,level=6..,nbt={SelectedItem:{tag:{Name:"Ink Wand"}}}] run function skyblock:abilities/shoot_projectile
-execute if entity @p[tag=ability,level=6..,nbt={SelectedItem:{tag:{Name:"Ink Wand"}}}] run function skyblock:abilities/instant/ink_bomb
-effect give @p[level=6..,tag=ability,nbt={SelectedItem:{tag:{Name:"Ink Wand"}}}] hunger 30
-xp add @p[level=6..,tag=ability,nbt={SelectedItem:{tag:{Name:"Ink Wand"}}}] -60 points
-
-execute as @p[tag=ability,level=8..,nbt={SelectedItem:{tag:{Name:"Bonzo's Staff"}}}] run function skyblock:abilities/shoot_projectile
-execute if entity @p[tag=ability,level=8..,nbt={SelectedItem:{tag:{Name:"Bonzo's Staff"}}}] run function skyblock:abilities/instant/showtime
-xp add @p[level=8..,tag=ability,nbt={SelectedItem:{tag:{Name:"Bonzo's Staff"}}}] -100 points
-
-execute as @p[tag=ability,level=14..,nbt={SelectedItem:{tag:{Name:"Spirit Sceptre"}}}] run function skyblock:abilities/shoot_projectile
-execute if entity @p[tag=ability,level=14..,nbt={SelectedItem:{tag:{Name:"Spirit Sceptre"}}}] run function skyblock:abilities/instant/guided_bat
-xp add @p[level=14..,tag=ability,nbt={SelectedItem:{tag:{Name:"Spirit Sceptre"}}}] -250 points
-
 #WANDS
-execute as @p[level=6..,tag=ability,nbt={SelectedItem:{tag:{Name:"Celeste Wand"}}}] run function skyblock:abilities/instant/lightning_strike
-execute as @p[level=9..,tag=ability,nbt={SelectedItem:{tag:{Name:"Starlight Wand"}}}] run function skyblock:abilities/instant/starfall
+execute as @p[level=5..,tag=ability,nbt={SelectedItem:{tag:{Name:"Celeste Wand"}}}] run function skyblock:abilities/instant/lightning_strike
+execute as @p[level=8..,tag=ability,nbt={SelectedItem:{tag:{Name:"Starlight Wand"}}}] run function skyblock:abilities/instant/starfall
 execute as @p[level=12..,tag=ability,nbt={SelectedItem:{tag:{Name:"Voodoo Doll"}}}] run function skyblock:abilities/instant/acupuncture
 
 execute as @p[level=6..,tag=ability,nbt={SelectedItem:{tag:{Name:"Wand of Healing"}}}] run function skyblock:abilities/instant/small_heal

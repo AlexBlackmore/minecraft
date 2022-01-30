@@ -1,0 +1,41 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:bow",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Savanna Bow","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"All damage dealth with this bow","italic":false,"color":"gray"}],
+								["",{"text":"is ","italic":false,"color":"gray"},{"text":"doubled","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Savanna Bow\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"power":2
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

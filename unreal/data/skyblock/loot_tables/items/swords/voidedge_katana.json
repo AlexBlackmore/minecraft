@@ -1,0 +1,77 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:diamond_sword",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Voidedge Katana","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Deals ","italic":false,"color":"gray"},{"text":"+150%","italic":false,"color":"green"},{"text":" damage to Endermen","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Ability: Soulcry ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Consumes an Enchanted Ender","italic":false,"color":"gray"}],
+										["",{"text":"Pearl from your off-hand. Grants","italic":false,"color":"gray"}],
+										["",{"text":"+200% Attack Damage","italic":false,"color":"blue"},{"text":" against","italic":false,"color":"gray"}],
+										["",{"text":"Enderman for ","italic":false,"color":"gray"},{"text":"4","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"200 XP","italic":false,"color":"aqua"}],
+										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"4s","italic":false,"color":"green"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Voidedge Katana\",
+										Ability:true,
+										Crit_Damage:20
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+20% Crit Damage","italic":false,"color":"blue"},
+										{"text":"+50 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":50
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":12,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

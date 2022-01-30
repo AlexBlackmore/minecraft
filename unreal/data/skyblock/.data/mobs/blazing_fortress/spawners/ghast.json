@@ -1,0 +1,25 @@
+setblock ~ ~ ~ spawner{
+	SpawnPotentials:[
+		{
+			weight:1,
+			data:{
+				entity:{
+					id:"minecraft:ghast",
+					CustomName:"{\"text\":\"Ghast\",\"color\":\"red\"}",
+					CustomNameVisible:true,
+					Health:66,
+					Attributes:[
+						{Name:"generic.max_health",Base:66},
+						{Name:"generic.attack_damage",Base:30}
+					]
+				},
+				custom_spawn_rules:{
+					block_light_limit:{
+						min_inclusive:0,
+						max_inclusive:15
+					}
+				}
+			}
+		}
+	]
+}

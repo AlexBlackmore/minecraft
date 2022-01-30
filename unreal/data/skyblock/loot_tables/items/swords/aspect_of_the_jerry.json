@@ -1,0 +1,54 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:wooden_sword",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Aspect of the Jerry","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Parley ","italic":false,"color":"gold"},{"text":"SNEAK","bold":true,"color":"yellow"}],
+								{"text":"Channel your inner Jerry.","italic":false,"color":"gray"},
+								["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"5s","italic":false,"color":"green"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Aspect of the Jerry\",
+								Ability:true
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"sharpness":1
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-2.4,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

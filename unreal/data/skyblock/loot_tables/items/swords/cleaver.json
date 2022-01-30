@@ -1,0 +1,63 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:golden_sword",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Cleaver","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Cleave ","italic":false,"color":"gold"}],
+								["",{"text":"Hitting a mob will also damage","italic":false,"color":"gray"}],
+								["",{"text":"all adjacent mobs within","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+								["",{"text":"3","italic":false,"color":"yellow"},{"text":" blocks for a portion of your","italic":false,"color":"gray"}],
+								["",{"text":"Attack Damage","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Cleaver\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"sharpness":15
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":2,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-2.4,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

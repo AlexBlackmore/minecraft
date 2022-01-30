@@ -1,0 +1,53 @@
+{
+*	6,	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:diamond_sword",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"End Sword","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Deals ","italic":false,"color":"gray"},{"text":"+100"%,"italic":false,"color":"green"},{"text":" damage to Ender","italic":false,"color":"gray"}],
+								{"text":"mobs.","italic":false,"color":"gray"},
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"End Sword\"
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":6,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-2.4,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

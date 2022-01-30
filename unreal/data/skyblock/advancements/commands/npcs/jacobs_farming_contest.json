@@ -1,0 +1,143 @@
+{
+	"parent":"skyblock:commands/npcs",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Jacob's Farming Contest",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"wheat":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"nbt":"{Name:\"Tightly-Tied Hay Bale\"}"
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jacob\\\"}\"}"
+				}
+			}
+		},
+		"potato":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"nbt":"{Name:\"Enchanted Baked Potato\"}"
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jacob\\\"}\"}"
+				}
+			}
+		},
+		"carrot":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"nbt":"{Name:\"Enchanted Golden Carrot\"}"
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jacob\\\"}\"}"
+				}
+			}
+		},
+		"melon":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"nbt":"{Name:\"Enchanted Melon\"}"
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jacob\\\"}\"}"
+				}
+			}
+		},
+		"pumpkin":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"nbt":"{Name:\"Polished Pumpkin\"}"
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jacob\\\"}\"}"
+				}
+			}
+		},
+		"sugar_cane":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"nbt":"{Name:\"Enchanted Sugar Cane\"}"
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jacob\\\"}\"}"
+				}
+			}
+		},
+		"cactus":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"nbt":"{Name:\"Enchanted Cactus\"}"
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jacob\\\"}\"}"
+				}
+			}
+		},
+		"red_mushroom":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"nbt":"{Name:\"Enchanted Red Mushroom Block\"}"
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jacob\\\"}\"}"
+				}
+			}
+		},	
+		"brown_mushroom":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"nbt":"{Name:\"Enchanted Brown Mushroom Block\"}"
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jacob\\\"}\"}"
+				}
+			}
+		},
+		"cocoa":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"nbt":"{Name:\"Enchanted Cookie\"}"
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jacob\\\"}\"}"
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"wheat",
+			"potato",
+			"carrot",
+			"melon",
+			"pumpkin",
+			"sugar_cane",
+			"cactus",
+			"red_mushroom",
+			"brown_mushroom",
+			"cocoa"
+		]
+	],
+	"rewards":{
+		"function":"skyblock:npcs/jacobs_farming_contest"
+	}
+}

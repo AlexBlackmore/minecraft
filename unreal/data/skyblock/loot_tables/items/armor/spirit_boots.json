@@ -1,0 +1,90 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_boots",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Spirit Boots","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Spirit Glide ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Allows you to fly around as a","italic":false,"color":"gray"}],
+										["",{"text":"Spirit for ","italic":false,"color":"gray"},{"text":"5","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"250 XP","italic":false,"color":"aqua"}],
+										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"60s","italic":false,"color":"green"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:12566463
+										},
+										HideFlags:64,
+										Name:\"Spirit Boots\",
+										Ability:true
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+50 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":30,
+											"slot":"feet"
+										},
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":10,
+											"slot":"feet"
+										},
+										{
+											"name":"Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":5,
+											"slot":"feet"
+										},
+										{
+											"name":"Speed",
+											"attribute":"generic.movement_speed",
+											"operation":"multiply_base",
+											"amount":0.25,
+											"slot":"feet"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

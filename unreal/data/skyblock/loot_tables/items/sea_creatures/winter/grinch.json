@@ -1,0 +1,42 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:drowned_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Grinch","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Grinch\",
+								Sea_Creature:true
+							}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Level 21 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"The Grinch stole Jerry's Gifts...","italic":false,"color":"gray"}],
+								["",{"text":"get them back!","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

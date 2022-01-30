@@ -1,0 +1,75 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:player_head",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Bonzo's Mask","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Ability: Clownin' Around","italic":false,"color":"gold"},
+										["",{"text":"Triggers after falling below","italic":false,"color":"gray"}],
+										["",{"text":"10% Health","italic":false,"color":"red"},{"text":", grants damage","italic":false,"color":"gray"}],
+										["",{"text":"immunity and ","italic":false,"color":"gray"},{"text":"+1 Attack Damage","italic":false,"color":"blue"}],
+										["",{"text":"for ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"green"},{"text":" seconds. The ","italic":false,"color":"gray"},{"text":"Attack Damage","italic":false,"color":"blue"}],
+										["",{"text":"bonus increases based on your","italic":false,"color":"gray"}],
+										["",{"text":"current ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" level.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										SkullOwner:{Id:[I;-549802992,-1697952551,-1743258890,-458584081],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI3MTZlY2JmNWI4ZGEwMGIwNWYzMTZlYzZhZjYxZThiZDAyODA1YjIxZWI4ZTQ0MDE1MTQ2OGRjNjU2NTQ5YyJ9fX0=\"}]}},
+										Name:\"Bonzo's Mask\",
+										Intelligence:100
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+100 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":20,
+											"slot":"head"
+										},
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":20,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,70 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:golden_helmet",
+							"quality":3,
+							"weight":1,
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Crown of Greed","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"A number of XP levels equal to","italic":false,"color":"gray"}],
+										["",{"text":"your current Attack Damage are","italic":false,"color":"gray"}],
+										["",{"text":"lost after every hit.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Crown of Greed\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Max Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":26,
+											"slot":"head"
+										},
+										{
+											"name":"Armor",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":18,
+											"slot":"head"
+										},
+										{
+											"name":"Luck",
+											"attribute":"generic.luck",
+											"operation":"addition",
+											"amount":4,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

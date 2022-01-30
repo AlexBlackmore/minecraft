@@ -1,0 +1,66 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:golden_sword",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Midas' Sword","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Greed ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Consumes ","italic":false,"color":"gray"},{"text":"10","italic":false,"color":"green"},{"text":" Rare Enchanted","italic":false,"color":"gray"}],
+										["",{"text":"Emeralds from your off-hand.","italic":false,"color":"gray"}],
+										["",{"text":"Permanently increases the stats","italic":false,"color":"gray"}],
+										["",{"text":"of this sword by ","italic":false,"color":"gray"},{"text":"+2 Sharpness","italic":false,"color":"dark_green"}],
+										["",{"text":"and ","italic":false,"color":"gray"},{"text":"+1 Attack Damage","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+										["",{"text":"(Max Sharpness: 108)","italic":false,"color":"dark_gray"}],
+										["",{"text":"(Max Attack Damage: 24)","italic":false,"color":"dark_gray"}],
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										HideFlags:2,
+										Name:\"Midas' Sword\",
+										Ability:true
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":60
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":0,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -10,7 +10,7 @@ give @p villager_spawn_egg{
 		NoAI:false,
 		VillagerData:{
 			level:5,
-			profession:"nitwit",
+			profession:"cartographer",
 			type:"plains"
 		},
 		Attributes:[
@@ -23,10 +23,33 @@ give @p villager_spawn_egg{
 		{
 			Recipes:[
 				{
-					buy:
-					{
+					buy:{
 						id:"emerald",
-						Count:17
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:7,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
 					},
 					sell:{
 						id:"written_book",

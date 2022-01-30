@@ -1,0 +1,27 @@
+{
+	"parent":"skyblock:quests/introduce_yourself",
+	"display":{
+		"icon":{
+			"item":"minecraft:paper"
+		},
+		"title":"Liam",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"liam":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Liam\\\"}\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"experience":10
+	}
+}

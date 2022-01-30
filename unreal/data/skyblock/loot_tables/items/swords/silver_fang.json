@@ -1,0 +1,49 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:ghast_tear",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Silver Fang","italic":false,"color":"yellow"}
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Silver Fang\"
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":40
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":0,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

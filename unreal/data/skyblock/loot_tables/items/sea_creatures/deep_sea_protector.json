@@ -1,0 +1,52 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:ghast_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Deep Sea Protector","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Level 60 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"You have awoken the Deep Sea","italic":false,"color":"gray"}],
+								["",{"text":"Protector, prepare for a battle!","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:iron_golem\",
+									CustomNameVisible:true,
+									Tags:[\"skyblock\",\"sea_creature\",\"deep_sea_protector\"],
+									AbsorptionAmount:38976,
+									Health:1024,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:1024},
+										{Name:\"generic.attack_damage\",Base:60}
+									],
+									DeathLootTable:\"skyblock:mobs/sea_creatures/deep_sea_protector\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

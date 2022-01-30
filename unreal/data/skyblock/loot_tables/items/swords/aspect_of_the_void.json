@@ -1,0 +1,64 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:diamond_shovel",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Aspect of the Void","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Instant Transmission ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Teleport you ","italic":false,"color":"gray"},{"text":"8","italic":false,"color":"yellow"},{"text":" blocks forward","italic":false,"color":"gray"}],
+										["",{"text":"and grants ","italic":false,"color":"gray"},{"text":"+50% Speed","italic":false,"color":"blue"},{"text":" for","italic":false,"color":"gray"}],
+										["",{"text":"3","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"45 XP","italic":false,"color":"aqua"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Aspect of the Void\",
+										Ability:true
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":48
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":20,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

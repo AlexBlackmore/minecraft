@@ -1,0 +1,39 @@
+{
+	"parent":"skyblock:commands/npcs",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Aspect of the Jerry",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"items":[
+						"minecraft:stick"
+					]
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jerry\\\"}\"}"
+				},
+				"player":{
+					"effects":{
+						"minecraft:hero_of_the_village":{
+							"amplifier":0
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/aspect_of_the_jerry"
+	}
+}

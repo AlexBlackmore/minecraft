@@ -1,0 +1,68 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:wooden_sword",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Scorpion Foil","italic":false,"color":"light_purple"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Deals ","italic":false,"color":"gray"},{"text":"+250%","italic":false,"color":"green"},{"text":" damage against","italic":false,"color":"gray"}],
+										["",{"text":"Arthropods.","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Ability: Heartstopper ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"Instant Health III","italic":false,"color":"#F82423"},{"text":" and a","italic":false,"color":"gray"}],
+										["",{"text":"25%","italic":false,"color":"green"},{"text":" chance to recieve","italic":false,"color":"gray"}],
+										["",{"text":"+250% Attack Damage","italic":false,"color":"blue"},{"text":" for your","italic":false,"color":"gray"}],
+										["",{"text":"next attack.","italic":false,"color":"gray"}],
+										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"5s","italic":false,"color":"green"}],
+										{"text":" "},
+										{"text":"EPIC","bold":true,"color":"light_purple"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Scorpion Foil\",
+										Ability:true
+									}"
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":40
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":20,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

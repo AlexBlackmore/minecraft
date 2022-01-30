@@ -1,0 +1,64 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:allium",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Spirit Sceptre","italic":false,"color":"gold"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Guided Bat ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Shoots an Spirit Bat in front of","italic":false,"color":"gray"}],
+										["",{"text":"you which explodes on impact,","italic":false,"color":"gray"}],
+										["",{"text":"dealing ","italic":false,"color":"gray"},{"text":"400","italic":false,"color":"red"},{"text":" ability damage to all mobs","italic":false,"color":"gray"}],
+										["",{"text":"within ","italic":false,"color":"gray"},{"text":"6","italic":false,"color":"yellow"},{"text":" blocks.","italic":false,"color":"gray"}],
+										["",{"text":"Damage increases based on your","italic":false,"color":"gray"}],
+										["",{"text":"current ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" level.","italic":false,"color":"gray"}],
+										["",{"text":"(Ability Damage: +0.2%/level)","italic":false,"color":"dark_gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"250 XP","italic":false,"color":"aqua"}],
+										{"text":" "},
+										{"text":"LEGENDARY","bold":true,"color":"gold"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Spirit Sceptre\",
+										Ability:true,
+										Intelligence:300
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+300 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":72
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

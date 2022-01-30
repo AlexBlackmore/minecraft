@@ -1,0 +1,67 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:leather_leggings",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Creeper Pants","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										{"text":"Ability: Detonate","italic":false,"color":"gold"},
+										{"text":"Causes an explosion when","italic":false,"color":"gray"},
+										["",{"text":"dropping below ","italic":false,"color":"gray"},{"text":"20% Health","italic":false,"color":"red"},{"text":",","italic":false,"color":"gray"}],
+										{"text":"damaging all surrounding mobs.","italic":false,"color":"gray"},
+										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"60s","italic":false,"color":"green"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										display:{
+											color:8054828
+										},
+										HideFlags:64,
+										Name:\"Creeper Pants\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":40,
+											"slot":"legs"
+										},
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":13,
+											"slot":"legs"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

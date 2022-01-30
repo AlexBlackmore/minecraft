@@ -1,0 +1,35 @@
+{
+	"parent":"skyblock:quests/first_harvest",
+	"display":{
+		"icon":{
+			"item":"minecraft:paper"
+		},
+		"title":"Farmer",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"farmer":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"count":{
+						"min":10
+					},
+					"items":[
+						"minecraft:wheat"
+					]
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Farmer\\\"}\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"experience":10
+	}
+}

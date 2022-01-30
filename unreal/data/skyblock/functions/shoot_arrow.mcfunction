@@ -57,7 +57,7 @@ scoreboard objectives remove piercing
 execute at @e[tag=calc] run execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Juju Shortbow"}}}] run tag @e[type=armor_stand,limit=1,sort=nearest] add juju_shortbow
 execute at @e[tag=calc] run kill @e[tag=projectile,tag=!juju_shortbow,limit=1,sort=nearest] 
 
-item modify entity @p[tag=bow] weapon.mainhand skyblock:damage
+execute as @p[tag=bow] run function skyblock:reduce_durability
 playsound minecraft:entity.arrow.shoot player @p[tag=bow]
 
 kill @e[tag=motion]

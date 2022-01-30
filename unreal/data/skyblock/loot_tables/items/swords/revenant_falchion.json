@@ -1,0 +1,66 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:diamond_sword",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Revenant Falchion","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Deals ","italic":false,"color":"gray"},{"text":"+150%","italic":false,"color":"green"},{"text":" damage to Zombies.","italic":false,"color":"gray"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Revenant Falchion\"
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+100 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":36
+									}
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Attack Damage",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":10,
+											"slot":"mainhand"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Green Jerry Box","italic":false,"color":"green"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-648893758,1632256637,-2009372069,-1171972020],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjdhZWQwMDZlODM5NWU5MmFmZGMwMDMyNDg0YWQ0ZWQ5MWU4MzEwM2VmZDI3MDQ2MTUzMGY1YTUyM2ZkOTlkNSJ9fX0=\"}]}},
+								Name:\"Green Jerry Box\",
+								Ability:true
+							}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Loot Chest","italic":false,"color":"blue"}],
+								["",{"text":"Obtained by killing mobs with","italic":false,"color":"gray"}],
+								["",{"text":"Hero of the Village.","italic":false,"color":"#44FF44"},{"text":".","italic":false,"color":"gray"}],
+								["",{"text":"Contains ","italic":false,"color":"gray"},{"text":"emeralds","italic":false,"color":"gold"},{"text":", ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"dark_aqua"},{"text":", and posh","italic":false,"color":"gray"}],
+								["",{"text":"jerry items","italic":false,"color":"light_purple"},{"text":".","italic":false,"color":"gray"}],
+								["",{"text":" "}],
+								["",{"text":"Sneak to open!","italic":false,"color":"yellow"}]
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

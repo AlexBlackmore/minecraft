@@ -1,0 +1,33 @@
+{
+	"parent":"skyblock:quests/timber/lumberjack",
+	"display":{
+		"icon":{
+			"item":"minecraft:paper"
+		},
+		"title":"Charlie",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"charlie":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"count":64,
+					"items":[
+						"minecraft:birch_log"
+					]
+				},
+				"entity":{
+					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Charlie\\\"}\"}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"experience":100
+	}
+}

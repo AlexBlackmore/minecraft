@@ -10,6 +10,10 @@
 			],
 			"functions":[
 				{
+					"function":"set_count",
+					"count":1
+				},
+				{
 					"function":"looting_enchant",
 					"count":{
 						"min":0,
@@ -24,7 +28,13 @@
 			"entries":[
 				{
 					"type":"empty",
-					"weight":9899
+					"weight":9649
+				},
+				{
+					"type":"item",
+					"name":"minecraft:diamond",
+					"quality":0,
+					"weight":250
 				},
 				{
 					"type":"minecraft:loot_table",

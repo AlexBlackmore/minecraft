@@ -1,0 +1,29 @@
+{
+	"parent":"skyblock:quests/woods_race/polished_pebble",
+	"display":{
+		"icon":{
+			"item":"minecraft:paper"
+		},
+		"title":"Hunter Knife",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"items":[
+					{
+						"nbt":"{\"Name\":\"Hunter Knife\"}"
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/woods_race/hunter_knife"
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:golden_leggings",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Leggings of the Stars","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"+1500 Intelligence","italic":false,"color":"blue"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Leggings of the Stars\",
+								Intelligence:1500
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Max Health",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":3000,
+									"slot":"head"
+								},
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":800,
+									"slot":"head"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

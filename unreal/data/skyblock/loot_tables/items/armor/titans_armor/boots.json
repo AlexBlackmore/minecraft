@@ -1,0 +1,60 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:diamond_boots",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Titan's Boots","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"+50 Intelligence","italic":false,"color":"blue"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Titan's Boots\",
+								Intelligence:50
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":2,
+									"slot":"feet"
+								},
+								{
+									"name":"Max Health",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":20,
+									"slot":"feet"
+								},
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":20,
+									"slot":"feet"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -4,42 +4,8 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"spider_eye"
-				}
-			],
-			"functions":[
-				{
-					"function":"looting_enchant",
-					"count":{
-						"min":0,
-						"max":1
-					}
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"item",
-					"name":"string"
-				}
-			],
-			"functions":[
-				{
-					"function":"set_count",
-					"count":{
-						"min":0,
-						"max":1
-					}
-				},
-				{
-					"function":"looting_enchant",
-					"count":{
-						"min":0,
-						"max":1
-					}
+					"type":"loot_table",
+					"name":"minecraft:entities/cave_spider"
 				}
 			]
 		},

@@ -1,77 +1,44 @@
 give @p villager_spawn_egg{
 	EntityTag:{
-		id:"minecraft:villager"
-		CustomName:"{\"text\":\"Plumber Joe\"}"
-		CustomNameVisible:true
-		PersistenceRequired:true
-		Silent:true
-		CanPickUpLoot:false
-		Willing:false
-		NoAI:false
-		VillagerData:
-		{
-			level:5
-			profession:"armorer"
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Plumber Joe\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"toolsmith",
 			type:"plains"
-		}
+		},
 		Attributes:[
 			{
-				Name:"generic.movementSpeed"
-				Base:"0f"
+				Name:"generic.movement_speed",
+				Base:0
 			}
-		]
+		],
 		Offers:
 		{
 			Recipes:[
 				{
-					buyB:
-					{
-						id:"writable_book"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"<Plumber Joe>\"\"italic\":false\"color\":\"white\"}"
-								Lore:[
-									"{\"text\":\"Water troubles? No problem!\"\"italic\":false\"color\":\"white\"}"
-								]
-							}
-							HideFlags:32
-						}
-					}
-					rewardExp:false
-					maxUses:0
-				}
-				{
 					buy:{
-						id:"emerald"
-						Count:1
-					}
+						id:"emerald",
+						Count:9
+					},
 					sell:{
-						id:"sponge"
-						Count:1
+						id:"sponge",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Plumber's Sponge\"\"italic\":false\"color\":\"yellow\"}"
-								Lore:[
-									"{\"text\":\"Instructions:\"\"italic\":false\"color\":\"gray\"}"
-									"[\"\"{\"text\":\" 1. \"\"italic\":false\"color\":\"yellow\"}{\"text\":\"Place on water.\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\" 2. \"\"italic\":false\"color\":\"yellow\"}{\"text\":\"Drains other water.\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\" 3. \"\"italic\":false\"color\":\"yellow\"}{\"text\":\"Double-bill client.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"Thanks Plumber Joe!\"\"italic\":false\"color\":\"dark_gray\"}"
-									"\" \""
-									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Plumber's Sponge\"}"
+							},
+							Name:"Plumber's Sponge"
 						}
 					}
-					rewardExp:false
-					maxUses:0
 				}
 			]
 		}
-	}
-	display:{
-		Name:"{\"text\":\"Plumber Joe\"}"
 	}
 }

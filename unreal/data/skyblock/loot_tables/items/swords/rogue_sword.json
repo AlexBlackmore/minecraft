@@ -1,0 +1,57 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:golden_sword",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Rogue Sword","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Speed Boost ","italic":false,"color":"gold"},{"text":"SNEAK","bold":true,"color":"yellow"}],
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+20% Speed","italic":false,"color":"blue"},{"text":" for","italic":false,"color":"gray"}],
+								["",{"text":"30","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+								["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"50 XP","italic":false,"color":"dark_aqua"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Rogue Sword\",
+								Ability:true
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":3,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-2.4,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

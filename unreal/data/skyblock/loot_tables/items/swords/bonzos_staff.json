@@ -1,0 +1,63 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:blaze_rod",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Bonzo's Staff","italic":false,"color":"aqua"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Ability: Showtime ","italic":false,"color":"gold"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+										["",{"text":"Shoots balloons that create a","italic":false,"color":"gray"}],
+										["",{"text":"large explosion on impact,","italic":false,"color":"gray"}],
+										["",{"text":"dealing ","italic":false,"color":"gray"},{"text":"200","italic":false,"color":"red"},{"text":" ability damage.","italic":false,"color":"gray"}],
+										["",{"text":"Damage increases based on your","italic":false,"color":"gray"}],
+										["",{"text":"current ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" level.","italic":false,"color":"gray"}],
+										["",{"text":"(Ability Damage: +0.2%/level)","italic":false,"color":"dark_gray"}],
+										["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"100 XP","italic":false,"color":"aqua"}],
+										{"text":" "},
+										{"text":"RARE","bold":true,"color":"aqua"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										Name:\"Bonzo's Staff\",
+										Ability:true,
+										Intelligence:250
+									}"
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":"+250 Intelligence","italic":false,"color":"blue"}
+									],
+									"replace":false
+								},
+								{
+									"function":"minecraft:set_enchantments",
+									"enchantments":{
+										"sharpness":64
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

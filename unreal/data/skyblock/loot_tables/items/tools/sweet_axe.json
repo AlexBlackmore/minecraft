@@ -1,0 +1,54 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:iron_axe",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Sweet Axe","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"italic":false,"color":"gray","text":"Chopping logs with this axe has"}],
+								["",{"italic":false,"color":"gray","text":"a "},{"italic":false,"color":"green","text":"20%"},{"italic":false,"color":"gray","text":" chance to drop an apple."}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Sweet Axe\"
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":8,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-3.1,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

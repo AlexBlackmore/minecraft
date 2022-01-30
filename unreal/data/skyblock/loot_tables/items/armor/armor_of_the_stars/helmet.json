@@ -1,0 +1,53 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:golden_helmet",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Helmet of the Stars","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"+1000 Intelligence","italic":false,"color":"blue"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Helmet of the Stars\",
+								Intelligence:1000
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Max Health",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":2000,
+									"slot":"head"
+								},
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":600,
+									"slot":"head"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

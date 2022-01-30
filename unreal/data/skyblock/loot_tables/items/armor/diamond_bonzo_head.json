@@ -1,0 +1,110 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"item",
+							"name":"minecraft:player_head",
+							"functions":[
+								{
+									"function":"minecraft:set_name",
+									"name":{"text":"Diamond Bonzo Head","italic":false,"color":"red"}
+								},
+								{
+									"function":"minecraft:set_lore",
+									"lore":[
+										{"text":" "},
+										["",{"text":"Obtained from killing ","italic":false,"color":"gray"},{"text":"Bonzo","italic":false,"color":"red"},{"text":" lots","italic":false,"color":"gray"}],
+										["",{"text":"of times. Grants ","italic":false,"color":"gray"},{"text":"2x","italic":false,"color":"green"},{"text":" stats while","italic":false,"color":"gray"}],
+										["",{"text":"worn.","italic":false,"color":"gray"}],
+										{"text":" "},
+										["",{"text":"Involved in the dark arts due to","italic":false,"color":"dark_gray"}],
+										["",{"text":"his parents' insistence.","italic":false,"color":"dark_gray"}],
+										["",{"text":"Originally worked as a Circus","italic":false,"color":"dark_gray"}],
+										["",{"text":"Clown.","italic":false,"color":"dark_gray"}],
+										{"text":" "},
+										{"text":"SPECIAL","bold":true,"color":"red"},
+										{"text":" "}
+									]
+								},
+								{
+									"function":"minecraft:set_nbt",
+									"tag":"{
+										SkullOwner:{Id:[I;-1231606147,394282662,-1449513199,-1030480174],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmFlMjAxYjA2ZjEwYjViNGViMDEzMGVjZDdkNTlmYWM3ZTRlMDEzYmJkNGY1ZDVkMDQ2MzU4MGZiMDU0OWE4YiJ9fX0=\"}]}},
+										Name:\"Diamond Bonzo Head\"
+									}"
+								},
+								{
+									"function":"minecraft:set_attributes",
+									"modifiers":[
+										{
+											"name":"Health",
+											"attribute":"generic.max_health",
+											"operation":"addition",
+											"amount":10,
+											"slot":"head"
+										},
+										{
+											"name":"Defense",
+											"attribute":"generic.armor",
+											"operation":"addition",
+											"amount":4,
+											"slot":"head"
+										},
+										{
+											"name":"Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"addition",
+											"amount":2,
+											"slot":"head"
+										},
+										{
+											"name":"2x Health",
+											"attribute":"generic.max_health",
+											"operation":"multiply_base",
+											"amount":1,
+											"slot":"head"
+										},
+										{
+											"name":"2x Defense",
+											"attribute":"generic.armor",
+											"operation":"multiply_base",
+											"amount":1,
+											"slot":"head"
+										},
+										{
+											"name":"2x True Defense",
+											"attribute":"generic.armor_toughness",
+											"operation":"multiply_base",
+											"amount":1,
+											"slot":"head"
+										},
+										{
+											"name":"2x Strength",
+											"attribute":"generic.attack_damage",
+											"operation":"multiply_base",
+											"amount":1,
+											"slot":"head"
+										},
+										{
+											"name":"2x Speed",
+											"attribute":"generic.movement_speed",
+											"operation":"multiply_base",
+											"amount":1,
+											"slot":"head"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
