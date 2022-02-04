@@ -32,5 +32,5 @@ execute if entity @e[tag=rng,scores={random=231..}] run tellraw @s ["",{"text":"
 kill @e[tag=rng]
 advancement revoke @s only skyblock:commands/npcs/woods_race
 
-tp @p -386 89 51
+tp @s -386 89 51
 execute at @s run summon experience_bottle ~ ~ ~

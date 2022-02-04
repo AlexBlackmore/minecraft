@@ -1,0 +1,55 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_chestplate",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Lapis Armor Chestplate","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								{"text":"Each piece of this armor grants","italic":false,"color":"gray"},
+								["",{"text":"a ","italic":false,"color":"gray"},{"text":"+50%","italic":false,"color":"green"},{"text":" chance for any ores mined","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"}],
+								["",{"text":"to drop an ","italic":false,"color":"gray"},{"text":"experience bottle","italic":false,"color":"yellow"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "},
+								{"text":"Full Set Bonus: Health","italic":false,"color":"gold"},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+12 Max Health","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									color:255
+								},
+								HideFlags:64,
+								Name:\"Lapis Armor Chestplate\"
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":8,
+									"slot":"chest"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

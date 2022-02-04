@@ -75,10 +75,21 @@
 					"weight":25,
 					"conditions": [
 						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:dwarven_mines"
-							}
+							"condition":"alternative",
+							"terms":[
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:deep_caverns"
+									}
+								},
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:dwarven_mines"
+									}
+								}
+							]
 						}
 					]
 				}

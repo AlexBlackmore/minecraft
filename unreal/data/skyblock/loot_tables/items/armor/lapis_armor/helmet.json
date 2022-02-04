@@ -1,0 +1,52 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Lapis Armor Helmet","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								{"text":"Each piece of this armor grants","italic":false,"color":"gray"},
+								["",{"text":"a ","italic":false,"color":"gray"},{"text":"+50%","italic":false,"color":"green"},{"text":" chance for any ores mined","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"}],
+								["",{"text":"to drop an ","italic":false,"color":"gray"},{"text":"experience bottle","italic":false,"color":"yellow"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "},
+								{"text":"Full Set Bonus: Health","italic":false,"color":"gold"},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+12 Max Health","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-1893701261,-849854009,-1344276501,-1574668202],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODI0YzZmZjE3MTRlYjJjM2I4NDRkNDZkMmU1ZWEyZjI2ZDI3M2EzM2VhYWE3NDRhYmY2NDViMDYwYjQ3ZDcifX19\"}]}},
+								Name:\"Lapis Armor Helmet\"
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":5,
+									"slot":"head"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

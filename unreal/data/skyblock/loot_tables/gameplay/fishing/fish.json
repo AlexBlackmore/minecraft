@@ -78,10 +78,21 @@
 					"weight":168,
 					"conditions": [
 						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:dwarven_mines"
-							}
+							"condition":"alternative",
+							"terms":[
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:deep_caverns"
+									}
+								},
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:dwarven_mines"
+									}
+								}
+							]
 						}
 					]
 				},
@@ -130,10 +141,21 @@
 					"weight":120,
 					"conditions": [
 						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:dwarven_mines"
-							}
+							"condition":"alternative",
+							"terms":[
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:deep_caverns"
+									}
+								},
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:dwarven_mines"
+									}
+								}
+							]
 						}
 					]
 				},
@@ -156,10 +178,21 @@
 					"weight":35,
 					"conditions": [
 						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:dwarven_mines"
-							}
+							"condition":"alternative",
+							"terms":[
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:deep_caverns"
+									}
+								},
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:dwarven_mines"
+									}
+								}
+							]
 						}
 					]
 				}
