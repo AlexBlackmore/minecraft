@@ -1,4 +1,4 @@
-execute at @p[tag=bonus_damage] run tag @e[tag=!target,type=#skyblock:hostile,limit=1,sort=random] add bouncy
+execute at @p[tag=bonus_damage] run tag @e[tag=!target,type=#minecraft:hostile,limit=1,sort=random] add bouncy
 
 execute as @p[tag=bonus_damage] run execute store result score @s attack_damage run attribute @s minecraft:generic.attack_damage get
 
@@ -12,7 +12,7 @@ execute if entity @e[tag=bouncy] run tellraw @p[tag=bonus_damage] ["",{"text":"[
 
 tag @e[tag=bouncy] add bounced
 tag @e[tag=bounced] remove bouncy
-execute if entity @p[tag=bonus_damage,tag=bouncy_arrow,predicate=skyblock:random_chance50] run tag @e[tag=!bounced,type=#skyblock:hostile,limit=1,sort=random] add bouncy
+execute if entity @p[tag=bonus_damage,tag=bouncy_arrow,predicate=skyblock:random_chance50] run tag @e[tag=!bounced,type=#minecraft:hostile,limit=1,sort=random] add bouncy
 tag @e[tag=bounced] remove bounced
 
 
@@ -29,7 +29,7 @@ execute if entity @e[tag=bouncy] run tellraw @p[tag=bonus_damage] ["",{"text":"[
 
 tag @e[tag=bouncy] add bounced
 tag @e[tag=bounced] remove bouncy
-execute if entity @p[tag=bonus_damage,tag=bouncy_arrow,predicate=skyblock:random_chance50] run tag @e[tag=!bounced,type=#skyblock:hostile,limit=1,sort=random] add bouncy
+execute if entity @p[tag=bonus_damage,tag=bouncy_arrow,predicate=skyblock:random_chance50] run tag @e[tag=!bounced,type=#minecraft:hostile,limit=1,sort=random] add bouncy
 tag @e[tag=bounced] remove bounced
 
 
@@ -46,7 +46,7 @@ execute if entity @e[tag=bouncy] run tellraw @p[tag=bonus_damage] ["",{"text":"[
 
 tag @e[tag=bouncy] add bounced
 tag @e[tag=bounced] remove bouncy
-execute if entity @p[tag=bonus_damage,tag=bouncy_arrow,predicate=skyblock:random_chance50] run tag @e[tag=!bounced,type=#skyblock:hostile,limit=1,sort=random] add bouncy
+execute if entity @p[tag=bonus_damage,tag=bouncy_arrow,predicate=skyblock:random_chance50] run tag @e[tag=!bounced,type=#minecraft:hostile,limit=1,sort=random] add bouncy
 tag @e[tag=bounced] remove bounced
 
 

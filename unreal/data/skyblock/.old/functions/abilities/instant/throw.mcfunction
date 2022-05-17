@@ -9,7 +9,7 @@ execute at @p[tag=bonus_damage] run summon minecraft:armor_stand ^ ^ ^7 {NoGravi
 execute at @p[tag=bonus_damage] run summon minecraft:armor_stand ^ ^ ^8 {NoGravity:true,Tags:["thrown_axe"]}
 execute at @p[tag=bonus_damage] run summon minecraft:armor_stand ^ ^ ^9 {NoGravity:true,Tags:["thrown_axe"]}
 
-execute at @e[tag=thrown_axe] run tag @e[type=#skyblock:hostile,distance=0..1] add throw
+execute at @e[tag=thrown_axe] run tag @e[type=#minecraft:hostile,distance=0..1] add throw
 execute at @e[tag=thrown_axe] run scoreboard players add @e[tag=throw,distance=0..1] dummy 10
 
 kill @e[tag=thrown_axe]

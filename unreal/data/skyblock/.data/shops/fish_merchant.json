@@ -2,6 +2,7 @@ give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
 		CustomName:"{\"text\":\"Fish Merchant\"}",
+		Tags:["fish_merchant"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -38,13 +39,17 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Magnet\"}]"
 								]
 							},
+							Enchantments:[
+								{
+									id:"sharpness",
+									lvl:1
+								}
+							],
 							AttributeModifiers:[
 							  {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:1,Operation:0,UUID:[I;720568979,416988963,90833466,556116712]}
 							],
-							Enchantments:[
-								{id:"sharpness",lvl:3}
-							],
 							Name:"Fishing Rod",
+							Rarity:0,
 							Magnet:1
 						}
 					}

@@ -2,6 +2,7 @@ give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
 		CustomName:"{\"text\":\"Leo\"}",
+		Tags:["leo"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -10,7 +11,7 @@ give @p villager_spawn_egg{
 		NoAI:false,
 		VillagerData:{
 			level:5,
-			profession:"butcher",
+			profession:"none",
 			type:"plains"
 		},
 		Attributes:[

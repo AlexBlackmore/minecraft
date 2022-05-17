@@ -2,6 +2,7 @@ give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
 		CustomName:"{\"text\":\"Anita\"}",
+		Tags:["anita"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -50,6 +51,7 @@ give @p villager_spawn_egg{
 							],
 							HideFlags:1,
 							Name:"InfiniDirt Wand",
+							Rarity:1,
 							Ability:true
 						}
 					}
@@ -82,6 +84,7 @@ give @p villager_spawn_egg{
 							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
 							],
 							Name:"Hoe of Great Tilling",
+							Rarity:1,
 							Ability:true
 						}
 					}
@@ -114,6 +117,7 @@ give @p villager_spawn_egg{
 							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
 							],
 							Name:"Hoe of Greater Tilling",
+							Rarity:2,
 							Ability:true
 						}
 					}
@@ -144,6 +148,7 @@ give @p villager_spawn_egg{
 								]
 							},
 							Name:"Basket of Seeds",
+							Rarity:3,
 							Ability:true
 						}
 					}
@@ -174,6 +179,7 @@ give @p villager_spawn_egg{
 								]
 							},
 							Name:"Nether Wart Pouch",
+							Rarity:2,
 							Ability:true
 						}
 					}
@@ -205,7 +211,8 @@ give @p villager_spawn_egg{
 							],
 							HideFlags:6,
 							Unbreakable:true,
-							Name:"Mathematical Hoe Blueprint"
+							Name:"Mathematical Hoe Blueprint",
+							Rarity:0
 						}
 					}
 				},
@@ -236,7 +243,8 @@ give @p villager_spawn_egg{
 							AttributeModifiers:[
 							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
 							],
-							Name:"Cocoa Chopper"
+							Name:"Cocoa Chopper",
+							Rarity:3
 						}
 					}
 				},
@@ -274,7 +282,8 @@ give @p villager_spawn_egg{
 							AttributeModifiers:[
 							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
 							],
-							Name:"Melon Dicer"
+							Name:"Melon Dicer",
+							Rarity:3
 						}
 					}
 				},
@@ -312,7 +321,8 @@ give @p villager_spawn_egg{
 							AttributeModifiers:[
 							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
 							],
-							Name:"Pumpkin Dicer"
+							Name:"Pumpkin Dicer",
+							Rarity:3
 						}
 					}
 				},
@@ -343,7 +353,8 @@ give @p villager_spawn_egg{
 							AttributeModifiers:[
 							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
 							],
-							Name:"Fungi Cutter"
+							Name:"Fungi Cutter",
+							Rarity:2
 						}
 					}
 				},
@@ -374,7 +385,8 @@ give @p villager_spawn_egg{
 							AttributeModifiers:[
 							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
 							],
-							Name:"Cactus Knife"
+							Name:"Cactus Knife",
+							Rarity:3
 						}
 					}
 				}

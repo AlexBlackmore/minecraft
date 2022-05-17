@@ -1,0 +1,71 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_leggings",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Heat Leggings","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								{"text":"Full Set Bonus: Heat Resistance","italic":false,"color":"gold"},
+								["",{"text":"Grants permanent ","italic":false,"color":"gray"},{"text":"Fire Resistance","italic":false,"color":"#E49A3A"}],
+								["",{"text":"while in the ","italic":false,"color":"gray"},{"text":"Nether","italic":false,"color":"red"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Full Set Bonus: Haste II","italic":false,"color":"gold"}],
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+40% Mining Speed","italic":false,"color":"blue"},{"text":" and","italic":false,"color":"gray"}],
+								["",{"text":"+20% Attack Speed","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									color:11776947
+								},
+								HideFlags:64,
+								Name:\"Heat Leggings\",
+								Rarity:2
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Max Health",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":6,
+									"slot":"legs"
+								},
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":6,
+									"slot":"legs"
+								},
+								{
+									"name":"Luck",
+									"attribute":"generic.luck",
+									"operation":"addition",
+									"amount":1,
+									"slot":"legs"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

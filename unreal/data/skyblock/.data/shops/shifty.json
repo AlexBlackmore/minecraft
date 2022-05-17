@@ -1,125 +1,142 @@
 give @p villager_spawn_egg{
 	EntityTag:{
-		id:"minecraft:villager"
-		CustomName:"{\"text\":\"Shifty\"}"
-		CustomNameVisible:true
-		PersistenceRequired:true
-		Silent:true
-		CanPickUpLoot:false
-		Willing:false
-		NoAI:false
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Shifty\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
 		VillagerData:{
-			level:5
-			profession:"cleric"
-			type:"swamp"
-		}
+			level:5,
+			profession:"cleric",
+			type:"plains"
+		},
 		Attributes:[
-			{Name:"generic.movement_speed"Base:0.0}
-		]
-		Offers:{
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
 			Recipes:[
 				{
 					buy:{
-						id:"emerald"
-						Count:20
-					}
-					sell:{
-						id:"potion"
-						Count:1
+						id:"emerald",
+						Count:2,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Tutti-Frutti Flavored Poison\"\"italic\":false\"color\":\"white\"}"
-								Lore:[
-									"\" \""
-									"[\"\"{\"text\":\"When Applied:\"\"italic\":false}]"
-									"[\"\"{\"text\":\"+5% Ranged Damage\"\"italic\":false\"color\":\"blue\"}]"
-									"\" \""
-									"{\"text\":\"COMMON\"\"bold\":true\"color\":\"white\"}"
-								]
-							}
-							Potion:"empty"
-							CustomPotionColor:1773658
-						}
-					}
-					rewardExp:false
-					maxUses:2147483647
-				}
-				{
-					buy:{
-						id:"emerald"
-						Count:64
-					}
-					buyB:{
-						id:"emerald"
-						Count:16
-					}
-					sell:{
-						id:"potion"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"Dctr. Paper\"\"italic\":false\"color\":\"yellow\"}"
-								Lore:[
-									"\" \""
-									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
-								]
-							}
-							CustomPotionEffects:[
-								{Id:22Amplifier:3Duration:9600}
-							]
-							Potion:"empty"
-							CustomPotionColor:1773658
-						}
-					}
-					rewardExp:false
-					maxUses:2147483647
-				}
-				{
-					buy:{
-						id:"emerald"
-						Count:3
-						tag:{
-							display:{
-								Name:"{\"text\":\"Enchanted Emerald\"\"italic\":false\"color\":\"yellow\"}"
-								Lore:[
-									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
 							Enchantments:[
-								{id:"unbreaking"lvl:1}
-							]
-							HideFlags:1
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
 						}
-					}
+					},
 					buyB:{
-						id:"emerald"
-						Count:8
-					}
+						id:"emerald",
+						Count:39
+					},
 					sell:{
-						id:"potion"
-						Count:1
+						id:"potion",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Slayer Energy Drink\"\"italic\":false\"color\":\"aqua\"}"
-								Lore:[
-									"\" \""
-									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Tutti-Frutti Flavored Poison\"}"
+							},
 							CustomPotionEffects:[
-								{Id:26Amplifier:14Duration:9600}
-							]
-							Potion:"empty"
-							CustomPotionColor:1773658
+								{
+									Id:5,
+									Amplifier:0,
+									Duration:48000
+								}
+							],
+							CustomPotionColor:10499464,
+							Name:"Tutti-Frutti Flavored Poison"
 						}
 					}
-					rewardExp:false
-					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:10,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:27
+					},
+					sell:{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Dctr. Paper\"}"
+							},
+							CustomPotionEffects:[
+								{
+									Id:22,
+									Amplifier:3,
+									Duration:48000
+								}
+							],
+							CustomPotionColor:3227140,
+							Name:"Dctr. Paper"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:26,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:3
+					},
+					sell:{
+						id:"potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Slayer Energy Drink\"}"
+							},
+							CustomPotionEffects:[
+								{
+									Id:26,
+									Amplifier:9,
+									Duration:48000
+								}
+							],
+							CustomPotionColor:10822502,
+							Name:"Slayer Energy Drink"
+						}
+					}
 				}
 			]
 		}
-	}
-	display:{
-		Name:"\"Shifty\""
 	}
 }

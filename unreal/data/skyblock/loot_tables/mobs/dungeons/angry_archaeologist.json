@@ -11,10 +11,31 @@
 			"functions":[
 				{
 					"function":"set_count",
-					"count":{
-						"min":3,
-						"max":5
-					}
+					"count":3
+				},
+				{
+					"function":"set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"random_chance_with_looting",
+							"chance":0.7,
+							"looting_multiplier":0.01
+						}
+					]
+				},
+				{
+					"function":"set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"random_chance_with_looting",
+							"chance":0.5,
+							"looting_multiplier":0.01
+						}
+					]
 				}
 			]
 		},
@@ -27,13 +48,19 @@
 			"entries":[
 				{
 					"type":"empty",
-					"weight":998
+					"weight":997
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/reforge_stones/diamond_atom",
 					"weight":2,
 					"quality":2
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/reforge_stones/beating_heart",
+					"weight":1,
+					"quality":4
 				}
 			]
 		}

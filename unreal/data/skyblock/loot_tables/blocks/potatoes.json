@@ -2,8 +2,8 @@
 	"type":"block",
 	"pools":[
 		{	
-			"rolls":1.0,
-			"bonus_rolls":0.0,
+			"rolls":1,
+			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"item",
@@ -12,8 +12,8 @@
 			]
 		},
 		{
-			"rolls":1.0,
-			"bonus_rolls":0.0,
+			"rolls":1,
+			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"item",
@@ -63,8 +63,8 @@
 			]
 		},
 		{
-			"rolls":1.0,
-			"bonus_rolls":0.0,
+			"rolls":1,
+			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"item",
@@ -92,14 +92,23 @@
 			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"minecraft:blocks/potatoes",
+					"type":"item",
+					"name":"potato",
 					"weight":1
 				},
 				{
 					"type":"loot_table",
 					"name":"minecraft:empty",
-					"weight":99
+					"weight":19
+				}
+			],
+			"conditions":[
+				{
+					"condition":"block_state_property",
+					"block":"potatoes",
+					"properties":{
+						"age":"7"
+					}
 				}
 			]
 		}

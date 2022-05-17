@@ -1,5 +1,5 @@
 tag @p[advancements={skyblock:commands/abilities/deflect=true}] add attacker
-execute at @p[tag=attacker] run tag @e[limit=1,sort=nearest,type=#skyblock:hostile] add target
+execute at @p[tag=attacker] run tag @e[limit=1,sort=nearest,type=#minecraft:hostile] add target
 effect give @e[tag=target] glowing
 
 scoreboard objectives add damage dummy "Damage"

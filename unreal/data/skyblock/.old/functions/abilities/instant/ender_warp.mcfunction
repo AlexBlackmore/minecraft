@@ -6,7 +6,7 @@ scoreboard objectives add ender_warp dummy "Ender Warp Damage"
 
 execute as @e[tag=ender_warp] run execute store result score @s health run data get entity @s Health
 execute as @e[tag=ender_warp] run execute store result score @s ender_warp run data get entity @s Health 0.1
-execute as @e[tag=ender_warp,type=#skyblock:hostile] run tellraw @p[tag=bonus_damage] ["",{"text":"[Ender Warp: +","italic":true,"color":"gray"},{"score":{"name":"@s","objective":"ender_warp"},"italic":true,"color":"gray"},{"text":" damage]","italic":true,"color":"gray"}]
+execute as @e[tag=ender_warp,type=#minecraft:hostile] run tellraw @p[tag=bonus_damage] ["",{"text":"[Ender Warp: +","italic":true,"color":"gray"},{"score":{"name":"@s","objective":"ender_warp"},"italic":true,"color":"gray"},{"text":" damage]","italic":true,"color":"gray"}]
 execute as @e[tag=ender_warp] run execute if score @s health < @s ender_warp run kill @s
 execute as @e[tag=ender_warp] run scoreboard players operation @s health -= @s ender_warp
 execute as @e[tag=ender_warp] run execute store result entity @s Health float 1 run scoreboard players get @s health

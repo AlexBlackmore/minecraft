@@ -60,23 +60,13 @@ execute as @a[advancements={skyblock:pets/giraffe=true}] run scoreboard players 
 
 
 #Critical Enchantment
-execute as @a run execute store result score @s dummy run data get entity @s SelectedItem.tag.Critical
-execute as @a[scores={dummy=1}] run scoreboard players add @s crit_chance 10
-execute as @a[scores={dummy=2}] run scoreboard players add @s crit_chance 20
-execute as @a[scores={dummy=3}] run scoreboard players add @s crit_chance 30
-execute as @a[scores={dummy=4}] run scoreboard players add @s crit_chance 40
-execute as @a[scores={dummy=5}] run scoreboard players add @s crit_chance 50
-execute as @a[scores={dummy=6}] run scoreboard players add @s crit_chance 60
-execute as @a[scores={dummy=7}] run scoreboard players add @s crit_chance 70
+execute as @a run execute store result score @s dummy run data get entity @s SelectedItem.tag.Critical 10
+execute as @a run scoreboard players operation @s crit_chance += @s dummy
 
 
 #Overload Enchantment
 execute as @a run execute store result score @s dummy run data get entity @s SelectedItem.tag.Overload
-execute as @a[scores={dummy=1}] run scoreboard players add @s crit_chance 1
-execute as @a[scores={dummy=2}] run scoreboard players add @s crit_chance 2
-execute as @a[scores={dummy=3}] run scoreboard players add @s crit_chance 3
-execute as @a[scores={dummy=4}] run scoreboard players add @s crit_chance 4
-execute as @a[scores={dummy=5}] run scoreboard players add @s crit_chance 5
+execute as @a run scoreboard players operation @s crit_chance += @s dummy
 
 
 #Slayer
@@ -191,11 +181,7 @@ execute as @a[tag=spirit4] run scoreboard players add @s crit_damage 40
 
 #Overload Enchantment
 execute as @a run execute store result score @s dummy run data get entity @s SelectedItem.tag.Overload
-execute as @a[scores={dummy=1}] run scoreboard players add @s crit_damage 1
-execute as @a[scores={dummy=2}] run scoreboard players add @s crit_damage 2
-execute as @a[scores={dummy=3}] run scoreboard players add @s crit_damage 3
-execute as @a[scores={dummy=4}] run scoreboard players add @s crit_damage 4
-execute as @a[scores={dummy=5}] run scoreboard players add @s crit_damage 5
+execute as @a run scoreboard players operation @s crit_damage += @s dummy
 
 execute as @a[scores={dummy=1,crit_chance=100..}] run scoreboard players add @s crit_damage 10
 execute as @a[scores={dummy=2,crit_chance=100..}] run scoreboard players add @s crit_damage 20

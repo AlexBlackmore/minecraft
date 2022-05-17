@@ -3,7 +3,7 @@ tag @e[tag=ink_bomb_damage] remove ink_bomb_projectile
 execute at @e[tag=ink_bomb_damage] run execute as @e[tag=ink_bomb_damage] run tp @s @e[nbt={HurtTime:10s},limit=1,sort=nearest,type=!player]
 
 
-execute at @e[tag=ink_bomb_damage] run tag @e[type=#skyblock:hostile,distance=0..1] add ink_bomb_target
+execute at @e[tag=ink_bomb_damage] run tag @e[type=#minecraft:hostile,distance=0..1] add ink_bomb_target
 execute at @e[tag=ink_bomb_damage] run tag @p[nbt={SelectedItem:{tag:{Name:"Ink Wand"}}}] add ink_bomb_player
 effect give @e[tag=ink_bomb_target] glowing 1
 effect give @e[tag=ink_bomb_target] blindness 5

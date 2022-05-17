@@ -1,0 +1,37 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:oak_sign",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Zistonian Battlesign","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"Level 1"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Zistonian Battlesign 1\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"knockback":2
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

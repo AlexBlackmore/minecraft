@@ -2,15 +2,13 @@ give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
 		CustomName:"{\"text\":\"Vanessa\"}",
+		Tags:["vanessa"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
 		CanPickUpLoot:false,
 		Willing:false,
 		NoAI:false,
-		Tags:[
-			"vanessa"
-		],
 		VillagerData:{
 			level:5,
 			profession:"fisherman",

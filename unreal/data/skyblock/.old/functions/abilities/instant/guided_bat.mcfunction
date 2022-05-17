@@ -3,7 +3,7 @@ tag @e[tag=guided_bat_damage] remove guided_bat_projectile
 execute at @e[tag=guided_bat_damage] run execute as @e[tag=guided_bat_damage] run tp @s @e[nbt={HurtTime:10s},limit=1,sort=nearest,type=!player]
 
 
-execute at @e[tag=guided_bat_damage] run tag @e[type=#skyblock:hostile,distance=0..6] add guided_bat_target
+execute at @e[tag=guided_bat_damage] run tag @e[type=#minecraft:hostile,distance=0..6] add guided_bat_target
 execute at @e[tag=guided_bat_damage] run tag @p[nbt={SelectedItem:{tag:{Name:"Spirit Sceptre"}}}] add guided_bat_player
 execute at @e[tag=guided_bat_damage] run particle minecraft:explosion_emitter
 effect give @e[tag=guided_bat_target] glowing

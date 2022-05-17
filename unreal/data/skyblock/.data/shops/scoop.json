@@ -2,6 +2,7 @@ give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
 		CustomName:"{\"text\":\"Scoop\"}",
+		Tags:["scoop"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -56,8 +57,13 @@ give @p villager_spawn_egg{
 									"[\"\",{\"text\":\" \"}]"
 								]
 							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:4.5,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
 							Name:"Snow Shovel",
-							Ability:true
+							Ability:true,
+							Rarity:2
 						}
 					}
 				}

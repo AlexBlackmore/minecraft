@@ -2,6 +2,7 @@ give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
 		CustomName:"{\"text\":\"Mine Merchant\"}",
+		Tags:["mine_merchant"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -74,7 +75,8 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:2,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
 							],
-							Name:"Rookie Pickaxe"
+							Name:"Rookie Pickaxe",
+							Rarity:0
 						}
 					}
 				},
@@ -102,6 +104,7 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
 							],
 							Name:"Promising Pickaxe",
+							Rarity:1,
 							Promising:0
 						}
 					}
@@ -123,7 +126,8 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:1,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
 							],
-							Name:"Golden Pickaxe"
+							Name:"Golden Pickaxe",
+							Rarity:0
 						}
 					}
 				},
@@ -189,13 +193,12 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Fruitful\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" reforge to a pickaxe.\"}]",
 									"[\"\",{\"text\":\" \"}]",
 									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Armor\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+0.6-2.4 Armor\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Intelligence\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+0.6 Luck\"}]"
 								]
 							},
-							Name:"Onyx",
-							Reforge:"Fruitful"
+							Name:"Onyx"
 						}
 					}
 				}

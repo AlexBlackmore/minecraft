@@ -2,6 +2,7 @@ give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
 		CustomName:"{\"text\":\"Weaponsmith\"}",
+		Tags:["weaponsmith"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -44,7 +45,8 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:5,Operation:0,UUID:[I;985409519,403253302,575782629,998070088]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;684961272,846201049,604752410,496819681]}
 							],
-							Name:"Undead Sword"
+							Name:"Undead Sword",
+							Rarity:0
 						}
 					}
 				},
@@ -70,7 +72,8 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:6,Operation:0,UUID:[I;263635626,569197502,847680450,906034241]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;732666889,781481416,404192695,534427835]}
 							],
-							Name:"End Sword"
+							Name:"End Sword",
+							Rarity:1
 						}
 					}
 				},
@@ -96,7 +99,8 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:5,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
 							],
-							Name:"Spider Sword"
+							Name:"Spider Sword",
+							Rarity:0
 						}
 					}
 				},
@@ -116,7 +120,8 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:6,Operation:0,UUID:[I;263635626,569197502,847680450,906034241]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;732666889,781481416,404192695,534427835]}
 							],
-							Name:"Diamond Sword"
+							Name:"Diamond Sword",
+							Rarity:1
 						}
 					}
 				},
@@ -163,7 +168,8 @@ give @p villager_spawn_egg{
 									"[\"\",{\"text\":\" \"}]"
 								]
 							},
-							Name:"Wither Bow"
+							Name:"Wither Bow",
+							Rarity:1
 						}
 					}
 				},
@@ -187,6 +193,7 @@ give @p villager_spawn_egg{
 								{id:"power",lvl:1}
 							],
 							Name:"Artisinal Shortbow",
+							Rarity:2,
 							Shortbow:true
 						}
 					}

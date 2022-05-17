@@ -3,7 +3,7 @@ tag @e[tag=showtime_damage] remove showtime_projectile
 execute at @e[tag=showtime_damage] run execute as @e[tag=showtime_damage] run tp @s @e[nbt={HurtTime:10s},limit=1,sort=nearest,type=!player]
 
 
-execute at @e[tag=showtime_damage] run tag @e[type=#skyblock:hostile,distance=0..2] add showtime_target
+execute at @e[tag=showtime_damage] run tag @e[type=#minecraft:hostile,distance=0..2] add showtime_target
 execute at @e[tag=showtime_damage] run tag @p[nbt={SelectedItem:{tag:{Name:"Bonzo's Staff"}}}] add showtime_player
 effect give @e[tag=showtime_target] glowing 1
 

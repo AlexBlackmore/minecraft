@@ -65,14 +65,23 @@
 			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"minecraft:blocks/cocoa",
+					"type":"minecraft:item",
+					"name":"minecraft:cocoa_beans",
 					"weight":1
 				},
 				{
 					"type":"loot_table",
 					"name":"minecraft:empty",
-					"weight":99
+					"weight":19
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:block_state_property",
+					"block":"minecraft:cocoa",
+					"properties":{
+						"age":"2"
+					}
 				}
 			]
 		}

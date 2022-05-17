@@ -1,5 +1,5 @@
 tag @p[advancements={skyblock:commands/instant/deflect=true}] add cactus_armor
-execute at @p[tag=cactus_armor] run tag @e[limit=1,sort=nearest,type=#skyblock:hostile] add deflect
+execute at @p[tag=cactus_armor] run tag @e[limit=1,sort=nearest,type=#minecraft:hostile] add deflect
 effect give @e[tag=deflect] glowing
 
 scoreboard objectives add health dummy "Health"

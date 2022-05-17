@@ -1,4 +1,4 @@
-execute at @e[tag=juju_shortbow,tag=target] run tag @e[type=#skyblock:hostile,tag=!target,distance=0..3,limit=3,sort=random] add juju_shortbow
+execute at @e[tag=juju_shortbow,tag=target] run tag @e[type=#minecraft:hostile,tag=!target,distance=0..3,limit=3,sort=random] add juju_shortbow
 
 execute as @p[tag=bonus_damage] run execute store result score @s attack_damage run attribute @s minecraft:generic.attack_damage get
 tellraw @p[tag=bonus_damage] ["",{"text":"[Juju Shortbow: ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"attack_damage"},"italic":true,"color":"gray"},{"text":" damage]","italic":true,"color":"gray"}]

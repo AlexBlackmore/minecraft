@@ -1,7 +1,7 @@
 tag @p[advancements={skyblock:commands/bonus_damage=true}] add bonus_damage
 execute at @p[tag=bonus_damage] run tag @e[nbt={HurtTime:10s},limit=1,sort=nearest,type=!player] add target
 execute unless entity @e[tag=target] run tag @e[tag=projectile,type=armor_stand,limit=1,sort=nearest] add target
-execute at @e[tag=target,type=#skyblock:hostile] run tag @e[tag=projectile,type=armor_stand,distance=0..4] add target
+execute at @e[tag=target,type=#minecraft:hostile] run tag @e[tag=projectile,type=armor_stand,distance=0..4] add target
 execute at @e[tag=shot,tag=projectile,nbt={inGround:1b}] run tag @e[tag=projectile,type=armor_stand,distance=0..4] add target
 tag @e[tag=shot,nbt={inGround:1b}] remove shot
 
@@ -17,20 +17,20 @@ scoreboard players set @p[tag=bonus_damage] damage 0
 
 
 #Swords
-execute if entity @e[tag=target,type=#skyblock:arthropods] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Spider Sword"}}}] multiplier 100
+execute if entity @e[tag=target,type=#minecraft:arthropods] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Spider Sword"}}}] multiplier 100
 
 execute if entity @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Cleaver"}}}] run function skyblock:abilities/instant/cleave
 execute if entity @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Super Cleaver"}}}] run function skyblock:abilities/instant/cleave
 execute if entity @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Hyper Cleaver"}}}] run function skyblock:abilities/instant/cleave
 
-execute if entity @e[tag=target,type=#skyblock:arthropods] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Scorpion Foil"}}}] multiplier 250
+execute if entity @e[tag=target,type=#minecraft:arthropods] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Scorpion Foil"}}}] multiplier 250
 attribute @p[tag=heartstopper] minecraft:generic.attack_damage modifier remove 33-22-41-31-5
 tellraw @p[tag=heartstopper] {"text":"[Heartstopper: -250% Attack Damage]","italic":true,"color":"gray"}
 tag @p[tag=heartstopper] remove heartstopper
 
 scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Prismarine Blade"}}},predicate=skyblock:in_water] multiplier 200
 
-execute if entity @e[tag=target,type=#skyblock:ender] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"End Sword"}}}] multiplier 100
+execute if entity @e[tag=target,type=#minecraft:ender] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"End Sword"}}}] multiplier 100
 
 execute if entity @e[tag=target,type=enderman] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Voidwalker Katana"}}}] multiplier 100
 execute if entity @e[tag=target,type=enderman] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Voidedge Katana"}}}] multiplier 150
@@ -41,10 +41,10 @@ execute if entity @e[tag=target,type=enderman] run scoreboard players add @p[tag
 execute if entity @e[tag=target,type=enderman] run scoreboard players add @p[tag=bonus_damage,tag=soulcry,nbt={SelectedItem:{tag:{Name:"Vorpal Katana"}}}] multiplier 500
 execute if entity @e[tag=target,type=enderman] run scoreboard players add @p[tag=bonus_damage,tag=soulcry,nbt={SelectedItem:{tag:{Name:"Atomsplit Katana"}}}] multiplier 650
 
-execute if entity @e[tag=target,type=#skyblock:undead] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Undead Sword"}}}] multiplier 100
-execute if entity @e[tag=target,type=#skyblock:zombies] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Revenant Falchion"}}}] multiplier 150
-execute if entity @e[tag=target,type=#skyblock:zombies] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Reaper Falchion"}}}] multiplier 200
-execute if entity @e[tag=target,type=#skyblock:zombies] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Axe of the Shredded"}}}] multiplier 250
+execute if entity @e[tag=target,type=#minecraft:undead] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Undead Sword"}}}] multiplier 100
+execute if entity @e[tag=target,type=#minecraft:zombies] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Revenant Falchion"}}}] multiplier 150
+execute if entity @e[tag=target,type=#minecraft:zombies] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Reaper Falchion"}}}] multiplier 200
+execute if entity @e[tag=target,type=#minecraft:zombies] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Axe of the Shredded"}}}] multiplier 250
 
 execute if entity @p[tag=bonus_damage,predicate=skyblock:sneaking,nbt={SelectedItem:{tag:{Name:"Axe of the Shredded"}}}] run function skyblock:abilities/instant/throw
 execute as @p[tag=bonus_damage,predicate=!skyblock:sneaking,nbt={SelectedItem:{tag:{Name:"Axe of the Shredded"}}}] run execute if data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:vanishing_curse"}] run item modify entity @s weapon.mainhand skyblock:remove_vanishing_curse
@@ -59,7 +59,7 @@ effect give @p[tag=heal] instant_health 1 1
 tellraw @p[tag=heal] {"text":"[Axe of the Shredded: +Instant Health II]","italic":true,"color":"gray"}
 tag @p[tag=heal] remove heal
 
-execute if entity @e[tag=target,type=#skyblock:undead] run execute if entity @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Spirit Sword"}}}] run function skyblock:abilities/spirit_damage
+execute if entity @e[tag=target,type=#minecraft:undead] run execute if entity @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Spirit Sword"}}}] run function skyblock:abilities/spirit_damage
 
 execute if entity @e[tag=target,type=wither] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Necron's Blade"}}}] multiplier 50
 execute if entity @e[tag=target,type=wither] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Hyperion"}}}] multiplier 50
@@ -71,7 +71,7 @@ execute if entity @e[tag=target,type=wolf] run attribute @p[tag=bonus_damage,nbt
 
 attribute @p[tag=bonus_damage] minecraft:generic.attack_damage modifier remove 9-65-15-20-96
 tellraw @p[tag=bonus_damage,tag=me_smash_head] {"text":"[ME SMASH HEAD: -100% Attack Damage","italic":true,"color":"gray"}
-execute if entity @p[tag=bonus_damage,tag=me_smash_head] run effect give @e[tag=target,type=#skyblock:animals] weakness 30 6
+execute if entity @p[tag=bonus_damage,tag=me_smash_head] run effect give @e[tag=target,type=#minecraft:animals] weakness 30 6
 tag @p[tag=bonus_damage] remove me_smash_head
 
 execute as @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Aspect of the End"}},Inventory:[{Slot:100b,tag:{Name:"Strong Dragon Boots"}},{Slot:101b,tag:{Name:"Strong Dragon Leggings"}},{Slot:102b,tag:{Name:"Strong Dragon Chestplate"}},{Slot:103b,tag:{Name:"Strong Dragon Helmet"}}]}] run scoreboard players add @s damage 1500
@@ -84,11 +84,11 @@ tag @p[tag=emerald_blade] remove emerald_blade
 
 
 #Bows
-execute if entity @e[tag=target,type=#skyblock:wither] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Wither Bow"}}}] multiplier 100
+execute if entity @e[tag=target,type=#minecraft:wither] run scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Wither Bow"}}}] multiplier 100
 
 execute as @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Savanna Bow"}}}] run scoreboard players add @s multiplier 100
 
-execute if entity @e[tag=target,type=#skyblock:aquatic] run tag @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Prismarine Bow"}},Inventory:[{Slot:-106b,id:"minecraft:prismarine_shard"}]}] add prismarine_bow
+execute if entity @e[tag=target,type=#minecraft:aquatic] run tag @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Prismarine Bow"}},Inventory:[{Slot:-106b,id:"minecraft:prismarine_shard"}]}] add prismarine_bow
 scoreboard players add @p[tag=prismarine_bow] multiplier 300
 item modify entity @p[tag=prismarine_bow] weapon.offhand skyblock:subtract_item
 tag @p[tag=prismarine_bow] remove prismarine_bow
@@ -101,9 +101,9 @@ execute if entity @e[tag=target,tag=juju_shortbow] run function skyblock:abiliti
 execute if entity @p[tag=bonus_damage,predicate=skyblock:sneaking,level=10..,nbt={SelectedItem:{tag:{Name:"Scorpion Bow"}}}] run function skyblock:abilities/instant/stinger
 
 
-execute if entity @e[tag=target,type=#skyblock:undead] run tag @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Undead Bow"}}}] add undead_bow
-execute if entity @e[tag=target,type=#skyblock:undead] run tag @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Super Undead Bow"}}}] add undead_bow
-execute if entity @e[tag=target,type=#skyblock:undead] run tag @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Death Bow"}}}] add undead_bow
+execute if entity @e[tag=target,type=#minecraft:undead] run tag @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Undead Bow"}}}] add undead_bow
+execute if entity @e[tag=target,type=#minecraft:undead] run tag @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Super Undead Bow"}}}] add undead_bow
+execute if entity @e[tag=target,type=#minecraft:undead] run tag @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Death Bow"}}}] add undead_bow
 scoreboard players add @p[tag=undead_bow] multiplier 100
 tag @p[tag=undead_bow] remove undead_bow
 
@@ -118,14 +118,14 @@ tag @p[tag=magma_bow] remove magma_bow
 
 scoreboard players add @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Soulstealer Bow"}}}] multiplier 100
 
-execute if entity @e[tag=target,type=#skyblock:cube] run tag @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Slime Bow"}},Inventory:[{Slot:-106b,id:"minecraft:slime_ball"}]}] add slime_bow
+execute if entity @e[tag=target,type=#minecraft:cube] run tag @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Slime Bow"}},Inventory:[{Slot:-106b,id:"minecraft:slime_ball"}]}] add slime_bow
 scoreboard players add @p[tag=slime_bow] multiplier 400
 item modify entity @p[tag=slime_bow] weapon.offhand skyblock:subtract_item
 tag @p[tag=slime_bow] remove slime_bow
 
 execute if entity @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Spirit Bow"}}}] run effect give @e[tag=target] glowing 5
 
-execute if entity @e[tag=target,type=#skyblock:undead] run execute if entity @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Spirit Bow"}}}] run function skyblock:abilities/spirit_damage
+execute if entity @e[tag=target,type=#minecraft:undead] run execute if entity @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Spirit Bow"}}}] run function skyblock:abilities/spirit_damage
 
 
 tag @p[tag=bonus_damage,nbt={SelectedItem:{tag:{Name:"Last Breath"}}}] add last_breath
@@ -162,11 +162,11 @@ tag @p[tag=nansorb_arrow] remove nansorb_arrow
 
 
 #Enchantments
-execute if data entity @p[tag=bonus_damage] SelectedItem.tag.Cubism run execute if entity @e[tag=target,type=#skyblock:cube] run function skyblock:enchantments/cubism
+execute if data entity @p[tag=bonus_damage] SelectedItem.tag.Cubism run execute if entity @e[tag=target,type=#minecraft:cube] run function skyblock:enchantments/cubism
 
 execute if data entity @p[tag=bonus_damage] SelectedItem.tag.Dragon_Hunter run execute if entity @e[tag=target,type=ender_dragon] run function skyblock:enchantments/dragon_hunter
 
-execute if data entity @p[tag=bonus_damage] SelectedItem.tag.Ender_Slayer run execute if entity @e[tag=target,type=#skyblock:ender] run function skyblock:enchantments/ender_slayer
+execute if data entity @p[tag=bonus_damage] SelectedItem.tag.Ender_Slayer run execute if entity @e[tag=target,type=#minecraft:ender] run function skyblock:enchantments/ender_slayer
 
 execute if data entity @p[tag=bonus_damage] SelectedItem.tag.Execute run function skyblock:enchantments/execute
 
@@ -174,7 +174,7 @@ execute if data entity @p[tag=bonus_damage] SelectedItem.tag.First_Strike run ex
 
 execute if data entity @p[tag=bonus_damage] SelectedItem.tag.Giant_Killer run function skyblock:enchantments/giant_killer
 
-execute if data entity @p[tag=bonus_damage] SelectedItem.tag.Impaling run execute if entity @e[tag=target,type=#skyblock:aquatic] run function skyblock:enchantments/impaling
+execute if data entity @p[tag=bonus_damage] SelectedItem.tag.Impaling run execute if entity @e[tag=target,type=#minecraft:aquatic] run function skyblock:enchantments/impaling
 
 execute if data entity @p[tag=bonus_damage] SelectedItem.tag.Life_Steal run function skyblock:enchantments/life_steal
 

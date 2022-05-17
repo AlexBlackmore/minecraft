@@ -1,4 +1,4 @@
-execute at @p[tag=spirit_sword] run tag @e[type=#skyblock:hostile,distance=0..4] add spirit_bomb
+execute at @p[tag=spirit_sword] run tag @e[type=#minecraft:hostile,distance=0..4] add spirit_bomb
 
 scoreboard objectives add xp_level dummy "XP Level"
 scoreboard objectives add health dummy "Health"

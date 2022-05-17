@@ -38,6 +38,12 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Smelting Touch\"}]"
 								]
 							},
+							AttributeModifiers:[
+							  {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:3,Operation:0,UUID:[I;933773407,324528439,830661938,401291934]},
+							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;834099701,602951814,935931630,267016683]}
+							],
+							Name:"Iron Pickaxe",
+							Rarity:0,
 							Smelting_Touch:true
 						}
 					}
@@ -69,7 +75,8 @@ give @p villager_spawn_egg{
 							AttributeModifiers:[
 							  {Slot:"head",AttributeName:"generic.armor",Name:"Armor",Amount:2.4,Operation:0,UUID:[I;152320651,595767322,449176475,625640546]}
 							],
-							Name:"Chainmail Helmet"
+							Name:"Chainmail Helmet",
+							Rarity:1
 						}
 					}
 				},
@@ -89,7 +96,8 @@ give @p villager_spawn_egg{
 							AttributeModifiers:[
 							  {Slot:"chest",AttributeName:"generic.armor",Name:"Armor",Amount:6,Operation:0,UUID:[I;160068627,212924053,704488500,873731856]}
 							],
-							Name:"Chainmail Chestplate"
+							Name:"Chainmail Chestplate",
+							Rarity:1
 						}
 					}
 				},
@@ -109,7 +117,8 @@ give @p villager_spawn_egg{
 							AttributeModifiers:[
 							  {Slot:"legs",AttributeName:"generic.armor",Name:"Armor",Amount:4,Operation:0,UUID:[I;784918952,96631970,897220843,359792637]}
 							],
-							Name:"Chainmail Leggings"
+							Name:"Chainmail Leggings",
+							Rarity:1
 						}
 					}
 				},
@@ -128,7 +137,8 @@ give @p villager_spawn_egg{
 							AttributeModifiers:[
 							  {Slot:"feet",AttributeName:"generic.armor",Name:"Armor",Amount:1.4,Operation:0,UUID:[I;998405001,804390455,722567098,179914747]}
 							],
-							Name:"Chainmail Boots"
+							Name:"Chainmail Boots",
+							Rarity:1
 						}
 					}
 				}

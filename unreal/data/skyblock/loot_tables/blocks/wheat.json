@@ -83,21 +83,25 @@
 			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"minecraft:blocks/wheat",
+					"type":"item",
+					"name":"wheat",
 					"weight":1
 				},
 				{
 					"type":"loot_table",
 					"name":"minecraft:empty",
-					"weight":99
+					"weight":19
+				}
+			],
+			"conditions":[
+				{
+					"condition":"block_state_property",
+					"block":"wheat",
+					"properties":{
+						"age":"7"
+					}
 				}
 			]
-		}
-	],
-	"functions":[
-		{
-			"function":"explosion_decay"
 		}
 	]
 }

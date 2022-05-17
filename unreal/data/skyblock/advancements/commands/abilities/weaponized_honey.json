@@ -1,0 +1,41 @@
+{
+	"parent":"skyblock:commands/abilities",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Weaponized Honey",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":false,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:entity_hurt_player",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"player":{
+								"advancements":{
+									"skyblock:pets/bee/legendary":true
+								}
+							}
+						}
+					},
+					{
+						"condition":"random_chance",
+						"chance":0.25
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:abilities/instant/weaponized_honey"
+	}
+}

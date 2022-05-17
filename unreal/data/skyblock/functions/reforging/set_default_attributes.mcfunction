@@ -72,3 +72,26 @@ tag @s[nbt={SelectedItem:{id:"minecraft:netherite_boots"}}] add boots
 
 item modify entity @s[tag=mainhand] weapon.mainhand skyblock:reforging/set_default_attributes/mainhand
 item modify entity @s[tag=mainhand] weapon.mainhand skyblock:reforging/set_default_attributes/set_nbt
+
+item modify entity @s[tag=offhand] weapon.mainhand skyblock:reforging/set_default_attributes/offhand
+item modify entity @s[tag=offhand] weapon.mainhand skyblock:reforging/set_default_attributes/set_nbt
+
+item modify entity @s[tag=head] weapon.mainhand skyblock:reforging/set_default_attributes/head
+item modify entity @s[tag=head] weapon.mainhand skyblock:reforging/set_default_attributes/set_nbt
+
+item modify entity @s[tag=chest] weapon.mainhand skyblock:reforging/set_default_attributes/chest
+item modify entity @s[tag=chest] weapon.mainhand skyblock:reforging/set_default_attributes/set_nbt
+
+item modify entity @s[tag=legs] weapon.mainhand skyblock:reforging/set_default_attributes/legs
+item modify entity @s[tag=legs] weapon.mainhand skyblock:reforging/set_default_attributes/set_nbt
+
+item modify entity @s[tag=feet] weapon.mainhand skyblock:reforging/set_default_attributes/feet
+item modify entity @s[tag=feet] weapon.mainhand skyblock:reforging/set_default_attributes/set_nbt
+
+
+tag @s[tag=mainhand] remove mainhand
+tag @s[tag=offhand] remove offhand
+tag @s[tag=head] remove head
+tag @s[tag=chest] remove chest
+tag @s[tag=legs] remove legs
+tag @s[tag=feet] remove feet

@@ -3,7 +3,7 @@ tag @e[tag=dreadlord_damage] remove dreadlord_projectile
 execute at @e[tag=dreadlord_damage] run execute as @e[tag=dreadlord_damage] run tp @s @e[nbt={HurtTime:10s},limit=1,sort=nearest,type=!player]
 
 
-execute at @e[tag=dreadlord_damage] run tag @e[type=#skyblock:hostile,distance=0..1] add dreadlord_target
+execute at @e[tag=dreadlord_damage] run tag @e[type=#minecraft:hostile,distance=0..1] add dreadlord_target
 execute at @e[tag=dreadlord_damage] run tag @p[nbt={SelectedItem:{tag:{Name:"Dreadlord Sword"}}}] add dreadlord_player
 effect give @e[tag=dreadlord_target] glowing 1
 

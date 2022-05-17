@@ -95,6 +95,9 @@ item modify entity @s[nbt={SelectedItem:{id:"minecraft:diamond_pickaxe"}}] weapo
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:diamond_axe"}}] weapon.mainhand skyblock:default/diamond/set_attributes_axe
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:diamond_axe"}}] weapon.mainhand skyblock:default/diamond/set_nbt_axe
 
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] weapon.mainhand skyblock:default/diamond/set_attributes_hoe
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] weapon.mainhand skyblock:default/diamond/set_nbt_hoe
+
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:diamond_sword"}}] weapon.mainhand skyblock:default/diamond/set_attributes_sword
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:diamond_sword"}}] weapon.mainhand skyblock:default/diamond/set_nbt_sword
 
@@ -119,6 +122,9 @@ item modify entity @s[nbt={SelectedItem:{id:"minecraft:netherite_pickaxe"}}] wea
 
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:netherite_axe"}}] weapon.mainhand skyblock:default/netherite/set_attributes_axe
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:netherite_axe"}}] weapon.mainhand skyblock:default/netherite/set_nbt_axe
+
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:netherite_hoe"}}] weapon.mainhand skyblock:default/netherite/set_attributes_hoe
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:netherite_hoe"}}] weapon.mainhand skyblock:default/netherite/set_nbt_hoe
 
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:netherite_sword"}}] weapon.mainhand skyblock:default/netherite/set_attributes_sword
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:netherite_sword"}}] weapon.mainhand skyblock:default/netherite/set_nbt_sword
@@ -162,11 +168,18 @@ item modify entity @s[nbt={SelectedItem:{id:"minecraft:chainmail_boots"}}] weapo
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:chainmail_boots"}}] weapon.mainhand skyblock:default/chainmail/set_nbt_boots
 
 
-item modify entity @s[nbt={SelectedItem:{id:"minecraft:turtle_helmet"}}] weapon.mainhand skyblock:default/turtle_helmet/set_attributes
-item modify entity @s[nbt={SelectedItem:{id:"minecraft:turtle_helmet"}}] weapon.mainhand skyblock:default/turtle_helmet/set_nbt
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:turtle_helmet"}}] weapon.mainhand skyblock:default/turtle_helmet/set_attributes_turtle_helmet
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:turtle_helmet"}}] weapon.mainhand skyblock:default/turtle_helmet/set_nbt_turtle_helmet
 
-item modify entity @s[nbt={SelectedItem:{id:"minecraft:trident"}}] weapon.mainhand skyblock:default/trident/set_attributes
-item modify entity @s[nbt={SelectedItem:{id:"minecraft:trident"}}] weapon.mainhand skyblock:default/trident/set_nbt
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:trident"}}] weapon.mainhand skyblock:default/trident/set_attributes_trident
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:trident"}}] weapon.mainhand skyblock:default/trident/set_nbt_trident
+
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:bow"}}] weapon.mainhand skyblock:default/bow/set_nbt_bow
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:crossbow"}}] weapon.mainhand skyblock:default/crossbow/set_nbt_crossbow
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:shield"}}] weapon.mainhand skyblock:default/shield/set_nbt_shield
+
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:fishing_rod"}}] weapon.mainhand skyblock:default/fishing_rod/set_attributes_fishing_rod
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:fishing_rod"}}] weapon.mainhand skyblock:default/fishing_rod/set_nbt_fishing_rod
 
 item modify entity @s[nbt={SelectedItem:{tag:{Rarity:0}}}] weapon.mainhand skyblock:default/set_name_common
 item modify entity @s[nbt={SelectedItem:{tag:{Rarity:1}}}] weapon.mainhand skyblock:default/set_name_uncommon
