@@ -7,117 +7,37 @@
 					"type":"item",
 					"name":"cod",
 					"quality":0,
-					"weight":168
+					"weight":60
 				},
 				{
 					"type":"item",
-					"name":"ice",
+					"name":"salmon",
 					"quality":0,
-					"weight":168,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:winter_island"
-							}
-						}
-					]
+					"weight":25
 				},
 				{
 					"type":"item",
-					"name":"packed_ice",
+					"name":"pufferfish",
 					"quality":0,
-					"weight":168,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:winter_island"
-							}
-						}
-					]
-				},
-				{
-					"type":"item",
-					"name":"snowball",
-					"quality":0,
-					"weight":168,
-					"functions":[
-						{
-							"function":"set_count",
-							"count":8
-						}
-					],
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:winter_island"
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/hunk_of_ice",
-					"quality":0,
-					"weight":168,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:winter_island"
-							}
-						}
-					]
-				},
-				{
-					"type":"item",
-					"name":"blaze_powder",
-					"quality":0,
-					"weight":168,
-					"conditions": [
-						{
-							"condition":"alternative",
-							"terms":[
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:deep_caverns"
-									}
-								},
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:dwarven_mines"
-									}
-								}
-							]
-						}
-					]
+					"weight":13
 				},
 				{
 					"type":"item",
 					"name":"clay_ball",
 					"quality":0,
-					"weight":140,
-					"conditions": [
-						{
-							"condition":"inverted",
-							"term":{
-								"condition":"location_check",
-								"predicate":{
-									"dimension":"skyblock:winter_island"
-								}
-							}
-						}
-					]
+					"weight":6
+				},
+				{
+					"type":"item",
+					"name":"tropical_fish",
+					"quality":0,
+					"weight":4
 				},
 				{
 					"type":"item",
 					"name":"clay_ball",
 					"quality":0,
-					"weight":140,
+					"weight":60,
 					"conditions":[
 						{
 							"condition":"location_check",
@@ -125,74 +45,6 @@
 								"biome":"minecraft:forest",
 								"dimension":"skyblock:hub_island"
 							}
-						}
-					]
-				},
-				{
-					"type":"item",
-					"name":"salmon",
-					"quality":0,
-					"weight":120
-				},
-				{
-					"type":"item",
-					"name":"magma_cream",
-					"quality":0,
-					"weight":120,
-					"conditions": [
-						{
-							"condition":"alternative",
-							"terms":[
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:deep_caverns"
-									}
-								},
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:dwarven_mines"
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type":"item",
-					"name":"pufferfish",
-					"quality":0,
-					"weight":84
-				},
-				{
-					"type":"item",
-					"name":"tropical_fish",
-					"quality":0,
-					"weight":42
-				},
-				{
-					"type":"item",
-					"name":"coal",
-					"quality":0,
-					"weight":35,
-					"conditions": [
-						{
-							"condition":"alternative",
-							"terms":[
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:deep_caverns"
-									}
-								},
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:dwarven_mines"
-									}
-								}
-							]
 						}
 					]
 				}

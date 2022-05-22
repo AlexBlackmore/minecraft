@@ -7,19 +7,19 @@
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/squid",
 					"quality":0,
-					"weight":100
+					"weight":2456
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/sea_walker",
 					"quality":0,
-					"weight":50
+					"weight":1631
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/night_squid",
 					"quality":0,
-					"weight":33,
+					"weight":1783,
 					"conditions":[
 						{
 							"condition":"entity_properties",
@@ -46,37 +46,37 @@
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/sea_guardian",
 					"quality":0,
-					"weight":20
+					"weight":1223
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/sea_witch",
 					"quality":1,
-					"weight":14
+					"weight":1427
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/sea_archer",
 					"quality":1,
-					"weight":11
+					"weight":1121
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/monster_of_the_deep",
 					"quality":1,
-					"weight":9
+					"weight":815
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/catfish",
 					"quality":2,
-					"weight":8
+					"weight":510
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/carrot_king",
 					"quality":2,
-					"weight":7,
+					"weight":576,
 					"conditions":[
 						{
 							"condition":"entity_properties",
@@ -95,43 +95,54 @@
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/sea_leech",
 					"quality":2,
-					"weight":6
+					"weight":326
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/guardian_defender",
 					"quality":3,
-					"weight":6
+					"weight":265
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/deep_sea_protector",
 					"quality":3,
-					"weight":5
+					"weight":179
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/water_hydra",
 					"quality":4,
-					"weight":5
+					"weight":37
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/sea_emperor",
 					"quality":4,
-					"weight":5
+					"weight":20
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/oasis/oasis_rabbit",
 					"quality":1,
-					"weight":10,
-					"conditions": [
+					"weight":508,
+					"conditions":[
 						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:mushroom_island"
-							}
+							"condition":"alternative",
+							"terms":[
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:mushroom_desert"
+									}
+								},
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:the_barn"
+									}
+								}
+							]
 						}
 					]
 				},
@@ -139,13 +150,24 @@
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/oasis/oasis_sheep",
 					"quality":1,
-					"weight":10,
-					"conditions": [
+					"weight":1185,
+					"conditions":[
 						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:mushroom_island"
-							}
+							"condition":"alternative",
+							"terms":[
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:mushroom_desert"
+									}
+								},
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:the_barn"
+									}
+								}
+							]
 						}
 					]
 				},
@@ -153,7 +175,7 @@
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/crystal_hollows/water_worm",
 					"quality":2,
-					"weight":7,
+					"weight":5000,
 					"conditions": [
 						{
 							"condition":"location_check",
@@ -167,49 +189,7 @@
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/crystal_hollows/poisoned_water_worm",
 					"quality":2,
-					"weight":6,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:dwarven_mines"
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/crystal_hollows/flaming_worm",
-					"quality":2,
-					"weight":5,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:dwarven_mines"
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/crystal_hollows/lava_blaze",
-					"quality":3,
-					"weight":5,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:dwarven_mines"
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/crystal_hollows/lava_pigman",
-					"quality":3,
-					"weight":5,
+					"weight":5000,
 					"conditions": [
 						{
 							"condition":"location_check",
@@ -223,246 +203,12 @@
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/crystal_hollows/zombie_miner",
 					"quality":4,
-					"weight":4,
+					"weight":909,
 					"conditions": [
 						{
 							"condition":"location_check",
 							"predicate":{
 								"dimension":"skyblock:dwarven_mines"
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/spooky/scarecrow",
-					"quality":0,
-					"weight":11,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Spooky Bait\"}"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/spooky/nightmare",
-					"quality":2,
-					"weight":7,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Spooky Bait\"}"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/spooky/werewolf",
-					"quality":3,
-					"weight":6,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Spooky Bait\"}"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/spooky/phantom_fisher",
-					"quality":4,
-					"weight":5,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Spooky Bait\"}"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/spooky/grim_reaper",
-					"quality":4,
-					"weight":4,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Spooky Bait\"}"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/winter/frozen_steve",
-					"quality":0,
-					"weight":25,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Ice Bait\"}"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/winter/frosty",
-					"quality":0,
-					"weight":17,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Ice Bait\"}"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/winter/grinch",
-					"quality":2,
-					"weight":8,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Ice Bait\"}"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/winter/yeti",
-					"quality":4,
-					"weight":4,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Ice Bait\"}"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/sharks/nurse",
-					"quality":5,
-					"weight":20
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/sharks/blue",
-					"quality":5,
-					"weight":10,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Shark Bait\"}"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/sharks/tiger",
-					"quality":5,
-					"weight":6,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Shark Bait\"}"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/sea_creatures/sharks/great_white",
-					"quality":5,
-					"weight":4,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"offhand":{
-										"nbt":"{Name:\"Shark Bait\"}"
-									}
-								}
 							}
 						}
 					]

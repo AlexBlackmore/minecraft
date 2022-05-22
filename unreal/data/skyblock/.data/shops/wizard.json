@@ -1,0 +1,60 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Wizard\",\"obfuscated\":true}",
+		Tags:["wizard"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"cleric",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"emerald",
+						Count:17
+					},
+					sell:{
+						id:"written_book",
+						Count:1,
+						tag:{
+							resolved:1,
+							generation:3,
+							author:"?",
+							title:"Travel Scroll to Wizard Tower",
+							pages: ["{
+									\"text\":\"3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339\",
+									\"obfuscated\":true,
+									\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:teleports/to_wizard_tower\"},
+									\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Click to warp!\"}
+								}"
+							],
+							display:{
+								Name:"{\"text\":\"Travel Scroll to Wizard Tower\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Hmmm...something appears to be\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"broken.\",\"italic\":false,\"color\":\"gray\"}"
+								]
+							},
+							HideFlags:63
+						}
+					}
+				}
+			]
+		}
+	}
+}

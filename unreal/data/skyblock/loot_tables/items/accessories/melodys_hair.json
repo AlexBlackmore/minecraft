@@ -1,0 +1,53 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:string",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"♪ Melody's Hair ♫","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Accessory","italic":false,"color":"blue"}],
+								["",{"text":"A single strand of hair from","italic":false,"color":"gray"}],
+								["",{"text":"Melody's head.","italic":false,"color":"gray"}],
+								["",{"text":" "}],
+								["",{"text":"Play a note! ","italic":false,"color":"light_purple"},{"text":"SNEAK","italic":false,"bold":true,"color":"yellow"}],
+								["",{"text":" "}]
+							]
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"+6 Intelligence","italic":false,"color":"blue"}
+							],
+							"replace":false
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Melody's Hair\",
+								Rarity:3,
+								Ability:true
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

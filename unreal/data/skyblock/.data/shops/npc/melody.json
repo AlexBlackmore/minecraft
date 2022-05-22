@@ -1,8 +1,8 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Rusty\"}",
-		Tags:["rusty"],
+		CustomName:"[\"\",{\"text\":\"Melody\"},{\"text\":\"♫\",\"color\":\"dark_purple\"}]",
+		Tags:["melody"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -11,7 +11,7 @@ give @p villager_spawn_egg{
 		NoAI:false,
 		VillagerData:{
 			level:5,
-			profession:"librarian",
+			profession:"none",
 			type:"plains"
 		},
 		Attributes:[

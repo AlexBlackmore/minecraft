@@ -56,6 +56,53 @@ summon villager ~ ~0.5 ~ {
 				maxUses:2147483647
 			},
 			{
+				buy:{
+					id:"hay_block",
+					Count:64,
+					tag:{
+						display:{
+							Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Hay Bale\"}"
+						},
+						Enchantments:[
+							{lvl:1s,id:"minecraft:unbreaking"}
+						],
+						HideFlags:1,
+						Name:"Enchanted Hay Bale"
+					}
+				},
+				buyB:{
+					id:"hay_block",
+					Count:64,
+					tag:{
+						display:{
+							Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Hay Bale\"}"
+						},
+						Enchantments:[
+							{lvl:1s,id:"minecraft:unbreaking"}
+						],
+						HideFlags:1,
+						Name:"Enchanted Hay Bale"
+					}
+				},
+				sell:{
+					id:"player_head",
+					Count:1,
+					tag:{
+						SkullOwner:{Id:[I;-136620260,-572307700,-1933574288,-1115545980],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQyNWM1YTQ4Y2RhZWZlYzhkZWRkNTNmNjQzYmMzMGEyMTBmNTFhOWUyZmY0MDU5NzVkMGY4YjQzMjE4ODM3YSJ9fX0="}]}},
+						display:{
+							Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Tightly-Tied Hay Bale\"}"
+						},
+						Enchantments:[
+							{lvl:1s,id:"minecraft:unbreaking"}
+						],
+						HideFlags:1,
+						Name:"Tightly-Tied Hay Bale"
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
 				buy:
 				{
 					id:"wheat",
@@ -277,6 +324,53 @@ summon villager ~ ~0.5 ~ {
 						],
 						HideFlags:1,
 						Name:"Enchanted Pumpkin"
+					}
+				},
+				rewardExp:false,
+				maxUses:2147483647
+			},
+			{
+				buy:{
+					id:"pumpkin",
+					Count:1,
+					tag:{
+						display:{
+							Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Pumpkin\"}"
+						},
+						Enchantments:[
+							{lvl:1s,id:"minecraft:unbreaking"}
+						],
+						HideFlags:1,
+						Name:"Enchanted Pumpkin"
+					}
+				},
+				buyB:{
+					id:"pumpkin",
+					Count:1,
+					tag:{
+						display:{
+							Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Pumpkin\"}"
+						},
+						Enchantments:[
+							{lvl:1s,id:"minecraft:unbreaking"}
+						],
+						HideFlags:1,
+						Name:"Enchanted Pumpkin"
+					}
+				},
+				sell:{
+					id:"player_head",
+					Count:3,
+					tag:{
+						SkullOwner:{Id:[I;-238260618,-1137032658,-1881869042,725935418],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFiYTAxNTI0OTUxYWRkMjFmYjUzZWZmODllOTk3NjU3NThhOWIyYjY1YTk3YzBlYmJhY2IzYWY1ZTA2MjQwZSJ9fX0="}]}},
+						display:{
+							Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Polished Pumpkin\"}"
+						},
+						Enchantments:[
+							{lvl:1s,id:"minecraft:unbreaking"}
+						],
+						HideFlags:1,
+						Name:"Polished Pumpkin"
 					}
 				},
 				rewardExp:false,

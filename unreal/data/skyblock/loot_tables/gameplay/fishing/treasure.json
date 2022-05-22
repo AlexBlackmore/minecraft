@@ -4,68 +4,52 @@
 			"rolls":1,
 			"entries":[
 				{
+					"type":"loot_table",
+					"name":"skyblock:items/enchanted/diamond",
+					"quality":1,
+					"weight":240
+				},
+				{
 					"type":"item",
 					"name":"enchanted_golden_apple",
-					"weight":1
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/experience_bottes/titanic_experience_bottle",
-					"weight":1
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/enchanted/clay_ball",
-					"weight":1
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/enchanted/iron_ingot",
-					"weight":1
+					"quality":3,
+					"weight":160
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/enchanted/gold_ingot",
-					"weight":1
+					"quality":1,
+					"weight":160
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:items/enchanted/diamond",
-					"weight":1
+					"name":"skyblock:items/enchanted/iron_ingot",
+					"quality":1,
+					"weight":160
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/enchanted/clay_ball",
+					"quality":1,
+					"weight":160
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/enchanted/pufferfish",
-					"weight":1
+					"quality":1,
+					"weight":80
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:items/enchanted/emerald1",
-					"weight":1,
-					"functions":[
-						{
-							"function":"set_count",
-							"count":{
-								"min":1,
-								"max":52
-							}
-						}
-					]
+					"name":"skyblock:items/experience_bottes/titanic_experience_bottle",
+					"quality":2,
+					"weight":40
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:pets/guardian",
-					"weight":1
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/runes/music_rune",
-					"weight":1
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:pets/guardian",
-					"weight":1,
+					"name":"skyblock:pets/squid/common",
+					"quality":0,
+					"weight":40,
 					"conditions": [
 						{
 							"condition":"location_check",
@@ -81,208 +65,124 @@
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:items/armor/fairy_armor/helmet",
-					"weight":1,
+					"name":"skyblock:pets/squid/uncommon",
+					"quality":1,
+					"weight":30,
 					"conditions": [
 						{
 							"condition":"location_check",
 							"predicate":{
-								"biome":"minecraft:forest",
-								"dimension":"skyblock:hub_island"
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/armor/fairy_armor/chestplate",
-					"weight":1,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"biome":"minecraft:forest",
-								"dimension":"skyblock:hub_island"
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/armor/fairy_armor/leggings",
-					"weight":1,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"biome":"minecraft:forest",
-								"dimension":"skyblock:hub_island"
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/armor/fairy_armor/boots",
-					"weight":1,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"biome":"minecraft:forest",
-								"dimension":"skyblock:hub_island"
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/enchanted/ice",
-					"weight":1,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:winter_island"
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/enchanted/packed_ice",
-					"weight":1,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:winter_island"
-							}
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/enchanted/coal",
-					"weight":1,
-					"conditions": [
-						{
-							"condition":"alternative",
-							"terms":[
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:deep_caverns"
-									}
-								},
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:dwarven_mines"
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/enchanted/blaze_powder",
-					"weight":1,
-					"conditions": [
-						{
-							"condition":"alternative",
-							"terms":[
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:deep_caverns"
-									}
-								},
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:dwarven_mines"
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/enchanted/nether_wart",
-					"weight":1,
-					"conditions": [
-						{
-							"condition":"alternative",
-							"terms":[
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:deep_caverns"
-									}
-								},
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:dwarven_mines"
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/enchanted/magma_cream",
-					"weight":1,
-					"conditions": [
-						{
-							"condition":"alternative",
-							"terms":[
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:deep_caverns"
-									}
-								},
-								{
-									"condition":"location_check",
-									"predicate":{
-										"dimension":"skyblock:dwarven_mines"
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/frozen_spider",
-					"weight":1,
-					"conditions": [
-						{
-							"condition":"location_check",
-							"predicate":{
-								"dimension":"skyblock:spiders_den"
+								"dimension":"skyblock:the_park"
 							}
 						},
 						{
-							"condition":"entity_properties",
-							"entity":"this",
+							"condition":"weather_check",
+							"raining":true
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:pets/squid/rare",
+					"quality":2,
+					"weight":20,
+					"conditions": [
+						{
+							"condition":"location_check",
 							"predicate":{
-								"equipment":{
-									"mainhand":{
-										"nbt":"{Name:\"Ice Rod\"}"
-									},
-									"offhand":{
-										"nbt":"{Name:\"Spooky Bait\"}"
-									}
-								}
+								"dimension":"skyblock:the_park"
+							}
+						},
+						{
+							"condition":"weather_check",
+							"raining":true
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:pets/guardian/common",
+					"quality":0,
+					"weight":16
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:pets/squid/epic",
+					"quality":3,
+					"weight":10,
+					"conditions": [
+						{
+							"condition":"location_check",
+							"predicate":{
+								"dimension":"skyblock:the_park"
+							}
+						},
+						{
+							"condition":"weather_check",
+							"raining":true
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:pets/guardian/uncommon",
+					"quality":1,
+					"weight":8
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/enchanted/emerald1",
+					"weight":1,
+					"functions":[
+						{
+							"function":"set_count",
+							"count":{
+								"min":3,
+								"max":26
 							}
 						}
 					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:pets/squid/legendary",
+					"weight":4,
+					"conditions": [
+						{
+							"condition":"location_check",
+							"predicate":{
+								"dimension":"skyblock:the_park"
+							}
+						},
+						{
+							"condition":"weather_check",
+							"raining":true
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:pets/guardian/rare",
+					"quality":2,
+					"weight":4
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/runes/music_rune",
+					"quality":3,
+					"weight":3
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:pets/guardian/epic",
+					"quality":3,
+					"weight":2
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:pets/guardian/legendary",
+					"quality":4,
+					"weight":1
 				}
 			]
 		}

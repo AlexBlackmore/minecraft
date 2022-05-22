@@ -64,8 +64,11 @@ execute as @p[level=13..,tag=ability,nbt={SelectedItem:{tag:{Name:"Wand of Atone
 
 execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Grappling Hook"}}}] run function skyblock:abilities/instant/grappling_hook
 
+execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Melody's Hair"}}}] run function skyblock:abilities/instant/melodys_hair
+
 #PETS
 execute as @p[tag=ability,nbt={SelectedItem:{tag:{Pet:true}}}] run function skyblock:abilities/summon_pets
+
 
 effect give @p[tag=ability] hunger 1
 advancement revoke @p[tag=ability] only skyblock:commands/use_ability
