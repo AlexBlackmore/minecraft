@@ -1,0 +1,31 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:enchanted_book",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Enchanted Book","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"luck_of_the_sea":6
+							}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Enchanted Book\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

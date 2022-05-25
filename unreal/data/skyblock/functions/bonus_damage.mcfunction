@@ -88,6 +88,10 @@ execute if data entity @p[tag=attacker] SelectedItem.tag.Triple_Strike run funct
 #VENOMOUS ENCHANTMENT
 execute if data entity @p[tag=attacker] SelectedItem.tag.Venomous run function skyblock:abilities/enchantments/venomous
 
+#SPIKED HOOK ENCHANTMENT 
+execute as @p[tag=attacker] run execute store result score @s dummy run data get entity @s SelectedItem.tag.Spiked_Hook 5
+execute as @e[tag=target] run scoreboard players operation @s multiplier += @p[tag=attacker] dummy
+
 
 #Swords
 execute as @e[tag=target,type=#minecraft:arthropods] if entity @p[tag=attacker,nbt={SelectedItem:{tag:{Name:"Spider Sword"}}}] run scoreboard players add @s multiplier 100

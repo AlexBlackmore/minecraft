@@ -103,12 +103,6 @@
 						{
 							"condition":"location_check",
 							"predicate":{
-								"dimension":"skyblock:dwarven_mines"
-							}
-						},
-						{
-							"condition":"location_check",
-							"predicate":{
 								"dimension":"skyblock:gold_mine"
 							}
 						},
@@ -149,6 +143,70 @@
 							}
 						}
 					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"bonus_rolls":0,
+			"entries":[
+				{
+					"type":"loot_table",
+					"weight":10,
+					"quality":-2,
+					"name":"skyblock:gameplay/fishing/lava/junk"
+				},
+				{
+					"type":"loot_table",
+					"weight":5,
+					"quality":2,
+					"name":"skyblock:gameplay/fishing/lava/treasure"
+				},
+				{
+					"type":"loot_table",
+					"weight":85,
+					"quality":-1,
+					"name":"skyblock:gameplay/fishing/lava/fish"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"location_check",
+					"predicate":{
+						"dimension":"skyblock:dwarven_mines"
+					}
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"bonus_rolls":0,
+			"entries":[
+				{
+					"type":"loot_table",
+					"weight":10,
+					"quality":-2,
+					"name":"skyblock:gameplay/fishing/jerry_pond/junk"
+				},
+				{
+					"type":"loot_table",
+					"weight":5,
+					"quality":2,
+					"name":"skyblock:gameplay/fishing/jerry_pond/treasure"
+				},
+				{
+					"type":"loot_table",
+					"weight":85,
+					"quality":-1,
+					"name":"skyblock:gameplay/fishing/jerry_pond/fish"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"location_check",
+					"predicate":{
+						"dimension":"skyblock:winter_island"
+					}
 				}
 			]
 		},

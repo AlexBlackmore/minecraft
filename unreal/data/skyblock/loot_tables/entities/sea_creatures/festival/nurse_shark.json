@@ -1,0 +1,35 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/shark/shark_fin",
+					"functions":[
+						{
+							"function":"set_count",
+							"count":2
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":90
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/shark_teeth/nurse",
+					"quality":1,
+					"weight":10
+				}
+			]
+		}
+	]
+}

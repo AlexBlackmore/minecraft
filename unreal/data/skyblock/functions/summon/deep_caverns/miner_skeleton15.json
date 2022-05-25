@@ -1,0 +1,43 @@
+summon skeleton ~ ~ ~ {
+	CustomName:"{\"text\":\"Miner Skeleton\",\"color\":\"red\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock","miner_skeleton"],
+	Health:50,
+	Attributes:[
+		{Name:"generic.max_health",Base:50},
+		{Name:"generic.attack_damage",Base:30}
+	],
+	HandItems:[
+		{
+			id:"bow",
+			Count:1,
+			tag:{
+				Enchantments:[
+					{id:"power",lvl:15}
+				]
+			}
+		},
+		{}
+	],
+	ArmorItems:[
+		{
+			id:"diamond_boots",
+			Count:1
+		},
+		{
+			id:"diamond_leggings",
+			Count:1
+		},
+		{
+			id:"diamond_chestplate",
+			Count:1
+		},
+		{
+			id:"diamond_helmet",
+			Count:1
+		}
+	],
+	HandDropChances:[0.0f,0.0f],
+	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+	DeathLootTable:"skyblock:mobs/deep_caverns/miner_skeleton15"
+}

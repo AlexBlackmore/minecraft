@@ -1,0 +1,31 @@
+summon zombified_piglin ~ ~ ~ {
+	CustomName:"{\"text\":\"Redstone Pigman\",\"color\":\"red\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock","pigman_den"],
+	Health:50,
+	Attributes:[
+		{Name:"generic.max_health",Base:50},
+		{Name:"generic.attack_damage",Base:15}
+	],
+	HandItems:[
+		{
+			id:"golden_sword",
+			Count:1,
+			tag:{
+				Enchantments:[
+					{id:"unbreaking",lvl:1}
+				]
+			}
+		},
+		{}
+	],
+	ArmorItems:[
+		{},
+		{},
+		{},
+		{}
+	],
+	HandDropChances:[0.0f,0.0f],
+	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+	DeathLootTable:"skyblock:entities/deep_caverns/redstone_pigman"
+}

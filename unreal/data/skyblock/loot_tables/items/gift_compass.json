@@ -1,0 +1,41 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:compass",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Gift Compass","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"When held, points towards a","italic":false,"color":"gray"}],
+								["",{"text":"random present hidden in Jerry's","italic":false,"color":"gray"}],
+								["",{"text":"Workshop.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								LodestoneTracked:false,
+								LodestoneDimension:\"skyblock:winter_island\",
+								LodestonePos:{
+									X:1,
+									Y:75,
+									Z:99
+								},
+								Name:\"Gift Compass\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

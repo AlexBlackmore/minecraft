@@ -13,6 +13,48 @@
 				},
 				{
 					"type":"loot_table",
+					"name":"skyblock:gameplay/fishing/sea_creatures/lava",
+					"quality":1,
+					"weight":0,
+					"conditions":[						
+						{
+							"condition":"minecraft:entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"nbt":"{Lava_Rod:true}"
+									}
+								}
+							}
+						},
+						{
+							"condition":"alternative",
+							"terms":[
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:blazing_fortress"
+									}
+								},
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:dwarven_mines"
+									}
+								},
+								{
+									"condition":"location_check",
+									"predicate":{
+										"dimension":"skyblock:crimson_isle"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type":"loot_table",
 					"name":"skyblock:gameplay/fishing/sea_creatures",
 					"quality":0,
 					"weight":5,

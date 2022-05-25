@@ -1,0 +1,15 @@
+give @p chicken_spawn_egg{
+	EntityTag:{
+		id:"minecraft:chicken",
+		CustomName:"{\"text\":\"Gulliver's Chicken\"}",
+		Tags:["gullivers_chicken"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		]
+	}
+}

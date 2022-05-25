@@ -1,0 +1,35 @@
+{
+	"parent":"skyblock:commands/npcs",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Gulliver's Chicken",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"item":{
+					"items":[
+						"wheat_seeds",
+						"pumpkin_seeds",
+						"melon_seeds",
+						"beetroot_seeds"
+					]
+				},
+				"entity":{
+					"nbt":"{Tags:[\"gullivers_chicken\"]}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/gullivers_chicken"
+	}
+}

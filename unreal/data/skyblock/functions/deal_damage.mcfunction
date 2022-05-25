@@ -17,4 +17,10 @@ kill @e[tag=target,scores={health=..0}]
 execute as @e[tag=target] run execute store result entity @s Health float 0.01 run scoreboard players get @s health
 execute as @e[tag=target] run execute store result entity @s AbsorptionAmount float 0.01 run scoreboard players get @s absorption
 
-execute as @e[tag=target] run function cw_hp:hurt
+execute at @p[tag=attacker] run bossbar set minecraft:mob name {"selector":"@e[tag=target,limit=1,sort=nearest]"}
+execute at @p[tag=attacker] store result bossbar minecraft:mob max run attribute @e[tag=target,limit=1,sort=nearest] minecraft:generic.max_health get
+execute at @p[tag=attacker] store result bossbar minecraft:mob value run data get entity @e[tag=target,limit=1,sort=nearest] Health
+
+execute as @p[tag=attacker] if entity @e[tag=target] run bossbar set minecraft:mob visible true
+execute as @p[tag=attacker] unless entity @e[tag=target] run bossbar set minecraft:mob visible false
+execute if entity @e[tag=target] run schedule function skyblock:hide_bossbar 8s replace 

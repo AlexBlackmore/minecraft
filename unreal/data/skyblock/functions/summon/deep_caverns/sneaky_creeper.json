@@ -1,0 +1,16 @@
+summon creeper ~ ~ ~ {
+	CustomName:"{\"text\":\"Sneaky Creeper\",\"color\":\"red\"}",
+	CustomNameVisible:true,
+	Tags:["sneaky_creeper","deep_caverns"],
+	Health:24,
+	Attributes:[
+		{Name:"generic.max_health",Base:24}
+	],
+	ActiveEffects:[
+		{
+			Id:14,
+			Duration:2147483646
+		}
+	],
+	DeathLootTable:"skyblock:entities/deep_caverns/sneaky_creeper"
+}
