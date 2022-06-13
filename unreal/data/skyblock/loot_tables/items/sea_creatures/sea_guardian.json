@@ -9,12 +9,12 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Sea Guardian","italic":false,"color":"red"}
+							"name":{"text":"Sea Guardian","italic":false,"color":"white"}
 						},
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Level 10 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
 								["",{"text":"You stumbled upon a Sea Guardian.","italic":false,"color":"gray"}]
 							]
 						},
@@ -25,13 +25,13 @@
 								EntityTag:{
 									id:\"minecraft:guardian\",
 									CustomNameVisible:true,
-									Tags:[\"skyblock\",\"sea_creature\",\"sea_guardian\"],
-									Health:500,
+									Tags:[\"sea_creature\",\"sea_guardian\",\"30xp\"],
+									Health:40,
 									Attributes:[
-										{Name:\"generic.max_health\",Base:500},
-										{Name:\"generic.attack_damage\",Base:10}
+										{Name:\"generic.max_health\",Base:40},
+										{Name:\"generic.attack_damage\",Base:200}
 									],
-									DeathLootTable:\"skyblock:mobs/sea_creatures/sea_guardian\"
+									DeathLootTable:\"skyblock:entities/sea_creatures/sea_guardian\"
 								}
 							}"
 						},

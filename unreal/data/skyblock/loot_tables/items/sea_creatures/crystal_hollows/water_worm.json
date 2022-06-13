@@ -9,22 +9,32 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Water Worm","italic":false,"color":"red"}
+							"name":{"text":"Water Worm","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"A Water Worm surfaces!","italic":false,"color":"gray"}]
+							]
 						},
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
 								HideFlags:1,
-								Name:\"Water Worm\",
-								Sea_Creature:true
+								EntityTag:{
+									id:\"minecraft:silverfish\",
+									CustomNameVisible:true,
+									Tags:[\"sea_creature\",\"water_worm\",\"10xp\"],
+									AbsorptionAmount:8976,
+									Health:1024,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:1024},
+										{Name:\"generic.attack_damage\",Base:60}
+									],
+									DeathLootTable:\"skyblock:entities/sea_creatures/crystal_hollows/water_worm\"
+								}
 							}"
-						},
-						{
-							"function":"minecraft:set_lore",
-							"lore":[
-								["",{"text":"Level 20 Sea Creature","italic":false,"color":"blue"}],
-								["",{"text":"A Water Worm surfaces!","italic":false,"color":"gray"}]
-							]
 						},
 						{
 							"function":"minecraft:set_enchantments",

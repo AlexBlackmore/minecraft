@@ -1,0 +1,12 @@
+summon magma_cube ~ ~ ~ {
+	CustomName:"{\"text\":\"Magmalene\",\"color\":\"red\"}",
+	CustomNameVisible:true,
+	Tags:["magmalene","boss"],
+	Health:600,
+	Attributes:[
+		{Name:"generic.max_health",Base:600},
+		{Name:"generic.attack_damage",Base:1}
+	],
+	Size:12,
+	DeathLootTable:"skyblock:entities/winter_island/magma_cube2"
+}

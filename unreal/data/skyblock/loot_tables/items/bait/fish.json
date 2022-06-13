@@ -1,0 +1,35 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Fish Bait","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;1641239383,-1614265171,-1259628103,-440298236],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTBhMWJkYWNmMjgzYjIzOWFmY2I2N2ExN2ZjM2U1NjgyNzRiYTFhNTI1NjEzOGJjNjQyZDI2ZmFiZDA0NDAzIn19fQ==\"}]}},
+								Name:\"Fish Bait\",
+								Bait:true
+							}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Fishing Bait","italic":false,"color":"blue"}],
+								["",{"text":"+30%","italic":false,"color":"green"},{"text":" chance to catch extra fish.","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

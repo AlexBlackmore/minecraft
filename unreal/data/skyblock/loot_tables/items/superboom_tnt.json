@@ -1,0 +1,44 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:tnt",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Superboom TNT","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Sneak to summon a block of lit","italic":false,"color":"gray"}],
+								["",{"text":"TNT. The magical energy stored","italic":false,"color":"gray"}],
+								["",{"text":"in this block is finite and will","italic":false,"color":"gray"}],
+								["",{"text":"eventually run out!","italic":false,"color":"gray"}],
+								["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"2s","italic":false,"color":"dark_aqua"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Superboom TNT\",
+								Ability:true
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

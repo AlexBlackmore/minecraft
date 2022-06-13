@@ -9,12 +9,12 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Guardian Defender","italic":false,"color":"red"}
+							"name":{"text":"Guardian Defender","italic":false,"color":"light_purple"}
 						},
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Level 45 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
 								["",{"text":"You've discovered a Guardian","italic":false,"color":"gray"}],
 								["",{"text":"Defender of the sea.","italic":false,"color":"gray"}]
 							]
@@ -26,14 +26,14 @@
 								EntityTag:{
 									id:\"minecraft:guardian\",
 									CustomNameVisible:true,
-									Tags:[\"skyblock\",\"sea_creature\",\"guardian_defender\"],
+									Tags:[\"sea_creature\",\"guardian_defender\",\"50xp\"],
 									AbsorptionAmount:14176,
 									Health:1024,
 									Attributes:[
 										{Name:\"generic.max_health\",Base:1024},
-										{Name:\"generic.attack_damage\",Base:45}
+										{Name:\"generic.attack_damage\",Base:50}
 									],
-									DeathLootTable:\"skyblock:mobs/sea_creatures/guardian_defender\"
+									DeathLootTable:\"skyblock:entities/sea_creatures/guardian_defender\"
 								}
 							}"
 						},

@@ -12,21 +12,76 @@
 							"name":{"text":"Blue Shark","italic":false,"color":"red"}
 						},
 						{
-							"function":"minecraft:set_nbt",
-							"tag":"{
-								HideFlags:1,
-								Name:\"Blue Shark\",
-								Sea_Creature:true
-							}"
-						},
-						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Level 20 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
 								["",{"text":"You spot a fin as blue as the","italic":false,"color":"gray"}],
 								["",{"text":"water it came from, it's a Blue","italic":false,"color":"gray"}],
 								["",{"text":"Shark.","italic":false,"color":"gray"}]
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:drowned\",
+									CustomNameVisible:true,
+									Tags:[\"sea_creature\",\"blue_shark\",\"80xp\"],
+									AbsorptionAmount:3976,
+									Health:1024,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:1024},
+										{Name:\"generic.attack_damage\",Base:30}
+									],
+									HandItems:[
+										{},
+										{}
+									],
+									ArmorItems:[
+										{
+											id:\"leather_boots\",
+											Count:1,
+											tag:{
+												display:{
+													color:11184810
+												},
+												Enchantments:[
+													{id:\"depth_strider\",lvl:3}
+												]
+											}
+										},
+										{
+											id:\"leather_leggings\",
+											Count:1,
+											tag:{
+												display:{
+													color:11184810
+												}
+											}
+										},
+										{
+											id:\"leather_chestplate\",
+											Count:1,
+											tag:{
+												display:{
+													color:11184810
+												}
+											}
+										},
+										{
+											id:\"player_head\",
+											Count:1,
+											tag:{
+												SkullOwner:{Id:[I;-1868321771,600264369,-1688076269,-1642852455],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzgxZTFkMDZlNWYwNjU0YTY4MmEzMjY0OTA1YjVkYzRiOGU3YjYxM2FiNjY5N2FjNDVmMmUwZGEzYmM5YjRmZCJ9fX0=\"}]}}
+											}
+										}
+									],
+									HandDropChances:[0.0f,0.0f],
+									ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+									DeathLootTable:\"skyblock:mobs/sea_creatures/festival/blue_shark\"
+								}
+							}"
 						},
 						{
 							"function":"minecraft:set_enchantments",

@@ -1,0 +1,26 @@
+{
+	"parent":"skyblock:commands/consumables",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"+250 XP",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:recipe_unlocked",
+			"conditions":{
+				"recipe":"skyblock:xp/250"
+			}
+		}
+	},
+	"rewards":{
+		"experience":250,
+		"function":"skyblock:xp_tome_reset"
+	}
+}

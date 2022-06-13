@@ -9,12 +9,12 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Sea Walker","italic":false,"color":"red"}
+							"name":{"text":"Sea Walker","italic":false,"color":"white"}
 						},
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Level 4 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
 								["",{"text":"You caught a Sea Walker.","italic":false,"color":"gray"}]
 							]
 						},
@@ -25,11 +25,11 @@
 								EntityTag:{
 									id:\"minecraft:drowned\",
 									CustomNameVisible:true,
-									Tags:[\"sea_creature\",\"sea_walker\",\"skyblock\"],
+									Tags:[\"sea_creature\",\"sea_walker\",\"20xp\"],
 									Health:300,
 									Attributes:[
 										{Name:\"generic.max_health\",Base:300},
-										{Name:\"generic.attack_damage\",Base:4}
+										{Name:\"generic.attack_damage\",Base:12}
 									],
 									HandItems:[
 										{
@@ -84,7 +84,7 @@
 									],
 									HandDropChances:[0.0f,0.0f],
 									ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-									DeathLootTable:\"skyblock:mobs/sea_creatures/sea_walker\"
+									DeathLootTable:\"skyblock:entities/sea_creatures/sea_walker\"
 								}
 							}"
 						},

@@ -104,7 +104,7 @@
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":1,
+			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"minecraft:empty",
@@ -115,6 +115,33 @@
 					"name":"minecraft:sea_lantern",
 					"quality":1,
 					"weight":10
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"functions":[
+				{
+					"function":"set_count",
+					"count":1
+				},
+				{
+					"function":"set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.6667,
+							"looting_multiplier":0.01
+						}
+					]
 				}
 			]
 		}

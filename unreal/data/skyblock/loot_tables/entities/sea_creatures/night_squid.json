@@ -78,7 +78,7 @@
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":1,
+			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"minecraft:empty",
@@ -101,6 +101,22 @@
 					"name":"skyblock:items/exp_boosts/fishing/rare",
 					"quality":4,
 					"weight":1
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.8333,
+					"looting_multiplier":0.01
 				}
 			]
 		}

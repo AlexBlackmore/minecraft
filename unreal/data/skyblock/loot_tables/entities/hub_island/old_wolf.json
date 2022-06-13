@@ -20,29 +20,44 @@
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":1,
+			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"empty",
-					"weight":99886
+					"weight":999
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/accessories/wolf_talisman",
 					"quality":4,
-					"weight":100
+					"weight":1
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"functions":[
+				{
+					"function":"set_count",
+					"count":6
 				},
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/hound/epic",
-					"quality":3,
-					"weight":10
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/hound/legendary",
-					"quality":4,
-					"weight":3
+					"function":"set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.6667,
+							"looting_multiplier":0.01
+						}
+					]
 				}
 			]
 		}

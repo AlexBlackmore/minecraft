@@ -1,0 +1,35 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Spiked Bait","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-1069193678,467616084,-1902962520,993224720],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQyYzQzNmM2NTgwZmFkMjE3MzIzYjlmMDQ1ZGFhMjNhOWY4ODIxOWFjMjY1MDY2Mzc2NjllZmYyMDkwMWY3NCJ9fX0=\"}]}},
+								Name:\"Spiked Bait\",
+								Bait:true
+							}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Fishing Bait","italic":false,"color":"blue"}],
+								["",{"text":"+6%","italic":false,"color":"green"},{"text":" chance to catch Sea Creatures.","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

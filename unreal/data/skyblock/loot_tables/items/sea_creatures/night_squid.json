@@ -9,12 +9,12 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Night Squid","italic":false,"color":"red"}
+							"name":{"text":"Night Squid","italic":false,"color":"white"}
 						},
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Level 6 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
 								["",{"text":"Pitch Darkness reveals you've","italic":false,"color":"gray"}],
 								["",{"text":"caught a Night Squid.","italic":false,"color":"gray"}]
 							]
@@ -26,13 +26,13 @@
 								EntityTag:{
 									id:\"minecraft:squid\",
 									CustomNameVisible:true,
-									Tags:[\"skyblock\",\"sea_creature\",\"night_squid\"],
-									Health:400,
+									Tags:[\"sea_creature\",\"night_squid\",\"10xp\"],
+									Health:800,
 									Attributes:[
-										{Name:\"generic.max_health\",Base:400},
-										{Name:\"generic.attack_damage\",Base:6}
+										{Name:\"generic.max_health\",Base:800},
+										{Name:\"generic.attack_damage\",Base:1}
 									],
-									DeathLootTable:\"skyblock:mobs/sea_creatures/night_squid\"
+									DeathLootTable:\"skyblock:entities/sea_creatures/night_squid\"
 								}
 							}"
 						},

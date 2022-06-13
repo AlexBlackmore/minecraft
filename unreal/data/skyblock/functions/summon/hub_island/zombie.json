@@ -1,7 +1,7 @@
 summon zombie ~ ~ ~ {
 	CustomName:"{\"text\":\"Zombie\",\"color\":\"red\"}",
 	CustomNameVisible:true,
-	Tags:["skyblock"],
+	Tags:["zombie",1xp],
 	Health:20,
 	Attributes:[
 		{Name:"generic.max_health",Base:20},
@@ -19,5 +19,5 @@ summon zombie ~ ~ ~ {
 	],
 	HandDropChances:[0.0f,0.0f],
 	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-	DeathLootTable:"skyblock:mobs/hub_island/zombie"
+	DeathLootTable:"skyblock:entities/hub_island/zombie"
 }

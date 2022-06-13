@@ -2,6 +2,7 @@ give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
 		CustomName:"{\"text\":\"Windmill Operator\"}",
+		Tags:["windmill_operator"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -144,7 +145,8 @@ give @p villager_spawn_egg{
 					}
 				},
 				{
-					buy:{
+					buy:
+					{
 						id:"emerald",
 						Count:1
 					},
@@ -153,7 +155,11 @@ give @p villager_spawn_egg{
 						Count:3,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Bone Meal\"}"
+								Name:"{\"text\":\"Enchanted Bone Meal\",\"italic\":false,\"color\":\"yellow\"}",
+								Lore:[
+									"{\"text\":\"Instantly grow crops and\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"saplings.\",\"italic\":false,\"color\":\"gray\"}"
+								]
 							},
 							Enchantments:[
 								{id:"unbreaking",lvl:1}
@@ -174,11 +180,25 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Rookie Hoe\"}",
 								Lore:[
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Crops have a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"50%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop\"}]",
 									"{\"italic\":false,\"color\":\"gray\",\"text\":\"an extra seed.\"}"
 								]
 							},
-							Name:"Rookie Hoe"
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							CanDestroy:[
+								"minecraft:wheat",
+								"minecraft:carrots",
+								"minecraft:potatoes",
+								"minecraft:cactus",
+								"minecraft:sugar_cane",
+								"minecraft:nether_wart"
+							],
+							HideFlags:8,
+							Name:"Rookie Hoe",
+							Rarity:0
 						}
 					}
 				}

@@ -52,7 +52,28 @@
 					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/sea_witch",
 					"quality":1,
-					"weight":1427
+					"weight":1427,
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"nbt":"{Name:\"Light Bait\"}"
+									}
+								}
+							}
+						},
+						{
+							"condition":"time_check",
+							"value":{
+								"min":0,
+								"max":11999
+							},
+							"period":24000
+						}
+					]
 				},
 				{
 					"type":"loot_table",
@@ -209,6 +230,20 @@
 							"condition":"location_check",
 							"predicate":{
 								"dimension":"skyblock:dwarven_mines"
+							}
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/fishing/sea_creatures/winter",
+					"quality":0,
+					"weight":2876,
+					"conditions":[
+						{
+							"condition":"location_check",
+							"predicate":{
+								"dimension":"skyblock:winter_island"
 							}
 						}
 					]

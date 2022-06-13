@@ -20,7 +20,23 @@
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"minecraft:blocks/diamond_ore"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.15,
+					"looting_multiplier":0.01
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"empty",
@@ -49,6 +65,21 @@
 					"name":"skyblock:items/armor/miner_armor/boots",
 					"quality":2,
 					"weight":1
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"functions":[
+				{
+					"function":"set_count",
+					"count":2
 				}
 			]
 		}

@@ -1,7 +1,7 @@
 summon zombie ~ ~ ~ {
-	CustomName:"{\"text\":\"Treasure Hoarder\"}",
+	CustomName:"{\"text\":\"Treasure Hoarder\",\"color\":\"red\"}",
 	CustomNameVisible:true,
-	Tags:["skyblock","treasure_hoarder"],
+	Tags:["treasure_hoarder"],
 	AbsorptionAmount:3376,
 	Health:1024,
 	Attributes:[
@@ -38,5 +38,5 @@ summon zombie ~ ~ ~ {
 	],
 	HandDropChances:[0.0f,0.0f],
 	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-	DeathLootTable:"skyblock:mobs/dwarven_mines/treasure_hoarder"
+	DeathLootTable:"skyblock:entities/dwarven_mines/treasure_hoarder"
 }

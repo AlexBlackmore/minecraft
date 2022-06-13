@@ -1,1 +1,0 @@
-advancement revoke @s from skyblock:commands/abilities/instant_reset

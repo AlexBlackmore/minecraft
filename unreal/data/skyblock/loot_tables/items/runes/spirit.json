@@ -9,17 +9,6 @@
 					"quality":1,
 					"functions":[
 						{
-							"function":"minecraft:set_name",
-							"name":{"text":"Spirit Rune","italic":false,"color":"aqua"}
-						},
-						{
-							"function":"minecraft:set_lore",
-							"lore":[
-								["",{"text":"Obtained rarely from slaying the","italic":false,"color":"gray"}],
-								["",{"text":"Sven Packmaster.","italic":false,"color":"gray"}]
-							]
-						},
-						{
 							"function":"enchant_randomly",
 							"enchantments":[
 								"unbreaking",
@@ -36,6 +25,18 @@
 								"impaling",
 								"loyalty",
 								"riptide"
+							]
+						},
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Spirit Rune","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":" "}],
+								["",{"text":"Obtained rarely from slaying the","italic":false,"color":"gray"}],
+								["",{"text":"Sven Packmaster.","italic":false,"color":"gray"}]
 							]
 						}
 					]

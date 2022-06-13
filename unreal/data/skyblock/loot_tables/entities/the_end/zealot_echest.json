@@ -4,24 +4,8 @@
 			"rolls":1,
 			"entries":[
 				{	
-					"type":"item",
-					"name":"ender_pearl",
-					"functions":[
-						{	
-							"function":"set_count",
-							"count":{
-								"min":3,
-								"max":5
-							}
-						},
-						{
-							"function":"looting_enchant",
-							"count":{
-								"min":0,
-								"max":1
-							}
-						}
-					]
+					"type":"loot_table",
+					"name":"skyblock:entities/the_end/zealot"
 				}
 			]
 		},
@@ -29,38 +13,34 @@
 			"rolls":1,
 			"entries":[
 				{
-					"rolls":1,
-					"entries":[
-						{
-							"type":"loot_table",
-							"name":"skyblock:items/enchanted/ender_pearl",
-							"functions":[
-								{
-								  "function":"set_count",
-								  "count":{
-									"min":1,
-									"max":3
-								  }
-								}
-							]
-						},
-						{
-							"type":"loot_table",
-							"name":"skyblock:items/enchanted/ender_eye"
-						},
-						{
-							"type":"loot_table",
-							"name":"skyblock:items/crystal_fragment"
-						},
-						{
-							"type":"loot_table",
-							"name":"skyblock:items/enchanted/ender_stone"
-						},
-						{
-							"type":"loot_table",
-							"name":"skyblock:items/enchanted/obsidian"
-						}
-					]
+					"type":"loot_table",
+					"name":"skyblock:items/enchanted/ender_pearl",
+					"quality":0,
+					"weight":4065
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/enchanted/end_stone",
+					"quality":1,
+					"weight":2439
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/enchanted/obsidian",
+					"quality":1,
+					"weight":1226
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/crystal_fragment",
+					"quality":1,
+					"weight":1220
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/enchanted/eye_of_ender",
+					"quality":1,
+					"weight":650
 				}
 			]
 		}

@@ -2,7 +2,7 @@ summon spider ~ ~ ~ {
 	CustomName:"{\"text\":\"☠ Tarantula Broodfather\"}",
 	CustomNameVisible:true,
 	Tags:["skyblock"],
-	DeathLootTable:"skyblock:mobs/spiders_den/spider",
+	DeathLootTable:"skyblock:entities/spiders_den/spider",
 	Passengers:[
 		{
 			id:"minecraft:cave_spider",
@@ -15,7 +15,7 @@ summon spider ~ ~ ~ {
 				{Name:"generic.max_health",Base:1024},
 				{Name:"generic.attack_damage",Base:105}
 			],
-			DeathLootTable:"skyblock:mobs/slayer/tarantula_broodfather/tier3"
+			DeathLootTable:"skyblock:entities/slayer/tarantula_broodfather/tier3"
 		}
 	]
 }

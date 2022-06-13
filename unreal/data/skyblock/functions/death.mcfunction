@@ -20,7 +20,10 @@ tellraw @p[tag=death] ["",{"text":"[@: ","italic":true,"color":"gray"},{"score":
 tag @p[tag=death] add xp_loss
 function skyblock:xp_target
 
+gamemode survival @s[gamemode=adventure]
 advancement revoke @p[advancements={skyblock:commands/death=true}] only skyblock:commands/death
+
+tp @e[tag=boss] ~ ~-256 ~
 tag @p[tag=xp_loss] remove xp_loss
 tag @p[tag=death] remove death
 tag @p[tag=cracked_piggy_bank] remove cracked_piggy_bank

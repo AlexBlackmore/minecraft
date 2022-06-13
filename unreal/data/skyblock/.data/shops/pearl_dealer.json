@@ -26,57 +26,113 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"emerald",
-						Count:2
-					},
-					sell:{
-						id:"end_stone",
-						Count:1
-					}
-				},
-				{
-					buy:
-					{
-						id:"emerald",
-						Count:9
-					},
-					sell:{
-						id:"obsidian",
-						Count:1
-					}
-				},
-				{
-					buy:
-					{
-						id:"emerald",
-						Count:26,
+						Count:40,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
-							HideFlags:1
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
 						}
 					},
 					buyB:
 					{
 						id:"emerald",
-						Count:3
-					},
-					sell:{
-						id:"ender_pearl",
-						Count:8,
+						Count:45,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Silent Pearl\"}"
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
 							HideFlags:1,
-							Name:"Silent Pearl"
+							Name:"Enchanted Emerald"
 						}
+					},
+					sell:{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Dragon Hunter I\"}]"
+								]
+							},
+							Name:"Enchanted Book",
+							Dragon_Hunter:1
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:61,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:
+					{
+						id:"emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Book\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Ender Slayer VI\"}]"
+								]
+							},
+							Name:"Enchanted Book",
+							Ender_Slayer:6
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:5
+					},
+					sell:{
+						id:"end_stone",
+						Count:3
+					}
+				},
+				{
+					buy:
+					{
+						id:"emerald",
+						Count:25
+					},
+					sell:{
+						id:"obsidian",
+						Count:3
 					}
 				},
 				{
@@ -89,9 +145,10 @@ give @p villager_spawn_egg{
 								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
-							HideFlags:1
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
 						}
 					},
 					buyB:
@@ -103,9 +160,10 @@ give @p villager_spawn_egg{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
-							HideFlags:1
+							HideFlags:1,
+							Name:"Enchanted Emerald"
 						}
 					},
 					sell:{
@@ -135,9 +193,10 @@ give @p villager_spawn_egg{
 								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
-							HideFlags:1
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
 						}
 					},
 					buyB:
@@ -149,9 +208,10 @@ give @p villager_spawn_egg{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
-							HideFlags:1
+							HideFlags:1,
+							Name:"Enchanted Emerald"
 						}
 					},
 					sell:{
@@ -166,14 +226,19 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"pickaxe will grant experience,\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"won't spawn Endermites, and has\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"5%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop an extra\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"block.\"}]"
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"block.\"}]",
+									"[\"\",{\"text\":\" \"}]"
 								]
 							},
 							Enchantments:[
-								{id:"efficiency",lvl:6},
-								{id:"unbreaking",lvl:1}
+								{id:"efficiency",lvl:6}
 							],
-							Name:"Stonk"
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:1,Operation:0,UUID:[I;985409519,403253302,575782629,998070088]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;684961272,846201049,604752410,496819681]}
+							],
+							Name:"Stonk",
+							Rarity:3
 						}
 					}
 				},
@@ -181,86 +246,35 @@ give @p villager_spawn_egg{
 					buy:
 					{
 						id:"emerald",
-						Count:40,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{id:"unbreaking",lvl:1}
-							],
-							HideFlags:1
-						}
-					},
-					buyB:
-					{
-						id:"emerald",
-						Count:45,
+						Count:26,
 						tag:{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
-							HideFlags:1
-						}
-					},
-					sell:{
-						id:"enchanted_book",
-						Count:1,
-						tag:{
-							display:{
-								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Dragon Hunter I\"}]"
-								]
-							},
-							Name:"Enchanted Book",
-							Dragon_Hunter:1
-						}
-					}
-				},
-				{
-					buy:
-					{
-						id:"emerald",
-						Count:40,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{id:"unbreaking",lvl:1}
-							],
-							HideFlags:1
+							HideFlags:1,
+							Name:"Enchanted Emerald"
 						}
 					},
 					buyB:
 					{
 						id:"emerald",
-						Count:45,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{id:"unbreaking",lvl:1}
-							],
-							HideFlags:1
-						}
+						Count:3
 					},
 					sell:{
-						id:"enchanted_book",
-						Count:1,
+						id:"ender_pearl",
+						Count:8,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Book\"}",
-								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Ender Slayer VI\"}]"
-								]
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Silent Pearl\"}"
 							},
-							Name:"Enchanted Book",
-							Ender_Slayer:6
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Silent Pearl"
 						}
 					}
 				}

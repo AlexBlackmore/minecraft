@@ -9,12 +9,12 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Sea Leech","italic":false,"color":"red"}
+							"name":{"text":"Sea Leech","italic":false,"color":"aqua"}
 						},
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Level 30 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
 								["",{"text":"Gross! A Sea Leech!","italic":false,"color":"gray"}]
 							]
 						},
@@ -25,14 +25,14 @@
 								EntityTag:{
 									id:\"minecraft:silverfish\",
 									CustomNameVisible:true,
-									Tags:[\"skyblock\",\"sea_creature\",\"sea_leech\"],
+									Tags:[\"sea_creature\",\"sea_leech\",\"35xp\"],
 									AbsorptionAmount:10976,
 									Health:1024,
 									Attributes:[
 										{Name:\"generic.max_health\",Base:1024},
-										{Name:\"generic.attack_damage\",Base:30}
+										{Name:\"generic.attack_damage\",Base:60}
 									],
-									DeathLootTable:\"skyblock:mobs/sea_creatures/sea_leech\"
+									DeathLootTable:\"skyblock:entities/sea_creatures/sea_leech\"
 								}
 							}"
 						},

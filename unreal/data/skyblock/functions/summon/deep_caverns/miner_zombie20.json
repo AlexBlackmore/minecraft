@@ -1,7 +1,7 @@
 summon zombie ~ ~ ~ {
 	CustomName:"{\"text\":\"Miner Zombie\",\"color\":\"red\"}",
 	CustomNameVisible:true,
-	Tags:["skyblock","miner_zombie20"],
+	Tags:["deep_caverns","miner_zombie","40xp"],
 	Health:60,
 	Attributes:[
 		{Name:"generic.max_health",Base:60},
@@ -25,7 +25,7 @@ summon zombie ~ ~ ~ {
 			Count:1,
 			tag:{
 				Enchantments:[
-					{id:"protection",lvl:5}
+					{id:"unbreaking",lvl:1}
 				]
 			}
 		},
@@ -34,7 +34,7 @@ summon zombie ~ ~ ~ {
 			Count:1,
 			tag:{
 				Enchantments:[
-					{id:"protection",lvl:5}
+					{id:"unbreaking",lvl:1}
 				]
 			}
 		},
@@ -43,7 +43,7 @@ summon zombie ~ ~ ~ {
 			Count:1,
 			tag:{
 				Enchantments:[
-					{id:"protection",lvl:5}
+					{id:"unbreaking",lvl:1}
 				]
 			}
 		},
@@ -52,12 +52,12 @@ summon zombie ~ ~ ~ {
 			Count:1,
 			tag:{
 				Enchantments:[
-					{id:"protection",lvl:5}
+					{id:"unbreaking",lvl:1}
 				]
 			}
 		}
 	],
 	HandDropChances:[0.0f,0.0f],
 	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-	DeathLootTable:"skyblock:mobs/deep_caverns/miner_zombie20"
+	DeathLootTable:"skyblock:entities/deep_caverns/miner_zombie20"
 }

@@ -5,62 +5,85 @@
 			"entries":[
 				{
 					"type":"empty",
-					"weight":55
+					"weight":5498
 				},
 				{
 					"type":"item",
-					"name":"acacia_log",
-					"weight":15
+					"name":"minecraft:acacia_log",
+					"quality":1,
+					"weight":1500,
+					"functions":[
+						{
+							"function":"looting_enchant",
+							"count":{
+								"min":0,
+								"max":1
+							}
+						}
+					]
 				},
 				{
 					"type":"item",
-					"name":"spruce_log",
-					"weight":15
+					"name":"minecraft:dark_oak_log",
+					"quality":1,
+					"weight":1500,
+					"functions":[
+						{
+							"function":"looting_enchant",
+							"count":{
+								"min":0,
+								"max":1
+							}
+						}
+					]
 				},
 				{
 					"type":"item",
-					"name":"dark_oak_log",
-					"weight":15
-				}
-			],
-			"functions":[
+					"name":"minecraft:spruce_log",
+					"quality":1,
+					"weight":1500,
+					"functions":[
+						{
+							"function":"looting_enchant",
+							"count":{
+								"min":0,
+								"max":1
+							}
+						}
+					]
+				},
 				{
-					"function":"looting_enchant",
-					"count":{
-						"min":0,
-						"max":1
-					}
+					"type":"loot_table",
+					"name":"skyblock:items/travel_scrolls/howling_cave",
+					"quality":4,
+					"weight":2
 				}
 			]
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":{
-				"min":0.0,
-				"max":1.0
-			},
 			"entries":[
 				{
-					"type":"empty",
-					"weight":99970
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"functions":[
+				{
+					"function":"set_count",
+					"count":1
 				},
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/travel_scrolls/howling_cave",
-					"weight":20,
-					"quality":3
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/hound/epic",
-					"weight":8,
-					"quality":3
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/hound/legendary",
-					"weight":2,
-					"quality":4
+					"function":"set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.8333,
+							"looting_multiplier":0.01
+						}
+					]
 				}
 			]
 		}

@@ -7,102 +7,94 @@
 					"type":"item",
 					"name":"minecraft:experience_bottle",
 					"weight":1,
-					"conditions":[
+					"functions":[
 						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"head":{
-										"nbt":"{Name:\"Lapis Armor Helmet\"}"
-									}
-								}
-							}
+							"function":"set_count",
+							"count":0
 						},
 						{
-						  "condition":"random_chance",
-						  "chance":0.5
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"item",
-					"name":"minecraft:experience_bottle",
-					"weight":1,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"chest":{
-										"nbt":"{Name:\"Lapis Armor Chestplate\"}"
+							"function":"set_count",
+							"count":{
+								"min":0,
+								"max":1
+							},
+							"add":true,
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"head":{
+												"nbt":"{Name:\"Lapis Armor Helmet\"}"
+											}
+										}
 									}
 								}
-							}
+							]
 						},
 						{
-						  "condition":"random_chance",
-						  "chance":0.5
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"item",
-					"name":"minecraft:experience_bottle",
-					"weight":1,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"legs":{
-										"nbt":"{Name:\"Lapis Armor Leggings\"}"
+							"function":"set_count",
+							"count":{
+								"min":0,
+								"max":1
+							},
+							"add":true,
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"chest":{
+												"nbt":"{Name:\"Lapis Armor Chestplate\"}"
+											}
+										}
 									}
 								}
-							}
+							]
 						},
 						{
-						  "condition":"random_chance",
-						  "chance":0.5
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"item",
-					"name":"minecraft:experience_bottle",
-					"weight":1,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"feet":{
-										"nbt":"{Name:\"Lapis Armor Boots\"}"
+							"function":"set_count",
+							"count":{
+								"min":0,
+								"max":1
+							},
+							"add":true,
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"legs":{
+												"nbt":"{Name:\"Lapis Armor Leggings\"}"
+											}
+										}
 									}
 								}
-							}
+							]
 						},
 						{
-						  "condition":"random_chance",
-						  "chance":0.5
+							"function":"set_count",
+							"count":{
+								"min":0,
+								"max":1
+							},
+							"add":true,
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"feet":{
+												"nbt":"{Name:\"Lapis Armor Boots\"}"
+											}
+										}
+									}
+								}
+							]
 						}
 					]
 				}

@@ -1,11 +1,11 @@
 summon wolf ~ ~ ~ {
-	CustomName:"{\"text\":\"Wolf\"}",
+	CustomName:"{\"text\":\"Wolf\",\"color\":\"red\"}",
 	CustomNameVisible:true,
-	Tags:["skyblock"],
+	Tags:["wolf"],
 	Health:50,
 	Attributes:[
 		{Name:"generic.max_health",Base:50},
-		{Name:"generic.attack_damage",Base:16}
+		{Name:"generic.attack_damage",Base:18}
 	],
-	DeathLootTable:"skyblock:mobs/hub_island/wolf"
+	DeathLootTable:"skyblock:entities/hub_island/wolf"
 }

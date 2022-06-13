@@ -1,11 +1,11 @@
 summon zombie ~ ~ ~ {
 	CustomName:"{\"text\":\"Crypt Ghoul\",\"color\":\"red\"}",
 	CustomNameVisible:true,
-	Tags:["skyblock","crypt_ghoul"],
+	Tags:["crypt_ghoul","30xp"],
 	Health:400,
 	Attributes:[
 		{Name:"generic.max_health",Base:400},
-		{Name:"generic.attack_damage",Base:30}
+		{Name:"generic.attack_damage",Base:70}
 	],
 	HandItems:[
 		{
@@ -31,5 +31,5 @@ summon zombie ~ ~ ~ {
 	],
 	HandDropChances:[0.0f,0.0f],
 	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-	DeathLootTable:"skyblock:mobs/hub_island/crypt_ghoul"
+	DeathLootTable:"skyblock:entities/hub_island/crypt_ghoul"
 }

@@ -2,38 +2,49 @@
 	"pools":[
 		{
 			"rolls":1,
-			"bonus_rolls":{
-				"min":0.0,
-				"max":1.0
-			},
+			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"empty",
-					"weight":9957
+					"weight":9958
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/volta",
-					"weight":20,
-					"quality":2
+					"quality":2,
+					"weight":20
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/sorrow",
-					"weight":12,
-					"quality":2
+					"quality":2,
+					"weight":12
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/plasma",
-					"weight":10,
-					"quality":2
+					"quality":4,
+					"weight":10
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"empty",
+					"weight":99999
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/armor/ghostly_boots",
+					"name":"skyblock:items/enchanted/emerald2",
 					"weight":1,
-					"quality":2
+					"functions":[
+						{
+							"function":"minecraft:set_count",
+							"count":41
+						}
+					]
 				}
 			]
 		}

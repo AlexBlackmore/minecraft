@@ -9,23 +9,42 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Lava Pigman","italic":false,"color":"red"}
+							"name":{"text":"Lava Pigman","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"A Lava Pigman arose from the","italic":false,"color":"gray"}],
+								["",{"text":"depths!","italic":false,"color":"gray"}]
+							]
 						},
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
 								HideFlags:1,
-								Name:\"Lava Pigman\",
-								Sea_Creature:true
+								EntityTag:{
+									id:\"minecraft:zombified_pigman\",
+									CustomNameVisible:true,
+									Tags:[\"lava_sea_creature\",\"sea_creature\",\"lava_pigman\",\"10xp\"],
+									Fire:32767,
+									AbsorptionAmount:88976,
+									Health:1024,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:1024},
+										{Name:\"generic.attack_damage\",Base:140}
+									],
+									HandItems:[
+										{
+											id:\"golden_sword\",
+											Count:1
+										},
+										{}
+									],
+									HandDropChances:[0.0f,0.0f],
+									DeathLootTable:\"skyblock:entities/sea_creatures/crystal_hollows/lava_pigman\"
+								}
 							}"
-						},
-						{
-							"function":"minecraft:set_lore",
-							"lore":[
-								["",{"text":"Level 100 Sea Creature","italic":false,"color":"blue"}],
-								["",{"text":"A Lava Pigman arose from the","italic":false,"color":"gray"}],
-								["",{"text":"depths!","italic":false,"color":"gray"}]
-							]
 						},
 						{
 							"function":"minecraft:set_enchantments",

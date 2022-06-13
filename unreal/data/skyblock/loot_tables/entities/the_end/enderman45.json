@@ -5,16 +5,37 @@
 			"entries":[
 				{
 					"type":"item",
-					"name":"ender_pearl"
+					"name":"minecraft:ender_pearl"
 				}
 			],
 			"functions":[
 				{
 					"function":"set_count",
-					"count":{
-						"min":1,
-						"max":3
-					}
+					"count":1
+				},
+				{
+					"function":"set_count",
+					"count":3,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.25,
+							"looting_multiplier":0.01
+						}
+					]
+				},
+				{
+					"function":"set_count",
+					"count":2,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.75,
+							"looting_multiplier":0.01
+						}
+					]
 				},
 				{
 					"function":"looting_enchant",
@@ -27,50 +48,49 @@
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":{
-				"min":0.0,
-				"max":1.0
-			},
 			"entries":[
 				{
 					"type":"empty",
-					"weight":9887
+					"weight":9890
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/enchanted/ender_pearl",
-					"weight":100,
-					"quality":1
+					"quality":2,
+					"weight":100
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/pets/enderman/uncommon",
-					"weight":5,
-					"quality":1
+					"quality":4,
+					"weight":5
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:items/armor/ender/ender_armor",
-					"weight":3,
-					"quality":3
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/enderman/common",
-					"weight":2,
-					"quality":0
+					"name":"skyblock:items/armor/ender_armor/random",
+					"quality":4,
+					"weight":3
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/pets/enderman/rare",
-					"weight":2,
-					"quality":2
-				},
+					"quality":4,
+					"weight":2
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/enderman/epic",
-					"weight":1,
-					"quality":3
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"functions":[
+				{
+					"function":"set_count",
+					"count":2
 				}
 			]
 		}

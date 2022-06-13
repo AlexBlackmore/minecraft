@@ -85,6 +85,22 @@
 					}
 				}
 			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.8333,
+					"looting_multiplier":0.01
+				}
+			]
 		}
 	]
 }

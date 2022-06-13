@@ -9,12 +9,12 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Sea Witch","italic":false,"color":"red"}
+							"name":{"text":"Sea Witch","italic":false,"color":"yellow"}
 						},
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Level 15 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
 								["",{"text":"It looks like you've disrupted","italic":false,"color":"gray"}],
 								["",{"text":"the Sea Witch's brewing session.","italic":false,"color":"gray"}],
 								["",{"text":"Watch out, she's furious!","italic":false,"color":"gray"}]
@@ -28,14 +28,14 @@
 									id:\"minecraft:witch\",
 									CustomName:"{\"text\":\"Sea Witch\"}",
 									CustomNameVisible:true,
-									Tags:[\"skyblock\",\"sea_creature\",\"sea_witch\"],
+									Tags:[\"skyblock\",\"sea_creature\",\"sea_witch\",\"30xp\"],
 									AbsorptionAmount:176,
 									Health:1024,
 									Attributes:[
 										{Name:\"generic.max_health\",Base:1024},
-										{Name:\"generic.attack_damage\",Base:15}
+										{Name:\"generic.attack_damage\",Base:30}
 									],
-									DeathLootTable:\"skyblock:mobs/sea_creatures/sea_witch\"
+									DeathLootTable:\"skyblock:entities/sea_creatures/sea_witch\"
 								}
 							}"
 						},

@@ -9,12 +9,12 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Monster of the Deep","italic":false,"color":"red"}
+							"name":{"text":"Monster of the Deep","italic":false,"color":"yellow"}
 						},
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Level 20 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
 								["",{"text":"The Monster of The Deep emerges","italic":false,"color":"gray"}],
 								["",{"text":"from the dark depths...","italic":false,"color":"gray"}]
 							]
@@ -26,13 +26,13 @@
 								EntityTag:{
 									id:\"minecraft:chicken\",
 									CustomNameVisible:true,
-									Tags:[\"skyblock\",\"sea_creature\",\"monster_of_the_deep\"],
+									Tags:[\"sea_creature\",\"monster_of_the_deep\",\"16xp\"],
 									Passengers:[
 										{
 											id:\"minecraft:zombie\",
-											CustomName:\"{\\\"text\\\":\\\"Monster of the Deep\\\"}\",
+											CustomName:\"{\\\"text\\\":\\\"Rider of the Deep\\\",\\\"color\\\":\\\"yellow\\\"}\",
 											CustomNameVisible:true,
-											Tags:[\"skyblock\",\"sea_creature\",\"monster_of_the_deep\"],
+											Tags:[\"sea_creature\",\"rider_of_the_deep\",\"16xp\"],
 											IsBaby:true,
 											AbsorptionAmount:2976,
 											Health:1024,
@@ -43,33 +43,59 @@
 											HandItems:[
 												{
 													id:\"diamond_sword\",
-													Count:1
+													Count:1,
+													tag:{
+														Enchantments:[
+															{id:\"unbreaking\",lvl:1}
+														]
+													}
 												},
 												{}
 											],
 											ArmorItems:[
 												{
 													id:\"chainmail_boots\",
-													Count:1
+													Count:1,
+													tag:{
+														Enchantments:[
+															{id:\"unbreaking\",lvl:1}
+														]
+													}
 												},
 												{
 													id:\"chainmail_leggings\",
-													Count:1
+													Count:1,
+													tag:{
+														Enchantments:[
+															{id:\"unbreaking\",lvl:1}
+														]
+													}
 												},
 												{
 													id:\"chainmail_chestplate\",
-													Count:1
+													Count:1,
+													tag:{
+														Enchantments:[
+															{id:\"unbreaking\",lvl:1}
+														]
+													}
 												},
 												{
 													id:\"chainmail_helmet\",
-													Count:1
+													Count:1,
+													tag:{
+														Enchantments:[
+															{id:\"unbreaking\",lvl:1}
+														]
+													}
 												}
 											],
 											HandDropChances:[0.0f,0.0f],
 											ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-											DeathLootTable:\"skyblock:mobs/sea_creatures/monster_of_the_deep\"
+											DeathLootTable:\"skyblock:entities/sea_creatures/rider_of_the_deep\"
 										}
-									]
+									],
+									DeathLootTable:\"skyblock:entities/sea_creatures/monster_of_the_deep\"
 								}
 							}"
 						},

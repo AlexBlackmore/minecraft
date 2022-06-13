@@ -6,6 +6,11 @@
 			"bonus_rolls":0,
 			"entries":[
 				{
+					"type":"empty",
+					"quality":0,
+					"weight":100
+				},
+				{
 					"type":"loot_table",
 					"name":"skyblock:gameplay/fishing/sea_creatures",
 					"quality":1,
@@ -57,7 +62,7 @@
 					"type":"loot_table",
 					"name":"skyblock:gameplay/fishing/sea_creatures",
 					"quality":0,
-					"weight":5,
+					"weight":4,
 					"conditions":[						
 						{
 							"condition":"minecraft:entity_properties",
@@ -84,7 +89,7 @@
 					"type":"loot_table",
 					"name":"skyblock:gameplay/fishing/sea_creatures",
 					"quality":0,
-					"weight":5,
+					"weight":4,
 					"conditions":[
 						{
 							"condition":"minecraft:entity_properties",
@@ -111,7 +116,7 @@
 					"type":"loot_table",
 					"name":"skyblock:gameplay/fishing/sea_creatures",
 					"quality":0,
-					"weight":3,
+					"weight":5,
 					"conditions":[
 						{
 							"condition":"minecraft:entity_properties",
@@ -150,22 +155,17 @@
 					"name":"skyblock:gameplay/fishing/festival_sea_creatures",
 					"quality":1,
 					"weight":15,
-					"conditions":[
+					"conditions":[					
 						{
-							"condition":"alternative",
-							"terms":[							
-								{
-									"condition":"minecraft:entity_properties",
-									"entity":"this",
-									"predicate":{
-										"equipment":{
-											"offhand":{
-												"nbt":"{Name:\"Shark Bait\"}"
-											}
-										}
+							"condition":"minecraft:entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"nbt":"{Name:\"Shark Bait\"}"
 									}
 								}
-							]
+							}
 						}
 					]
 				},
@@ -176,20 +176,23 @@
 					"weight":15,
 					"conditions":[
 						{
-							"condition":"alternative",
-							"terms":[
-								{
-									"condition":"minecraft:entity_properties",
-									"entity":"this",
-									"predicate":{
-										"equipment":{
-											"offhand":{
-												"nbt":"{Name:\"Spooky Bait\"}"
-											}
-										}
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"nbt":"{Name:\"Spooky Bait\"}"
 									}
 								}
-							]
+							}
+						},
+						{
+							"condition":"time_check",
+							"value":{
+								"min":12000,
+								"max":23999
+							},
+							"period":24000
 						}
 					]
 				},
@@ -208,6 +211,12 @@
 										"nbt":"{Name:\"Ice Bait\"}"
 									}
 								}
+							}
+						},
+						{
+							"condition":"location_check",
+							"predicate":{
+								"dimension":"skyblock:winter_island"
 							}
 						}
 					]

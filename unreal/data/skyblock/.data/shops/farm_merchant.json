@@ -188,6 +188,15 @@ give @p villager_spawn_egg{
 							AttributeModifiers:[
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
 							],
+							CanDestroy:[
+								"minecraft:wheat",
+								"minecraft:carrots",
+								"minecraft:potatoes",
+								"minecraft:cactus",
+								"minecraft:sugar_cane",
+								"minecraft:nether_wart"
+							],
+							HideFlags:8,
 							Name:"Rookie Hoe",
 							Rarity:0
 						}

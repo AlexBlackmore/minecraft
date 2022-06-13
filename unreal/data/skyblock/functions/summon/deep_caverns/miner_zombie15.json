@@ -1,7 +1,7 @@
 summon zombie ~ ~ ~ {
 	CustomName:"{\"text\":\"Miner Zombie\",\"color\":\"red\"}",
 	CustomNameVisible:true,
-	Tags:["skyblock","miner_zombie"],
+	Tags:["deep_caverns","miner_zombie","30xp"],
 	Health:50,
 	Attributes:[
 		{Name:"generic.max_health",Base:50},
@@ -34,5 +34,5 @@ summon zombie ~ ~ ~ {
 	],
 	HandDropChances:[0.0f,0.0f],
 	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-	DeathLootTable:"skyblock:mobs/deep_caverns/miner_zombie15"
+	DeathLootTable:"skyblock:entities/deep_caverns/miner_zombie15"
 }

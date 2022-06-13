@@ -5,16 +5,37 @@
 			"entries":[
 				{
 					"type":"item",
-					"name":"ender_pearl"
+					"name":"minecraft:ender_pearl"
 				}
 			],
 			"functions":[
 				{
 					"function":"set_count",
-					"count":{
-						"min":1,
-						"max":3
-					}
+					"count":1
+				},
+				{
+					"function":"set_count",
+					"count":3,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.3,
+							"looting_multiplier":0.01
+						}
+					]
+				},
+				{
+					"function":"set_count",
+					"count":2,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.3,
+							"looting_multiplier":0.01
+						}
+					]
 				},
 				{
 					"function":"looting_enchant",
@@ -27,44 +48,61 @@
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":{
-				"min":0.0,
-				"max":1.0
-			},
 			"entries":[
 				{
 					"type":"empty",
-					"weight":9882
+					"weight":9883
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/enchanted/ender_pearl",
-					"weight":100,
-					"quality":1
+					"quality":2,
+					"weight":100
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:items/armor/ender/ender_armor",
-					"weight":10,
-					"quality":3
+					"name":"skyblock:items/armor/ender_armor/random",
+					"quality":4,
+					"weight":10
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/pets/enderman/common",
-					"weight":5,
-					"quality":0
+					"quality":4,
+					"weight":5
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/pets/enderman/uncommon",
-					"weight":2,
-					"quality":1
+					"quality":4,
+					"weight":2
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"functions":[
+				{
+					"function":"set_count",
+					"count":1
 				},
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/enderman/rare",
-					"weight":1,
-					"quality":2
+					"function":"set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.6667,
+							"looting_multiplier":0.01
+						}
+					]
 				}
 			]
 		}

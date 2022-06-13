@@ -1,0 +1,33 @@
+setblock ~ ~ ~ spawner{
+	MinSpawnDelay:100s,
+	MaxSpawnDelay:1000s,
+	SpawnCount:1s,
+	MaxNearbyEntities:2s,
+	RequiredPlayerRange:4s,
+	SpawnPotentials:[
+		{
+			weight:1,
+			data:{
+				entity:{
+					id:"minecraft:wolf",
+					CustomName:"{\"text\":\"Old Wolf\",\"color\":\"red\"}",
+					CustomNameVisible:true,
+					Tags:["old_wolf","30xp"],
+					AbsorptionAmount:1976,
+					Health:1024,
+					Attributes:[
+						{Name:"generic.max_health",Base:1024},
+						{Name:"generic.attack_damage",Base:160}
+					],
+					DeathLootTable:"skyblock:entities/hub_island/old_wolf"
+				},
+				custom_spawn_rules:{
+					block_light_limit:{
+						min_inclusive:0,
+						max_inclusive:15
+					}
+				}
+			}
+		}
+	]
+}

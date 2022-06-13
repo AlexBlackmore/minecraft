@@ -9,12 +9,12 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Catfish","italic":false,"color":"red"}
+							"name":{"text":"Catfish","italic":false,"color":"aqua"}
 						},
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Level 23 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
 								["",{"text":"Huh? A Catfish!","italic":false,"color":"gray"}]
 							]
 						},
@@ -25,14 +25,14 @@
 								EntityTag:{
 									id:\"minecraft:ocelot\",
 									CustomNameVisible:true,
-									Tags:[\"skyblock\",\"sea_creature\",\"catfish\"],
+									Tags:[\"sea_creature\",\"catfish\",\"25xp\"],
 									AbsorptionAmount:4176,
 									Health:1024,
 									Attributes:[
 										{Name:\"generic.max_health\",Base:1024},
-										{Name:\"generic.attack_damage\",Base:23}
+										{Name:\"generic.attack_damage\",Base:50}
 									],
-									DeathLootTable:\"skyblock:mobs/sea_creatures/catfish\"
+									DeathLootTable:\"skyblock:entities/sea_creatures/catfish\"
 								}
 							}"
 						},

@@ -1,0 +1,68 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_boots",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Snow Suit Boots","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								{"text":"Full Set Bonus: Cold Thumb","italic":false,"color":"gold"},
+								["",{"text":"Eliminates the cost of using","italic":false,"color":"gray"}],
+								["",{"text":"Frosty the Snow Cannon","italic":false,"color":"aqua"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Each piece grants a ","italic":false,"color":"gray"},{"text":"+5%","italic":false,"color":"green"},{"text":" chance","italic":false,"color":"gray"}],
+								["",{"text":"to receive a present when","italic":false,"color":"gray"}],
+								["",{"text":"killing Magma Cubes on the","italic":false,"color":"gray"}],
+								["",{"text":"Winter Island.","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"All stats of this armor piece","italic":false,"color":"gray"}],
+								["",{"text":"are doubled while on the Winter","italic":false,"color":"gray"}],
+								["",{"text":"Island!","italic":false,"color":"gray"}],
+								{"text":" "},
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									color:16777215
+								},
+								HideFlags:64,
+								Name:\"Snow Suit Boots\"
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Max Health",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":13,
+									"slot":"feet"
+								},
+								{
+									"name":"Armor",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":5,
+									"slot":"feet"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

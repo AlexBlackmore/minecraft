@@ -9,23 +9,33 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Oasis Sheep","italic":false,"color":"red"}
+							"name":{"text":"Oasis Sheep","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"An Oasis Sheep appears from the","italic":false,"color":"gray"}],
+								["",{"text":"water.","italic":false,"color":"gray"}]
+							]
 						},
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
 								HideFlags:1,
-								Name:\"Oasis Sheep\",
-								Sea_Creature:true
+								EntityTag:{
+									id:\"minecraft:sheep\",
+									CustomNameVisible:true,
+									Tags:[\"sea_creature\",\"oasis_sheep\",\"10xp\"],
+									AbsorptionAmount:176,
+									Health:1024,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:1024},
+										{Name:\"generic.attack_damage\",Base:1}
+									],
+									DeathLootTable:\"skyblock:entities/sea_creatures/oasis/sheep\"
+								}
 							}"
-						},
-						{
-							"function":"minecraft:set_lore",
-							"lore":[
-								["",{"text":"Level 10 Sea Creature","italic":false,"color":"blue"}],
-								["",{"text":"An Oasis Sheep appears from the","italic":false,"color":"gray"}],
-								["",{"text":"water.","italic":false,"color":"gray"}]
-							]
 						},
 						{
 							"function":"minecraft:set_enchantments",

@@ -20,7 +20,31 @@
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"minecraft:blocks/diamond_ore"
+				},
+				{
+					"type":"loot_table",
+					"name":"minecraft:blocks/diamond_block"
+				},
+				{
+					"type":"loot_table",
+					"name":"minecraft:blocks/obsidian"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.2,
+					"looting_multiplier":0.01
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"empty",
@@ -79,6 +103,33 @@
 							"enchantments":{
 								"protection":5
 							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"functions":[
+				{
+					"function":"set_count",
+					"count":2
+				},
+				{
+					"function":"set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.5,
+							"looting_multiplier":0.01
 						}
 					]
 				}

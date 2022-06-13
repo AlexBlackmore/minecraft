@@ -20,23 +20,17 @@
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"empty",
-					"weight":999987
-				},
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"conditions":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/hound/epic",
-					"quality":3,
-					"weight":10
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/hound/legendary",
-					"quality":4,
-					"weight":3
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.1667,
+					"looting_multiplier":0.01
 				}
 			]
 		}

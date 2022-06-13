@@ -1,0 +1,30 @@
+{
+	"parent":"skyblock:commands/npcs",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Shop Restock",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:villager_trade",
+			"conditions":{
+				"player":[
+					{
+						"condition":"random_chance",
+						"chance":0.0625
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/shop_restock"
+	}
+}

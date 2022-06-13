@@ -9,16 +9,6 @@
 					"quality":1,
 					"functions":[
 						{
-							"function":"minecraft:set_name",
-							"name":{"text":"Ice Rune","italic":false,"color":"aqua"}
-						},
-						{
-							"function":"minecraft:set_lore",
-							"lore":[
-								["",{"text":"Your arrows are icy cold!","italic":false,"color":"gray"}]
-							]
-						},
-						{
 							"function":"enchant_randomly",
 							"enchantments":[
 								"flame",
@@ -31,6 +21,17 @@
 								"multishot",
 								"piercing",
 								"quick_charge"
+							]
+						},
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Ice Rune","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":" "}],
+								["",{"text":"Your arrows are icy cold!","italic":false,"color":"gray"}]
 							]
 						}
 					]

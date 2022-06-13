@@ -5,41 +5,91 @@
 			"entries":[
 				{
 					"type":"loot_table",
-					"name":"skyblock:items/candy/green_candy"
+					"name":"skyblock:items/candy/green"
 				}
 			],
 			"functions":[
 				{
 					"function":"set_count",
-					"count":{
-						"min":1,
-						"max":2
-					}
+					"count":1
+				},
+				{
+					"function":"set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.25,
+							"looting_multiplier":0.01
+						}
+					]
 				}
 			]
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":{
-				"min":0.0,
-				"max":1.0
-			},
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/candy/purple"
+				}
+			],
+			"functions":[
+				{
+					"function":"set_count",
+					"count":1
+				},
+				{
+					"function":"set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.05,
+							"looting_multiplier":0.01
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.35,
+					"looting_multiplier":0.01
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"empty",
-					"weight":17
+					"weight":90
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/ectoplasm",
-					"weight":2,
-					"quality":2
-				},
+					"quality":1,
+					"weight":10
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/candy/purple_candy",
-					"weight":1,
-					"quality":3
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.1667,
+					"looting_multiplier":0.01
 				}
 			]
 		}

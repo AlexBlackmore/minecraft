@@ -9,12 +9,12 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Water Hydra","italic":false,"color":"red"}
+							"name":{"text":"Water Hydra","italic":false,"color":"gold"}
 						},
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Level 100 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
 								["",{"text":"The Water Hydra has come to test","italic":false,"color":"gray"}],
 								["",{"text":"your Strength.","italic":false,"color":"gray"}]
 							]
@@ -26,17 +26,22 @@
 								EntityTag:{
 									id:\"minecraft:drowned\",
 									CustomNameVisible:true,
-									Tags:[\"skyblock\",\"sea_creature\",\"water_hydra\"],
-									AbsorptionAmount:66976,
+									Tags:[\"skyblock\",\"sea_creature\",\"water_hydra\",\"1xp\"],
+									AbsorptionAmount:98976,
 									Health:1024,
 									Attributes:[
 										{Name:\"generic.max_health\",Base:1024},
-										{Name:\"generic.attack_damage\",Base:100}
+										{Name:\"generic.attack_damage\",Base:80}
 									],
 									HandItems:[
 										{
 											id:\"diamond_sword\",
-											Count:1
+											Count:1,
+											tag:{
+												Enchantments:[
+													{id:\"unbreaking\",lvl:1}
+												]
+											}
 										},
 										{}
 									],
@@ -81,7 +86,7 @@
 									],
 									HandDropChances:[0.0f,0.0f],
 									ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
-									DeathLootTable:\"skyblock:mobs/sea_creatures/water_hydra\"
+									DeathLootTable:\"skyblock:entities/sea_creatures/water_hydra\"
 								}
 							}"
 						},

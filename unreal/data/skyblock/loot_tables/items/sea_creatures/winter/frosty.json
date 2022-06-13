@@ -9,23 +9,32 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Frosty","italic":false,"color":"red"}
+							"name":{"text":"Frosty the Snowman","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"It's a Snowman! It looks","italic":false,"color":"gray"}],
+								["",{"text":"harmless.","italic":false,"color":"gray"}]
+							]
 						},
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
 								HideFlags:1,
-								Name:\"Frosty\",
-								Sea_Creature:true
+								EntityTag:{
+									id:\"minecraft:snow_golem\",
+									CustomNameVisible:true,
+									Tags:[\"sea_creature\",\"frosty_the_snowman\",\"30xp\"],
+									Health:1000,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:1000},
+										{Name:\"generic.attack_damage\",Base:18}
+									],
+									DeathLootTable:\"skyblock:entities/sea_creatures/winter/frosty_the_snowman\"
+								}
 							}"
-						},
-						{
-							"function":"minecraft:set_lore",
-							"lore":[
-								["",{"text":"Level 13 Sea Creature","italic":false,"color":"blue"}],
-								["",{"text":"It's a Snowman! It looks","italic":false,"color":"gray"}],
-								["",{"text":"harmless.","italic":false,"color":"gray"}]
-							]
 						},
 						{
 							"function":"minecraft:set_enchantments",

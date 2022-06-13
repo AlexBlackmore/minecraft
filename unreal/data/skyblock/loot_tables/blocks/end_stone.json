@@ -6,7 +6,7 @@
 			"entries":[
 				{
 					"type":"item",
-					"name":"end_stone"
+					"name":"minecraft:end_stone"
 				}
 			],
 			"functions":[
@@ -37,9 +37,36 @@
 					"add":true
 				}
 			]
-			"conditions":[
+		},
+		{
+			"rolls":1,
+			"entries":[
 				{
-					"condition":"survives_explosion"
+					"type":"item",
+					"name":"minecraft:experience_bottle"
+				}
+			],
+			"functions":[
+				{
+					"function":"set_count",
+					"count":{
+						"min":0,
+						"max":1
+					},
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{Name:\"Stonk\"}"
+									}
+								}
+							}
+						}
+					],
+					"add":true
 				}
 			]
 		},
@@ -49,11 +76,11 @@
 			"entries":[
 				{
 					"type":"empty",
-					"weight":99
+					"weight":181
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:glowing_end_stone",
+					"name":"skyblock:gameplay/glowing_blocks/end_stone",
 					"weight":1
 				}
 			]

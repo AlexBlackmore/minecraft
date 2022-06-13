@@ -9,12 +9,12 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Carrot King","italic":false,"color":"red"}
+							"name":{"text":"Carrot King","italic":false,"color":"aqua"}
 						},
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Level 25 Sea Creature","italic":false,"color":"blue"}],
+								["",{"text":"Sea Creature","italic":false,"color":"blue"}],
 								["",{"text":"Is this even a Fish? It's the","italic":false,"color":"gray"}],
 								["",{"text":"Carrot King!","italic":false,"color":"gray"}]
 							]
@@ -27,14 +27,14 @@
 									id:\"minecraft:rabbit\",
 									CustomNameVisible:true,
 									RabbitType:99,
-									Tags:[\"sea_creature\",\"carrot_king\",\"skyblock\"],
+									Tags:[\"sea_creature\",\"carrot_king\",\"30xp\"],
 									AbsorptionAmount:5376,
 									Health:1024,
 									Attributes:[
 										{Name:\"generic.max_health\",Base:1024},
-										{Name:\"generic.attack_damage\",Base:15}
+										{Name:\"generic.attack_damage\",Base:55}
 									],
-									DeathLootTable:\"skyblock:mobs/sea_creatures/carrot_king\"
+									DeathLootTable:\"skyblock:entities/sea_creatures/carrot_king\"
 								}
 							}"
 						},

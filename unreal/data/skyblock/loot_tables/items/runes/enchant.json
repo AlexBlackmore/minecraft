@@ -9,17 +9,6 @@
 					"quality":1,
 					"functions":[
 						{
-							"function":"minecraft:set_name",
-							"name":{"text":"Enchant Rune","italic":false,"color":"gold"}
-						},
-						{
-							"function":"minecraft:set_lore",
-							"lore":[
-								["",{"text":"Obtained very rarely from","italic":false,"color":"gray"}],
-								["",{"text":"slaying the Voidgloom Seraph.","italic":false,"color":"gray"}]
-							]
-						},
-						{
 							"function":"enchant_randomly",
 							"enchantments":[
 								"blast_protection",
@@ -31,6 +20,18 @@
 								"binding_curse",
 								"vanishing_curse",
 								"mending"
+							]
+						},
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Enchant Rune","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":" "}],
+								["",{"text":"Obtained very rarely from","italic":false,"color":"gray"}],
+								["",{"text":"slaying the Voidgloom Seraph.","italic":false,"color":"gray"}]
 							]
 						}
 					]

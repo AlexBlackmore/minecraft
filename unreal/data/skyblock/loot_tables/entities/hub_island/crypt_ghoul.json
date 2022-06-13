@@ -5,16 +5,7 @@
 			"entries":[
 				{
 					"type":"item",
-					"name":"rotten_flesh",
-					"functions":[
-						{
-							"function":"set_count",
-							"count":{
-								"min":1,
-								"max":2
-							}
-						}
-					]
+					"name":"minecraft:rotten_flesh"
 				}
 			],
 			"functions":[
@@ -25,27 +16,39 @@
 						"max":1
 					}
 				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.5,
+					"looting_multiplier":0.01
+				}
 			]
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"empty",
-					"weight":99996
+					"type":"item",
+					"name":"minecraft:emerald"
+				}
+			],
+			"functions":[
+				{
+					"function":"set_count",
+					"count":2
 				},
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/ghoul/epic",
-					"quality":3,
-					"weight":3
-				},
-				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/ghoul/legendary",
-					"quality":4,
-					"weight":1
+					"function":"set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.1667,
+							"looting_multiplier":0.01
+						}
+					]
 				}
 			]
 		}
