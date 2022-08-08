@@ -56,11 +56,14 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:skeleton_skull"
+					"type":"item",
+					"name":"minecraft:skeleton_skull"
 				}
 			],
 			"conditions":[
+				{
+					"condition": "killed_by_player"
+				},
 				{
 					"condition":"entity_properties",
 					"entity":"killer_player",

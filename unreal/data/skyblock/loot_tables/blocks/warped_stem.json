@@ -1,0 +1,62 @@
+{
+	"type": "minecraft:block",
+	"pools":[
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:warped_planks",
+							"conditions": [
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"mainhand":{
+												"nbt":"{Name:\"Efficient Axe\"}"
+											}
+										}
+									}
+								}
+							],
+							"functions":[
+								{
+									"function":"set_count",
+									"count":5
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:warped_log"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/exp_boosts/foraging"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"nbt":"{Inventory:[{tag:{Name:\"Foraging Exp Boost\"}}]}"
+						}
+					}
+				}
+			]
+		}
+	]
+}

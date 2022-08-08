@@ -13,32 +13,7 @@
 		"hidden":false
 	},
 	"criteria":{
-		"effects_changed":{
-			"trigger":"minecraft:effects_changed",
-			"conditions":{
-				"effects":{
-					"poison":{
-						"amplifier":{
-							"min":0
-						}
-					}
-				},
-				"player":[
-					{
-						"condition":"entity_properties",
-						"entity":"this",
-						"predicate":{
-							"nbt":"{
-								Inventory:[
-									{tag:{Name:\"Vaccine Talisman\"}}
-								]
-							}"
-						}
-					}
-				]
-			}
-		},
-		"inventory_changed":{
+		"criterion":{
 			"trigger":"minecraft:inventory_changed",
 			"conditions":{
 				"items":[
@@ -50,12 +25,6 @@
 		}
 
 	},
-	"requirements":[
-		[
-			"effects_changed",
-			"inventory_changed"
-		]
-	],
 	"rewards":{
 		"function":"skyblock:abilities/accessories/vaccine_talisman"
 	}

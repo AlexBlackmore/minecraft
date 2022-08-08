@@ -1,0 +1,27 @@
+{
+	"parent":"skyblock:commands/abilities",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Magical Milk Bucket (Consume)",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":false,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:consume_item",
+			"conditions":{
+				"item":{
+					"nbt":"{Inventory:[{tag:{Name:\"Magical Milk Bucket\"}}]}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:abilities/instant/magical_milk_bucket_consume"
+	}
+}

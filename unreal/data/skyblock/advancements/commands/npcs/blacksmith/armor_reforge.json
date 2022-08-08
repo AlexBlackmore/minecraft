@@ -12,6 +12,64 @@
 		"hidden":true
 	},
 	"criteria":{
+		"coal":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"blacksmith\"]}"
+				},
+				"item":{
+					"items":[
+						"leather_helmet",
+						"leather_chestplate",
+						"leather_leggings",
+						"leather_boots",
+						"iron_helmet",
+						"iron_chestplate",
+						"iron_leggings",
+						"iron_boots",
+						"golden_helmet",
+						"golden_chestplate",
+						"golden_leggings",
+						"golden_boots",
+						"chainmail_helmet",
+						"chainmail_chestplate",
+						"chainmail_leggings",
+						"chainmail_boots",
+						"diamond_helmet",
+						"diamond_chestplate",
+						"diamond_leggings",
+						"diamond_boots",
+						"turtle_helmet",
+						"netherite_helmet",
+						"netherite_chestplate",
+						"netherite_leggings",
+						"netherite_boots"
+					]
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"count":{
+										"min":10
+									},
+									"items":[
+										"coal"
+									]
+								}
+							},
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		},
 		"common":{
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
@@ -42,6 +100,22 @@
 							"player":{
 								"level":{
 									"min":13
+								}
+							}
+						}
+					},
+					{
+						"condition":"inverted",
+						"term":{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"items":[
+											"coal"
+										]
+									}
 								}
 							}
 						}
@@ -76,6 +150,22 @@
 							"player":{
 								"level":{
 									"min":19
+								}
+							}
+						}
+					},
+					{
+						"condition":"inverted",
+						"term":{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"items":[
+											"coal"
+										]
+									}
 								}
 							}
 						}
@@ -115,6 +205,7 @@
 	},
 	"requirements":[
 		[
+			"coal",
 			"common",
 			"uncommon",
 			"rare"

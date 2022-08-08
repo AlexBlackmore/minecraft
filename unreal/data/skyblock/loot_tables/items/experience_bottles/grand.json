@@ -4,24 +4,25 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"alternatives",
-					"children":[
+					"type":"item",
+					"name":"minecraft:experience_bottle",
+					"functions":[
 						{
-							"type":"item",
-							"name":"minecraft:experience_bottle",
-							"functions":[
-								{
-									"function":"minecraft:set_name",
-									"name":{"text":"Grand Experience Bottle","italic":false,"color":"yellow"}
-								},
-								{
-									"function":"minecraft:set_nbt",
-									"tag":"{
-										Name:\"Grand Experience Bottle\",
-										Ability:true
-									}"
-								}
+							"function":"minecraft:set_name",
+							"name":{"text":"Grand Experience Bottle","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Sneak to receive ","italic":false,"color":"gray"},{"text":"+1,500","italic":false,"color":"dark_aqua"},{"text":" experience!","italic":false,"color":"gray"}]
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Grand Experience Bottle\",
+								Ability:true
+							}"
 						}
 					]
 				}

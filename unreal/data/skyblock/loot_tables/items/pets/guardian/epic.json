@@ -1,0 +1,49 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Guardian","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"italic":false,"color":"blue","text":"Pet"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gold","text":"Ability: Lazerbeam"}],
+								["",{"italic":false,"color":"gray","text":"Zaps your enemies for "},{"italic":false,"color":"green","text":"15x"},{"italic":false,"color":"gray","text":" your"}],
+								["",{"italic":false,"color":"blue","text":"Intelligence"},{"italic":false,"color":"gray","text":" every "},{"italic":false,"color":"green","text":"3"},{"italic":false,"color":"gray","text":" seconds."}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gold","text":"Ability: Enchanting Exp Boost"}],
+								["",{"italic":false,"color":"gray","text":"Grants a "},{"italic":false,"color":"green","text":"25%"},{"italic":false,"color":"gray","text":" chance to receive"}],
+								["",{"italic":false,"color":"gray","text":"extra experience bottles from"}],
+								["",{"italic":false,"color":"gray","text":"the "},{"italic":false,"color":"aqua","text":"Experimentation Table"},{"italic":false,"color":"gray","text":"."}],
+								["",{"text":" "}],
+								["",{"italic":false,"text":"When Summoned:"}],
+								["",{"italic":false,"color":"blue","text":"+1 Intelligence"},{"italic":false,"color":"dark_gray","text":" per "},{"italic":false,"color":"dark_aqua","text":"1 level"}],
+								["",{"italic":false,"color":"blue","text":"+1 Armor"},{"italic":false,"color":"dark_gray","text":" per "},{"italic":false,"color":"dark_aqua","text":"10 levels"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;670674738,-1901507808,-2112478803,438125905],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM1ZmIwZDU5YzZlM2YzYzcxMmExN2RiMWM0ZDZkZWY4MGViZDk4OTM1NzE0NzY5MTcwYjE2MDZjM2Q5MDQzYiJ9fX0=\"}]}},
+								Name:\"Guardian\",
+								Rarity:3,
+								Ability:true,
+								Pet:true
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

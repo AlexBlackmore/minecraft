@@ -1,0 +1,2 @@
+tellraw @s ["",{"text":"<","color":"white"},{"text":"Gustave","color":"green"},{"text":"> You're getting much faster! Use my ","color":"white"},{"text":"Hunter Knife","color":"yellow"},{"text":". Holding it somehow makes you go faster."}]
+playsound minecraft:entity.villager.trade player @s

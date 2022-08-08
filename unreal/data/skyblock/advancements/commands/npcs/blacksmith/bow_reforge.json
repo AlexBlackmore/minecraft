@@ -12,6 +12,41 @@
 		"hidden":true
 	},
 	"criteria":{
+		"coal":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"blacksmith\"]}"
+				},
+				"item":{
+					"items":[
+						"bow",
+						"crossbow"
+					]
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"count":{
+										"min":10
+									},
+									"items":[
+										"coal"
+									]
+								}
+							},
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		},
 		"common":{
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
@@ -35,6 +70,22 @@
 								}
 							}
 						}
+					},
+					{
+						"condition":"inverted",
+						"term":{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"items":[
+											"coal"
+										]
+									}
+								}
+							}
+						}
 					}
 				]
 			}
@@ -42,7 +93,8 @@
 	},
 	"requirements":[
 		[
-			"common"
+			"common",
+			"coal"
 		]
 	],
 	"rewards":{

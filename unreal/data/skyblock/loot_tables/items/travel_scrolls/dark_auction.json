@@ -1,0 +1,38 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Travel Scroll to Dark Auction","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Use this item to add it to your","italic":false,"color":"gray"}],
+								["",{"text":"Travel Scroll collection.","italic":false,"color":"gray"}],
+								["",{"text":" "}],
+								["",{"text":"Island: ","italic":false,"color":"gray"},{"text":"Hub","italic":false,"color":"green"}],
+								["",{"text":"Teleport: ","italic":false,"color":"gray"},{"text":"Sirius Shack","italic":false,"color":"yellow"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Travel Scroll to Dark Auction\",
+								Recipes:[
+									\"skyblock:travel_scrolls/dark_auction\"
+								]
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

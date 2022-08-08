@@ -10,13 +10,22 @@
 					"name":"minecraft:ancient_debris"
 				}
 			]
-		},
+		}
+	],
+	"functions":[
 		{
-			"rolls":1,
-			"entries":[
+			"function":"furnace_smelt",
+			"conditions":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:refined_mineral"
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Smelting_Touch:true}"
+							}
+						}
+					}
 				}
 			]
 		}

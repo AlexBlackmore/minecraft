@@ -1,0 +1,4 @@
+tellraw @s ["",{"text":"<","color":"white"},{"text":"Malik","color":"red"},{"text":"> Hello. The ","color":"white"},{"text":"Catacombs","color":"red"},{"text":" are an old maze under the island. Tunnels in the caves were created to bury victims of the Calamity. An ","color":"white"},{"text":"evil force","color":"dark_red"},{"text":" took control of the graves. Corpses are raised into a ","color":"white"},{"text":"powerful army","color":"green"},{"text":" fueled by pain, misery, and anguish. Anyway! If you find gear inside, I can ","color":"white"},{"text":"upgrade","color":"yellow"},{"text":" it for you!","color":"white"}]
+playsound minecraft:entity.villager.no player @s
+
+advancement revoke @s only skyblock:commands/npcs/malik

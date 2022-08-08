@@ -1,0 +1,48 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Squid","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"italic":false,"color":"blue","text":"Pet"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gold","text":"Ability: More Ink"}],
+								["",{"italic":false,"color":"gray","text":"Grants a "},{"italic":false,"color":"green","text":"75%"},{"italic":false,"color":"gray","text":" chance to receive"}],
+								["",{"italic":false,"color":"gray","text":"double drops from Squids."}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gold","text":"Ability: Ink Specialty"}],
+								["",{"italic":false,"color":"gray","text":"Buffs the "},{"italic":false,"color":"light_purple","text":"Ink Wand"},{"italic":false,"color":"gray","text":" by "},{"italic":false,"color":"red","text":"+6 Damage"}],
+								["",{"italic":false,"color":"gray","text":"and "},{"italic":false,"color":"blue","text":"+3 Attack Damage"},{"italic":false,"color":"gray","text":"."}],
+								["",{"text":" "}],
+								["",{"italic":false,"text":"When Summoned:"}],
+								["",{"italic":false,"color":"blue","text":"+1 Intelligence"},{"italic":false,"color":"dark_gray","text":" per "},{"italic":false,"color":"dark_aqua","text":"2 levels"}],
+								["",{"italic":false,"color":"blue","text":"+1 Max Health"},{"italic":false,"color":"dark_gray","text":" per "},{"italic":false,"color":"dark_aqua","text":"10 levels"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-1313460708,-1604170272,-1732757013,-648060775],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg1Mzc2OTUwZmI3NTkzNjI0ODRjNzA4ZmZjYTk3MDUxMjY1YWJiMzA2MTZhMGRkMTBjZDg3MWMxYjI2NTJiYiJ9fX0=\"}]}},
+								Name:\"Squid\",
+								Rarity:2,
+								Ability:true,
+								Pet:true
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

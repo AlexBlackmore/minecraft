@@ -68,7 +68,18 @@
 			"entries":[
 				{
 					"type":"loot_table",
-					"name":"skyblock:lapis_armor"
+					"name":"skyblock:gameplay/exp_boosts/mining"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"nbt":"{Inventory:[{tag:{Name:\"Mining Exp Boost\"}}]}"
+						}
+					}
 				}
 			]
 		}

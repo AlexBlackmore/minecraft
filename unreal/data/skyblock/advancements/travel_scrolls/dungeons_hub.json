@@ -1,0 +1,22 @@
+{
+	"parent":"skyblock:travel_scrolls/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:map"
+		},
+		"title":"§cDungeons Hub §7- §bSpawn",
+		"description":"§7Goup up with friends and take on challenging Dungeons.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:changed_dimension",
+			"conditions":{
+				"to":"skyblock:dungeons_hub"
+			}
+		}
+	}
+}

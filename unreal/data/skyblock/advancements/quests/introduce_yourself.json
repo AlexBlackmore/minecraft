@@ -7,16 +7,16 @@
 		"title":"Introduce Yourself",
 		"description":"[::]",
 		"frame":"task",
-		"show_toast":false,
+		"show_toast":true,
 		"announce_to_chat":true,
-		"hidden":true
+		"hidden":false
 	},
 	"criteria":{
 		"duke":{
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Duke\\\"}\"}"
+					"nbt":"{Tags:[\"duke\"]}"
 				}
 			}
 		},
@@ -24,7 +24,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Lynn\\\"}\"}"
+					"nbt":"{Tags:[\"lynn\"]}"
 				}
 			}
 		},
@@ -32,7 +32,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Stella\\\"}\"}"
+					"nbt":"{Tags:[\"stella\"]}"
 				}
 			}
 		},
@@ -40,7 +40,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Vex\\\"}\"}"
+					"nbt":"{Tags:[\"vex\"]}"
 				}
 			}
 		},
@@ -48,7 +48,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Andrew\\\"}\"}"
+					"nbt":"{Tags:[\"andrew\"]}"
 				}
 			}
 		},
@@ -56,7 +56,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jack\\\"}\"}"
+					"nbt":"{Tags:[\"jack\"]}"
 				}
 			}
 		},
@@ -64,7 +64,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Jamie\\\"}\"}"
+					"nbt":"{Tags:[\"jamie\"]}"
 				}
 			}
 		},
@@ -72,7 +72,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Tom\\\"}\"}"
+					"nbt":"{Tags:[\"tom\"]}"
 				}
 			}
 		},
@@ -80,7 +80,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Leo\\\"}\"}"
+					"nbt":"{Tags:[\"leo\"]}"
 				}
 			}
 		},
@@ -88,7 +88,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Felix\\\"}\"}"
+					"nbt":"{Tags:[\"felix\"]}"
 				}
 			}
 		},
@@ -96,7 +96,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Liam\\\"}\"}"
+					"nbt":"{Tags:[\"liam\"]}"
 				}
 			}
 		},
@@ -104,7 +104,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Ryu\\\"}\"}"
+					"nbt":"{Tags:[\"ryu\"]}"
 				}
 			}
 		}

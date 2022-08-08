@@ -4,46 +4,43 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"alternatives",
-					"children":[
+					"type":"item",
+					"name":"minecraft:iron_helmet",
+					"functions":[
 						{
-							"type":"item",
-							"name":"minecraft:iron_helmet",
-							"functions":[
+							"function":"minecraft:set_name",
+							"name":{"text":"Skeleton's Helmet","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Bone Shield","italic":false,"color":"gold"}],
+								["",{"text":"Surrounds you with a Bone","italic":false,"color":"gray"}],
+								["",{"text":"Shield, granting increasing","italic":false,"color":"gray"}],
+								["",{"text":"levels of ","italic":false,"color":"gray"},{"text":"Resistance","italic":false,"color":"#99453a"},{"text":". Receiving","italic":false,"color":"gray"}],
+								["",{"text":"damage consumes a bone, reducing","italic":false,"color":"gray"}],
+								["",{"text":"the level of ","italic":false,"color":"gray"},{"text":"Resistance","italic":false,"color":"#99453a"},{"text":". Bones","italic":false,"color":"gray"}],
+								["",{"text":"regenerate every ","italic":false,"color":"gray"},{"text":"30","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Skeleton's Helmet\",
+								Rarity:2
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
 								{
-									"function":"minecraft:set_name",
-									"name":{"text":"Skeleton's Helmet","italic":false,"color":"aqua"}
-								},
-								{
-									"function":"minecraft:set_lore",
-									"lore":[
-										{"text":" "},
-										["",{"text":"Ability: Bone Shield","italic":false,"color":"gold"}],
-										["",{"text":"Gives an increasing level of","italic":false,"color":"gray"}],
-										["",{"text":"Absorption","italic":false,"color":"#2552A5"},{"text":" every ","italic":false,"color":"gray"},{"text":"30","italic":false,"color":"green"},{"text":" seconds, up","italic":false,"color":"gray"}],
-										["",{"text":"to ","italic":false,"color":"gray"},{"text":"Absorption III","italic":false,"color":"#2552A5"},{"text":".","italic":false,"color":"gray"}],
-										{"text":" "},
-										{"text":"RARE","bold":true,"color":"aqua"},
-										{"text":" "}
-									]
-								},
-								{
-									"function":"minecraft:set_nbt",
-									"tag":"{
-										Name:\"Skeleton's Helmet\"
-									}"
-								},
-								{
-									"function":"minecraft:set_attributes",
-									"modifiers":[
-										{
-											"name":"Defense",
-											"attribute":"generic.armor",
-											"operation":"addition",
-											"amount":15,
-											"slot":"head"
-										}
-									]
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":15,
+									"slot":"head"
 								}
 							]
 						}

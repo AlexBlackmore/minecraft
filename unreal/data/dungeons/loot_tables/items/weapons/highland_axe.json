@@ -1,0 +1,55 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:netherite_axe",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Highland Axe","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"Expertly crafted and a polished"},
+								{"text":"weapon of war, the Highland Axe"},
+								{"text":"also makes a daring"},
+								{"text":"backscratcher."}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								CustomModelData:1,
+								Name:\"Highland Axe\"
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":6.3,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-1.9,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

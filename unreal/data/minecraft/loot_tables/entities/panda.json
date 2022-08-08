@@ -1,0 +1,145 @@
+{
+	"type":"minecraft:entity",
+	"pools":[
+		{
+			"bonus_rolls":0.0,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"functions":[
+						{
+							"add":false,
+							"count":1.0,
+							"function":"minecraft:set_count"
+						}
+					],
+					"name":"minecraft:bamboo"
+				}
+			],
+			"rolls":1.0
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"conditions": [
+						{
+							"condition": "killed_by_player"
+						},
+						{
+							"condition": "random_chance_with_looting",
+							"chance": 0.27,
+							"looting_multiplier": 0.004
+						}
+					],
+					"children": [
+						{
+							"type": "loot_table",
+							"name": "minecraft:items/heads/panda/aggressive",
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"predicate": {
+										"nbt": "{MainGene:\"aggressive\"}"
+									},
+									"entity": "this"
+								}
+							]
+						},
+						{
+							"type": "loot_table",
+							"name": "minecraft:items/heads/panda/lazy",
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"predicate": {
+										"nbt": "{MainGene:\"lazy\"}"
+									},
+									"entity": "this"
+								}
+							]
+						},
+						{
+							"type": "loot_table",
+							"name": "minecraft:items/heads/panda/playful",
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"predicate": {
+										"nbt": "{MainGene:\"playful\"}"
+									},
+									"entity": "this"
+								}
+							]
+						},
+						{
+							"type": "loot_table",
+							"name": "minecraft:items/heads/panda/worried",
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"predicate": {
+										"nbt": "{MainGene:\"worried\"}"
+									},
+									"entity": "this"
+								}
+							]
+						},
+						{
+							"type": "loot_table",
+							"name": "minecraft:items/heads/panda/brown",
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"predicate": {
+										"nbt": "{MainGene:\"brown\",HiddenGene:\"brown\"}"
+									},
+									"entity": "this"
+								}
+							]
+						},
+						{
+							"type": "loot_table",
+							"name": "minecraft:items/heads/panda/weak",
+							"conditions": [
+								{
+									"condition": "entity_properties",
+									"predicate": {
+										"nbt": "{MainGene:\"weak\",HiddenGene:\"weak\"}"
+									},
+									"entity": "this"
+								}
+							]
+						},
+						{
+							"type": "loot_table",
+							"name": "minecraft:items/heads/panda"
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition": "killed_by_player"
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"killer_player",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Enchantments:[{id:\"minecraft:sweeping\"}]}"
+							}
+						}
+					}
+				},
+				{
+				  "condition":"random_chance_with_looting",
+				  "chance":0.025,
+				  "looting_multiplier":0.01
+				}
+			]
+		}
+	]
+}

@@ -4,24 +4,25 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"alternatives",
-					"children":[
+					"type":"item",
+					"name":"minecraft:experience_bottle",
+					"functions":[
 						{
-							"type":"item",
-							"name":"minecraft:experience_bottle",
-							"functions":[
-								{
-									"function":"minecraft:set_name",
-									"name":{"text":"Titanic Experience Bottle","italic":false,"color":"aqua"}
-								},
-								{
-									"function":"minecraft:set_nbt",
-									"tag":"{
-										Name:\"Titanic Experience Bottle\",
-										Ability:true
-									}"
-								}
+							"function":"minecraft:set_name",
+							"name":{"text":"Titanic Experience Bottle","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Sneak to receive ","italic":false,"color":"gray"},{"text":"+250,000","italic":false,"color":"dark_aqua"},{"text":" experience!","italic":false,"color":"gray"}]
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Titanic Experience Bottle\",
+								Ability:true
+							}"
 						}
 					]
 				}

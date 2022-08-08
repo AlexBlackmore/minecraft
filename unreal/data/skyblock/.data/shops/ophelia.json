@@ -1,894 +1,1290 @@
 give @p villager_spawn_egg{
 	EntityTag:{
-		id:"minecraft:villager"
-		CustomName:"{\"text\":\"Ophelia\"\"color\":\"red\"}"
-		CustomNameVisible:true
-		PersistenceRequired:true
-		Silent:true
-		CanPickUpLoot:false
-		Willing:false
-		NoAI:false
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Ophelia\",\"color\":\"red\"}",
+		Tags:["ophelia"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
 		VillagerData:{
-			level:5
-			profession:"weaponsmith"
-			type:"swamp"
-		}
+			level:5,
+			profession:"weaponsmith",
+			type:"plains"
+		},
 		Attributes:[
 			{
-				Name:"generic.movement_speed"
+				Name:"generic.movement_speed",
 				Base:0
 			}
-		]
+		],
 		Offers:
 		{
 			Recipes:[
 				{
-					buyB:{
-						id:"writable_book"
-						Count:1
-						tag:{
-							display:{
-								Name:"[\"\"{\"text\":\"<\"\"italic\":false\"color\":\"white\"}{\"text\":\"Ophelia\"\"italic\":false\"color\":\"red\"}{\"text\":\">\"\"italic\":false\"color\":\"white\"}]"
-								Lore:[
-									"[\"\"{\"text\":\"This world holds many \"\"italic\":false\"color\":\"white\"}{\"text\":\"riches\"\"italic\":false\"color\":\"yellow\"}{\"text\":\"\"\"italic\":false\"color\":\"white\"}]"
-									"[\"\"{\"text\":\"powerful \"\"italic\":false\"color\":\"white\"}{\"text\":\"items\"\"italic\":false\"color\":\"green\"}{\"text\":\" and great\"\"italic\":false\"color\":\"white\"}]"
-									"[\"\"{\"text\":\"experience\"\"italic\":false\"color\":\"aqua\"}{\"text\":\".\"\"italic\":false\"color\":\"white\"}]"
-									"[\"\"{\"text\":\"My trick? I make \"\"italic\":false\"color\":\"white\"}{\"text\":\"emeralds\"\"italic\":false\"color\":\"gold\"}{\"text\":\" from\"\"italic\":false\"color\":\"white\"}]"
-									"{\"text\":\"the others' greed.\"\"italic\":false\"color\":\"white\"}"
-									"{\"text\":\"Are you interest in buying\"\"italic\":false\"color\":\"white\"}"
-									"{\"text\":\"anything?\"\"italic\":false\"color\":\"white\"}"
-								]
-							}
-							HideFlags:32
-						}
-					}
-					maxUses:0
-				}
-				{
 					buy:{
-						id:"emerald"
-						Count:25
+						id:"minecraft:emerald",
+						Count:3,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
-						}
-					}
-					sell:{
-						id:"bow"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"Undead Bow\"\"italic\":false\"color\":\"aqua\"}"
-								Lore:[
-									"\" \""
-									"[\"\"{\"text\":\"Deals \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+100%\"\"italic\":false\"color\":\"green\"}{\"text\":\" damage to Undead\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"mobs.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"RARE\"\"italic\":true\"bold\":true\"color\":\"aqua\"}"
-									"\" \""
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
 							Enchantments:[
-								{id:"power"lvl:5}
-							]
-							Name:"Undead Bow"
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
 						}
-					}
-					rewardExp:false
-					maxUses:640
-				}
-				{
-					buy:
-					{
-						id:"emerald"
-						Count:4
-					}
-					sell:
-					{
-						id:"arrow"
-						Count:20
-					}
-					rewardExp:false
-					maxUses:640
-				}
-				{
-					buy:{
-						id:"emerald"
-						Count:25
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
-						}
-					}
-					sell:{
-						id:"golden_sword"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"Super Cleaver\"\"italic\":false\"color\":\"aqua\"}"
-								Lore:[
-									"\" \""
-									"{\"text\":\"Item Ability: Cleave\"\"italic\":false\"color\":\"gold\"}"
-									"{\"text\":\"When hitting an entity monsters\"\"italic\":false\"color\":\"gray\"}"
-									"[\"\"{\"text\":\"in a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"3\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" block range will be hit\"\"italic\":false\"color\":\"gray\"}]"
-									"{\"text\":\"for a portion of that damage too.\"\"italic\":false\"color\":\"gray\"}"
-									"\" \""
-									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
-									"\" \""
-								]
-							}
-							Enchantments:[
-								{id:"sharpness"lvl:34}
-							]
-						  AttributeModifiers:[
-								{Slot:"mainhand"AttributeName:"generic.attack_damage"Name:"generic.attack_damage"Amount:4Operation:0UUID:[I;2200806335966139968024673-453369204]}
-							]
-							Name:"Super Cleaver"
-						}
-					}
-					rewardExp:false
-					maxUses:640
-				}
-				{
-					buy:{
-						id:"emerald"
-						Count:25
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
-						}
-					}
-					sell:{
-						id:"leather_chestplate"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"Stone Chestplate\"\"italic\":false\"color\":\"aqua\"}"
-								Lore:[
-									"\" \""
-									"[\"\"{\"text\":\"Grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+1 Armor Toughness\"\"italic\":false\"color\":\"blue\"}{\"text\":\" to all\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"players within \"\"italic\":false\"color\":\"gray\"}{\"text\":\"8\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" blocks of you.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"RARE\"\"italic\":true\"bold\":true\"color\":\"aqua\"}"
-									"\" \""
-								]
-								color:14277081
-							}
-							AttributeModifiers:[
-								{Slot:"chest"AttributeName:"generic.armor"Name:"generic.armor"Amount:26Operation:0UUID:[I;640618103601897990492556062316046907]}
-								{Slot:"chest"AttributeName:"generic.armor_toughness"Name:"generic.armor_toughness"Amount:1Operation:0UUID:[I;49710501048570062597910100829575992]}
-							]
-							HideFlags:64
-							Name:"Stone Chestplate"
-						}
-					}
-					rewardExp:false
-					maxUses:640
-				}
-				{
-					buy:{
-						id:"emerald"
-						Count:25
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
-						}
-					}
-					sell:{
-						id:"player_head"
-						Count:1
-						tag:{
-							SkullOwner:{Id:[I;-665496388-1904259449-1306089789-851805510]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc5M2VlZjQ4NDkwNzhkZjRjY2Q0OTgwNTRjNzRlMjE3MWM3NzFmMjczMDk0NDE2NGE4ZWU3YjJkNTYzODMyIn19fQ=="}]}}
-							display:{
-								Name:"{\"text\":\"Mender Helmet\"\"italic\":false\"color\":\"aqua\"}"
-								Lore:[
-									"\" \""
-									"[\"\"{\"text\":\"Grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Instant Health\"\"italic\":false\"color\":\"#F82423\"}{\"text\":\" every\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"10\"\"italic\":false\"color\":\"green\"}{\"text\":\" seconds to all players with\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"Regeneration I+\"\"italic\":false\"color\":\"#CD5CAB\"}{\"text\":\" within \"\"italic\":false\"color\":\"gray\"}{\"text\":\"8\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" blocks.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"RARE\"\"italic\":true\"bold\":true\"color\":\"aqua\"}"
-								]
-								color:14277081
-							}
-							AttributeModifiers:[
-								{Slot:"head"AttributeName:"generic.max_health"Name:"generic.max_health"Amount:16Operation:0UUID:[I;15684892769144980956003039365498015]}
-							]
-							HideFlags:64
-							Name:"Mender Helmet"
-						}
-					}
-					rewardExp:false
-					maxUses:640
-				}
-				{
-					buy:{
-						id:"emerald"
-						Count:25
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
-						}
-					}
-					sell:{
-						id:"player_head"
-						Count:1
-						tag:{
-							SkullOwner:{Id:[I;973333367849496186-1253831848-612160692]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjkzMTk1MjU4MjVmMWYzMDcyN2ViOTQwZDNhMDY0MjZiYzRjZWMwN2ZiZDgwYWY1Y2QxNDZlM2ViMzg3OWY2OCJ9fX0="}]}}
-							display:{
-								Name:"{\"text\":\"Dark Goggles\"\"italic\":false\"color\":\"aqua\"}"
-								Lore:[
-									"\" \""
-									"{\"text\":\"RARE\"\"italic\":true\"bold\":true\"color\":\"aqua\"}"
-									"\" \""
-									"[\"\"{\"text\":\"+25% Ability Damage\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+150 Intelligence\"\"italic\":false\"color\":\"blue\"}]"
-								]
-							}
-							Name:"Dark Goggles"
-							Ability_Damage:25
-						}
-					}
-					rewardExp:false
-					maxUses:640
-				}
-				{
-					buy:{
-						id:"emerald"
-						Count:64
-					}
+					},
 					buyB:{
-						id:"emerald"
-						Count:36
-					}
-					sell:{
-						id:"potion"
-						Count:1
+						id:"minecraft:emerald",
+						Count:3,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Dungeon I Potion\"\"italic\":false\"color\":\"white\"}"
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:bow",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Undead Bow\"}",
 								Lore:[
-									"{\"text\":\"Regeneration (20:00)\"\"italic\":false\"color\":\"blue\"}"
-									"{\"text\":\"Strength III (20:00)\"\"italic\":false\"color\":\"blue\"}"
-									"{\"text\":\"Critical (20:00)\"\"italic\":false\"color\":\"blue\"}"
-									"{\"text\":\"Speed (20:00)\"\"italic\":false\"color\":\"blue\"}"
-									"{\"text\":\"Resistance (20:00)\"\"italic\":false\"color\":\"blue\"}"
-									"\" \""
-									"{\"text\":\"When Applied:\"\"italic\":false}"
-									"{\"text\":\"+9 Attack Damage\"\"italic\":false\"color\":\"blue\"}"
-									"{\"text\":\"+20% Speed\"\"italic\":false\"color\":\"blue\"}"
-									"{\"text\":\"+10% Crit Chance\"\"italic\":false\"color\":\"blue\"}"
-									"{\"text\":\"+10% Crit Damage\"\"italic\":false\"color\":\"blue\"}"
-									"\" \""
-									"{\"text\":\"COMMON\"\"italic\":true\"bold\":true\"color\":\"white\"}"
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Undead\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]",
+									"[\"\",{\"text\":\" \"}]"
 								]
+							},
+							Enchantments:[
+								{lvl:5s,id:"minecraft:power"}
+							],
+							Name:"Undead Bow",
+							Rarity:2
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:34
+					},
+					sell:{
+						id:"minecraft:arrow",
+						Count:20,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Flint Arrow\"}"
 							}
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:golden_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Super Cleaver\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Cleave\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"After hitting an entity, all\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs in a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"3\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" block radius will be\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hit for a potion of that damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"too.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							Enchantments:[
+								{lvl:34s,id:"minecraft:sharpness"}
+							],
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:4,Operation:0,UUID:[I;985409519,403253302,575782629,998070088]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;684961272,846201049,604752410,496819681]}
+							],
+							Name:"Super Cleaver",
+							Rarity:2
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:leather_chestplate",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Stone Chestplate\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Armor Toughness\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to all\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"players within \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"8\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" blocks.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								],
+								color:14277081
+							},
+							AttributeModifiers:[
+								{Slot:"chest",AttributeName:"generic.armor",Name:"Armor",Amount:26,Operation:0,UUID:[I;621828332,212924154,833579770,412564888]}
+							],
+							HideFlags:64,
+							Name:"Stone Chestplate",
+							Rarity:2
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1443883017,871188014,-1458330379,1787057289],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGMzYjU5MzNjYmViMTNmZGUyMWVhM2U2NWUyNDliOTM0YjBmYTI0YjhhYjQ5NTA1ZTRmMzgxZTQwOGY4ZWI5NyJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Mender Helmet\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Healing received from Mender\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Wands is \"},{\"italic\":false,\"color\":\"green\",\"text\":\"doubled\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							AttributeModifiers:[
+								{Slot:"head",AttributeName:"generic.max_health",Name:"Max Health",Amount:16,Operation:0,UUID:[I;246713208,922932468,620983932,692764300]}
+							],
+							Name:"Mender Helmet",
+							Rarity:2
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1903172227,-1380957468,-1143314411,2141603998],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjkzMTk1MjU4MjVmMWYzMDcyN2ViOTQwZDNhMDY0MjZiYzRjZWMwN2ZiZDgwYWY1Y2QxNDZlM2ViMzg3OWY2OCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Dark Goggles\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+25% Ability Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+150 Intelligence\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							Name:"Dark Goggles",
+							Rarity:2,
+							Intelligence:150
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:13,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:2
+					},
+					sell:{
+						id:"minecraft:potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Dungeon Potion I\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration (20:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength III (20:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical (20:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed (20:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance (20:00)\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+9 Attack Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Speed\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+10% Crit Chance\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+10% Crit Damage\"}]"
+								]
+							},
 							CustomPotionEffects:[
-								{Id:10Amplifier:0Duration:24000}
-								{Id:5Amplifier:2Duration:24000}
-								{Id:1Amplifier:0Duration:24000}
-								{Id:11Amplifier:0Duration:24000}
-							]
-							Potion:"empty"
-							CustomPotionColor:6554949
-							HideFlags:32
-							Name:"Dungeon I Potion"
+								{Id:10,Amplifier:0,Duration:24000},
+								{Id:5,Amplifier:2,Duration:24000},
+								{Id:1,Amplifier:0,Duration:24000},
+								{Id:11,Amplifier:0,Duration:24000}
+							],
+							HideFlags:32,
+							Name:"Dungeon Potion I",
+							Critical_Potion:1
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
-				{
-					buyB:{
-						id:"knowledge_book"
-						Count:1
-						tag:{
-							display:{
-								Name:"[\"\"{\"text\":\"Dungeon Potion Upgrade\"\"italic\":false\"color\":\"red\"}]"
-								Lore:[
-									"[\"\"{\"text\":\"Talk to me while holding a\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"Dungeon Potion\"\"italic\":false\"color\":\"white\"}{\"text\":\" in your main-hand\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"and \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Enchanted Emerald\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" x2\"\"italic\":false\"color\":\"dark_gray\"}{\"text\":\" in your\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"off-hand to increase the.\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"potion's Tier by \"\"italic\":false\"color\":\"gray\"}{\"text\":\"1\"\"italic\":false\"color\":\"green\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
-									"{\"text\":\"(Max Tier: VII)\"\"italic\":false\"color\":\"dark_gray\"}"
-									"\" \""
-									"{\"text\":\"SPECIAL\"\"italic\":true\"bold\":true\"color\":\"red\"}"
-								]
-							}
-						}
-					}
-					rewardExp:false
-					maxUses:0
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:60
-					}
-					sell:{
-						id:"tnt"
-						Count:1
+						id:"minecraft:emerald",
+						Count:26,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Superboom TNT\"\"italic\":false\"color\":\"aqua\"}"
-								Lore:[
-									"{\"text\":\"Fuse will ignite once placed.\"\"italic\":false\"color\":\"gray\"}"
-									"\" \""
-									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
-								]
-							}
-							BlockEntityTag:{
-								Fuse:80
-							}
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
 							Enchantments:[
-								{id:"unbreaking"lvl:1}
-							]
-							HideFlags:1
-						}
-					}
-					rewardExp:false
-					maxUses:640
-				}
-				{
-					buy:{
-						id:"emerald"
-						Count:3
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Rare Enchanted Emerald"
-						}
-					}
-					buyB:{
-						id:"emerald"
-						Count:58
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
 							Name:"Enchanted Emerald"
 						}
-					}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:3
+					},
 					sell:{
-						id:"bow"
-						Count:1
+						id:"minecraft:potion",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Super Undead Bow\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Dungeon Potion II\"}",
 								Lore:[
-									"\" \""
-									"[\"\"{\"text\":\"Deals \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+100%\"\"italic\":false\"color\":\"green\"}{\"text\":\" damage to Undead\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"mobs.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"[\"\"{\"text\":\"Your arrows have a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"25%\"\"italic\":false\"color\":\"green\"}{\"text\":\" chance to\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"bounce to another target.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
-									"\" \""
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration II (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength III (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed II (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance (40:00)\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+9 Attack Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+40% Speed\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+10% Crit Chance\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+10% Crit Damage\"}]"
 								]
-							}
-							Enchantments:[
-								{id:"power"lvl:24}
-							]
-							Name:"Super Undead Bow"
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:1,Duration:48000},
+								{Id:5,Amplifier:2,Duration:48000},
+								{Id:1,Amplifier:1,Duration:48000},
+								{Id:11,Amplifier:0,Duration:48000}
+							],
+							HideFlags:32,
+							Name:"Dungeon Potion II",
+							Critical_Potion:1
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:3
+						id:"minecraft:emerald",
+						Count:39,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Rare Enchanted Emerald"
-						}
-					}
-					buyB:{
-						id:"emerald"
-						Count:58
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
 							Name:"Enchanted Emerald"
 						}
-					}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:4
+					},
 					sell:{
-						id:"golden_sword"
-						Count:1
+						id:"minecraft:potion",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Hyper Cleaver\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Dungeon Potion III\"}",
 								Lore:[
-									"\" \""
-									"{\"text\":\"Item Ability: Cleave\"\"italic\":false\"color\":\"gold\"}"
-									"{\"text\":\"When hitting an entity monsters\"\"italic\":false\"color\":\"gray\"}"
-									"[\"\"{\"text\":\"in a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"4\"\"italic\":false\"color\":\"green\"}{\"text\":\" block range will be hit\"\"italic\":false\"color\":\"gray\"}]"
-									"{\"text\":\"for a portion of that damage too.\"\"italic\":false\"color\":\"gray\"}"
-									"\" \""
-									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
-									"\" \""
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration III (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength III (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical II (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed II (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance II (40:00)\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+9 Attack Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+40% Speed\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+15% Crit Chance\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Crit Damage\"}]"
 								]
-							}
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:2,Duration:48000},
+								{Id:5,Amplifier:2,Duration:48000},
+								{Id:1,Amplifier:1,Duration:48000},
+								{Id:11,Amplifier:1,Duration:48000}
+							],
+							HideFlags:32,
+							Name:"Dungeon Potion III",
+							Critical_Potion:2
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:52,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
 							Enchantments:[
-								{id:"sharpness"lvl:58}
-							]
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:6
+					},
+					sell:{
+						id:"minecraft:potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Dungeon Potion IV\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration III (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength IV (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical II (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed II (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance III (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Archery (40:00)\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+12 Attack Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+40% Speed\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+15% Crit Chance\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Crit Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+12.5% Bow Damage\"}]"
+								]
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:2,Duration:48000},
+								{Id:5,Amplifier:3,Duration:48000},
+								{Id:1,Amplifier:1,Duration:48000},
+								{Id:11,Amplifier:2,Duration:48000}
+							],
+							HideFlags:32,
+							Name:"Dungeon Potion IV",
+							Critical_Potion:2,
+							Archery_Potion:1
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Dungeon Potion V\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration III (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength IV (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical III (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed II (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance IV (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Archery II (40:00)\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+12 Attack Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+40% Speed\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Crit Chance\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+30% Crit Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+25% Bow Damage\"}]"
+								]
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:2,Duration:48000},
+								{Id:5,Amplifier:3,Duration:48000},
+								{Id:1,Amplifier:1,Duration:48000},
+								{Id:11,Amplifier:3,Duration:48000}
+							],
+							HideFlags:32,
+							Name:"Dungeon Potion V",
+							Critical_Potion:3,
+							Archery_Potion:2
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:15,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Dungeon Potion VI\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration IV (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength IV (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical III (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed III (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance IV (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Archery III (40:00)\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+12 Attack Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+60% Speed\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Crit Chance\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+30% Crit Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+50% Bow Damage\"}]"
+								]
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:3,Duration:48000},
+								{Id:5,Amplifier:3,Duration:48000},
+								{Id:1,Amplifier:2,Duration:48000},
+								{Id:11,Amplifier:3,Duration:48000}
+							],
+							HideFlags:32,
+							Name:"Dungeon Potion VI",
+							Critical_Potion:3,
+							Archery_Potion:3
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:28,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:potion",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Dungeon Potion VII\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration IV (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength V (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical III (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed III (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance V (40:00)\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Archery III (40:00)\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+15 Attack Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+60% Speed\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Crit Chance\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+30% Crit Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+50% Bow Damage\"}]"
+								]
+							},
+							CustomPotionEffects:[
+								{Id:10,Amplifier:3,Duration:48000},
+								{Id:5,Amplifier:4,Duration:48000},
+								{Id:1,Amplifier:2,Duration:48000},
+								{Id:11,Amplifier:4,Duration:48000}
+							],
+							HideFlags:32,
+							Name:"Dungeon Potion VII",
+							Critical_Potion:3,
+							Archery_Potion:3
+						}
+					}
+				},
+				{
+					buy:{
+						id:"emerald",
+						Count:7,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					buyB:{
+						id:"emerald",
+						Count:52
+					},
+					sell:{
+						id:"tnt",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Superboom TNT\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Sneak to summon a block of lit\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"TNT. The magical energy stored\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"in this block is finite and will\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"eventually run out!\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Cooldown: \"},{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"2s\"}]"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1,
+							Name:"Superboom TNT",
+							Ability:true
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:32,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:36,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:bow",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Super Undead Bow\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Undead\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Your arrows have a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"25%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"bounce to another target after\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hitting a mob.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							Enchantments:[
+								{lvl:24s,id:"minecraft:power"}
+							],
+							Name:"Super Undead Bow",
+							Rarity:3
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:32,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:36,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:golden_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Hyper Cleaver\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Cleave\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"After hitting an entity, all\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs in a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"4\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" block radius will be\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hit for a potion of that damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"too.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							Enchantments:[
+								{lvl:58s,id:"minecraft:sharpness"}
+							],
 							AttributeModifiers:[
-								{Slot:"mainhand"AttributeName:"generic.attack_damage"Name:"generic.attack_damage"Amount:10Operation:0UUID:[I;241489777-745137765797745674995897850]}
-							]
-							Name:"Hyper Cleaver"
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:10,Operation:0,UUID:[I;985409519,403253302,575782629,998070088]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;684961272,846201049,604752410,496819681]}
+							],
+							Name:"Hyper Cleaver",
+							Rarity:3
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:3
+						id:"minecraft:emerald",
+						Count:32,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Rare Enchanted Emerald"
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
 						}
-					}
+					},
 					buyB:{
-						id:"emerald"
-						Count:58
+						id:"minecraft:emerald",
+						Count:36,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
 							Name:"Enchanted Emerald"
 						}
-					}
+					},
 					sell:{
-						id:"leather_chestplate"
-						Count:1
+						id:"minecraft:leather_chestplate",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Metal Chestplate\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Metal Chestplate\"}",
 								Lore:[
-									"\" \""
-									"[\"\"{\"text\":\"Grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+1.6 Armor Toughness\"\"italic\":false\"color\":\"blue\"}{\"text\":\" to all\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"players within \"\"italic\":false\"color\":\"gray\"}{\"text\":\"8\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" blocks of you.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
-								]
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+1.6 Armor Toughness\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to all\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"players within \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"8\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" blocks.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								],
 								color:14277081
-							}
+							},
 							AttributeModifiers:[
-								{Slot:"chest"AttributeName:"generic.armor"Name:"generic.armor"Amount:46Operation:0UUID:[I;640618103601897990492556062316046907]}
-								{Slot:"chest"AttributeName:"generic.armor_toughness"Name:"generic.armor_toughness"Amount:1.6Operation:0UUID:[I;49710501048570062597910100829575992]}
-							]
-							HideFlags:64
-							Name:"Metal Chestplate"
+								{Slot:"chest",AttributeName:"generic.armor",Name:"Armor",Amount:46,Operation:0,UUID:[I;621828332,212924154,833579770,412564888]}
+							],
+							HideFlags:64,
+							Name:"Metal Chestplate",
+							Rarity:3
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:3
+						id:"minecraft:emerald",
+						Count:32,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Rare Enchanted Emerald"
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
 						}
-					}
+					},
 					buyB:{
-						id:"emerald"
-						Count:58
+						id:"minecraft:emerald",
+						Count:36,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
 							Name:"Enchanted Emerald"
 						}
-					}
+					},
 					sell:{
-						id:"player_head"
-						Count:1
+						id:"minecraft:player_head",
+						Count:1,
 						tag:{
-							SkullOwner:{Id:[I;-1207082184855329678-1690753753-540317933]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWU1OTVlMTQzNDg2YmJkZDk4YjJiNTYyMzAwZDRjNjk4ZTZhNTNhNWFhM2ZhMzI4Zjc0Y2I4MzkwOWUwODhjNCJ9fX0="}]}}
+							SkullOwner:{Id:[I;2026292652,1290358459,-1089847683,415768364],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWU1OTVlMTQzNDg2YmJkZDk4YjJiNTYyMzAwZDRjNjk4ZTZhNTNhNWFhM2ZhMzI4Zjc0Y2I4MzkwOWUwODhjNCJ9fX0="}]}},
 							display:{
-								Name:"{\"text\":\"Mender Fedora\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Mender Fedora\"}",
 								Lore:[
-									"\" \""
-									"[\"\"{\"text\":\"Grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Instant Health\"\"italic\":false\"color\":\"#F82423\"}{\"text\":\" every\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"5\"\"italic\":false\"color\":\"green\"}{\"text\":\" seconds to all players with\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"Regeneration II+\"\"italic\":false\"color\":\"#CD5CAB\"}{\"text\":\" within \"\"italic\":false\"color\":\"gray\"}{\"text\":\"8\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" blocks.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"EPIC\"\"italic\":true\"bold\":true\"color\":\"light_purple\"}"
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Healing received from Mender\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Wands is \"},{\"italic\":false,\"color\":\"green\",\"text\":\"doubled\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"text\":\" \"}]"
 								]
-							}
+							},
 							AttributeModifiers:[
-								{Slot:"head"AttributeName:"generic.max_health"Name:"generic.max_health"Amount:44Operation:0UUID:[I;276446263457468181850258746300819043]}
-							]
-							Name:"Mender Fedora"
+								{Slot:"head",AttributeName:"generic.max_health",Name:"Max Health",Amount:44,Operation:0,UUID:[I;246713208,922932468,620983932,692764300]}
+							],
+							Name:"Mender Fedora",
+							Rarity:3
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:3
+						id:"minecraft:emerald",
+						Count:32,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Rare Enchanted Emerald"
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
 						}
-					}
+					},
 					buyB:{
-						id:"emerald"
-						Count:58
+						id:"minecraft:emerald",
+						Count:36,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
 							Name:"Enchanted Emerald"
 						}
-					}
+					},
 					sell:{
-						id:"player_head"
-						Count:1
+						id:"minecraft:player_head",
+						Count:1,
 						tag:{
-							SkullOwner:{Id:[I;-15740380761736327656-1438510647-2111934054]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ2NWE4NDdlMTE0ZWY2MmU3ODMzY2JmYjJmZTVkZTU3NjRiYWI1ZjEwYWYxMjVmZDJkMzE2MjM4MjY4Mjc5ZiJ9fX0="}]}}
+							SkullOwner:{Id:[I;1853245278,956910870,-1282502332,1451268817],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ2NWE4NDdlMTE0ZWY2MmU3ODMzY2JmYjJmZTVkZTU3NjRiYWI1ZjEwYWYxMjVmZDJkMzE2MjM4MjY4Mjc5ZiJ9fX0="}]}},
 							display:{
-								Name:"{\"text\":\"Shadow Goggles\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Shadow Goggles\"}",
 								Lore:[
-									"\" \""
-									"{\"text\":\"EPIC\"\"italic\":true\"bold\":true\"color\":\"light_purple\"}"
-									"\" \""
-									"[\"\"{\"text\":\"+35% Ability Damage\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+200 Intelligence\"\"italic\":false\"color\":\"blue\"}]"
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+35% Ability Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+200 Intelligence\"}]",
+									"[\"\",{\"text\":\" \"}]"
 								]
-							}
-							Name:"Shadow Goggles"
-							Ability_Damage:35
+							},
+							Name:"Shadow Goggles",
+							Rarity:3,
 							Intelligence:200
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:24
+						id:"minecraft:emerald",
+						Count:3,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Rare Enchanted Emerald"
-						}
-					}
-					buyB:{
-						id:"emerald"
-						Count:27
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
-						}
-					}
-					sell:{
-						id:"bow"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"Death Bow\"\"italic\":false\"color\":\"light_purple\"}"
-								Lore:[
-									"\" \""
-									"[\"\"{\"text\":\"Deals \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+100%\"\"italic\":false\"color\":\"green\"}{\"text\":\" damage to Undead\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"mobs.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"[\"\"{\"text\":\"Your arrows have a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"50%\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" chance to\"\"italic\":false\"color\":\"gray\"}]"
-									"{\"text\":\"bounce to another target.\"\"italic\":false\"color\":\"gray\"}"
-									"\" \""
-									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
-									"\" \""
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"}"
+							},
 							Enchantments:[
-								{id:"power"lvl:35}
-							]
-							Name:"Death Bow"
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Epic"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:12,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					sell:{
+						id:"minecraft:bow",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Death Bow\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Undead\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Your arrows have a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"50%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"bounce to another target after\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hitting a mob.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							Enchantments:[
+								{lvl:35s,id:"minecraft:power"}
+							],
+							Name:"Death Bow",
+							Rarity:3
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:24
+						id:"minecraft:emerald",
+						Count:3,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Rare Enchanted Emerald"
-						}
-					}
-					buyB:{
-						id:"emerald"
-						Count:27
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
-						}
-					}
-					sell:{
-						id:"golden_sword"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"text\":\"Giant Cleaver\"\"italic\":false\"color\":\"light_purple\"}"
-								Lore:[
-									"\" \""
-									"{\"text\":\"Item Ability: Cleave\"\"italic\":false\"color\":\"gold\"}"
-									"{\"text\":\"When hitting an entity monsters\"\"italic\":false\"color\":\"gray\"}"
-									"[\"\"{\"text\":\"in a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"5\"\"italic\":false\"color\":\"green\"}{\"text\":\" block range will be hit\"\"italic\":false\"color\":\"gray\"}]"
-									"{\"text\":\"for a portion of that damage too.\"\"italic\":false\"color\":\"gray\"}"
-									"\" \""
-									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"}"
+							},
 							Enchantments:[
-								{id:"sharpness"lvl:68}
-							]
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Epic"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:12,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					sell:{
+						id:"minecraft:golden_sword",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Giant Cleaver\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Cleave\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"After hitting an entity, all\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs in a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"5\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" block radius will be\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hit for a potion of that damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"too.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							Enchantments:[
+								{lvl:68s,id:"minecraft:sharpness"}
+							],
 							AttributeModifiers:[
-								{Slot:"mainhand"AttributeName:"generic.attack_damage"Name:"generic.attack_damage"Amount:12Operation:0UUID:[I;134725804451742885121658881726685598]}
-							]
-							Name:"Giant Cleaver"
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:12,Operation:0,UUID:[I;985409519,403253302,575782629,998070088]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;684961272,846201049,604752410,496819681]}
+							],
+							Name:"Giant Cleaver",
+							Rarity:3
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:24
+						id:"minecraft:emerald",
+						Count:3,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Rare Enchanted Emerald"
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Epic"
 						}
-					}
+					},
 					buyB:{
-						id:"emerald"
-						Count:27
+						id:"minecraft:emerald",
+						Count:12,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
 						}
-					}
+					},
 					sell:{
-						id:"leather_chestplate"
-						Count:1
+						id:"minecraft:leather_chestplate",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Steel Chestplate\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Steel Chestplate\"}",
 								Lore:[
-									"\" \""
-									"[\"\"{\"text\":\"Grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+2 Armor Toughness\"\"italic\":false\"color\":\"blue\"}{\"text\":\" to all\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"players within \"\"italic\":false\"color\":\"gray\"}{\"text\":\"8\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" blocks of you.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
-								]
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+2 Armor Toughness\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to all\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"players within \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"8\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" blocks.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								],
 								color:14277081
-							}
+							},
 							AttributeModifiers:[
-								{Slot:"chest"AttributeName:"generic.armor"Name:"generic.armor"Amount:66Operation:0UUID:[I;640618103601897990492556062316046907]}
-								{Slot:"chest"AttributeName:"generic.armor_toughness"Name:"generic.armor_toughness"Amount:2Operation:0UUID:[I;49710501048570062597910100829575992]}
-							]
-							HideFlags:64
-							Name:"Steel Chestplate"
+								{Slot:"chest",AttributeName:"generic.armor",Name:"Armor",Amount:66,Operation:0,UUID:[I;621828332,212924154,833579770,412564888]}
+							],
+							HideFlags:64,
+							Name:"Steel Chestplate",
+							Rarity:3
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:24
+						id:"minecraft:emerald",
+						Count:3,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Rare Enchanted Emerald"
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Epic"
 						}
-					}
+					},
 					buyB:{
-						id:"emerald"
-						Count:27
+						id:"minecraft:emerald",
+						Count:12,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
 						}
-					}
+					},
 					sell:{
-						id:"player_head"
-						Count:1
+						id:"minecraft:player_head",
+						Count:1,
 						tag:{
-							SkullOwner:{Id:[I;-16538506751050102177-1546580552571660017]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTMwNjVkNTA0OTVjMGEyZjI1YTMzZjkyYWE5MGQwODQ5Y2FmOTE0NzBiYjEwMjdkN2Y3OWNkYjVjZTM3MzhlYyJ9fX0="}]}}
+							SkullOwner:{Id:[I;-618444577,-280998173,-2102705027,1044635902],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTMwNjVkNTA0OTVjMGEyZjI1YTMzZjkyYWE5MGQwODQ5Y2FmOTE0NzBiYjEwMjdkN2Y3OWNkYjVjZTM3MzhlYyJ9fX0="}]}},
 							display:{
-								Name:"{\"text\":\"Mender Crown\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Mender Crown\"}",
 								Lore:[
-									"\" \""
-									"[\"\"{\"text\":\"Grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"Instant Health\"\"italic\":false\"color\":\"#F82423\"}{\"text\":\" every\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"0.6\"\"italic\":false\"color\":\"green\"}{\"text\":\" seconds to all players with\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"Regeneration III+\"\"italic\":false\"color\":\"#CD5CAB\"}{\"text\":\" within \"\"italic\":false\"color\":\"gray\"}{\"text\":\"8\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" blocks.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"EPIC\"\"italic\":true\"bold\":true\"color\":\"light_purple\"}"
-									"\" \""
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Healing received from Mender\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Wands is \"},{\"italic\":false,\"color\":\"green\",\"text\":\"doubled\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"text\":\" \"}]"
 								]
-							}
+							},
 							AttributeModifiers:[
-								{Slot:"head"AttributeName:"generic.max_health"Name:"generic.max_health"Amount:54Operation:0UUID:[I;51687990081496667467624240124368510]}
-							]
-							Name:"Mender Crown"
+								{Slot:"head",AttributeName:"generic.max_health",Name:"Max Health",Amount:54,Operation:0,UUID:[I;246713208,922932468,620983932,692764300]}
+							],
+							Name:"Mender Crown",
+							Rarity:3
 						}
 					}
-					rewardExp:false
-					maxUses:640
-				}
+				},
 				{
 					buy:{
-						id:"emerald"
-						Count:24
+						id:"minecraft:emerald",
+						Count:3,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"aqua\"\"text\":\"RARE\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Rare Enchanted Emerald"
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Epic"
 						}
-					}
+					},
 					buyB:{
-						id:"emerald"
-						Count:27
+						id:"minecraft:emerald",
+						Count:12,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
 						}
-					}
+					},
 					sell:{
-						id:"player_head"
-						Count:1
+						id:"minecraft:player_head",
+						Count:1,
 						tag:{
-							SkullOwner:{Id:[I;-8688509717816355-1889647471-1495330379]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdjZWI4ZjA3NThlMmQ4YWM0OWRlNmY5Nzc2MDNjN2JmYzIzZmQ4MmE4NTc0ODEwYTQ1ZjVlOTdjNjQzNmQ3OSJ9fX0="}]}}
+							SkullOwner:{Id:[I;-2106723401,-1361752191,-1530334181,-169280227],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdjZWI4ZjA3NThlMmQ4YWM0OWRlNmY5Nzc2MDNjN2JmYzIzZmQ4MmE4NTc0ODEwYTQ1ZjVlOTdjNjQzNmQ3OSJ9fX0="}]}},
 							display:{
-								Name:"{\"text\":\"Wither Goggles\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Wither Goggles\"}",
 								Lore:[
-									"\" \""
-									"{\"text\":\"EPIC\"\"italic\":true\"bold\":true\"color\":\"light_purple\"}"
-									"\" \""
-									"[\"\"{\"text\":\"+45% Ability Damage\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+300 Intelligence\"\"italic\":false\"color\":\"blue\"}]"
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+45% Ability Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+300 Intelligence\"}]",
+									"[\"\",{\"text\":\" \"}]"
 								]
-							}
-							Name:"Wither Goggles"
-							Ability_Damage:45
+							},
+							Name:"Wither Goggles",
+							Rarity:3,
 							Intelligence:300
 						}
 					}
-					rewardExp:false
-					maxUses:640
 				}
 			]
 		}
 	}
-	display:{
-		Name:"\"Ophelia\""
-	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

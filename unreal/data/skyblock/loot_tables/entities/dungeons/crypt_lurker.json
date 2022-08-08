@@ -2,20 +2,37 @@
 	"pools":[
 		{
 			"rolls":1,
+			"bonus_rolls":0,
 			"entries":[
 				{
+					"type":"empty",
+					"weight":9999
+				},
+				{
 					"type":"loot_table",
-					"name":"skyblock:items/reforge_stones/premium_flesh"
+					"name":"skyblock:items/reforge_stones/premium_flesh",
+					"quality":4,
+					"weight":1
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:emerald"
 				}
 			],
-			"functions":[
+			"conditions":[
 				{
-					"function":"set_count",
-					"count":{
-						"min":0,
-						"max":1
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.1667,
+					"looting_multiplier":0.01
 				}
 			]
 		}
 	]
 }
+
+		

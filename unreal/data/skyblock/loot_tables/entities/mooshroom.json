@@ -22,10 +22,9 @@
 					"conditions":[
 						{
 							"condition":"minecraft:entity_properties",
+							"entity":"this",
 							"predicate":{
-								"flags":{
-									"nbt":"{Type:\"red\"}"
-								}
+								"nbt":"{Type:\"red\"}"
 							},
 							"entity":"this"
 						}
@@ -38,10 +37,9 @@
 					"conditions":[
 						{
 							"condition":"minecraft:entity_properties",
+							"entity":"this", 
 							"predicate":{
-								"flags":{
-									"nbt":"{Type:\"brown\"}"
-								}
+								"nbt":"{Type:\"brown\"}"
 							},
 							"entity":"this"
 						}

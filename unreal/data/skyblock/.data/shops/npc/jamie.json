@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Jamie\"}",
+		CustomName:"{\"text\":\"Jacob\"}",
 		Tags:["jamie"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
@@ -11,7 +11,7 @@ give @p villager_spawn_egg{
 		NoAI:false,
 		VillagerData:{
 			level:5,
-			profession:"nitwit",
+			profession:"none",
 			type:"plains"
 		},
 		Attributes:[
@@ -20,45 +20,6 @@ give @p villager_spawn_egg{
 				Base:0
 			}
 		],
-		Offers:{
-			Recipes:[
-				{
-					buy:
-					{
-						id:"emerald",
-						Count:64
-					},
-					buyB:
-					{
-						id:"emerald",
-						Count:56
-					},
-					sell:{
-						id:"golden_sword",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Rogue Sword\"}",
-								Lore:[
-									"{\"text\":\" \"}",
-									"[\"\",{\"text\":\"Ability: Speed Boost \",\"italic\":false,\"color\":\"gold\"},{\"text\":\"SNEAK\",\"bold\":true,\"color\":\"yellow\"}]",
-									"[\"\",{\"text\":\"Grants \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+20% Speed\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" for\",\"italic\":false,\"color\":\"gray\"}]",
-									"[\"\",{\"text\":\"30\",\"italic\":false,\"color\":\"green\"},{\"text\":\" seconds.\",\"italic\":false,\"color\":\"gray\"}]",
-									"[\"\",{\"text\":\"Cost: \",\"italic\":false,\"color\":\"dark_gray\"},{\"text\":\"50 XP\",\"italic\":false,\"color\":\"dark_aqua\"}]",
-									"{\"text\":\" \"}"
-								]
-							},
-							AttributeModifiers:[
-							  {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:3,Operation:0,UUID:[I;933773407,324528439,830661938,401291934]},
-							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;834099701,602951814,935931630,267016683]}
-							],
-							Name:"Rogue Sword",
-							Ability:true,
-							Rarity:0
-						}
-					}
-				}
-			]
-		}
+		Offers:{}
 	}
 }

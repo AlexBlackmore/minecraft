@@ -31,15 +31,29 @@ tellraw @s ["",{"text":"You reforged your ","color":"white"},{"nbt":"SelectedIte
 item replace entity @s weapon.mainhand from entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand
 kill @e[type=armor_stand,tag=anvil]
 
-xp add @s[advancements={skyblock:commands/npcs/blacksmith=true},nbt={SelectedItem:{tag:{Rarity:0}}}] -250 points
-xp add @s[advancements={skyblock:commands/npcs/blacksmith=true},nbt={SelectedItem:{tag:{Rarity:1}}}] -500 points
-xp add @s[advancements={skyblock:commands/npcs/blacksmith=true},nbt={SelectedItem:{tag:{Rarity:2}}}] -1000 points
-xp add @s[advancements={skyblock:commands/npcs/blacksmith=true},nbt={SelectedItem:{tag:{Rarity:3}}}] -2500 points
-xp add @s[advancements={skyblock:commands/npcs/blacksmith=true},nbt={SelectedItem:{tag:{Rarity:4}}}] -5000 points
-xp add @s[advancements={skyblock:commands/npcs/blacksmith=true},nbt={SelectedItem:{tag:{Rarity:5}}}] -10000 points
+tag @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:coal"}]}] add coal
+
+item modify entity @s[tag=coal] weapon.offhand skyblock:subtract_item
+item modify entity @s[tag=coal] weapon.offhand skyblock:subtract_item
+item modify entity @s[tag=coal] weapon.offhand skyblock:subtract_item
+item modify entity @s[tag=coal] weapon.offhand skyblock:subtract_item
+item modify entity @s[tag=coal] weapon.offhand skyblock:subtract_item
+item modify entity @s[tag=coal] weapon.offhand skyblock:subtract_item
+item modify entity @s[tag=coal] weapon.offhand skyblock:subtract_item
+item modify entity @s[tag=coal] weapon.offhand skyblock:subtract_item
+item modify entity @s[tag=coal] weapon.offhand skyblock:subtract_item
+item modify entity @s[tag=coal] weapon.offhand skyblock:subtract_item
+
+xp add @s[tag=!coal,nbt={SelectedItem:{tag:{Rarity:0}}}] -250 points
+xp add @s[tag=!coal,nbt={SelectedItem:{tag:{Rarity:1}}}] -500 points
+xp add @s[tag=!coal,nbt={SelectedItem:{tag:{Rarity:2}}}] -1000 points
+xp add @s[tag=!coal,nbt={SelectedItem:{tag:{Rarity:3}}}] -2500 points
+xp add @s[tag=!coal,nbt={SelectedItem:{tag:{Rarity:4}}}] -5000 points
+xp add @s[tag=!coal,nbt={SelectedItem:{tag:{Rarity:5}}}] -10000 points
 
 playsound minecraft:block.anvil.use player @s
 
 advancement revoke @s only skyblock:commands/npcs/blacksmith/bow_reforge
 
 scoreboard objectives remove random
+tag @s[tag=coal] remove coal

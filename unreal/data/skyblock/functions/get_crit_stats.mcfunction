@@ -49,7 +49,13 @@ execute as @a[advancements={skyblock:pets/skeleton=true}] run scoreboard players
 
 execute as @a run execute store result score @s dummy run data get entity @s XpLevel 0.1
 execute as @a[advancements={skyblock:pets/ender_dragon=true}] run scoreboard players operation @s crit_chance += @s dummy
+
 execute as @a[advancements={skyblock:pets/griffin=true}] run scoreboard players operation @s crit_chance += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/uncommon=true}] run scoreboard players operation @s crit_chance += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/rare=true}] run scoreboard players operation @s crit_chance += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/epic=true}] run scoreboard players operation @s crit_chance += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/legendary=true}] run scoreboard players operation @s crit_chance += @s dummy
+
 execute as @a[advancements={skyblock:pets/spider=true}] run scoreboard players operation @s crit_chance += @s dummy
 execute as @a[advancements={skyblock:pets/tarantula=true}] run scoreboard players operation @s crit_chance += @s dummy
 
@@ -128,7 +134,12 @@ execute as @a[advancements={skyblock:pets/enderman=true}] run scoreboard players
 execute as @a run execute store result score @s dummy run data get entity @s XpLevel 0.5
 execute as @a[advancements={skyblock:pets/ender_dragon=true}] run scoreboard players operation @s crit_damage += @s dummy
 execute as @a[advancements={skyblock:pets/tiger=true}] run scoreboard players operation @s crit_damage += @s dummy
+
 execute as @a[advancements={skyblock:pets/griffin=true}] run scoreboard players operation @s crit_damage += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/uncommon=true}] run scoreboard players operation @s crit_damage += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/rare=true}] run scoreboard players operation @s crit_damage += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/epic=true}] run scoreboard players operation @s crit_damage += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/legendary=true}] run scoreboard players operation @s crit_damage += @s dummy
 
 execute as @a run execute store result score @s dummy run data get entity @s XpLevel 0.3
 execute as @a[advancements={skyblock:pets/skeleton=true}] run scoreboard players operation @s crit_damage += @s dummy

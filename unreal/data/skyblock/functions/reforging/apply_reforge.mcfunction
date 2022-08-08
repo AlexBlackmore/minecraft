@@ -12,7 +12,7 @@ data modify entity @e[tag=anvil,limit=1,sort=nearest] HandItems[0].tag.Reforge_C
 data modify entity @e[tag=anvil,limit=1,sort=nearest] HandItems[0].tag.Reforge_Crit_Damage set value 0
 data modify entity @e[tag=anvil,limit=1,sort=nearest] HandItems[0].tag.Reforge_Intelligence set value 0
 
-
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.RepairCost run data modify entity @s HandItems[0].tag.RepairCost set value 0
 
 ################
 #SWORD REFORGES#

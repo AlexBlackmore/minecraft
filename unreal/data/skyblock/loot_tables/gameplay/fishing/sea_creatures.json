@@ -11,6 +11,25 @@
 				},
 				{
 					"type":"loot_table",
+					"name":"skyblock:items/sea_creatures/squid",
+					"quality":0,
+					"weight":2456,
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"head":{
+										"nbt":"{Name:\"Squid Hat\"}"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"type":"loot_table",
 					"name":"skyblock:items/sea_creatures/sea_walker",
 					"quality":0,
 					"weight":1631

@@ -1,0 +1,63 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_chestplate",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Elegant Tuxedo Jacket","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								{"text":"Full Set Bonus: Dashing","italic":false,"color":"gold"},
+								["",{"text":"Sets ","italic":false,"color":"gray"},{"text":"Max Health","italic":false,"color":"blue"},{"text":" to ","italic":false,"color":"gray"},{"text":"50","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+								["",{"text":"Deal ","italic":false,"color":"gray"},{"text":"+150% Damage","italic":false,"color":"red"},{"text":"!","italic":false,"color":"gray"}],
+								{"text":"Very stylish.","italic":false,"color":"dark_gray"},
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"+100% Crit Damage","italic":false,"color":"blue"}],
+								["",{"text":"+300 Intelligence","italic":false,"color":"blue"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									color:1644825
+								},
+								HideFlags:64,
+								Name:\"Elegant Tuxedo Jacket\",
+								Rarity:4,
+								Crit_Damage:100,
+								Intelligence:300
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":0,
+									"slot":"chest"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

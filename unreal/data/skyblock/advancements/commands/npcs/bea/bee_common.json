@@ -1,0 +1,46 @@
+{
+	"parent":"skyblock:commands/npcs",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Bee (Common)",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"bea\"]}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{Slot:0b,tag:{Name:\"Enchanted Emerald\"},Count:13b},
+									{Slot:1b,id:\"minecraft:emerald\",Count:2b},
+									{Slot:2b,id:\"minecraft:coal_block\",Count:2b},
+									{Slot:3b,id:\"minecraft:gold_block\",Count:2b}
+								]
+							}",
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/bea/bee_common"
+	}
+}

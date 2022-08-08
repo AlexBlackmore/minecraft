@@ -1,179 +1,149 @@
 give @p villager_spawn_egg{
 	EntityTag:{
-		id:"minecraft:villager"
-		CustomName:"Seymour"
-		CustomNameVisible:true
-		PersistenceRequired:true
-		Silent:true
-		CanPickUpLoot:false
-		Willing:false
-		NoAI:false
-		VillagerData:
-		{
-			level:5
-			profession:"leatherworker"
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Seymour\"}",
+		Tags:["seymour"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"leatherworker",
 			type:"plains"
-		}
+		},
 		Attributes:[
 			{
-				Name:"generic.movement_speed"
+				Name:"generic.movement_speed",
 				Base:0
 			}
-		]
+		],
 		Offers:
 		{
-			Recipes: [
+			Recipes:[
 				{
-					buyB:{
-						id:"writable_book"
-						Count:1
+					buy:{
+						id:"knowledge_book",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"<Seymour>\"\"italic\":false\"color\":\"white\"}"
+								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
 								Lore:[
-									"{\"text\":\"Looking to buy something fancy?\"\"italic\":false\"color\":\"white\"}"
-								]
-							}
-							HideFlags:32
-						}
-					}
-					maxUses:0
-				}
-				{
-					buyB:{
-						id:"knowledge_book"
-						Count:1
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"gray\"\"text\":\"Cost:\"}"
-								Lore:[
-									"[\"\"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x14\"}]"
-									"[\"\"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x41\"}]"
-									"[\"\"{\"italic\":false\"color\":\"white\"\"text\":\"Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x32\"}]"
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.0: \"},{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x1\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.1: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x58\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.2: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x4\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.3: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x32\"}]"
 								]
 							}
 						}
-					}
-					sell:
-					{
-						id:"leather_chestplate"
-						Count:1
+					},
+					sell:{
+						id:"leather_chestplate",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Cheap Tuxedo Set\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Cheap Tuxedo\"}",
 								Lore:[
-									"{\"text\":\" \"}"
-									"[\"\"{\"text\":\"Full Set Bonus: Dashing!\"\"italic\":false\"color\":\"gold\"}]"
-									"[\"\"{\"text\":\"Grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+150% Attack Damage\"\"italic\":false\"color\":\"blue\"}{\"text\":\" sets\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"Max Health\"\"italic\":false\"color\":\"blue\"}{\"text\":\" base to \"\"italic\":false\"color\":\"gray\"}{\"text\":\"50\"\"italic\":false\"color\":\"red\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
-									"{\"text\":\"Very stylish.\"\"italic\":false\"color\":\"dark_gray\"}"
-									"{\"text\":\" \"}"
-									"[\"\"{\"text\":\"Complete Set:\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"+100% Crit Damage\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+100 Intelligence\"\"italic\":false\"color\":\"blue\"}]"
-									"{\"text\":\" \"}"
-									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
-								]
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Full Set Bonus: Dashing\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Sets \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"Max Health\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to \"},{\"italic\":false,\"color\":\"green\",\"text\":\"15\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+50% Attack Damage\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Very stylish.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+100% Crit Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+100 Intelligence\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								],
 								color:3684408
-							}
-							HideFlags:66
+							},
+							AttributeModifiers:[],
+							HideFlags:64
 						}
 					}
-					rewardExp:false
-					maxUses:0
-				}
+				},
 				{
-					buyB:{
-						id:"knowledge_book"
-						Count:1
+					buy:{
+						id:"knowledge_book",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"gray\"\"text\":\"Cost:\"}"
+								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
 								Lore:[
-									"[\"\"{\"italic\":false\"color\":\"light_purple\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x1\"}]"
-									"[\"\"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x33\"}]"
-									"[\"\"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x42\"}]"
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.0: \"},{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x12\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.1: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x45\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.2: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x51\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.3: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x22\"}]"
 								]
 							}
 						}
-					}
-					sell:
-					{
-						id:"leather_chestplate"
-						Count:1
+					},
+					sell:{
+						id:"leather_chestplate",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Fancy Tuxedo Set\"\"italic\":false\"color\":\"gold\"}"
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Fancy Tuxedo\"}",
 								Lore:[
-									"{\"text\":\" \"}"
-									"[\"\"{\"text\":\"Full Set Bonus: Dashing!\"\"italic\":false\"color\":\"gold\"}]"
-									"[\"\"{\"text\":\"Grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+150% Attack Damage\"\"italic\":false\"color\":\"blue\"}{\"text\":\" sets\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"Max Health\"\"italic\":false\"color\":\"blue\"}{\"text\":\" base to \"\"italic\":false\"color\":\"gray\"}{\"text\":\"50\"\"italic\":false\"color\":\"red\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
-									"{\"text\":\"Very stylish.\"\"italic\":false\"color\":\"dark_gray\"}"
-									"{\"text\":\" \"}"
-									"[\"\"{\"text\":\"Complete Set:\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"+150% Crit Damage\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+300 Intelligence\"\"italic\":false\"color\":\"blue\"}]"
-									"{\"text\":\" \"}"
-									"{\"text\":\"LEGENDARY\"\"bold\":true\"color\":\"gold\"}"
-								]
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Full Set Bonus: Dashing\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Sets \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"Max Health\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to \"},{\"italic\":false,\"color\":\"green\",\"text\":\"30\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+100% Attack Damage\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Very stylish.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+150% Crit Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+300 Intelligence\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								],
 								color:3353130
-							}
-							HideFlags:66
+							},
+							AttributeModifiers:[],
+							HideFlags:64
 						}
 					}
-					rewardExp:false
-					maxUses:0
-				}
+				},
 				{
-					buyB:{
-						id:"knowledge_book"
-						Count:1
+					buy:{
+						id:"knowledge_book",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"gray\"\"text\":\"Cost:\"}"
+								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
 								Lore:[
-									"[\"\"{\"italic\":false\"color\":\"light_purple\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x5\"}]"
-									"[\"\"{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x46\"}]"
-									"[\"\"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x13\"}]"
-									"[\"\"{\"italic\":false\"color\":\"white\"\"text\":\"Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x32\"}]"
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.0: \"},{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x47\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.1: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x43\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.2: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x48\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Hotbar.3: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x32\"}]"
 								]
 							}
 						}
-					}
-					sell:
-					{
-						id:"leather_chestplate"
-						Count:1
+					},
+					sell:{
+						id:"leather_chestplate",
+						Count:1,
 						tag:{
 							display:{
-								Name:"{\"text\":\"Elegant Tuxedo Set\"\"italic\":false\"color\":\"gold\"}"
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Elegant Tuxedo\"}",
 								Lore:[
-									"{\"text\":\" \"}"
-									"[\"\"{\"text\":\"Full Set Bonus: Dashing!\"\"italic\":false\"color\":\"gold\"}]"
-									"[\"\"{\"text\":\"Grants \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+150% Attack Damage\"\"italic\":false\"color\":\"blue\"}{\"text\":\" sets\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"Max Health\"\"italic\":false\"color\":\"blue\"}{\"text\":\" base to \"\"italic\":false\"color\":\"gray\"}{\"text\":\"50\"\"italic\":false\"color\":\"red\"}{\"text\":\".\"\"italic\":false\"color\":\"gray\"}]"
-									"{\"text\":\"Very stylish.\"\"italic\":false\"color\":\"dark_gray\"}"
-									"{\"text\":\" \"}"
-									"[\"\"{\"text\":\"Complete Set:\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"+200% Crit Damage\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+500 Intelligence\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+10% Speed\"\"italic\":false\"color\":\"blue\"}]"
-									"{\"text\":\" \"}"
-									"{\"text\":\"LEGENDARY\"\"bold\":true\"color\":\"gold\"}"
-								]
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Full Set Bonus: Dashing\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Sets \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"Max Health\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to \"},{\"italic\":false,\"color\":\"green\",\"text\":\"50\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+150% Attack Damage\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Very stylish.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+200% Crit Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+500 Intelligence\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								],
 								color:1644825
-							}
-							HideFlags:66
+							},
+							AttributeModifiers:[],
+							HideFlags:64
 						}
 					}
-					rewardExp:false
-					maxUses:0
 				}
 			]
 		}
-	}
-	display:{
-		Name:"{\"text\":\"Seymour\"}"
 	}
 }

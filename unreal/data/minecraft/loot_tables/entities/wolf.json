@@ -6,7 +6,7 @@
 			"entries":[
 				{
 					"type":"item",
-					"name":"bone",
+					"name":"minecraft:bone",
 					"functions":[
 						{
 							"function":"looting_enchant",
@@ -16,6 +16,54 @@
 							}
 						}
 					]
+				}
+			]
+		}
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "loot_table",
+					"name": "minecraft:items/heads/wolf",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{SkullOwner:{Id:[I;331091154,-831306847,-1792330377,780116157],Name:\"Wolf\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY0MzlhNDNlNTY4NzAwODgxNWEyZGQxZmY0YTEzNGMxMjIyMWI3ODIzMzY2NzhiOTc5YWQxM2RjZTM5NjY1ZSJ9fX0=\"}]}}}"
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"name": "minecraft:items/heads/wolf/angry",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{SkullOwner:{Id:[I;-778701493,-2072295514,-1975288126,203552561],Name:\"Angry Wolf\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQxYWE3ZTNiOTU2NGIzODQ2ZjFkZWExNGYxYjFjY2JmMzk5YmJiMjNiOTUyZGJkN2VlYzQxODAyYTI4OWM5NiJ9fX0=\"}]}}}"
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition": "killed_by_player"
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"killer_player",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Enchantments:[{id:\"minecraft:sweeping\"}]}"
+							}
+						}
+					}
+				},
+				{
+				  "condition":"random_chance_with_looting",
+				  "chance":0.025,
+				  "looting_multiplier":0.01
 				}
 			]
 		}

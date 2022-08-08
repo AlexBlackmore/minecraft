@@ -12,6 +12,57 @@
 		"hidden":true
 	},
 	"criteria":{
+		"coal":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"blacksmith\"]}"
+				},
+				"item":{
+					"items":[
+						"wooden_sword",
+						"stone_sword",
+						"golden_sword",
+						"iron_sword",
+						"wooden_axe",
+						"stone_axe",
+						"golden_axe",
+						"iron_axe",
+						"wooden_axe",
+						"stone_axe",
+						"golden_axe",
+						"iron_axe",
+						"fishing_rod",
+						"diamond_sword",
+						"diamond_axe",
+						"trident",
+						"netherite_sword",
+						"netherite_axe"
+					]
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"count":{
+										"min":10
+									},
+									"items":[
+										"coal"
+									]
+								}
+							},
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		},
 		"common":{
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
@@ -46,6 +97,22 @@
 								}
 							}
 						}
+					},
+					{
+						"condition":"inverted",
+						"term":{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"items":[
+											"coal"
+										]
+									}
+								}
+							}
+						}
 					}
 				]
 			}
@@ -71,6 +138,22 @@
 							"player":{
 								"level":{
 									"min":19
+								}
+							}
+						}
+					},
+					{
+						"condition":"inverted",
+						"term":{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"items":[
+											"coal"
+										]
+									}
 								}
 							}
 						}
@@ -101,6 +184,22 @@
 								}
 							}
 						}
+					},
+					{
+						"condition":"inverted",
+						"term":{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"items":[
+											"coal"
+										]
+									}
+								}
+							}
+						}
 					}
 				]
 			}
@@ -108,6 +207,7 @@
 	},
 	"requirements":[
 		[
+			"coal",
 			"common",
 			"uncommon",
 			"rare"

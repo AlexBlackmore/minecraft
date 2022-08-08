@@ -57,6 +57,12 @@ execute as @a[advancements={skyblock:pets/bee/rare=true}] run function skyblock:
 execute as @a[advancements={skyblock:pets/bee/epic=true}] run function skyblock:abilities/ambient/hive
 execute as @a[advancements={skyblock:pets/bee/legendary=true}] run function skyblock:abilities/ambient/hive
 
+execute as @a run execute store result score @s dummy run data get entity @s XpLevel 0.1
+execute as @a[advancements={skyblock:pets/griffin=true}] run scoreboard players operation @s intelligence += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/uncommon=true}] run scoreboard players operation @s intelligence += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/rare=true}] run scoreboard players operation @s intelligence += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/epic=true}] run scoreboard players operation @s intelligence += @s dummy
+execute as @a[advancements={skyblock:pets/griffin/legendary=true}] run scoreboard players operation @s intelligence += @s dummy
 
 
 execute as @a run tellraw @s ["",{"text":"[Intelligence: ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"intelligence"},"italic":true,"color":"gray"},{"text":"]","italic":true,"color":"gray"}]

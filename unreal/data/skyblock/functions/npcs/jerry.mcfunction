@@ -15,6 +15,8 @@ playsound minecraft:entity.villager.yes player @s
 kill @e[tag=rng]
 
 execute if entity @e[tag=jerry,tag=overworld] run function skyblock:gamemode_survival
+
+execute if entity @s[predicate=skyblock:sneaking] run function skyblock:teleports/to_hub_village
+
 advancement revoke @s only skyblock:commands/npcs/jerry
 
-tag @p[tag=hub] remove hub

@@ -152,7 +152,61 @@
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:gameplay/fishing/festival_sea_creatures",
+					"name":"skyblock:gameplay/fishing/sea_creatures",
+					"quality":0,
+					"weight":7,
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"player":{
+									"advancements":{
+										"skyblock:pets/dolphin/rare":true
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/fishing/sea_creatures",
+					"quality":0,
+					"weight":10,
+					"conditions":[
+						{
+							"condition":"alternative",
+							"terms":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"player":{
+											"advancements":{
+												"skyblock:pets/dolphin/epic":true
+											}
+										}
+									}
+								},
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"player":{
+											"advancements":{
+												"skyblock:pets/dolphin/legendary":true
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/fishing/sea_creatures/festival",
 					"quality":1,
 					"weight":15,
 					"conditions":[					
@@ -171,7 +225,7 @@
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:gameplay/fishing/spooky_sea_creatures",
+					"name":"skyblock:gameplay/fishing/sea_creatures/spooky",
 					"quality":1,
 					"weight":15,
 					"conditions":[
@@ -198,7 +252,34 @@
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:gameplay/fishing/winter_sea_creatures",
+					"name":"skyblock:gameplay/fishing/sea_creatures/spooky",
+					"quality":1,
+					"weight":20,
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"player":{
+									"advancements":{
+										"skyblock:pets/bat/mythic":true
+									}
+								}
+							}
+						},
+						{
+							"condition":"time_check",
+							"value":{
+								"min":12000,
+								"max":23999
+							},
+							"period":24000
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/fishing/sea_creatures/winter",
 					"quality":1,
 					"weight":20,
 					"conditions":[
@@ -207,6 +288,62 @@
 							"entity":"this",
 							"predicate":{
 								"equipment":{
+									"offhand":{
+										"nbt":"{Name:\"Ice Bait\"}"
+									}
+								}
+							}
+						},
+						{
+							"condition":"location_check",
+							"predicate":{
+								"dimension":"skyblock:winter_island"
+							}
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/fishing/sea_creatures/winter",
+					"quality":1,
+					"weight":20,
+					"conditions":[
+						{
+							"condition":"minecraft:entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{Name:\"Yeti Rod\"}"
+									},
+									"offhand":{
+										"nbt":"{Name:\"Ice Bait\"}"
+									}
+								}
+							}
+						},
+						{
+							"condition":"location_check",
+							"predicate":{
+								"dimension":"skyblock:winter_island"
+							}
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/fishing/sea_creatures/winter",
+					"quality":1,
+					"weight":40,
+					"conditions":[
+						{
+							"condition":"minecraft:entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{Name:\"Auger Rod\"}"
+									},
 									"offhand":{
 										"nbt":"{Name:\"Ice Bait\"}"
 									}

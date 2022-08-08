@@ -2,19 +2,11 @@
 	"pools":[
 		{
 			"rolls":1,
-			"bonus_rolls":1,
 			"entries":[
 				{
 					"type":"loot_table",
-					"name":"skyblock:items/xp_books/20000",
-					"quality":0,
-					"weight":21
-				},
-				{
-					"type":"loot_table",
 					"name":"skyblock:items/enchanted/emerald2",
-					"quality":2,
-					"weight":11,
+					"weight":100,
 					"functions":[
 						{
 							"function":"set_count",
@@ -25,8 +17,7 @@
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/enchanted/emerald2",
-					"quality":2,
-					"weight":11,
+					"weight":5,
 					"functions":[
 						{
 							"function":"set_count",
@@ -36,32 +27,37 @@
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:items/runes/jerry",
-					"quality":0,
-					"weight":11
+					"name":"skyblock:items/experience_books/20000",
+					"weight":90
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/jerry_candy",
-					"quality":1,
-					"weight":5
+					"weight":15
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:items/accessories/jerry/green_jerry_talisman",
-					"quality":1,
+					"name":"skyblock:items/accessories/jerry_talisman/green",
+					"weight":15
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/swords/jerry_chine_gun",
 					"weight":3
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/reforge_stones/jerry_stone",
-					"quality":2,
+					"weight":2
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/pet_items/jerry_3d_glasses",
 					"weight":1
 				},
 				{
 					"type":"loot_table",
-					"name":"skyblock:items/swords/jerry_chine_gun",
-					"quality":3,
+					"name":"skyblock:items/runes/jerry",
 					"weight":1
 				}
 			]

@@ -104,11 +104,68 @@
 					}
 				}
 			]
-		}
-	],
-	"functions":[
+		},
 		{
-			"function":"minecraft:explosion_decay"
+			"rolls":36,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:beetroot",
+					"weight":1
+				},
+				{
+					"type":"loot_table",
+					"name":"minecraft:empty",
+					"weight":19
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:block_state_property",
+					"block":"minecraft:beetroots",
+					"properties":{
+						"age":"3"
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"advancements":{
+								"skyblock:pets/elephant/legendary":true
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/exp_boosts/farming"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:block_state_property",
+					"block":"minecraft:beetroots",
+					"properties":{
+						"age":"3"
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"nbt":"{Inventory:[{tag:{Name:\"Farming Exp Boost\"}}]}"
+						}
+					}
+				}
+			]
 		}
 	]
 }

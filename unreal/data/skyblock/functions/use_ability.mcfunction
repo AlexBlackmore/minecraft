@@ -9,7 +9,10 @@ execute as @p[tag=ability,level=3..,predicate=skyblock:in_water,nbt={Inventory:[
 #HELMETS
 execute as @p[tag=ability,nbt={Inventory:[{Slot:103b,tag:{Name:"Chicken Head"}}]}] run function skyblock:abilities/instant/chicken_head
 
-execute as @p[level=2..,tag=ability,nbt={Inventory:[{Slot:103b,tag:{Name:"Fish Hat"}}]}] run function skyblock:abilities/instant/splash
+execute as @p[level=1..,tag=ability,nbt={Inventory:[{Slot:103b,tag:{Name:"Fish Hat"}}]}] run function skyblock:abilities/instant/splash
+
+execute as @p[level=2..,tag=ability,nbt={Inventory:[{Slot:103b,tag:{Name:"Magmafish Hat"}}]}] run function skyblock:abilities/instant/splash_magma
+
 
 execute as @p[tag=ability,nbt={Inventory:[{Slot:103b,tag:{Name:"Golem Hat"}}]}] run function skyblock:abilities/instant/golem_hat
 

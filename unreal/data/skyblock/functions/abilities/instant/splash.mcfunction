@@ -6,10 +6,12 @@ playsound minecraft:entity.player.splash player @p[tag=ability]
 tellraw @p[tag=ability] ["",{"text":"[@: Used Splash]","italic":true,"color":"gray"}]
 tellraw @p[tag=ability] {"text":"It's not very effective..."}
 
-execute at @p[tag=ability] run fill ~-4 ~-1 ~-4 ~4 ~ ~4 minecraft:farmland[moisture=7] replace minecraft:farmland
-execute at @p[tag=ability] run fill ~-4 ~-1 ~-4 ~4 ~ ~4 minecraft:water_cauldron[level=3] replace minecraft:water_cauldron[level=2]
-execute at @p[tag=ability] run fill ~-4 ~-1 ~-4 ~4 ~ ~4 minecraft:water_cauldron[level=2] replace minecraft:water_cauldron[level=1]
-execute at @p[tag=ability] run fill ~-4 ~-1 ~-4 ~4 ~ ~4 minecraft:water_cauldron replace minecraft:cauldron
+execute at @p[tag=ability] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:farmland[moisture=7] replace minecraft:farmland
+execute at @p[tag=ability] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:water_cauldron[level=3] replace minecraft:water_cauldron[level=2]
+execute at @p[tag=ability] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:water_cauldron[level=2] replace minecraft:water_cauldron[level=1]
+execute at @p[tag=ability] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:water_cauldron replace minecraft:cauldron
+execute at @p[tag=ability] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:obsidian replace minecraft:lava[level=15]
+execute at @p[tag=ability] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:cobblestone replace minecraft:lava
 
 tag @p[tag=ability,nbt={SelectedItem:{id:"minecraft:bucket"}}] add fill_bucket
 item modify entity @p[tag=fill_bucket] weapon.mainhand skyblock:subtract_item

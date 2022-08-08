@@ -45,6 +45,30 @@
 			"entries":[
 				{
 					"type":"loot_table",
+					"name":"skyblock:blocks/diamond_ore"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"nbt":"{Inventory:[{tag:{Name:\"Bits Talisman\"}}]}"
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.1
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
 					"name":"skyblock:refined_mineral"
 				}
 			]
@@ -54,16 +78,7 @@
 			"entries":[
 				{
 					"type":"loot_table",
-					"name":"skyblock:lapis_armor"
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"loot_table",
-					"name":"skyblock:blocks/diamond_ore"
+					"name":"skyblock:gameplay/exp_boosts/mining"
 				}
 			],
 			"conditions":[
@@ -71,12 +86,10 @@
 					"condition":"entity_properties",
 					"entity":"this",
 					"predicate":{
-						"nbt":"{Inventory:[{tag:{Name:\"Bits Talisman\"}}]}"
+						"player":{
+							"nbt":"{Inventory:[{tag:{Name:\"Mining Exp Boost\"}}]}"
+						}
 					}
-				},
-				{
-					"condition":"random_chance",
-					"chance":0.1
 				}
 			]
 		}

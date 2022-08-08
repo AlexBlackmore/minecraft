@@ -1,0 +1,38 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:carrot",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Great Carrot Candy","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Consume to receive ","italic":false,"color":"gray"},{"text":"+100,000","italic":false,"color":"dark_aqua"},{"text":" experience!","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Great Carrot Candy\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

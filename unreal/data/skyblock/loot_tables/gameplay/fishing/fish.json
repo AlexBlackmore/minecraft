@@ -6,43 +6,49 @@
 				{
 					"type":"item",
 					"name":"cod",
-					"quality":0,
 					"weight":60
 				},
 				{
 					"type":"item",
 					"name":"salmon",
-					"quality":0,
 					"weight":25
 				},
 				{
 					"type":"item",
 					"name":"pufferfish",
-					"quality":0,
 					"weight":13
 				},
 				{
 					"type":"item",
 					"name":"clay_ball",
-					"quality":0,
 					"weight":6
 				},
 				{
 					"type":"item",
 					"name":"tropical_fish",
-					"quality":0,
 					"weight":4
 				},
 				{
 					"type":"item",
 					"name":"clay_ball",
-					"quality":0,
-					"weight":60,
+					"weight":25,
 					"conditions":[
 						{
 							"condition":"location_check",
 							"predicate":{
-								"biome":"minecraft:forest",
+								"dimension":"skyblock:hub_island"
+							}
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/armor/fairy/random",
+					"weight":25,
+					"conditions":[
+						{
+							"condition":"location_check",
+							"predicate":{
 								"dimension":"skyblock:hub_island"
 							}
 						}

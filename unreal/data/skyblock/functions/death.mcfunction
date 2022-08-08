@@ -23,6 +23,11 @@ function skyblock:xp_target
 gamemode survival @s[gamemode=adventure]
 advancement revoke @p[advancements={skyblock:commands/death=true}] only skyblock:commands/death
 
+#Magical Milk Bucket
+attribute @s minecraft:generic.max_health modifier remove 35-36-3-50-62
+attribute @s minecraft:generic.armor modifier remove 71-37-74-97-32
+
+
 tp @e[tag=boss] ~ ~-256 ~
 tag @p[tag=xp_loss] remove xp_loss
 tag @p[tag=death] remove death

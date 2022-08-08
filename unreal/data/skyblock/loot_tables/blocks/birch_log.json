@@ -43,7 +43,7 @@
 			"entries":[
 				{
 					"type":"loot_table",
-					"name":"skyblock:sweet_axe"
+					"name":"skyblock:gameplay/exp_boosts/foraging"
 				}
 			],
 			"conditions":[
@@ -51,10 +51,8 @@
 					"condition":"entity_properties",
 					"entity":"this",
 					"predicate":{
-						"equipment":{
-							"mainhand":{
-								"nbt":"{Name:\"Sweet Axe\"}"
-							}
+						"player":{
+							"nbt":"{Inventory:[{tag:{Name:\"Foraging Exp Boost\"}}]}"
 						}
 					}
 				}

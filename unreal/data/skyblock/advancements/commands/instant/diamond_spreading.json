@@ -15,6 +15,9 @@
 		"criterion":{
 			"trigger":"minecraft:player_killed_entity",
 			"conditions":{
+				"entity":{
+					"type":"#minecraft:hostile"
+				},
 				"player":[
 					{
 						"condition":"entity_properties",

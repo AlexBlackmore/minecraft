@@ -35,35 +35,96 @@
 						}
 					],
 					"add":true
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"item",
-					"name":"minecraft:experience_bottle"
-				}
-			],
-			"functions":[
+				},
 				{
 					"function":"set_count",
-					"count":{
-						"min":0,
-						"max":1
-					},
+					"count":1,
 					"conditions":[
 						{
 							"condition":"entity_properties",
 							"entity":"this",
 							"predicate":{
-								"equipment":{
-									"mainhand":{
-										"nbt":"{Name:\"Stonk\"}"
+								"player":{
+									"advancements":{
+										"skyblock:pets/endermite":true
 									}
 								}
 							}
+						},
+						{
+							"condition":"random_chance",
+							"chance":0.3
+						}
+					],
+					"add":true
+				},
+				{
+					"function":"set_count",
+					"count":1,
+					"conditions":[
+						{
+							"condition":"alternative",
+							"terms":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"player":{
+											"advancements":{
+												"skyblock:pets/endermite/uncommon":true
+											}
+										}
+									}
+								},
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"player":{
+											"advancements":{
+												"skyblock:pets/endermite/rare":true
+											}
+										}
+									}
+								},
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"player":{
+											"advancements":{
+												"skyblock:pets/endermite/epic":true
+											}
+										}
+									}
+								}
+							]
+						},
+						{
+							"condition":"random_chance",
+							"chance":0.4
+						}
+					],
+					"add":true
+				},
+				{
+					"function":"set_count",
+					"count":1,
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"player":{
+									"advancements":{
+										"skyblock:pets/endermite":true
+									}
+								}
+							}
+						},
+						{
+							"condition":"random_chance",
+							"chance":0.5
 						}
 					],
 					"add":true

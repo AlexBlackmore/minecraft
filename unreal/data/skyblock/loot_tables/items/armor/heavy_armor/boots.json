@@ -1,0 +1,60 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_boots",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Heavy Boots","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								{"text":"Full Set Bonus: Vindicate","italic":false,"color":"gold"},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+1% Speed","italic":false,"color":"blue"},{"text":" for every","italic":false,"color":"blue"}],
+								["",{"text":"10 Armor","italic":false,"color":"blue"},{"text":" you have.","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									color:16777215
+								},
+								HideFlags:64,
+								Name:\"Heavy Boots\",
+								Rarity:2
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":11.4,
+									"slot":"feet"
+								},
+								{
+									"name":"Movement Speed",
+									"attribute":"generic.movement_speed",
+									"operation":"multiply_base",
+									"amount":-0.05,
+									"slot":"feet"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -3,7 +3,6 @@
 	"pools":[
 		{	
 			"rolls":1,
-			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"item",
@@ -13,7 +12,6 @@
 		},
 		{
 			"rolls":1,
-			"bonus_rolls":0,
 			"entries":[
 				{
 					"type":"item",
@@ -93,7 +91,7 @@
 			"entries":[
 				{
 					"type":"item",
-					"name":"potato",
+					"name":"minecraft:potato",
 					"weight":1
 				},
 				{
@@ -105,18 +103,77 @@
 			"conditions":[
 				{
 					"condition":"block_state_property",
+					"block":"minecraft:potatoes",
+					"properties":{
+						"age":"7"
+					}
+				}
+			]
+		},
+		{
+			"rolls":36,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:potato",
+					"weight":1
+				},
+				{
+					"type":"loot_table",
+					"name":"minecraft:empty",
+					"weight":19
+				}
+			],
+			"conditions":[
+				{
+					"condition":"block_state_property",
+					"block":"minecraft:potatoes",
+					"properties":{
+						"age":"7"
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"advancements":{
+								"skyblock:pets/elephant/legendary":true
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/exp_boosts/farming"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"block_state_property",
 					"block":"potatoes",
 					"properties":{
 						"age":"7"
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"nbt":"{Inventory:[{tag:{Name:\"Farming Exp Boost\"}}]}"
+						}
 					}
 				}
 			]
 		}
 	],
 	"functions":[
-		{
-		  "function":"explosion_decay"
-		},
 		{
 			"function":"furnace_smelt",
 			"conditions": [

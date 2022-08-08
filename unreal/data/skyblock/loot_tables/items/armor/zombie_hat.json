@@ -15,8 +15,8 @@
 							"function":"minecraft:set_lore",
 							"lore":[
 								{"text":" "},
-								["",{"text":"Gives up to ","italic":false,"color":"gray"},{"text":"+2 Armor","italic":false,"color":"blue"},{"text":" for each","italic":false,"color":"gray"}],
-								["",{"text":"Zombie within ","italic":false,"color":"gray"},{"text":"8","italic":false,"color":"yellow"},{"text":" blocks.","italic":false,"color":"gray"}],
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+2 Armor","italic":false,"color":"blue"},{"text":" for each Zombie","italic":false,"color":"gray"}],
+								["",{"text":"within ","italic":false,"color":"gray"},{"text":"8","italic":false,"color":"yellow"},{"text":" blocks.","italic":false,"color":"gray"}],
 								{"text":" "}
 							]
 						},
@@ -24,14 +24,15 @@
 							"function":"minecraft:set_nbt",
 							"tag":"{
 								Unbreakable:true,
-								Name:\"Zombie Hat\"
+								Name:\"Zombie Hat\",
+								Rarity:0
 							}"
 						},
 						{
 							"function":"minecraft:set_attributes",
 							"modifiers":[
 								{
-									"name":"Defense",
+									"name":"Armor",
 									"attribute":"generic.armor",
 									"operation":"addition",
 									"amount":2,

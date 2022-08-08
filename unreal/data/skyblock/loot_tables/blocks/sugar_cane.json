@@ -3,11 +3,97 @@
 	"pools":[
 		{
 			"rolls":1,
-			"bonus_rolls":0,
 			"entries":[
 				{
-				  "type":"minecraft:item",
+				  "type":"item",
 				  "name":"minecraft:sugar_cane"
+				}
+			]
+		},
+		{
+			"rolls":0,
+			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:sugar_cane",
+					"weight":1
+				},
+				{
+					"type":"loot_table",
+					"name":"minecraft:empty",
+					"weight":19
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:block_state_property",
+					"block":"minecraft:sugar_cane",
+					"properties":{
+						"age":"15"
+					}
+				}
+			]
+		},
+		{
+			"rolls":36,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:sugar_cane",
+					"weight":1
+				},
+				{
+					"type":"loot_table",
+					"name":"minecraft:empty",
+					"weight":19
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:block_state_property",
+					"block":"minecraft:sugar_cane",
+					"properties":{
+						"age":"15"
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"advancements":{
+								"skyblock:pets/elephant/legendary":true
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/exp_boosts/farming"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:block_state_property",
+					"block":"minecraft:sugar_cane",
+					"properties":{
+						"age":"15"
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"nbt":"{Inventory:[{tag:{Name:\"Farming Exp Boost\"}}]}"
+						}
+					}
 				}
 			]
 		}

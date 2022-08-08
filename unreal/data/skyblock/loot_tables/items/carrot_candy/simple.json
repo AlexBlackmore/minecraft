@@ -1,0 +1,31 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:carrot",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Simple Carrot Candy","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Consume to receive ","italic":false,"color":"gray"},{"text":"+20,000","italic":false,"color":"dark_aqua"},{"text":" experience!","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Simple Carrot Candy\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

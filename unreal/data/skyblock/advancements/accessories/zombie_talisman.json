@@ -12,58 +12,18 @@
 		"hidden":true
 	},
 	"criteria":{
-		"player_hurt_zombie":{
-			"trigger":"minecraft:player_hurt_entity",
+		"criterion":{
+			"trigger":"minecraft:inventory_changed",
 			"conditions":{
-				"entity":{
-					"type":"#minecraft:zombies"
-				},
-				"player":[
+				"items":[
 					{
-						"condition":"entity_properties",
-						"entity":"this",
-						"predicate":{
-							"nbt":"{
-								Inventory:[
-									{tag:{Name:\"Zombie Talisman\"}}
-								]
-							}"
-						}
-					}
-				]
-			}
-		},
-		"zombie_hurt_player":{
-			"trigger":"minecraft:entity_hurt_player",
-			"conditions":{
-				"damage":{
-					"source_entity":{
-						"type":"#minecraft:zombies"
-					}
-				},
-				"player":[
-					{
-						"condition":"entity_properties",
-						"entity":"this",
-						"predicate":{
-							"nbt":"{
-								Inventory:[
-									{tag:{Name:\"Zombie Talisman\"}}
-								]
-							}"
-						}
+						"nbt":"{Name:\"Zombie Talisman\"}"
 					}
 				]
 			}
 		}
 
 	},
-	"requirements":[
-		[
-			"player_hurt_zombie",
-			"zombie_hurt_player"
-		]
-	],
 	"rewards":{
 		"function":"skyblock:abilities/accessories/zombie_talisman"
 	}

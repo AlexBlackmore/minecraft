@@ -1,0 +1,62 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:netherite_sword",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Encrusted Anchor","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"Those strong enough to wield the"},
+								{"text":"Anchor in battle follow the"},
+								{"text":"tradition of legendary seafaring"},
+								{"text":"warriors."}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								CustomModelData:1,
+								Name:\"Encrusted Anchor\"
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":13,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-3,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Knockback Resistance",
+									"attribute":"generic.knockback_resistance",
+									"operation":"addition",
+									"amount":1,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

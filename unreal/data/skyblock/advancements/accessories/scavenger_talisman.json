@@ -14,23 +14,11 @@
 	},
 	"criteria":{
 		"criterion":{
-			"trigger":"minecraft:player_killed_entity",
+			"trigger":"minecraft:inventory_changed",
 			"conditions":{
-				"player":[
+				"items":[
 					{
-						"condition":"entity_properties",
-						"entity":"this",
-						"predicate":{
-							"nbt":"{
-								Inventory:[
-									{tag:{Name:\"Scavenger Talisman\"}}
-								]
-							}"
-						}
-					},
-					{
-						"condition":"random_chance",
-						"chance":0.1666
+						"nbt":"{Name:\"Scavenger Talisman\"}"
 					}
 				]
 			}
@@ -38,9 +26,6 @@
 
 	},
 	"rewards":{
-		"loot":[
-			"minecraft:blocks/emerald_ore"
-		],
 		"function":"skyblock:abilities/accessories/scavenger_talisman"
 	}
 }

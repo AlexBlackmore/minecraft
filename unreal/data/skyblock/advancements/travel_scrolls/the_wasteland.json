@@ -1,0 +1,22 @@
+{
+	"parent":"skyblock:travel_scrolls/crimson_isle",
+	"display":{
+		"icon":{
+			"item":"minecraft:map"
+		},
+		"title":"§cCrimson Isle §7- §bThe Wasteland",
+		"description":"§7Spawn in §cThe Wasteland§7.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:recipe_unlocked",
+			"conditions":{
+				"recipe":"skyblock:travel_scrolls/the_wasteland"
+			}
+		}
+	}
+}

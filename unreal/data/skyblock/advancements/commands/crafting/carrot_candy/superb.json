@@ -1,0 +1,56 @@
+{
+	"parent":"skyblock:commands/crafting",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Superb Carrot Candy",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:crafting_table"
+					]
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{Slot:15b,tag:{Name:\"Enchanted Golden Carrot\"},Count:3b},
+									{Slot:16b,tag:{Name:\"Enchanted Golden Carrot\"},Count:3b},
+									{Slot:17b,tag:{Name:\"Enchanted Golden Carrot\"},Count:3b},
+									{Slot:24b,tag:{Name:\"Enchanted Golden Carrot\"},Count:3b},
+									{Slot:25b,tag:{Name:\"Great Carrot Candy\"},Count:1b},
+									{Slot:26b,tag:{Name:\"Enchanted Golden Carrot\"},Count:3b},
+									{Slot:33b,tag:{Name:\"Enchanted Golden Carrot\"},Count:3b},
+									{Slot:34b,tag:{Name:\"Enchanted Golden Carrot\"},Count:3b},
+									{Slot:35b,tag:{Name:\"Enchanted Golden Carrot\"},Count:3b}
+								]
+							}",
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"loot":[
+			"skyblock:items/carrot_candy/superb"
+		],
+		"function":"skyblock:crafting"
+	}
+}
