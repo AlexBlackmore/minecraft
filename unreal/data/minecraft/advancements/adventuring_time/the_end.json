@@ -1,19 +1,113 @@
 {
-	"display": {
-		"icon": {
-			"item": "minecraft:end_stone"
+	"parent":"minecraft:adventuring_time/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:end_stone"
 		},
-		"title": "The End",
-		"description": "Visit The End.",
-		"frame": "task"
+		"title":"Overworld",
+		"description":"Visit all End biomes.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
 	},
-  "parent": "adventuringtime:root",
-	"criteria": {
-		"minecraft:the_end": {
-			"trigger": "minecraft:location",
-			"conditions": {
-				"biome": "minecraft:the_end"
+	"criteria":{
+		"the_end":{
+			"trigger":"location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"location":{
+								"biome":"minecraft:the_end"
+							}
+						}
+					}
+				]
+			}
+		},
+		"small_end_islands":{
+			"trigger":"location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"location":{
+								"biome":"minecraft:small_end_islands"
+							}
+						}
+					}
+				]
+			}
+		},
+		"end_midlands":{
+			"trigger":"location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"location":{
+								"biome":"minecraft:end_midlands"
+							}
+						}
+					}
+				]
+			}
+		},
+		"end_highlands":{
+			"trigger":"location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"location":{
+								"biome":"minecraft:end_highlands"
+							}
+						}
+					}
+				]
+			}
+		},
+		"end_barrens":{
+			"trigger":"location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"location":{
+								"biome":"minecraft:end_barrens"
+							}
+						}
+					}
+				]
 			}
 		}
-	}
+	},
+	"requirements":[
+		[
+			"the_end"
+		],
+		[
+			"small_end_islands"
+		],
+		[
+			"end_midlands"
+		],
+		[
+			"end_highlands"
+		],
+		[
+			"end_barrens"
+		]
+	]
 }

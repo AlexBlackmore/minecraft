@@ -1,0 +1,32 @@
+{
+	"parent":"minecraft:adventuring_time/overworld/snowy/snowy_plains",
+	"display":{
+		"icon":{
+			"item":"minecraft:packed_ice"
+		},
+		"title":"Ice Spikes",
+		"description":"A rare variation of the Snowy Plains biome that features large spikes and glaciers of packed ice.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"location":{
+								"biome":"minecraft:ice_spikes"
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

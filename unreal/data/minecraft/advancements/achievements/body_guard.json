@@ -1,0 +1,27 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:iron_block"
+		},
+		"title":"Body Guard",
+		"description":"Create an Iron Golem.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:summoned_entity"
+			"conditions":{
+				"entity":{
+					"type":"minecraft:iron_golem"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"experience":20
+	}
+}

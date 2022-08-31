@@ -1,0 +1,23 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:player_head"
+		},
+		"title":"Zombie Doctor",
+		"description":"Cure a zombie villager.",
+		"frame":"challenge",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"citerion":{
+			"trigger":"minecraft:cured_zombie_villager",
+			"conditions":{}
+		}
+	},
+	"rewards":{
+		"experience":40
+	}
+}

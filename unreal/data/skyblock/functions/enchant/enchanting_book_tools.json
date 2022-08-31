@@ -1,21 +1,67 @@
 /give @p written_book{
-  pages:[
-    '["",
-		{"text":"Fortune III\\n","color":"dark_gray","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/tools/fortune3"},"hoverEvent":{"action":"show_text","contents":"Cost: 45 levels"}},
-		{"text":"Efficiency V\\n","color":"dark_gray","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/tools/efficiency5"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
-		{"text":"Silk Touch I\\n","color":"dark_gray","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/tools/silk_touch1"},"hoverEvent":{"action":"show_text","contents":"Cost: 10 levels"}}
-    ]',
-    '["",
-		{"text":"Experience III\\n","color":"blue","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/tools/critical5"},"hoverEvent":{"action":"show_text","contents":"Cost: 45 levels"}},
-		{"text":"Smelting Touch I\\n","color":"blue","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/tools/critical5"},"hoverEvent":{"action":"show_text","contents":"Cost: 5 levels"}},
-		{"text":"Rainbow I\\n","color":"blue","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/tools/critical5"},"hoverEvent":{"action":"show_text","contents":"Cost: 10 levels"}}
-    ]'
-  ],
-  title:"Enchanting Book (Tools)",
-  author:" ",
-  generation:3,
-  display:{
-    Name:"{\"text\":\"Enchanting Book (Tools)\",\"italic\":false,\"color\":\"red\"}"
-  },
-  HideFlags:32
+	pages:[
+		'["",
+			{"text":"Tools\\n\\n","color":"black"},
+			
+			{"text":"Experience\\n","color":"blue"},
+			{"text":"  "},
+			{"text":"I","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/experience/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 15 levels"}},
+			{"text":"   "},
+			{"text":"II","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/experience/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
+			{"text":"   "},
+			{"text":"III\\n","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/experience/3"},"hoverEvent":{"action":"show_text","contents":"Cost: 45 levels"}},
+			
+			{"text":"Efficiency\\n","color":"dark_gray"},
+			{"text":"  "},
+			{"text":"I","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/efficiency/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 10 levels"}},
+			{"text":"   "},
+			{"text":"II","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/efficiency/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 15 levels"}},
+			{"text":"   "},
+			{"text":"III","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/efficiency/3"},"hoverEvent":{"action":"show_text","contents":"Cost: 20 levels"}},
+			{"text":"   "},
+			{"text":"IV","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/efficiency/4"},"hoverEvent":{"action":"show_text","contents":"Cost: 25 levels"}},
+			{"text":"   "},
+			{"text":"V\\n","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/efficiency/5"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
+
+			{"text":"Fortune\\n","color":"dark_gray"},
+			{"text":"  "},
+			{"text":"I","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/fortune/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 15 levels"}},
+			{"text":"   "},
+			{"text":"II","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/fortune/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
+			{"text":"   "},
+			{"text":"III\\n","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/fortune/3"},"hoverEvent":{"action":"show_text","contents":"Cost: 45 levels"}},
+			
+			{"text":"Harvesting\\n","color":"blue"},
+			{"text":"  "},
+			{"text":"I","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/harvesting/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 5 levels"}},
+			{"text":"   "},
+			{"text":"II","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/harvesting/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 10 levels"}},
+			{"text":"   "},
+			{"text":"III","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/harvesting/3"},"hoverEvent":{"action":"show_text","contents":"Cost: 15 levels"}},
+			{"text":"   "},
+			{"text":"IV","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/harvesting/4"},"hoverEvent":{"action":"show_text","contents":"Cost: 20 levels"}},
+			{"text":"   "},
+			{"text":"V\\n","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/harvesting/5"},"hoverEvent":{"action":"show_text","contents":"Cost: 25 levels"}},
+
+			{"text":"Rainbow\\n","color":"blue"},
+			{"text":"  "},
+			{"text":"I\\n","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/rainbow/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 10 levels"}},
+			
+			{"text":"Silk Touch\\n","color":"dark_gray"},
+			{"text":"  "},
+			{"text":"I\\n","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/silk_touch/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 10 levels"}},
+		]',
+		'["",	
+			{"text":"Smelting Touch\\n","color":"blue"},
+			{"text":"  "},
+			{"text":"I\\n","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/smelting_touch/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 5 levels"}},
+		]'
+	],
+	title:"Enchanting Book (Tools)",
+	author:" ",
+	generation:3,
+	display:{
+		Name:"{\"text\":\"Enchanting Book (Tools)\",\"italic\":false,\"color\":\"red\"}"
+	},
+	HideFlags:32
 }

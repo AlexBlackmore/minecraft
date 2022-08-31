@@ -5,3 +5,4 @@ gamemode adventure @s[advancements={skyblock:travel_scrolls/deep_caverns=true},g
 execute in skyblock:deep_caverns run tp @s[advancements={skyblock:travel_scrolls/deep_caverns=true}] 100168.0 157 99349.0 -180 0
 execute at @s if block ~ ~ ~ minecraft:end_gateway in skyblock:deep_caverns run tp @s 100168.0 157 99349.0 -180 0
 xp add @s -1 points
+xp add @s 1 points

@@ -1,0 +1,33 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:player_head"
+		},
+		"title":"Leader of the Pack",
+		"description":"Befriend a pack of Wolves.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		 "criterion":{
+			"trigger":"minecraft:tame_animal",
+			"conditions":{
+				"entity":{
+					"type":"minecraft:wolf"
+				},
+				"player":[
+					{
+						"condition":"random_chance",
+						"chance":0.2
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":20
+	}
+}

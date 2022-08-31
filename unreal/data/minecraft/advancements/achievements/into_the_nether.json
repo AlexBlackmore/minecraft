@@ -1,0 +1,25 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:obsidian"
+		},
+		"title":"Into The Nether",
+		"description":"Construct a Nether Portal.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:changed_dimension"
+			"conditions":{
+				"to":"minecraft:the_nether"
+			}
+		}
+	},
+	"rewards":{
+		"experience":30
+	}
+}

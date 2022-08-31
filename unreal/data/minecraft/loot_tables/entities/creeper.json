@@ -11,23 +11,24 @@
 			]
 		},
 		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"tag",
-					"name":"music_discs",
-					"expand":true
-				}
-			],
+			"bonus_rolls":0.0,
 			"conditions":[
 				{
-					"condition":"entity_properties",
+					"condition":"minecraft:entity_properties",
+					"entity":"killer",
 					"predicate":{
-						"type":"#skeletons"
-					},
-					"entity":"killer"
+						"type":"#minecraft:skeletons"
+					}
 				}
-			]
+			],
+			"entries":[
+				{
+					"type":"minecraft:tag",
+					"expand":true,
+					"name":"minecraft:creeper_drop_music_discs"
+				}
+			],
+			"rolls":1.0
 		},
 		{
 			"rolls":1,
@@ -57,7 +58,7 @@
 			],
 			"conditions":[
 				{
-					"condition": "killed_by_player"
+					"condition":"killed_by_player"
 				},
 				{
 					"condition":"entity_properties",

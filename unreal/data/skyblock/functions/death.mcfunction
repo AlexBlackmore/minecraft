@@ -35,3 +35,5 @@ tag @p[tag=cracked_piggy_bank] remove cracked_piggy_bank
 scoreboard objectives remove xp_target
 scoreboard objectives remove xp_level
 
+
+execute at @e[tag=spawn_bonus_chest] run loot insert ~ ~ ~ loot minecraft:chests/spawn_bonus_chest

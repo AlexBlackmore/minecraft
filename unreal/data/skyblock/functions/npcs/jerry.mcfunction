@@ -16,7 +16,7 @@ kill @e[tag=rng]
 
 execute if entity @e[tag=jerry,tag=overworld] run function skyblock:gamemode_survival
 
-execute if entity @s[predicate=skyblock:sneaking] run function skyblock:teleports/to_hub_village
+execute if entity @s[predicate=skyblock:is_sneaking] run function skyblock:teleports/to_hub_village
 
 advancement revoke @s only skyblock:commands/npcs/jerry
 

@@ -1,0 +1,73 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_chestplate",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Flaming Chestplate","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+1 Armor Toughness","italic":false,"color":"blue"},{"text":" and","italic":false,"color":"gray"}],
+								["",{"text":"+10% Attack Damage","italic":false,"color":"blue"},{"text":" while","italic":false,"color":"gray"}],
+								["",{"text":"fighting ","italic":false,"color":"gray"},{"text":"Lava Sea Creatures","italic":false,"color":"red"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									color:15558162
+								},
+								HideFlags:64,
+								Name:\"Flaming Chestplate\",
+								Rarity:2
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":5,
+									"slot":"chest"
+								},
+								{
+									"name":"Luck",
+									"attribute":"generic.luck",
+									"operation":"addition",
+									"amount":3,
+									"slot":"chest"
+								},
+								{
+									"name":"Max Health",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":42,
+									"slot":"chest"
+								},
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":42,
+									"slot":"chest"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

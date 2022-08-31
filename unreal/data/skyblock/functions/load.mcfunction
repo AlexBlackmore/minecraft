@@ -1,3 +1,6 @@
+bossbar add mob "Mob"
+bossbar set minecraft:mob players @a
+
 
 scoreboard objectives add dummy dummy "Dummy"
 scoreboard objectives add time dummy "Time"
@@ -18,6 +21,7 @@ scoreboard objectives add luck dummy "Luck"
 scoreboard objectives add max_health dummy "Max Health"
 scoreboard objectives add movement_speed dummy "Movement Speed"
 
+scoreboard objectives add health dummy "Health"
 
 scoreboard objectives add mined_coal_ore minecraft.mined:minecraft.coal_ore "Mined Coal Ore"
 scoreboard objectives add mined_deepslate_coal_ore minecraft.mined:minecraft.deepslate_coal_ore "Mined Deepslate Coal Ore"

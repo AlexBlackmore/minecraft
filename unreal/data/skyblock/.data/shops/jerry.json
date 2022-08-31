@@ -353,6 +353,31 @@ give @p villager_spawn_egg{
 						id:"sponge",
 						Count:1
 					}
+				},
+				{
+					buy:{
+						id:"ender_eye",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Eye of Ender\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Eye of Ender"
+						}
+					},
+					sell:{
+						id:"end_portal_frame",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"End Portal Frame\"}"
+							}
+						}
+					}
 				}
 			]
 		}

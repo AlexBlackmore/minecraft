@@ -1,0 +1,36 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:stone_hoe"
+		},
+		"title":"Time to Farm!",
+		"description":"Make a Hoe.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed"
+			"conditions":{
+				"items":[
+					{
+						"items":[
+							"minecraft:wooden_hoe",
+							"minecraft:stone_hoe",
+							"minecraft:iron_hoe",
+							"minecraft:golden_hoe",
+							"minecraft:diamond_hoe",
+							"minecraft:netherite_hoe"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":10
+	}
+}

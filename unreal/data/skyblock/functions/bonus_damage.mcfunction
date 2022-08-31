@@ -2,7 +2,7 @@ tag @p[advancements={skyblock:commands/melee_damage=true}] add attacker
 tag @p[advancements={skyblock:commands/ranged_damage=true}] add attacker
 execute at @p[tag=attacker] run tag @e[nbt={HurtTime:10s},type=!player] add target
 execute unless entity @e[tag=target] run tag @e[tag=projectile,type=armor_stand,limit=1,sort=nearest] add target
-execute at @e[tag=target,type=#minecraft:hostile] run tag @e[tag=projectile,type=armor_stand,distance=0..4] add target
+execute at @e[tag=target,type=#minecraft:monster] run tag @e[tag=projectile,type=armor_stand,distance=0..4] add target
 execute at @e[tag=shot,tag=projectile,nbt={inGround:1b}] run tag @e[tag=projectile,type=armor_stand,distance=0..4] add target
 tag @e[tag=shot,nbt={inGround:1b}] remove shot
 
@@ -25,7 +25,7 @@ execute as @s[advancements={skyblock:commands/ranged_damage=true}] run function 
 
 
 #Armor
-execute if predicate skyblock:random_chance3 as @s[nbt={Inventory:[{Slot:103b,tag:{Name:"Pufferfish Hat"}}]}] run function skyblock:abilities/instant/spiky
+execute if predicate skyblock:random_chance/3 as @s[nbt={Inventory:[{Slot:103b,tag:{Name:"Pufferfish Hat"}}]}] run function skyblock:abilities/instant/spiky
 
 
 #Crit Chance

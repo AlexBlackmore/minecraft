@@ -1,0 +1,32 @@
+{
+	"parent":"minecraft:adventuring_time/overworld/snowy/snowy_beach",
+	"display":{
+		"icon":{
+			"item":"minecraft:snow_block"
+		},
+		"title":"Grove",
+		"description":"The grove creates a forest of spruce trees beneath the mountain peaks when near a forested biome.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"location":{
+								"biome":"minecraft:grove"
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

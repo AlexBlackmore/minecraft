@@ -1,0 +1,45 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:diamond_sword"
+		},
+		"title":"Overkill",
+		"description":"Deal nine hearts of damage in a single hit.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"player_hurt_entity":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"damage":{
+					"dealt":{
+						"min":18
+					}
+				}
+			}
+		},
+		"player_killed_entity":{
+			"trigger":"minecraft:player_killed_entity",
+			"conditions":{
+				"damage":{
+					"dealt":{
+						"min":18
+					}
+				}
+			}
+		}
+	},
+	"requirements":[
+		[
+			"player_hurt_entity",
+			"player_killed_entity"
+		]
+	],
+	"rewards":{
+		"experience":30
+	}
+}

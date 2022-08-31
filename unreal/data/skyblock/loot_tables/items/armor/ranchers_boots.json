@@ -5,39 +5,59 @@
 			"entries":[
 				{
 					"type":"item",
-					"name":"leather_boots",
+					"name":"minecraft:leather_boots",
 					"functions":[
 						{
-							"function":"set_nbt",
+							"function":"minecraft:set_name",
+							"name":{"text":"Rancher's Boots","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+2 Armor","italic":false,"color":"blue"},{"text":" and","italic":false,"color":"gray"}],
+								["",{"text":"+4% Speed","italic":false,"color":"blue"},{"text":" for every ","italic":false,"color":"gray"},{"text":"XP level","italic":false,"color":"aqua"}],
+								["",{"text":"you have.","italic":false,"color":"gray"}],
+								["",{"text":"(Max Level: 50)","italic":false,"color":"dark_gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
 							"tag":"{
 								display:{
-									Name:\"{\\\"text\\\":\\\"Rancher's Boots\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
-									Lore:[
-										\"\\\" \\\"\",
-										\"[\\\"\\\",{\\\"text\\\":\\\"These boots gain \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+2 Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\" and\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-										\"[\\\"\\\",{\\\"text\\\":\\\"+20% Speed\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\" for every \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"5\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" levels\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-										\"{\\\"text\\\":\\\"held.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-										\"{\\\"text\\\":\\\"(Max level: 60)\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_gray\\\"}\",
-										\"\\\" \\\"\",
-										\"{\\\"text\\\":\\\"Ability: Farmer's Grace\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
-										\"[\\\"\\\",{\\\"text\\\":\\\"Grants permanent \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"Slow Falling\\\",\\\"italic\\\":false,\\\"color\\\":\\\"#F7F8E0\\\"}]\",
-										\"{\\\"text\\\":\\\"to prevent crops from being\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-										\"{\\\"text\\\":\\\"trampled.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-										\"\\\" \\\"\",
-										\"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\",
-										\"\\\" \\\"\"
-									],
 									color:0
 								},
-								AttributeModifiers:[
-									{Slot:\"feet\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:20,Operation:0,UUID:[I;766579989,994561084,165926897,377287338]},
-									{Slot:\"feet\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:14,Operation:0,UUID:[I;461443222,837135584,381419432,11778883]},
-									{Slot:\"feet\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;653699991,193749424,110760859,510310976]},
-									{Slot:\"feet\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.5,Operation:1,UUID:[I;868113357,267224837,634662683,385801270]}
-								],
 								HideFlags:64,
-								Name:\"Rancher's Boots\"
+								Name:\"Rancher's Boots\",
+								Rarity:3
 							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Max Health",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":20,
+									"slot":"feet"
+								},
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":14,
+									"slot":"feet"
+								},
+								{
+									"name":"Movement Speed",
+									"attribute":"generic.movement_speed",
+									"operation":"multiply_base",
+									"amount":0.5,
+									"slot":"feet"
+								}
+							]
 						}
 					]
 				}

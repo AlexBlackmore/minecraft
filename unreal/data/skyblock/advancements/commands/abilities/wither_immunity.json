@@ -1,0 +1,76 @@
+{
+	"parent":"skyblock:commands/abilities",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Wither Immunity",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":false,
+		"hidden":true
+	},
+	"criteria":{
+		"obsidian_chestplate_effects_changed":{
+			"trigger":"minecraft:effects_changed",
+			"conditions":{
+				"effects":{
+					"minecraft:wither":{
+						"amplifier":{
+							"min":0
+						}
+					}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"chest":{
+									"nbt":"{Name:\"Obsidian Chestplate\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"obsidian_chestplate_inventory_changed":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"effects":{
+								"minecraft:wither":{
+									"amplifier":{
+										"min":0
+									}
+								}
+							},
+							"equipment":{
+								"chest":{
+									"nbt":"{Name:\"Obsidian Chestplate\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+
+	},
+	"requirements":[
+		[
+			"obsidian_chestplate_effects_changed",
+			"obsidian_chestplate_inventory_changed"
+		]
+	],
+	"rewards":{
+		"function":"skyblock:abilities/instant/wither_immunity"
+	}
+}

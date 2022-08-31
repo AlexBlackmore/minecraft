@@ -1,0 +1,31 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:furnace"
+		},
+		"title":"Hot Topic",
+		"description":"Construct a furnace out of eight cobblestone blocks.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed"
+			"conditions":{
+				"items":[
+					{
+						"items":[
+							"minecraft:furnace"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":15
+	}
+}

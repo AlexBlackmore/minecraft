@@ -8,30 +8,42 @@
 					"name":"minecraft:leather_chestplate",
 					"functions":[
 						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Obsidian Chestplate","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+1% Speed","italic":false,"color":"blue"},{"text":" for every","italic":false,"color":"gray"}],
+								["",{"text":"20","italic":false,"color":"green"},{"text":" pieces of ","italic":false,"color":"gray"},{"text":"Obsidian","italic":false,"color":"white"},{"text":" in","italic":false,"color":"gray"}],
+								["",{"text":"your inventory and immunity to","italic":false,"color":"gray"}],
+								["",{"text":"Wither","italic":false,"color":"#352a27"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
 								display:{
-									Name:\"{\\\"text\\\":\\\"Obsidian Chestplate\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
-									Lore:[
-										\"{\\\"text\\\":\\\"Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\",
-										\"\\\" \\\"\",
-										\"[\\\"\\\",{\\\"text\\\":\\\"While worn, gain \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"+1% Speed\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"},{\\\"text\\\":\\\" for\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-										\"[\\\"\\\",{\\\"text\\\":\\\"every \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"20\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" obsidian in your\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-										\"{\\\"text\\\":\\\"inventory.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-										\"\\\" \\\"\",
-										\"{\\\"text\\\":\\\"Grants Immunity to Wither effect.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-										\"\\\" \\\"\",
-										\"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\",
-										\"\\\" \\\"\"
-									],
 									color:0
 								},
-								AttributeModifiers:[
-									{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:50,Operation:0,UUID:[I;103432379,783577873,855492839,613001146]},
-									{Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;490600305,477935533,634939796,439316948]}
-								],
-								HideFlags:64
+								HideFlags:64,
+								Name:\"Obsidian Chestplate\",
+								Rarity:3
 							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":50,
+									"slot":"chest"
+								}
+							]
 						}
 					]
 				}

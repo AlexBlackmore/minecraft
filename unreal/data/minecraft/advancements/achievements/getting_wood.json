@@ -1,0 +1,31 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:oak_log"
+		},
+		"title":"Getting Wood",
+		"description":"Punch a tree until a block of wood pops out.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed"
+			"conditions":{
+				"items":[
+					{
+						"items":[
+							"#minecraft:logs"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":10
+	}
+}

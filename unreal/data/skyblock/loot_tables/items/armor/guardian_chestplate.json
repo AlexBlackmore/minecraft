@@ -4,58 +4,52 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"alternatives",
-					"children":[
+					"type":"item",
+					"name":"minecraft:leather_chestplate",
+					"functions":[
 						{
-							"type":"item",
-							"name":"minecraft:leather_chestplate",
-							"functions":[
+							"function":"minecraft:set_name",
+							"name":{"text":"Guardian Chestplate","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Block Damage","italic":false,"color":"gold"}],
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"Resistance V","italic":false,"color":"#99453A"},{"text":" while at","italic":false,"color":"gray"}],
+								["",{"text":"full ","italic":false,"color":"gray"},{"text":"Health","italic":false,"color":"red"},{"text":", nullifying the","italic":false,"color":"gray"}],
+								["",{"text":"first damage you take.","italic":false,"color":"gray"}],
+								["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"60s","italic":false,"color":"green"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									color:1143697
+								},
+								HideFlags:64,
+								Name:\"Guardian Chestplate\",
+								Rarity:2
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
 								{
-									"function":"minecraft:set_name",
-									"name":{"text":"Guardian Chestplate","italic":false,"color":"aqua"}
+									"name":"Max Health",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":4,
+									"slot":"chest"
 								},
 								{
-									"function":"minecraft:set_lore",
-									"lore":[
-										{"text":" "},
-										["",{"text":"Ability: Block Damage","italic":false,"color":"gold"}],
-										["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"Resistance V","italic":false,"color":"#99453A"},{"text":" while at","italic":false,"color":"gray"}],
-										["",{"text":"full ","italic":false,"color":"gray"},{"text":"Health","italic":false,"color":"red"},{"text":", nullifying the","italic":false,"color":"gray"}],
-										["",{"text":"first damage you take.","italic":false,"color":"gray"}],
-										["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"60s","italic":false,"color":"green"}],
-										{"text":" "},
-										{"text":"RARE","bold":true,"color":"aqua"},
-										{"text":" "}
-									]
-								},
-								{
-									"function":"minecraft:set_nbt",
-									"tag":"{
-										display:{
-											color:1143697
-										},
-										HideFlags:64,
-										Name:\"Guardian Chestplate\"
-									}"
-								},
-								{
-									"function":"minecraft:set_attributes",
-									"modifiers":[
-										{
-											"name":"Health",
-											"attribute":"generic.max_health",
-											"operation":"addition",
-											"amount":4,
-											"slot":"chest"
-										},
-										{
-											"name":"Defense",
-											"attribute":"generic.armor",
-											"operation":"addition",
-											"amount":10,
-											"slot":"chest"
-										}
-									]
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":10,
+									"slot":"chest"
 								}
 							]
 						}

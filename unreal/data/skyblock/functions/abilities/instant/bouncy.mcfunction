@@ -1,13 +1,13 @@
-execute at @e[tag=target] if predicate skyblock:random_chance50 run tag @e[type=#minecraft:hostile,limit=1,sort=nearest,tag=!target] add bouncy1
+execute at @e[tag=target] if predicate skyblock:random_chance/50 run tag @e[type=#minecraft:monster,limit=1,sort=nearest,tag=!target] add bouncy1
 execute as @e[tag=bouncy1] run scoreboard players add @s multiplier 85
 
-execute at @e[tag=bouncy1] if predicate skyblock:random_chance50 run tag @e[type=#minecraft:hostile,limit=1,sort=nearest,tag=!bouncy1] add bouncy2
+execute at @e[tag=bouncy1] if predicate skyblock:random_chance/50 run tag @e[type=#minecraft:monster,limit=1,sort=nearest,tag=!bouncy1] add bouncy2
 execute as @e[tag=bouncy2] run scoreboard players add @s multiplier 70
 
-execute at @e[tag=bouncy2] if predicate skyblock:random_chance50 run tag @e[type=#minecraft:hostile,limit=1,sort=nearest,tag=!bouncy2] add bouncy3
+execute at @e[tag=bouncy2] if predicate skyblock:random_chance/50 run tag @e[type=#minecraft:monster,limit=1,sort=nearest,tag=!bouncy2] add bouncy3
 execute as @e[tag=bouncy3] run scoreboard players add @s multiplier 55
 
-execute at @e[tag=bouncy3] if predicate skyblock:random_chance50 run tag @e[type=#minecraft:hostile,limit=1,sort=nearest,tag=!bouncy3] add bouncy4
+execute at @e[tag=bouncy3] if predicate skyblock:random_chance/50 run tag @e[type=#minecraft:monster,limit=1,sort=nearest,tag=!bouncy3] add bouncy4
 execute as @e[tag=bouncy4] run scoreboard players add @s multiplier 40
 
 tag @e[tag=bouncy1] add target

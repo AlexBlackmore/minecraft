@@ -1,0 +1,32 @@
+{
+	"parent":"minecraft:adventuring_time/overworld/snowy/ice_spikes",
+	"display":{
+		"icon":{
+			"item":"minecraft:snow_block"
+		},
+		"title":"Snowy Taiga",
+		"description":"Much like the regular Taiga, the Snowy Taiga has large expanses of spruce trees, ferns, and their taller variants, generate here commonly, although grass can still be found.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"location":{
+								"biome":"minecraft:snowy_taiga"
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -90,13 +90,13 @@ give @p villager_spawn_egg{
 								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Fancy Sword\"}",
 								Lore:[
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"First Strike\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Scavenger\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Vampirism\"}]"
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"First Strike I\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Scavenger I\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Vampirism I\"}]"
 								]
 							},
 							Enchantments:[
-								{id:"sharpness",lvl:2}
+								{id:"minecraft:sharpness",lvl:2}
 							],
 							AttributeModifiers:[
 							  {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:4,Operation:0,UUID:[I;933773407,324528439,830661938,401291934]},
@@ -104,9 +104,11 @@ give @p villager_spawn_egg{
 							],
 							Name:"Fancy Sword",
 							Rarity:0,
-							First_Strike:1,
-							Scavenger:1,
-							Vampirism:1
+							CustomEnchantments:[
+								{id:"skyblock:first_strike",lvl:1},
+								{id:"skyblock:scavenger",lvl:1},
+								{id:"skyblock:vampirism",lvl:1}
+							]
 						}
 					}
 				}

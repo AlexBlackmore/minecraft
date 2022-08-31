@@ -4,58 +4,46 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"alternatives",
-					"children":[
+					"type":"item",
+					"name":"minecraft:diamond_pickaxe",
+					"functions":[
 						{
-							"type":"item",
-							"name":"minecraft:diamond_pickaxe",
-							"functions":[
+							"function":"minecraft:set_name",
+							"name":{"text":"Jungle Pickaxe","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Mining ","italic":false,"color":"gray"},{"text":"Deepslate","italic":false,"color":"white"},{"text":" in a ","italic":false,"color":"gray"},{"text":"Jungle","italic":false,"color":"dark_green"}],
+								["",{"text":"biome has a chance to drop","italic":false,"color":"gray"}],
+								["",{"text":"Sludge Juice","italic":false,"color":"yellow"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Jungle Pickaxe\",
+								Rarity:1
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"efficiency":5,
+								"sharpness":20
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
 								{
-									"function":"minecraft:set_name",
-									"name":{"text":"Jungle Pickaxe","italic":false,"color":"yellow"}
-								},
-								{
-									"function":"minecraft:set_lore",
-									"lore":[
-										{"text":" "},
-										["",{"text":"Gives a chance to spawn Slimes","italic":false,"color":"gray"}],
-										["",{"text":"around you when mining in a","italic":false,"color":"gray"}],
-										["",{"text":"Jungle biome.","italic":false,"color":"gray"}],
-										{"text":" "},
-										{"text":"UNCOMMON","bold":true,"color":"yellow"},
-										{"text":" "}
-									]
-								},
-								{
-									"function":"minecraft:set_nbt",
-									"tag":"{
-										Name:\"Jungle Pickaxe\"
-									}"
-								},
-								{
-									"function":"minecraft:set_enchantments",
-									"enchantments":{
-										"efficiency":4
-									}
-								},
-								{
-									"function":"minecraft:set_attributes",
-									"modifiers":[
-										{
-											"name":"Attack Damage",
-											"attribute":"generic.attack_damage",
-											"operation":"addition",
-											"amount":10,
-											"slot":"mainhand"
-										},
-										{
-											"name":"Attack Speed",
-											"attribute":"generic.attack_speed",
-											"operation":"addition",
-											"amount":-2.8,
-											"slot":"mainhand"
-										}
-									]
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-2.8,
+									"slot":"mainhand"
 								}
 							]
 						}

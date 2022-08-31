@@ -2,7 +2,7 @@
 	"parent":"skyblock:quests/root",
 	"display":{
 		"icon":{
-			"item":"minecraft:paper"
+			"item":"minecraft:string"
 		},
 		"title":"Melody's Harp",
 		"description":"[::]",
@@ -12,13 +12,45 @@
 		"hidden":false
 	},
 	"criteria":{
-		"melody":{
+		"criterion":{
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
 					"nbt":"{Tags:[\"melody\"]}"
-				}
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"player":{
+								"advancements":{
+									"skyblock:quests/melodys_harp/13":true,
+									"skyblock:quests/melodys_harp/cat":true,
+									"skyblock:quests/melodys_harp/blocks":true,
+									"skyblock:quests/melodys_harp/chirp":true,
+									"skyblock:quests/melodys_harp/far":true,
+									"skyblock:quests/melodys_harp/mall":true,
+									"skyblock:quests/melodys_harp/mellohi":true,
+									"skyblock:quests/melodys_harp/stal":true,
+									"skyblock:quests/melodys_harp/strad":true,
+									"skyblock:quests/melodys_harp/ward":true,
+									"skyblock:quests/melodys_harp/11":true,
+									"skyblock:quests/melodys_harp/wait":true,
+									"skyblock:quests/melodys_harp/otherside":true,
+									"skyblock:quests/melodys_harp/5":true,
+									"skyblock:quests/melodys_harp/pigstep":true
+								}
+							}
+						}
+					}
+				]
 			}
 		}
+	},
+	"rewards":{
+		"loot":[
+			"skyblock:items/accessories/melodys_harp"
+		]
 	}
 }

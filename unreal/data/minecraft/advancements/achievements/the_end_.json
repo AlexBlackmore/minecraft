@@ -1,0 +1,25 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:ender_eye"
+		},
+		"title":"The End?",
+		"description":"Enter an End Portal.",
+		"frame":"challenge",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:changed_dimension"
+			"conditions":{
+				"to":"minecraft:the_end"
+			}
+		}
+	},
+	"rewards":{
+		"experience":20
+	}
+}

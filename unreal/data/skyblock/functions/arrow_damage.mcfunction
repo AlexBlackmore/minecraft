@@ -1,8 +1,6 @@
-tag @p[advancements={skyblock:commands/using_bow=false}] add bow
-advancement revoke @p[tag=bow] only skyblock:commands/using_bow
+#tellraw @p "arrow_damage"
 
 scoreboard objectives add owner dummy "Owner"
-scoreboard objectives add attack_damage dummy "Attack Damage"
 execute as @e[type=#minecraft:arrows,tag=!shot] run execute store result score @s owner run data get entity @s Owner[0]
 execute as @p[tag=bow] run execute store result score @s owner run data get entity @s UUID[0]
 execute as @e[type=#minecraft:arrows,tag=!shot,nbt={inGround:0b}] run execute if score @s owner = @p[tag=bow] owner run tag @s add calc
@@ -88,12 +86,18 @@ execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Sniper Bow"}}}] run e
 tag @e[tag=calc] add shot
 tag @e[tag=shot] remove calc
 
-execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Terminator"}}}] run function skyblock:abilities/terminator
-execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Runaan's Bow"}}}] run function skyblock:abilities/instant/triple_shot
-execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Soulstealer Bow"}}}] run function skyblock:abilities/soulstealer_bow
-execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Hurricane Bow"}}}] run function skyblock:abilities/instant/tempest
+#execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Terminator"}}}] run function skyblock:abilities/terminator
+#execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Runaan's Bow"}}}] run function skyblock:abilities/instant/triple_shot
+#execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Soulstealer Bow"}}}] run function skyblock:abilities/soulstealer_bow
+#execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Hurricane Bow"}}}] run function skyblock:abilities/instant/tempest
 
-execute if entity @e[tag=projectile] run schedule function skyblock:projectile 1t replace
+#execute if entity @e[tag=projectile] run schedule function skyblock:projectile 1t replace
 
 scoreboard objectives remove damage
+scoreboard objectives remove power
+scoreboard objectives remove x
+scoreboard objectives remove y
+scoreboard objectives remove z
+scoreboard objectives remove color
+
 tag @p[tag=bow] remove bow

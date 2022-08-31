@@ -1,0 +1,33 @@
+{
+	"display":{
+		"icon":{
+			"item":"minecraft:book"
+		},
+		"title":"Taking Inventory",
+		"description":"Pick up an item into your inventory.",
+		"frame":"task",
+		"background":"minecraft:textures/gui/advancements/backgrounds/stone.png",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed"
+			"conditions":{
+				"player":{
+					"type_specific":{
+						"player":{
+							"level":{
+								"min":0
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":{
+		"experience":10
+	}
+}

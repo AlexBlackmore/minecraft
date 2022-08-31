@@ -1,0 +1,51 @@
+{
+	"parent":"skyblock:commands/consumables",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Sold Lapis Crystal",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"auction_master\"]}"
+				},
+				"item":{
+					"nbt":"{Name:\"Lapis Crystal\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"loot":[
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald"
+		],
+		"function":"skyblock:consume_mainhand"
+	}
+}

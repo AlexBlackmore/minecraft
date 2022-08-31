@@ -34,9 +34,9 @@ execute as @e[tag=target,type=#minecraft:undead] if entity @s[nbt={SelectedItem:
 execute as @e[tag=target,type=#minecraft:undead] if entity @s[nbt={SelectedItem:{tag:{Name:"Super Undead Bow"}}}] run scoreboard players add @s multiplier 100
 execute as @e[tag=target,type=#minecraft:undead] if entity @s[nbt={SelectedItem:{tag:{Name:"Death Bow"}}}] run scoreboard players add @s multiplier 100
 
-execute if entity @s[nbt={SelectedItem:{tag:{Name:"Super Undead Bow"}}},predicate=skyblock:random_chance25] run function skyblock:abilities/instant/bouncy
-execute if entity @s[nbt={SelectedItem:{tag:{Name:"Death Bow"}}},predicate=skyblock:random_chance50] run function skyblock:abilities/instant/bouncy
-execute if entity @s[nbt={SelectedItem:{tag:{Name:"Death Bow"}}},predicate=skyblock:random_chance50] run function skyblock:abilities/instant/bouncy
+execute if entity @s[nbt={SelectedItem:{tag:{Name:"Super Undead Bow"}}},predicate=skyblock:random_chance/25] run function skyblock:abilities/instant/bouncy
+execute if entity @s[nbt={SelectedItem:{tag:{Name:"Death Bow"}}},predicate=skyblock:random_chance/50] run function skyblock:abilities/instant/bouncy
+execute if entity @s[nbt={SelectedItem:{tag:{Name:"Death Bow"}}},predicate=skyblock:random_chance/50] run function skyblock:abilities/instant/bouncy
 
 execute as @s[nbt={SelectedItem:{tag:{Name:"Magma Bow"}},Inventory:[{Slot:-106b,id:"minecraft:magma_cream"}]}] run function skyblock:abilities/instant/magma_bow
 
@@ -48,4 +48,4 @@ execute as @e[tag=target,type=#minecraft:undead] if entity @s[nbt={SelectedItem:
 
 
 #Armor
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{Name:"Skeleton Hat"}}]},predicate=skyblock:random_chance20] run function skyblock:abilities/instant/skeleton_hat
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{Name:"Skeleton Hat"}}]},predicate=skyblock:random_chance/20] run function skyblock:abilities/instant/skeleton_hat

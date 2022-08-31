@@ -1,0 +1,22 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:filled_map"
+		},
+		"title":"Map Room",
+		"description":"Place 9 fully explored, adjacent map items into 9 item frames in a 3 by 3 square.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:impossible"
+		}
+	},
+	"rewards":{
+		"experience":40
+	}
+}

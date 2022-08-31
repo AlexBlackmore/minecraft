@@ -1,72 +1,72 @@
 {
-  "type": "minecraft:fishing",
-  "pools": [
+  "type":"minecraft:fishing",
+  "pools":[
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
+      "rolls":1.0,
+      "bonus_rolls":0.0,
+      "entries":[
         {
-          "type": "minecraft:item",
-          "name": "minecraft:name_tag"
+          "type":"item",
+          "name":"minecraft:name_tag"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:saddle"
+          "type":"item",
+          "name":"minecraft:saddle"
         },
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type":"item",
+          "functions":[
             {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "type": "minecraft:uniform",
-                "min": 0.0,
-                "max": 0.25
+              "function":"minecraft:set_damage",
+              "damage":{
+                "type":"minecraft:uniform",
+                "min":0.0,
+                "max":0.25
               },
-              "add": false
+              "add":false
             },
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "treasure": true
+              "function":"minecraft:enchant_with_levels",
+              "levels":30.0,
+              "treasure":true
             }
           ],
-          "name": "minecraft:bow"
+          "name":"minecraft:bow"
         },
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type":"item",
+          "functions":[
             {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "type": "minecraft:uniform",
-                "min": 0.0,
-                "max": 0.25
+              "function":"minecraft:set_damage",
+              "damage":{
+                "type":"minecraft:uniform",
+                "min":0.0,
+                "max":0.25
               },
-              "add": false
+              "add":false
             },
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "treasure": true
+              "function":"minecraft:enchant_with_levels",
+              "levels":30.0,
+              "treasure":true
             }
           ],
-          "name": "minecraft:fishing_rod"
+          "name":"minecraft:fishing_rod"
         },
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type":"item",
+          "functions":[
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "treasure": true
+              "function":"minecraft:enchant_with_levels",
+              "levels":30.0,
+              "treasure":true
             }
           ],
-          "name": "minecraft:book"
+          "name":"minecraft:book"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:nautilus_shell"
+          "type":"item",
+          "name":"minecraft:nautilus_shell"
         }
       ]
     }

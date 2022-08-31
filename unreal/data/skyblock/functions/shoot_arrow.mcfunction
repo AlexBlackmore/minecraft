@@ -1,26 +1,32 @@
-tag @p[advancements={skyblock:commands/using_shortbow=true}] add bow
-advancement revoke @p[tag=bow] only skyblock:commands/using_shortbow
-execute if entity @e[type=#minecraft:arrows,distance=0..9,nbt={inGround:0b}] run tag @p[tag=bow] remove bow
+#tellraw @p "shoot_arrow"
+
+tag @s add bow
+#advancement revoke @s only skyblock:commands/using_shortbow
+schedule function skyblock:reset_using_shortbow 10t replace
+execute if entity @e[type=#minecraft:arrows,distance=0..9,nbt={inGround:0b}] run tag @s remove bow
 
 scoreboard objectives add x dummy "X"
 scoreboard objectives add y dummy "Y"
 scoreboard objectives add z dummy "Z"
 
-#execute at @p[tag=bow] run summon arrow ~ ~1.7 ~ {Tags:["calc"],Passengers:[{id:"minecraft:armor_stand",Tags:["projectile"],Marker:true,Invulnerable:true}]}
-execute at @p[tag=bow] run summon arrow ~ ~1.7 ~ {Tags:["calc"]}
-execute at @p[tag=bow] run summon armor_stand ^ ^ ^1.8 {Tags:["motion"]}
+execute at @s run summon armor_stand ^ ^ ^1.8 {Tags:["motion"]}
+execute as @s run function skyblock:subtract_arrow
 
-execute store result score @e[tag=calc,limit=1] x run data get entity @e[tag=motion,limit=1] Pos[0] 100
-execute store result score @e[tag=calc,limit=1] y run data get entity @e[tag=motion,limit=1] Pos[1] 100
-execute store result score @e[tag=calc,limit=1] z run data get entity @e[tag=motion,limit=1] Pos[2] 100
+execute at @s if entity @e[tag=motion,limit=1,sort=nearest,nbt={HandItems:[{id:"minecraft:arrow"}]}] run summon minecraft:arrow ~ ~1.7 ~ {Tags:["calc"]}
+execute at @s if entity @e[tag=motion,limit=1,sort=nearest,nbt={HandItems:[{id:"minecraft:spectral_arrow"}]}] run summon minecraft:spectral_arrow ~ ~1.7 ~ {Tags:["calc"]}
+execute at @s if entity @e[tag=motion,limit=1,sort=nearest,nbt={HandItems:[{id:"minecraft:tipped_arrow"}]}] run summon minecraft:arrow ~ ~1.7 ~ {Tags:["calc"],Color:0,Potion:"minecraft:empty",CustomPotionEffects:[]}
 
-execute store result score @p[tag=bow] x run data get entity @p[tag=bow] Pos[0] 100
-execute store result score @p[tag=bow] y run data get entity @p[tag=bow] Pos[1] 100
-execute store result score @p[tag=bow] z run data get entity @p[tag=bow] Pos[2] 100
+execute store result score @e[tag=calc,limit=1,sort=nearest] x run data get entity @e[tag=motion,limit=1] Pos[0] 100
+execute store result score @e[tag=calc,limit=1,sort=nearest] y run data get entity @e[tag=motion,limit=1] Pos[1] 100
+execute store result score @e[tag=calc,limit=1,sort=nearest] z run data get entity @e[tag=motion,limit=1] Pos[2] 100
 
-scoreboard players operation @e[tag=calc] x -= @p[tag=bow] x
-scoreboard players operation @e[tag=calc] y -= @p[tag=bow] y
-scoreboard players operation @e[tag=calc] z -= @p[tag=bow] z
+execute store result score @s x run data get entity @s Pos[0] 100
+execute store result score @s y run data get entity @s Pos[1] 100
+execute store result score @s z run data get entity @s Pos[2] 100
+
+scoreboard players operation @e[tag=calc] x -= @s x
+scoreboard players operation @e[tag=calc] y -= @s y
+scoreboard players operation @e[tag=calc] z -= @s z
 
 execute as @e[tag=calc,limit=1] run execute store result entity @s Motion[0] double 0.01 run scoreboard players get @s x
 execute as @e[tag=calc,limit=1] run execute store result entity @s Motion[1] double 0.01 run scoreboard players get @s y
@@ -38,29 +44,28 @@ execute as @e[tag=calc] run execute store result score @s owner run data get ent
 execute as @e[tag=calc] run execute store result entity @s Owner[3] int 1 run scoreboard players get @s owner
 scoreboard objectives remove owner
 
-scoreboard objectives add damage dummy "Damage"
+data modify entity @e[type=minecraft:arrow,tag=calc,limit=1,sort=nearest] Potion set from entity @e[tag=motion,limit=1,sort=nearest] HandItems[0].tag.Potion
+data modify entity @e[type=minecraft:arrow,tag=calc,limit=1,sort=nearest] CustomPotionEffects set from entity @e[tag=motion,limit=1,sort=nearest] HandItems[0].tag.CustomPotionEffects
+data modify entity @e[type=minecraft:arrow,tag=calc,limit=1,sort=nearest] Color set from entity @e[tag=motion,limit=1,sort=nearest] HandItems[0].tag.CustomPotionColor
+
+execute if data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:flame"}] run data modify entity @e[tag=calc,limit=1,sort=nearest] Fire set value 2000
+
 scoreboard objectives add power dummy "Power Level"
-scoreboard players set @p[tag=bow] damage 20
-execute if data entity @p[tag=bow] SelectedItem.tag.Enchantments[{id:"minecraft:power"}] run scoreboard players add @p[tag=bow] damage 5
-execute store result score @p[tag=bow] power run data get entity @p[tag=bow] SelectedItem.tag.Enchantments[{id:"minecraft:power"}].lvl 5
-execute as @p[tag=bow] run scoreboard players operation @s damage += @s power
-execute store result entity @e[limit=1,tag=calc] damage double 0.1 run scoreboard players get @p[tag=bow] damage  
-scoreboard objectives remove damage
-scoreboard objectives remove power
+scoreboard objectives add damage dummy "Damage"
+scoreboard players set @s damage 20
+execute if data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:power"}] run scoreboard players add @s damage 10
+execute store result score @p power run data get entity @s SelectedItem.tag.Enchantments[{id:"minecraft:power"}].lvl 5
+scoreboard players remove @s[scores={power=10..}] power 5
+scoreboard players operation @s damage += @s power 
+execute store result entity @e[tag=calc,limit=1,sort=nearest] damage double 0.1 run scoreboard players get @s damage
 
-scoreboard objectives add piercing dummy "Piercing Level"
-execute store result score @p piercing run data get entity @p SelectedItem.tag.Enchantments[{id:"minecraft:piercing"}].lvl
-scoreboard players add @p[tag=bow] piercing 1
-execute store result entity @e[limit=1,tag=calc] PierceLevel byte 1 run scoreboard players get @p[tag=bow] piercing
-scoreboard objectives remove piercing
-
-execute at @e[tag=calc] run execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Juju Shortbow"}}}] run tag @e[type=armor_stand,limit=1,sort=nearest] add juju_shortbow
-execute at @e[tag=calc] run kill @e[tag=projectile,tag=!juju_shortbow,limit=1,sort=nearest] 
-
-execute as @p[tag=bow] run function skyblock:reduce_durability
-playsound minecraft:entity.arrow.shoot player @p[tag=bow]
+execute as @s run function skyblock:reduce_durability
+playsound minecraft:entity.arrow.shoot player @s
 
 kill @e[tag=motion]
 scoreboard objectives remove x
 scoreboard objectives remove y
 scoreboard objectives remove z
+
+
+execute as @s at @s run function skyblock:arrow_damage

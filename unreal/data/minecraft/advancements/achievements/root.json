@@ -1,0 +1,39 @@
+{
+	"display":{
+		"icon":{
+			"item":"minecraft:bedrock"
+		},
+		"title":"Achievements",
+		"description":" ",
+		"frame":"challenge",
+		"background":"minecraft:textures/gui/advancements/backgrounds/stone.png",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"taking_inventory":{
+			"trigger":"minecraft:location"
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"player":{
+								"advancements":{
+									"minecraft:achievements/taking_inventory":true
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements":[
+		[
+			"taking_inventory"
+		]
+	]
+}

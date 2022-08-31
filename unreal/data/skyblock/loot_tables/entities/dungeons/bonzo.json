@@ -1,0 +1,25 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:chests/dungeons/wood/floor1"
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/dungeon_loot_key",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Floor:1
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

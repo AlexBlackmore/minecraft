@@ -1,0 +1,1 @@
+advancement revoke @p[advancements={skyblock:commands/using_shortbow=true},limit=1,sort=arbitrary] only skyblock:commands/using_shortbow

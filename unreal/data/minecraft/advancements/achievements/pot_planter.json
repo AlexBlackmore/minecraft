@@ -1,0 +1,31 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:flower_pot"
+		},
+		"title":"Pot Planter",
+		"description":"Craft and place a Flower Pot.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed"
+			"conditions":{
+				"items":[
+					{
+						"items":[
+							"minecraft:flower_pot"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":15
+	}
+}

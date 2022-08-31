@@ -1,0 +1,38 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:lava"
+		},
+		"title":"Stayin' Frosty",
+		"description":"Swim in lava while having the Fire Resistance effect.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:location"
+			"conditions":{
+				"player":{
+					"effects":{
+						"minecraft:fire_resistance":{
+							"amplifier":0
+						}
+					},
+					"location":{
+						"block":{
+							"fluid":{
+								"fluid":"minecraft:lava"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":{
+		"experience":20
+	}
+}

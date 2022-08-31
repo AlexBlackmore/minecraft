@@ -1,0 +1,32 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:clock"
+		},
+		"title":"Passing the Time",
+		"description":"Play for 100 days.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		 "criterion":{
+			"trigger":"minecraft:location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"time_check",
+						"value":{
+							"min":2400000
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":20
+	}
+}

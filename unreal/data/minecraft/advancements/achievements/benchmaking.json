@@ -1,0 +1,31 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:crafting_table"
+		},
+		"title":"Benchmaking",
+		"description":"Craft a Crafting Table with four blocks of wooden planks.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed"
+			"conditions":{
+				"items":[
+					{
+						"items":[
+							"minecraft:crafting_table"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":10
+	}
+}

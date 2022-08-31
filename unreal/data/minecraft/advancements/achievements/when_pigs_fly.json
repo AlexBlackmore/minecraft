@@ -1,0 +1,34 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:saddle"
+		},
+		"title":"When Pigs Fly",
+		"description":"Use a saddle to ride a pig, and then have the pig get hurt from fall damage while riding it.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_hurt_entity",
+			"damage":{
+				"type":{
+					"bypasses_armor":true
+				}
+			},
+			"conditions":{
+				"player":{
+					"vehicle":{
+						"type":"minecraft:pig"
+					}
+				}
+			}
+		}
+	},
+	"rewards":{
+		"experience":40
+	}
+}

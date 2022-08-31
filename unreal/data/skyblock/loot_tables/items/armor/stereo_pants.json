@@ -5,28 +5,44 @@
 			"entries":[
 				{
 					"type":"item",
-					"name":"leather_leggings",
+					"name":"minecraft:leather_leggings",
 					"functions":[
 						{
-							"function":"set_nbt",
+							"function":"minecraft:set_name",
+							"name":{"text":"Stereo Pants","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								{"text":"Sneak to become a walking,","italic":false,"color":"gray"},
+								["",{"text":"talking Jukebox!","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
 							"tag":"{
 								display:{
-									Name:\"{\\\"text\\\":\\\"Stereo Pants\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
-									Lore:[
-										\"\\\" \\\"\",
-										\"{\\\"text\\\":\\\"Become a walking, talking\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-										\"{\\\"text\\\":\\\"Jukebox!\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-										\"\\\" \\\"\",
-										\"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\",
-										\"\\\" \\\"\"
-									],
 									color:315347
 								},
-								AttributeModifiers:[
-									{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:7,Operation:0,UUID:[I;526150889,438009915,678684546,834346409]}
-								],
-								HideFlags:64
+								HideFlags:64,
+								Name:\"Stereo Pants\",
+								Rarity:3,
+								Ability:true
 							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":7,
+									"slot":"legs"
+								}
+							]
 						}
 					]
 				}

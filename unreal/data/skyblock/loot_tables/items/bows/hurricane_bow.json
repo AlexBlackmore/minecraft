@@ -4,53 +4,49 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"alternatives",
-					"children":[
+					"type":"item",
+					"name":"minecraft:bow",
+					"functions":[
 						{
-							"type":"item",
-							"name":"minecraft:bow",
-							"functions":[
+							"function":"minecraft:set_name",
+							"name":{"text":"Hurricane Bow","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Tempest","italic":false,"color":"gold"}],
+								["",{"text":"Killing mobs with this bow","italic":false,"color":"gray"}],
+								["",{"text":"grants a small chance to","italic":false,"color":"gray"}],
+								["",{"text":"permanently increase the number","italic":false,"color":"gray"}],
+								["",{"text":"of arrows it fires.","italic":false,"color":"gray"}],
+								["",{"text":"(Max Multishot: 5)","italic":false,"color":"dark_gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Hurricane Bow\",
+								Rarity:3
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"multishot":1,
+								"power":11
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
 								{
-									"function":"minecraft:set_name",
-									"name":{"text":"Hurricane Bow","italic":false,"color":"light_purple"}
-								},
-								{
-									"function":"minecraft:set_lore",
-									"lore":[
-										{"text":" "},
-										["",{"text":"Ability: Tempest","italic":false,"color":"gold"}],
-										["",{"text":"Killing mobs with this bow","italic":false,"color":"gray"}],
-										["",{"text":"grants a small chance to","italic":false,"color":"gray"}],
-										["",{"text":"permanently increase the number","italic":false,"color":"gray"}],
-										["",{"text":"of arrows it fires.","italic":false,"color":"gray"}],
-										["",{"text":"(Max Multishot: 5)","italic":false,"color":"dark_gray"}],
-										{"text":" "}
-									]
-								},
-								{
-									"function":"minecraft:set_nbt",
-									"tag":"{
-										Name:\"Hurricane Bow\"
-									}"
-								},
-								{
-									"function":"minecraft:set_enchantments",
-									"enchantments":{
-										"multishot":1,
-										"power":11
-									}
-								},
-								{
-									"function":"minecraft:set_attributes",
-									"modifiers":[
-										{
-											"name":"Strength",
-											"attribute":"generic.attack_damage",
-											"operation":"addition",
-											"amount":10,
-											"slot":"mainhand"
-										}
-									]
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":10,
+									"slot":"mainhand"
 								}
 							]
 						}

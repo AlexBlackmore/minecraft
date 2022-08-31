@@ -1,31 +1,61 @@
 {
-  "type": "minecraft:fishing",
-  "pools": [
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 60,
-          "name": "minecraft:cod"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 25,
-          "name": "minecraft:salmon"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:tropical_fish"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 13,
-          "name": "minecraft:pufferfish"
-        }
-      ]
-    }
-  ]
+	"type":"minecraft:fishing",
+	"pools":[
+		{
+			"rolls":1.0,
+			"bonus_rolls":0.0,
+			"entries":[
+				{
+					"type":"item",
+					"weight":60,
+					"name":"minecraft:cod"
+				},
+				{
+					"type":"item",
+					"weight":25,
+					"name":"minecraft:salmon"
+				},
+				{
+					"type":"item",
+					"weight":15,
+					"name":"minecraft:cod",
+					"conditions":[
+						{
+							"condition":"alternative",
+							"terms":[
+								{
+									"condition":"location_check",
+									"predicate":{
+										"biome":"minecraft:jungle"
+									}
+								},
+								{
+									"condition":"location_check",
+									"predicate":{
+										"biome":"minecraft:sparse_jungle"
+									}
+								},
+								{
+									"condition":"location_check",
+									"predicate":{
+										"biome":"minecraft:bamboo_jungle"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type":"item",
+					"weight":2,
+					"name":"minecraft:tropical_fish"
+				},
+				{
+					"type":"item",
+					"weight":13,
+					"name":"minecraft:pufferfish"
+				}
+			]
+		}
+	]
 }

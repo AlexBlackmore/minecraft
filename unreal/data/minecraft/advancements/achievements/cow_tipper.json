@@ -1,0 +1,31 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:leather"
+		},
+		"title":"Cow Tipper",
+		"description":"Harvest some leather.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed"
+			"conditions":{
+				"items":[
+					{
+						"items":[
+							"minecraft:leather"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":15
+	}
+}

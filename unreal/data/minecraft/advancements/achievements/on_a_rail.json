@@ -1,0 +1,39 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:rail"
+		},
+		"title":"On A Rail",
+		"description":"Travel by minecart to a point at least 500m in a single direction from where you started.",
+		"frame":"challenge",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:tick"
+			"conditions":{
+				"player":{
+					"type_specific":{
+						"player":{
+							"stats":[
+								{
+									"type":"minecraft:custom",
+									"type":"minecraft:minecart_one_cm",
+									"value":{
+										"min":50000
+									}
+								}
+							]
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":{
+		"experience":40
+	}
+}

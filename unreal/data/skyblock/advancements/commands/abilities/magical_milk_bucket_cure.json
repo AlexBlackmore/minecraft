@@ -4,7 +4,7 @@
 		"icon":{
 			"item":"minecraft:command_block"
 		},
-		"title":"Magical Milk Bucket (Remove Effects)",
+		"title":"Magical Milk Bucket",
 		"description":"[::]",
 		"frame":"task",
 		"show_toast":false,
@@ -12,7 +12,7 @@
 		"hidden":true
 	},
 	"criteria":{
-		"criterion":{
+		"effects_changed":{
 			"trigger":"minecraft:effects_changed",
 			"conditions":{
 				"player":[
@@ -25,9 +25,30 @@
 					}
 				]
 			}
+		},
+		"inventory_changed":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{Inventory:[{tag:{Name:\"Magical Milk Bucket\"}}]}"
+						}
+					}
+				]
+			}
 		}
+
 	},
+	"requirements":[
+		[
+			"effects_changed",
+			"inventory_changed"
+		]
+	],
 	"rewards":{
-		"function":"skyblock:abilities/instant/magical_milk_bucket_cure"
+		"function":"skyblock:abilities/instant/cow_head"
 	}
 }

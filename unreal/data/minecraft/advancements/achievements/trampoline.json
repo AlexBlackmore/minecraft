@@ -1,0 +1,36 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:slime_block"
+		},
+		"title":"Trampoline",
+		"description":"Bounce 30 blocks upward off a slime block.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:fall_from_height",
+			"conditions":{
+				"start_position":{
+					"block":{
+						"blocks":[
+							"minecraft:slime_block"
+						]
+					}
+				},
+				"distance":{
+					"y":{
+						"min":-30
+					}
+				}
+			}
+		}
+	},
+	"rewards":{
+		"experience":15
+	}
+}

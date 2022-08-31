@@ -22,7 +22,7 @@ execute store result score @a hour run time query daytime
 execute as @a if score @s hour matches 0 run function skyblock:good_morning
 
 
-execute as @a at @s run tp @e[type=#minecraft:hostile,distance=64..128] ~ ~-256 ~
+execute as @a at @s run tp @e[type=#minecraft:monster,distance=64..128] ~ ~-256 ~
 execute at @e[type=minecraft:villager] run tp @e[type=#minecraft:zombies,distance=0..2] ~ ~-256 ~
 execute as @a at @s if entity @e[type=armor_stand,distance=8..16] run function skyblock:summon_mobs
 
@@ -41,4 +41,4 @@ execute as @a[scores={mined_deepslate_emerald_ore=1..}] run function skyblock:bo
 execute as @a[scores={mined_quartz_ore=1..}] run function skyblock:bonus_mining_xp
 execute as @a[scores={mined_nether_gold_ore=1..}] run function skyblock:bonus_mining_xp
 execute as @a[scores={mined_end_stone=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_stone=1..}] run function skyblock:mineral_armor
+execute as @a[scores={mined_stone=1..},nbt={Inventory:[{Slot:103b,tag:{Name:"Mineral Helmet"}},{Slot:102b,tag:{Name:"Mineral Chestplate"}},{Slot:101b,tag:{Name:"Mineral Leggings"}},{Slot:100b,tag:{Name:"Mineral Boots"}}]}] run function skyblock:abilities/instant/mineral_armor

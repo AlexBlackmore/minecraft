@@ -1,0 +1,36 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Jungle Amulet","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Accessory","italic":false,"color":"blue"}],
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+2 Luck","italic":false,"color":"blue"},{"text":" when mining","italic":false,"color":"gray"}],
+								["",{"text":"Amethysts","italic":false,"color":"light_purple"},{"text":".","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-16644318,-2120071798,-1810492250,-874905430],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWJmZjY1NDc5ZmI3MDI5ZGVjZmU2Nzc5MzgyNzYyYTA4ZmM3YzhlY2VmZjU0NDhkZTI2M2Q5ZDM3NTA2NmY3YSJ9fX0=\"}]}},
+								HideFlags:1,
+								Name:\"Jungle Amulet\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

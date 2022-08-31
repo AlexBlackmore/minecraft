@@ -2,7 +2,7 @@ give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
 		CustomName:"{\"text\":\"Odawa\"}",
-		CustomNameVisible:true,
+		Tags:["odawa"],
 		PersistenceRequired:true,
 		Silent:true,
 		CanPickUpLoot:false,
@@ -19,20 +19,26 @@ give @p villager_spawn_egg{
 				Base:0
 			}
 		],
-		Offers:
-		{
+		Offers:{
 			Recipes:[
 				{
 					buy:{
-						id:"oak_planks",
+						id:"minecraft:oak_planks",
 						Count:20
 					},
 					buyB:{
-						id:"slime_ball",
-						Count:20
+						id:"minecraft:player_head",
+						Count:20,
+						tag:{
+							SkullOwner:{Id:[I;1253643186,-695120347,-1172774708,-883513824],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTAxY2U2ODg0MjA3NGRkZTA1MzE4NWIyMThlMzRlZTMyNTljYjM2YWM0NzFkODA5OThmOWNiMDFmMzJlNTFjNyJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"}"
+							},
+							Name:"Sludge Juice"
+						}
 					},
 					sell:{
-						id:"player_head",
+						id:"minecraft:player_head",
 						Count:1,
 						tag:{
 							SkullOwner:{Id:[I;1215877810,1732001892,-1578884947,1067106468],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY1ODcwNjE5YjBjMmRiODIyNDc5ZDJjYjM4MjEyNmJkNzk5YzU4MjM3OGI1YjFkZjkzZTc1YjdkMDE1NTFiNyJ9fX0="}]}},
@@ -49,26 +55,39 @@ give @p villager_spawn_egg{
 								{Slot:"head",AttributeName:"generic.max_health",Name:"Max Health",Amount:20,Operation:0,UUID:[I;955981749,993574859,519846983,165976519]},
 								{Slot:"head",AttributeName:"generic.armor",Name:"Armor",Amount:10,Operation:0,UUID:[I;783790130,988637803,285433884,494668629]}
 							],
-							Name:"Kalhuiki Mask"
+							Name:"Kalhuiki Mask",
+							Rarity:0
 						}
 					}
 				},
 				{
 					buy:{
-						id:"oak_planks",
-						Count:20
-					},
-					buyB:{
-						id:"slime_ball",
-						Count:20
-					},
-					sell:{
-						id:"player_head",
+						id:"minecraft:knowledge_book",
 						Count:1,
 						tag:{
-							SkullOwner:{Id:[I;1396064463,1698581469,-1320158436,-1805367771],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWJmZjY1NDc5ZmI3MDI5ZGVjZmU2Nzc5MzgyNzYyYTA4ZmM3YzhlY2VmZjU0NDhkZTI2M2Q5ZDM3NTA2NmY3YSJ9fX0="}]}},
 							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Kalhuiki Mask\"}",
+								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.0: \"},{\"italic\":false,\"color\":\"gold\",\"text\":\"Jungle Heart\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x4\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.1: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.2: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.3: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.4: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.5: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.6: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.7: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.8: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x52\"}]"
+								]
+							}
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-16644318,-2120071798,-1810492250,-874905430],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWJmZjY1NDc5ZmI3MDI5ZGVjZmU2Nzc5MzgyNzYyYTA4ZmM3YzhlY2VmZjU0NDhkZTI2M2Q5ZDM3NTA2NmY3YSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jungle Amulet\"}",
 								Lore:[
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Accessory\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+2 Luck\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" when mining\"}]",
@@ -82,15 +101,32 @@ give @p villager_spawn_egg{
 				},
 				{
 					buy:{
-						id:"emerald",
-						Count:2
-					},
-					sell:{
-						id:"trident",
+						id:"minecraft:knowledge_book",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Tribal Spear\"}"
+								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.0: \"},{\"italic\":false,\"color\":\"gold\",\"text\":\"Jungle Heart\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x1\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.1: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.2: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x36\"}]"
+								]
+							}
+						}
+					},
+					sell:{
+						id:"minecraft:trident",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Tribal Spear\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Thwack \"},{\"bold\":true,\"color\":\"yellow\",\"text\":\"RIGHT CLICK\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Throw the spear like an arrow\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"which will return to you.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
 							},
 							Enchantments:[
 								{id:"loyalty",lvl:1}
@@ -99,37 +135,75 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:20,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.9,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
 							],
-							Name:"Tribal Spear"
+							Name:"Tribal Spear",
+							Rarity:2
 						}
 					}
 				},
 				{
 					buy:{
-						id:"emerald",
-						Count:2
+						id:"minecraft:knowledge_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.0: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.1: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.2: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.2: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x8\"}]"
+								]
+							}
+						}
 					},
 					sell:{
 						id:"diamond_pickaxe",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jungle Pickaxe\"}"
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jungle Pickaxe\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Mining \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Deepslate\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" in a \"},{\"italic\":false,\"color\":\"dark_green\",\"text\":\"Jungle\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"biome has a chance to drop\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
 							},
 							AttributeModifiers:[
-								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:10,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
 							],
 							Enchantments:[
-								{id:"efficiency",lvl:5}
+								{id:"minecraft:efficiency",lvl:5},
+								{id:"minecraft:sharpness",lvl:20}
 							],
-							Name:"Jungle Pickaxe"
+							Name:"Jungle Pickaxe",
+							Rarity:1
 						}
 					}
 				},
 				{
 					buy:{
-						id:"emerald",
-						Count:2
+						id:"minecraft:player_head",
+						Count:64,
+						tag:{
+							SkullOwner:{Id:[I;1253643186,-695120347,-1172774708,-883513824],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTAxY2U2ODg0MjA3NGRkZTA1MzE4NWIyMThlMzRlZTMyNTljYjM2YWM0NzFkODA5OThmOWNiMDFmMzJlNTFjNyJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"}"
+							},
+							Name:"Sludge Juice"
+						}
+					},
+					buyB:{
+						id:"minecraft:player_head",
+						Count:36,
+						tag:{
+							SkullOwner:{Id:[I;1253643186,-695120347,-1172774708,-883513824],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTAxY2U2ODg0MjA3NGRkZTA1MzE4NWIyMThlMzRlZTMyNTljYjM2YWM0NzFkODA5OThmOWNiMDFmMzJlNTFjNyJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"}"
+							},
+							Name:"Sludge Juice"
+						}
 					},
 					sell:{
 						id:"tripwire_hook",
@@ -138,14 +212,25 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Jungle Key\"}"
 							},
+							Enchantments:[
+								{id:"minecraft:unbreaking",lvl:1}
+							],
+							HideFlags:1,
 							Name:"Jungle Key"
 						}
 					}
 				},
 				{
 					buy:{
-						id:"emerald",
-						Count:2
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;1253643186,-695120347,-1172774708,-883513824],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTAxY2U2ODg0MjA3NGRkZTA1MzE4NWIyMThlMzRlZTMyNTljYjM2YWM0NzFkODA5OThmOWNiMDFmMzJlNTFjNyJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sludge Juice\"}"
+							},
+							Name:"Sludge Juice"
+						}
 					},
 					sell:{
 						id:"amethyst_shard",

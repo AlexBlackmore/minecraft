@@ -4,51 +4,47 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"alternatives",
-					"children":[
+					"type":"item",
+					"name":"minecraft:bow",
+					"functions":[
 						{
-							"type":"item",
-							"name":"minecraft:bow",
-							"functions":[
+							"function":"minecraft:set_name",
+							"name":{"text":"Explosive Bow","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Explosive Shot","italic":false,"color":"gold"}],
+								["",{"text":"Creates an explosion on impact!","italic":false,"color":"gray"}],
+								["",{"text":"All mobs within ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"yellow"},{"text":" blocks of the","italic":false,"color":"gray"}],
+								["",{"text":"explosion are dealt damage equal","italic":false,"color":"gray"}],
+								["",{"text":"to your ","italic":false,"color":"gray"},{"text":"Attack Damage","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Explosive Bow\",
+								Rarity:3
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"power":8
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
 								{
-									"function":"minecraft:set_name",
-									"name":{"text":"Explosive Bow","italic":false,"color":"light_purple"}
-								},
-								{
-									"function":"minecraft:set_lore",
-									"lore":[
-										{"text":" "},
-										["",{"text":"Ability: Explosive Shot","italic":false,"color":"gold"}],
-										["",{"text":"Creates an explosion on impact!","italic":false,"color":"gray"}],
-										["",{"text":"All mobs within ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"yellow"},{"text":" blocks of the","italic":false,"color":"gray"}],
-										["",{"text":"explosion are dealt damage equal","italic":false,"color":"gray"}],
-										["",{"text":"to your ","italic":false,"color":"gray"},{"text":"Attack Damage","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
-										{"text":" "}
-									]
-								},
-								{
-									"function":"minecraft:set_nbt",
-									"tag":"{
-										Name:\"Explosive Bow\"
-									}"
-								},
-								{
-									"function":"minecraft:set_enchantments",
-									"enchantments":{
-										"power":8
-									}
-								},
-								{
-									"function":"minecraft:set_attributes",
-									"modifiers":[
-										{
-											"name":"Strength",
-											"attribute":"generic.attack_damage",
-											"operation":"addition",
-											"amount":4,
-											"slot":"mainhand"
-										}
-									]
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":4,
+									"slot":"mainhand"
 								}
 							]
 						}

@@ -1,0 +1,30 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:emerald"
+		},
+		"title":"The Haggler",
+		"description":"Acquire or spend Emeralds by trading with Villagers or Wandering Traders.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"traded": {
+			"trigger": "minecraft:villager_trade",
+			"conditions": {
+				"player":[
+					{
+						"condition":"random_chance",
+						"chance":0.0333
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":30
+	}
+}

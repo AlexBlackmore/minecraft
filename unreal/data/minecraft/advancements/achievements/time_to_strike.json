@@ -1,0 +1,36 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:wooden_sword"
+		},
+		"title":"Time to Strike!",
+		"description":"Use planks and sticks to make a sword.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed"
+			"conditions":{
+				"items":[
+					{
+						"items":[
+							"minecraft:wooden_sword",
+							"minecraft:stone_sword",
+							"minecraft:iron_sword",
+							"minecraft:golden_sword",
+							"minecraft:diamond_sword",
+							"minecraft:netherite_sword"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":10
+	}
+}

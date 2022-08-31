@@ -1,38 +1,55 @@
 {
-  "pools":[
-    {
-      "rolls":1,
-      "entries":[
-        {
-          "type":"item",
-          "name":"chainmail_chestplate",
-          "functions":[
-            {
-              "function":"set_nbt",
-              "tag":"{
-                display:{
-                  Name:\"{\\\"text\\\":\\\"Mithril Coat\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
-                  Lore:[
-					\"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"Ability: Mithril's Protection\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"Grants \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"Regeneration\\\",\\\"italic\\\":false,\\\"color\\\":\\\"#CD5CAB\\\"},{\\\"text\\\":\\\" when below\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-                    \"[\\\"\\\",{\\\"text\\\":\\\"40% Health\\\",\\\"italic\\\":false,\\\"color\\\":\\\"red\\\"},{\\\"text\\\":\\\".\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-                    \"\\\" \\\"\",
-                    \"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\",
-                    \"\\\" \\\"\"
-                  ]
-                },
-                AttributeModifiers:[
-                  {Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:25,Operation:0,UUID:[I;200065887,762085383,341152179,325598678]},
-                  {Slot:\"legs\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1,Operation:0,UUID:[I;653317496,275234325,10523007,852559422]},
-                  {Slot:\"legs\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.15,Operation:1,UUID:[I;676402298,818807771,878587184,489187107]}
-                ],
-                HideFlags:64
-              }"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:chainmail_chestplate",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Mithril Coat","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Mithril's Protection","italic":false,"color":"gold"}],
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"Regeneration","italic":false,"color":"#cd5cab"},{"text":" when under","italic":false,"color":"gray"}],
+								["",{"text":"60% Max Health","italic":false,"color":"red"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Mithril Coat\",
+								Rarity:3
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":25,
+									"slot":"chest"
+								},
+								{
+									"name":"Movement Speed",
+									"attribute":"generic.movement_speed",
+									"operation":"multiply_base",
+									"amount":0.15,
+									"slot":"chest"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
 }

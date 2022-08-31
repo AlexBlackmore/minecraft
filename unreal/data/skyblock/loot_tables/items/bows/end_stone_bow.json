@@ -4,40 +4,36 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"alternatives",
-					"children":[
+					"type":"item",
+					"name":"minecraft:bow",
+					"functions":[
 						{
-							"type":"item",
-							"name":"minecraft:bow",
-							"functions":[
-								{
-									"function":"minecraft:set_name",
-									"name":{"text":"End Stone Bow","italic":false,"color":"light_purple"}
-								},
-								{
-									"function":"minecraft:set_lore",
-									"lore":[
-										{"text":" "},
-										{"text":"Item Ability: Extreme Focus","italic":false,"color":"gold"},
-										["",{"text":"All of your ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" levels are","italic":false,"color":"gray"}],
-										{"text":"consumed and added as damage to","italic":false,"color":"gray"},
-										{"text":"your next shot.","italic":false,"color":"gray"},
-										{"text":" "}
-									]
-								},
-								{
-									"function":"minecraft:set_nbt",
-									"tag":"{
-										Name:\"End Stone Bow\"
-									}"
-								},
-								{
-									"function":"minecraft:set_enchantments",
-									"enchantments":{
-										"power":13
-									}
-								}
+							"function":"minecraft:set_name",
+							"name":{"text":"End Stone Bow","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								{"text":"Item Ability: Extreme Focus","italic":false,"color":"gold"},
+								["",{"text":"All of your ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" levels are","italic":false,"color":"gray"}],
+								{"text":"consumed and added as damage to","italic":false,"color":"gray"},
+								{"text":"your next shot.","italic":false,"color":"gray"},
+								{"text":" "}
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"End Stone Bow\",
+								Rarity:3
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"power":13
+							}
 						}
 					]
 				}

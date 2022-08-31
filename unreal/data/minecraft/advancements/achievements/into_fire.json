@@ -1,0 +1,31 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:blaze_rod"
+		},
+		"title":"Into Fire",
+		"description":"Relieve a Blaze of its rod.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed"
+			"conditions":{
+				"items":[
+					{
+						"items":[
+							"minecraft:blaze_rod"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":20
+	}
+}

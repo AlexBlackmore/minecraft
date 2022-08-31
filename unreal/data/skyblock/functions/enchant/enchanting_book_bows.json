@@ -1,23 +1,101 @@
 /give @p written_book{
-  pages:[
-    '["",
-		{"text":"Flame I\\n","color":"dark_gray","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/bows/flame1"},"hoverEvent":{"action":"show_text","contents":"Cost: 25 levels"}},
-		{"text":"Impaling III\\n","color":"dark_gray","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/bows/impaling3"},"hoverEvent":{"action":"show_text","contents":"Cost: 50 levels"}},
-		{"text":"Piercing I\\n","color":"dark_gray","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/bows/piercing1"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
-		{"text":"Power V\\n","color":"dark_gray","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/bows/power5"},"hoverEvent":{"action":"show_text","contents":"Cost: 50 levels"}},
-		{"text":"Punch II\\n","color":"dark_gray","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/bows/punch2"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}}
-    ]',
-    '["",
-		{"text":"Chance III\\n","color":"blue","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/bows/chance3"},"hoverEvent":{"action":"show_text","contents":"Cost: 45 levels"}},
-		{"text":"Cubism V\\n","color":"blue","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/bows/cubism5"},"hoverEvent":{"action":"show_text","contents":"Cost: 50 levels"}},
-		{"text":"Snipe III\\n","color":"blue","clickEvent":{"action":"run_command","value":"/function skyblock:enchant/bows/snipe3"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}}
-    ]'
-  ],
-  title:"Enchanting Book (Bows)",
-  author:" ",
-  generation:3,
-  display:{
-    Name:"{\"text\":\"Enchanting Book (Bows)\",\"italic\":false,\"color\":\"red\"}"
-  },
-  HideFlags:32
+	pages:[
+		'["",
+			{"text":"Bows\\n\\n","color":"black"},
+			
+			{"text":"Chance\\n","color":"blue"},
+			{"text":"  "},
+			{"text":"I","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/chance/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 15 levels"}},
+			{"text":"   "},
+			{"text":"II","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/chance/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
+			{"text":"   "},
+			{"text":"III\\n","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/chance/3"},"hoverEvent":{"action":"show_text","contents":"Cost: 45 levels"}},
+
+			{"text":"Cubism\\n","color":"blue"},
+			{"text":"  "},
+			{"text":"I","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/cubism/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 10 levels"}},
+			{"text":"   "},
+			{"text":"II","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/cubism/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 20 levels"}},
+			{"text":"   "},
+			{"text":"III","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/cubism/3"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
+			{"text":"   "},
+			{"text":"IV","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/cubism/4"},"hoverEvent":{"action":"show_text","contents":"Cost: 40 levels"}},
+			{"text":"   "},
+			{"text":"V\\n","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/cubism/5"},"hoverEvent":{"action":"show_text","contents":"Cost: 50 levels"}},
+
+			{"text":"Dragon Tracer\\n","color":"blue"},
+			{"text":"  "},
+			{"text":"I","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/dragon_tracer/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 10 levels"}},
+			{"text":"   "},
+			{"text":"II","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/dragon_tracer/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 20 levels"}},
+			{"text":"   "},
+			{"text":"III","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/dragon_tracer/3"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
+			{"text":"   "},
+			{"text":"IV","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/dragon_tracer/4"},"hoverEvent":{"action":"show_text","contents":"Cost: 40 levels"}},
+			{"text":"   "},
+			{"text":"V\\n","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/dragon_tracer/5"},"hoverEvent":{"action":"show_text","contents":"Cost: 50 levels"}},
+
+			{"text":"Flame\\n","color":"dark_gray"},
+			{"text":"  "},
+			{"text":"I\\n","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/flame/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 25 levels"}},
+			
+			{"text":"Impaling\\n","color":"dark_gray"},
+			{"text":"  "},
+			{"text":"I","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/impaling/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
+			{"text":"   "},
+			{"text":"II","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/impaling/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 40 levels"}},
+			{"text":"   "},
+			{"text":"III\\n","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/impaling/3"},"hoverEvent":{"action":"show_text","contents":"Cost: 50 levels"}},
+			
+			{"text":"Infinite Quiver\\n","color":"blue"},
+			{"text":"  "},
+			{"text":"I","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/infinite_quiver/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 10 levels"}},
+			{"text":"   "},
+			{"text":"II","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/infinite_quiver/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 15 levels"}},
+			{"text":"   "},
+			{"text":"III","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/infinite_quiver/3"},"hoverEvent":{"action":"show_text","contents":"Cost: 20 levels"}},
+			{"text":"   "},
+			{"text":"IV","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/infinite_quiver/4"},"hoverEvent":{"action":"show_text","contents":"Cost: 25 levels"}},
+			{"text":"   "},
+			{"text":"V\\n","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/infinite_quiver/5"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}}
+		]',
+		'["",
+			{"text":"Piercing\\n","color":"dark_gray"},
+			{"text":"  "},
+			{"text":"I\\n","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/piercing/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
+
+			{"text":"Power\\n","color":"dark_gray"},
+			{"text":"  "},
+			{"text":"I","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/power/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 10 levels"}},
+			{"text":"   "},
+			{"text":"II","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/power/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 20 levels"}},
+			{"text":"   "},
+			{"text":"III","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/power/3"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
+			{"text":"   "},
+			{"text":"IV","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/power/4"},"hoverEvent":{"action":"show_text","contents":"Cost: 40 levels"}},
+			{"text":"   "},
+			{"text":"V\\n","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/power/5"},"hoverEvent":{"action":"show_text","contents":"Cost: 50 levels"}},
+
+			{"text":"Punch\\n","color":"dark_gray"},
+			{"text":"  "},
+			{"text":"I","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/punch/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 15 levels"}},
+			{"text":"   "},
+			{"text":"II\\n","color":"dark_gray","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/vanilla/punch/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}},
+			
+			{"text":"Snipe\\n","color":"blue"},
+			{"text":"  "},
+			{"text":"I","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/snipe/1"},"hoverEvent":{"action":"show_text","contents":"Cost: 20 levels"}},
+			{"text":"   "},
+			{"text":"II","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/snipe/2"},"hoverEvent":{"action":"show_text","contents":"Cost: 25 levels"}},
+			{"text":"   "},
+			{"text":"III\\n","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/function skyblock:enchant/normal/snipe/3"},"hoverEvent":{"action":"show_text","contents":"Cost: 30 levels"}}
+		]',
+	],
+	title:"Enchanting Book (Bows)",
+	author:" ",
+	generation:3,
+	display:{
+		Name:"{\"text\":\"Enchanting Book (Bows)\",\"italic\":false,\"color\":\"red\"}"
+	},
+	HideFlags:32
 }

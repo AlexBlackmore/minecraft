@@ -1,0 +1,37 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:splash_potion",
+			"nbt":"{Potion:\"minecraft:poison\"}"
+		},
+		"title":"Taste of Your Own Medicine",
+		"description":"Poison a Witch with a splash potion.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		 "criterion":{
+			"trigger":"minecraft:player_hurt_entity",
+			"conditions":{
+				"entity":[
+					{
+						"condition":"minecraft:entity_properties",
+						"entity":"this",
+						"predicate":{
+							"type":"minecraft:witch"
+						}
+					}
+				],
+				"killing_blow":{
+					"is_projectile":true
+				}
+			}
+		}
+	},
+	"rewards":{
+		"experience":30
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"parent":"minecraft:adventuring_time/overworld/snowy/snowy_taiga",
+	"display":{
+		"icon":{
+			"item":"minecraft:sand"
+		},
+		"title":"Snowy Beach",
+		"description":"Like a regular beach, one can find plenty of sand in this biome and buried treasure can be found underground in this snowy beach.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"location":{
+								"biome":"minecraft:snowy_beach"
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

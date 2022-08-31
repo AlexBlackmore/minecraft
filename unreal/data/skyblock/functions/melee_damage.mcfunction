@@ -1,14 +1,14 @@
 #Enchantments
-execute if data entity @s[predicate=skyblock:random_chance33] SelectedItem.tag.Thunderlord run function skyblock:abilities/enchantments/thunderlord
+execute if data entity @s[predicate=skyblock:random_chance/33] SelectedItem.tag.Thunderlord run function skyblock:abilities/enchantments/thunderlord
 
 execute if data entity @s SelectedItem.tag.Cleave run function skyblock:abilities/enchantments/cleave
 
-execute if entity @s[nbt={SelectedItem:{tag:{Name:"Cleaver"}}}] at @e[tag=target] run scoreboard players add @e[type=#minecraft:hostile,distance=0..3,tag=!target] multiplier 40
-execute if entity @s[nbt={SelectedItem:{tag:{Name:"Super Cleaver"}}}] at @e[tag=target] run scoreboard players add @e[type=#minecraft:hostile,distance=0..3,tag=!target] multiplier 50
-execute if entity @s[nbt={SelectedItem:{tag:{Name:"Hyper Cleaver"}}}] at @e[tag=target] run scoreboard players add @e[type=#minecraft:hostile,distance=0..4,tag=!target] multiplier 50
+execute if entity @s[nbt={SelectedItem:{tag:{Name:"Cleaver"}}}] at @e[tag=target] run scoreboard players add @e[type=#minecraft:monster,distance=0..3,tag=!target] multiplier 40
+execute if entity @s[nbt={SelectedItem:{tag:{Name:"Super Cleaver"}}}] at @e[tag=target] run scoreboard players add @e[type=#minecraft:monster,distance=0..3,tag=!target] multiplier 50
+execute if entity @s[nbt={SelectedItem:{tag:{Name:"Hyper Cleaver"}}}] at @e[tag=target] run scoreboard players add @e[type=#minecraft:monster,distance=0..4,tag=!target] multiplier 50
 tag @e[tag=!target,scores={multiplier=1..}] add target
 
-execute if data entity @s[predicate=skyblock:random_chance33] SelectedItem.tag.Thunderbolt run function skyblock:abilities/enchantments/thunderbolt
+execute if data entity @s[predicate=skyblock:random_chance/33] SelectedItem.tag.Thunderbolt run function skyblock:abilities/enchantments/thunderbolt
 
 
 #Enchantments
@@ -73,10 +73,10 @@ attribute @s[tag=heartstopper] minecraft:generic.attack_damage modifier remove 3
 tellraw @s[tag=heartstopper] {"text":"[Heartstopper: -250% Attack Damage]","italic":true,"color":"gray"}
 tag @s[tag=heartstopper] remove heartstopper
 
-execute if entity @s[predicate=skyblock:sneaking,nbt={SelectedItem:{tag:{Name:"Axe of the Shredded"}}}] run function skyblock:abilities/instant/throw
+execute if entity @s[predicate=skyblock:is_sneaking,nbt={SelectedItem:{tag:{Name:"Axe of the Shredded"}}}] run function skyblock:abilities/instant/throw
 execute as @s[predicate=!skyblock:sneaking,nbt={SelectedItem:{tag:{Name:"Axe of the Shredded"}}}] run execute if data entity @s SelectedItem.tag.Enchantments[{id:"minecraft:vanishing_curse"}] run item modify entity @s weapon.mainhand skyblock:remove_vanishing_curse
 
-effect give @s[predicate=skyblock:random_chance50,nbt={SelectedItem:{tag:{Name:"Reaper Falchion"}}}] instant_health
+effect give @s[predicate=skyblock:random_chance/50,nbt={SelectedItem:{tag:{Name:"Reaper Falchion"}}}] instant_health
 effect give @s[nbt={SelectedItem:{tag:{Name:"Axe of the Shredded"}}}] instant_health 1 1 
 
 execute if entity @s[nbt={SelectedItem:{tag:{Name:"Spirit Sword"}}}] as @e[tag=target,type=#minecraft:undead] run function skyblock:abilities/instant/spirit_damage

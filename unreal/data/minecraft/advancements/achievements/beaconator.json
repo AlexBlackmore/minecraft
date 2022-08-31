@@ -1,0 +1,25 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:beacon"
+		},
+		"title":"The Beaconator",
+		"description":"Create and fully power a Beacon.",
+		"frame":"challenge",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"beacon":{
+			"trigger":"minecraft:construct_beacon",
+			"conditions":{
+				"level":4
+			}
+		}
+	},
+	"rewards":{
+		"experience":60
+	}
+}

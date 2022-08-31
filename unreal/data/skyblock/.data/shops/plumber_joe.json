@@ -3,8 +3,8 @@ give @p villager_spawn_egg{
 		id:"minecraft:villager",
 		CustomName:"{\"text\":\"Plumber Joe\"}",
 		CustomNameVisible:true,
+		Tags:["plumber_joe"],
 		PersistenceRequired:true,
-		Silent:true,
 		CanPickUpLoot:false,
 		Willing:false,
 		NoAI:false,
@@ -25,16 +25,27 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"emerald",
-						Count:9
+						Count:8
 					},
 					sell:{
 						id:"sponge",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Plumber's Sponge\"}"
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Plumber's Sponge\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Instructions:\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"1. \",\"italic\":false,\"color\":\"yellow\"},{\"text\":\"Sneak while holding.\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"2. \",\"italic\":false,\"color\":\"yellow\"},{\"text\":\"Drains all water within 7 blocks.\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"3. \",\"italic\":false,\"color\":\"yellow\"},{\"text\":\"Double-bill client.\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"text\":\"Thanks Plumber Joe!\",\"italic\":false,\"color\":\"dark_gray\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"text\":\"New! \",\"italic\":false,\"bold\":true,\"color\":\"light_purple\"},{\"text\":\"Also works with Lava!\",\"italic\":false,\"color\":\"yellow\"}]"
+								]
 							},
-							Name:"Plumber's Sponge"
+							Name:"Plumber's Sponge",
+							Ability:true
 						}
 					}
 				}

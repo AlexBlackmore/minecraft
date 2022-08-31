@@ -1,0 +1,31 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:enchanting_table"
+		},
+		"title":"Enchanter",
+		"description":"Construct an Enchantment Table.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed"
+			"conditions":{
+				"items":[
+					{
+						"items":[
+							"minecraft:enchanting_table"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":20
+	}
+}

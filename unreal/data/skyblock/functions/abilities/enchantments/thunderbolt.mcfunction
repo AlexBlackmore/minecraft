@@ -6,7 +6,7 @@ execute as @p[tag=attacker] run scoreboard players operation @s attack_damage *=
 execute as @p[tag=attacker] run scoreboard players set @s dummy 100
 execute as @p[tag=attacker] run scoreboard players operation @s attack_damage /= @s dummy
 
-execute at @p[tag=attacker] run tag @e[type=#minecraft:hostile,distance=0..2] add thunderbolt
+execute at @p[tag=attacker] run tag @e[type=#minecraft:monster,distance=0..2] add thunderbolt
 execute as @e[tag=thunderbolt] run scoreboard players operation @s multiplier += @p[tag=attacker] attack_damage
 execute at @e[tag=thunderbolt] run summon lightning_bolt ~ ~ ~
 

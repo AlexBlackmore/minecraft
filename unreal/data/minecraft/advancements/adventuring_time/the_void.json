@@ -1,18 +1,31 @@
 {
-	"display": {
-		"icon": {
-			"item": "minecraft:barrier"
+	"parent":"minecraft:adventuring_time/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:barrier"
 		},
-		"title": "The Void",
-    "description": "Visit The Void.",
-		"frame": "task"
+		"title":"The Void",
+		"description":"Visit the Void.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":true
 	},
-  "parent": "adventuringtime:root",
 	"criteria": {
-		"minecraft:the_void": {
-    "trigger": "minecraft:location",
-			"conditions": {
-				"biome": "minecraft:the_void"
+		"criterion":{
+			"trigger":"location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"location":{
+								"biome":"minecraft:the_void"
+							}
+						}
+					}
+				]
 			}
 		}
 	}

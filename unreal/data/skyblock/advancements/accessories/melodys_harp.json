@@ -1,0 +1,28 @@
+{
+	"parent":"skyblock:accessories/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:string",
+			"nbt":"{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}"
+		},
+		"title":"Melody's Hair",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"items":[
+					{
+						"nbt":"{Name:\"Melody's Hair\"}"
+					}
+				]
+			}
+		}
+
+	}
+}

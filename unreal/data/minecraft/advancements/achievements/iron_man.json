@@ -1,0 +1,54 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:iron_helmet"
+		},
+		"title":"Iron Man",
+		"description":"Wear a full suit of Iron Armor.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"head":{
+									"items":[
+										"minecraft:iron_helmet"
+									]
+								},
+								"chest":{
+									"items":[
+										"minecraft:iron_chestplate"
+									]
+								},
+								"legs":{
+									"items":[
+										"minecraft:iron_leggings"
+									]
+								},
+								"feet":{
+									"items":[
+										"minecraft:iron_boots"
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":15
+	}
+}

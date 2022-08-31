@@ -1,0 +1,32 @@
+{
+	"parent":"minecraft:adventuring_time/overworld/snowy/grove",
+	"display":{
+		"icon":{
+			"item":"minecraft:snow_block"
+		},
+		"title":"Snowy Slopes",
+		"description":"The snowy slopes generate on beneath the mountain peaks and are covered multiple layers of snow blocks and powder snow, with some sides also having stone cliffs.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"location",
+			"conditions":{
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"location":{
+								"biome":"minecraft:snowy_slopes"
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

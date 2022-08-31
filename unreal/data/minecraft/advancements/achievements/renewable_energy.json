@@ -1,0 +1,31 @@
+{
+	"parent":"minecraft:achievements/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:charcoal"
+		},
+		"title":"Renerable Energy",
+		"description":"Smelt wood trunks using charcoal to make more charcoal.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:inventory_changed"
+			"conditions":{
+				"items":[
+					{
+						"items":[
+							"minecraft:charcoal"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":10
+	}
+}
