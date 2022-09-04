@@ -1,0 +1,51 @@
+{
+	"parent":"skyblock:commands/consumables",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Rare Enchanted Adrenaline Potion",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:potion"
+					],
+					"nbt":"{Potion:\"minecraft:awkward\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Cookie\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"loot":[
+			"skyblock:items/potions/adrenaline/5"
+		],
+		"function":"skyblock:consume_both_hands"
+	}
+}

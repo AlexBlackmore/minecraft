@@ -23,6 +23,8 @@ scoreboard objectives add movement_speed dummy "Movement Speed"
 
 scoreboard objectives add health dummy "Health"
 
+
+#Mining
 scoreboard objectives add mined_coal_ore minecraft.mined:minecraft.coal_ore "Mined Coal Ore"
 scoreboard objectives add mined_deepslate_coal_ore minecraft.mined:minecraft.deepslate_coal_ore "Mined Deepslate Coal Ore"
 

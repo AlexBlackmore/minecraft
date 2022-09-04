@@ -1,0 +1,33 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:potion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Potion of Strength","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								CustomPotionEffects:[
+									{Id:5,Amplifier:1,Duration:4800}
+								],
+								CustomPotionColor:9643043,
+								Modifiers:{
+									Redstone:1,
+									Glowstone:1
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"potion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Experience Potion","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"Experience III","italic":false,"color":"blue"},
+								{"text":" "},
+								{"text":"When Applied:","italic":false},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+15%","italic":false,"color":"green"},{"text":" chance to receive","italic":false,"color":"gray"}],
+								["",{"text":"2x","italic":false,"color":"green"},{"text":" experience from mining ores.","italic":false,"color":"gray"}],
+								{"text":"Effect lasts until death.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"set_nbt",
+							"tag":"{
+								CustomPotionColor:5592575,
+								Name:\"Experience Potion\",
+								Modifiers:{
+									Glowstone:2
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -12,7 +12,7 @@
 		"hidden":true
 	},
 	"criteria":{
-		"criterion":{
+		"rabbit_hide":{
 			"trigger":"minecraft:item_used_on_block",
 			"conditions":{
 				"location":{
@@ -40,11 +40,46 @@
 					}
 				]
 			}
+		},
+		"mithril":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:potion"
+					],
+					"nbt":"{Potion:\"minecraft:awkward\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Mithril\"}"
+								}
+							}
+						}
+					}
+				]
+			}
 		}
 	},
+	"requirements":[
+		[
+			"rabbit_hide",
+			"mithril"
+		]
+	],
 	"rewards":{
 		"loot":[
-			"minecraft:items/potions/luck"
+			"skyblock:items/potions/vanilla/luck"
 		],
 		"function":"skyblock:consume_both_hands"
 	}

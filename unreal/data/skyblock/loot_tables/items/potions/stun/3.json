@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"potion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Stun Potion","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"Stun III","italic":false,"color":"blue"},
+								{"text":" "},
+								{"text":"When Applied:","italic":false},
+								["",{"text":"Grants a ","italic":false,"color":"gray"},{"text":"30%","italic":false,"color":"green"},{"text":" chance to stun","italic":false,"color":"gray"}],
+								["",{"text":"enemies for ","italic":false,"color":"gray"},{"text":"1s","italic":false,"color":"green"},{"text":". Effect lasts","italic":false,"color":"gray"}],
+								{"text":"until death.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"set_nbt",
+							"tag":"{
+								CustomPotionColor:11184810,
+								Name:\"Stun Potion\",
+								Modifiers:{
+									Glowstone:2
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

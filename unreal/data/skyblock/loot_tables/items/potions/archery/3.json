@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:potion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Archery Potion","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"Archery III","italic":false,"color":"blue"},
+								{"text":" "},
+								{"text":"When Applied:","italic":false},
+								["",{"text":"Grants","italic":false,"color":"gray"},{"text":"+50%","italic":false,"color":"green"},{"text":" bow damage.","italic":false,"color":"gray"}],
+								{"text":"Effect lasts until death.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"set_nbt",
+							"tag":"{
+								CustomPotionColor:3381504,
+								Name:\"Archery Potion\",
+								Modifiers:{
+									Glowstone:2
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

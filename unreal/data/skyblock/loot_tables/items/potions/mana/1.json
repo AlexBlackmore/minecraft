@@ -1,0 +1,41 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:potion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Mana Potion","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"Mana I","italic":false,"color":"blue"},
+								{"text":" "},
+								{"text":"When Applied:","italic":false},
+								["",{"text":"Grants","italic":false,"color":"gray"},{"text":"+1","italic":false,"color":"green"},{"text":" experience for every","italic":false,"color":"gray"}],
+								{"text":"mob killed. Effect lasts until","italic":false,"color":"gray"},
+								{"text":"death.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								CustomPotionColor:2039713,
+								Modifiers:{
+									Glowstone:0
+								},
+								Name:\"Mana Potion\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

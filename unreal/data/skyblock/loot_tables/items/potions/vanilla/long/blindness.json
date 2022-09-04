@@ -1,0 +1,32 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:potion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Blindness Potion","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								CustomPotionEffects:[
+									{Id:15,Amplifier:0,Duration:2400}
+								],
+								CustomPotionColor:3484199,
+								Modifiers:{
+									Redstone:1
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

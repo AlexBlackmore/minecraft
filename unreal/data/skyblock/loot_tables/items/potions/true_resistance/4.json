@@ -1,0 +1,39 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"potion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"True Resistance Potion","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"True Resistance IV","italic":false,"color":"blue"},
+								{"text":" "},
+								{"text":"When Applied:","italic":false},
+								["",{"text":"Grants.","italic":false,"color":"gray"},{"text":"+4 Armor Toughness","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+								{"text":"Effect lasts until death..","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"set_nbt",
+							"tag":"{
+								CustomPotionColor:14981690,
+								Name:\"True Resistance Potion\",
+								Modifiers:{
+									Glowstone:3
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

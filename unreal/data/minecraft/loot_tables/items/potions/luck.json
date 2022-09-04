@@ -8,9 +8,20 @@
 					"name":"minecraft:potion",
 					"functions":[
 						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Potion of Luck","italic":false,"color":"white"}
+						},
+						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
-								Potion:\"minecraft:luck\"
+								CustomPotionEffects:[
+									{Id:26,Amplifier:0,Duration:6000}
+								],
+								CustomPotionColor:3381504,
+								Modifiers:{
+									Redstone:0,
+									Glowstone:0
+								}
 							}"
 						}
 					]
