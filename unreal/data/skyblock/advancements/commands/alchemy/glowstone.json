@@ -98,13 +98,43 @@
 					}
 				]
 			}
+		},
+		"enchanted_redstone_lamp":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:potion"
+					],
+					"nbt":"{Modifiers:{Glowstone:0}}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Redstone Lamp\"}"
+								}
+							}
+						}
+					}
+				]
+			}
 		}
 	},
 	"requirements":[
 		[
 			"glowstone",
 			"enchanted_glowstone",
-			"enchanted_glowstone_block"
+			"enchanted_glowstone_block",
+			"enchanted_redstone_lamp"
 		]
 	],
 	"rewards":{

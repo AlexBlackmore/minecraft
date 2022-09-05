@@ -33,7 +33,7 @@
 						"predicate":{
 							"equipment":{
 								"offhand":{
-									"items":["minecraft:charcoal"]
+									"nbt":"{Name:\"Foul Flesh\"}"
 								}
 							}
 						}
@@ -43,8 +43,9 @@
 		}
 	},
 	"rewards":{
+		"experience":400,
 		"loot":[
-			"skyblock:items/potions/stamina/1"
+			"skyblock:items/potions/stamina"
 		],
 		"function":"skyblock:consume_both_hands"
 	}

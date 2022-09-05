@@ -12,7 +12,7 @@
 		"hidden":true
 	},
 	"criteria":{
-		"criterion":{
+		"other":{
 			"trigger":"minecraft:item_used_on_block",
 			"conditions":{
 				"location":{
@@ -44,8 +44,193 @@
 					}
 				]
 			}
+		},
+		"adrenaline3":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Black Coffee\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Cocoa Beans\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"adrenaline5":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Black Coffee\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Cookie\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"agility":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Black Coffee\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Cake\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"rabbit3":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Black Coffee\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Rabbit\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"swiftness3":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Black Coffee\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Sugar\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"swiftness5":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Black Coffee\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Sugar Cane\"}"
+								}
+							}
+						}
+					}
+				]
+			}
 		}
 	},
+	"requirements":[
+		[
+			"other",
+			"adrenaline3",
+			"adrenaline5",
+			"agility",
+			"rabbit3",
+			"swiftness3",
+			"swiftness5"
+		]
+	],
 	"rewards":{
 		"loot":[
 			"skyblock:items/potions/black_coffee"

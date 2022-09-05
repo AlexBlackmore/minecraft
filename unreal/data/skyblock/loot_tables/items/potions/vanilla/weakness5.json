@@ -1,0 +1,33 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:potion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Weakness Potion","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								CustomPotionEffects:[
+									{Id:18,Amplifier:4,Duration:1800}
+								],
+								CustomPotionColor:4738376,
+								Modifiers:{
+									Redstone:0,
+									Glowstone:0
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

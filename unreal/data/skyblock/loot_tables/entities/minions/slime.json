@@ -1,0 +1,33 @@
+{
+	"type":"minecraft:entity",
+	"pools":[
+		{
+			"rolls":1,
+			"bonus_rolls":0,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:slime_ball",
+					"functions":[
+						{
+							"function":"set_count",
+							"count":1,
+							"add":false
+						},
+						{
+							"function":"set_count",
+							"count":1,
+							"add":true,
+							"conditions":[
+								{
+									"condition":"random_chance",
+									"chance":0.8
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

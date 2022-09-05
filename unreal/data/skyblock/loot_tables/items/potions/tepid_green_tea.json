@@ -1,0 +1,87 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"loot_table",
+							"name":"skyblock:items/potions/vanilla/resistance",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"offhand":{
+												"items":[
+													"minecraft:cactus"
+												]
+											}
+										}
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:items/potions/vanilla/resistance3",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"offhand":{
+												"nbt":"{Name:\"Enchanted Green Dye\"}"
+											}
+										}
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:items/potions/vanilla/resistance5",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"offhand":{
+												"nbt":"{Name:\"Enchanted Cactus\"}"
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"functions":[
+				{
+					"function":"minecraft:set_name",
+					"name":{"text":"Tepid Green Tea","italic":false,"color":"white"}
+				},
+				{
+					"function":"minecraft:set_lore",
+					"lore":[
+						{"text":" "},
+						{"text":"Caffeinated","italic":false,"color":"gray"}
+					],
+					"replace":false
+				},
+				{
+					"function":"set_nbt",
+					"tag":"{
+						Name:\"Tepid Green Tea\"
+					}"
+				}
+			]
+		}
+	]
+}

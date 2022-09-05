@@ -37,11 +37,13 @@ execute store result entity @e[tag=brewing_stand,limit=1,sort=nearest] HandItems
 execute store result score @s dummy run data get entity @s SelectedItem.tag.Modifiers.Redstone
 scoreboard players add @s dummy 1
 execute store result entity @e[tag=brewing_stand,limit=1,sort=nearest] HandItems[0].tag.Modifiers.Redstone int 1 run scoreboard players get @s dummy
+item replace entity @s[tag=success] weapon.mainhand from entity @e[tag=brewing_stand,limit=1,sort=nearest] weapon.mainhand
 
-playsound minecraft:block.brewing_stand.brew player @s
+playsound minecraft:block.brewing_stand.brew player @s[tag=success]
 item modify entity @s[tag=success] weapon.offhand skyblock:subtract_item
 
-item replace entity @s[tag=success] weapon.mainhand from entity @e[tag=brewing_stand,limit=1,sort=nearest] weapon.mainhand
+execute as @s run function skyblock:alchemy/construct_lore
+
 kill @e[tag=brewing_stand]
 scoreboard objectives remove duration
 tag @s remove success

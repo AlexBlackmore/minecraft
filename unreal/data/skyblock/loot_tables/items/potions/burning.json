@@ -1,0 +1,39 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"potion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Burning Potion","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"Burning (3:00)","italic":false,"color":"blue"}
+							]
+						},
+						{
+							"function":"set_nbt",
+							"tag":"{
+								CustomPotionEffects:[
+									{Id:101,Amplifier:0,Duration:3600}
+								],
+								CustomPotionColor:14981690,
+								Modifiers:{
+									Redstone:0,
+									Glowstone:0
+								},
+								Name:\"Burning Potion\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

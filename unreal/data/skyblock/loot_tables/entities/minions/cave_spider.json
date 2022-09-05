@@ -1,0 +1,35 @@
+{
+	"type":"minecraft:entity",
+	"pools":[
+		{
+			"rolls":1,
+			"bonus_rolls":0,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:string"
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"bonus_rolls":0,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:spider_eye",
+					"functions":[
+						{
+							"function":"set_count",
+							"count":{
+								"min":0,
+								"max":1
+							},
+							"add":false
+						}
+					]
+				}
+			]
+		}
+	]
+}

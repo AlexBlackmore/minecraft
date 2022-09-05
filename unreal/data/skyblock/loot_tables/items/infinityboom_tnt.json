@@ -1,0 +1,44 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:tnt",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Infinityboom TNT","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Sneak to summon a block of lit","italic":false,"color":"gray"}],
+								["",{"text":"TNT.","italic":false,"color":"gray"}],
+								["",{"text":"Warning: TNT explodes instantly!","italic":false,"color":"red"}],
+								["",{"text":"Unlimited uses.","italic":false,"color":"dark_gray"}],
+								["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"2s","italic":false,"color":"dark_aqua"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Infinityboom TNT\",
+								Ability:true
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

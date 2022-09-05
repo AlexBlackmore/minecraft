@@ -9,10 +9,10 @@ execute if predicate skyblock:random_chance/50 run scoreboard players add @s[nbt
 
 execute if predicate skyblock:random_chance/25 run scoreboard players add @s[nbt={Inventory:[{tag:{Name:"Experience Artifact"}}]}] multiplier 1
 
-execute if predicate skyblock:random_chance/12 run scoreboard players add @s[nbt={SelectedItem:{tag:{Experience:1}}}] multiplier 1
-execute if predicate skyblock:random_chance/25 run scoreboard players add @s[nbt={SelectedItem:{tag:{Experience:2}}}] multiplier 1
-execute if predicate skyblock:random_chance/37 run scoreboard players add @s[nbt={SelectedItem:{tag:{Experience:3}}}] multiplier 1
-execute if predicate skyblock:random_chance/50 run scoreboard players add @s[nbt={SelectedItem:{tag:{Experience:4}}}] multiplier 1
+execute if predicate skyblock:random_chance/12 run scoreboard players add @s[nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"skyblock:experience",lvl:1}]}}}] multiplier 1
+execute if predicate skyblock:random_chance/25 run scoreboard players add @s[nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"skyblock:experience",lvl:2}]}}}] multiplier 1
+execute if predicate skyblock:random_chance/37 run scoreboard players add @s[nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"skyblock:experience",lvl:3}]}}}] multiplier 1
+execute if predicate skyblock:random_chance/50 run scoreboard players add @s[nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"skyblock:experience",lvl:4}]}}}] multiplier 1
 
 execute if predicate skyblock:random_chance/10 run scoreboard players add @s[nbt={SelectedItem:{tag:{Reforge:"Magnetic",Rarity:0}}}] multiplier 1
 execute if predicate skyblock:random_chance/12 run scoreboard players add @s[nbt={SelectedItem:{tag:{Reforge:"Magnetic",Rarity:1}}}] multiplier 1
@@ -21,15 +21,15 @@ execute if predicate skyblock:random_chance/16 run scoreboard players add @s[nbt
 execute if predicate skyblock:random_chance/18 run scoreboard players add @s[nbt={SelectedItem:{tag:{Reforge:"Magnetic",Rarity:4}}}] multiplier 1
 execute if predicate skyblock:random_chance/24 run scoreboard players add @s[nbt={SelectedItem:{tag:{Reforge:"Magnetic",Rarity:5}}}] multiplier 1
 
-execute if predicate skyblock:random_chance/5 run scoreboard players add @s[tag=experience1,tag=!bitter_ice_tea] multiplier 1
-execute if predicate skyblock:random_chance/10 run scoreboard players add @s[tag=experience2,tag=!bitter_ice_tea] multiplier 1
-execute if predicate skyblock:random_chance/15 run scoreboard players add @s[tag=experience3,tag=!bitter_ice_tea] multiplier 1
-execute if predicate skyblock:random_chance/20 run scoreboard players add @s[tag=experience4,tag=!bitter_ice_tea] multiplier 1
+execute if predicate skyblock:random_chance/5 run scoreboard players add @s[advancements={skyblock:effects/experience=true},scores={experience_amplifier=0}] multiplier 1
+execute if predicate skyblock:random_chance/10 run scoreboard players add @s[advancements={skyblock:effects/experience=true},scores={experience_amplifier=1}] multiplier 1
+execute if predicate skyblock:random_chance/15 run scoreboard players add @s[advancements={skyblock:effects/experience=true},scores={experience_amplifier=2}] multiplier 1
+execute if predicate skyblock:random_chance/20 run scoreboard players add @s[advancements={skyblock:effects/experience=true},scores={experience_amplifier=3}] multiplier 1
 
-execute if predicate skyblock:random_chance/6 run scoreboard players add @s[tag=experience1,tag=bitter_ice_tea] multiplier 1
-execute if predicate skyblock:random_chance/12 run scoreboard players add @s[tag=experience2,tag=bitter_ice_tea] multiplier 1
-execute if predicate skyblock:random_chance/18 run scoreboard players add @s[tag=experience3,tag=bitter_ice_tea] multiplier 1
-execute if predicate skyblock:random_chance/24 run scoreboard players add @s[tag=experience4,tag=bitter_ice_tea] multiplier 1
+execute if predicate skyblock:random_chance/1 run scoreboard players add @s[tag=bitter_iced_tea_experience] multiplier 1
+execute if predicate skyblock:random_chance/2 run scoreboard players add @s[tag=bitter_iced_tea_experience] multiplier 1
+execute if predicate skyblock:random_chance/3 run scoreboard players add @s[tag=bitter_iced_tea_experience] multiplier 1
+execute if predicate skyblock:random_chance/4 run scoreboard players add @s[tag=bitter_iced_tea_experience] multiplier 1
 
 execute if predicate skyblock:random_chance/20 run scoreboard players add @s[tag=vikings_tear] multiplier 1
 

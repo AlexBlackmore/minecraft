@@ -1,0 +1,33 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:potion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Swiftness Potion","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								CustomPotionEffects:[
+									{Id:1,Amplifier:2,Duration:3600}
+								],
+								CustomPotionColor:8171462,
+								Modifiers:{
+									Redstone:0,
+									Glowstone:0
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

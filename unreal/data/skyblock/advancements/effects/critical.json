@@ -1,0 +1,20 @@
+{
+	"parent":"skyblock:effects/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:potion",
+			"nbt":"{Potion:\"minecraft:harming\"}"
+		},
+		"title":"Critical",
+		"description":"§7Increates §9Crit Chance §7and §9Crit Damage§7.",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+			"trigger":"minecraft:impossible"
+		}
+	}
+}

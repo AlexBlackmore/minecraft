@@ -59,32 +59,23 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Undead Bow\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Undead\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							Enchantments:[
 								{lvl:5s,id:"minecraft:power"}
 							],
 							Name:"Undead Bow",
-							Rarity:2
-						}
-					}
-				},
-				{
-					buy:{
-						id:"minecraft:emerald",
-						Count:34
-					},
-					sell:{
-						id:"minecraft:arrow",
-						Count:20,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Flint Arrow\"}"
-							}
+							Rarity:2,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Undead\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				},
@@ -124,13 +115,13 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Super Cleaver\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Cleave\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"After hitting an entity, all\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs in a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"3\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" block radius will be\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hit for a potion of that damage\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"too.\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							Enchantments:[
@@ -141,7 +132,16 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;684961272,846201049,604752410,496819681]}
 							],
 							Name:"Super Cleaver",
-							Rarity:2
+							Rarity:2,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Cleave\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"After hitting an entity, all\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs in a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"3\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" block radius will be\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hit for a potion of that damage\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"too.\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				},
@@ -229,17 +229,23 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Mender Helmet\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Healing received from Mender\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Wands is \"},{\"italic\":false,\"color\":\"green\",\"text\":\"doubled\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							AttributeModifiers:[
 								{Slot:"head",AttributeName:"generic.max_health",Name:"Max Health",Amount:16,Operation:0,UUID:[I;246713208,922932468,620983932,692764300]}
 							],
 							Name:"Mender Helmet",
-							Rarity:2
+							Rarity:2,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Healing received from Mender\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Wands is \"},{\"italic\":false,\"color\":\"green\",\"text\":\"doubled\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				},
@@ -280,456 +286,21 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Dark Goggles\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+25% Ability Damage\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+150 Intelligence\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							Name:"Dark Goggles",
 							Rarity:2,
-							Intelligence:150
-						}
-					}
-				},
-				{
-					buy:{
-						id:"minecraft:emerald",
-						Count:13,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{lvl:1s,id:"minecraft:unbreaking"}
-							],
-							HideFlags:1,
-							Name:"Enchanted Emerald"
-						}
-					},
-					buyB:{
-						id:"minecraft:emerald",
-						Count:2
-					},
-					sell:{
-						id:"minecraft:potion",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Dungeon Potion I\"}",
-								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength III (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance (20:00)\"}]",
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+9 Attack Damage\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Speed\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+10% Crit Chance\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+10% Crit Damage\"}]"
-								]
-							},
-							CustomPotionEffects:[
-								{Id:10,Amplifier:0,Duration:24000},
-								{Id:5,Amplifier:2,Duration:24000},
-								{Id:1,Amplifier:0,Duration:24000},
-								{Id:11,Amplifier:0,Duration:24000}
-							],
-							HideFlags:32,
-							Name:"Dungeon Potion I",
-							Critical_Potion:1
-						}
-					}
-				},
-				{
-					buy:{
-						id:"minecraft:emerald",
-						Count:26,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{lvl:1s,id:"minecraft:unbreaking"}
-							],
-							HideFlags:1,
-							Name:"Enchanted Emerald"
-						}
-					},
-					buyB:{
-						id:"minecraft:emerald",
-						Count:3
-					},
-					sell:{
-						id:"minecraft:potion",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Dungeon Potion II\"}",
-								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration II (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength III (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed II (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance (40:00)\"}]",
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+9 Attack Damage\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+40% Speed\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+10% Crit Chance\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+10% Crit Damage\"}]"
-								]
-							},
-							CustomPotionEffects:[
-								{Id:10,Amplifier:1,Duration:48000},
-								{Id:5,Amplifier:2,Duration:48000},
-								{Id:1,Amplifier:1,Duration:48000},
-								{Id:11,Amplifier:0,Duration:48000}
-							],
-							HideFlags:32,
-							Name:"Dungeon Potion II",
-							Critical_Potion:1
-						}
-					}
-				},
-				{
-					buy:{
-						id:"minecraft:emerald",
-						Count:39,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{lvl:1s,id:"minecraft:unbreaking"}
-							],
-							HideFlags:1,
-							Name:"Enchanted Emerald"
-						}
-					},
-					buyB:{
-						id:"minecraft:emerald",
-						Count:4
-					},
-					sell:{
-						id:"minecraft:potion",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Dungeon Potion III\"}",
-								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration III (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength III (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical II (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed II (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance II (40:00)\"}]",
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+9 Attack Damage\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+40% Speed\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+15% Crit Chance\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Crit Damage\"}]"
-								]
-							},
-							CustomPotionEffects:[
-								{Id:10,Amplifier:2,Duration:48000},
-								{Id:5,Amplifier:2,Duration:48000},
-								{Id:1,Amplifier:1,Duration:48000},
-								{Id:11,Amplifier:1,Duration:48000}
-							],
-							HideFlags:32,
-							Name:"Dungeon Potion III",
-							Critical_Potion:2
-						}
-					}
-				},
-				{
-					buy:{
-						id:"minecraft:emerald",
-						Count:52,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{lvl:1s,id:"minecraft:unbreaking"}
-							],
-							HideFlags:1,
-							Name:"Enchanted Emerald"
-						}
-					},
-					buyB:{
-						id:"minecraft:emerald",
-						Count:6
-					},
-					sell:{
-						id:"minecraft:potion",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Dungeon Potion IV\"}",
-								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration III (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength IV (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical II (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed II (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance III (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Archery (40:00)\"}]",
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+12 Attack Damage\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+40% Speed\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+15% Crit Chance\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Crit Damage\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+12.5% Bow Damage\"}]"
-								]
-							},
-							CustomPotionEffects:[
-								{Id:10,Amplifier:2,Duration:48000},
-								{Id:5,Amplifier:3,Duration:48000},
-								{Id:1,Amplifier:1,Duration:48000},
-								{Id:11,Amplifier:2,Duration:48000}
-							],
-							HideFlags:32,
-							Name:"Dungeon Potion IV",
-							Critical_Potion:2,
-							Archery_Potion:1
-						}
-					}
-				},
-				{
-					buy:{
-						id:"minecraft:emerald",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{lvl:1s,id:"minecraft:unbreaking"}
-							],
-							HideFlags:1,
-							Name:"Enchanted Emerald Rare"
-						}
-					},
-					buyB:{
-						id:"minecraft:emerald",
-						Count:2,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{lvl:1s,id:"minecraft:unbreaking"}
-							],
-							HideFlags:1,
-							Name:"Enchanted Emerald"
-						}
-					},
-					sell:{
-						id:"minecraft:potion",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Dungeon Potion V\"}",
-								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration III (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength IV (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical III (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed II (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance IV (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Archery II (40:00)\"}]",
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+12 Attack Damage\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+40% Speed\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Crit Chance\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+30% Crit Damage\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+25% Bow Damage\"}]"
-								]
-							},
-							CustomPotionEffects:[
-								{Id:10,Amplifier:2,Duration:48000},
-								{Id:5,Amplifier:3,Duration:48000},
-								{Id:1,Amplifier:1,Duration:48000},
-								{Id:11,Amplifier:3,Duration:48000}
-							],
-							HideFlags:32,
-							Name:"Dungeon Potion V",
-							Critical_Potion:3,
-							Archery_Potion:2
-						}
-					}
-				},
-				{
-					buy:{
-						id:"minecraft:emerald",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{lvl:1s,id:"minecraft:unbreaking"}
-							],
-							HideFlags:1,
-							Name:"Enchanted Emerald Rare"
-						}
-					},
-					buyB:{
-						id:"minecraft:emerald",
-						Count:15,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{lvl:1s,id:"minecraft:unbreaking"}
-							],
-							HideFlags:1,
-							Name:"Enchanted Emerald"
-						}
-					},
-					sell:{
-						id:"minecraft:potion",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Dungeon Potion VI\"}",
-								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration IV (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength IV (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical III (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed III (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance IV (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Archery III (40:00)\"}]",
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+12 Attack Damage\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+60% Speed\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Crit Chance\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+30% Crit Damage\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+50% Bow Damage\"}]"
-								]
-							},
-							CustomPotionEffects:[
-								{Id:10,Amplifier:3,Duration:48000},
-								{Id:5,Amplifier:3,Duration:48000},
-								{Id:1,Amplifier:2,Duration:48000},
-								{Id:11,Amplifier:3,Duration:48000}
-							],
-							HideFlags:32,
-							Name:"Dungeon Potion VI",
-							Critical_Potion:3,
-							Archery_Potion:3
-						}
-					}
-				},
-				{
-					buy:{
-						id:"minecraft:emerald",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{lvl:1s,id:"minecraft:unbreaking"}
-							],
-							HideFlags:1,
-							Name:"Enchanted Emerald Rare"
-						}
-					},
-					buyB:{
-						id:"minecraft:emerald",
-						Count:28,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{lvl:1s,id:"minecraft:unbreaking"}
-							],
-							HideFlags:1,
-							Name:"Enchanted Emerald"
-						}
-					},
-					sell:{
-						id:"minecraft:potion",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Dungeon Potion VII\"}",
-								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration IV (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength V (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical III (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed III (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance V (40:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Archery III (40:00)\"}]",
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+15 Attack Damage\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+60% Speed\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+20% Crit Chance\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+30% Crit Damage\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+50% Bow Damage\"}]"
-								]
-							},
-							CustomPotionEffects:[
-								{Id:10,Amplifier:3,Duration:48000},
-								{Id:5,Amplifier:4,Duration:48000},
-								{Id:1,Amplifier:2,Duration:48000},
-								{Id:11,Amplifier:4,Duration:48000}
-							],
-							HideFlags:32,
-							Name:"Dungeon Potion VII",
-							Critical_Potion:3,
-							Archery_Potion:3
-						}
-					}
-				},
-				{
-					buy:{
-						id:"emerald",
-						Count:7,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
-							},
-							Enchantments:[
-								{lvl:1s,id:"minecraft:unbreaking"}
-							],
-							HideFlags:1,
-							Name:"Enchanted Emerald"
-						}
-					},
-					buyB:{
-						id:"emerald",
-						Count:52
-					},
-					sell:{
-						id:"tnt",
-						Count:1,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Superboom TNT\"}",
-								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Sneak to summon a block of lit\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"TNT. The magical energy stored\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"in this block is finite and will\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"eventually run out!\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Cooldown: \"},{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"2s\"}]"
-								]
-							},
-							Enchantments:[
-								{id:"unbreaking",lvl:1}
-							],
-							HideFlags:1,
-							Name:"Superboom TNT",
-							Ability:true
+							Intelligence:150,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+25% Ability Damage\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+150 Intelligence\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				},
@@ -769,21 +340,31 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Super Undead Bow\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Undead\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]",
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Your arrows have a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"25%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"bounce to another target after\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hitting a mob.\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							Enchantments:[
 								{lvl:24s,id:"minecraft:power"}
 							],
 							Name:"Super Undead Bow",
-							Rarity:3
+							Rarity:3,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Undead\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]",
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Your arrows have a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"25%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"bounce to another target after\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hitting a mob.\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				},
@@ -823,13 +404,13 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Hyper Cleaver\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Cleave\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"After hitting an entity, all\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs in a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"4\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" block radius will be\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hit for a potion of that damage\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"too.\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							Enchantments:[
@@ -840,7 +421,16 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;684961272,846201049,604752410,496819681]}
 							],
 							Name:"Hyper Cleaver",
-							Rarity:3
+							Rarity:3,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Cleave\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"After hitting an entity, all\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs in a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"4\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" block radius will be\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hit for a potion of that damage\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"too.\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				},
@@ -928,17 +518,23 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Mender Fedora\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Healing received from Mender\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Wands is \"},{\"italic\":false,\"color\":\"green\",\"text\":\"doubled\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							AttributeModifiers:[
 								{Slot:"head",AttributeName:"generic.max_health",Name:"Max Health",Amount:44,Operation:0,UUID:[I;246713208,922932468,620983932,692764300]}
 							],
 							Name:"Mender Fedora",
-							Rarity:3
+							Rarity:3,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Healing received from Mender\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Wands is \"},{\"italic\":false,\"color\":\"green\",\"text\":\"doubled\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				},
@@ -979,15 +575,21 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Shadow Goggles\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+35% Ability Damage\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+200 Intelligence\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							Name:"Shadow Goggles",
 							Rarity:3,
-							Intelligence:200
+							Intelligence:200,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+35% Ability Damage\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+200 Intelligence\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				},
@@ -1027,21 +629,31 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Death Bow\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Undead\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]",
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Your arrows have a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"50%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"bounce to another target after\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hitting a mob.\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							Enchantments:[
 								{lvl:35s,id:"minecraft:power"}
 							],
 							Name:"Death Bow",
-							Rarity:3
+							Rarity:3,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Undead\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]",
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Your arrows have a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"50%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"bounce to another target after\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hitting a mob.\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				},
@@ -1081,13 +693,13 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Giant Cleaver\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Cleave\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"After hitting an entity, all\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs in a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"5\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" block radius will be\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hit for a potion of that damage\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"too.\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							Enchantments:[
@@ -1098,7 +710,16 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;684961272,846201049,604752410,496819681]}
 							],
 							Name:"Giant Cleaver",
-							Rarity:3
+							Rarity:3,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Cleave\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"After hitting an entity, all\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs in a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"5\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" block radius will be\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hit for a potion of that damage\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"too.\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				},
@@ -1186,17 +807,23 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Mender Crown\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Healing received from Mender\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Wands is \"},{\"italic\":false,\"color\":\"green\",\"text\":\"doubled\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							AttributeModifiers:[
 								{Slot:"head",AttributeName:"generic.max_health",Name:"Max Health",Amount:54,Operation:0,UUID:[I;246713208,922932468,620983932,692764300]}
 							],
 							Name:"Mender Crown",
-							Rarity:3
+							Rarity:3,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Healing received from Mender\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Wands is \"},{\"italic\":false,\"color\":\"green\",\"text\":\"doubled\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				},
@@ -1237,15 +864,21 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Wither Goggles\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
+									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+45% Ability Damage\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+300 Intelligence\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									"{\"text\":\" \"}"
 								]
 							},
 							Name:"Wither Goggles",
 							Rarity:3,
-							Intelligence:300
+							Intelligence:300,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+45% Ability Damage\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+300 Intelligence\"}]",
+								"{\"text\":\" \"}"
+							]
 						}
 					}
 				}
@@ -1253,23 +886,3 @@ give @p villager_spawn_egg{
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

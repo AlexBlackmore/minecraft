@@ -1,0 +1,87 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"loot_table",
+							"name":"skyblock:items/potions/stamina",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"offhand":{
+												"nbt":"{Name:\"Foul Flesh\"}"
+											}
+										}
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:items/potions/vanilla/regeneration",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"offhand":{
+												"items":[
+													"minecraft:ghast_tear"
+												]
+											}
+										}
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:items/potions/vanilla/regeneration5",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"offhand":{
+												"nbt":"{Name:\"Enchanted Ghast Tear\"}"
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"functions":[
+				{
+					"function":"minecraft:set_name",
+					"name":{"text":"Pulpous Orange Juice","italic":false,"color":"white"}
+				},
+				{
+					"function":"minecraft:set_lore",
+					"lore":[
+						{"text":" "},
+						{"text":"Caffeinated","italic":false,"color":"gray"}
+					],
+					"replace":false
+				},
+				{
+					"function":"set_nbt",
+					"tag":"{
+						Name:\"Pulpous Orange Juice\"
+					}"
+				}
+			]
+		}
+	]
+}

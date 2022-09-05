@@ -1,0 +1,39 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"potion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Experience Potion","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"Experience (3:00)","italic":false,"color":"blue"}
+							]
+						},
+						{
+							"function":"set_nbt",
+							"tag":"{
+								CustomPotionEffects:[
+									{Id:109,Amplifier:0,Duration:3600}
+								],
+								CustomPotionColor:5592575,
+								Name:\"Experience Potion\",
+								Modifiers:{
+									Redstone:0,
+									Glowstone:0
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

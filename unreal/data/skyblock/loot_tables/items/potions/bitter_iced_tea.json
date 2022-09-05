@@ -1,0 +1,70 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"loot_table",
+							"name":"skyblock:items/potions/adrenaline",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"offhand":{
+												"items":[
+													"minecraft:lapis_lazuli"
+												]
+											}
+										}
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:items/potions/adrenaline3",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"offhand":{
+												"nbt":"{Name:\"Foul Flesh\"}"
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"functions":[
+				{
+					"function":"minecraft:set_name",
+					"name":{"text":"Bitter Iced Tea","italic":false,"color":"white"}
+				},
+				{
+					"function":"minecraft:set_lore",
+					"lore":[
+						{"text":" "},
+						{"text":"Caffeinated","italic":false,"color":"gray"}
+					],
+					"replace":false
+				},
+				{
+					"function":"set_nbt",
+					"tag":"{
+						Name:\"Bitter Iced Tea\"
+					}"
+				}
+			]
+		}
+	]
+}

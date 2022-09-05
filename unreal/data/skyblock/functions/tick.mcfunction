@@ -28,6 +28,7 @@ execute as @a at @s if entity @e[type=armor_stand,distance=8..16] run function s
 
 execute as @a[advancements={skyblock:accessories/magnetic_talisman=true}] at @s run tp @e[type=item,distance=0..3] ~ ~ ~
 
+
 execute as @a[scores={mined_coal_ore=1..}] run function skyblock:bonus_mining_xp
 execute as @a[scores={mined_deepslate_coal_ore=1..}] run function skyblock:bonus_mining_xp
 execute as @a[scores={mined_lapis_ore=1..}] run function skyblock:bonus_mining_xp
@@ -42,3 +43,7 @@ execute as @a[scores={mined_quartz_ore=1..}] run function skyblock:bonus_mining_
 execute as @a[scores={mined_nether_gold_ore=1..}] run function skyblock:bonus_mining_xp
 execute as @a[scores={mined_end_stone=1..}] run function skyblock:bonus_mining_xp
 execute as @a[scores={mined_stone=1..},nbt={Inventory:[{Slot:103b,tag:{Name:"Mineral Helmet"}},{Slot:102b,tag:{Name:"Mineral Chestplate"}},{Slot:101b,tag:{Name:"Mineral Leggings"}},{Slot:100b,tag:{Name:"Mineral Boots"}}]}] run function skyblock:abilities/instant/mineral_armor
+
+
+#Potions
+execute as @a run function skyblock:alchemy/active_effects

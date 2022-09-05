@@ -12,7 +12,7 @@
 		"hidden":true
 	},
 	"criteria":{
-		"criterion":{
+		"other":{
 			"trigger":"minecraft:item_used_on_block",
 			"conditions":{
 				"location":{
@@ -34,8 +34,125 @@
 							"equipment":{
 								"offhand":{
 									"items":[
-										"minecraft:gold_ingot"
+										"minecraft:gold_ingot",
+										"minecraft:cocoa_beans"
 									]
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"absorption3":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Dctr. Paper\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Gold Ingot\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"absorption5":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Dctr. Paper\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Block of Gold\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"adrenaline3":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Dctr. Paper\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Cocoa Beans\"}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"adrenaline5":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Dctr. Paper\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Enchanted Cookie\"}"
 								}
 							}
 						}
@@ -44,6 +161,15 @@
 			}
 		}
 	},
+	"requirements":[
+		[
+			"other",
+			"absorption3",
+			"absorption5",
+			"adrenaline3",
+			"adrenaline5"
+		]
+	],
 	"rewards":{
 		"loot":[
 			"skyblock:items/potions/dctr_paper"

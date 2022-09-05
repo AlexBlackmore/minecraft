@@ -1,0 +1,20 @@
+{
+	"parent":"skyblock:effects/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:potion",
+			"nbt":"{Potion:\"minecraft:fire_resistance\"}"
+		},
+		"title":"Burning",
+		"description":"§7Damaging enemies sets them on fire.",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+			"trigger":"minecraft:impossible"
+		}
+	}
+}

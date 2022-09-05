@@ -27,7 +27,7 @@ give @p villager_spawn_egg{
 			Recipes:[
 				{
 					buy:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:39,
 						tag:{
 							display:{
@@ -45,9 +45,10 @@ give @p villager_spawn_egg{
 						Count:4
 					},
 					sell:{
-						id:"potion",
+						id:"minecraft:player_head",
 						Count:1,
 						tag:{
+							SkullOwner:{Id:[I;626311081,-789755111,-1924398275,1044309194],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjQyNDQ2NzYzZTJiNDBkMGY0Y2Y3ZGFmODU5OTMxNzAzNmZjYTgyYWYzMWI4ZDNlOWJmY2YzZWI0ODM5MTdhIn19fQ=="}]}},
 							display:{
 								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Viking's Tear\"}",
 								Lore:[
@@ -57,21 +58,13 @@ give @p villager_spawn_egg{
 									"[\"\",{\"text\":\"drop an \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"experience bottle\",\"italic\":false,\"color\":\"yellow\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]"
 								]
 							},
-							CustomPotionEffects:[
-								{
-									Id:10,
-									Amplifier:3,
-									Duration:9600
-								}
-							],
-							Potion:"minecraft:empty",
-							CustomPotionColor:5592575
+							Name:"Viking's Tear"
 						}
 					}
 				},
 				{
 					buy:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:2,
 						tag:{
 							display:{
@@ -85,7 +78,7 @@ give @p villager_spawn_egg{
 						}
 					},
 					buyB:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:55,
 						tag:{
 							display:{
@@ -99,7 +92,7 @@ give @p villager_spawn_egg{
 						}
 					},
 					sell:{
-						id:"knowledge_book",
+						id:"minecraft:knowledge_book",
 						Count:1,
 						tag:{
 							display:{
@@ -120,7 +113,7 @@ give @p villager_spawn_egg{
 				},
 				{
 					buy:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:5,
 						tag:{
 							display:{
@@ -134,7 +127,7 @@ give @p villager_spawn_egg{
 						}
 					},
 					buyB:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:19,
 						tag:{
 							display:{
@@ -148,7 +141,7 @@ give @p villager_spawn_egg{
 						}
 					},
 					sell:{
-						id:"iron_axe",
+						id:"minecraft:iron_axe",
 						Count:1,
 						tag:{
 							display:{
@@ -186,7 +179,7 @@ give @p villager_spawn_egg{
 				},
 				{
 					buy:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:16,
 						tag:{
 							display:{
@@ -200,7 +193,7 @@ give @p villager_spawn_egg{
 						}
 					},
 					buyB:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:18,
 						tag:{
 							display:{
@@ -214,7 +207,7 @@ give @p villager_spawn_egg{
 						}
 					},
 					sell:{
-						id:"enchanted_book",
+						id:"minecraft:enchanted_book",
 						Count:1,
 						tag:{
 							display:{

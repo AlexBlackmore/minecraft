@@ -1,0 +1,26 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/potions/critical",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Slayer Energy Drink","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"set_nbt",
+							"tag":"{
+								Name:\"Slayer Energy Drink\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

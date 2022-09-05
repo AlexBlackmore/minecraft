@@ -1,0 +1,20 @@
+{
+	"parent":"skyblock:effects/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:potion",
+			"nbt":"{Potion:\"minecraft:weakness\"}"
+		},
+		"title":"Stun",
+		"description":"§7Your hits have a chance to stun enemies.",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+			"trigger":"minecraft:impossible"
+		}
+	}
+}

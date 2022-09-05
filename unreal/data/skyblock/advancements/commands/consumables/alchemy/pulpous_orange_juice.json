@@ -12,7 +12,7 @@
 		"hidden":true
 	},
 	"criteria":{
-		"criterion":{
+		"regeneration":{
 			"trigger":"minecraft:item_used_on_block",
 			"conditions":{
 				"location":{
@@ -34,9 +34,37 @@
 							"equipment":{
 								"offhand":{
 									"items":[
-										"minecraft:ghast_tear",
-										"minecraft:charcoal"
+										"minecraft:ghast_tear"
 									]
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"stamina":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Pulpous Orange Juice\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Foul Flesh\"}"
 								}
 							}
 						}
@@ -45,7 +73,14 @@
 			}
 		}
 	},
+	"requirements":[
+		[
+			"regeneration",
+			"stamina"
+		]
+	],
 	"rewards":{
+		"experience":30,
 		"loot":[
 			"skyblock:items/potions/pulpous_orange_juice"
 		],

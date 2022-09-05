@@ -1,0 +1,28 @@
+{
+	"parent":"skyblock:commands/alchemy",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Consumed Dodge Potion",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:consume_item",
+			"conditions":{
+				"item":{
+					"items":["minecraft:potion"],
+					"nbt":"{CustomPotionEffects:[{Id:106}]}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:alchemy/consumed_potion"
+	}
+}

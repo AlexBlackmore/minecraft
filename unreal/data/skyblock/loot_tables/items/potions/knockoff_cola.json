@@ -1,0 +1,87 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"alternatives",
+					"children":[
+						{
+							"type":"loot_table",
+							"name":"skyblock:items/potions/vanilla/strength",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"offhand":{
+												"items":[
+													"minecraft:blaze_powder"
+												]
+											}
+										}
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:items/potions/vanilla/strength3",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"offhand":{
+												"nbt":"{Name:\"Enchanted Blaze Powder\"}"
+											}
+										}
+									}
+								}
+							]
+						},
+						{
+							"type":"loot_table",
+							"name":"skyblock:items/potions/vanilla/strength5",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"offhand":{
+												"nbt":"{Name:\"Enchanted Blaze Rod\"}"
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"functions":[
+				{
+					"function":"minecraft:set_name",
+					"name":{"text":"KnockOff Cola","italic":false,"color":"white"}
+				},
+				{
+					"function":"minecraft:set_lore",
+					"lore":[
+						{"text":" "},
+						{"text":"Caffeinated","italic":false,"color":"gray"}
+					],
+					"replace":false
+				},
+				{
+					"function":"set_nbt",
+					"tag":"{
+						Name:\"KnockOff Cola\"
+					}"
+				}
+			]
+		}
+	]
+}

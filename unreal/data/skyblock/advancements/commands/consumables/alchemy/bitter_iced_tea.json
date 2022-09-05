@@ -12,7 +12,7 @@
 		"hidden":true
 	},
 	"criteria":{
-		"criterion":{
+		"other":{
 			"trigger":"minecraft:item_used_on_block",
 			"conditions":{
 				"location":{
@@ -35,9 +35,37 @@
 								"offhand":{
 									"items":[
 										"minecraft:lapis_lazuli",
-										"minecraft:mutton",
-										"minecraft:charcoal"
+										"minecraft:mutton"
 									]
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"stamina":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:brewing_stand"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:player_head"
+					],
+					"nbt":"{Name:\"Bitter Iced Tea\"}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"nbt":"{Name:\"Foul Flesh\"}"
 								}
 							}
 						}
@@ -46,6 +74,12 @@
 			}
 		}
 	},
+	"requirements":[
+		[
+			"other",
+			"stamina"
+		]
+	],
 	"rewards":{
 		"loot":[
 			"skyblock:items/potions/bitter_iced_tea"

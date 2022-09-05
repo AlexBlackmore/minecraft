@@ -24,6 +24,64 @@ scoreboard objectives add movement_speed dummy "Movement Speed"
 scoreboard objectives add health dummy "Health"
 
 
+#Alchemy
+#100
+scoreboard objectives add rabbit_amplifier dummy "Rabbit Potion Amplifier"
+scoreboard objectives add rabbit_duration dummy "Rabbit Potion Duration"
+
+#101
+scoreboard objectives add burning_amplifier dummy "Burning Potion Amplifier"
+scoreboard objectives add burning_duration dummy "Burning Potion Duration"
+
+#102
+scoreboard objectives add stun_amplifier dummy "Stun Potion Amplifier"
+scoreboard objectives add stun_duration dummy "Stun Potion Duration"
+
+#103
+scoreboard objectives add archery_amplifier dummy "Archery Potion Amplifier"
+scoreboard objectives add archery_duration dummy "Archery Potion Duration"
+
+#104
+scoreboard objectives add adrenaline_amplifier dummy "Adrenaline Potion Amplifier"
+scoreboard objectives add adrenaline_duration dummy "Adrenaline Potion Duration"
+
+#105
+scoreboard objectives add critical_amplifier dummy "Critical Potion Amplifier"
+scoreboard objectives add critical_duration dummy "Critical Potion Duration"
+
+#106
+scoreboard objectives add dodge_amplifier dummy "Dodge Potion Amplifier"
+scoreboard objectives add dodge_duration dummy "Dodge Potion Duration"
+
+#107
+scoreboard objectives add true_resistance_amplifier dummy "True Resistance Potion Amplifier"
+scoreboard objectives add true_resistance_duration dummy "True Resistance Potion Duration"
+
+#108
+scoreboard objectives add agility_amplifier dummy "Agility Potion Amplifier"
+scoreboard objectives add agility_duration dummy "Agility Potion Duration"
+
+#109
+scoreboard objectives add experience_amplifier dummy "Experience Potion Amplifier"
+scoreboard objectives add experience_duration dummy "Experience Potion Duration"
+
+#110
+scoreboard objectives add mana_amplifier dummy "Mana Potion Amplifier"
+scoreboard objectives add mana_duration dummy "Mana Potion Duration"
+
+#111
+scoreboard objectives add stamina_amplifier dummy "Stamina Potion Amplifier"
+scoreboard objectives add stamina_duration dummy "Stamina Potion Duration"
+
+#112
+scoreboard objectives add spirit_amplifier dummy "Spirit Potion Amplifier"
+scoreboard objectives add spirit_duration dummy "Spirit Potion Duration"
+
+#113
+scoreboard objectives add spirit_amplifier dummy "Magic Find Potion Amplifier"
+scoreboard objectives add spirit_duration dummy "Magic Find Potion Duration"
+
+
 #Mining
 scoreboard objectives add mined_coal_ore minecraft.mined:minecraft.coal_ore "Mined Coal Ore"
 scoreboard objectives add mined_deepslate_coal_ore minecraft.mined:minecraft.deepslate_coal_ore "Mined Deepslate Coal Ore"
