@@ -22,9 +22,8 @@ execute store result score @a hour run time query daytime
 execute as @a if score @s hour matches 0 run function skyblock:good_morning
 
 
-execute as @a at @s run tp @e[type=#minecraft:monster,distance=64..128] ~ ~-256 ~
 execute at @e[type=minecraft:villager] run tp @e[type=#minecraft:zombies,distance=0..2] ~ ~-256 ~
-execute as @a at @s if entity @e[type=armor_stand,distance=8..16] run function skyblock:summon_mobs
+execute as @a run function skyblock:summon_mobs
 
 execute as @a[advancements={skyblock:accessories/magnetic_talisman=true}] at @s run tp @e[type=item,distance=0..3] ~ ~ ~
 

@@ -2,6 +2,7 @@ give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
 		CustomName:"{\"text\":\"Shifty\"}",
+		Tags:["shifty"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -24,7 +25,7 @@ give @p villager_spawn_egg{
 			Recipes:[
 				{
 					buy:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:2,
 						tag:{
 							display:{
@@ -38,31 +39,31 @@ give @p villager_spawn_egg{
 						}
 					},
 					buyB:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:39
 					},
 					sell:{
-						id:"potion",
+						id:"minecraft:player_head",
 						Count:1,
 						tag:{
+							SkullOwner:{Id:[I;-234257687,-1479127333,-1361438926,1325577463],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU5YWI1N2M5MWMxY2M2NjM4ZTE2NjJlZWUzMTljYTJiMGFiMWJiZGMyODA3ZDY4MDQwMWQ1ZmM2ZTFlOTg2YyJ9fX0="}]}},
 							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Tutti-Frutti Flavored Poison\"}"
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Tutti-Frutti Flavored Poison\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Use this item instead of an\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Awkward Potion\",\"italic\":false,\"color\":\"white\"},{\"text\":\" when brewing\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"specific potions.\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Adds \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+5%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" damage to \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Archery\",\"italic\":false,\"color\":\"aqua\"}]",
+									"[\"\",{\"text\":\"potions.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
 							},
-							CustomPotionEffects:[
-								{
-									Id:5,
-									Amplifier:0,
-									Duration:48000
-								}
-							],
-							CustomPotionColor:10499464,
 							Name:"Tutti-Frutti Flavored Poison"
 						}
 					}
 				},
 				{
 					buy:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:10,
 						tag:{
 							display:{
@@ -76,62 +77,63 @@ give @p villager_spawn_egg{
 						}
 					},
 					buyB:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:27
 					},
 					sell:{
-						id:"potion",
+						id:"minecraft:player_head",
 						Count:1,
 						tag:{
+							SkullOwner:{Id:[I;2007778456,529024831,-1411600209,-1676416121],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA2NmJmNjA0NTAyMjZhNGJlM2MyYzdjMjY3OGJlZDMyMjg4MDkxYjgwNDNiOWY5YjIwNjRmY2RlNWZkYTViYiJ9fX0="}]}},
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Dctr. Paper\"}"
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Dctr. Paper\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Use this item instead of an\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Awkward Potion\",\"italic\":false,\"color\":\"white\"},{\"text\":\" when brewing\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"specific potions.\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Increases the potency of potions\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"containing \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Absorption\",\"italic\":false,\"color\":\"#2552a5\"},{\"text\":\" by\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"+4\",\"italic\":false,\"color\":\"green\"},{\"text\":\" levels.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
 							},
-							CustomPotionEffects:[
-								{
-									Id:22,
-									Amplifier:3,
-									Duration:48000
-								}
-							],
-							CustomPotionColor:3227140,
 							Name:"Dctr. Paper"
 						}
 					}
 				},
 				{
 					buy:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:26,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
 								{lvl:1s,id:"minecraft:unbreaking"}
 							],
 							HideFlags:1,
-							Name:"Enchanted Emerald Rare"
+							Name:"Enchanted Emerald"
 						}
 					},
 					buyB:{
-						id:"emerald",
+						id:"minecraft:emerald",
 						Count:3
 					},
 					sell:{
-						id:"potion",
+						id:"minecraft:player_head",
 						Count:1,
 						tag:{
+							SkullOwner:{Id:[I;1060483695,842089939,-1293575421,-631928193],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg5ZGRjZTEzMTIwMTI2N2IwMjc0NTI3NjZiZmIyN2QyMWQ2ODMyOGQ2YzBiMjNhYjQ5NTE4ODRmNmE1ZmZiZSJ9fX0="}]}},
 							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Slayer Energy Drink\"}"
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Slayer Energy Drink\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Use this item instead of an\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Awkward Potion\",\"italic\":false,\"color\":\"white\"},{\"text\":\" when brewing\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"specific potions.\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Adds \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+10 Luck\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" to \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Critical\",\"italic\":false,\"color\":\"dark_red\"}]",
+									"[\"\",{\"text\":\"potions.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
 							},
-							CustomPotionEffects:[
-								{
-									Id:26,
-									Amplifier:9,
-									Duration:48000
-								}
-							],
-							CustomPotionColor:10822502,
 							Name:"Slayer Energy Drink"
 						}
 					}
