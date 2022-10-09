@@ -60,8 +60,41 @@
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/golden_powder",
-					"quality":4,
+					"quality":1,
 					"weight":5
+				}
+			]
+		},
+		{
+			"rolls":100,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/coins"
+				}
+			]
+		},
+		{
+			"rolls":60,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/scavenger_enchantment"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"killer_player",
+					"predicate":{
+						"player":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{CustomEnchantments:[{id:\"minecraft:scavenger\"}]}"
+								}
+							}
+						}
+					}
 				}
 			]
 		}

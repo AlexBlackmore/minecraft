@@ -1,0 +1,36 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:elytra",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Mystery Cape","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"While no one can decipher its","italic":false,"color":"gray"},
+								{"text":"cryptic message, the Mystery","italic":false,"color":"gray"},
+								{"text":"Cape seems made for you.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Skin:\"dungeons:mystery\"
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -15,6 +15,7 @@ execute as @s if data entity @s SelectedItem.tag.CustomPotionEffects[{Id:110}] r
 execute as @s if data entity @s SelectedItem.tag.CustomPotionEffects[{Id:111}] run function skyblock:lore/potions/stamina
 execute as @s if data entity @s SelectedItem.tag.CustomPotionEffects[{Id:112}] run function skyblock:lore/potions/spirit
 execute as @s if data entity @s SelectedItem.tag.CustomPotionEffects[{Id:113}] run function skyblock:lore/potions/magic_find
+execute as @s if data entity @s SelectedItem.tag.CustomPotionEffects[{Id:114}] run function skyblock:lore/potions/jerry_candy
 
 scoreboard objectives remove minutes
 scoreboard objectives remove seconds

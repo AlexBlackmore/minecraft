@@ -1,0 +1,36 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:elytra",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Glow Cape","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"This cape glows in the dark","italic":false,"color":"gray"},
+								{"text":"thanks to the splatter of glow","italic":false,"color":"gray"},
+								{"text":"squid ink!","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Skin:\"dungeons:glow\"
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

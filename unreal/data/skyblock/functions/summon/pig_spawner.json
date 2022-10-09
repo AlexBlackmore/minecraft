@@ -1,0 +1,26 @@
+setblock ~ ~ ~ spawner{
+	MinSpawnDelay:200s,
+	MaxSpawnDelay:800s,
+	SpawnCount:1s,
+	MaxNearbyEntities:6s,
+	RequiredPlayerRange:16s,
+	SpawnRange:8s,
+	SpawnPotentials:[
+		{
+			weight:1,
+			data:{
+				entity:{
+					id:"minecraft:pig",
+					Tags:["Spawner"],
+					DeathLootTable:"minecraft:empty"
+				},
+				custom_spawn_rules:{
+					block_light_limit:{
+						min_inclusive:0,
+						max_inclusive:15
+					}
+				}
+			}
+		}
+	]
+}

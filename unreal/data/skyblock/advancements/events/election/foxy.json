@@ -1,0 +1,19 @@
+{
+	"parent":"skyblock:events/election",
+	"display":{
+		"icon":{
+			"item":"minecraft:player_head"
+		},
+		"title":"Foxy, the Event Girl",
+		"description":"§71. Sweet Tooth: Grants +20% chance to get candy from mobs during the Spooky Festival.\n2. Benevolence: Gain 2.5x gifts from the attack on Jerry's Workshop.\n3. Extra Event: Schedules an extra event during the year.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+		  "trigger":"minecraft:impossible"
+		}
+	}
+}

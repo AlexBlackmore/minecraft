@@ -1,0 +1,36 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:elytra",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Hero Cape","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"A cape fit for heroes who are","italic":false,"color":"gray"},
+								{"text":"brave enough to face off against","italic":false,"color":"gray"},
+								{"text":"the Arch-Illager.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Skin:\"dungeons:hero\"
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

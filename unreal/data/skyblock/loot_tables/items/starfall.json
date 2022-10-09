@@ -1,0 +1,35 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:phantom_membrane",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Starfall","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"No one knows how and when the","italic":false,"color":"gray"},
+								{"text":"Starfall appeared. All we know","italic":false,"color":"gray"},
+								{"text":"is that it was already there","italic":false,"color":"gray"},
+								{"text":"when the Dwarves discovered the","italic":false,"color":"gray"},
+								{"text":"cavern.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Starfall\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

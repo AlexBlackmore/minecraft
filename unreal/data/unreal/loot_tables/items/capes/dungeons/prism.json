@@ -1,0 +1,36 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:elytra",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Prism Cape","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"A black cape with a white stripe","italic":false,"color":"gray"},
+								{"text":"that hits a triangle and splits","italic":false,"color":"gray"},
+								{"text":"into a rainbow.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Skin:\"dungeons:prism\"
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -26,29 +26,35 @@
 			]
 		},
 		{
-			"rolls":1,
+			"rolls":13,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:emerald"
+					"type":"loot_table",
+					"name":"skyblock:gameplay/coins"
+				}
+			]
+		},
+		{
+			"rolls":30,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/scavenger_enchantment"
 				}
 			],
-			"functions":[
+			"conditions":[
 				{
-					"function":"set_count",
-					"count":2
-				},
-				{
-					"function":"set_count",
-					"count":1,
-					"add":true,
-					"conditions":[
-						{
-							"condition":"minecraft:random_chance_with_looting",
-							"chance":0.1667,
-							"looting_multiplier":0.01
+					"condition":"entity_properties",
+					"entity":"killer_player",
+					"predicate":{
+						"player":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{CustomEnchantments:[{id:\"minecraft:scavenger\"}]}"
+								}
+							}
 						}
-					]
+					}
 				}
 			]
 		}

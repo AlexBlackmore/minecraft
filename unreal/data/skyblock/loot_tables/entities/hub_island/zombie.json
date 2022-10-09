@@ -35,19 +35,19 @@
 				{
 					"type":"item",
 					"name":"minecraft:potato",
-					"quality":2,
+					"quality":1,
 					"weight":1
 				},
 				{
 					"type":"item",
 					"name":"minecraft:carrot",
-					"quality":2,
+					"quality":1,
 					"weight":1
 				},
 				{
 					"type":"loot_table",
 					"name":"skyblock:items/enchanted/poisonous_potato",
-					"quality":2,
+					"quality":1,
 					"weight":1
 				}
 			]
@@ -56,15 +56,8 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:emerald"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"minecraft:random_chance_with_looting",
-					"chance":0.1667,
-					"looting_multiplier":0.01
+					"type":"loot_table",
+					"name":"skyblock:gameplay/coins"
 				}
 			]
 		}

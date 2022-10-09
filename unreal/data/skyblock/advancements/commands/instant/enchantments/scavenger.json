@@ -12,7 +12,7 @@
 		"hidden":true
 	},
 	"criteria":{
-		"scavenger1":{
+		"criterion":{
 			"trigger":"minecraft:player_killed_entity",
 			"conditions":{
 				"player":[
@@ -22,119 +22,18 @@
 						"predicate":{
 							"equipment":{
 								"mainhand":{
-									"nbt":"{CustomEnchantments:[{id:\"skyblock:scavenger\",lvl:1}]}"
+									"nbt":"{CustomEnchantments:[{id:\"skyblock:scavenger\"}]}"
 								}
 							}
 						}
-					},
-					{
-						"condition":"random_chance",
-						"chance":0.003
-					}
-				]
-			}
-		}
-		"scavenger2":{
-			"trigger":"minecraft:player_killed_entity",
-			"conditions":{
-				"player":[
-					{
-						"condition":"entity_properties",
-						"entity":"this",
-						"predicate":{
-							"equipment":{
-								"mainhand":{
-									"nbt":"{CustomEnchantments:[{id:\"skyblock:scavenger\",lvl:2}]}"
-								}
-							}
-						}
-					},
-					{
-						"condition":"random_chance",
-						"chance":0.006
-					}
-				]
-			}
-		}
-		"scavenger3":{
-			"trigger":"minecraft:player_killed_entity",
-			"conditions":{
-				"player":[
-					{
-						"condition":"entity_properties",
-						"entity":"this",
-						"predicate":{
-							"equipment":{
-								"mainhand":{
-									"nbt":"{CustomEnchantments:[{id:\"skyblock:scavenger\",lvl:3}]}"
-								}
-							}
-						}
-					},
-					{
-						"condition":"random_chance",
-						"chance":0.009
-					}
-				]
-			}
-		}
-		"scavenger4":{
-			"trigger":"minecraft:player_killed_entity",
-			"conditions":{
-				"player":[
-					{
-						"condition":"entity_properties",
-						"entity":"this",
-						"predicate":{
-							"equipment":{
-								"mainhand":{
-									"nbt":"{CustomEnchantments:[{id:\"skyblock:scavenger\",lvl:4}]}"
-								}
-							}
-						}
-					},
-					{
-						"condition":"random_chance",
-						"chance":0.012
-					}
-				]
-			}
-		}
-		"scavenger5":{
-			"trigger":"minecraft:player_killed_entity",
-			"conditions":{
-				"player":[
-					{
-						"condition":"entity_properties",
-						"entity":"this",
-						"predicate":{
-							"equipment":{
-								"mainhand":{
-									"nbt":"{CustomEnchantments:[{id:\"skyblock:scavenger\",lvl:5}]}"
-								}
-							}
-						}
-					},
-					{
-						"condition":"random_chance",
-						"chance":0.015
 					}
 				]
 			}
 		}
 	},
-	"requirements":[
-		[
-			"scavenger1",
-			"scavenger2",
-			"scavenger3",
-			"scavenger4",
-			"scavenger5"
-		]
-	],
 	"rewards":{
 		"loot":[
-			"minecraft:items/emerald"
+			"skyblock:gameplay/scavenger_enchantment"
 		],
 		"function":"skyblock:instant_reset"
 	}

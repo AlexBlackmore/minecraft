@@ -1,0 +1,19 @@
+{
+	"parent":"skyblock:events/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:jukebox"
+		},
+		"title":"§bElection",
+		"description":"§7Starts: §e27th of Late Spring\n§7Lasts: §e1 year\n§7The Mayor is selected until the next election ends!",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+		  "trigger":"minecraft:impossible"
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"parent":"skyblock:events/election",
+	"display":{
+		"icon":{
+			"item":"minecraft:player_head"
+		},
+		"title":"Diana, the Economist",
+		"description":"§71. Barrier Street: Gain 25% more bank interest.\n2. Shopping Spree: Increase daily NPC buy limits by 10x.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+		  "trigger":"minecraft:impossible"
+		}
+	}
+}

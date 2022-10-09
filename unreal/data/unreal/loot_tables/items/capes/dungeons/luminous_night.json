@@ -1,0 +1,35 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:elytra",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Luminous Night Cape","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"The signature cape of the","italic":false,"color":"gray"},
+								{"text":"Luminous Night season.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Skin:\"dungeons:luminous_night\"
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

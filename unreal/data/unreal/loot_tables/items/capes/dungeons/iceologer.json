@@ -1,0 +1,38 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:elytra",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Iceologer Cape","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"Chill out and try the Iceologer","italic":false,"color":"gray"},
+								{"text":"Cape on for a spell. It may not","italic":false,"color":"gray"},
+								{"text":"protect you from falling ice","italic":false,"color":"gray"},
+								{"text":"chunks, but it does look pretty","italic":false,"color":"gray"},
+								{"text":"cool.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Skin:\"dungeons:iceologer\"
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

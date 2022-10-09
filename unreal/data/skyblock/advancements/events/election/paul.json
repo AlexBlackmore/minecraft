@@ -1,0 +1,19 @@
+{
+	"parent":"skyblock:events/election",
+	"display":{
+		"icon":{
+			"item":"minecraft:player_head"
+		},
+		"title":"Paul, the Dungeon Explorer",
+		"description":"§71. Marauder: Dungeon Reward Chests are 20% cheaper.\n2. EZPZ: Gain 10 extra bonus score in Dungeons.\n3. Benediction: Blessings are 25% stronger.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+		  "trigger":"minecraft:impossible"
+		}
+	}
+}

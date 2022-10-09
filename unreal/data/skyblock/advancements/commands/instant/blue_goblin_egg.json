@@ -16,6 +16,21 @@
 			"trigger":"minecraft:player_killed_entity",
 			"conditions":{
 				"entity":{
+					"nbt":"{Tags:[\"flamethrower\"]}"
+				},
+				"player":[
+					{
+						"condition":"random_chance_with_looting",
+						"chance":0.0001,
+						"looting_multiplier":0.0001
+					}
+				]
+			}
+		},
+		"creeperlobber":{
+			"trigger":"minecraft:player_killed_entity",
+			"conditions":{
+				"entity":{
 					"nbt":"{Tags:[\"creeperlobber\"]}"
 				},
 				"player":[
@@ -60,6 +75,7 @@
 	},
 	"requirements":[
 		[
+			"flamethrower",
 			"creeperlobber",
 			"murderlover",
 			"pitfighter"

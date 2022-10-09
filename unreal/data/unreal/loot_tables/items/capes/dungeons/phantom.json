@@ -1,0 +1,37 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:elytra",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Phantom Cape","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"No need to panic, you're not","italic":false,"color":"gray"},
+								{"text":"sleep deprived and seeing","italic":false,"color":"gray"},
+								{"text":"Phantoms! This Phantom Cape is","italic":false,"color":"gray"},
+								{"text":"all real and yours.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Skin:\"dungeons:phantom\"
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

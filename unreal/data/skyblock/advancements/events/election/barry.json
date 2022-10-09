@@ -1,0 +1,19 @@
+{
+	"parent":"skyblock:events/election",
+	"display":{
+		"icon":{
+			"item":"minecraft:player_head"
+		},
+		"title":"Barry, the Wizard",
+		"description":"§71. Arcane Catalyst: Spells deal 15% increased damage.\n2. Astral Negotiator: Enchanting and anvil costs -15% less experience.\n3. Magic XP Boost: Gain +15% Alchemy Wisdom and +15% Enchanting Wisdom.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+		  "trigger":"minecraft:impossible"
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:elytra",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Iron Golem Cape","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"The Iron Golem Cape, made to","italic":false,"color":"gray"},
+								{"text":"honor the mighty protectors of","italic":false,"color":"gray"},
+								{"text":"Villagers, now belongs to you.","italic":false,"color":"gray"}
+								{"text":"cool.","italic":false,"color":"gray"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Skin:\"dungeons:iron_golem\"
+								}
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

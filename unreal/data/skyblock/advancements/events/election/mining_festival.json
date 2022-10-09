@@ -1,0 +1,19 @@
+{
+	"parent":"skyblock:events/election/cole",
+	"display":{
+		"icon":{
+			"item":"minecraft:iron_pickaxe"
+		},
+		"title":"Mining Festival",
+		"description":"§7Starts: §e1st of Early Autumn\n§7Lasts: §e1 month\n§7Get 1.5x Mining Wisdom, double drops from Ores, and obtain Refined Minerals.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+		  "trigger":"minecraft:impossible"
+		}
+	}
+}

@@ -11,10 +11,6 @@
 			"functions":[
 				{
 					"function":"set_count",
-					"count":2
-				},
-				{
-					"function":"set_count",
 					"count":1,
 					"add":true,
 					"conditions":[
@@ -24,13 +20,13 @@
 							"looting_multiplier":0.01
 						}
 					]
-				},
+				}
+			],
+			"conditions":[
 				{
-					"function":"looting_enchant",
-					"count":{
-						"min":0,
-						"max":1
-					}
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.5,
+					"looting_multiplier":0.01
 				}
 			]
 		},
@@ -40,19 +36,44 @@
 			"entries":[
 				{
 					"type":"empty",
+					"quality":-2,
 					"weight":985
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/reforge_stones/salmon_opal",
-					"quality":2,
+					"quality":1,
 					"weight":10
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/treasurite",
-					"quality":2,
+					"quality":1,
 					"weight":5
+				}
+			]
+		},
+		{
+			"rolls":70,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/scavenger_enchantment"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"killer_player",
+					"predicate":{
+						"player":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{CustomEnchantments:[{id:\"minecraft:scavenger\"}]}"
+								}
+							}
+						}
+					}
 				}
 			]
 		}

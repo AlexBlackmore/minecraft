@@ -1,0 +1,19 @@
+{
+	"parent":"skyblock:events/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:jack_o_lantern"
+		},
+		"title":"§6Spooky Festival",
+		"description":"§7Starts: §e29th of Autumn\n§7Lasts: §e3 days\n§7Autumn is in full swing and the air is full of fright. Mob drops have a chance to contain Candy, which can be traded with the Fear Mongerer for rare items!",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+		  "trigger":"minecraft:impossible"
+		}
+	}
+}

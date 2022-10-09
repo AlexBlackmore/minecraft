@@ -11,19 +11,19 @@
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/volta",
-					"quality":2,
+					"quality":1,
 					"weight":20
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/sorrow",
-					"quality":2,
+					"quality":1,
 					"weight":12
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/plasma",
-					"quality":4,
+					"quality":1,
 					"weight":10
 				}
 			]
@@ -45,6 +45,30 @@
 							"count":41
 						}
 					]
+				}
+			]
+		},
+		{
+			"rolls":250,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/scavenger_enchantment"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"killer_player",
+					"predicate":{
+						"player":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{CustomEnchantments:[{id:\"minecraft:scavenger\"}]}"
+								}
+							}
+						}
+					}
 				}
 			]
 		}

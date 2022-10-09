@@ -1,0 +1,23 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/enchanted/emerald1",
+					"functions":[
+						{
+							"function":"minecraft:set_count",
+							"count":{
+								"type":"minecraft:uniform",
+								"min":3,
+								"max":26
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

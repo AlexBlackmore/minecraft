@@ -1,0 +1,19 @@
+{
+	"parent":"skyblock:events/election",
+	"display":{
+		"icon":{
+			"item":"minecraft:player_head"
+		},
+		"title":"Cole, the Miner",
+		"description":"§71. Prospection: Mining spawners work 25% faster.\n2. Mining Wisdom Buff: Earn 1.5x Mining experience on public islands.\n3. Mining Fiesta: Started two Mining Fiesta events, in Early Summer and Early Autumn. Earn 2x drops and extra unique loot. Grants +75 Mining Wisdom during the event.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+		  "trigger":"minecraft:impossible"
+		}
+	}
+}

@@ -4,7 +4,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"minecraft",
+					"type":"minecraft:item",
 					"name":"minecraft:raw_copper"
 				}
 			],
@@ -27,7 +27,8 @@
 			"bonus_rolls":0,
 			"entries":[
 				{
-					"type":"empty",
+					"type":"minecraft:empty",
+					"quality":-1,
 					"weight":80
 				},
 				{
@@ -35,6 +36,39 @@
 					"name":"skyblock:items/starfall",
 					"quality":1,
 					"weight":20
+				}
+			]
+		},
+		{
+			"rolls":100,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/coins"
+				}
+			]
+		},
+		{
+			"rolls":50,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:gameplay/scavenger_enchantment"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"killer_player",
+					"predicate":{
+						"player":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{CustomEnchantments:[{id:\"minecraft:scavenger\"}]}"
+								}
+							}
+						}
+					}
 				}
 			]
 		}

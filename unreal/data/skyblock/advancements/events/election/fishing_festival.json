@@ -1,0 +1,19 @@
+{
+	"parent":"skyblock:events/election/marina",
+	"display":{
+		"icon":{
+			"item":"minecraft:fishing_rod"
+		},
+		"title":"Fishing Festival",
+		"description":"§7Starts: §e1st of every month\n§7Lasts: §e3 days\n§7Fish up sharks!",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+		  "trigger":"minecraft:impossible"
+		}
+	}
+}

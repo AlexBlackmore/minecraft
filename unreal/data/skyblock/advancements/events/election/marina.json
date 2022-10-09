@@ -1,0 +1,19 @@
+{
+	"parent":"skyblock:events/election",
+	"display":{
+		"icon":{
+			"item":"minecraft:player_head"
+		},
+		"title":"Marina, the Fisherwoman",
+		"description":"§71. Fishing XP Buff: Gain +50 Fishing Wisdom on public islands.\n2. Luck of the Sea: Gain +15 Sea Creature Chance.\n3. Fishing Festival: Starts a special fishing event during the first 2 days of each month! Fish and fight dangerous Sharks and earn unique Shark loot.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+		  "trigger":"minecraft:impossible"
+		}
+	}
+}
