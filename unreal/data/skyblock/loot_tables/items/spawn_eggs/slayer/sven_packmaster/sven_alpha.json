@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Sven Alpha","italic":false,"color":"red"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:wolf\",
+									CustomNameVisible:true,
+									Tags:[\"sven_alpha\"],
+									Health:350,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:350},
+										{Name:\"generic.attack_damage\",Base:1.604}
+									],
+									DeathLootTable:\"skyblock:entities/slayer/sven_packmaster/sven_alpha\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

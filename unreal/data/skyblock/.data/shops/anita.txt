@@ -1,0 +1,448 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Anita\"}",
+		Tags:["anita"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"farmer",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:name_tag",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jacob's Ticket\"}"
+							},
+							Name:"Jacob's Ticket"
+						}
+					},
+					sell:{
+						id:"minecraft:stick",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"InfiniDirt Wand\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Give Dirt \"},{\"bold\":true,\"color\":\"yellow\",\"text\":\"SNEAK\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Summon a stack of dirt.\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Cost: \"},{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"64 XP\"}]"
+								]
+							},
+							Enchantments:[
+								{id:"minecraft:unbreaking",lvl:1}
+							],
+							HideFlags:1,
+							Name:"InfiniDirt Wand",
+							Ability:true
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:name_tag",
+						Count:5,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jacob's Ticket\"}"
+							},
+							Name:"Jacob's Ticket"
+						}
+					},
+					sell:{
+						id:"minecraft:stone_hoe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Hoe of Great Tilling\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Sneak to till a \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"3x3\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" area of dirt\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"around you.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							AttributeModifiers:[
+							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
+							],
+							Name:"Hoe of Great Tilling",
+							Lore:[
+								"[\"\",{\"text\":\" \"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Sneak to till a \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"3x3\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" area of dirt\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"around you.\"}]",
+								"[\"\",{\"text\":\" \"}]"
+							],
+							Rarity:1,
+							Ability:true
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:name_tag",
+						Count:10,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jacob's Ticket\"}"
+							},
+							Name:"Jacob's Ticket"
+						}
+					},
+					sell:{
+						id:"minecraft:diamond_hoe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Hoe of Greater Tilling\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Sneak to till a \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"5x5\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" area of dirt\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"around you.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							AttributeModifiers:[
+							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
+							],
+							Name:"Hoe of Greater Tilling",
+							Lore:[
+								"[\"\",{\"text\":\" \"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Sneak to till a \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"5x5\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" area of dirt\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"around you.\"}]",
+								"[\"\",{\"text\":\" \"}]"
+							],
+							Rarity:2,
+							Ability:true
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:name_tag",
+						Count:30,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jacob's Ticket\"}"
+							},
+							Name:"Jacob's Ticket"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-370494673,-405061017,-1605486537,-920718566],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFhNTIxZDJkOTBjN2M1MGFiZWY5OGZlMzU0YmIzMmMwODg5MTM5NTEwZWI5Yjc2NmM2Y2Q4OWFhY2I3YmRkMyJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Basket of Seeds\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Farmer's Delight \"},{\"bold\":true,\"color\":\"yellow\",\"text\":\"SNEAK\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Plants seeds from your off-hand\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"in a \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"7x7\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" area around you.\"}]"
+									
+								]
+							},
+							Name:"Basket of Seeds",
+							Ability:true
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:name_tag",
+						Count:30,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jacob's Ticket\"}"
+							},
+							Name:"Jacob's Ticket"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1342639668,1818772259,-1632635188,-1249072194],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODVlMjRiOGMyZDIwZjllMjNiY2E1MmQ5NGZiZDgyMGFhMDc0NDU5MWFjYjAzNTkxODMzMTJlNDNhMjg3ZTViMCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Nether Wart Pouch\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Alchemist's Bliss \"},{\"bold\":true,\"color\":\"yellow\",\"text\":\"SNEAK\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Plants nether wart from your\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"off-hand in a \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"7x7\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" area around you.\"}]"
+									
+								]
+							},
+							Name:"Nether Wart Pouch",
+							Ability:true
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:name_tag",
+						Count:32,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jacob's Ticket\"}"
+							},
+							Name:"Jacob's Ticket"
+						}
+					},
+					sell:{
+						id:"minecraft:wooden_hoe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Mathematical Hoe Blueprint\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Can be adapted into 5 specialized\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hoes with 3 tiers each.\"}]"
+								]
+							},
+							AttributeModifiers:[
+							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-4,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
+							],
+							HideFlags:6,
+							Unbreakable:true,
+							Name:"Mathematical Hoe Blueprint"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:name_tag",
+						Count:32,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jacob's Ticket\"}"
+							},
+							Name:"Jacob's Ticket"
+						}
+					},
+					sell:{
+						id:"minecraft:golden_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Cocoa Chopper\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Increases cocoa bean drops by\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"+20%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							AttributeModifiers:[
+							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
+							],
+							Name:"Cocoa Chopper",
+							Lore:[
+								"[\"\",{\"text\":\" \"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Increases cocoa bean drops by\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"+20%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+								"[\"\",{\"text\":\" \"}]"
+							],
+							Rarity:3
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:name_tag",
+						Count:32,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jacob's Ticket\"}"
+							},
+							Name:"Jacob's Ticket"
+						}
+					},
+					sell:{
+						id:"minecraft:diamond_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Melon Dicer\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Harvesting melons with this axe\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"has a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+5%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop an\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"yellow\",\"text\":\"experience bottle\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Roll em'\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Every melon you break, you make\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a wish to \"},{\"italic\":false,\"color\":\"light_purple\",\"text\":\"RNGesus\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" which may\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"grant you with a few or TONS of\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"extra melons!\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							AttributeModifiers:[
+							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
+							],
+							Name:"Melon Dicer",
+							Lore:[
+								"[\"\",{\"text\":\" \"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Harvesting melons with this axe\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"has a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+5%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop an\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"yellow\",\"text\":\"experience bottle\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+								"[\"\",{\"text\":\" \"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Roll em'\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Every melon you break, you make\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a wish to \"},{\"italic\":false,\"color\":\"light_purple\",\"text\":\"RNGesus\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" which may\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"grant you with a few or TONS of\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"extra melons!\"}]",
+								"[\"\",{\"text\":\" \"}]"
+							],
+							Rarity:3
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:name_tag",
+						Count:32,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jacob's Ticket\"}"
+							},
+							Name:"Jacob's Ticket"
+						}
+					},
+					sell:{
+						id:"minecraft:golden_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Pumpkin Dicer\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Harvesting pumpkins with this axe\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"has a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+5%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop an\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"yellow\",\"text\":\"experience bottle\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Roll em'\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Every pumpkin you break, you make\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a wish to \"},{\"italic\":false,\"color\":\"light_purple\",\"text\":\"RNGesus\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" which may\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"grant you with a few or TONS of\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"extra pumpkins!\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							AttributeModifiers:[
+							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
+							],
+							Name:"Pumpkin Dicer",
+							Lore:[
+								"[\"\",{\"text\":\" \"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Harvesting pumpkins with this axe\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"has a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+5%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop an\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"yellow\",\"text\":\"experience bottle\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+								"[\"\",{\"text\":\" \"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Roll em'\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Every pumpkin you break, you make\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a wish to \"},{\"italic\":false,\"color\":\"light_purple\",\"text\":\"RNGesus\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" which may\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"grant you with a few or TONS of\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"extra pumpkins!\"}]",
+								"[\"\",{\"text\":\" \"}]"
+							],
+							Rarity:3
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:name_tag",
+						Count:32,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jacob's Ticket\"}"
+							},
+							Name:"Jacob's Ticket"
+						}
+					},
+					sell:{
+						id:"minecraft:golden_hoe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Fungi Cutter\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Increases mushroom drops by\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"+30%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							AttributeModifiers:[
+							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
+							],
+							Name:"Fungi Cutter",
+							Lore:[
+								"[\"\",{\"text\":\" \"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Increases mushroom drops by\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"+30%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+								"[\"\",{\"text\":\" \"}]"
+							],
+							Rarity:2
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:name_tag",
+						Count:32,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Jacob's Ticket\"}"
+							},
+							Name:"Jacob's Ticket"
+						}
+					},
+					sell:{
+						id:"minecraft:golden_hoe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Cactus Knife\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Increases cactus drops by\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"+30%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							AttributeModifiers:[
+							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;773590877,657661611,288371402,138555494]}
+							],
+							Name:"Cactus Knife",
+							Lore:[
+								"[\"\",{\"text\":\" \"}]",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Increases cactus drops by\"}]",
+								"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"+30%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]",
+								"[\"\",{\"text\":\" \"}]"
+							],
+							Rarity:3
+						}
+					}
+				}
+			]
+		}
+	}
+}

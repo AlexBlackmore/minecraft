@@ -1,0 +1,39 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:fishing_rod",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Farmer's Rod\\\",\\\"italic\\\":false,\\\"color\\\":\\\"yellow\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Grants a chance to catch farm\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"animal loot as a bonus drop.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"UNCOMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"yellow\\\"}\",
+										\"\\\" \\\"\"
+									]
+								},
+								Enchantments:[
+									{id:\"lure\",lvl:4},
+									{id:\"sharpness\",lvl:20}
+								],
+								AttributeModifiers:[
+									{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:4,Operation:0,UUID:[I;524312315,816545671,289779906,411131256]}
+								],
+								Name:\"Farmer's Rod\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

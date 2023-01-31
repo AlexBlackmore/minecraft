@@ -1,0 +1,11 @@
+summon enderman ~ ~ ~ {
+	CustomName:"{\"text\":\"Enderman\"}",
+	CustomNameVisible:true,
+	Tags:["skyblock"],
+	Health:900,
+	Attributes:[
+		{Name:"generic.max_health",Base:900},
+		{Name:"generic.attack_damage",Base:100}
+	],
+	DeathLootTable:"skyblock:entities/the_end/enderman42"
+}

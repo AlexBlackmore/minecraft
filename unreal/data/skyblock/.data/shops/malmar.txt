@@ -1,0 +1,75 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Malmar\",\"color\":\"white\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"farmer",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:5,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"pumpkin_pie",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Mining Pumpkin\"}",
+								Lore:[
+									"{\"italic\":false,\"color\":\"blue\",\"text\":\"Spelunker V (60:00)\"}",
+									"{\"text\":\" \"}",
+									"{\"italic\":false,\"color\":\"gray\",\"text\":\"A tasty Dwarven snack!\"}"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1,
+							Name:"Mining Pumpkin"
+						}
+					}
+				}
+			]
+		}
+	}
+}

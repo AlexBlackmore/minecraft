@@ -1,0 +1,37 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:fishing_rod",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Rod of Legends\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"EPIC\\\",\\\"bold\\\":true,\\\"color\\\":\\\"light_purple\\\"}\",
+										\"\\\" \\\"\"
+									]
+								},
+								Enchantments:[
+									{id:\"lure\",lvl:5},
+									{id:\"sharpness\",lvl:52}
+								],
+								AttributeModifiers:[
+									{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:24,Operation:0,UUID:[I;424754574,302547915,909390244,804614228]},
+									{Slot:\"mainhand\",AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:0.06,Operation:2,UUID:[I;866165611,590799191,737965915,716469070]}
+								],
+								Name:\"Rod of Legends\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

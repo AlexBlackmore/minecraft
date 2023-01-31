@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Old Wolf","italic":false,"color":"red"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:wolf\",
+									CustomNameVisible:true,
+									Tags:[\"old_wolf\",\"4xp\"],
+									Health:50,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:50},
+										{Name:\"generic.attack_damage\",Base:2.4}
+									],
+									DeathLootTable:\"skyblock:entities/hub_island/old_wolf\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

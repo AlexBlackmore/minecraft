@@ -1,0 +1,63 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:wheat",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Staff of the Volcano","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Explode ","italic":false,"color":"gold"},{"text":"SNEAK","italic":true,"bold":true,"color":"yellow"}],
+								["",{"text":"Creates an explosion around you","italic":false,"color":"gray"}],
+								["",{"text":"dealing ","italic":false,"color":"gray"},{"text":"4,800","italic":false,"color":"red"},{"text":" damage and setting","italic":false,"color":"gray"}],
+								["",{"text":"all mobs on fire in a ","italic":false,"color":"gray"},{"text":"4","italic":false,"color":"yellow"},{"text":" block","italic":false,"color":"gray"}],
+								["",{"text":"radius over ","italic":false,"color":"gray"},{"text":"1s","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+								["",{"text":"Inflicts ","italic":false,"color":"gray"},{"text":"Instant Damage II","italic":false,"color":"#430A09"},{"text":" on","italic":false,"color":"gray"}],
+								["",{"text":"use.","italic":false,"color":"gray"}],
+								["",{"text":"Cost: ","italic":false,"color":"dark_gray"},{"text":"100 XP","italic":false,"color":"dark_aqua"}],
+								["",{"text":"Cooldown: ","italic":false,"color":"dark_gray"},{"text":"30s","italic":false,"color":"green"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Staff of the Volcano\",
+								Rarity:2,
+								Ability:true,
+								Lore:[\"\",
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Ability: Explode \",\"italic\":false,\"color\":\"gold\"},{\"text\":\"SNEAK\",\"italic\":true,\"bold\":true,\"color\":\"yellow\"}]',
+									'[\"\",{\"text\":\"Creates an explosion around you\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"dealing \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"4,800\",\"italic\":false,\"color\":\"red\"},{\"text\":\" damage and setting\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"all mobs on fire in a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"4\",\"italic\":false,\"color\":\"yellow\"},{\"text\":\" block\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"radius over \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"1s\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"Inflicts \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Instant Damage II\",\"italic\":false,\"color\":\"#430A09\"},{\"text\":\" on\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"use.\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"Cost: \",\"italic\":false,\"color\":\"dark_gray\"},{\"text\":\"100 XP\",\"italic\":false,\"color\":\"dark_aqua\"}]',
+									'[\"\",{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"dark_gray\"},{\"text\":\"30s\",\"italic\":false,\"color\":\"green\"}]',
+									'{\"text\":\" \"}'
+								]
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"sharpness":24
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

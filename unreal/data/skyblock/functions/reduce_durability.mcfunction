@@ -14,6 +14,6 @@ scoreboard players operation @s unbreaking /= @s dummy
 
 execute if score @s unbreaking >= @e[limit=1,tag=rng] random run item modify entity @s weapon.mainhand skyblock:damage
 
-item replace entity @e[tag=motion,limit=1,sort=nearest] weapon.mainhand from entity @s weapon.mainhand 
-item replace entity @s weapon.mainhand with minecraft:air
-item replace entity @s weapon.mainhand from entity @e[tag=motion,limit=1,sort=nearest] weapon.mainhand
+#item replace entity @e[tag=motion,limit=1,sort=nearest] weapon.mainhand from entity @s weapon.mainhand 
+#item replace entity @s weapon.mainhand with minecraft:air
+#item replace entity @s weapon.mainhand from entity @e[tag=motion,limit=1,sort=nearest] weapon.mainhand

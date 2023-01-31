@@ -2,12 +2,9 @@ summon magma_cube ~ ~ ~ {
 	CustomName:"{\"text\":\"Magma Cube Boss\",\"color\":\"red\"}",
 	CustomNameVisible:true,
 	Tags:["magma_cube_boss","200xp"],
-	NoAI:true,
-	AbsorptionAmount:28976,
-	Health:1024,
+	Health:100,
 	Attributes:[
-		{Name:"generic.max_health",Base:1024},
-		{Name:"generic.attack_damage",Base:100}
+		{Name:"generic.max_health",Base:100}
 	],
 	Size:32,
 	DeathLootTable:"skyblock:entities/blazing_fortress/magma_cube_boss"

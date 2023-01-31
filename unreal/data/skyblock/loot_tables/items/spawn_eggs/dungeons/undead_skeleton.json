@@ -1,0 +1,23 @@
+summon skeleton ~ ~ ~ {
+  CustomName:"[\"\",{\"text\":\"Undead Skeleton\",\"color\":\"red\"}]",
+  CustomNameVisible:true,
+  Tags:["undead_skeleton","dungeons","skyblock"],
+  HandItems:[
+    {
+      id:"bow",
+      Count:1,
+      tag:{
+        Enchantments:[
+          {id:"infinity",lvl:1},
+          {id:"power",lvl:7},
+          {id:"unbreaking",lvl:2}
+        ],
+        AttributeModifiers:[
+          {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:5,Operation:0,UUID:[I;668429752,551336958,952772181,458765697]}
+        ]
+      }
+    },
+    {}
+  ],
+  HandDropChances:[0.0f,0.0f]
+}

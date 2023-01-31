@@ -1,0 +1,931 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Combat Bazaar\",\"color\":\"gold\"}",
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"weaponsmith",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:
+					{
+						id:"rotten_flesh",
+						Count:3
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"rotten_flesh",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Rotten Flesh\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Rotten Flesh"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"bone",
+						Count:3
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"bone",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Bone\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Bone"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"string",
+						Count:2
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"string",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted String\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted String"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64
+					}
+				},
+				{
+					buy:
+					{
+						id:"spider_eye",
+						Count:2
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"spider_eye",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Spider Eye\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Spider Eye"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64
+					}
+				},
+				{
+					buy:{
+						id:"fermented_spider_eye",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Fermented Spider Eye\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Fermented Spider Eye"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"gunpowder",
+						Count:3
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:2
+					}
+				},
+				{
+					buy:{
+						id:"gunpowder",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Gunpowder\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Gunpowder"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"firework_rocket",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Firework Rocket\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Firework Rocket"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"ender_pearl",
+						Count:6
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:7
+					}
+				},
+				{
+					buy:{
+						id:"ender_pearl",
+						Count:12,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Ender Pearl\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Ender Pearl"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:7,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"ender_eye",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Eye of Ender\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Eye of Ender"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:10,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"ghast_tear",
+						Count:3
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:8
+					}
+				},
+				{
+					buy:{
+						id:"ghast_tear",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Ghast Tear\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Ghast Tear"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:16,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"slime_ball",
+						Count:6
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:5
+					}
+				},
+				{
+					buy:
+					{
+						id:"slime_block",
+						Count:2
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:15
+					}
+				},
+				{
+					buy:{
+						id:"slime_ball",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Slimeball\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Slimeball"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:5,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"slime_block",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Slime Block\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Slime Block"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:10,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"magma_cream",
+						Count:3
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:4
+					}
+				},
+				{
+					buy:{
+						id:"magma_cream",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Magma Cream\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Magma Cream"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;-175202648,176181175,-1306520743,1760556828],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUwZmYzNzE4MDdhNjA3OWQ1OTFhZWRjNDU3Y2JmM2Y0ZDE4ZTZiYmQ5YmFhMDA3MzgwNmYwZTQ2NmI4ZTg0OSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Yoggie\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Harvested from the core of Yogs.\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Used to upgrade Magma equipment.\"}]"
+								]
+							},
+							Name:"Yoggie"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:50
+					}
+				},
+				{
+					buy:
+					{
+						id:"blaze_rod",
+						Count:2
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:3
+					}
+				},
+				{
+					buy:{
+						id:"blaze_powder",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Blaze Powder\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Blaze Powder"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"blaze_rod",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Blaze Rod\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Blaze Rod"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"feather",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Griffin Feather\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Griffin Feather"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"stick",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Daedalus Stick\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Daedalus Stick"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:10,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"flint",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Ancient Claw\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Ancient Claw"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:33
+					}
+				},
+				{
+					buy:{
+						id:"flint",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Ancient Claw\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Ancient Claw"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"rotten_flesh",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Revenant Flesh\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Revenant Flesh"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"cooked_porkchop",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Revenant Viscera\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Revenant Viscera"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:48,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"string",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Tarantula Web\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Tarantula Web"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"cobweb",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Tarantula Silk\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Tarantula Silk"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:43,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"ghast_tear",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Wolf Tooth\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Wolf Tooth"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"gold_nugget",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Golden Tooth\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Golden Tooth"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:43,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"oak_button",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Null Atom\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Null Atom"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"egg",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Goblin Egg\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"What came first, the goblin or\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"the egg?\"}]"
+								]
+							},
+							Name:"Goblin Egg"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64
+					}
+				},
+				{
+					buy:
+					{
+						id:"player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1769377508,79577112,-2087052960,2122548069],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q5YzhkZDI0NWE2ODQ1ZDg3MDQxNDViYWI1ZmFjNjBhMzA3NjVlMTI5MWU3MGU5OGUyNWQ5ZmVjNDFiMjZjNSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Tasty Cheese\"}"
+							},
+							Name:"Tasty Cheese"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64
+					}
+				}
+			]
+		}
+	}
+}

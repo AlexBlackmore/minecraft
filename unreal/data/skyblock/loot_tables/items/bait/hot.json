@@ -1,0 +1,35 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Hot Bait","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-2067321042,-726578878,-1334693268,-1346323585],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjEzYzY4OTlkOTcxMDljNmNhY2JiY2RkMDFlODkwMGFiYWY0NjQzMmYxOTc1OTViYWExNWFkMTM3ZDVmYjliYSJ9fX0=\"}]}},
+								Name:\"Hot Bait\",
+								Bait:true
+							}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Fishing Bait","italic":false,"color":"blue"}],
+								["",{"text":"+5%","italic":false,"color":"green"},{"text":" chance to catch ","italic":false,"color":"gray"},{"text":"Trophy Fish","italic":false,"color":"gold"},{"text":".","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

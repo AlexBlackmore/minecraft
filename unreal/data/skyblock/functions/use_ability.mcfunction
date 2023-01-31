@@ -66,6 +66,8 @@ execute as @p[level=8..,tag=ability,nbt={SelectedItem:{tag:{Name:"Wand of Mendin
 execute as @p[level=12..,tag=ability,nbt={SelectedItem:{tag:{Name:"Wand of Restoration"}}}] run function skyblock:abilities/instant/big_heal
 execute as @p[level=13..,tag=ability,nbt={SelectedItem:{tag:{Name:"Wand of Atonement"}}}] run function skyblock:abilities/instant/huge_heal
 
+execute as @p[level=1..,tag=ability,nbt={SelectedItem:{tag:{Name:"Snow Shovel"}}}] run function skyblock:abilities/instant/snow_placer
+
 
 execute as @p[tag=ability,nbt={SelectedItem:{tag:{Name:"Grappling Hook"}}}] run function skyblock:abilities/instant/grappling_hook
 

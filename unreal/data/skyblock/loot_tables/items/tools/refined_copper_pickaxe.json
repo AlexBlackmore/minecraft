@@ -1,0 +1,67 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:diamond_pickaxe",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Refined Copper Pickaxe","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+15% Fortune","italic":false,"color":"blue"},{"text":" when mining","italic":false,"color":"gray"}],
+								["",{"text":"Ancient Debris.","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Refined Copper Pickaxe\",
+								Rarity:2,
+								Lore:[\"\",
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Grants \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Haste II\",\"italic\":false,\"color\":\"#D9C043\"},{\"text\":\" when mining\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"Copper Ore.\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}'
+								]
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":6
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":10,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-2.8,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

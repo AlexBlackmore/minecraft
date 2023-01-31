@@ -1,0 +1,38 @@
+setblock ~ ~ ~ spawner{
+	RequiredPlayerRange:32s,
+	SpawnPotentials:[
+		{
+			weight:1,
+			data:{
+				entity:{
+					id:"minecraft:zombified_piglin",
+					CustomName:"{\"text\":\"Liquid Hot Magma\",\"color\":\"red\"}",
+					CustomNameVisible:true,
+					Tags:["liquid_hot_magma"],
+					Health:20,
+					Attributes:[
+						{Name:"generic.max_health",Base:20},
+						{Name:"generic.attack_damage",Base:1}
+					],
+					HandItems:[
+						{
+							id:"magma_cream",
+							Count:1,
+							tag:{}
+						},
+						{}
+					],
+					HandDropChances:[0.0f,0.0f],
+					ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+					DeathLootTable:"minecraft:empty"
+				},
+				custom_spawn_rules:{
+					block_light_limit:{
+						min_inclusive:0,
+						max_inclusive:15
+					}
+				}
+			}
+		}
+	]
+}

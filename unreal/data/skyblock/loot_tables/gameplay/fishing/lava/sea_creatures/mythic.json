@@ -1,0 +1,37 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/spawn_eggs/sea_creatures/crimson_isle/thunder",
+					"quality":5,
+					"weight":87,
+					"conditions":[
+						{
+							"condition":"location_check",
+							"predicate":{
+								"dimension":"skyblock:crimson_isle"
+							}
+						}
+					]
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/spawn_eggs/sea_creatures/crimson_isle/lord_jawbus",
+					"quality":5,
+					"weight":17,
+					"conditions":[
+						{
+							"condition":"location_check",
+							"predicate":{
+								"dimension":"skyblock:crimson_isle"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

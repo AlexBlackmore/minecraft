@@ -1,0 +1,268 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Banker\"}",
+		Tags:["banker"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"librarian",
+			type:"snow"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:64
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Epic"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Epic"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Legendary"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					maxUses:0
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Epic"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Legendary"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Epic"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,73 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Scoop\"}",
+		Tags:["scoop"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"toolsmith",
+			type:"snow"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:33
+					},
+					sell:{
+						id:"diamond_shovel",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Snow Shovel\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Snow Placer \"},{\"bold\":true,\"color\":\"yellow\",\"text\":\"SNEAK\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Place a 3x3 layer of snow around\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"you.\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Cost: \"},{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"10 XP\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:4.5,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							Name:"Snow Shovel",
+							Ability:true,
+							Rarity:2
+						}
+					}
+				}
+			]
+		}
+	}
+}

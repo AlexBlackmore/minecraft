@@ -30,6 +30,11 @@
 				},
 				{
 					"type":"loot_table",
+					"name":"skyblock:items/bait/spiked",
+					"weight":1
+				},
+				{
+					"type":"loot_table",
 					"name":"skyblock:items/bait/fish",
 					"weight":1
 				},
@@ -68,6 +73,19 @@
 					"type":"loot_table",
 					"name":"skyblock:items/bait/shark",
 					"weight":1
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/bait/glowy_chum",
+					"weight":1,
+					"conditions":[
+						{
+							"condition":"location_check",
+							"predicate":{
+								"dimension":"skyblock:mushroom_desert"
+							}
+						}
+					]
 				},
 				{
 					"type":"loot_table",

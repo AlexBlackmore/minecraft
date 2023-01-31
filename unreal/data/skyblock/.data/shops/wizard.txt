@@ -1,0 +1,52 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Wizard\",\"obfuscated\":true}",
+		Tags:["wizard"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"cleric",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:16
+					},
+					sell:{
+						id:"knowledge_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"text\":\"Travel Scroll to Wizard Tower\",\"italic\":false,\"color\":\"aqua\"}",
+								Lore:[
+									"{\"text\":\"Hmmm...something appears to be\",\"italic\":false,\"color\":\"gray\"}",
+									"{\"text\":\"broken.\",\"italic\":false,\"color\":\"gray\"}"
+								]
+							},
+							Recipes:[
+									"skyblock:travel_scrolls/wizard_tower"
+							],
+							HideFlags:63
+						}
+					}
+				}
+			]
+		}
+	}
+}

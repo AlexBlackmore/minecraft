@@ -1,0 +1,338 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Jax\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"fletcher",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:54
+					},
+					sell:{
+						id:"arrow",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Flint Arrow\"}"
+							}
+						}
+					}
+				},
+				{
+					buy:{
+						id:"iron_ingot",
+						Count:24
+					},
+					sell:{
+						id:"tipped_arrow",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Reinforced Iron Arrow\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"When in Off-Hand:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Attack Damage\"}]"
+								]
+							},
+							HideFlags:32,
+							CustomPotionColor:11184810,
+							Name:"Reinforced Iron Arrow"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"gold_ingot",
+						Count:40
+					},
+					sell:{
+						id:"tipped_arrow",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Gold-tipped Arrow\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"When in Off-Hand:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+2 Attack Damage\"}]"
+								]
+							},
+							HideFlags:32,
+							CustomPotionColor:16777045,
+							Name:"Gold-tipped Arrow"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"redstone_block",
+						Count:24
+					},
+					sell:{
+						id:"tipped_arrow",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Redstone-tipped Arrow\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"When in Off-Hand:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+3 Attack Damage\"}]"
+								]
+							},
+							HideFlags:32,
+							CustomPotionColor:16733525,
+							Name:"Redstone-tipped Arrow"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"emerald_block",
+						Count:16
+					},
+					sell:{
+						id:"tipped_arrow",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Emerald-tipped Arrow\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"When in Off-Hand:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+4 Attack Damage\"}]"
+								]
+							},
+							HideFlags:32,
+							CustomPotionColor:43520,
+							Name:"Emerald-tipped Arrow"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"slime_block",
+						Count:24
+					},
+					sell:{
+						id:"tipped_arrow",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Bouncy Arrow\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Passive: Bouncy!\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Arrows have a \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"50%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"bounce to another target. Can\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"hit up to \"},{\"italic\":false,\"color\":\"red\",\"text\":\"4\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" targets, dealing \"},{\"italic\":false,\"color\":\"red\",\"text\":\"15%\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"less damage per bounce.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"When in Off-Hand:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Attack Damage\"}]"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],	
+							HideFlags:33,
+							CustomPotionColor:5635925,
+							Name:"Bouncy Arrow"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"packed_ice",
+						Count:64
+					},
+					sell:{
+						id:"tipped_arrow",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Icy Arrow\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Slowness (0:03)\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"When in Off-Hand:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+5 Attack Damage\"}]"
+								]
+							},
+							CustomPotionEffects:[
+								{
+									Id:2,
+									Amplofier:0,
+									Duration:60
+								}
+							],
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],	
+							HideFlags:33,
+							CustomPotionColor:5636095,
+							Name:"Icy Arrow"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"sand",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Sand\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"tipped_arrow",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Armorshed Arrow\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"red\",\"text\":\"Weakness (0:11)\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"When in Off-Hand:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Attack Damage\"}]"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],	
+							HideFlags:33,
+							CustomPotionColor:14538245,
+							Name:"Armorshed Arrow"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"coal_block",
+						Count:24
+					},
+					sell:{
+						id:"tipped_arrow",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Explosive Arrow\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Passive: Explosive\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"This arrow explodes after\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"2\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" seconds or on impact.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"When in Off-Hand:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Attack Damage\"}]"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],	
+							HideFlags:33,
+							CustomPotionColor:1,
+							Name:"Explosive Arrow"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"string",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Tarantula Web\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"tipped_arrow",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Glue Arrow\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Slowness VII (0:02)\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"When in Off-Hand:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+3 Attack Damage\"}]"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],	
+							HideFlags:33,
+							CustomPotionColor:16777215,
+							Name:"Glue Arrow"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"green_dye",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Green Dye\"}"
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1
+						}
+					},
+					sell:{
+						id:"tipped_arrow",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Nansorb Arrow\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"When in Off-Hand:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Attack Damage\"}]"
+								]
+							},
+							Enchantments:[
+								{id:"piercing",lvl:4}
+							],	
+							HideFlags:32,
+							CustomPotionColor:43537,
+							Name:"Nansorb Arrow"
+						}
+					}
+				}
+			]
+		}
+	}
+}

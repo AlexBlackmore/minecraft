@@ -1,0 +1,55 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Lava Leech","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"A small but fearsome Lava Leech emerges.","italic":false,"color":"white"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:endermite\",
+									CustomNameVisible:true,
+									Tags:[\"lava_sea_creature\",\"sea_creature\",\"lava_leech\",\"1000xp\"],
+									Health:220,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:220}
+									],
+									ActiveEffects:[
+										{
+											Id:12,
+											Duration:2147483646
+										}
+									],
+									Fire:32767,
+									DeathLootTable:\"skyblock:entities/sea_creatures/crimson_isle/lava_leech\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

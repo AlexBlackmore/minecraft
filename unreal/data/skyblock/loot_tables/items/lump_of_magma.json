@@ -1,0 +1,39 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:fire_charge",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Lump of Magma","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Self-explanatory.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Lump of Magma"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

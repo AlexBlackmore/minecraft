@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:fishing_rod",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Auger Rod\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"All Sea Creatures caught with\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"{\\\"text\\\":\\\"this rod are Winter Sea\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"{\\\"text\\\":\\\"Creatures.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
+										\"\\\" \\\"\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Breaks nearby ice blocks where\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"it lands.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\",
+										\"\\\" \\\"\"
+									]
+								},
+								Enchantments:[
+									{id:\"lure\",lvl:5},
+									{id:\"sharpness\",lvl:54}
+								],
+								AttributeModifiers:[
+									{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:18,Operation:0,UUID:[I;424754574,302547915,909390244,804614228]}
+								],
+								Name:\"Auger Rod\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

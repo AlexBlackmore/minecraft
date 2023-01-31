@@ -1,0 +1,74 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:iron_sword",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Blade of the Volcano","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"A powerful blade forged in the","italic":false,"color":"gray"}],
+								["",{"text":"depths of the ","italic":false,"color":"gray"},{"text":"Blazing Volcano","italic":false,"color":"gold"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+20 Attack Damage","italic":false,"color":"blue"},{"text":" while","italic":false,"color":"gray"}],
+								["",{"text":"fighting enemies who are in lava.","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"+20% Crit Damage","italic":false,"color":"blue"}
+							],
+							"replace":false
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Blade of the Volcano\",
+								Rarity:2,
+								CritDamage:20,
+								Lore:[\"\",
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"A powerful blade forged in the\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"depths of the \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Blazing Volcano\",\"italic\":false,\"color\":\"gold\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Grants \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+20 Attack Damage\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" while\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"fighting enemies who are in lava.\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}'
+								]
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"sharpness":88
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":14,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

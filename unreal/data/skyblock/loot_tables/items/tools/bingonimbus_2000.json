@@ -1,0 +1,74 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:diamond_pickaxe",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Bingonimbus 2000","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"A powerful tool that doesn't","italic":false,"color":"gray"}],
+								["",{"text":"seem to break.","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Bingonimbus 2000\",
+								Rarity:3,
+								Lore:[\"\",
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\""A powerful tool that doesn't\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"seem to break.\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}'
+								]
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"efficiency":42
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Luck",
+									"attribute":"generic.luck",
+									"operation":"addition",
+									"amount":20,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":6,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-2.8,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

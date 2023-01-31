@@ -1,0 +1,41 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:leather",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Moogma Pelt","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"The bottom of the volcano is","italic":false,"color":"gray"}],
+								["",{"text":"filled with it, Moogmas keep on","italic":false,"color":"gray"}],
+								["",{"text":"moulting. It's a problem.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Moogma Pelt"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

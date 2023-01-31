@@ -1,0 +1,37 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Corrupted Bait","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-725126181,-345028026,-1678204830,1831286277],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGJiY2RkZDQ1Y2QzNDc4NjViY2VhYjNlM2RjNWQzODI3MjM0NjM5NjNmODVlY2NlODFjZGQ2MWI1M2RiMTRlNCJ9fX0=\"}]}},
+								Name:\"Corrupted Bait\",
+								Bait:true
+							}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Fishing Bait","italic":false,"color":"blue"}],
+								["",{"text":"-50%","italic":false,"color":"red"},{"text":" chance to catch extra fish,","italic":false,"color":"gray"}],
+								["",{"text":"but lures a special ","italic":false,"color":"gray"},{"text":"Trophy Fish","italic":false,"color":"gold"}],
+								["",{"text":"in the ","italic":false,"color":"gray"},{"text":"Crimson Isle","italic":false,"color":"red"},{"text":".","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

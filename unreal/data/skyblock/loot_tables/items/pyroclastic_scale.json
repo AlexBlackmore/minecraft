@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:prismarine_shard",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Pyroclastic Scale","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Makes pretty ","italic":false,"color":"gray"},{"text":"\"drip\"","italic":true,"color":"gray"},{"text":" necklaces,","italic":false,"color":"gray"}],
+								["",{"text":"according to the local youth.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Pyroclastic Scale\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

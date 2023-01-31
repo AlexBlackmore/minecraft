@@ -1,0 +1,284 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Pearl Dealer\",\"color\":\"dark_purple\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"cleric",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:40,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:
+					{
+						id:"minecraft:emerald",
+						Count:45,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Dragon Hunter I\"}]"
+								]
+							},
+							Name:"Enchanted Book",
+							Dragon_Hunter:1
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:61,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:
+					{
+						id:"minecraft:emerald",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Book\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Ender Slayer VI\"}]"
+								]
+							},
+							Name:"Enchanted Book",
+							Ender_Slayer:6
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:5
+					},
+					sell:{
+						id:"end_stone",
+						Count:3
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:25
+					},
+					sell:{
+						id:"obsidian",
+						Count:3
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:
+					{
+						id:"minecraft:emerald",
+						Count:9,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"totem_of_undying",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Remnant of the Eye\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Keeps you alive when you are on\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"death's door, granting a short\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"period of invincibility.\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Consumed on use.\"}]"
+								]
+							},
+							Name:"Remnant of the Eye"
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:20,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:
+					{
+						id:"minecraft:emerald",
+						Count:23,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"golden_pickaxe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Stonk\"}",
+								Lore:[
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Mining End Stone with this\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"pickaxe will grant experience,\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"won't spawn Endermites, and has\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"5%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop an extra\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"block.\"}]",
+									"[\"\",{\"text\":\" \"}]"
+								]
+							},
+							Enchantments:[
+								{id:"efficiency",lvl:6}
+							],
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:1,Operation:0,UUID:[I;985409519,403253302,575782629,998070088]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;684961272,846201049,604752410,496819681]}
+							],
+							Name:"Stonk",
+							Rarity:3
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:26,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					buyB:
+					{
+						id:"minecraft:emerald",
+						Count:3
+					},
+					sell:{
+						id:"ender_pearl",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Silent Pearl\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Silent Pearl"
+						}
+					}
+				}
+			]
+		}
+	}
+}

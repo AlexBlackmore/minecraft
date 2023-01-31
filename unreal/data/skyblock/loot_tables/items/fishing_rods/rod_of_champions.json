@@ -1,0 +1,37 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:fishing_rod",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Rod of Champions\\\",\\\"italic\\\":false,\\\"color\\\":\\\"aqua\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"RARE\\\",\\\"bold\\\":true,\\\"color\\\":\\\"aqua\\\"}\",
+										\"\\\" \\\"\"
+									]
+								},
+								Enchantments:[
+									{id:\"lure\",lvl:5},
+									{id:\"sharpness\",lvl:36}
+								],
+								AttributeModifiers:[
+									{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:16,Operation:0,UUID:[I;424754574,302547915,909390244,804614228]},
+									{Slot:\"mainhand\",AttributeName:\"generic.luck\",Name:\"generic.luck\",Amount:0.04,Operation:2,UUID:[I;866165611,590799191,737965915,716469070]}
+								],
+								Name:\"Rod of Champions\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

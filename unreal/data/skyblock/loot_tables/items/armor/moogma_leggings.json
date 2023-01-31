@@ -1,0 +1,82 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_leggings",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Moogma Leggings","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+1 Armor Toughness","italic":false,"color":"blue"},{"text":" and","italic":false,"color":"gray"}],
+								["",{"text":"+10% Attack Damage","italic":false,"color":"blue"},{"text":" when fighting","italic":false,"color":"gray"}],
+								["",{"text":"Lava Sea Creatures","italic":false,"color":"red"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"+15% Crit Chance","italic":false,"color":"blue"}
+							],
+							"replace":false
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									color:13511724
+								},
+								HideFlags:64,
+								Name:\"Moogma Leggings\",
+								Rarity:2,
+								CritChance:15,
+								Lore:[\"\",
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Grants \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+1 Armor Toughness\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" and\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"+10% Attack Damage\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" when fighting\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"Lava Sea Creatures\",\"italic\":false,\"color\":\"red\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}'
+								]
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Luck",
+									"attribute":"generic.luck",
+									"operation":"addition",
+									"amount":3,
+									"slot":"legs"
+								},
+								{
+									"name":"Max Health",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":38,
+									"slot":"legs"
+								},
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":32,
+									"slot":"legs"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

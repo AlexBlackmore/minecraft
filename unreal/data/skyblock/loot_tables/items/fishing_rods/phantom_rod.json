@@ -1,0 +1,41 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:fishing_rod",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									Name:\"{\\\"text\\\":\\\"Phantom Rod\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}\",
+									Lore:[
+										\"\\\" \\\"\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Ability: Phantom Impel\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"Terrify hooked enemies by\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"pushing them away and dealing\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"[\\\"\\\",{\\\"text\\\":\\\"massive damage.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
+										\"\\\" \\\"\",
+										\"{\\\"text\\\":\\\"LEGENDARY\\\",\\\"bold\\\":true,\\\"color\\\":\\\"gold\\\"}\",
+										\"\\\" \\\"\"
+									]
+								},
+								Enchantments:[
+									{id:\"lure\",lvl:5},
+									{id:\"sharpness\",lvl:80}
+								],
+								AttributeModifiers:[
+									{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:25,Operation:0,UUID:[I;424754574,302547915,909390244,804614228]}
+								],
+								Name:\"Phantom Rod\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

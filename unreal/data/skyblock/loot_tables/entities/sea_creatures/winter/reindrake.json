@@ -1,0 +1,38 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/enchanted_books/prosperity"
+				}
+			],
+			"conditions":[
+				{
+				  "condition": "minecraft:killed_by_player"
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/gifts/white",
+					"weight":65
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/gifts/green",
+					"weight":25
+				},
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/gifts/red",
+					"weight":10
+				}
+			]
+		}
+	]
+}

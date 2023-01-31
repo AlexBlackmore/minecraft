@@ -1,0 +1,71 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Walter\"}",
+		Tags:["walter"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"toolsmith",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:33
+					},
+					sell:{
+						id:"tnt",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Superboom TNT\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Sneak to summon a block of lit\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"TNT. The magical energy stored\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"in this block is finite and will\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"eventually run out!\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Cooldown: \"},{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"2s\"}]"
+								]
+							},
+							Enchantments:[
+								{id:"unbreaking",lvl:1}
+							],
+							HideFlags:1,
+							Name:"Superboom TNT",
+							Ability:true
+						}
+					}
+				}
+			]
+		}
+	}
+}

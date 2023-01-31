@@ -1,0 +1,153 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager"
+		CustomName:"Master Tactician Funk"
+		CustomNameVisible:true
+		PersistenceRequired:true
+		Silent:true
+		CanPickUpLoot:false
+		Willing:false
+		NoAI:false
+		VillagerData:
+		{
+			level:5
+			profession:"weaponsmith"
+			type:"savanna"
+		}
+		Attributes:[
+			{
+				Name:"generic.movement_speed"
+				Base:0
+			}
+		]
+		Offers:
+		{
+			Recipes: [
+				{
+					buy:{
+						id:"minecraft:emerald"
+						Count:10
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
+								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
+							}
+							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
+							HideFlags:1
+							Name:"Enchanted Emerald"
+						}
+					}
+					buyB:
+					{
+						id:"minecraft:emerald"
+						Count:60
+					}
+					sell:
+					{
+						id:"wooden_sword"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"text\":\"Tactician's Sword\"\"italic\":false\"color\":\"aqua\"}"
+								Lore:[
+									"{\"text\":\" \"}"
+									"[\"\"{\"text\":\"Gains \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+6 Sharpness\"\"italic\":false\"color\":\"dark_green\"}{\"text\":\" for every\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"Level VII\"\"italic\":false\"color\":\"yellow\"}{\"text\":\" advancement you have\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"completed in your Combat\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"Collection.\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"(Max Sharpness: 80)\"\"italic\":false\"color\":\"dark_gray\"}]"
+									"{\"text\":\" \"}"
+									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
+									"{\"text\":\" \"}"
+									"{\"text\":\"+20% Crit Chance\"\"italic\":false\"color\":\"blue\"}"
+								]
+							}
+							Enchantments:[
+								{id:"sharpness"lvl:20}
+							]
+							AttributeModifiers:[
+								{Slot:"mainhand"AttributeName:"generic.attack_damage"Name:"generic.attack_damage"Amount:0Operation:0UUID:[I;363569131112571119505057650284685323]}
+							]
+							Name:"Tactician's Sword"
+							Crit_Chance:20
+						}
+					}
+					rewardExp:false
+					maxUses:640
+				}
+				{
+					buyB:{
+						id:"knowledge_book"
+						Count:1
+						tag:{
+							display:{
+								Name:"{\"italic\":false\"color\":\"gray\"\"text\":\"Hotbar:\"}"
+								Lore:[
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"0: \"}{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x7\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"1: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x10\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"2: \"}{\"italic\":false\"color\":\"white\"\"text\":\"Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x32\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"3: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Oak Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"4: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Oak Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"5: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Oak Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"6: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Oak Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"7: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Oak Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"8: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Spruce Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"{\"italic\":false\"color\":\"gray\"\"text\":\"Inventory:\"}"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"0: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Spruce Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"1: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Spruce Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"2: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Spruce Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"3: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Spruce Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"4: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Birch Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"5: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Birch Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"6: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Birch Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"7: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Birch Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"8: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Birch Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"9: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Dark Oak Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"10: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Dark Oak Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"11: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Dark Oak Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"12: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Dark Oak Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"13: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Dark Oak Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"14: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Acacia Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"15: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Acacia Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"16: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Acacia Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"17: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Acacia Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"18: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Acacia Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"19: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Jungle Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"20: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Jungle Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"21: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Jungle Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"22: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Jungle Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"23: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Jungle Log\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x64\"}]"
+								]
+							}
+						}
+					}
+					sell:
+					{
+						id:"player_head"
+						Count:1
+						tag:{
+							SkullOwner: {Id:[I;-7766815381016673741-1634130874-1691813937]Properties: {textures: [{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2FkNTdkMWY2MDQ3OGFmNmFlMWI2YjFjMjhjZWU1MzRkNWRiYjhjOGNhYjg3OTYzZTljMmVmMGM2YWM1OCJ9fX0="}]}}
+							display:{
+								Name:"{\"text\":\"Wood Singularity\"\"italic\":false\"color\":\"gold\"}"
+								Lore:[
+									"[\"\"{\"text\":\"Combine this seriously large\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"pile of wood with any Wooden\"\"italic\":false\"color\":\"gray\"}]"
+									"[\"\"{\"text\":\"Sword to add \"\"italic\":false\"color\":\"gray\"}{\"text\":\"+20 Attack Damage\"\"italic\":false\"color\":\"blue\"}]"
+									"[\"\"{\"text\":\"to it!\"\"italic\":false\"color\":\"gray\"}]"
+									"{\"text\":\" \"}"
+									"{\"text\":\"LEGENDARY\"\"bold\":true\"color\":\"gold\"}"
+									"{\"text\":\" \"}"
+								]
+							}
+						}
+					}
+					rewardExp:false
+					maxUses:0
+				}
+			]
+		}
+	}
+	display:{
+		Name:"{\"text\":\"Master Tactician Funk\"}"
+	}
+}

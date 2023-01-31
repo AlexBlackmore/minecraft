@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:diamond",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Refined Diamond","italic":false,"color":"light_puple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Looking at it for too long may","italic":false,"color":"gray"}],
+								["",{"text":"cause eye trauma.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Refined Diamond\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

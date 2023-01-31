@@ -1,0 +1,26 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":999
+				}
+				{
+					"type":"loot_table",
+					"name":"skyblock:items/spawn_eggs/sea_creatures/crimson_isle/plhlegblast",
+					"weight":1,
+					"conditions":[
+						{
+							"condition":"location_check",
+							"predicate":{
+								"dimension":"skyblock:crimson_isle"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

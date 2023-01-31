@@ -4,8 +4,8 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:amethyst",
+					"type":"minecraft:item",
+					"name":"minecraft:amethyst_shard",
 					"functions":[
 						{
 							"function":"set_count",
@@ -39,47 +39,30 @@
 			"bonus_rolls":0,
 			"entries":[
 				{
-					"type":"empty",
-					"weight":988
+					"type":"minecraft:empty",
+					"quality":-4,
+					"weight":993
 				},
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/eternal_flame_ring",
-					"quality":1,
+					"quality":2,
 					"weight":5
 				},
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/magma_core",
-					"quality":1,
+					"quality":2,
 					"weight":2
 				}
 			]
 		},
 		{
-			"rolls":1,
+			"rolls":10,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:emerald"
-				}
-			],
-			"functions":[
-				{
-					"function":"set_count",
-					"count":1
-				},
-				{
-					"function":"set_count",
-					"count":1,
-					"add":true,
-					"conditions":[
-						{
-							"condition":"minecraft:random_chance_with_looting",
-							"chance":0.6667,
-							"looting_multiplier":0.01
-						}
-					]
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins"
 				}
 			]
 		}

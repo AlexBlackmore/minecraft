@@ -1,0 +1,148 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Iron Forager\"}",
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"toolsmith",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:10
+					},
+					sell:{
+						id:"iron_pickaxe",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Smelting Touch\"}]"
+								]
+							},
+							AttributeModifiers:[
+							  {Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:3,Operation:0,UUID:[I;933773407,324528439,830661938,401291934]},
+							  {Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.8,Operation:0,UUID:[I;834099701,602951814,935931630,267016683]}
+							],
+							Name:"Iron Pickaxe",
+							Rarity:0,
+							Smelting_Touch:true
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:17
+					},
+					sell:{
+						id:"iron_ingot",
+						Count:20
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:9
+					},
+					sell:{
+						id:"chainmail_helmet",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Chainmail Helmet\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"head",AttributeName:"generic.armor",Name:"Armor",Amount:2.4,Operation:0,UUID:[I;152320651,595767322,449176475,625640546]}
+							],
+							Name:"Chainmail Helmet",
+							Rarity:1
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:17
+					},
+					sell:{
+						id:"chainmail_chestplate",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Chainmail Chestplate\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"chest",AttributeName:"generic.armor",Name:"Armor",Amount:6,Operation:0,UUID:[I;160068627,212924053,704488500,873731856]}
+							],
+							Name:"Chainmail Chestplate",
+							Rarity:1
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:13
+					},
+					sell:{
+						id:"chainmail_leggings",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Chainmail Leggings\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"legs",AttributeName:"generic.armor",Name:"Armor",Amount:4,Operation:0,UUID:[I;784918952,96631970,897220843,359792637]}
+							],
+							Name:"Chainmail Leggings",
+							Rarity:1
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:9
+					},
+					sell:{
+						id:"chainmail_boots",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Chainmail Boots\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"feet",AttributeName:"generic.armor",Name:"Armor",Amount:1.4,Operation:0,UUID:[I;998405001,804390455,722567098,179914747]}
+							],
+							Name:"Chainmail Boots",
+							Rarity:1
+						}
+					}
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"parent":"skyblock:commands/npcs",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Enchanted Netherite Pickaxe",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"bubu\"]}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{Slot:0b,tag:{Name:\"Enchanted Emerald Rare\"},Count:40b},
+									{Slot:1b,tag:{Name:\"Enchanted Emerald\"},Count:44b},
+									{Slot:2b,id:\"minecraft:emerald\",Count:11b},
+									{Slot:3b,id:\"minecraft:netherite_ingot\",Count:64b},
+									{Slot:4b,id:\"minecraft:netherite_ingot\",Count:36b},
+									{Slot:5b,tag:{Name:\"Bejeweled Handle\"},Count:1b}
+								]
+							}"
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/bubu/enchanted_netherite_pickaxe"
+	}
+}

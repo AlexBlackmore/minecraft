@@ -1,0 +1,49 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Lava Blaze","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"A Lava Blaze has surfaced from the depths!","italic":false,"color":"white"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:blaze\",
+									CustomNameVisible:true,
+									Tags:[\"lava_sea_creature\",\"sea_creature\",\"lava_blaze\",\"10xp\"],
+									Health:100,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:100}
+									],
+									Fire:32767,
+									DeathLootTable:\"skyblock:entities/sea_creatures/crystal_hollows/lava_blaze\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

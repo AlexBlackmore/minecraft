@@ -1,0 +1,78 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Bea\"}",
+		Tags:["bea"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		Tags:[
+			"bea"
+		],
+		VillagerData:{
+			level:5,
+			profession:"farmer",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:knowledge_book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.0: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x13\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.1: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x2\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.2: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Block of Coal\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x2\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.3: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Block of Gold\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x2\"}]"
+								]
+							}
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1195736313,-1241823695,-2127870873,-2104960946],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U5NDE5ODdlODI1YTI0ZWE3YmFhZmFiOTgxOTM0NGI2YzI0N2M3NWM1NGE2OTE5ODdjZDI5NmJjMTYzYzI2MyJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Bee\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Pet\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"Ability: Hive\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Gain \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+3 Intelligence\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" and\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+0.6 Attack Damage\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" for each\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"nearby bee.\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"(Max Bees: 15)\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Summoned:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Attack Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Intelligence\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" per \"},{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"2 levels\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1% Speed\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" per \"},{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"10 levels\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1 Attack Damage\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" per \"},{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"20 levels\"}]"
+								]
+							},
+							Name:"Bee",
+							Rarity:0,
+							Ability:true,
+							Pet:true
+						}
+					}
+				}
+			]
+		}
+	}
+}

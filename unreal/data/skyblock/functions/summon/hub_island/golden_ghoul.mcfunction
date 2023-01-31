@@ -2,11 +2,9 @@ summon zombie ~ ~ ~ {
 	CustomName:"{\"text\":\"Golden Ghoul\",\"color\":\"gold\"}",
 	CustomNameVisible:true,
 	Tags:["golden_ghoul","30xp"],
-	AbsorptionAmount:7976,
-	Health:1024,
+	Health:60,
 	Attributes:[
-		{Name:"generic.max_health",Base:1024},
-		{Name:"generic.attack_damage",Base:160}
+		{Name:"generic.max_health",Base:60}
 	],
 	HandItems:[
 		{

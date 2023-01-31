@@ -1,0 +1,82 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:leather_boots",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Slug Boots","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Bouncy ","italic":false,"color":"gold"},{"text":"SNEAK","italic":true,"bold":true,"color":"yellow"}],
+								["",{"text":"Grants a brief period of","italic":false,"color":"gray"}],
+								["",{"text":"Slow Falling","italic":false,"color":"#FFEFD1"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								display:{
+									color:2580756
+								},
+								HideFlags:64,
+								Name:\"Slug Boots\",
+								Rarity:2,
+								Ability:true,
+								Lore:[\"\",
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Ability: Bouncy \",\"italic\":false,\"color\":\"gold\"},{\"text\":\"SNEAK\",\"italic\":true,\"bold\":true,\"color\":\"yellow\"}]',
+									'[\"\",{\"text\":\"Grants a brief period of\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"Slow Falling\",\"italic\":false,\"color\":\"#FFEFD1\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}'
+								]
+							}"
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":4,
+									"slot":"feet"
+								},
+								{
+									"name":"Luck",
+									"attribute":"generic.luck",
+									"operation":"addition",
+									"amount":3,
+									"slot":"feet"
+								},
+								{
+									"name":"Max Health",
+									"attribute":"generic.max_health",
+									"operation":"addition",
+									"amount":22,
+									"slot":"feet"
+								},
+								{
+									"name":"Armor",
+									"attribute":"generic.armor",
+									"operation":"addition",
+									"amount":22,
+									"slot":"feet"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

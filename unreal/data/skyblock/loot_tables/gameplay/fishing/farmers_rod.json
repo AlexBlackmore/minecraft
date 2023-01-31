@@ -5,23 +5,133 @@
 			"entries":[
 				{
 					"type":"item",
-					"name":"minecraft:chicken_spawn_egg"
+					"name":"minecraft:drowned_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Chicken","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:chicken\",
+									CustomNameVisible:true
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
 				},
 				{
 					"type":"item",
-					"name":"minecraft:cow_spawn_egg"
+					"name":"minecraft:drowned_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Cow","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:cow\",
+									CustomNameVisible:true
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
 				},
 				{
 					"type":"item",
-					"name":"minecraft:pig_spawn_egg"
+					"name":"minecraft:drowned_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Pig","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:pig\",
+									CustomNameVisible:true
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
 				},
 				{
 					"type":"item",
-					"name":"minecraft:rabbit_spawn_egg"
+					"name":"minecraft:drowned_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Rabbit","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:rabbit\",
+									CustomNameVisible:true
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
 				},
 				{
 					"type":"item",
-					"name":"minecraft:sheep_spawn_egg"
+					"name":"minecraft:drowned_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Sheep","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:sheep\",
+									CustomNameVisible:true
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
 				}
 			]
 		}

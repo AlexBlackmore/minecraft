@@ -1,0 +1,80 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"item",
+					"name":"minecraft:fishing_rod",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Magma Rod","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Fishing Speed","italic":false,"color":"gold"}],
+								["",{"text":"Grants a ","italic":false,"color":"gray"},{"text":"40%","italic":false,"color":"green"},{"text":" chance to catch","italic":false,"color":"gray"}],
+								["",{"text":"extra fish.","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Increases the chance to catch","italic":false,"color":"gray"}],
+								["",{"text":"Trophy Fish","italic":false,"color":"gold"},{"text":" by ","italic":false,"color":"gray"},{"text":"+10%","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Lava Rod","italic":false,"color":"dark_gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Magma Rod\",
+								Rarity:2,
+								LavaRod:true,
+								Lore:[\"\",
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Ability: Fishing Speed\",\"italic\":false,\"color\":\"gold\"}]',
+									'[\"\",{\"text\":\"Grants an \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"40%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"extra fish.\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Increases the chance to catch\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"Trophy Fish\",\"italic\":false,\"color\":\"gold\"},{\"text\":\" by \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+10%\",\"italic\":false,\"color\":\"green\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Lava Rod\",\"italic\":false,\"color\":\"dark_gray\"}]',
+									'{\"text\":\" \"}'
+								]
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"sharpness":60
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":30,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Luck",
+									"attribute":"generic.luck",
+									"operation":"addition",
+									"amount":6,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

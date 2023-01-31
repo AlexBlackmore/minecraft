@@ -1,0 +1,55 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Plumber Joe\"}",
+		CustomNameVisible:true,
+		Tags:["plumber_joe"],
+		PersistenceRequired:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"toolsmith",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:8
+					},
+					sell:{
+						id:"sponge",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Plumber's Sponge\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Instructions:\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"1. \",\"italic\":false,\"color\":\"yellow\"},{\"text\":\"Sneak while holding.\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"2. \",\"italic\":false,\"color\":\"yellow\"},{\"text\":\"Drains all water within 7 blocks.\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"3. \",\"italic\":false,\"color\":\"yellow\"},{\"text\":\"Double-bill client.\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"text\":\"Thanks Plumber Joe!\",\"italic\":false,\"color\":\"dark_gray\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"text\":\"New! \",\"italic\":false,\"bold\":true,\"color\":\"light_purple\"},{\"text\":\"Also works with Lava!\",\"italic\":false,\"color\":\"yellow\"}]"
+								]
+							},
+							Name:"Plumber's Sponge",
+							Ability:true
+						}
+					}
+				}
+			]
+		}
+	}
+}

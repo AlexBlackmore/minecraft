@@ -1,7 +1,3 @@
-bossbar add mob "Mob"
-bossbar set minecraft:mob players @a
-
-
 scoreboard objectives add dummy dummy "Dummy"
 scoreboard objectives add time dummy "Time"
 scoreboard objectives add hour dummy "Hour"

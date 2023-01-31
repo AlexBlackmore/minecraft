@@ -1,0 +1,235 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Lumber Merchant\"}",
+		Tags:["lumber_merchant"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"toolsmith",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:5
+					},
+					sell:{
+						id:"oak_log",
+						Count:5
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:5
+					},
+					sell:{
+						id:"birch_log",
+						Count:5
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:5
+					},
+					sell:{
+						id:"spruce_log",
+						Count:5
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:5
+					},
+					sell:{
+						id:"dark_oak_log",
+						Count:5
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:5
+					},
+					sell:{
+						id:"acacia_log",
+						Count:5
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:5
+					},
+					sell:{
+						id:"jungle_log",
+						Count:5
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:2
+					},
+					sell:{
+						id:"stone_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Rookie Axe\"}"
+							},
+							Enchantments:[
+								{id:"efficiency",lvl:1}
+							],
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.2,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							CanDestroy:[
+								"minecraft:pumpkin",
+								"minecraft:melon"
+							],
+							HideFlags:8,
+							Name:"Rookie Axe",
+							Rarity:0
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:6
+					},
+					sell:{
+						id:"iron_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Promising Axe\"}",
+								Lore:[
+									"{\"text\":\" \"}",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Breaking blocks has a chance to\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"increase the Efficiency level on\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"this axe.\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"(Max: Efficiency II)\"}]",
+									"{\"text\":\" \"}"
+								]
+							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.1,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							CanDestroy:[
+								"minecraft:pumpkin",
+								"minecraft:melon"
+							],
+							HideFlags:8,
+							Name:"Promising Axe",
+							Rarity:1,
+							Promising:0
+						}
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:4
+					},
+					sell:{
+						id:"podzol",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:17
+					},
+					sell:{
+						id:"iron_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sweet Axe\"}",
+								Lore:[
+									"{\"text\":\" \"}",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Chopping Oak Logs with this axe\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"has a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"20%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop an\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"apple.\"}]",
+									"{\"text\":\" \"}"
+								]
+							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.1,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							CanDestroy:[
+								"minecraft:pumpkin",
+								"minecraft:melon"
+							],
+							HideFlags:8,
+							Name:"Sweet Axe",
+							Rarity:1
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:17
+					},
+					sell:{
+						id:"iron_axe",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Efficient Axe\"}",
+								Lore:[
+									"{\"text\":\" \"}",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Logs chopped with this axe drop\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"5\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" planks instead of logs.\"}]",
+									"{\"text\":\" \"}"
+								]
+							},
+							AttributeModifiers:[
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.1,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							CanDestroy:[
+								"minecraft:pumpkin",
+								"minecraft:melon"
+							],
+							HideFlags:8,
+							Name:"Efficient Axe",
+							Rarity:1
+						}
+					}
+				}
+			]
+		}
+	}
+}
