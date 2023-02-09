@@ -4,24 +4,14 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:rotten_flesh"
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/revenant_flesh"
 				}
 			],
 			"functions":[
 				{
-					"function":"looting_enchant",
-					"count":{
-						"min":0,
-						"max":1
-					}
-				}
-			],
-			"conditions":[
-				{
-					"condition":"minecraft:random_chance_with_looting",
-					"chance":0.5,
-					"looting_multiplier":0.01
+					"function":"minecraft:set_count",
+					"count":5
 				}
 			]
 		},
@@ -35,7 +25,7 @@
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/spawn_eggs/slayer/zombie/tier1",
-					"weight":32
+					"weight":1200
 				}
 			],
 			"conditions":[				
@@ -62,7 +52,7 @@
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/spawn_eggs/slayer/zombie/tier2",
-					"weight":32
+					"weight":1200
 				}
 			],
 			"conditions":[				
@@ -89,12 +79,12 @@
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/spawn_eggs/slayer/zombie/revenant_sycophant",
-					"weight":213 #360
+					"weight":8000 #360
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/spawn_eggs/slayer/zombie/tier3",
-					"weight":32
+					"weight":1200
 				}
 			],
 			"conditions":[				
@@ -121,17 +111,17 @@
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/spawn_eggs/slayer/zombie/revenant_champion",
-					"weight":256 #600
+					"weight":9600 #600
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/spawn_eggs/slayer/zombie/deformed_revenant",
-					"weight":128 #1200
+					"weight":4800 #1200
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/spawn_eggs/slayer/zombie/tier4",
-					"weight":32
+					"weight":1200
 				}
 			],
 			"conditions":[				
@@ -158,17 +148,17 @@
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/spawn_eggs/slayer/zombie/atoned_champion",
-					"weight":213 #900
+					"weight":8000 #900
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/spawn_eggs/slayer/zombie/atoned_revenant",
-					"weight":120 #1600
+					"weight":4500 #1600
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/spawn_eggs/slayer/zombie/tier5",
-					"weight":32
+					"weight":1200
 				}
 			],
 			"conditions":[				
@@ -179,39 +169,6 @@
 						"player":{
 							"advancements":{
 								"skyblock:quests/slayer/zombie/tier5":true
-							}
-						}
-					}
-				}
-			]
-		},
-		{
-			"rolls":13,
-			"entries":[
-				{
-					"type":"loot_table",
-					"name":"skyblock:gameplay/coins"
-				}
-			]
-		},
-		{
-			"rolls":30,
-			"entries":[
-				{
-					"type":"loot_table",
-					"name":"skyblock:gameplay/scavenger_enchantment"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"killer_player",
-					"predicate":{
-						"player":{
-							"equipment":{
-								"mainhand":{
-									"nbt":"{CustomEnchantments:[{id:\"minecraft:scavenger\"}]}"
-								}
 							}
 						}
 					}

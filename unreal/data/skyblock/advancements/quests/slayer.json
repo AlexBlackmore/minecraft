@@ -1,0 +1,27 @@
+{
+	"parent":"skyblock:quests/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:player_head"
+		},
+		"title":"Slayer",
+		"description":"§7Talk to §5Maddox the Slayer §7about Slayer quests.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"maddox\"]}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/maddox/first"
+	}
+}
