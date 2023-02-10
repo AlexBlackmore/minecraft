@@ -21,10 +21,21 @@
 									Tags:[\"sven_packmaster\",\"tier2\"],
 									Health:100,
 									Attributes:[
-										{Name:\"generic.max_health\",Base:100},
-										{Name:\"generic.attack_damage\",Base:16}
+										{Name:\"generic.max_health\",Base:100}
 									],
-									DeathLootTable:\"skyblock:entities/slayer/sven_packmaster/tier2\"
+									ActiveEffects:[
+										{
+											Id:1,
+											Amplifier:1,
+											Duration:2147483646
+										},
+										{
+											Id:5,
+											Amplifier:1,
+											Duration:2147483646
+										}
+									],
+									DeathLootTable:\"skyblock:entities/slayer/wolf/tier2\"
 								}
 							}"
 						},

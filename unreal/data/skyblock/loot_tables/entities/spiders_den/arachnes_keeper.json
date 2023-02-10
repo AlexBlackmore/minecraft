@@ -4,50 +4,139 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/arachnes_keeper_fragment"
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"item",
-					"name":"minecraft:string"
-				}
-			],
-			"functions":[
-				{
-					"function":"looting_enchant",
-					"count":{
-						"min":0,
-						"max":1
-					}
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:spider_eye"
 				}
 			],
 			"functions":[
 				{
-					"function":"looting_enchant",
+					"function":"minecraft:set_count",
+					"count":4
+				},
+				{
+					"function":"minecraft:set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.75,
+							"looting_multiplier":0.01
+						}
+					]
+				},
+				{
+					"function":"minecraft:set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.75,
+							"looting_multiplier":0.01
+						}
+					]
+				},
+				{
+					"function":"minecraft:set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.50,
+							"looting_multiplier":0.01
+						}
+					]
+				},
+				{
+					"function":"minecraft:set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.50,
+							"looting_multiplier":0.01
+						}
+					]
+				},
+				{
+					"function":"minecraft:looting_enchant",
 					"count":{
 						"min":0,
 						"max":1
 					}
 				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:string"
+				}
+			],
+			"functions":[
+				{
+					"function":"minecraft:set_count",
+					"count":2
+				},
+				{
+					"function":"minecraft:set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.75,
+							"looting_multiplier":0.01
+						}
+					]
+				},
+				{
+					"function":"minecraft:set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.50,
+							"looting_multiplier":0.01
+						}
+					]
+				},
+				{
+					"function":"minecraft:looting_enchant",
+					"count":{
+						"min":0,
+						"max":1
+					}
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/arachnes_calling"
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/equipment/arachnes/gloves"
+				}
 			],
 			"conditions":[
 				{
 					"condition":"minecraft:random_chance_with_looting",
-					"chance":0.5,
+					"chance":0.025,
 					"looting_multiplier":0.01
 				}
 			]
@@ -56,26 +145,47 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:emerald"
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/equipment/arachnes/belt"
 				}
 			],
-			"functions":[
+			"conditions":[
 				{
-					"function":"set_count",
-					"count":1
-				},
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.025,
+					"looting_multiplier":0.01
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
 				{
-					"function":"set_count",
-					"count":1,
-					"add":true,
-					"conditions":[
-						{
-							"condition":"minecraft:random_chance_with_looting",
-							"chance":0.6667,
-							"looting_multiplier":0.01
-						}
-					]
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/equipment/arachnes/necklace"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.025,
+					"looting_multiplier":0.01
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/equipment/arachnes/cloak"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.025,
+					"looting_multiplier":0.01
 				}
 			]
 		}

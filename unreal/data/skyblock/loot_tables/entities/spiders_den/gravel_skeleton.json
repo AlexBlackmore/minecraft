@@ -4,54 +4,53 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"bone"
+					"type":"minecraft:item",
+					"name":"minecraft:bone"
 				}
 			],
 			"functions":[
 				{
-					"function":"set_count",
-					"count":3,
-					"add":true
+					"function":"minecraft:set_count",
+					"count":3
 				},
 				{
-					"function":"set_count",
+					"function":"minecraft:set_count",
 					"count":1,
 					"add":true,
 					"conditions":[
 						{
 							"condition":"minecraft:random_chance_with_looting",
-							"chance":0.5,
+							"chance":0.50,
 							"looting_multiplier":0.01
 						}
 					]
 				},
 				{
-					"function":"set_count",
+					"function":"minecraft:set_count",
 					"count":1,
 					"add":true,
 					"conditions":[
 						{
 							"condition":"minecraft:random_chance_with_looting",
-							"chance":0.5,
+							"chance":0.50,
 							"looting_multiplier":0.01
 						}
 					]
 				},
 				{
-					"function":"set_count",
+					"function":"minecraft:set_count",
 					"count":1,
 					"add":true,
 					"conditions":[
 						{
 							"condition":"minecraft:random_chance_with_looting",
-							"chance":0.5,
+							"chance":0.50,
 							"looting_multiplier":0.01
 						}
 					]
 				},
 				{
-					"function":"looting_enchant",
+					"function":"minecraft:looting_enchant",
 					"count":{
 						"min":0,
 						"max":1
@@ -63,15 +62,8 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:emerald"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"minecraft:random_chance_with_looting",
-					"chance":0.1667,
-					"looting_multiplier":0.01
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins"
 				}
 			]
 		}

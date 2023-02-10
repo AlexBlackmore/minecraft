@@ -1,0 +1,37 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"§l§cRNGesus Drop: §r§dEnchanted Book (Ender Slayer VII)",
+		"description":"[::]",
+		"frame":"challenge",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_killed_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"voidgloom_seraph4\"]}"
+				},
+				"player":[
+					{
+						"condition":"random_chance_with_looting",
+						"chance":0.0001,
+						"looting_multiplier":0.0001
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"loot":[
+			"skyblock:items/enchanted_books/ender_slayer7"
+		],
+		"function":"skyblock:instant_reset"
+	}
+}

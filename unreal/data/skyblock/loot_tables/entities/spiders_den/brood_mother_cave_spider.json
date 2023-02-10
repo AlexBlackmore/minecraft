@@ -4,17 +4,17 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:spider_eye"
 				}
 			],
 			"functions":[
 				{
-					"function":"set_count",
+					"function":"minecraft:set_count",
 					"count":5
 				},
 				{
-					"function":"looting_enchant",
+					"function":"minecraft:looting_enchant",
 					"count":{
 						"min":0,
 						"max":1
@@ -26,13 +26,13 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:string"
 				}
 			],
 			"functions":[
 				{
-					"function":"looting_enchant",
+					"function":"minecraft:looting_enchant",
 					"count":{
 						"min":0,
 						"max":1
@@ -44,15 +44,17 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:emerald"
+					"type":"loot_table",
+					"name":"skyblock:items/spawn_eggs/slayer/spider/summon/6"
 				}
-			],
-			"conditions":[
+			]
+		},
+		{
+			"rolls":4,
+			"entries":[
 				{
-					"condition":"minecraft:random_chance_with_looting",
-					"chance":0.6667,
-					"looting_multiplier":0.01
+					"type":"loot_table",
+					"name":"skyblock:gameplay/coins"
 				}
 			]
 		}

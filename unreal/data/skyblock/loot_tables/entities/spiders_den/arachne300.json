@@ -4,8 +4,8 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/pets/tarantula_pet/epic"
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/pets/tarantula/epic"
 				}
 			],
 			"conditions":[
@@ -20,13 +20,13 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/enchanted/string"
 				}
 			],
 			"functions":[
 				{
-					"function":"set_count",
+					"function":"minecraft:set_count",
 					"count":{
 						"min":0,
 						"max":2
@@ -38,20 +38,20 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:string"
 				}
 			],
 			"functions":[
 				{
-					"function":"set_count",
+					"function":"minecraft:set_count",
 					"count":{
-						"min":0,
-						"max":3
+						"min":10,
+						"max":20
 					}
 				},
 				{
-					"function":"looting_enchant",
+					"function":"minecraft:looting_enchant",
 					"count":{
 						"min":0,
 						"max":1
@@ -63,7 +63,50 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/enchanted/spider_eye"
+				}
+			],
+			"functions":[
+				{
+					"function":"minecraft:set_count",
+					"count":{
+						"min":0,
+						"max":2
+					}
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:spider_eye"
+				}
+			],
+			"functions":[
+				{
+					"function":"minecraft:set_count",
+					"count":{
+						"min":10,
+						"max":20
+					}
+				},
+				{
+					"function":"minecraft:looting_enchant",
+					"count":{
+						"min":0,
+						"max":1
+					}
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/arachne_fragment"
 				}
 			]
@@ -72,13 +115,62 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/power_stones/luxurious_spool"
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/arachnes_fang"
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/armor/arachnes_armor/random"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"minecraft:random_chance_with_looting",
+					"chance":0.10,
+					"looting_multiplier":0.01
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/essence/spider"
+				}
+			],
+			"functions":[
+				{
+					"function":"minecraft:set_count",
+					"count":8
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/soul_string"
 				}
 			],
 			"functions":[
 				{
-					"function":"set_count",
+					"function":"minecraft:set_count",
 					"count":{
 						"min":5,
 						"max":6
@@ -87,41 +179,11 @@
 			]
 		},
 		{
-			"rolls":{
-				"min":1,
-				"max":4
-			},
+			"rolls":20,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/soul_string"
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"item",
-					"name":"minecraft:emerald"
-				}
-			],
-			"functions":[
-				{
-					"function":"set_count",
-					"count":2
-				},
-				{
-					"function":"set_count",
-					"count":1,
-					"add":true,
-					"conditions":[
-						{
-							"condition":"minecraft:random_chance_with_looting",
-							"chance":0.5,
-							"looting_multiplier":0.01
-						}
-					]
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins100"
 				}
 			]
 		}

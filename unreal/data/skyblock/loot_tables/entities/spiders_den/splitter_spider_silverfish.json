@@ -4,13 +4,13 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"bone"
+					"type":"minecraft:item",
+					"name":"minecraft:string"
 				}
 			],
 			"functions":[
 				{
-					"function":"looting_enchant",
+					"function":"minecraft:looting_enchant",
 					"count":{
 						"min":0,
 						"max":1
@@ -20,7 +20,7 @@
 			"conditions":[
 				{
 					"condition":"minecraft:random_chance_with_looting",
-					"chance":0.8,
+					"chance":0.80,
 					"looting_multiplier":0.01
 				}
 			]

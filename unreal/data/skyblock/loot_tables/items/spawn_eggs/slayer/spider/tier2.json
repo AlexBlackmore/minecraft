@@ -1,21 +1,59 @@
-summon spider ~ ~ ~ {
-	CustomName:"{\"text\":\"☠ Tarantula Broodfather\"}",
-	CustomNameVisible:true,
-	Tags:["skyblock"],
-	DeathLootTable:"skyblock:entities/spiders_den/spider",
-	Passengers:[
+{
+	"pools":[
 		{
-			id:"minecraft:cave_spider",
-			CustomName:"{\"text\":\"☠ Tarantula Broodfather\"}",
-			CustomNameVisible:true,
-			Tags:["skyblock","tarantula_broodfather"],
-			AbsorptionAmount:4976,
-			Health:1024,
-			Attributes:[
-				{Name:"generic.max_health",Base:1024},
-				{Name:"generic.attack_damage",Base:22}
-			],
-			DeathLootTable:"skyblock:entities/slayer/tarantula_broodfather/tier2"
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"☠ Tarantual Broodfather","italic":false,"color":"red"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:spider\",
+									CustomNameVisible:true,
+									Tags:[\"tarantula_broodfather2\"],
+									Health:90,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:90}
+									],
+									ActiveEffects:[
+										{
+											Id:1,
+											Amplifier:1,
+											Duration:2147483646
+										},
+										{
+											Id:5,
+											Amplifier:1,
+											Duration:2147483646
+										}
+									],
+									Passengers:[
+										{
+											id:\"minecraft:cave_spider\"
+										}
+									],
+									DeathLootTable:\"skyblock:entities/slayer/spider/tier2\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
 		}
 	]
 }
+
