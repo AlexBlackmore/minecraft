@@ -1,31 +1,12 @@
 {
 	"pools":[
 		{
-		  "rolls":1,
-		  "entries":[
+			"rolls":1,
+			"entries":[
 				{
-					"type":"item",
-					"name":"book",
-					"quality":1,
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
 					"functions":[
-						{
-							"function":"enchant_randomly",
-							"enchantments":[
-								"blast_protection",
-								"delpth_strider",
-								"feather_falling",
-								"fire_protection",
-								"projectile_protection",
-								"protection",
-								"unbreaking",
-								"binding_curse",
-								"vanishing_curse",
-								"frost_walker",
-								"mending",
-								"soul_speed",
-								"thorns"
-							]
-						},
 						{
 							"function":"minecraft:set_name",
 							"name":{"text":"Couture Rune","italic":false,"color":"gold"}
@@ -33,10 +14,20 @@
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":" "}],
 								["",{"text":"Obtained very rarely from","italic":false,"color":"gray"}],
-								["",{"text":"slaying the Sven Packmaster.","italic":false,"color":"gray"}]
+								["",{"text":"slaying Sven Packmaster.","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Apply this rune to a pair of","italic":false,"color":"gray"}],
+								["",{"text":"boots at the Runic Pedestal!","italic":false,"color":"gray"}]
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-1223675703,-258716709,-2145455843,177819499],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzM0ZmIzMjAzMjMzZWZiYWU4MjYyOGJkNGZjYTczNDhjZDA3MWU1YjdiNTI0MDdmMWQxZDI3OTRlMzE3OTlmZiJ9fX0=\"}]}},
+								Name:\"Boot Rune\",
+								Rune:\"Couture\"
+							}"
 						}
 					]
 				}
@@ -44,3 +35,4 @@
 		}
 	]
 }
+

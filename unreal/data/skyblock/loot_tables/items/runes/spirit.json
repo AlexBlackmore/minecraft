@@ -1,32 +1,12 @@
 {
 	"pools":[
 		{
-		  "rolls":1,
-		  "entries":[
+			"rolls":1,
+			"entries":[
 				{
-					"type":"item",
-					"name":"book",
-					"quality":1,
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
 					"functions":[
-						{
-							"function":"enchant_randomly",
-							"enchantments":[
-								"unbreaking",
-								"bane_of_arthropods",
-								"fire_aspect",
-								"knockback",
-								"looting",
-								"sharpness",
-								"smite",
-								"sweeping_edge",
-								"vanishing_curse",
-								"mending",
-								"channeling",
-								"impaling",
-								"loyalty",
-								"riptide"
-							]
-						},
 						{
 							"function":"minecraft:set_name",
 							"name":{"text":"Spirit Rune","italic":false,"color":"aqua"}
@@ -34,10 +14,20 @@
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":" "}],
-								["",{"text":"Obtained rarely from slaying the","italic":false,"color":"gray"}],
-								["",{"text":"Sven Packmaster.","italic":false,"color":"gray"}]
+								["",{"text":"Obtained rarely from slaying","italic":false,"color":"gray"}],
+								["",{"text":"Sven Packmaster.","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Apply this rune to a weapon at","italic":false,"color":"gray"}],
+								["",{"text":"the Runic Pedestal!","italic":false,"color":"gray"}]
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-1074572641,912147348,-1989132638,1011269457],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzczOGI4YWY4ZDdjZTFhMjZkYzZkNDAxODBiMzU4OTQwM2UxMWVmMzZhNjZkN2M0NTkwMDM3NzMyODI5NTQyZSJ9fX0=\"}]}},
+								Name:\"Weapon Rune\",
+								Rune:\"Spirit\"
+							}"
 						}
 					]
 				}
@@ -45,3 +35,4 @@
 		}
 	]
 }
+

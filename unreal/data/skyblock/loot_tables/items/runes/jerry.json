@@ -1,32 +1,12 @@
 {
 	"pools":[
 		{
-		  "rolls":1,
-		  "entries":[
+			"rolls":1,
+			"entries":[
 				{
-					"type":"item",
-					"name":"book",
-					"quality":1,
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
 					"functions":[
-						{
-							"function":"enchant_randomly",
-							"enchantments":[
-								"unbreaking",
-								"bane_of_arthropods",
-								"fire_aspect",
-								"knockback",
-								"looting",
-								"sharpness",
-								"smite",
-								"sweeping_edge",
-								"vanishing_curse",
-								"mending",
-								"channeling",
-								"impaling",
-								"loyalty",
-								"riptide"
-							]
-						},
 						{
 							"function":"minecraft:set_name",
 							"name":{"text":"Jerry Rune","italic":false,"color":"white"}
@@ -34,9 +14,18 @@
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":" "}],
-								["",{"text":"It's Jerrys all the way down.","italic":false,"color":"gray"}]
+								["",{"text":"It's Jerrys all the way down.","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Apply this rune to a weapon","italic":false,"color":"gray"}],
+								["",{"text":"at the Runic Pedestal!","italic":false,"color":"gray"}]
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Weapon Rune\",
+								Rune:\"Jerry\"
+							}"
 						}
 					]
 				}
@@ -44,3 +33,4 @@
 		}
 	]
 }
+

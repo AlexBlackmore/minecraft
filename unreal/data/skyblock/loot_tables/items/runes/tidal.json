@@ -1,31 +1,12 @@
 {
 	"pools":[
 		{
-		  "rolls":1,
-		  "entries":[
+			"rolls":1,
+			"entries":[
 				{
-					"type":"item",
-					"name":"book",
-					"quality":1,
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
 					"functions":[
-						{
-							"function":"enchant_randomly",
-							"enchantments":[
-								"blast_protection",
-								"delpth_strider",
-								"feather_falling",
-								"fire_protection",
-								"projectile_protection",
-								"protection",
-								"unbreaking",
-								"binding_curse",
-								"vanishing_curse",
-								"frost_walker",
-								"mending",
-								"soul_speed",
-								"thorns"
-							]
-						},
 						{
 							"function":"minecraft:set_name",
 							"name":{"text":"Tidal Rune","italic":false,"color":"gold"}
@@ -33,10 +14,19 @@
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":" "}],
-								["",{"text":"Obtained from the Phantom Fisher","italic":false,"color":"gray"}],
-								["",{"text":"during the Spooky Festival.","italic":false,"color":"gray"}]
+								["",{"text":"Obtained from Phantom Fisher","italic":false,"color":"gray"}],
+								["",{"text":"during Spooky Festival.","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Apply this rune to a pair of","italic":false,"color":"gray"}],
+								["",{"text":"boots at the Runic Pedestal!","italic":false,"color":"gray"}]
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Boot Rune\",
+								Rune:\"Tidal\"
+							}"
 						}
 					]
 				}
@@ -44,3 +34,4 @@
 		}
 	]
 }
+

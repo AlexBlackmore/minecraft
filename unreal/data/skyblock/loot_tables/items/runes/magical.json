@@ -1,28 +1,12 @@
 {
 	"pools":[
 		{
-		  "rolls":1,
-		  "entries":[
+			"rolls":1,
+			"entries":[
 				{
-					"type":"item",
-					"name":"book",
-					"quality":1,
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
 					"functions":[
-						{
-							"function":"enchant_randomly",
-							"enchantments":[
-								"flame",
-								"infinity",
-								"power",
-								"punch",
-								"unbreaking",
-								"vanishing_curse",
-								"mending",
-								"multishot",
-								"piercing",
-								"quick_charge"
-							]
-						},
 						{
 							"function":"minecraft:set_name",
 							"name":{"text":"Magical Rune","italic":false,"color":"aqua"}
@@ -30,9 +14,20 @@
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":" "}],
-								["",{"text":"Your arrows have a magical shine!","italic":false,"color":"gray"}]
+								["",{"text":"Your arrows have a magical","italic":false,"color":"gray"}],
+								["",{"text":"shine!","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Apply this rune to a bow at the","italic":false,"color":"gray"}],
+								["",{"text":"Runic Pedestal!","italic":false,"color":"gray"}]
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-1686951137,1917471755,-2068951118,214111927],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjQ0ODBlMzllYTYzZTM0N2QyNjhkZTgzMDkwZDA5OTg0YmYzNDM5NDExODg0ODM0OGJmNGViNTc0OTBjZTlkMiJ9fX0=\"}]}},
+								Name:\"Bow Rune\",
+								Rune:\"Magical\"
+							}"
 						}
 					]
 				}
@@ -40,3 +35,4 @@
 		}
 	]
 }
+

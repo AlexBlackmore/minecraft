@@ -1,21 +1,12 @@
 {
 	"pools":[
 		{
-		  "rolls":1,
-		  "entries":[
+			"rolls":1,
+			"entries":[
 				{
-					"type":"item",
-					"name":"book",
-					"quality":1,
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
 					"functions":[
-						{
-							"function":"enchant_randomly",
-							"enchantments":[
-								"infinity",
-								"unbreaking",
-								"mending"
-							]
-						},
 						{
 							"function":"minecraft:set_name",
 							"name":{"text":"Bite Rune","italic":false,"color":"light_purple"}
@@ -23,10 +14,20 @@
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":" "}],
 								["",{"text":"Obtained rarely from slaying the","italic":false,"color":"gray"}],
-								["",{"text":"Tarantula Broodfather.","italic":false,"color":"gray"}]
+								["",{"text":"Tarantula Broodfather.","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Apply this rune to a bow at the","italic":false,"color":"gray"}],
+								["",{"text":"Runic Pedestal!","italic":false,"color":"gray"}]
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-2085345844,-1346944925,-1676625783,-1200050700],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNhMWFkNGZjYzQyZmI2M2M2ODEzMjhlNDJkNjNjODNjYTE5M2IzMzNhZjJhNDI2NzI4YTI1YThjYzYwMDY5MiJ9fX0=\"}]}},
+								Name:\"Bow Rune\",
+								Rune:\"Bite\"
+							}"
 						}
 					]
 				}
@@ -34,3 +35,4 @@
 		}
 	]
 }
+

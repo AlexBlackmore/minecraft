@@ -1,32 +1,12 @@
 {
 	"pools":[
 		{
-		  "rolls":1,
-		  "entries":[
+			"rolls":1,
+			"entries":[
 				{
-					"type":"item",
-					"name":"book",
-					"quality":1,
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
 					"functions":[
-						{
-							"function":"enchant_randomly",
-							"enchantments":[
-								"unbreaking",
-								"bane_of_arthropods",
-								"fire_aspect",
-								"knockback",
-								"looting",
-								"sharpness",
-								"smite",
-								"sweeping_edge",
-								"vanishing_curse",
-								"mending",
-								"channeling",
-								"impaling",
-								"loyalty",
-								"riptide"
-							]
-						},
 						{
 							"function":"minecraft:set_name",
 							"name":{"text":"Music Rune","italic":false,"color":"light_purple"}
@@ -34,10 +14,20 @@
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":" "}],
 								["",{"text":"Put monsters out of their misery","italic":false,"color":"gray"}],
-								["",{"text":"with sweet tunes!","italic":false,"color":"gray"}]
+								["",{"text":"with sweet tunes!","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Apply this rune to a weapon at","italic":false,"color":"gray"}],
+								["",{"text":"the Runic Pedestal!","italic":false,"color":"gray"}]
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;1474123288,725238502,-1407955245,506099311],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2I0ODFjMzFkYzY4M2JkY2I3ZDM3NWE3YzVkYjdhYzdhZGY5ZTlmZThiNmMwNGE2NDkzMTYxM2UyOWZlNDcwZSJ9fX0=\"}]}},
+								Name:\"Weapon Rune\",
+								Rune:\"Music\"
+							}"
 						}
 					]
 				}
@@ -45,3 +35,4 @@
 		}
 	]
 }
+
