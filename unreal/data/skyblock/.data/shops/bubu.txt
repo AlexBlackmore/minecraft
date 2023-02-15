@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Bubu\"}",
+		CustomName:"{\"text\":\"Bubu\",\"color\":\"yellow\"}",
 		Tags:["bubu"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
@@ -59,7 +59,8 @@ give @p villager_spawn_egg{
 							Name:"Fractured Copper Pickaxe",
 							Rarity:1
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -220,16 +221,26 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Biofuel\"}"
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Biofuel\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Drill Fuel\",\"color\":\"blue\",\"italic\":false}]",
+									"{\"text\":\"\"}",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Adds \"},{\"italic\":false,\"color\":\"dark_green\",\"text\":\"+60 Durability\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to a Drill.\"}]",
+									"{\"text\":\"\"}",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Talk to a \"},{\"italic\":false,\"color\":\"dark_green\",\"text\":\"Drill Mechanic\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"refuel your Drills.\"}]",
+									"{\"text\":\"\"}",
+									"[\"\",{\"text\":\"100% renerable energy!\",\"color\":\"gray\"}]"
+								]
 							},
 							Enchantments:[
 								{id:"minecraft:unbreaking",lvl:1s}
 							],
 							HideFlags:1,
-							Name:"Fractured Copper Pickaxe",
-							Rarity:1
+							Name:"Biofuel"
 						}
-					}
+					},
+					maxUses:2147483647
 				}
 			]
 		}

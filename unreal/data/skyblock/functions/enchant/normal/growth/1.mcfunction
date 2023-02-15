@@ -1,45 +1,71 @@
+execute as @s unless data entity @s SelectedItem.tag.Name run function skyblock:set_default_items
+execute as @s unless data entity @s SelectedItem.tag.Reforge run function skyblock:reforging/set_default_attributes
+
 execute if data entity @s SelectedItem.tag.CustomEnchantments[{id:"skyblock:growth"}] run tag @s add fail
 execute if data entity @s SelectedItem.tag.CustomEnchantments[{id:"skyblock:growth"}] run tellraw @s {"text":"This item already has a higher level of that enchantment!","color":"red"}
 tellraw @s[level=0..9] {"text":"You don't have enough Experience Levels to apply that enchantment!","color":"red"}
 tag @s[level=0..9] add fail
 
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:leather_helmet"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:chainmail_helmet"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:golden_helmet"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:iron_helmet"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:diamond_helmet"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:netherite_helmet"}}] add success
 
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:leather_chestplate"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:chainmail_chestplate"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:golden_chestplate"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:iron_chestplate"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:diamond_chestplate"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:netherite_chestplate"}}] add success
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:turtle_helmet"}}] add head
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:player_head",tag:{Unbreakable:1b}}}] add head
 
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:leather_leggings"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:chainmail_leggings"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:golden_leggings"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:iron_leggings"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:diamond_leggings"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:netherite_leggings"}}] add success
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:leather_helmet"}}] add head
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:chainmail_helmet"}}] add head
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:golden_helmet"}}] add head
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:iron_helmet"}}] add head
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:diamond_helmet"}}] add head
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:netherite_helmet"}}] add head
 
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:leather_boots"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:chainmail_boots"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:golden_boots"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:iron_boots"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:diamond_boots"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:netherite_boots"}}] add success
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:leather_chestplate"}}] add chest
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:chainmail_chestplate"}}] add chest
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:golden_chestplate"}}] add chest
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:iron_chestplate"}}] add chest
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:diamond_chestplate"}}] add chest
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:netherite_chestplate"}}] add chest
 
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:turtle_helmet"}}] add success
-tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:player_head",tag:{Helmet:true}}}] add success
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:leather_leggings"}}] add legs
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:chainmail_leggings"}}] add legs
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:golden_leggings"}}] add legs
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:iron_leggings"}}] add legs
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:diamond_leggings"}}] add legs
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:netherite_leggings"}}] add legs
+
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:leather_boots"}}] add feet
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:chainmail_boots"}}] add feet
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:golden_boots"}}] add feet
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:iron_boots"}}] add feet
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:diamond_boots"}}] add feet
+tag @s[tag=!fail,nbt={SelectedItem:{id:"minecraft:netherite_boots"}}] add feet
+
+tag @s[tag=!fail,tag=head] add success
+tag @s[tag=!fail,tag=chest] add success
+tag @s[tag=!fail,tag=legs] add success
+tag @s[tag=!fail,tag=feet] add success
 
 tellraw @s[tag=!success,tag=!fail] {"text":"This item cannot support that enchantment!","color":"red"}
 tag @s[tag=!success] add fail
 
+
 execute at @s[tag=success] run summon armor_stand ~ ~ ~ {Invisible:true,Tags:["anvil"]}
 item replace entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand from entity @s[tag=success] weapon.mainhand
-data modify entity @e[tag=anvil,limit=1,sort=nearest] HandItems[0].tag.CustomEnchantments insert 0 value {id:"skyblock:growth",lvl:1}
+
+
+scoreboard objectives add growth dummy "Growth"
+scoreboard players set @e[tag=anvil,limit=1,sort=nearest] dummy 3
+
+execute unless data entity @s[tag=head] SelectedItem.tag.AttributeModifiers[{Name:"Max Health",Operation:0}] run item modify entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand skyblock:attributes/head/max_health
+execute unless data entity @s[tag=chest] SelectedItem.tag.AttributeModifiers[{Name:"Max Health",Operation:0}] run item modify entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand skyblock:attributes/chest/max_health
+execute unless data entity @s[tag=legs] SelectedItem.tag.AttributeModifiers[{Name:"Max Health",Operation:0}] run item modify entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand skyblock:attributes/legs/max_health
+execute unless data entity @s[tag=feet] SelectedItem.tag.AttributeModifiers[{Name:"Max Health",Operation:0}] run item modify entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand skyblock:attributes/feet/max_health
+
+execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s growth run data get entity @s HandItems[0].tag.AttributeModifiers[{Name:"Max Health",Operation:0}].Amount
+execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s growth += @s dummy
+execute as @e[tag=anvil,limit=1,sort=nearest] store result entity @s HandItems[0].tag.AttributeModifiers[{Name:"Max Health",Operation:0}].Amount double 1 run scoreboard players get @s growth
+
+execute as @e[tag=anvil,limit=1,sort=nearest] run data modify entity @s HandItems[0].tag.CustomEnchantments insert 0 value {id:"skyblock:growth",lvl:1}
+
+
 item replace entity @s[tag=success] weapon.mainhand from entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand
 kill @e[tag=anvil]
 
@@ -53,3 +79,4 @@ playsound minecraft:entity.player.levelup player @s[tag=success]
 
 tag @s[tag=fail] remove fail
 tag @s[tag=success] remove success
+scoreboard objectives remove growth

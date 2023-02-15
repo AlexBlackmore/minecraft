@@ -31,58 +31,52 @@
 			"bonus_rolls":0,
 			"entries":[
 				{
+					"type":"minecraft:empty",
+					"weight":100
+				},
+				{
 					"type":"minecraft:item",
 					"name":"minecraft:nethrite_scrap",
-					"functions":[
+					"weight":10,
+					"conditions":[
 						{
-							"function":"set_count",
-							"count":0
+							"condition":"random_chance",
+							"chance":0.10
 						},
 						{
-							"function":"set_count",
-							"count":1,
-							"add":true,
-							"conditions":[
-								{
-									"condition":"random_chance",
-									"chance":0.10
-								},
-								{
-									"condition":"entity_properties",
-									"entity":"this",
-									"predicate":{
-										"equipment":{
-											"mainhand":{
-												"nbt":"{Name:\"Enchanted Netherite Pickaxe\"}"
-											}
-										}
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{Name:\"Enchanted Netherite Pickaxe\"}"
 									}
 								}
-							]
-						},
-						{
-							"function":"set_count",
-							"count":1,
-							"add":true,
-							"conditions":[
-								{
-									"condition":"random_chance",
-									"chance":0.15
-								},
-								{
-									"condition":"entity_properties",
-									"entity":"this",
-									"predicate":{
-										"equipment":{
-											"mainhand":{
-												"nbt":"{Name:\"Refined Netherite Pickaxe\"}"
-											}
-										}
-									}
-								}
-							]
+							}
 						}
-					]		
+					]
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:nethrite_scrap",
+					"weight":15,
+					"conditions":[
+						{
+							"condition":"random_chance",
+							"chance":0.10
+						},
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{Name:\"Refined Netherite Pickaxe\"}"
+									}
+								}
+							}
+						}
+					]
 				}
 			]
 		}

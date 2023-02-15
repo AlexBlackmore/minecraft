@@ -18,6 +18,9 @@ scoreboard objectives add max_health dummy "Max Health"
 scoreboard objectives add movement_speed dummy "Movement Speed"
 
 scoreboard objectives add health dummy "Health"
+scoreboard objectives add intelligence dummy "Intelligence"
+scoreboard objectives add crit_chance dummy "Crit Chance"
+scoreboard objectives add crit_damage dummy "Crit Damage"
 
 
 #Alchemy

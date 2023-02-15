@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Mine Merchant\"}",
+		CustomName:"{\"text\":\"Mine Merchant\",\"color\":\"yellow\"}",
 		Tags:["mine_merchant"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
@@ -32,7 +32,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"coal",
 						Count:2
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -43,7 +44,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"iron_ingot",
 						Count:4
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -54,7 +56,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"gold_ingot",
 						Count:2
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -78,7 +81,8 @@ give @p villager_spawn_egg{
 							Name:"Rookie Pickaxe",
 							Rarity:0
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -107,7 +111,8 @@ give @p villager_spawn_egg{
 							Rarity:1,
 							Promising:0
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -129,7 +134,8 @@ give @p villager_spawn_egg{
 							Name:"Golden Pickaxe",
 							Rarity:0
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -140,7 +146,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"torch",
 						Count:32
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -151,7 +158,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"gravel",
 						Count:2
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -162,7 +170,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"cobblestone",
 						Count:2
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -173,7 +182,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"stone",
 						Count:2
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -198,9 +208,11 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+0.6 Luck\"}]"
 								]
 							},
-							Name:"Onyx"
+							Name:"Tool Reforge Stone",
+							Reforge:"Fruitful"
 						}
-					}
+					},
+					maxUses:2147483647
 				}
 			]
 		}

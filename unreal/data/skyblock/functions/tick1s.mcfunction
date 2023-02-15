@@ -1,6 +1,9 @@
 effect give @a[advancements={skyblock:accessories/campfire_cultist_badge=true},predicate=skyblock:on_fire] instant_health 1 0
 effect give @a[advancements={skyblock:accessories/campfire_god_badge=true},predicate=skyblock:on_fire] instant_health 1 1
 
+execute as @a[advancements={skyblock:accessories/magnetic_talisman=true}] at @s run tp @e[type=item,distance=0..3] ~ ~ ~
+
+
 #Every 2 seconds
 scoreboard players set @a dummy 40
 execute store result score @a time run time query gametime

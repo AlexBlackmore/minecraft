@@ -25,8 +25,6 @@ execute as @a if score @s hour matches 0 run function skyblock:good_morning
 execute at @e[type=minecraft:villager] run tp @e[type=#minecraft:zombies,distance=0..2] ~ ~-256 ~
 execute as @a if entity @e[type=pig,tag=Spawner] run function skyblock:summon_mobs
 
-execute as @a[advancements={skyblock:accessories/magnetic_talisman=true}] at @s run tp @e[type=item,distance=0..3] ~ ~ ~
-
 
 execute as @a[scores={mined_coal_ore=1..}] run function skyblock:bonus_mining_xp
 execute as @a[scores={mined_deepslate_coal_ore=1..}] run function skyblock:bonus_mining_xp
@@ -46,3 +44,8 @@ execute as @a[scores={mined_stone=1..},nbt={Inventory:[{Slot:103b,tag:{Name:"Min
 
 #Potions
 execute as @a run function skyblock:alchemy/active_effects
+
+#Runes
+execute as @a if data entity @s Inventory[{Slot:100b}].tag.Rune run function skyblock:runecrafting/boot
+execute as @a if data entity @s Inventory[{Slot:102b}].tag.Rune run function skyblock:runecrafting/chestplate
+execute if entity @e[type=#minecraft:arrows,tag=rune] run function skyblock:runecrafting/bow

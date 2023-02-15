@@ -58,8 +58,6 @@ execute as @p[tag=legendary] run scoreboard players operation @s health /= @s ma
 attribute @p[tag=legendary,scores={health=85..}] minecraft:generic.attack_damage modifier add 94-38-84-70-31 "King of Kings" 0.15 multiply
 
 
-scoreboard objectives remove health
-
 execute if entity @p[tag=pet] run schedule function skyblock:abilities/pets/griffin 4s replace
 tag @p[tag=pet] remove pet
 tag @p[tag=common] remove common

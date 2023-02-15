@@ -1,0 +1,37 @@
+{
+	"parent":"skyblock:commands/reforging",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Basic Axe Reforge",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"blacksmith\"]}"
+				},
+				"item":{
+					"items":[
+						"wooden_axe",
+						"stone_axe",
+						"golden_axe",
+						"iron_axe",
+						"diamond_axe",
+						"netherite_axe"
+					]
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/blacksmith/axes"
+	}
+}

@@ -83,6 +83,23 @@ tellraw @p[tag=bow] ["",{"text":"[Arrow: ","italic":true,"color":"gray"},{"score
 
 execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Name:"Sniper Bow"}}}] run execute as @e[tag=calc] run data merge entity @s {NoGravity:true}
 
+
+#Runes
+execute if data entity @p[tag=bow] SelectedItem.tag.Rune run tag @e[tag=calc] add rune
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"Lava"}}}] run tag @e[tag=calc] add lava
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"Lavatears"}}}] run tag @e[tag=calc] add lavatears
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"Gem"}}}] run tag @e[tag=calc] add gem
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"Bite"}}}] run tag @e[tag=calc] add bite
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"Wake"}}}] run tag @e[tag=calc] add wake
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"Ice"}}}] run tag @e[tag=calc] add ice
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"White Spiral"}}}] run tag @e[tag=calc] add white_spiral
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"Flame"}}}] run tag @e[tag=calc] add flame
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"Golden"}}}] run tag @e[tag=calc] add golden
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"Smokey"}}}] run tag @e[tag=calc] add smokey
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"Magical"}}}] run tag @e[tag=calc] add magical
+execute if entity @p[tag=bow,nbt={SelectedItem:{tag:{Rune:"End"}}}] run tag @e[tag=calc] add end
+
+
 tag @e[tag=calc] add shot
 tag @e[tag=shot] remove calc
 

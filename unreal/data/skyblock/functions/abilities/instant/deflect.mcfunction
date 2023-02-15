@@ -13,7 +13,6 @@ scoreboard players set @p[tag=attacker] divisor 100
 execute as @p[tag=attacker] run scoreboard players operation @s damage /= @s divisor
 tellraw @p[tag=attacker] ["",{"text":"[Deflect: ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"damage"},"italic":true,"color":"gray"},{"text":" damage]","italic":true,"color":"gray"}]
 scoreboard objectives remove divisor
-scoreboard objectives remove health
 scoreboard objectives remove absorption
 scoreboard objectives remove damage
 

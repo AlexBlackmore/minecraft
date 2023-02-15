@@ -24,6 +24,4 @@ effect give @p[tag=ability] hunger 1
 execute at @p[tag=ability] run playsound minecraft:entity.lightning_bolt.impact player @p
 
 tag @e[tag=target] remove target
-scoreboard objectives remove intelligence
 scoreboard objectives remove damage
-scoreboard objectives remove health

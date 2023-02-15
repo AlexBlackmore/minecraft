@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Titanium-Infused Fuel Tank","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Drill Part","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"Increases the ","italic":false,"color":"gray"},{"text":"Unbreaking","italic":false,"color":"blue"},{"text":" level","italic":false,"color":"gray"}],
+								["",{"text":"of a drill to ","italic":false,"color":"gray"},{"text":"Unbreaking XII","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}],
+								{"text":""},
+								["",{"text":"Can be applied by talking to a","italic":false,"color":"gray"}],
+								["",{"text":"Drill Mechanic","italic":false,"color":"dark_green"},{"text":".","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;899989043,-670744179,-1520011893,-1347973853],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWVmNWFjZjEzNGZhOTUyZjEzZmRmMGIzODk5MDYwY2MxOGViYzBhOTcxMzQ3ZTQ1YTMxZWNmOTVhNGIwYjMxYyJ9fX0=\"}]}},
+								Name:\"Fuel Tank\",
+								FuelTank:\"Titanium-Infused\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
