@@ -1,79 +1,77 @@
-tag @p[advancements={skyblock:commands/reforging/hot_potato_books/armor=true}] add upgrade
+tag @s[nbt={SelectedItem:{id:"minecraft:leather_boots"}}] add boots
+tag @s[nbt={SelectedItem:{id:"minecraft:chainmail_boots"}}] add boots
+tag @s[nbt={SelectedItem:{id:"minecraft:iron_boots"}}] add boots
+tag @s[nbt={SelectedItem:{id:"minecraft:diamond_boots"}}] add boots
+tag @s[nbt={SelectedItem:{id:"minecraft:netherite_boots"}}] add boots
 
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:leather_boots"}}] add boots
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:chainmail_boots"}}] add boots
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:iron_boots"}}] add boots
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:diamond_boots"}}] add boots
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:netherite_boots"}}] add boots
+tag @s[nbt={SelectedItem:{id:"minecraft:leather_leggings"}}] add leggings
+tag @s[nbt={SelectedItem:{id:"minecraft:chainmail_leggings"}}] add leggings
+tag @s[nbt={SelectedItem:{id:"minecraft:iron_leggings"}}] add leggings
+tag @s[nbt={SelectedItem:{id:"minecraft:diamond_leggings"}}] add leggings
+tag @s[nbt={SelectedItem:{id:"minecraft:netherite_leggings"}}] add leggings
 
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:leather_leggings"}}] add leggings
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:chainmail_leggings"}}] add leggings
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:iron_leggings"}}] add leggings
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:diamond_leggings"}}] add leggings
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:netherite_leggings"}}] add leggings
+tag @s[nbt={SelectedItem:{id:"minecraft:leather_chestplate"}}] add chestplate
+tag @s[nbt={SelectedItem:{id:"minecraft:chainmail_chestplate"}}] add chestplate
+tag @s[nbt={SelectedItem:{id:"minecraft:iron_chestplate"}}] add chestplate
+tag @s[nbt={SelectedItem:{id:"minecraft:diamond_chestplate"}}] add chestplate
+tag @s[nbt={SelectedItem:{id:"minecraft:netherite_chestplate"}}] add chestplate
 
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:leather_chestplate"}}] add chestplate
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:chainmail_chestplate"}}] add chestplate
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:iron_chestplate"}}] add chestplate
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:diamond_chestplate"}}] add chestplate
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:netherite_chestplate"}}] add chestplate
-
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:leather_helmet"}}] add helmet
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:chainmail_helmet"}}] add helmet
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:iron_helmet"}}] add helmet
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:diamond_helmet"}}] add helmet
-tag @p[tag=upgrade,nbt={SelectedItem:{id:"minecraft:netherite_helmet"}}] add helmet
+tag @s[nbt={SelectedItem:{id:"minecraft:leather_helmet"}}] add helmet
+tag @s[nbt={SelectedItem:{id:"minecraft:chainmail_helmet"}}] add helmet
+tag @s[nbt={SelectedItem:{id:"minecraft:iron_helmet"}}] add helmet
+tag @s[nbt={SelectedItem:{id:"minecraft:diamond_helmet"}}] add helmet
+tag @s[nbt={SelectedItem:{id:"minecraft:netherite_helmet"}}] add helmet
+tag @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{Unbreakable:1b}}}] add helmet
 
 
 scoreboard objectives add hot_potato_books dummy "Hot Potato Books"
-execute as @p[tag=upgrade] run execute store result score @s hot_potato_books run data get entity @s SelectedItem.tag.Hot_Potato_Books
-tellraw @p[tag=upgrade,scores={hot_potato_books=4..}] ["",{"text":"<Weaponsmith> "},{"text":"The item you are holding already has the max level of that upgrade!","color":"red"}]
-tag @p[tag=upgrade,scores={hot_potato_books=4..}] add fail
+execute unless data entity @s SelectedItem.tag.HotPotatoBooks run item modify entity @s weapon.mainhand skyblock:hot_potato_books/set_nbt
+execute as @s run execute store result score @s hot_potato_books run data get entity @s SelectedItem.tag.HotPotatoBooks
+tag @s[scores={hot_potato_books=0..3}] add success
+tellraw @s[tag=!success] {"text":"The item you are holding already has the max level of that upgrade!","color":"red"}
 
 
-execute as @p[tag=upgrade,tag=!fail] unless data entity @s SelectedItem.tag.Name run function skyblock:set_default_items
-execute as @p[tag=upgrade,tag=!fail,tag=boots] unless data entity @s SelectedItem.tag.AttributeModifiers[{AttributeName:"minecraft:generic.armor",Operation:0}] run item modify entity @p[tag=upgrade,tag=!fail] weapon.mainhand skyblock:set_blank_attributes/feet/armor
-execute as @p[tag=upgrade,tag=!fail,tag=leggings] unless data entity @s SelectedItem.tag.AttributeModifiers[{AttributeName:"minecraft:generic.armor",Operation:0}] run item modify entity @p[tag=upgrade,tag=!fail] weapon.mainhand skyblock:set_blank_attributes/legs/armor
-execute as @p[tag=upgrade,tag=!fail,tag=chestplate] unless data entity @s SelectedItem.tag.AttributeModifiers[{AttributeName:"minecraft:generic.armor",Operation:0}] run item modify entity @p[tag=upgrade,tag=!fail] weapon.mainhand skyblock:set_blank_attributes/chest/armor
-execute as @p[tag=upgrade,tag=!fail,tag=helmet] unless data entity @s SelectedItem.tag.AttributeModifiers[{AttributeName:"minecraft:generic.armor",Operation:0}] run item modify entity @p[tag=upgrade,tag=!fail] weapon.mainhand skyblock:set_blank_attributes/head/armor
+execute as @s[tag=success] unless data entity @s SelectedItem.tag.Name run function skyblock:set_default_items
+execute as @s[tag=success,tag=boots] unless data entity @s SelectedItem.tag.AttributeModifiers[{Name:"Armor",Operation:0}] run item modify entity @s weapon.mainhand skyblock:attributes/feet/armor
+execute as @s[tag=success,tag=leggings] unless data entity @s SelectedItem.tag.AttributeModifiers[{Name:"Armor",Operation:0}] run item modify entity @s weapon.mainhand skyblock:attributes/legs/armor
+execute as @s[tag=success,tag=chestplate] unless data entity @s SelectedItem.tag.AttributeModifiers[{Name:"Armor",Operation:0}] run item modify entity @s weapon.mainhand skyblock:attributes/chest/armor
+execute as @s[tag=success,tag=helmet] unless data entity @s SelectedItem.tag.AttributeModifiers[{Name:"Armor",Operation:0}] run item modify entity @s weapon.mainhand skyblock:attributes/head/armor
 
-execute as @p[tag=upgrade,tag=!fail,tag=boots] unless data entity @s SelectedItem.tag.AttributeModifiers[{AttributeName:"minecraft:generic.max_health",Operation:0}] run item modify entity @p[tag=upgrade,tag=!fail] weapon.mainhand skyblock:set_blank_attributes/feet/max_health
-execute as @p[tag=upgrade,tag=!fail,tag=leggings] unless data entity @s SelectedItem.tag.AttributeModifiers[{AttributeName:"minecraft:generic.max_health",Operation:0}] run item modify entity @p[tag=upgrade,tag=!fail] weapon.mainhand skyblock:set_blank_attributes/legs/max_health
-execute as @p[tag=upgrade,tag=!fail,tag=chestplate] unless data entity @s SelectedItem.tag.AttributeModifiers[{AttributeName:"minecraft:generic.max_health",Operation:0}] run item modify entity @p[tag=upgrade,tag=!fail] weapon.mainhand skyblock:set_blank_attributes/chest/max_health
-execute as @p[tag=upgrade,tag=!fail,tag=helmet] unless data entity @s SelectedItem.tag.AttributeModifiers[{AttributeName:"minecraft:generic.max_health",Operation:0}] run item modify entity @p[tag=upgrade,tag=!fail] weapon.mainhand skyblock:set_blank_attributes/head/max_health
-
-
-execute at @p[tag=upgrade,tag=!fail] run summon armor_stand ~ ~ ~ {Tags:["upgrade"]}
-item replace entity @e[type=minecraft:armor_stand,tag=upgrade] weapon.mainhand from entity @p[tag=upgrade,tag=!fail] weapon.mainhand
+execute as @s[tag=success,tag=boots] unless data entity @s SelectedItem.tag.AttributeModifiers[{Name:"Max Health",Operation:0}] run item modify entity @s weapon.mainhand skyblock:attributes/feet/max_health
+execute as @s[tag=success,tag=leggings] unless data entity @s SelectedItem.tag.AttributeModifiers[{Name:"Max Health",Operation:0}] run item modify entity @s weapon.mainhand skyblock:attributes/legs/max_health
+execute as @s[tag=success,tag=chestplate] unless data entity @s SelectedItem.tag.AttributeModifiers[{Name:"Max Health",Operation:0}] run item modify entity @s weapon.mainhand skyblock:attributes/chest/max_health
+execute as @s[tag=success,tag=helmet] unless data entity @s SelectedItem.tag.AttributeModifiers[{Name:"Max Health",Operation:0}] run item modify entity @s weapon.mainhand skyblock:attributes/head/max_health
 
 
-execute as @e[type=armor_stand,tag=upgrade] run execute store result score @s armor run data get entity @s HandItems[0].tag.AttributeModifiers[{AttributeName:"minecraft:generic.armor",Operation:0}].Amount
-execute as @e[type=armor_stand,tag=upgrade] run scoreboard players add @s armor 1
-execute as @e[type=armor_stand,tag=upgrade] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{AttributeName:"minecraft:generic.armor",Operation:0}].Amount double 1 run scoreboard players get @s armor
-
-execute as @e[type=armor_stand,tag=upgrade] run execute store result score @s max_health run data get entity @s HandItems[0].tag.AttributeModifiers[{AttributeName:"minecraft:generic.max_health",Operation:0}].Amount
-execute as @e[type=armor_stand,tag=upgrade] run scoreboard players add @s max_health 2
-execute as @e[type=armor_stand,tag=upgrade] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{AttributeName:"minecraft:generic.max_health",Operation:0}].Amount double 1 run scoreboard players get @s max_health
+execute at @s[tag=success] run summon armor_stand ~ ~ ~ {Tags:["anvil"]}
+item replace entity @e[type=minecraft:armor_stand,tag=anvil,limit=1,sort=nearest] weapon.mainhand from entity @s[tag=success] weapon.mainhand
 
 
-item replace entity @p[tag=upgrade,tag=!fail] weapon.mainhand from entity @e[type=minecraft:armor_stand,tag=upgrade,limit=1,sort=nearest] weapon.mainhand
-kill @e[type=armor_stand,tag=upgrade]
+execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result score @s armor run data get entity @s HandItems[0].tag.AttributeModifiers[{Name:"Armor",Operation:0}].Amount
+execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run scoreboard players add @s armor 1
+execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{Name:"Armor",Operation:0}].Amount double 1 run scoreboard players get @s armor
 
-item modify entity @p[tag=upgrade,tag=!fail,scores={hot_potato_books=0}] weapon.mainhand skyblock:upgrades/hot_potato_book/set_lore
-item modify entity @p[tag=upgrade,tag=!fail,scores={hot_potato_books=0}] weapon.mainhand skyblock:upgrades/hot_potato_book/set_nbt1
-item modify entity @p[tag=upgrade,tag=!fail,scores={hot_potato_books=1}] weapon.mainhand skyblock:upgrades/hot_potato_book/set_nbt2
-item modify entity @p[tag=upgrade,tag=!fail,scores={hot_potato_books=2}] weapon.mainhand skyblock:upgrades/hot_potato_book/set_nbt3
-item modify entity @p[tag=upgrade,tag=!fail,scores={hot_potato_books=3}] weapon.mainhand skyblock:upgrades/hot_potato_book/set_nbt4
-item modify entity @p[tag=upgrade,tag=!fail] weapon.offhand skyblock:subtract_item
+execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result score @s max_health run data get entity @s HandItems[0].tag.AttributeModifiers[{Name:"Max Health",Operation:0}].Amount
+execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run scoreboard players add @s max_health 2
+execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{Name:"Max Health",Operation:0}].Amount double 1 run scoreboard players get @s max_health
 
-playsound minecraft:entity.villager.no player @p[tag=upgrade,tag=fail]
-playsound minecraft:block.anvil.use player @p[tag=upgrade,tag=!fail]
+scoreboard players add @s[tag=success] hot_potato_books 1
+execute store result entity @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] HandItems[0].tag.HotPotatoBooks int 1 run scoreboard players get @s hot_potato_books
 
-tag @p[tag=fail] remove fail
+
+item replace entity @s[tag=success] weapon.mainhand from entity @e[type=minecraft:armor_stand,tag=anvil,limit=1,sort=nearest] weapon.mainhand
+kill @e[type=armor_stand,tag=anvil]
+
+execute as @s[tag=success] run function skyblock:construct_lore
+item modify entity @s[tag=success] weapon.offhand skyblock:subtract_item
+
+playsound minecraft:entity.villager.no player @s[tag=!success]
+playsound minecraft:block.anvil.use player @s[tag=success]
+
 scoreboard objectives remove hot_potato_books
-advancement revoke @p[tag=upgrade] only skyblock:commands/reforging/hot_potato_books/armor
-tag @p[tag=upgrade] remove upgrade
-tag @p[tag=boots] remove boots
-tag @p[tag=leggings] remove leggings
-tag @p[tag=chestplate] remove chestplate
-tag @p[tag=helmet] remove helmet
+advancement revoke @s only skyblock:commands/reforging/hot_potato_books/armor
+tag @s remove boots
+tag @s remove leggings
+tag @s remove chestplate
+tag @s remove helmet
+tag @s remove success

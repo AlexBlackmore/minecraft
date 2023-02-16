@@ -4,8 +4,8 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"gold_nugget"
+					"type":"minecraft:item",
+					"name":"minecraft:gold_nugget"
 				}
 			],
 			"functions":[
@@ -26,30 +26,48 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"empty",
-					"weight":97
+					"type":"minecraft:empty",
+					"quality":-1,
+					"weight":970
 				},
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/swords/flaming_sword",
 					"quality":1,
-					"weight":3
+					"weight":30
 				}
 			]
 		},
 		{
-			"rolls":1,
+			"rolls":4,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:emerald"
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins"
+				}
+			]
+		},
+		{
+			"rolls":12,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/scavenger_enchantment"
 				}
 			],
 			"conditions":[
 				{
-					"condition":"minecraft:random_chance_with_looting",
-					"chance":0.6667,
-					"looting_multiplier":0.01
+					"condition":"entity_properties",
+					"entity":"killer_player",
+					"predicate":{
+						"player":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{CustomEnchantments:[{id:\"minecraft:scavenger\"}]}"
+								}
+							}
+						}
+					}
 				}
 			]
 		}

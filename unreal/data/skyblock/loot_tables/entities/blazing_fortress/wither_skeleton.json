@@ -4,8 +4,8 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"bone"
+					"type":"minecraft:item",
+					"name":"minecraft:bone"
 				}
 			],
 			"functions":[
@@ -26,8 +26,8 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"coal"
+					"type":"minecraft:item",
+					"name":"minecraft:coal"
 				}
 			],
 			"functions":[
@@ -51,20 +51,54 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"empty",
-					"weight":98
+					"type":"minecraft:empty",
+					"quality":-4,
+					"weight":980
 				},
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/enchanted/charcoal",
-					"quality":1,
-					"weight":1
-				},
-				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/enchanted/coal",
-					"quality":1,
-					"weight":1
+					"quality":2,
+					"weight":10
+				},
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/enchanted/charcoal",
+					"quality":2,
+					"weight":10
+				}
+			]
+		},
+		{
+			"rolls":4,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins"
+				}
+			]
+		},
+		{
+			"rolls":10,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/scavenger_enchantment"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"killer_player",
+					"predicate":{
+						"player":{
+							"equipment":{
+								"mainhand":{
+									"nbt":"{CustomEnchantments:[{id:\"minecraft:scavenger\"}]}"
+								}
+							}
+						}
+					}
 				}
 			]
 		}

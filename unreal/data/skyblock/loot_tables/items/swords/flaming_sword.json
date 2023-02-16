@@ -4,51 +4,49 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"alternatives",
-					"children":[
+					"type":"minecraft:item",
+					"name":"minecraft:iron_sword",
+					"functions":[
 						{
-							"type":"item",
-							"name":"minecraft:iron_sword",
-							"functions":[
+							"function":"minecraft:set_name",
+							"name":{"text":"Flaming Sword","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ignites enemied for ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Flaming Sword\",
+								Rarity:1,
+								Lore:[\"\",
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Ignites enemies for \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"3\",\"italic\":false,\"color\":\"green\"},{\"text\":\" seconds.\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}'
+								]
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"sharpness":20,
+								"fire_aspect":1
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
 								{
-									"function":"minecraft:set_name",
-									"name":{"text":"Flaming Sword","italic":false,"color":"yellow"}
-								},
-								{
-									"function":"minecraft:set_lore",
-									"lore":[
-										{"text":" "},
-										["",{"text":"Ignites mobs on fire for","italic":false,"color":"gray"}],
-										["",{"text":"4","italic":false,"color":"green"},{"text":" seconds.","italic":false,"color":"gray"}],
-										{"text":" "},
-										{"text":"UNCOMMON","bold":true,"color":"yellow"},
-										{"text":" "}
-									]
-								},
-								{
-									"function":"minecraft:set_nbt",
-									"tag":"{
-										Name:\"Flaming Sword\"
-									}"
-								},
-								{
-									"function":"minecraft:set_enchantments",
-									"enchantments":{
-										"fire_aspect":1,
-										"sharpness":20
-									}
-								},
-								{
-									"function":"minecraft:set_attributes",
-									"modifiers":[
-										{
-											"name":"Attack Damage",
-											"attribute":"generic.attack_damage",
-											"operation":"addition",
-											"amount":4,
-											"slot":"mainhand"
-										}
-									]
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":4,
+									"slot":"mainhand"
 								}
 							]
 						}
