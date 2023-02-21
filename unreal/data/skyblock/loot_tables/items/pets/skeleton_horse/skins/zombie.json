@@ -1,0 +1,40 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Zombie Skeleton Horse Skin","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"italic":false,"color":"blue","text":"Pet Skin"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"Pet skins change the look of"}],
+								["",{"italic":false,"color":"gray","text":"your pet, but only one skin can"}],
+								["",{"italic":false,"color":"gray","text":"be active at a time!"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"This skin can only be applied to"}],
+								["",{"italic":false,"color":"gray","text":"Skeleton Horse pets."}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Skeleton Horse Pet Skin\",
+								Skin:\"Zombie\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

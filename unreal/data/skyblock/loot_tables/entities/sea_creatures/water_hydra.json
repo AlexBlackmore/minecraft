@@ -4,7 +4,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:tropical_fish"
 				}
 			],
@@ -22,7 +22,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:pufferfish"
 				}
 			],
@@ -40,7 +40,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:cod"
 				}
 			],
@@ -62,7 +62,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:salmon"
 				}
 			],
@@ -80,7 +80,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:sponge"
 				}
 			],
@@ -114,7 +114,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:lily_pad"
 				}
 			],
@@ -157,47 +157,41 @@
 			"entries":[
 				{
 					"type":"minecraft:empty",
-					"weight":7498
+					"quality":-7,
+					"weight":4996
 				},
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/accessories/fish_affinity_talisman",
 					"quality":1,
-					"weight":1500
+					"weight":3000
 				},
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/armor/water_hydra_head",
 					"quality":1,
-					"weight":700
+					"weight":1400
 				},
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/enchanted_books/luck_of_the_sea6",
 					"quality":1,
-					"weight":300
+					"weight":600
 				},
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/exp_boosts/fishing/epic",
-					"quality":1,
-					"weight":2
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/trinkets/exp_boosts/fishing/epic",
+					"quality":4,
+					"weight":4
 				}
 			]
 		},
 		{
-			"rolls":1,
+			"rolls":2,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:emerald"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"minecraft:random_chance_with_looting",
-					"chance":0.1667,
-					"looting_multiplier":0.01
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins100"
 				}
 			]
 		}

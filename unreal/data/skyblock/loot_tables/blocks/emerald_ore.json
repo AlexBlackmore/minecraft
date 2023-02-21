@@ -4,7 +4,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"emerald",
 					"functions":[
 						{
@@ -29,13 +29,27 @@
 			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"emerald",
 					"weight":1
 				},
 				{
-					"type":"loot_table",
-					"name":"minecraft:empty",
+					"type":"minecraft:empty",
+					"weight":19
+				}
+			]
+		},
+		{
+			"rolls":0,
+			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"emerald",
+					"weight":1
+				},
+				{
+					"type":"minecraft:empty",
 					"weight":19
 				}
 			]
@@ -44,28 +58,8 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:refined_mineral"
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"loot_table",
-					"name":"skyblock:gameplay/exp_boosts/mining"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Mining Exp Boost\"}}]}"
-						}
-					}
 				}
 			]
 		}

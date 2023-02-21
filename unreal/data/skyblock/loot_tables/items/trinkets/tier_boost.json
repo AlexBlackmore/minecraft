@@ -1,0 +1,42 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:hopper",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Tier Boost","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Trinket","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"Use with ","italic":false,"color":"gray"},{"text":"Kat","italic":false,"color":"aqua"},{"text":" to boost the ","italic":false,"color":"gray"},{"text":"rarity","italic":false,"color":"green"}],
+								["",{"text":"of a pet by ","italic":false,"color":"gray"},{"text":"+1","italic":false,"color":"green"},{"text":" tier!","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Tier Boost\",
+								HideFlags:1
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

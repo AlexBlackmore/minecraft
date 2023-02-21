@@ -1,0 +1,37 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"RNGesus Drop: §bMagma Cube Pet",
+		"description":"[::]",
+		"frame":"challenge",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"magma_cube75":{
+			"trigger":"minecraft:player_killed_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"magma_cube\","100xp"]}"
+				},
+				"player":[
+					{
+						"condition":"random_chance_with_looting",
+						"chance":0.0001,
+						"looting_multiplier":0.0001
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"loot":[
+			"skyblock:items/pets/magma_cube/rare"
+		],
+		"function":"skyblock:instant_reset"
+	}
+}

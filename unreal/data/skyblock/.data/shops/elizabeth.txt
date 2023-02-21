@@ -1,7 +1,8 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Elizabeth\"}",
+		CustomName:"{\"text\":\"Elizabeth\",\"color\":\"yellow\"}",
+		Tags:["elizabeth"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -30,7 +31,8 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"325 levels\"}]"
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Mainhand: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Cookie\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x1\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"XP: \"},{\"italic\":false,\"color\":\"green\",\"text\":\"325 levels\"}]"
 								]
 							}
 						}
@@ -142,6 +144,41 @@ give @p villager_spawn_egg{
 				{
 					buy:{
 						id:"minecraft:diamond",
+						Count:11,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Diamond\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Diamond"
+						}
+					},
+					sell:{
+						id:"minecraft:feather",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Kismet Feather\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"50%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to not use\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Dungeon Chest Key\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" when opening\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a \"},{\"italic\":false,\"color\":\"red\",\"text\":\"Reward Chest\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]"
+								]
+							},
+							Enchantments:[
+								{id:"minecraft:unbreaking",lvl:1}
+							],
+							HideFlags:1,
+							Name:"Kismet Feather"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:diamond",
 						Count:4,
 						tag:{
 							display:{
@@ -161,9 +198,8 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Kat Flower\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Give this to Kat the Pet Sitter\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"in order to upgrade the rarity\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"of your pet!\"}]"
+									"[\"\",{\"italic\":false,\"color\":\"aqua\",\"text\":\"Kat\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" can use these to upgrade the\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"rarity of pets!\"}]"
 								]
 							},
 							Enchantments:[
@@ -197,6 +233,7 @@ give @p villager_spawn_egg{
 						id:"minecraft:player_head",
 						Count:1,
 						tag:{
+							SkullOwner:{Id:[I;-1068160862,-1147451356,-1127328627,390014961],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhlYTI3Mzg0OWJiNGUzODNmMTFjODQ5NDUzOTUzYzEyMDViNmEwMGQ3NDBhYWMzMzA0MGQ1MDIwMjkzYjRiOCJ9fX0="}]}},
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Heat Core\"}",
 								Lore:[
@@ -232,6 +269,7 @@ give @p villager_spawn_egg{
 						id:"minecraft:player_head",
 						Count:1,
 						tag:{
+							SkullOwner:{Id:[I;-1240818481,2046905802,-1897243209,655275876],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJlNGViOGE5MDNjNTg1YTc5NTllZmUzZDdhZjA5YWNkMTE5ZWYwYTY4ZGY4NjExNTJjODQ4MDgwNGY4MjI4MSJ9fX0="}]}},
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Hyper Catalyst Upgrade\"}",
 								Lore:[
@@ -267,6 +305,7 @@ give @p villager_spawn_egg{
 						id:"minecraft:player_head",
 						Count:1,
 						tag:{
+							SkullOwner:{Id:[I;-1866517088,1365788121,-1193475570,-826236866],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjFlNmYwNjg0YmE3ZDUxZmI3YjBhNzk0ZTRkZmEzZGE3Y2UyMzYxYmQwNGE3NmIzNzYyOWYwMWIyNWI5NmQwMCJ9fX0="}]}},
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Ultimate Carrot Candy Upgrade\"}",
 								Lore:[
@@ -302,6 +341,7 @@ give @p villager_spawn_egg{
 						id:"minecraft:player_head",
 						Count:1,
 						tag:{
+							SkullOwner:{Id:[I;-941152845,1422346952,-1505220148,989073422],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA1NGMyOWM3ODA5MDQ3MWMxZWEwNThiZDY0MTg5NzM5MWM5ZTQ2OTRhYTlkMTQwYWZiYmE4ZDBjYzQzNjM3In19fQ=="}]}},
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Colossal Experience Bottle Upgrade\"}",
 								Lore:[
@@ -311,6 +351,43 @@ give @p villager_spawn_egg{
 								]
 							},
 							Name:"Colossal Experience Bottle Upgrade"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:diamond",
+						Count:9,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Diamond\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Diamond"
+						}
+					},
+					buyB:{
+						id:"minecraft:diamond",
+						Count:48
+					},
+					sell:{
+						id:"minecraft:rabbit_stew",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Matriarch's Perfume\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Consume to apply a pungent smell\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"aqua\",\"text\":\"upon yourself, confusing\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"The Matriarch\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" in the\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"red\",\"text\":\"Crimson Isle\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" into releasing new\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"pearls.\"}]"
+								]
+							},
+							Name:"Matriarch's Perfume"
 						}
 					}
 				},
@@ -329,7 +406,7 @@ give @p villager_spawn_egg{
 							Name:"Enchanted Diamond"
 						}
 					},
-					buy:{
+					buyB:{
 						id:"minecraft:diamond",
 						Count:54,
 						tag:{
@@ -347,11 +424,12 @@ give @p villager_spawn_egg{
 						id:"minecraft:player_head",
 						Count:1,
 						tag:{
+							SkullOwner:{Id:[I;-302572436,-1514847120,-1372787108,993938679],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmViYWRiMTcyNWFhODViYjI4MTBkMGI3M2JmN2NkNzRkYjNkOWQ4ZmM2MWM0Y2Y5ZTU0M2RiY2MxOTkxODdjYyJ9fX0="}]}},
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Bits Talisman\"}",
 								Lore:[
 									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Accessory\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Whenever you mine diamonds,\"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Titanic Experience\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Whenever you mine diamonds,\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"grants a \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"10%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to gain\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"double!\"}]"
 								]
@@ -362,8 +440,22 @@ give @p villager_spawn_egg{
 				},
 				{
 					buy:{
+						id:"minecraft:diamond_block",
+						Count:15,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Block of Diamond\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Block of Diamond"
+						}
+					},
+					buyB:{
 						id:"minecraft:diamond",
-						Count:11,
+						Count:34,
 						tag:{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Diamond\"}"
@@ -376,21 +468,88 @@ give @p villager_spawn_egg{
 						}
 					},
 					sell:{
-						id:"minecraft:feather",
+						id:"minecraft:white_dye",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Kismet Feather\"}",
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Pure White Dye\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Allows you to reroll a \"},{\"italic\":false,\"color\":\"red\",\"text\":\"Dungeon\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Reward Chest.\"}]"
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Changes the color of a leather\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"armor piece to \"},{\"italic\":false,\"color\":\"#FFFFFF\",\"text\":\"#FFFFFF\"},{\"italic\":false,\"color\":\"gray\",\"text\":\"!\"}]"
 								]
 							},
+							Name:"Dye",
+							color:16777215
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:diamond_block",
+						Count:15,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Block of Diamond\"}"
+							},
 							Enchantments:[
-								{id:"minecraft:unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
 							HideFlags:1,
-							Name:"Kismet Feather"
+							Name:"Enchanted Block of Diamond"
+						}
+					},
+					buyB:{
+						id:"minecraft:diamond",
+						Count:34,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Diamond\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Diamond"
+						}
+					},
+					sell:{
+						id:"minecraft:black_dye",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Pure Black Dye\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Changes the color of a leather\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"armor piece to \"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"#000000\"},{\"italic\":false,\"color\":\"gray\",\"text\":\"!\"}]"
+								]
+							},
+							Name:"Dye",
+							color:0
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:diamond",
+						Count:64
+					},
+					buyB:{
+						id:"minecraft:diamond",
+						Count:11
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1998966286,-242400223,-1370980760,2058054901],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhhMTg4NGVlM2Y4YTZlNjY2OTJhOTFlZDc2M2NiNzhkOWYyMDE3NzA2ZDhiNDJhOTI2M2I0MTdiMmQ3MTVkMiJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Inferno Fuel Block\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Reacts with gabagool in the\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"crafting of Inferno fuels.\"}]"
+								]
+							},
+							Name:"Inferno Fuel Block"
 						}
 					}
 				},
@@ -419,11 +578,147 @@ give @p villager_spawn_egg{
 						tag:{
 							display:{
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Compact I\"}]"
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Expertise I\"}]"
+								]
+							},
+							StoredEnchantments:[
+								{id:"skyblock:expertise",lvl:1}
+							],
+							Name:"Enchanted Book"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:diamond",
+						Count:31,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Diamond\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Diamond"
+						}
+					},
+					buyB:{
+						id:"minecraft:diamond",
+						Count:32
+					},
+					sell:{
+						id:"minecraft:enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Compact I\"}]"
 								]
 							},
 							StoredEnchantments:[
 								{id:"skyblock:compact",lvl:1}
+							],
+							Name:"Enchanted Book"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:diamond",
+						Count:31,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Diamond\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Diamond"
+						}
+					},
+					buyB:{
+						id:"minecraft:diamond",
+						Count:32
+					},
+					sell:{
+						id:"minecraft:enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Cultivating I\"}]"
+								]
+							},
+							StoredEnchantments:[
+								{id:"skyblock:cultivating",lvl:1}
+							],
+							Name:"Enchanted Book"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:diamond",
+						Count:31,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Diamond\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Diamond"
+						}
+					},
+					buyB:{
+						id:"minecraft:diamond",
+						Count:32
+					},
+					sell:{
+						id:"minecraft:enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Champion I\"}]"
+								]
+							},
+							StoredEnchantments:[
+								{id:"skyblock:champion",lvl:1}
+							],
+							Name:"Enchanted Book"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:diamond",
+						Count:47,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Diamond\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Diamond"
+						}
+					},
+					sell:{
+						id:"minecraft:enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Hectacomb I\"}]"
+								]
+							},
+							StoredEnchantments:[
+								{id:"skyblock:hectacomb",lvl:1}
 							],
 							Name:"Enchanted Book"
 						}

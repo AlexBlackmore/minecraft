@@ -1,0 +1,38 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Spooky Cupcake","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Trinket","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"When in Inventory:","italic":false,"color":"dark_purple"}],
+								["",{"text":"+6 Attack Damage","italic":false,"color":"blue"}],
+								["",{"text":"+20% Speed","italic":false,"color":"blue"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-182479447,294601833,-1992398458,1593511801],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDk3YWQ5OWQ1M2FhY2NlNmI3YTg0ZDg3NGU2N2I4YzU2ZmFkZWRmZGY2YTI1NjVjNzYyNmNlZmJmYzMwYzM1MSJ9fX0=\"}]}},
+								Name:\"Spooky Cupcake\",
+								HideFlags:1
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

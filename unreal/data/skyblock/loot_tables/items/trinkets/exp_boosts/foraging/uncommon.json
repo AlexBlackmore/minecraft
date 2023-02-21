@@ -1,0 +1,55 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:iron_axe",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Combat Exp Boost","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Trinket","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"Gives ","italic":false,"color":"gray"},{"text":"+30%","italic":false,"color":"green"},{"text":" chance to receive","italic":false,"color":"gray"}],
+								["",{"text":"bonus ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" while chopping trees.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Combat Exp Boost Uncommon\",
+								HideFlags:3,
+								Unbreakable:true
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"multiply",
+									"amount":-1,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

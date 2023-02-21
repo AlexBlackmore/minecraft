@@ -1,0 +1,34 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:line_dye",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Celadon Dye","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Changes the color of a leather","italic":false,"color":"gray"}],
+								["",{"text":"armor piece to ","italic":false,"color":"gray"},{"text":"#ACE1AF","italic":false,"color":"#ACE1AF"},{"text":"!","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Dye\",
+								color:11329967
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

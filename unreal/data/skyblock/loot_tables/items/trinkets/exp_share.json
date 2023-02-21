@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:dandelion",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Exp Share","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Trinket","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"When in Inventory:","italic":false,"color":"dark_purple"}],
+								["",{"text":"Increases all total ","italic":false,"color":"gray"},{"text":"Wisdom","italic":false,"color":"blue"},{"text":" stats","italic":false,"color":"gray"}],
+								["",{"text":"by","italic":false,"color":"gray"},{"text":"+25%","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Exp Share\",
+								HideFlags:1
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

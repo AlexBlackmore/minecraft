@@ -1,0 +1,42 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:book",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Textbook","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Trinket","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"When in Inventory:","italic":false,"color":"dark_purple"}],
+								["",{"text":"+100% Intelligence","italic":false,"color":"blue"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Textbook\",
+								HideFlags:1
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

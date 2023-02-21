@@ -1,0 +1,44 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:ghast_tear",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Vampire Fang","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Trinket","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"Use with ","italic":false,"color":"gray"},{"text":"Kat","italic":false,"color":"aqua"},{"text":" to upgrade a Bat","italic":false,"color":"gray"}],
+								["",{"text":"pet from ","italic":false,"color":"gray"},{"text":"Legendary","italic":false,"color":"gold"},{"text":" to ","italic":false,"color":"gray"},{"text":"Mythic","italic":false,"color":"dark_red"},{"text":",","italic":false,"color":"gray"}],
+								["",{"text":"adding a bonus perk and bonus","italic":false,"color":"gray"}],
+								["",{"text":"stats!","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Vampire Fang\",
+								HideFlags:1
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

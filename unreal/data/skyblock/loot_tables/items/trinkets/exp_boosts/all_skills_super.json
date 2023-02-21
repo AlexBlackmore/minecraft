@@ -1,0 +1,45 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:diamond",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"All Skills Exp Super-Boost","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Trinket","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"When in Inventory:","italic":false,"color":"dark_purple"}],
+								["",{"text":"Gives ","italic":false,"color":"gray"},{"text":"+20%","italic":false,"color":"green"},{"text":" chance to receive","italic":false,"color":"gray"}],
+								["",{"text":"bonus ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" while harvesting crops,","italic":false,"color":"gray"}],
+								["",{"text":"mining ores, chopping trees,","italic":false,"color":"gray"}],
+								["",{"text":"catching fish, and killing mobs.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"All Skills Exp Super-Boost\",
+								HideFlags:3
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

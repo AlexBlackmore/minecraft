@@ -26,20 +26,24 @@ execute at @e[type=minecraft:villager] run tp @e[type=#minecraft:zombies,distanc
 execute as @a if entity @e[type=pig,tag=Spawner] run function skyblock:summon_mobs
 
 
-execute as @a[scores={mined_coal_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_deepslate_coal_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_lapis_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_deepslate_lapis_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_redstone_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_deepslate_redstone_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_diamond_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_deepslate_diamond_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_emerald_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_deepslate_emerald_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_quartz_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_nether_gold_ore=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_end_stone=1..}] run function skyblock:bonus_mining_xp
-execute as @a[scores={mined_stone=1..},nbt={Inventory:[{Slot:103b,tag:{Name:"Mineral Helmet"}},{Slot:102b,tag:{Name:"Mineral Chestplate"}},{Slot:101b,tag:{Name:"Mineral Leggings"}},{Slot:100b,tag:{Name:"Mineral Boots"}}]}] run function skyblock:abilities/instant/mineral_armor
+#Bonus XP
+tag @a[nbt={SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] add silk_touch
+
+execute as @a[tag=!silk_touch,scores={mined_coal_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_deepslate_coal_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_lapis_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_deepslate_lapis_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_redstone_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_deepslate_redstone_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_diamond_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_deepslate_diamond_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_emerald_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_deepslate_emerald_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_quartz_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_nether_gold_ore=1..}] run function skyblock:bonus_mining_xp
+execute as @a[tag=!silk_touch,scores={mined_end_stone=1..}] run function skyblock:bonus_mining_xp
+
+tag @a[tag=silk_touch] remove silk_touch
 
 
 #Potions

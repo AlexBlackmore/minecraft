@@ -1,3 +1,5 @@
+execute as @s run function skyblock:wisdom/mining
+
 scoreboard objectives add multiplier dummy "Multiplier"
 
 scoreboard players set @s multiplier 0
@@ -50,7 +52,8 @@ scoreboard players set @s[scores={mined_emerald_ore=1..}] dummy 5
 scoreboard players set @s[scores={mined_deepslate_emerald_ore=1..}] dummy 5
 scoreboard players set @s[scores={mined_quartz_ore=1..}] dummy 4
 scoreboard players set @s[scores={mined_nether_gold_ore=1..}] dummy 2
-scoreboard players set @s[scores={mined_end_stone=1..}] dummy 1
+scoreboard players set @s[scores={mined_end_stone=1..}] dummy 0
+scoreboard players set @s[scores={mined_end_stone=1..},nbt={SelectedItem:{tag:{Name:"Stonk"}}}] dummy 1
 
 scoreboard players operation @s points %= @s dummy
 
@@ -84,6 +87,7 @@ scoreboard players set @s mined_quartz_ore 0
 scoreboard players set @s mined_nether_gold_ore 0
 scoreboard players set @s mined_end_stone 0
 scoreboard players set @s mined_stone 0
+
 
 scoreboard objectives remove points
 scoreboard objectives remove multiplier

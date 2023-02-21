@@ -1,0 +1,42 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:lily_pad",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Lucky Clover","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Trinket","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"When in Inventory:","italic":false,"color":"dark_purple"}],
+								["",{"text":"+7 Luck","italic":false,"color":"blue"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Lucky Clover\",
+								HideFlags:1
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,41 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Onyx Black Cat Skin","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"italic":false,"color":"blue","text":"Pet Skin"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"Pet skins change the look of"}],
+								["",{"italic":false,"color":"gray","text":"your pet, but only one skin can"}],
+								["",{"italic":false,"color":"gray","text":"be active at a time!"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"This skin can only be applied to"}],
+								["",{"italic":false,"color":"gray","text":"Black Cat pets."}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;956767314,-650229016,-1597976037,-281267626],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU5MjQxMTVkM2E4YmJhY2ZkNGZhZmI2Y2M3MGY5OWEyZjc1ODBlNDU4M2E1MGZhOWI5YzI4NWE5OGFjMGM1NiJ9fX0=\"}]}},
+								Name:\"Black Cat Pet Skin\",
+								Skin:\"Onyx\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

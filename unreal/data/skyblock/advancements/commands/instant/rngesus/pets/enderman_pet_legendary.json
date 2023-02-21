@@ -1,0 +1,37 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"RNGesus Drop: §6Enderman Pet",
+		"description":"[::]",
+		"frame":"challenge",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"enderman50":{
+			"trigger":"minecraft:player_killed_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"enderman\","10xp"]}"
+				},
+				"player":[
+					{
+						"condition":"random_chance_with_looting",
+						"chance":0.000006,
+						"looting_multiplier":0.000001
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"loot":[
+			"skyblock:items/pets/enderman/legendary"
+		],
+		"function":"skyblock:instant_reset"
+	}
+}

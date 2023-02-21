@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:cod",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Combat Exp Boost","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Trinket","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"Gives ","italic":false,"color":"gray"},{"text":"+20%","italic":false,"color":"green"},{"text":" chance to receive","italic":false,"color":"gray"}],
+								["",{"text":"bonus ","italic":false,"color":"gray"},{"text":"XP","italic":false,"color":"aqua"},{"text":" while catching fish.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Combat Exp Boost\",
+								HideFlags:3,
+								Unbreakable:true
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

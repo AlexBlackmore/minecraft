@@ -1,0 +1,37 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/ancient_claw"
+				}
+			],
+			"functions":[
+				{
+					"function":"set_count",
+					"count":2
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins100"
+				}
+			]
+		},
+		{
+			"rolls":25,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins"
+				}
+			]
+		}
+	]
+}

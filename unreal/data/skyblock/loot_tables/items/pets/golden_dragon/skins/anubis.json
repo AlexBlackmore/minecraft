@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Anubis Golden Dragon Skin","italic":false,"color":"dark_red"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"italic":false,"color":"blue","text":"Pet Skin"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"Pet skins change the look of"}],
+								["",{"italic":false,"color":"gray","text":"your pet, but only one skin can"}],
+								["",{"italic":false,"color":"gray","text":"be active at a time!"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"This skin can only be applied to"}],
+								["",{"italic":false,"color":"gray","text":"Golden Dragon pets."}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"green","text":"This skin is animated!"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;1524777129,2060405527,-1239130397,-1079498004],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjQ0ZGYyNTA3NWEzMjBjNjhkZjBlOWJjNzZmZDdmMGRiMGJlNmYxMjhlNTlkMTRmMDU5MWZlZDVjYzZjMzk2ZSJ9fX0=\"}]}},
+								Name:\"Golden Dragon Pet Skin\",
+								Skin:\"Anubis\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

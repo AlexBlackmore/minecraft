@@ -1,0 +1,41 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Beagle Hound Skin","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"italic":false,"color":"blue","text":"Pet Skin"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"Pet skins change the look of"}],
+								["",{"italic":false,"color":"gray","text":"your pet, but only one skin can"}],
+								["",{"italic":false,"color":"gray","text":"be active at a time!"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"This skin can only be applied to"}],
+								["",{"italic":false,"color":"gray","text":"Hound pets."}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;428463488,1797144835,-1436206414,-1566963678],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc3MzY0ZTBjZTI3ZjAyMzliNzc1NDcwNmI5MzAyMmQwY2Y5NDU4NTQwMTVkNjA5NmY5Y2Y0M2QyNGEzODI2OSJ9fX0=\"}]}},
+								Name:\"Hound Pet Skin\",
+								Skin:\"Beagle\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,44 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Monochrome Elephant Skin","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"italic":false,"color":"blue","text":"Pet Skin"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"Pet skins change the look of"}],
+								["",{"italic":false,"color":"gray","text":"your pet, but only one skin can"}],
+								["",{"italic":false,"color":"gray","text":"be active at a time!"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"This skin can only be applied to"}],
+								["",{"italic":false,"color":"gray","text":"Elephant pets."}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"dark_purple","text":"This skin adapts to the"}],
+								["",{"italic":false,"color":"dark_purple","text":"day-night cycle!"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;501799279,-646561250,-1895070726,2121762910],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGJkZjBmNjI4YzA1ZTg2Y2FiZGVlMmY1ODU4ZGQ1ZGVmN2Y4YjhkOTQwY2JmMjVmOTkzN2UyZmZiNTM0MzJmNCJ9fX0=\"}]}},
+								Name:\"Elephant Pet Skin\",
+								Skin:\"Monochrome\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

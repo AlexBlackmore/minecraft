@@ -1,0 +1,48 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Armadillo","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"italic":false,"color":"blue","text":"Pet"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gold","text":"Ability: Hive"}],
+								["",{"italic":false,"color":"gray","text":"Gain "},{"italic":false,"color":"blue","text":"+3 Intelligence"},{"italic":false,"color":"gray","text":" and"}],
+								["",{"italic":false,"color":"blue","text":"+0.6 Attack Damage"},{"italic":false,"color":"gray","text":" for each"}],
+								["",{"italic":false,"color":"gray","text":"nearby bee."}],
+								["",{"italic":false,"color":"dark_gray","text":"(Max Bees: 15)"}],
+								["",{"text":" "}],
+								["",{"italic":false,"text":"When Summoned:"}],
+								["",{"italic":false,"color":"blue","text":"+1 Attack Damage"}],
+								["",{"italic":false,"color":"blue","text":"+1 Intelligence"},{"italic":false,"color":"dark_gray","text":" per "},{"italic":false,"color":"dark_aqua","text":"2 levels"}],
+								["",{"italic":false,"color":"blue","text":"+1% Speed"},{"italic":false,"color":"dark_gray","text":" per "},{"italic":false,"color":"dark_aqua","text":"10 levels"}],
+								["",{"italic":false,"color":"blue","text":"+1 Attack Damage"},{"italic":false,"color":"dark_gray","text":" per "},{"italic":false,"color":"dark_aqua","text":"20 levels"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;169993795,1320963414,-1968191370,-1909091237],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzFlYjZkZjQ3MzZhZTI0ZGQxMmEzZDAwZjkxZTZlM2FhN2FkZTZiYmVmYjA5NzhhZmVmMmYwZjkyNDYxMDE4ZiJ9fX0=\"}]}},
+								Name:\"Armadillo\",
+								Rarity:0,
+								Ability:true,
+								Pet:true
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

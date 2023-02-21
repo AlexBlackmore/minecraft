@@ -1,0 +1,34 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:orange_dye",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Necron Dye","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Changes the color of a leather","italic":false,"color":"gray"}],
+								["",{"text":"armor piece to ","italic":false,"color":"gray"},{"text":"#E7413C","italic":false,"color":"#E7413C"},{"text":"!","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Dye\",
+								color:15155516
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

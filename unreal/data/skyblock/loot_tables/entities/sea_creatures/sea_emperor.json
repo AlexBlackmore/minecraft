@@ -4,7 +4,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/emperors_skull"
 				}
 			]
@@ -13,23 +13,26 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/enchanted/lily_pad"
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"item",
-					"name":"minecraft:lily_pad"
+					"type":"minecraft:item",
+					"name":"minecraft:sponge"
 				}
 			],
 			"functions":[
 				{
 					"function":"set_count",
-					"count":32
+					"count":2
+				},
+				{
+					"function":"set_count",
+					"count":1,
+					"add":true,
+					"conditions":[
+						{
+							"condition":"minecraft:random_chance_with_looting",
+							"chance":0.50,
+							"looting_multiplier":0.01
+						}
+					]
 				},
 				{
 					"function":"looting_enchant",
@@ -44,7 +47,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:cod"
 				}
 			],
@@ -66,17 +69,39 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:prismarine_crystals"
+					"type":"minecraft:item",
+					"name":"minecraft:lily_pad"
 				}
 			],
 			"functions":[
+				{
+					"function":"set_count",
+					"count":32
+				},
 				{
 					"function":"looting_enchant",
 					"count":{
 						"min":0,
 						"max":1
 					}
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/enchanted/lily_pad"
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/enchanted/prismarine_shard"
 				}
 			],
 			"conditions":[
@@ -91,64 +116,14 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:prismarine_shard"
-				}
-			],
-			"functions":[
-				{
-					"function":"looting_enchant",
-					"count":{
-						"min":0,
-						"max":1
-					}
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/enchanted/prismarine_crystals"
 				}
 			],
 			"conditions":[
 				{
 					"condition":"minecraft:random_chance_with_looting",
 					"chance":0.5,
-					"looting_multiplier":0.01
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"item",
-					"name":"minecraft:sponge"
-				}
-			],
-			"functions":[
-				{
-					"function":"set_count",
-					"count":3
-				},
-				{
-					"function":"set_count",
-					"count":2,
-					"add":true,
-					"conditions":[
-						{
-							"condition":"minecraft:random_chance_with_looting",
-							"chance":0.75,
-							"looting_multiplier":0.01
-						}
-					]
-				},
-				{
-					"function":"looting_enchant",
-					"count":{
-						"min":0,
-						"max":1
-					}
-				}
-			],
-			"conditions":[
-				{
-					"condition":"minecraft:random_chance_with_looting",
-					"chance":0.25,
 					"looting_multiplier":0.01
 				}
 			]
@@ -159,42 +134,49 @@
 			"entries":[
 				{
 					"type":"minecraft:empty",
-					"weight":6598
+					"quality":-10,
+					"weight":6413
 				},
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/pets/flying_fish/rare",
 					"quality":1,
 					"weight":2000
 				},
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/pets/flying_fish/epic",
 					"quality":1,
 					"weight":800
 				},
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/enchanted_books/blessing6",
-					"quality":1,
-					"weight":200
-				},
-				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/pets/flying_fish/legendary",
 					"quality":1,
 					"weight":200
 				},
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/enchanted_books/blessing6",
+					"quality":1,
+					"weight":200
+				},
+				{
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/fishing_rods/shredder",
 					"quality":1,
 					"weight":200
 				},
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/exp_boosts/fishing/epic",
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/bobbin_scriptures",
 					"quality":1,
+					"weight":185
+				},
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/trinkets/exp_boosts/fishing/rare",
+					"quality":4,
 					"weight":2
 				}
 			]
@@ -203,26 +185,17 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:emerald"
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins100"
 				}
-			],
-			"functions":[
+			]
+		},
+		{
+			"rolls":50,
+			"entries":[
 				{
-					"function":"set_count",
-					"count":2
-				},
-				{
-					"function":"set_count",
-					"count":1,
-					"add":true,
-					"conditions":[
-						{
-							"condition":"minecraft:random_chance_with_looting",
-							"chance":0.6667,
-							"looting_multiplier":0.01
-						}
-					]
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins"
 				}
 			]
 		}

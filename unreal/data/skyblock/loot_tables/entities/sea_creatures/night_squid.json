@@ -4,7 +4,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:ink_sac"
 				}
 			],
@@ -62,7 +62,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:lily_pad"
 				}
 			],
@@ -82,41 +82,35 @@
 			"entries":[
 				{
 					"type":"minecraft:empty",
+					"quality":-7,
 					"weight":914
 				},
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/armor/squid_boots",
 					"quality":1,
 					"weight":80
 				},
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/exp_boosts/fishing/uncommon",
-					"quality":1,
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/trinkets/exp_boosts/fishing/uncommon",
+					"quality":2,
 					"weight":5
 				},
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/exp_boosts/fishing/rare",
-					"quality":1,
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/trinkets/exp_boosts/fishing/rare",
+					"quality":4,
 					"weight":1
 				}
 			]
 		},
 		{
-			"rolls":1,
+			"rolls":5,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:emerald"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"minecraft:random_chance_with_looting",
-					"chance":0.8333,
-					"looting_multiplier":0.01
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins"
 				}
 			]
 		}

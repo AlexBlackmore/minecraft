@@ -1,0 +1,34 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:green_dye",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Emerald Dye","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Changes the color of a leather","italic":false,"color":"gray"}],
+								["",{"text":"armor piece to ","italic":false,"color":"gray"},{"text":"#50C878","italic":false,"color":"#50C878"},{"text":"!","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Dye\",
+								color:5294200
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

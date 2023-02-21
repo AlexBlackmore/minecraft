@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:gold_ingot",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Gold Claws","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+									["",{"text":"Trinket","italic":false,"color":"blue"}],
+									{"text":""},
+									["",{"text":"When in Inventory:","italic":false,"color":"dark_purple"}],
+									["",{"text":"Increases total ","italic":false,"color":"gray"},{"text":"Crit Damage","italic":false,"color":"blue"},{"text":" and","italic":false,"color":"gray"}],
+									["",{"text":"Crit Chance","italic":false,"color":"blue"},{"text":" by ","italic":false,"color":"gray"},{"text":"50%","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Gold Claws\",
+								HideFlags:3
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

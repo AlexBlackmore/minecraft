@@ -4,7 +4,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:lily_pad"
 				}
 			],
@@ -62,7 +62,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/enchanted/iron_ingot"
 				}
 			],
@@ -77,7 +77,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:tropical_fish"
 				}
 			],
@@ -111,7 +111,7 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
+					"type":"minecraft:item",
 					"name":"minecraft:sponge"
 				}
 			],
@@ -131,18 +131,19 @@
 			"entries":[
 				{
 					"type":"minecraft:empty",
+					"quality":-5,
 					"weight":9798
 				},
 				{
-					"type":"loot_table",
+					"type":"minecraft:loot_table",
 					"name":"skyblock:items/enchanted_books/angler6",
 					"quality":1,
 					"weight":200
 				},
 				{
-					"type":"loot_table",
-					"name":"skyblock:items/exp_boosts/fishing/epic",
-					"quality":1,
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/trinkets/exp_boosts/fishing/epic",
+					"quality":4,
 					"weight":2
 				}
 			]
@@ -151,26 +152,8 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"item",
-					"name":"minecraft:emerald"
-				}
-			],
-			"functions":[
-				{
-					"function":"set_count",
-					"count":16
-				},
-				{
-					"function":"set_count",
-					"count":1,
-					"add":true,
-					"conditions":[
-						{
-							"condition":"minecraft:random_chance_with_looting",
-							"chance":0.6667,
-							"looting_multiplier":0.01
-						}
-					]
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/coins100"
 				}
 			]
 		}

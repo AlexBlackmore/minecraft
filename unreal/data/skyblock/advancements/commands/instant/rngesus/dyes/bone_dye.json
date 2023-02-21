@@ -1,0 +1,37 @@
+{
+	"parent":"skyblock:commands/instant",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"RNGesus Drop: §dBone Dye",
+		"description":"Rare drop from any Skeleton-type mob (1/3,000,000).",
+		"frame":"challenge",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_killed_entity",
+			"conditions":{
+				"entity":{
+					"type":"#minecraft:skeletons"
+				},
+				"player":[
+					{
+						"condition":"random_chance_with_looting",
+						"chance":0.0000003333,
+						"looting_multipier":0.0000001
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"loot":[
+			"skyblock:items/dyes/bone"
+		],
+		"function":"skyblock:instant_reset"
+	}
+}

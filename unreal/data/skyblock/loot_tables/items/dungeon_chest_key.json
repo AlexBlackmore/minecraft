@@ -1,0 +1,41 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:tripwire_hook",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Dungeon Chest Key","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Allows you to open a","italic":false,"color":"gray"}],
+								["",{"text":"Dungeon Reward Chest","italic":false,"color":"red"},{"text":", located","italic":false,"color":"gray"}],
+								["",{"text":"beneath the ","italic":false,"color":"gray"},{"text":"Colosseum","italic":false,"color":"aqua"},{"text":"!","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Dungeon Chest Key\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

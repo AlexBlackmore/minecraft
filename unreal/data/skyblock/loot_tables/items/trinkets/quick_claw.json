@@ -1,0 +1,37 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Quick Claw","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Trinket","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"When in Inventory:","italic":false,"color":"dark_purple"}],
+								["",{"text":"Every ","italic":false,"color":"gray"},{"text":"10 levels","italic":false,"color":"green"},{"text":" grants","italic":false,"color":"gray"}],
+								["",{"text":"+5% Attack Speed","italic":false,"color":"gray"},{"text":" and ","italic":false,"color":"gray"},{"text":"+1 Luck","italic":false,"color":"blue"},{"text":".","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;1339363961,-1315944084,-2084550090,392953421],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjMxMmE1YTEyZWNiMjRkNjg1MmRiMzg4ZTZhMzQ3MjFjYzY3ZjUyMmNjZGU3ZTgyNGI5Zjc1ZTk1MDM2YWM5MyJ9fX0=\"}]}},
+								Name:\"Quick Claw\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
