@@ -1,0 +1,37 @@
+summon piglin_brute ~ ~ ~ {
+	CustomName:"{\"text\":\"King Midas\"}",
+	CustomNameVisible:true,
+	Tags:[\"spawn_mob\","skyblock","king_midas","100xp"],
+	Health:130,
+	Attributes:[
+		{Name:"generic.max_health",Base:130}
+	],
+	HandItems:[
+		{
+			id:"golden_sword",
+			Count:1
+		},
+		{}
+	],
+	ArmorItems:[
+		{
+			id:"golden_boots",
+			Count:1
+		},
+		{
+			id:"golden_leggings",
+			Count:1
+		},
+		{
+			id:"golden_chestplate",
+			Count:1
+		},
+		{
+			id:"golden_helmet",
+			Count:1
+		}
+	],
+	HandDropChances:[0.0f,0.0f],
+	ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+	DeathLootTable:"skyblock:entities/dungeons/king_midas"
+}

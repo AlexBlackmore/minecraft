@@ -1,0 +1,80 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:written_book",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Maddox Batphone","italic":false,"color":"yellow"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Ability: Whassup?","italic":false,"color":"gold"}],
+								["",{"text":"Lets you call ","italic":false,"color":"gray"},{"text":"Maddox","italic":false,"color":"dark_purple"},{"text":", when he's","italic":false,"color":"gray"}],
+								["",{"text":"not busy.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								pages:[
+									'[\"\",
+										{\"text\":\"\\\\u2620 \",\"color\":\"red\"},{\"text\":\"Revenant Horror\\\\n\",\"bold\":true,\"color\":\"dark_green\"},
+										{\"text\":\"Abhorrent Zombie stuck between life and death for an eternity.\\\\n\",\"italic\":true,\"color\":\"gray\"},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"green\"},{\"text\":\"Tier I\",\"bold\":true,\"color\":\"green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/zombie/tier1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x5\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"gold\"},{\"text\":\"Tier II\",\"bold\":true,\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/zombie/tier2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x20\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"red\"},{\"text\":\"Tier III\",\"bold\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/zombie/tier3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x52\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"Tier IV\",\"bold\":true,\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/zombie/tier4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"aqua\"},{\"text\":\" x2\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"Tier V\",\"bold\":true,\"color\":\"dark_purple\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/zombie/tier5\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"aqua\"},{\"text\":\" x4\",\"color\":\"dark_gray\"}]}}
+									]',
+									'[\"\",
+										{\"text\":\"\\\\u2620 \",\"color\":\"red\"},{\"text\":\"Tarantula Broodfather\\\\n\",\"bold\":true,\"color\":\"red\"},
+										{\"text\":\"Monstrous Spider who poisons and devours its victims.\\\\n\",\"italic\":true,\"color\":\"gray\"},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"green\"},{\"text\":\"Tier I\",\"bold\":true,\"color\":\"green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/spider/tier1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x5\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"gold\"},{\"text\":\"Tier II\",\"bold\":true,\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/spider/tier2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x20\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"red\"},{\"text\":\"Tier III\",\"bold\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/spider/tier3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x52\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"Tier IV\",\"bold\":true,\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/spider/tier4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"aqua\"},{\"text\":\" x2\",\"color\":\"dark_gray\"}]}}
+									]',
+									'[\"\",
+										{\"text\":\"\\\\u2620 \",\"color\":\"red\"},{\"text\":\"Sven Packmaster\\\\n\",\"bold\":true,\"color\":\"gold\"},
+										{\"text\":\"Rabid Wolf genetically modified by a famous mad scientist. Eats bones and flesh.\\\\n\",\"italic\":true,\"color\":\"gray\"},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"green\"},{\"text\":\"Tier I\",\"bold\":true,\"color\":\"green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/wolf/tier1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x5\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"gold\"},{\"text\":\"Tier II\",\"bold\":true,\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/wolf/tier2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x20\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"red\"},{\"text\":\"Tier III\",\"bold\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/wolf/tier3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x52\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"Tier IV\",\"bold\":true,\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/wolf/tier4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"aqua\"},{\"text\":\" x2\",\"color\":\"dark_gray\"}]}}
+									]',
+									'[\"\",
+										{\"text\":\"\\\\u2620 \",\"color\":\"red\"},{\"text\":\"Voidgloom Seraph\\\\n\",\"bold\":true,\"color\":\"light_purple\"},
+										{\"text\":\"If Necron is the right-hand of the Wither King, this dark demigod is the left-hand.\\\\n\",\"italic\":true,\"color\":\"gray\"},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"green\"},{\"text\":\"Tier I\",\"bold\":true,\"color\":\"green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/enderman/tier1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x5\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"gold\"},{\"text\":\"Tier II\",\"bold\":true,\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/enderman/tier2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x20\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"red\"},{\"text\":\"Tier III\",\"bold\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/enderman/tier3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x52\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"Tier IV\",\"bold\":true,\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/enderman/tier4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"aqua\"},{\"text\":\" x2\",\"color\":\"dark_gray\"}]}}
+									]',
+									'[\"\",
+										{\"text\":\"\\\\u2620 \",\"color\":\"red\"},{\"text\":\"Inferno Demonlord\\\\n\",\"bold\":true,\"color\":\"dark_red\"},
+										{\"text\":\"Even demons fear this incarnation of pure evil, constantly feeding on its burning desire for destruction.\\\\n\",\"italic\":true,\"color\":\"gray\"},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"green\"},{\"text\":\"Tier I\",\"bold\":true,\"color\":\"green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/blaze/tier1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"yellow\"},{\"text\":\" x26\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"gold\"},{\"text\":\"Tier II\",\"bold\":true,\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/blaze/tier2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"aqua\"},{\"text\":\" x1\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"red\"},{\"text\":\"Tier III\",\"bold\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/blaze/tier3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"aqua\"},{\"text\":\" x2\",\"color\":\"dark_gray\"}]}},
+										{\"text\":\"\\\\nx \",\"obfuscated\":true,\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"Tier IV\",\"bold\":true,\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function skyblock:slayer/blaze/tier4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Cost: \",\"color\":\"gray\"},{\"text\":\"Enchanted Emerald\",\"color\":\"aqua\"},{\"text\":\" x6\",\"color\":\"dark_gray\"}]}}
+									]'
+								],
+								title:\"Maddox Batphone\",
+								author:\"?\",
+								generation:3,
+								HideFlags:32,
+								Name:\"Maddox Batphone\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

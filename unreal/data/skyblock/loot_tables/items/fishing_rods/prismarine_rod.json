@@ -8,29 +8,58 @@
 					"name":"minecraft:fishing_rod",
 					"functions":[
 						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Prismarine Rod","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Ability: Fishing Speed","italic":false,"color":"gold"}],
+								["",{"text":"Grants a ","italic":false,"color":"gray"},{"text":"15%","italic":false,"color":"green"},{"text":" chance to catch","italic":false,"color":"gray"}],
+								["",{"text":"extra fish.","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Grants a ","italic":false,"color":"gray"},{"text":"+25%","italic":false,"color":"green"},{"text":" chance to catch","italic":false,"color":"gray"}],
+								["",{"text":"Prismarine Shards","italic":false,"color":"white"},{"text":" or","italic":false,"color":"gray"}],
+								["",{"text":"Prismarine Crystals","italic":false,"color":"white"},{"text":".","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
-								display:{
-									Name:\"{\\\"text\\\":\\\"Prismarine Rod\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\",
-									Lore:[
-										\"\\\" \\\"\",
-										\"[\\\"\\\",{\\\"text\\\":\\\"Grants a \\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"},{\\\"text\\\":\\\"25%\\\",\\\"italic\\\":false,\\\"color\\\":\\\"green\\\"},{\\\"text\\\":\\\" chance to catch\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}]\",
-										\"{\\\"text\\\":\\\"Prismarine Shards or Prismarine\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-										\"{\\\"text\\\":\\\"Crystals as an extra drop.\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gray\\\"}\",
-										\"\\\" \\\"\",
-										\"{\\\"text\\\":\\\"COMMON\\\",\\\"bold\\\":true,\\\"color\\\":\\\"white\\\"}\",
-										\"\\\" \\\"\"
-									]
-								},
-								Enchantments:[
-									{id:\"lure\",lvl:1},
-									{id:\"sharpness\",lvl:6}
-								],
-								AttributeModifiers:[
-									{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:2,Operation:0,UUID:[I;524312315,816545671,289779906,411131256]}
-								],
-								Name:\"Prismarine Rod\"
+								Name:\"Prismarine Rod\",
+								Rarity:0,
+								Lore:[\"\",
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Ability: Fishing Speed\",\"italic\":false,\"color\":\"gold\"}]',
+									'[\"\",{\"text\":\"Grants an \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"15%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"extra fish.\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Grants a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+25%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"Prismarine Shards\",\"italic\":false,\"color\":\"white\"},{\"text\":\" or\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"Prismarine Crystals\",\"italic\":false,\"color\":\"white\"},{\"text\":\".\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}'
+								]
 							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"sharpness":6
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":2,
+									"slot":"mainhand"
+								}
+							]
 						}
 					]
 				}
@@ -38,3 +67,4 @@
 		}
 	]
 }
+

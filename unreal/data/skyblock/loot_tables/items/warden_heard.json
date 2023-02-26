@@ -1,0 +1,33 @@
+{
+	"pools":[
+		{
+		  "rolls":1,
+		  "entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Warden Heart","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"The heart of a powerful","italic":false,"color":"gray"}],
+								["",{"text":"creature, dropped by the Atoned","italic":false,"color":"gray"}],
+								["",{"text":"Horror.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Warden Heart\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

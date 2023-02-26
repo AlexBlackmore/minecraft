@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:block",
+	"pools":[
+		{
+			"rolls": 1,
+			"entries":[
+				{
+					"type": "minecraft:loot_table",
+					"name": "skyblock:items/titanium"
+				}
+			],
+			"functions":[
+				{
+					"function":"apply_bonus",
+					"enchantment":"fortune",
+					"formula":"ore_drops"
+				}
+			]
+		},
+		{
+			"rolls":0,
+			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":19
+				},
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/titanium",
+					"weight":1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,11 @@
+summon spider ~ ~ ~ {
+	CustomName:"{\"text\":\"Spitter Spider\"}",
+	CustomNameVisible:true,
+	Tags:[\"spawn_mob\","skyblock","spitter_spider"],
+	Health:36,
+	Attributes:[
+		{Name:"generic.max_health",Base:36},
+		{Name:"generic.attack_damage",Base:6}
+	],
+	DeathLootTable:"skyblock:entities/spiders_den/spider"
+}

@@ -1,0 +1,43 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:cobweb\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Cobweb Recipe","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:cobweb":false
+							}
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.01
+				}
+			]
+		}
+	]
+}

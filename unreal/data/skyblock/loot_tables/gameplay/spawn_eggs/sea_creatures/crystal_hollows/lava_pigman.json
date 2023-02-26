@@ -1,0 +1,57 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Lava Pigman","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"A Lava Pigman arose from the depths!","italic":false,"color":"green"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:zombified_piglin\",
+									CustomNameVisible:true,
+									Tags:[\"spawn_mob\",\"lava_sea_creature\",\"sea_creature\",\"lava_pigman\",\"10xp\"],
+									Health:100,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:100}
+									],
+									Fire:32767,
+									HandItems:[
+										{
+											id:\"golden_sword\",
+											Count:1
+										},
+										{}
+									],
+									HandDropChances:[0.0f,0.0f],
+									DeathLootTable:\"skyblock:entities/sea_creatures/crystal_hollows/lava_pigman\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

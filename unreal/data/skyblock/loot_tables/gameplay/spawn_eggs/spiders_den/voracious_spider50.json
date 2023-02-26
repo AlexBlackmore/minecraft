@@ -1,0 +1,11 @@
+summon spider ~ ~ ~ {
+	CustomName:"{\"text\":\"Voracious Spider\"}",
+	CustomNameVisible:true,
+	Tags:[\"spawn_mob\","skyblock","voracious_spider"],
+	Health:200,
+	Attributes:[
+		{Name:"generic.max_health",Base:200},
+		{Name:"generic.attack_damage",Base:20}
+	],
+	DeathLootTable:"skyblock:entities/spiders_den/spider"
+}

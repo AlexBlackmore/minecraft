@@ -3,6 +3,12 @@ effect give @a[advancements={skyblock:accessories/campfire_god_badge=true},predi
 
 execute as @a[advancements={skyblock:accessories/magnetic_talisman=true}] at @s run tp @e[type=item,distance=0..3] ~ ~ ~
 
+#Hub Island fishing locations
+execute as @a at @s if entity @e[tag=tia_the_fairy,distance=0..40] run tag @s add FairyPond
+execute as @a at @s unless entity @e[tag=tia_the_fairy,distance=0..40] run tag @s remove FairyPond
+execute as @a at @s if entity @e[tag=fisherman,distance=0..40] run tag @s add FishermansHut
+execute as @a at @s unless entity @e[tag=fisherman,distance=0..40] run tag @s remove FishermansHut
+
 
 #Every 2 seconds
 scoreboard players set @a dummy 40

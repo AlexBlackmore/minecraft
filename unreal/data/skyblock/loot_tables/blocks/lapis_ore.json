@@ -5,7 +5,7 @@
 			"entries":[
 				{
 					"type":"minecraft:item",
-					"name":"lapis_lazuli",
+					"name":"minecraft:lapis_lazuli",
 					"functions":[
 						{
 							"function": "minecraft:set_count",
@@ -38,7 +38,7 @@
 			"entries":[
 				{
 					"type":"minecraft:item",
-					"name":"lapis_lazuli",
+					"name":"minecraft:lapis_lazuli",
 					"weight":1
 				},
 				{
@@ -53,7 +53,7 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:refined_mineral"
+					"name":"skyblock:gameplay/mining/refined_mineral"
 				}
 			]
 		},
@@ -61,8 +61,20 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/mining"
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:experience_bottle\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Experience Bottle Recipe","italic":false,"color":"gray"}]
+							]
+						}
+					]
 				}
 			],
 			"conditions":[
@@ -71,9 +83,15 @@
 					"entity":"this",
 					"predicate":{
 						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Mining Exp Boost\"}}]}"
+							"recipes":{
+								"skyblock:experience_bottle":false
+							}
 						}
 					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.002
 				}
 			]
 		}

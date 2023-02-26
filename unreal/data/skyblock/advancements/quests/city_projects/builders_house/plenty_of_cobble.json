@@ -1,0 +1,51 @@
+{
+	"parent":"skyblock:quests/city_projects",
+	"display":{
+		"icon":{
+			"item":"minecraft:cobblestone"
+		},
+		"title":"Plenty of Cobble'",
+		"description":"Contribute 512x Cobblestone.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"elizabeth\"]}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{Slot:0b,id:\"minecraft:cobblestone\",Count:64b},
+									{Slot:1b,id:\"minecraft:cobblestone\",Count:64b},
+									{Slot:2b,id:\"minecraft:cobblestone\",Count:64b},
+									{Slot:3b,id:\"minecraft:cobblestone\",Count:64b},
+									{Slot:4b,id:\"minecraft:cobblestone\",Count:64b},
+									{Slot:5b,id:\"minecraft:cobblestone\",Count:64b},
+									{Slot:6b,id:\"minecraft:cobblestone\",Count:64b},
+									{Slot:7b,id:\"minecraft:cobblestone\",Count:64b}
+								]
+							}",
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":200,
+		"function":"skyblock:npcs/city_projects/builders_house/contribute8"
+	}
+}

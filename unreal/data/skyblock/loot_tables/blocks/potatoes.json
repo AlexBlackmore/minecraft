@@ -6,7 +6,7 @@
 			"entries":[
 				{
 					"type":"minecraft:item",
-					"name":"potato"
+					"name":"minecraft:potato"
 				}
 			]
 		},
@@ -28,6 +28,7 @@
 						},
 						{
 							"function":"set_count",
+							"add":true,
 							"count":{
 								"min":0,
 								"max":1
@@ -44,19 +45,9 @@
 										}
 									}
 								}
-							],
-							"add":true
+							]
 						}
 					]
-				}
-			],
-			"conditions":[
-				{
-					"condition":"block_state_property",
-					"block":"potatoes",
-					"properties":{
-						"age":"7"
-					}
 				}
 			]
 		},
@@ -74,15 +65,6 @@
 					],
 					"name":"poisonous_potato"
 				}
-			],
-			"conditions":[
-				{
-					"condition":"block_state_property",
-					"block":"potatoes",
-					"properties":{
-						"age":"7"
-					}
-				}
 			]
 		},
 		{
@@ -90,58 +72,13 @@
 			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"minecraft:item",
-					"name":"minecraft:potato",
-					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
+					"type":"minecraft:empty",
 					"weight":19
-				}
-			],
-			"conditions":[
-				{
-					"condition":"block_state_property",
-					"block":"minecraft:potatoes",
-					"properties":{
-						"age":"7"
-					}
-				}
-			]
-		},
-		{
-			"rolls":36,
-			"entries":[
+				},
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:potato",
 					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
-				}
-			],
-			"conditions":[
-				{
-					"condition":"block_state_property",
-					"block":"minecraft:potatoes",
-					"properties":{
-						"age":"7"
-					}
-				},
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"advancements":{
-								"skyblock:pets/elephant/legendary":true
-							}
-						}
-					}
 				}
 			]
 		},
@@ -150,25 +87,13 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/farming"
+					"name":"skyblock:items/dyes/wild_strawberry"
 				}
 			],
 			"conditions":[
 				{
-					"condition":"block_state_property",
-					"block":"potatoes",
-					"properties":{
-						"age":"7"
-					}
-				},
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Farming Exp Boost\"}}]}"
-						}
-					}
+					"condition":"random_chance",
+					"chance":0.000000006667
 				}
 			]
 		}
@@ -183,7 +108,7 @@
 					"predicate":{
 						"equipment":{
 							"mainhand":{
-								"nbt":"{Smelting_Touch:true}"
+								"nbt":"{CustomEnchantments:[{id:\"skyblock:smelting_touch\"}]}"
 							}
 						}
 					}

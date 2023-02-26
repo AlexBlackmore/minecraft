@@ -1,12 +1,31 @@
 {
-	"type":"block",
+	"type":"minecraft:block",
 	"pools":[
 		{
 			"rolls":1,
+			"bonus_rolls":0,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:blocks/carrots"
+					"type":"minecraft:alternatives",
+					"children":[
+						{
+							"type":"minecraft:loot_table",
+							"name":"skyblock:blocks/carrots",
+							"conditions":[
+								{
+									"condition":"block_state_property",
+									"block":"carrots",
+									"properties":{
+										"age":"7"
+									}
+								}
+							]
+						},
+						{
+							"type":"minecraft:item",
+							"name":"minecraft:carrot"
+						}
+					]
 				}
 			]
 		}

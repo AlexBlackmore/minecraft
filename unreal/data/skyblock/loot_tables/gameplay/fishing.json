@@ -77,6 +77,52 @@
 						}
 					]
 				}
+			],
+			"functions":[
+				{
+					"function":"minecraft:set_count",
+					"count":1,
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"nbt":"{Name:\"Blessed Bait\"}"
+									}
+								}
+							}
+						},
+						{
+							"condition":"random_chance",
+							"chance":0.15
+						}
+					],
+					"add":true
+				},
+				{
+					"function":"minecraft:set_count",
+					"count":1,
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"offhand":{
+										"nbt":"{Name:\"Whale Bait\"}"
+									}
+								}
+							}
+						},
+						{
+							"condition":"random_chance",
+							"chance":0.05
+						}
+					],
+					"add":true
+				}
 			]
 		},
 		{
@@ -88,52 +134,6 @@
 					"name":"minecraft:gameplay/fishing/fishing_speed"
 				}
 			]
-		}
-	],
-	"functions":[
-		{
-			"function":"minecraft:set_count",
-			"count":1,
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"equipment":{
-							"offhand":{
-								"nbt":"{Name:\"Blessed Bait\"}"
-							}
-						}
-					}
-				},
-				{
-					"condition":"random_chance",
-					"chance":0.15
-				}
-			],
-			"add":true
-		},
-		{
-			"function":"minecraft:set_count",
-			"count":1,
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"equipment":{
-							"offhand":{
-								"nbt":"{Name:\"Whale Bait\"}"
-							}
-						}
-					}
-				},
-				{
-					"condition":"random_chance",
-					"chance":0.05
-				}
-			],
-			"add":true
 		}
 	]
 }

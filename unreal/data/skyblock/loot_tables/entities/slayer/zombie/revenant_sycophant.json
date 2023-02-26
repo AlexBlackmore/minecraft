@@ -18,16 +18,17 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/spawn_eggs/slayer/zombie/tier1",
+					"name":"skyblock:gameplay/spawn_eggs/slayer/zombie/tier1",
 					"weight":360
 				}
 			],
-			"conditions":[				
+			"conditions":[
 				{
 					"condition":"minecraft:entity_properties",
 					"entity":"killer_player",
 					"predicate":{
-						"player":{
+						"type_specific":{
+							"type":"player",
 							"advancements":{
 								"skyblock:quests/slayer/zombie/tier1":true
 							}
@@ -45,16 +46,17 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/spawn_eggs/slayer/zombie/tier2",
+					"name":"skyblock:gameplay/spawn_eggs/slayer/zombie/tier2",
 					"weight":360
 				}
 			],
-			"conditions":[				
+			"conditions":[
 				{
 					"condition":"minecraft:entity_properties",
 					"entity":"killer_player",
 					"predicate":{
-						"player":{
+						"type_specific":{
+							"type":"player",
 							"advancements":{
 								"skyblock:quests/slayer/zombie/tier2":true
 							}
@@ -72,16 +74,17 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/spawn_eggs/slayer/zombie/tier3",
+					"name":"skyblock:gameplay/spawn_eggs/slayer/zombie/tier3",
 					"weight":360
 				}
 			],
-			"conditions":[				
+			"conditions":[
 				{
 					"condition":"minecraft:entity_properties",
 					"entity":"killer_player",
 					"predicate":{
-						"player":{
+						"type_specific":{
+							"type":"player",
 							"advancements":{
 								"skyblock:quests/slayer/zombie/tier3":true
 							}
@@ -99,16 +102,17 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/spawn_eggs/slayer/zombie/tier4",
+					"name":"skyblock:gameplay/spawn_eggs/slayer/zombie/tier4",
 					"weight":360
 				}
 			],
-			"conditions":[				
+			"conditions":[
 				{
 					"condition":"minecraft:entity_properties",
 					"entity":"killer_player",
 					"predicate":{
-						"player":{
+						"type_specific":{
+							"type":"player",
 							"advancements":{
 								"skyblock:quests/slayer/zombie/tier4":true
 							}
@@ -126,16 +130,17 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/spawn_eggs/slayer/zombie/tier5",
+					"name":"skyblock:gameplay/spawn_eggs/slayer/zombie/tier5",
 					"weight":360
 				}
 			],
-			"conditions":[				
+			"conditions":[
 				{
 					"condition":"minecraft:entity_properties",
 					"entity":"killer_player",
 					"predicate":{
-						"player":{
+						"type_specific":{
+							"type":"player",
 							"advancements":{
 								"skyblock:quests/slayer/zombie/tier5":true
 							}

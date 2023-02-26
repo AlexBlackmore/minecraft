@@ -5,26 +5,8 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"alternatives",
-					"children":[
-						{
-							"type":"minecraft:item",
-							"name":"wheat",
-							"conditions":[
-								{
-									"condition":"block_state_property",
-									"block":"wheat",
-									"properties":{
-										"age":"7"
-									}
-								}
-							]
-						},
-						{
-							"type":"minecraft:item",
-							"name":"wheat_seeds"
-						}
-					]
+					"type":"minecraft:item",
+					"name":"minecraft:wheat"
 				}
 			]
 		},
@@ -33,7 +15,7 @@
 			"entries":[
 				{
 					"type":"minecraft:item",
-					"name":"wheat_seeds",
+					"name":"minecraft:wheat_seeds",
 					"functions":[
 						{
 							"function":"apply_bonus",
@@ -46,6 +28,7 @@
 						},
 						{
 							"function":"set_count",
+							"add":true,
 							"count":{
 								"min":0,
 								"max":1
@@ -62,79 +45,24 @@
 										}
 									}
 								}
-							],
-							"add":true
+							]
 						}
 					]
 				}
 			],
-			"conditions":[
-				{
-					"condition":"block_state_property",
-					"block":"wheat",
-					"properties":{
-						"age":"7"
-					}
-				}
-			]
 		},
 		{
 			"rolls":0,
 			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"minecraft:item",
-					"name":"minecraft:wheat",
-					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
+					"type":"minecraft:empty",
 					"weight":19
-				}
-			],
-			"conditions":[
-				{
-					"condition":"block_state_property",
-					"block":"wheat",
-					"properties":{
-						"age":"7"
-					}
-				}
-			]
-		},
-		{
-			"rolls":36,
-			"entries":[
+				},
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:wheat",
 					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
-				}
-			],
-			"conditions":[
-				{
-					"condition":"block_state_property",
-					"block":"wheat",
-					"properties":{
-						"age":"7"
-					}
-				},
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"advancements":{
-								"skyblock:pets/elephant/legendary":true
-							}
-						}
-					}
 				}
 			]
 		},
@@ -143,15 +71,84 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/farming"
+					"name":"skyblock:items/dyes/wild_strawberry"
 				}
 			],
 			"conditions":[
 				{
-					"condition":"block_state_property",
-					"block":"wheat",
-					"properties":{
-						"age":"7"
+					"condition":"random_chance",
+					"chance":0.000000006667
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:trades/dirt\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Dirt Trade","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/dirt":false
+							}
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.02
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:trades/grass\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Grass Trade","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/dirt":true
+							}
+						}
 					}
 				},
 				{
@@ -159,9 +156,162 @@
 					"entity":"this",
 					"predicate":{
 						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Farming Exp Boost\"}}]}"
+							"recipes":{
+								"skyblock:trades/grass":false
+							}
 						}
 					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.004
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:trades/fern\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Fern Trade","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/grass":true
+							}
+						}
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/fern":false
+							}
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.001
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:trades/dead_bush\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Dead Bush Trade","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/fern":true
+							}
+						}
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/dead_bush":false
+							}
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.0004
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:trades/tall_grass\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Tall Grass Trade","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/dead_bush":true
+							}
+						}
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/tall_grass":false
+							}
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.0002
 				}
 			]
 		}

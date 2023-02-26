@@ -1,0 +1,36 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:charcoal",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Foul Flesh","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Spawner Fuel","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"Decreases the average delay of a","italic":false,"color":"gray"}],
+								["",{"text":"Spawner by ","italic":false,"color":"gray"},{"text":"90%","italic":false,"color":"green"},{"text":" for ","italic":false,"color":"gray"},{"text":"5","italic":false,"color":"green"},{"text":" hours.","italic":false,"color":"gray"}]
+								
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Hamster Wheel"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

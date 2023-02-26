@@ -37,26 +37,6 @@
 					]
 				}
 			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/foraging"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Foraging Exp Boost\"}}]}"
-						}
-					}
-				}
-			]
 		}
 	]
 }

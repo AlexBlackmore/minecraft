@@ -1,6 +1,6 @@
 tag @e[type=item,nbt={Item:{id:"minecraft:zombie_spawn_egg",tag:{Enchantments:[{id:"minecraft:unbreaking"}]}}}] add spawn_egg
 
-execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{id:"minecraft:allay"}}}}] run summon allay ~ ~ ~ {Tags:["sea_creature"]}
+execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{id:"minecraft:allay"}}}}] run summon allay ~ ~ ~ {Tags:["spawn_mob"]}
 execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{id:"minecraft:axolotl"}}}}] run summon axolotl ~ ~ ~ {Tags:["spawn_mob"]}
 execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{id:"minecraft:bat"}}}}] run summon bat ~ ~ ~ {Tags:["spawn_mob"]}
 execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{id:"minecraft:cat"}}}}] run summon cat ~ ~ ~ {Tags:["spawn_mob"]}
@@ -82,27 +82,28 @@ execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{id:"minecraft:zombie_hors
 
 
 #Stacked entities
-execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{Tags:["monster_of_the_deep"]}}}}] run tp @e[type=chicken,limit=1,sort=nearest,tag=spawn_mob,distance=0..2] ~ ~-255 ~
-execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{Tags:["monster_of_the_deep"]}}}}] run summon chicken ~ ~ ~ {Tags:["spawn_mob"],Passengers:[{id:"minecraft:zombie",Tags:["sea_creature_passenger"]}]}
+#execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{Tags:["monster_of_the_deep"]}}}}] run tp @e[type=chicken,limit=1,sort=nearest,tag=spawn_mob,distance=0..2] ~ ~-255 ~
+#execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{Tags:["monster_of_the_deep"]}}}}] run summon chicken ~ ~ ~ {Tags:["spawn_mob"],Passengers:[{id:"minecraft:zombie",Tags:["sea_creature_passenger"]}]}
 
-execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{Tags:["sea_emperor"]}}}}] run tp @e[type=guardian,limit=1,sort=nearest,tag=spawn_mob,distance=0..2] ~ ~-255 ~
-execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{Tags:["sea_emperor"]}}}}] run summon guardian ~ ~ ~ {Tags:["spawn_mob"],Passengers:[{id:"minecraft:skeleton",Tags:["sea_creature_passenger"]}]}
+#execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{Tags:["sea_emperor"]}}}}] run tp @e[type=guardian,limit=1,sort=nearest,tag=spawn_mob,distance=0..2] ~ ~-255 ~
+#execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{Tags:["sea_emperor"]}}}}] run summon guardian ~ ~ ~ {Tags:["spawn_mob"],Passengers:[{id:"minecraft:skeleton",Tags:["sea_creature_passenger"]}]}
 
 
 
 
 data modify entity @e[tag=spawn_mob,limit=1,sort=nearest] Motion set from entity @e[tag=spawn_egg,limit=1,sort=nearest] Motion
 
-execute at @e[tag=spawn_egg,limit=1,sort=nearest] run data modify entity @e[tag=spawn_mob,limit=1,sort=nearest] CustomName set from entity @e[tag=spawn_egg,limit=1,sort=nearest] Item.tag.display.Name
-execute at @e[tag=spawn_egg,limit=1,sort=nearest] run data modify entity @e[tag=spawn_mob_passenger,limit=1,sort=nearest] {} merge from entity @e[tag=spawn_egg,limit=1,sort=nearest] Item.tag.EntityTag.Passengers[0]
-execute at @e[tag=spawn_egg,limit=1,sort=nearest] run data modify entity @e[tag=spawn_mob,limit=1,sort=nearest] {} merge from entity @e[tag=spawn_egg,limit=1,sort=nearest] Item.tag.EntityTag
+execute as @e[tag=spawn_mob] run data modify entity @s CustomName set from entity @e[tag=spawn_egg,limit=1,sort=nearest] Item.tag.display.Name
+#execute at @e[tag=spawn_egg,limit=1,sort=nearest] run data modify entity @e[tag=spawn_mob_passenger,limit=1,sort=nearest] {} merge from entity @e[tag=spawn_egg,limit=1,sort=nearest] Item.tag.EntityTag.Passengers[0]
+execute as @e[tag=spawn_mob] run data modify entity @s {} merge from entity @e[tag=spawn_egg,limit=1,sort=nearest] Item.tag.EntityTag
 
 
 
 #Tellraw 
 execute at @e[tag=spawn_egg] run execute if data entity @e[tag=spawn_egg,limit=1,sort=nearest] Item.tag.display.Lore run tellraw @p {"entity":"@e[tag=spawn_egg,limit=1,sort=nearest]","nbt":"Item.tag.display.Lore[0]","interpret":true}
-execute at @e[tag=spawn_egg,nbt={Item:{tag:{EntityTag:{Tags:["reindrake"]}}}}] run tellraw @a ["",{"text":"WOAH! ","bold":true,"color":"red"},{"text":"A ","color":"red"},{"text":"Reindrake","color":"dark_red"},{"text":" was summoned from the depths!","color":"red"}]
-#tellraw @p[advancements={skyblock:commands/sea_creatures=true}] "sea_creatures"
+#execute if @e[tag=spawn_mob,tag=reindrake] run tellraw @a[distance=0..256] ["",{"text":"WOAH! ","bold":true,"color":"red"},{"text":"A ","color":"red"},{"text":"Reindrake","color":"dark_red"},{"text":" was summoned from the depths!","color":"red"}]
+execute at @e[tag=spawn_mob,tag=slayer_boss] run summon minecraft:firework_rocket ~ ~1 ~ {FireworksItem:{Count:1b,id:"minecraft:firework_rocket",tag:{Fireworks:{Explosions:[{Colors:[I;11141290,16733695,0,16777215],Type:0b,Flicker:1b}]}}}}
+
 
 kill @e[tag=spawn_egg]
 tag @e[tag=spawn_mob] remove spawn_mob

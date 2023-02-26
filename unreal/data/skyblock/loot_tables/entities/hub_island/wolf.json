@@ -1,4 +1,5 @@
 {
+	"type":"minecraft:entity",
 	"pools":[
 		{
 			"rolls":1,
@@ -24,30 +25,6 @@
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:gameplay/coins"
-				}
-			]
-		},
-		{
-			"rolls":15,
-			"entries":[
-				{
-					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/scavenger_enchantment"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"killer_player",
-					"predicate":{
-						"player":{
-							"equipment":{
-								"mainhand":{
-									"nbt":"{CustomEnchantments:[{id:\"minecraft:scavenger\"}]}"
-								}
-							}
-						}
-					}
 				}
 			]
 		}

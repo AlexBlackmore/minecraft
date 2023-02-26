@@ -5,20 +5,42 @@
 			"item":"minecraft:paper"
 		},
 		"title":"Timber!",
-		"description":"[::]",
+		"description":"Talk to the Lumberjack in the Forest.",
 		"frame":"task",
 		"show_toast":true,
 		"announce_to_chat":true,
 		"hidden":false
 	},
 	"criteria":{
-		"lumberjack":{
+		"criterion":{
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Lumberjack\\\"}\"}"
-				}
+					"nbt":"{Tags:[\"lumberjack\"]}"
+				},
+				"item":{
+					"items":[
+						"minecraft:oak_log"
+					],
+					"count":10
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{Tags:[\"timber\"]}"
+						}
+					}
+				]
 			}
 		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/lumberjack",
+		"experience":10,
+		"loot":[
+			"skyblock:items/tools/sweet_axe"
+		]
 	}
 }

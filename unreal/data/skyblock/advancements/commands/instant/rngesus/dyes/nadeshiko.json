@@ -17,9 +17,10 @@
 			"conditions":{
 				"player":[
 					{
-						"condition":"location_check",
+						"condition":"entity_properties",
+						"entity":"this",
 						"predicate":{
-							"dimension":"skyblock:hub_island"
+							"nbt":"{Tags:[\"FairyPond\"]}"
 						}
 					},
 					{

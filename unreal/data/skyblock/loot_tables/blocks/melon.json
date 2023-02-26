@@ -54,34 +54,6 @@
 			]
 		},
 		{
-			"rolls":36,
-			"entries":[
-				{
-					"type":"minecraft:item",
-					"name":"minecraft:melon_slice",
-					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"advancements":{
-								"skyblock:pets/elephant/legendary":true
-							}
-						}
-					}
-				}
-			]
-		},
-		{
 			"rolls":1,
 			"entries":[
 				{
@@ -108,18 +80,13 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/farming"
+					"name":"skyblock:items/dyes/wild_strawberry"
 				}
 			],
 			"conditions":[
 				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Farming Exp Boost\"}}]}"
-						}
-					}
+					"condition":"random_chance",
+					"chance":0.000000006667
 				}
 			]
 		}

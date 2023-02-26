@@ -1,0 +1,46 @@
+{
+	"parent":"skyblock:quests/city_projects/blacksmith_workspace/new_anvils",
+	"display":{
+		"icon":{
+			"item":"minecraft:coal_block",
+			"nbt":"{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}"
+		},
+		"title":"Fuel for Years",
+		"description":"Contribute 1x Enchanted Block of Coal and 1x Catalyst.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"elizabeth\"]}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{Slot:0b,tag:{Name:\"Enchanted Block of Coal\"},Count:1b},
+									{Slot:1b,tag:{Name:\"Catalyst\"},Count:1b}
+								]
+							}",
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":200,
+		"function":"skyblock:npcs/city_projects/blacksmith_workspace/contribute2"
+	}
+}

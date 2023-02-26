@@ -43,14 +43,13 @@
 			"bonus_rolls":1,
 			"entries":[
 				{
+					"type":"minecraft:empty",
+					"weight":19
+				},
+				{
 					"type":"minecraft:item",
 					"name":"minecraft:raw_copper",
 					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
 				}
 			]
 		},
@@ -59,7 +58,7 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:refined_mineral"
+					"name":"skyblock:gameplay/mining/refined_mineral"
 				}
 			]
 		},
@@ -94,7 +93,7 @@
 					"predicate":{
 						"equipment":{
 							"mainhand":{
-								"nbt":"{Smelting_Touch:1b}"
+								"nbt":"{CustomEnchantments:[{id:\"skyblock:smelting_touch\"}]}"
 							}
 						}
 					}

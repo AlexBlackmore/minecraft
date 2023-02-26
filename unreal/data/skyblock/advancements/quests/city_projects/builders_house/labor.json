@@ -1,0 +1,48 @@
+{
+	"parent":"skyblock:quests/city_projects/builders_house/new_building",
+	"display":{
+		"icon":{
+			"item":"minecraft:pumpkin",
+			"nbt":"{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}"
+		},
+		"title":"Labor",
+		"description":"Contribute 64x Enchanted Pumpkins, 2x Enchanted Melons, and 100x Diamonds.",
+		"frame":"challenge",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"elizabeth\"]}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{Slot:0b,tag:{Name:\"Enchanted Pumpkin\"},Count:64b},
+									{Slot:1b,tag:{Name:\"Enchanted Melon\"},Count:2b},
+									{Slot:2b,id:\"minecraft:diamond\",Count:64b},
+									{Slot:3b,id:\"minecraft:diamond\",Count:36b}
+								]
+							}",
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":600,
+		"function":"skyblock:npcs/city_projects/builders_house/contribute4"
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Voidcrazed Maniac","italic":false,"color":"red"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"A Voidcrazed Maniac has spawned!","italic":false,"color":"red"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:enderman\",
+									CustomNameVisible:true,
+									Tags:[\"spawn_mob\",\"slayer_mob\",\"voidcrazed_maniac\"],
+									AbsorptionAmount:3330,
+									Health:1000,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:1000}
+									],
+									DeathLootTable:\"skyblock:entities/slayer/enderman/voidcrazed_maniac\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

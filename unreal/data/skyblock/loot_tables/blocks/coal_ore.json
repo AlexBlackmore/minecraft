@@ -5,7 +5,7 @@
 			"entries":[
 				{
 					"type":"minecraft:item",
-					"name":"coal",
+					"name":"minecraft:coal",
 					"functions":[
 						{
 							"function":"apply_bonus",
@@ -29,14 +29,13 @@
 			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"minecraft:item",
-					"name":"coal",
-					"weight":1
+					"type":"minecraft:empty",
+					"weight":19
 				},
 				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
+					"type":"minecraft:item",
+					"name":"minecraft:coal",
+					"weight":1
 				}
 			]
 		},
@@ -45,27 +44,7 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:refined_mineral"
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/mining"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Mining Exp Boost\"}}]}"
-						}
-					}
+					"name":"skyblock:gameplay/mining/refined_mineral"
 				}
 			]
 		}

@@ -1,0 +1,49 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Sneaky Creeper","italic":false,"color":"red"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:creeper\",
+									CustomNameVisible:true,
+									Tags:[\"spawn_mob\",\"sneaky_creeper\",\"deep_caverns\",\"3xp\"],
+									Health:3,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:3},
+										{Name:\"generic.attack_damage\",Base:2}
+									],
+									ActiveEffects:[
+										{
+											Id:14,
+											Duration:2147483646
+										}
+									],
+									DeathLootTable:\"skyblock:entities/deep_caverns/sneaky_creeper\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

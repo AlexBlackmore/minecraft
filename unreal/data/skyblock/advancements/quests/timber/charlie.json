@@ -1,33 +1,60 @@
 {
-	"parent":"skyblock:quests/timber/lumberjack",
+	"parent":"skyblock:quests/root",
 	"display":{
 		"icon":{
 			"item":"minecraft:paper"
 		},
 		"title":"Charlie",
-		"description":"[::]",
+		"description":"Talk to the Charlie in the Birch Forest.",
 		"frame":"task",
 		"show_toast":true,
 		"announce_to_chat":true,
 		"hidden":false
 	},
 	"criteria":{
-		"charlie":{
+		"criterion":{
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"charlie\"]}"
+				},
 				"item":{
-					"count":64,
 					"items":[
 						"minecraft:birch_log"
-					]
+					],
+					"count":64
 				},
-				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Charlie\\\"}\"}"
-				}
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{Tags:[\"timber\"]}"
+						}
+					}
+				]
 			}
 		}
 	},
 	"rewards":{
-		"experience":100
+		"function":"skyblock:npcs/charlie",
+		"loot":[
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald",
+			"minecraft:items/emerald"
+		]
 	}
 }

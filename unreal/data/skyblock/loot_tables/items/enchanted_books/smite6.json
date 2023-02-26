@@ -1,0 +1,27 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:enchanted_book",
+					"functions":[
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"smite":6
+							}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Enchanted Book\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

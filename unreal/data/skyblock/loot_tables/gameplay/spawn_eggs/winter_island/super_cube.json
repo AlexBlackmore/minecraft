@@ -1,0 +1,12 @@
+summon magma_cube ~ ~ ~ {
+	CustomName:"{\"text\":\"Super Cube\",\"color\":\"red\"}",
+	CustomNameVisible:true,
+	Tags:[\"spawn_mob\","super_cube","boss"],
+	Health:900,
+	Attributes:[
+		{Name:"generic.max_health",Base:900},
+		{Name:"generic.attack_damage",Base:1}
+	],
+	Size:20,
+	DeathLootTable:"skyblock:entities/winter_island/magma_cube3"
+}

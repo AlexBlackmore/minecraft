@@ -19,6 +19,24 @@
 							"add":false
 						},
 						{
+							"function":"minecraft:set_count",
+							"count":2,
+							"add":true,
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"mainhand":{
+												"nbt":"{Name:\"Cow Axe\"}"
+											}
+										}
+									}
+								}
+							]
+						},
+						{
 							"function":"minecraft:looting_enchant",
 							"count":{
 								"type":"minecraft:uniform",
@@ -48,6 +66,24 @@
 							"add":false
 						},
 						{
+							"function":"minecraft:set_count",
+							"count":2,
+							"add":true,
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"mainhand":{
+												"nbt":"{Name:\"Cow Axe\"}"
+											}
+										}
+									}
+								}
+							]
+						},
+						{
 							"function":"minecraft:furnace_smelt",
 							"conditions":[
 								{
@@ -72,24 +108,42 @@
 					]
 				}
 			]
-		}
-	],
-	"functions":[
+		},
 		{
-			"function":"minecraft:set_count",
-			"count":2,
-			"add":true,
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:trades/milk_bucket\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Milk Bucket Trade","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
 			"conditions":[
 				{
 					"condition":"entity_properties",
 					"entity":"this",
 					"predicate":{
-						"equipment":{
-							"mainhand":{
-								"nbt":"{Name:\"Cow Axe\"}"
+						"player":{
+							"recipes":{
+								"skyblock:trades/milk_bucket":false
 							}
 						}
 					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.01
 				}
 			]
 		}

@@ -1,0 +1,77 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Pyroclastic Worm","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"You feel the heat radiating as a Pyroclastic Worm surfaces.","italic":false,"color":"green"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:magma_cube\",
+									CustomNameVisible:true,
+									Tags:[\"spawn_mob\",\"lava_sea_creature\",\"sea_creature\",\"pyroclasic_worm\",\"4000xp\"],
+									Health:240,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:240}
+									],
+									Size:1,
+									Passengers:[
+										{
+											id:\"minecraft:magma_cube\",
+											CustomName:\"{\\\"text\\\":\\\"Pyroclastic Worm\\\",\\\"color\\\":\\\"aqua\\\"}\",
+											CustomNameVisible:true,
+											Tags:[\"spawn_mob\",\"lava_sea_creature\",\"pyroclasic_worm\"],
+											Health:240,
+											Attributes:[
+												{Name:\"generic.max_health\",Base:240}
+											],
+											Size:2,
+											Passengers:[
+												{
+													id:\"minecraft:magma_cube\",
+													CustomName:\"{\\\"text\\\":\\\"Pyroclastic Worm\\\",\\\"color\\\":\\\"aqua\\\"}\",
+													CustomNameVisible:true,
+													Tags:[\"spawn_mob\",\"lava_sea_creature\",\"pyroclasic_worm\"],
+													Health:240,
+													Attributes:[
+														{Name:\"generic.max_health\",Base:240}
+													],
+													Size:3,
+													DeathLootTable:\"skyblock:entities/sea_creatures/crimson_isle/pyroclasic_worm\"
+												}
+											],
+											DeathLootTable:\"skyblock:entities/sea_creatures/crimson_isle/pyroclasic_worm\"
+										}
+									],
+									DeathLootTable:\"skyblock:entities/sea_creatures/crimson_isle/pyroclasic_worm\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

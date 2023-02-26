@@ -2,26 +2,30 @@
 	"parent":"skyblock:quests/introduce_yourself",
 	"display":{
 		"icon":{
-			"item":"minecraft:paper"
+			"item":"minecraft:player_head",
+			"nbt":"{SkullOwner:{Id:[I;1445316252,2041728101,-1840993025,-322242010],Name:\"Villager\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWUwZTk1OTFlMTFhYWVmNGMyYzUxZDlhYzY5NTE0ZTM0MDQ4NWRlZmNjMmMxMmMzOGNkMTIzODZjMmVjNmI3OCJ9fX0=\"}]}}}"
 		},
 		"title":"Liam",
-		"description":"[::]",
+		"description":"",
 		"frame":"task",
 		"show_toast":true,
 		"announce_to_chat":true,
 		"hidden":false
 	},
 	"criteria":{
-		"liam":{
+		"andrew":{
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Liam\\\"}\"}"
+					"nbt":"{Tags:[\"liam\"]}"
 				}
 			}
 		}
 	},
 	"rewards":{
-		"experience":10
+		"loot":[
+			"minecraft:items/emerald"
+		],
+		"function":"skyblock:npcs/liam"
 	}
 }

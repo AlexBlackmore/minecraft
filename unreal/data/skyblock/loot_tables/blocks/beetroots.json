@@ -6,26 +6,8 @@
 			"bonus_rolls":0,
 			"entries":[
 				{
-					"type":"minecraft:alternatives",
-					"children":[
-						{
-							"type":"minecraft:item",
-							"name":"minecraft:beetroot",
-							"conditions":[
-								{
-									"condition":"minecraft:block_state_property",
-									"block":"minecraft:beetroots",
-									"properties":{
-										"age":"3"
-									}
-								}
-							]
-						},
-						{
-							"type":"minecraft:item",
-							"name":"minecraft:beetroot_seeds"
-						}
-					]
+					"type":"minecraft:item",
+					"name":"minecraft:beetroot"
 				}
 			]
 		},
@@ -48,6 +30,7 @@
 						},
 						{
 							"function":"set_count",
+							"add":true,
 							"count":{
 								"min":0,
 								"max":1
@@ -64,19 +47,9 @@
 										}
 									}
 								}
-							],
-							"add":true
+							]
 						}
 					]
-				}
-			],
-			"conditions":[
-				{
-					"condition":"minecraft:block_state_property",
-					"block":"minecraft:beetroots",
-					"properties":{
-						"age":"3"
-					}
 				}
 			]
 		},
@@ -94,50 +67,6 @@
 					"name":"minecraft:empty",
 					"weight":19
 				}
-			],
-			"conditions":[
-				{
-					"condition":"minecraft:block_state_property",
-					"block":"minecraft:beetroots",
-					"properties":{
-						"age":"3"
-					}
-				}
-			]
-		},
-		{
-			"rolls":36,
-			"entries":[
-				{
-					"type":"minecraft:item",
-					"name":"minecraft:beetroot",
-					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
-				}
-			],
-			"conditions":[
-				{
-					"condition":"minecraft:block_state_property",
-					"block":"minecraft:beetroots",
-					"properties":{
-						"age":"3"
-					}
-				},
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"advancements":{
-								"skyblock:pets/elephant/legendary":true
-							}
-						}
-					}
-				}
 			]
 		},
 		{
@@ -145,25 +74,13 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/farming"
+					"name":"skyblock:items/dyes/wild_strawberry"
 				}
 			],
 			"conditions":[
 				{
-					"condition":"minecraft:block_state_property",
-					"block":"minecraft:beetroots",
-					"properties":{
-						"age":"3"
-					}
-				},
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Farming Exp Boost\"}}]}"
-						}
-					}
+					"condition":"random_chance",
+					"chance":0.000000006667
 				}
 			]
 		}

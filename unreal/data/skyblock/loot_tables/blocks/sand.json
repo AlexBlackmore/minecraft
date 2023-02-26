@@ -10,6 +10,93 @@
 					"name":"minecraft:sand"
 				}
 			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:trades/red_sand\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Red Sand Trade","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/red_sand":false
+							}
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.01
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:trades/soul_sand\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Soul Sand Trade","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/red_sand":true
+							}
+						}
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/soul_sand":false
+							}
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.004
+				}
+			]
 		}
 	],
 	"functions":[
@@ -25,7 +112,7 @@
 					"predicate":{
 						"equipment":{
 							"mainhand":{
-								"nbt":"{Smelting_Touch:1b}"
+								"nbt":"{CustomEnchantments:[{id:\"skyblock:smelting_touch\"}]}"
 							}
 						}
 					}

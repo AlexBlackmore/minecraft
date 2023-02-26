@@ -1,0 +1,32 @@
+{
+	"pools":[
+		{
+		  "rolls":1,
+		  "entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Shard of the Shredded","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"The core of a powerful weapon,","italic":false,"color":"gray"}],
+								["",{"text":"dropped by the Atoned Horror.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Shard of the Shredded\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

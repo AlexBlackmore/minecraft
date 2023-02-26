@@ -59,7 +59,22 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:refined_mineral"
+					"name":"skyblock:gameplay/mining/refined_mineral"
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/dyes/emerald"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"random_chance",
+					"chance":0.000000125
 				}
 			]
 		}

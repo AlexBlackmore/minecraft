@@ -1,0 +1,45 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:command_block",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Minion Expander","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Spawner Upgrade","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"Increases the range of a Spawner","italic":false,"color":"gray"}],
+								["",{"text":"by ","italic":false,"color":"gray"},{"text":"1","italic":false,"color":"green"},{"text":" block.","italic":false,"color":"gray"}],
+								["",{"text":"Decreases the average delay of a","italic":false,"color":"gray"}],
+								["",{"text":"Spawner by ","italic":false,"color":"gray"},{"text":"5%","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}]
+								
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Minion Expander"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Felix\"}",
+		CustomName:"{\"text\":\"Felix\",\"color\":\"yellow\"}",
 		Tags:["felix"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
@@ -11,7 +11,7 @@ give @p villager_spawn_egg{
 		NoAI:false,
 		VillagerData:{
 			level:5,
-			profession:"none",
+			profession:"nitwit",
 			type:"plains"
 		},
 		Attributes:[

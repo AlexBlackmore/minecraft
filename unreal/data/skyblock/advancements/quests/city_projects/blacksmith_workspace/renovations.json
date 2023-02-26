@@ -1,0 +1,46 @@
+{
+	"parent":"skyblock:quests/city_projects",
+	"display":{
+		"icon":{
+			"item":"minecraft:spruce_log"
+		},
+		"title":"Renovations",
+		"description":"Contribute 64x Spruce Logs and 128x Sand.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"elizabeth\"]}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{Slot:0b,id:\"minecraft:spruce_log\",Count:64b},
+									{Slot:1b,id:\"minecraft:sand\",Count:64b},
+									{Slot:2b,id:\"minecraft:sand\",Count:64b}
+								]
+							}",
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":200,
+		"function":"skyblock:npcs/city_projects/blacksmith_workspace/contribute3"
+	}
+}

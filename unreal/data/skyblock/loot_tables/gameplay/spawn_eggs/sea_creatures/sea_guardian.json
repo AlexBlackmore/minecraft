@@ -1,0 +1,48 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Sea Guardian","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"You stumbled upon a Sea Guardian.","italic":false,"color":"green"}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:guardian\",
+									CustomNameVisible:true,
+									Tags:[\"spawn_mob\",\"sea_creature\",\"sea_guardian\",\"30xp\"],
+									Health:10,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:10}
+									],
+									DeathLootTable:\"skyblock:entities/sea_creatures/sea_guardian\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

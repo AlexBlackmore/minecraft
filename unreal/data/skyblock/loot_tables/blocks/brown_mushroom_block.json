@@ -71,42 +71,13 @@
 			"bonus_rolls":1,
 			"entries":[
 				{
+					"type":"minecraft:empty",
+					"weight":19
+				},
+				{
 					"type":"minecraft:item",
 					"name":"minecraft:brown_mushroom",
 					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
-				}
-			]
-		},
-		{
-			"rolls":36,
-			"entries":[
-				{
-					"type":"minecraft:item",
-					"name":"minecraft:red_mushroom",
-					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"advancements":{
-								"skyblock:pets/elephant/legendary":true
-							}
-						}
-					}
 				}
 			]
 		},
@@ -114,8 +85,20 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/farming"
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:trades/mycelium\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Mycelium Trade","italic":false,"color":"gray"}]
+							]
+						}
+					]
 				}
 			],
 			"conditions":[
@@ -124,9 +107,64 @@
 					"entity":"this",
 					"predicate":{
 						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Farming Exp Boost\"}}]}"
+							"recipes":{
+								"skyblock:trades/mycelium":false
+							}
 						}
 					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.01
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:brown_mushroom_block\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Brown Mushroom Block Recipe","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/mycelium":true
+							}
+						}
+					}
+				},
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:brown_mushroom_block":false
+							}
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.0004
 				}
 			]
 		}

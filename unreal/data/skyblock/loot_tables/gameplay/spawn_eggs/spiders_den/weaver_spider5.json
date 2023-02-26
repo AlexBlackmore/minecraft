@@ -1,0 +1,11 @@
+summon spider ~ ~ ~ {
+	CustomName:"{\"text\":\"Weaver Spider\"}",
+	CustomNameVisible:true,
+	Tags:[\"spawn_mob\","skyblock","weaver_spider"],
+	Health:32,
+	Attributes:[
+		{Name:"generic.max_health",Base:32},
+		{Name:"generic.attack_damage",Base:7}
+	],
+	DeathLootTable:"skyblock:entities/spiders_den/spider"
+}

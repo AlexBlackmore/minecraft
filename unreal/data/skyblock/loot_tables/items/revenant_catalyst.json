@@ -1,0 +1,32 @@
+{
+	"pools":[
+		{
+		  "rolls":1,
+		  "entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Revenant Catalyst","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Drops rarely from the Revenant","italic":false,"color":"gray"}],
+								["",{"text":"Horror.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Revenant Catalyst\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

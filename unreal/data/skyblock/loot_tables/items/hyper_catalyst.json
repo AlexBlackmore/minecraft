@@ -1,0 +1,44 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:nether_star",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Hyper Catalyst","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Spawner Fuel","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"Increases the number of mobs","italic":false,"color":"gray"}],
+								["",{"text":"spawned by a Spawner by ","italic":false,"color":"gray"},{"text":"x4","italic":false,"color":"green"},{"text":" for","italic":false,"color":"gray"}],
+								["",{"text":"6","italic":false,"color":"green"},{"text":" hours.","italic":false,"color":"gray"}]
+								
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Hyper Catalyst"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

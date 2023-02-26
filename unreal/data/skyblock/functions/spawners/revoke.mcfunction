@@ -1,0 +1,1 @@
+advancement revoke @p only skyblock:commands/spawner

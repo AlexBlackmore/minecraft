@@ -1,0 +1,32 @@
+{
+	"pools":[
+		{
+		  "rolls":1,
+		  "entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:quartz",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Crystal Fragment","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Crystal Fragment\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

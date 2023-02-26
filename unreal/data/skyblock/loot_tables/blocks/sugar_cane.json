@@ -24,50 +24,6 @@
 					"name":"minecraft:empty",
 					"weight":19
 				}
-			],
-			"conditions":[
-				{
-					"condition":"minecraft:block_state_property",
-					"block":"minecraft:sugar_cane",
-					"properties":{
-						"age":"15"
-					}
-				}
-			]
-		},
-		{
-			"rolls":36,
-			"entries":[
-				{
-					"type":"minecraft:item",
-					"name":"minecraft:sugar_cane",
-					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
-				}
-			],
-			"conditions":[
-				{
-					"condition":"minecraft:block_state_property",
-					"block":"minecraft:sugar_cane",
-					"properties":{
-						"age":"15"
-					}
-				},
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"advancements":{
-								"skyblock:pets/elephant/legendary":true
-							}
-						}
-					}
-				}
 			]
 		},
 		{
@@ -75,25 +31,13 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/farming"
+					"name":"skyblock:items/dyes/wild_strawberry"
 				}
 			],
 			"conditions":[
 				{
-					"condition":"minecraft:block_state_property",
-					"block":"minecraft:sugar_cane",
-					"properties":{
-						"age":"15"
-					}
-				},
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Farming Exp Boost\"}}]}"
-						}
-					}
+					"condition":"random_chance",
+					"chance":0.000000006667
 				}
 			]
 		}

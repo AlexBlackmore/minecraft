@@ -5,8 +5,26 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"loot_table",
-					"name":"skyblock:blocks/wheat"
+					"type":"minecraft:alternatives",
+					"children":[
+						{
+							"type":"minecraft:loot_table",
+							"name":"skyblock:blocks/wheat",
+							"conditions":[
+								{
+									"condition":"block_state_property",
+									"block":"minecraft:wheat",
+									"properties":{
+										"age":"7"
+									}
+								}
+							]
+						},
+						{
+							"type":"minecraft:item",
+							"name":"minecraft:wheat_seeds"
+						}
+					]
 				}
 			]
 		}

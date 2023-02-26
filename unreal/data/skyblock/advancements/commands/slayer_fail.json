@@ -1,0 +1,31 @@
+{
+	"parent":"skyblock:commands/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Slayer Fail",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:entity_killed_player",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"slayer_mob\"]}"
+				},
+				"player":{
+					"nbt":"{Tags:[\"Slayer\"]}"
+				}
+			}
+		}
+
+	},
+	"rewards":{
+		"function":"skyblock:slayer/failed"
+	}
+}

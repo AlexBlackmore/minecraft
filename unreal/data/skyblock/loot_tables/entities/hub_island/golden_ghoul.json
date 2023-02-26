@@ -1,4 +1,5 @@
 {
+	"type":"minecraft:entity",
 	"pools":[
 		{
 			"rolls":1,
@@ -70,7 +71,16 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/spawn_eggs/slayer/zombie/summon/60"
+					"name":"skyblock:gameplay/spawn_eggs/slayer/zombie/summon/60"
+				}
+			],
+			"conditions":[				
+				{
+					"condition":"minecraft:entity_properties",
+					"entity":"killer_player",
+					"predicate":{
+						"nbt":"{Tags:[\"ZombieSlayer\"]}"
+					}
 				}
 			]
 		},
@@ -80,30 +90,6 @@
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:gameplay/coins100"
-				}
-			]
-		},
-		{
-			"rolls":60,
-			"entries":[
-				{
-					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/scavenger_enchantment"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"killer_player",
-					"predicate":{
-						"player":{
-							"equipment":{
-								"mainhand":{
-									"nbt":"{CustomEnchantments:[{id:\"minecraft:scavenger\"}]}"
-								}
-							}
-						}
-					}
 				}
 			]
 		}

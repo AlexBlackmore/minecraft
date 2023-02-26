@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:player_head",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Golden Scatha Skin","italic":false,"color":"dark_red"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"italic":false,"color":"blue","text":"Pet Skin"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"Pet skins change the look of"}],
+								["",{"italic":false,"color":"gray","text":"your pet, but only one skin can"}],
+								["",{"italic":false,"color":"gray","text":"be active at a time!"}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"gray","text":"This skin can only be applied to"}],
+								["",{"italic":false,"color":"gray","text":"Scatha pets."}],
+								["",{"text":" "}],
+								["",{"italic":false,"color":"green","text":"This skin is animated!"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								SkullOwner:{Id:[I;-1419960834,-1972287306,-1811318213,-1124163025],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDMxM2JiMjhjNmUyY2ZlNDQ0NGEzZWFhY2FiNTMxMDNjYzkxZjk0MTkwMTUyOTJmYWNmZDQzMWU5NTBiZjcxYSJ9fX0=\"}]}},
+								Name:\"Scatha Pet Skin\",
+								Skin:\"Golden\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -5,6 +5,7 @@ summon armor_stand ~ ~ ~ {Tags:["anvil"]}
 item replace entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand from entity @s weapon.mainhand
 
 data modify entity @e[tag=anvil,limit=1,sort=nearest] HandItems[0].tag.Rune set from entity @s Inventory[{Slot:-106b}].tag.Rune
+data modify entity @e[tag=anvil,limit=1,sort=nearest] HandItems[0].tag.RuneRarity set from entity @s Inventory[{Slot:-106b}].tag.RuneRarity
 
 item replace entity @s weapon.mainhand from entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand
 kill @e[tag=anvil,limit=1,sort=nearest]

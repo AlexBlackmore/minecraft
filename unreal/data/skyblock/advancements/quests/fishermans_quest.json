@@ -1,0 +1,44 @@
+{
+	"parent":"skyblock:quests/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:paper"
+		},
+		"title":"Fisherman's Quest",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"fisherman\"]}"
+				},
+				"item":{
+					"items":["minecraft:clay_ball"],
+					"count":5
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{Tags:[\"fishermans_quest\"]}"
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/fisherman",
+		"experience":10,
+		"loot":[
+			"skyblock:items/fishing_rods/prismarine_rod"
+		]
+	}
+}

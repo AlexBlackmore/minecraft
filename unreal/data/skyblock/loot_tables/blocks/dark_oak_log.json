@@ -64,8 +64,20 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/foraging"
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:trades/dark_oak_leaves\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Dark Oak Leaves Trade","italic":false,"color":"gray"}]
+							]
+						}
+					]
 				}
 			],
 			"conditions":[
@@ -74,9 +86,30 @@
 					"entity":"this",
 					"predicate":{
 						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Foraging Exp Boost\"}}]}"
+							"recipes":{
+								"skyblock:trades/dark_oak_leaves":false
+							}
 						}
 					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.01
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/dyes/mango"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"random_chance",
+					"chance":0.0000001
 				}
 			]
 		}
@@ -91,7 +124,7 @@
 					"predicate":{
 						"equipment":{
 							"mainhand":{
-								"nbt":"{Smelting_Touch:true}"
+								"nbt":"{CustomEnchantments:[{id:\"skyblock:smelting_touch\"}]}"
 							}
 						}
 					}

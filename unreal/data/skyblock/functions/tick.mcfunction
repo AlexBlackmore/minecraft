@@ -23,7 +23,7 @@ execute as @a if score @s hour matches 0 run function skyblock:good_morning
 
 
 execute at @e[type=minecraft:villager] run tp @e[type=#minecraft:zombies,distance=0..2] ~ ~-256 ~
-execute as @a if entity @e[type=pig,tag=Spawner] run function skyblock:summon_mobs
+function skyblock:summon_mobs
 
 
 #Bonus XP

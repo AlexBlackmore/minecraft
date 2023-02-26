@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:oak_trapdoor",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Hamster Wheel","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Spawner Fuel","italic":false,"color":"blue"}],
+								{"text":""},
+								["",{"text":"Decreases the average delay of a","italic":false,"color":"gray"}],
+								["",{"text":"Spawner by ","italic":false,"color":"gray"},{"text":"50%","italic":false,"color":"green"},{"text":" for ","italic":false,"color":"gray"},{"text":"24","italic":false,"color":"green"},{"text":" hours.","italic":false,"color":"gray"}]
+								
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Hamster Wheel"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

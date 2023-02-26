@@ -1,0 +1,43 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:trades/water_bucket\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Water Bucket Trade","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:trades/water_bucket":false
+							}
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.04
+				}
+			]
+		}
+	]
+}

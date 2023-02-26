@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"☠ Sven Packmaster","italic":false,"color":"red"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:blaze\",
+									CustomNameVisible:true,
+									Tags:[\"spawn_mob\",\"slayer_boss\",\"sven_packmaster\",\"tier3\"],
+									Health:430,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:430},
+										{Name:\"generic.attack_damage\",Base:36}
+									],
+									DeathLootTable:\"skyblock:entities/slayer/sven_packmaster/tier3\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

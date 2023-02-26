@@ -22,8 +22,22 @@ data modify entity @e[tag=anvil,limit=1,sort=nearest] HandItems[0].tag.display.L
 execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.CustomEnchantments run item modify entity @s weapon.mainhand skyblock:lore_spacer
 execute as @s run function skyblock:lore/enchantments
 
+
+#Dye
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Dye run item modify entity @s[nbt={HandItems:[{tag:{DyeRarity:0}}]}] weapon.mainhand skyblock:dyes/set_lore/common
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Dye run item modify entity @s[nbt={HandItems:[{tag:{DyeRarity:1}}]}] weapon.mainhand skyblock:dyes/set_lore/uncommon
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Dye run item modify entity @s[nbt={HandItems:[{tag:{DyeRarity:2}}]}] weapon.mainhand skyblock:dyes/set_lore/rare
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Dye run item modify entity @s[nbt={HandItems:[{tag:{DyeRarity:3}}]}] weapon.mainhand skyblock:dyes/set_lore/epic
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Dye run item modify entity @s[nbt={HandItems:[{tag:{DyeRarity:4}}]}] weapon.mainhand skyblock:dyes/set_lore/legendary
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Dye run item modify entity @s[nbt={HandItems:[{tag:{DyeRarity:5}}]}] weapon.mainhand skyblock:dyes/set_lore/special
+
 #Rune
-execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Rune run item modify entity @s weapon.mainhand skyblock:runecrafting/set_lore
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Rune run item modify entity @s[nbt={HandItems:[{tag:{RuneRarity:0}}]}] weapon.mainhand skyblock:runecrafting/set_lore/common
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Rune run item modify entity @s[nbt={HandItems:[{tag:{RuneRarity:1}}]}] weapon.mainhand skyblock:runecrafting/set_lore/uncommon
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Rune run item modify entity @s[nbt={HandItems:[{tag:{RuneRarity:2}}]}] weapon.mainhand skyblock:runecrafting/set_lore/rare
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Rune run item modify entity @s[nbt={HandItems:[{tag:{RuneRarity:3}}]}] weapon.mainhand skyblock:runecrafting/set_lore/epic
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Rune run item modify entity @s[nbt={HandItems:[{tag:{RuneRarity:4}}]}] weapon.mainhand skyblock:runecrafting/set_lore/legendary
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Rune run item modify entity @s[nbt={HandItems:[{tag:{RuneRarity:5}}]}] weapon.mainhand skyblock:runecrafting/set_lore/special
 
 #HotPotatoBooks
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s dummy run data get entity @s HandItems[0].tag.HotPotatoBooks

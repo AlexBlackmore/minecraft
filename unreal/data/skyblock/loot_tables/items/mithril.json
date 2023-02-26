@@ -1,0 +1,34 @@
+{
+	"pools":[
+		{
+		  "rolls":1,
+		  "entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:prismarine_crystals",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Mithril","italic":false,"color":"white"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"The Man called it \"true-silver\"","color":"dark_gray"}],
+								["",{"text":"while the Dwarves, who loved it","color":"dark_gray"}],
+								["",{"text":"above all other things, had","color":"dark_gray"}],
+								["",{"text":"their own, secret name for it.","color":"dark_gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Mithril\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

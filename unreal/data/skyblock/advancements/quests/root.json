@@ -4,7 +4,7 @@
 			"item":"minecraft:writable_book"
 		},
 		"title":"Quest Log",
-		"description":"[::]",
+		"description":"A collection of quests.",
 		"frame":"task",
 		"show_toast":true,
 		"announce_to_chat":true,
@@ -12,13 +12,11 @@
 		"background":"minecraft:textures/gui/advancements/backgrounds/stone.png"
 	},
 	"criteria":{
-		"impossible":{
-		  "trigger":"minecraft:impossible"
+		"criterion":{
+			"trigger":"minecraft:changed_dimension",
+			"conditions":{
+				"to":"skyblock:hub_island"
+			}
 		}
-	},
-	"requirements":[
-		[
-		  "impossible"
-		]
-	]
+	}
 }

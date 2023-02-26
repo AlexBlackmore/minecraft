@@ -1,0 +1,47 @@
+{
+	"parent":"skyblock:quests/city_projects/builders_house/plenty_of_cobble",
+	"display":{
+		"icon":{
+			"item":"minecraft:ink_sac",
+			"nbt":"{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}"
+		},
+		"title":"Dyes",
+		"description":"Contribute 1x Enchanted Ink Sac, 32x Enchanted Green Dye, and 32x Enchanted Lapis Lazuli.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"elizabeth\"]}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{Slot:0b,tag:{Name:\"Enchanted Ink Sac\"},Count:1b},
+									{Slot:1b,tag:{Name:\"Enchanted Green Dye\"},Count:32b},
+									{Slot:2b,tag:{Name:\"Enchanted Lapis Lazuli\"},Count:32b}
+								]
+							}",
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"experience":200,
+		"function":"skyblock:npcs/city_projects/builders_house/contribute3"
+	}
+}
