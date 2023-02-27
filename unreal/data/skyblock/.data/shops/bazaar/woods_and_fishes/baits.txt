@@ -1,0 +1,688 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Baits\"}",
+		Tags:["bazaar"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		ActiveEffects:[
+			{
+				Id:14,
+				Duration:2147483647,
+				ShowParticles:false
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:cod",
+						Count:1
+					},
+					buyB:{
+						id:"minecraft:carrot",
+						Count:1
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1813371137,-292598184,-1928420374,-640048949],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFjMjE3YmY0M2I0ZDNlZjJiZmU2ZTc0NjQzZTc0YjE5ODVkMzEyY2RjODUzYzEzNWEyYzcxODFmNjRhNmVhNCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Carrot Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"Chance to fish up... a rabbit?\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Carrot Bait",
+							Bait:true
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:6,
+						tag:{
+							SkullOwner:{Id:[I;-1813371137,-292598184,-1928420374,-640048949],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFjMjE3YmY0M2I0ZDNlZjJiZmU2ZTc0NjQzZTc0YjE5ODVkMzEyY2RjODUzYzEzNWEyYzcxODFmNjRhNmVhNCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Carrot Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"Chance to fish up... a rabbit?\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Carrot Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:7
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:cod",
+						Count:2
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1338370647,2145469327,-1163600214,6327660],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhlNzQ5YmExNDFjMDU0YmIwYzEyNTMyMGIxNzY3N2JkY2IzYTdlOTgwN2E1NzUyN2MwODc3Yjk0NTQ4YTJlIn19fQ=="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Minnow Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+15%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch extra fish.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Minnow Bait",
+							Bait:true
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;-1338370647,2145469327,-1163600214,6327660],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhlNzQ5YmExNDFjMDU0YmIwYzEyNTMyMGIxNzY3N2JkY2IzYTdlOTgwN2E1NzUyN2MwODc3Yjk0NTQ4YTJlIn19fQ=="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Minnow Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+15%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch extra fish.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Minnow Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:6
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:cod",
+						Count:2
+					},
+					buyB:{
+						id:"minecraft:salmon",
+						Count:1
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;1641239383,-1614265171,-1259628103,-440298236],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTBhMWJkYWNmMjgzYjIzOWFmY2I2N2ExN2ZjM2U1NjgyNzRiYTFhNTI1NjEzOGJjNjQyZDI2ZmFiZDA0NDAzIn19fQ=="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Fish Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+30%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch extra fish.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Fish Bait",
+							Bait:true
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;1641239383,-1614265171,-1259628103,-440298236],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTBhMWJkYWNmMjgzYjIzOWFmY2I2N2ExN2ZjM2U1NjgyNzRiYTFhNTI1NjEzOGJjNjQyZDI2ZmFiZDA0NDAzIn19fQ=="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Fish Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+30%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch extra fish.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Fish Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:11
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:cod",
+						Count:1
+					},
+					buyB:{
+						id:"minecraft:prismarine_crystals",
+						Count:2
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-429871454,1941260457,-1262880150,630061515],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTNiY2MxNmY0MDIzNDJiNGFjZDI5YWVjYWM3MmQxZDVhMTE2ZTBhYmI0NzhiYjQ5NjBlNzM0ZmQ3MDY4NmJhIn19fQ=="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Light Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"Increases the chance of catching\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"rare Sea Creatures while fishing\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"during the day.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Light Bait",
+							Bait:true
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;-429871454,1941260457,-1262880150,630061515],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTNiY2MxNmY0MDIzNDJiNGFjZDI5YWVjYWM3MmQxZDVhMTE2ZTBhYmI0NzhiYjQ5NjBlNzM0ZmQ3MDY4NmJhIn19fQ=="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Light Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"Increases the chance of catching\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"rare Sea Creatures while fishing\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"during the day.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Light Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:8
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:cod",
+						Count:1
+					},
+					buyB:{
+						id:"minecraft:ink_sac",
+						Count:1
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;892589973,-1726001450,-1955808354,-1881120773],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzI4MTYxOGE1YzgyMzkwNzhmZDQzZmVmOGVhZTE0ZWEwMDY2NWY2MzViZDU2ZDQ0NTFjY2NkNWQwZmExMTgyMSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Dark Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"Increases the chance of catching\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"rare Sea Creatures while fishing\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"at night.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Dark Bait",
+							Bait:true
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;892589973,-1726001450,-1955808354,-1881120773],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzI4MTYxOGE1YzgyMzkwNzhmZDQzZmVmOGVhZTE0ZWEwMDY2NWY2MzViZDU2ZDQ0NTFjY2NkNWQwZmExMTgyMSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Dark Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"Increases the chance of catching\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"rare Sea Creatures while fishing\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"at night.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Dark Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:4
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:cod",
+						Count:1
+					},
+					buyB:{
+						id:"minecraft:pumpkin",
+						Count:1
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;662267081,-45922805,-1235969100,-701471503],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc3ZWFiNTU4ZTZhOTBmN2NlZGQ3MmMyNDE2Yzg5MWY0N2Q3MWViNGU3YmRjYzI5OWE2MzM1Mjg2ZjVjYmE5OCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Spooky Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+15%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch Spooky Sea\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Creatures and \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+15%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"catch extra fish.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Spooky Bait",
+							Bait:true
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;662267081,-45922805,-1235969100,-701471503],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc3ZWFiNTU4ZTZhOTBmN2NlZGQ3MmMyNDE2Yzg5MWY0N2Q3MWViNGU3YmRjYzI5OWE2MzM1Mjg2ZjVjYmE5OCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Spooky Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+15%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch Spooky Sea\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Creatures and \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+15%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"catch extra fish.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Spooky Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:5
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:cod",
+						Count:1
+					},
+					buyB:{
+						id:"minecraft:pufferfish",
+						Count:1
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1069193678,467616084,-1902962520,993224720],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQyYzQzNmM2NTgwZmFkMjE3MzIzYjlmMDQ1ZGFhMjNhOWY4ODIxOWFjMjY1MDY2Mzc2NjllZmYyMDkwMWY3NCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Spiked Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+6%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch Sea Creatures.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Spiked Bait",
+							Bait:true
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:2,
+						tag:{
+							SkullOwner:{Id:[I;-1069193678,467616084,-1902962520,993224720],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQyYzQzNmM2NTgwZmFkMjE3MzIzYjlmMDQ1ZGFhMjNhOWY4ODIxOWFjMjY1MDY2Mzc2NjllZmYyMDkwMWY3NCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Spiked Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+6%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch Sea Creatures.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Spiked Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:7
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:6,
+						tag:{
+							SkullOwner:{Id:[I;-783604940,96161453,-1554044951,-1575020231],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzVhMDFhYWY2YWQ0ZGIwZmQwOGI4NTU1YmNkMThhZDQ0NThlMjU4Yzk3NTQ3Nzc4YzYwNzQ5NTVlY2NhZmRlIn19fQ=="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Blessed Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+15%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to get double drops\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"while fishing.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Blessed Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:47
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:cod",
+						Count:1
+					},
+					buyB:{
+						id:"minecraft:ice",
+						Count:1
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;392469728,-1148500783,-1779987144,-1396284197],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA5ZTE2MWJkYzMyNWM3MTU3MmE1NDhhNzliYjE1NDgxYzkyNGQ2M2U0ZmI4MjEzNzlkNWRkNmM4OTI5ZjM5ZiJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Ice Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+20%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch Winter Sea\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Creatures.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Ice Bait",
+							Bait:true
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;392469728,-1148500783,-1779987144,-1396284197],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA5ZTE2MWJkYzMyNWM3MTU3MmE1NDhhNzliYjE1NDgxYzkyNGQ2M2U0ZmI4MjEzNzlkNWRkNmM4OTI5ZjM5ZiJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Ice Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+20%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch Winter Sea\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"Creatures.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Ice Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:2,
+						tag:{
+							SkullOwner:{Id:[I;-1752114437,1810252186,-1096939226,-1968683195],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWI0ZmI0OWFlNzdjZmNmMGI4ZjYyZGY5YzY5Y2M5NmIyNzA5NmFkMjczN2Q2ZDBhYTQ1MGI1MDY2NGZiMjMwMyJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Whale Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"Has a small chance to fish\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"double drops, a higher chance to\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"catch rare Sea Creatures, and\",\"italic\":false,\"color\":\"gray\"}]",
+									"[\"\",{\"text\":\"+20%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch extra fish.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Whale Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:31
+					}
+				},
+				{
+					buy:
+					{
+						id:"minecraft:prismarine_shard",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Shark Fin\"}"
+							},
+							Name:"Shark Fin"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:16,
+						tag:{
+							SkullOwner:{Id:[I;-1149743601,1537690981,-1347043518,-1313443755],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWRmZjkwNDEyNGVmZTQ4NmIzYTU0MjYxZGJiODA3MmIwYTRlMTE2MTVhZDhkNzM5NGQ4MTRlMGU4YzhlZjllYiJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Shark Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+15%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch Sharks.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Shark Bait",
+							Bait:true
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:48,
+						tag:{
+							SkullOwner:{Id:[I;-1149743601,1537690981,-1347043518,-1313443755],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWRmZjkwNDEyNGVmZTQ4NmIzYTU0MjYxZGJiODA3MmIwYTRlMTE2MTVhZDhkNzM5NGQ4MTRlMGU4YzhlZjllYiJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Shark Bait\"}",
+								Lore:[
+									"[\"\",{\"text\":\"Fishing Bait\",\"italic\":false,\"color\":\"blue\"}]",
+									"[\"\",{\"text\":\"+15%\",\"italic\":false,\"color\":\"green\"},{\"text\":\" chance to catch Sharks.\",\"italic\":false,\"color\":\"gray\"}]"
+								]
+							},
+							Name:"Shark Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1383003374,1373258556,-1493394200,-535337327],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU2YjU5NTViMjk1NTIyYzk2ODk0ODE5NjBjMDFhOTkyY2ExYzc3NTRjZjRlZTMxM2M4ZGQwYzM1NmQzMzVmIn19fQ=="}]}},
+								display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Magmafish\"}"
+							},
+							Name:"Magmafish"
+						}
+					},
+					buyB:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;2120978112,257640884,-1568712745,-1124283165],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmIzOWMwZTUzZTc5ZTdlYmQ0ZGI2YzZkMDk2YzlkOWExNjBjZmYyNzgyMmMwNzdmYjhmNWQ0NTk2OWNjNDk3MiJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Corrupted Fragment\"}",
+								Lore:[
+									'["",{"text":"Spreads fast.","color":"dark_gray"}]'
+								]
+							},
+							Name:"Corrupted Fragment"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:16,
+						tag:{
+							SkullOwner:{Id:[I;-725126181,-345028026,-1678204830,1831286277],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGJiY2RkZDQ1Y2QzNDc4NjViY2VhYjNlM2RjNWQzODI3MjM0NjM5NjNmODVlY2NlODFjZGQ2MWI1M2RiMTRlNCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Corrupted Bait\"}",
+								Lore:[
+									'["",{"text":"Fishing Bait","italic":false,"color":"blue"}]',
+									'["",{"text":"-50%","italic":false,"color":"red"},{"text":" chance to catch extra fish,","italic":false,"color":"gray"}]',
+									'["",{"text":"but lures a special ","italic":false,"color":"gray"},{"text":"Trophy Fish","italic":false,"color":"gold"}]',
+									'["",{"text":"in the ","italic":false,"color":"gray"},{"text":"Crimson Isle","italic":false,"color":"red"},{"text":".","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Corrupted Bait",
+							Bait:true
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;-725126181,-345028026,-1678204830,1831286277],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGJiY2RkZDQ1Y2QzNDc4NjViY2VhYjNlM2RjNWQzODI3MjM0NjM5NjNmODVlY2NlODFjZGQ2MWI1M2RiMTRlNCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Corrupted Bait\"}",
+								Lore:[
+									'["",{"text":"Fishing Bait","italic":false,"color":"blue"}]',
+									'["",{"text":"-50%","italic":false,"color":"red"},{"text":" chance to catch extra fish,","italic":false,"color":"gray"}]',
+									'["",{"text":"but lures a special ","italic":false,"color":"gray"},{"text":"Trophy Fish","italic":false,"color":"gold"}]',
+									'["",{"text":"in the ","italic":false,"color":"gray"},{"text":"Crimson Isle","italic":false,"color":"red"},{"text":".","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Corrupted Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:20
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1383003374,1373258556,-1493394200,-535337327],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU2YjU5NTViMjk1NTIyYzk2ODk0ODE5NjBjMDFhOTkyY2ExYzc3NTRjZjRlZTMxM2M4ZGQwYzM1NmQzMzVmIn19fQ=="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Magmafish\"}"
+							},
+							Name:"Magmafish"
+						}
+					},
+					buyB:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;72454961,-916566689,-1754370227,-1144481162],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFlMDI5YThlZWVhODBiYTNhMjc0MDdhOWYwZjIyNmI1ZWMyM2MzNTZkMzIzNTM3ZGU0ODI2OTYwZjRkNGU3OCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Blaze Ashes\"}",
+								Lore:[
+									'["",{"text":"Blazes are ephemeral creatures,","color":"dark_gray"}]',
+									'["",{"text":"constantly consuming themselves.","color":"dark_gray"}]',
+									'["",{"text":"Their ashes are said to bring","color":"dark_gray"}]',
+									'["",{"text":"good fortune.","color":"dark_gray"}]'
+								]
+							},
+							Name:"Blaze Ashes"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:16,
+						tag:{
+							SkullOwner:{Id:[I;-2067321042,-726578878,-1334693268,-1346323585],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjEzYzY4OTlkOTcxMDljNmNhY2JiY2RkMDFlODkwMGFiYWY0NjQzMmYxOTc1OTViYWExNWFkMTM3ZDVmYjliYSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Hot Bait\"}",
+								Lore:[
+									'["",{"text":"Fishing Bait","italic":false,"color":"blue"}]',
+									'["",{"text":"+5%","italic":false,"color":"green"},{"text":" chance to catch ","italic":false,"color":"gray"},{"text":"Trophy Fish","italic":false,"color":"gold"},{"text":".","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Hot Bait",
+							Bait:true
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;-2067321042,-726578878,-1334693268,-1346323585],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjEzYzY4OTlkOTcxMDljNmNhY2JiY2RkMDFlODkwMGFiYWY0NjQzMmYxOTc1OTViYWExNWFkMTM3ZDVmYjliYSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Hot Bait\"}",
+								Lore:[
+									'["",{"text":"Fishing Bait","italic":false,"color":"blue"}]',
+									'["",{"text":"+5%","italic":false,"color":"green"},{"text":" chance to catch ","italic":false,"color":"gray"},{"text":"Trophy Fish","italic":false,"color":"gold"},{"text":".","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Hot Bait",
+							Bait:true
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:35
+					}
+				}
+			]
+		}
+	}
+}

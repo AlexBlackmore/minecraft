@@ -1,0 +1,132 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Revenant Horror\"}",
+		Tags:["bazaar"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		ActiveEffects:[
+			{
+				Id:14,
+				Duration:2147483647,
+				ShowParticles:false
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:rotten_flesh",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Revenant Flesh\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Revenant Flesh"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:rotten_flesh",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Revenant Flesh\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Revenant Flesh"
+						}
+					},
+					buyB:{
+						id:"minecraft:string",
+						Count:16,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted String\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted String"
+						}
+					},
+					sell:{
+						id:"minecraft:cooked_porkchop",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Revenant Viscera\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Revenant Viscera"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:cooked_porkchop",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Revenant Viscera\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Revenant Viscera"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:48,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				}
+			]
+		}
+	}
+}

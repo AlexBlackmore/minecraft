@@ -1,0 +1,209 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Arachnids\"}",
+		Tags:["bazaar"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		ActiveEffects:[
+			{
+				Id:14,
+				Duration:2147483647,
+				ShowParticles:false
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:string",
+						Count:2
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:string",
+						Count:64
+					},
+					buyB:{
+						id:"minecraft:string",
+						Count:64
+					},
+					sell:{
+						id:"minecraft:string",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted String\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted String"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:string",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted String\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted String"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:spider_eye",
+						Count:2
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:spider_eye",
+						Count:64
+					},
+					buyB:{
+						id:"minecraft:spider_eye",
+						Count:64
+					},
+					sell:{
+						id:"minecraft:spider_eye",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Spider Eye\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Spider Eye"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:spider_eye",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Spider Eye\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Spider Eye"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:fermented_spider_eye",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Fermented Spider Eye\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Fermented Spider Eye"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:string",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Soul String\"}",
+								Lore:[
+									'["",{"text":"Rare string that can be used to","italic":false,"color":"gray"}]',
+									'["",{"text":"craft weapons that are infused","italic":false,"color":"gray"}]',
+									'["",{"text":"with the power of Arachne.","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Soul String"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:13,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				}
+			]
+		}
+	}
+}

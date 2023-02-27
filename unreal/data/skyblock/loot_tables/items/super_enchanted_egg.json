@@ -1,0 +1,44 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:ghast_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Super Enchanted Egg","italic":false,"color":"aqua"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Used to craft ","italic":false,"color":"gray"},{"text":"Epic","italic":false,"color":"light_purple"},{"text":" and ","italic":false,"color":"gray"},{"text":"Legendary","italic":false,"color":"gold"}],
+								["",{"text":"pets.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Super Enchanted Egg\",
+								EntityTag:{
+									id:\"minecraft:area_effect_cloud\",
+									Duration:20
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,220 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Mythological\"}",
+		Tags:["bazaar"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		ActiveEffects:[
+			{
+				Id:14,
+				Duration:2147483647,
+				ShowParticles:false
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:feather",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Griffin Feather\"}",
+								Lore:[
+									'["",{"text":"Drops rarely off of monsters","italic":false,"color":"gray"}]',
+									'["",{"text":"from Diana\'s Mythological Ritual.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Griffin Feather"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:stick",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Daedalus Stick\"}",
+								Lore:[
+									'["",{"text":"Drops rarely off of monsters","italic":false,"color":"gray"}]',
+									'["",{"text":"from Diana\'s Mythological Ritual.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Daedalus Stick"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:10,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:flint",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Ancient Claw\"}",
+								Lore:[
+									'["",{"text":"Drops rarely off of monsters","italic":false,"color":"gray"}]',
+									'["",{"text":"from Diana\'s Mythological Ritual.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Ancient Claw"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:33
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:flint",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Ancient Claw\"}",
+								Lore:[
+									'["",{"text":"Drops rarely off of monsters","italic":false,"color":"gray"}]',
+									'["",{"text":"from Diana\'s Mythological Ritual.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Ancient Claw"
+						}
+					},
+					buyB:{
+						id:"minecraft:flint",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Ancient Claw\"}",
+								Lore:[
+									'["",{"text":"Drops rarely off of monsters","italic":false,"color":"gray"}]',
+									'["",{"text":"from Diana\'s Mythological Ritual.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Ancient Claw"
+						}
+					},
+					sell:{
+						id:"minecraft:flint",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Ancient Claw\"}",
+								Lore:[
+									'["",{"text":"Drops rarely off of monsters","italic":false,"color":"gray"}]',
+									'["",{"text":"from Diana\'s Mythological Ritual.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Ancient Claw"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:flint",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Ancient Claw\"}",
+								Lore:[
+									'["",{"text":"Drops rarely off of monsters","italic":false,"color":"gray"}]',
+									'["",{"text":"from Diana\'s Mythological Ritual.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Ancient Claw"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				}
+			]
+		}
+	}
+}

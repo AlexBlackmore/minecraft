@@ -1,0 +1,192 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Inferno Demonlord\"}",
+		Tags:["bazaar"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		ActiveEffects:[
+			{
+				Id:14,
+				Duration:2147483647,
+				ShowParticles:false
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:gunpowder",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Derelict Ashe\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Derelict Ashe"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:spider_spawn_egg",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Amalgamated Crimsonite\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Amalgamated Crimsonite"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:gunpowder",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Derelict Ashe\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Derelict Ashe"
+						}
+					},
+					buyB:{
+						id:"minecraft:spider_spawn_egg",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Amalgamated Crimsonite\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Amalgamated Crimsonite"
+						}
+					},
+					sell:{
+						id:"minecraft:blaze_powder",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Molten Powder\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Molten Powder"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:blaze_powder",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Molten Powder\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Molten Powder"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;493308803,-1011921686,-1214158753,-1284558409],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg1OWM4ZGYxMTA5YzA4YTc1NjI3NWYxZDI4ODdjMjc0ODA0OWZlMzM4Nzc3NjlhN2I0MTVkNTZlZGE0NjlkOCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Chili Pepper\"}",
+								Lore:[
+									'["",{"text":"It\'s red hot, but green!","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Chili Pepper"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:13,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				}
+			]
+		}
+	}
+}

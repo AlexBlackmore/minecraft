@@ -1,0 +1,267 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Slime Drops\"}",
+		Tags:["bazaar"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		ActiveEffects:[
+			{
+				Id:14,
+				Duration:2147483647,
+				ShowParticles:false
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"slime_ball",
+						Count:6
+					},
+					sell:{
+						id:"emerald",
+						Count:5
+					}
+				},
+				{
+					buy:{
+						id:"slime_ball",
+						Count:64
+					},
+					buyB:{
+						id:"slime_ball",
+						Count:64
+					},
+					sell:{
+						id:"slime_ball",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Slimeball\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:":unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Slimeball"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"slime_ball",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Slimeball\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:":unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Slimeball"
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:5,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:":unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"slime_ball",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Slimeball\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:":unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Slimeball"
+						}
+					},
+					buyB:{
+						id:"slime_ball",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Slimeball\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:":unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Slimeball"
+						}
+					},
+					sell:{
+						id:"slime_block",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Slime Block\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:":unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Slime Block"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"slime_block",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Slime Block\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:":unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Slime Block"
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:10,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:":unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"magma_cream",
+						Count:3
+					},
+					sell:{
+						id:"emerald",
+						Count:4
+					}
+				},
+				{
+					buy:
+					{
+						id:"magma_cream",
+						Count:64
+					},
+					buyB:
+					{
+						id:"magma_cream",
+						Count:64
+					},
+					sell:{
+						id:"magma_cream",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Magma Cream\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:":unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Magma Cream"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"magma_cream",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Magma Cream\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:":unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Magma Cream"
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:":unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;-175202648,176181175,-1306520743,1760556828],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUwZmYzNzE4MDdhNjA3OWQ1OTFhZWRjNDU3Y2JmM2Y0ZDE4ZTZiYmQ5YmFhMDA3MzgwNmYwZTQ2NmI4ZTg0OSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Yoggie\"}",
+								Lore:[
+									'["",{"text":"Harvested from the core of Yogs.","italic":false,"color":"gray"}]',
+									'["",{"text":"Used to upgrade Magma equipment.","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Yoggie"
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:50
+					}
+				}
+			]
+		}
+	}
+}

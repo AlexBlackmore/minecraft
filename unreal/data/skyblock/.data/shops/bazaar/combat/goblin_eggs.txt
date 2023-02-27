@@ -1,0 +1,136 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Goblin Eggs\"}",
+		Tags:["bazaar"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		ActiveEffects:[
+			{
+				Id:14,
+				Duration:2147483647,
+				ShowParticles:false
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"egg",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Goblin Egg\"}",
+								Lore:[
+									'["",{"text":"What came first the Goblin or","color":"dark_gray"}]',
+									'["",{"text":"the Egg?","color":"dark_gray"}]'
+								]
+							},
+							Name:"Goblin Egg"
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:64
+					}
+				},
+				{
+					buy:{
+						id:"egg",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Red Goblin Egg\"}",
+								Lore:[
+									'["",{"text":"What came first the Goblin or","color":"dark_gray"}]',
+									'["",{"text":"the Egg?","color":"dark_gray"}]'
+								]
+							},
+							Name:"Red Goblin Egg"
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:64
+					}
+				},
+				{
+					buy:{
+						id:"egg",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"Blue Goblin Egg\"}",
+								Lore:[
+									'["",{"text":"What came first the Goblin or","color":"dark_gray"}]',
+									'["",{"text":"the Egg?","color":"dark_gray"}]'
+								]
+							},
+							Name:"Blue Goblin Egg"
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:64
+					}
+				},
+				{
+					buy:{
+						id:"egg",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Yellow Goblin Egg\"}",
+								Lore:[
+									'["",{"text":"What came first the Goblin or","color":"dark_gray"}]',
+									'["",{"text":"the Egg?","color":"dark_gray"}]'
+								]
+							},
+							Name:"Yellow Goblin Egg"
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:64
+					}
+				},
+				{
+					buy:{
+						id:"egg",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"green\",\"text\":\"Green Goblin Egg\"}",
+								Lore:[
+									'["",{"text":"What came first the Goblin or","color":"dark_gray"}]',
+									'["",{"text":"the Egg?","color":"dark_gray"}]'
+								]
+							},
+							Name:"Green Goblin Egg"
+						}
+					},
+					sell:{
+						id:"emerald",
+						Count:64
+					}
+				}
+			]
+		}
+	}
+}

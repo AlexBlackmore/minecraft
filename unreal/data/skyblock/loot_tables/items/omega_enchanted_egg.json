@@ -5,24 +5,28 @@
 			"entries":[
 				{
 					"type":"minecraft:item",
-					"name":"minecraft:diamond",
+					"name":"minecraft:endermite_spawn_egg",
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Refined Diamond","italic":false,"color":"light_puple"}
+							"name":{"text":"Omega Enchanted Egg","italic":false,"color":"light_purple"}
 						},
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								["",{"text":"Looking at it for too long may","color":"dark_gray"}],
-								["",{"text":"cause eye trauma.","color":"dark_gray"}]
+								["",{"text":"Used to craft the ","italic":false,"color":"gray"},{"text":"strangest","italic":true,"color":"gray"},{"text":" of","italic":false,"color":"gray"}],
+								["",{"text":"pets.","italic":false,"color":"gray"}]
 							]
 						},
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
 								HideFlags:1,
-								Name:\"Refined Diamond\"
+								Name:\"Omega Enchanted Egg\",
+								EntityTag:{
+									id:\"minecraft:area_effect_cloud\",
+									Duration:20
+								}
 							}"
 						},
 						{

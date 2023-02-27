@@ -1,0 +1,760 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Oddities\"}",
+		Tags:["bazaar"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		ActiveEffects:[
+			{
+				Id:14,
+				Duration:2147483647,
+				ShowParticles:false
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:paper",
+						Count:3
+					},
+					buyB:{
+						id:"minecraft:baked_potato",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Baked Potato\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Baked Potato"
+						}
+					},
+					sell:{
+						id:"minecraft:book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Hot Potato Book\"}",
+								Lore:[
+									'{"text":"Combine with a weapon or armor","italic":false,"color":"gray"}',
+									'{"text":"piece to grant a permanent stat","italic":false,"color":"gray"}',
+									'["",{"text":"boost. Stacks up to ","italic":false,"color":"gray"},{"text":"4","italic":false,"color":"green"},{"text":" times.","italic":false,"color":"gray"}]',
+									'{"text":" "}',
+									'{"text":"When Applied:","italic":false}',
+									'["",{"text":"+2 Max Health","italic":false,"color":"blue"},{"text":" (Armor)","italic":false,"color":"dark_gray"}]',
+									'["",{"text":"+1 Armor","italic":false,"color":"blue"},{"text":" (Armor)","italic":false,"color":"dark_gray"}]',
+									'["",{"text":"+1 Attack Damage","italic":false,"color":"blue"},{"text":" (Weapon)","italic":false,"color":"dark_gray"}]',
+									'["",{"text":"+1 Sharpness Level","italic":false,"color":"gray"},{"text":" (Sword)","italic":false,"color":"dark_gray"}]',
+									'["",{"text":"+1 Power Level","italic":false,"color":"gray"},{"text":" (Bow)","italic":false,"color":"dark_gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Hot Potato Book"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:book",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Hot Potato Book\"}",
+								Lore:[
+									'{"text":"Combine with a weapon or armor","italic":false,"color":"gray"}',
+									'{"text":"piece to grant a permanent stat","italic":false,"color":"gray"}',
+									'["",{"text":"boost. Stacks up to ","italic":false,"color":"gray"},{"text":"4","italic":false,"color":"green"},{"text":" times.","italic":false,"color":"gray"}]',
+									'{"text":" "}',
+									'{"text":"When Applied:","italic":false}',
+									'["",{"text":"+2 Max Health","italic":false,"color":"blue"},{"text":" (Armor)","italic":false,"color":"dark_gray"}]',
+									'["",{"text":"+1 Armor","italic":false,"color":"blue"},{"text":" (Armor)","italic":false,"color":"dark_gray"}]',
+									'["",{"text":"+1 Attack Damage","italic":false,"color":"blue"},{"text":" (Weapon)","italic":false,"color":"dark_gray"}]',
+									'["",{"text":"+1 Sharpness Level","italic":false,"color":"gray"},{"text":" (Sword)","italic":false,"color":"dark_gray"}]',
+									'["",{"text":"+1 Power Level","italic":false,"color":"gray"},{"text":" (Bow)","italic":false,"color":"dark_gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Hot Potato Book"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:42,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:iron_ingot",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Iron Ingot\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Iron Ingot"
+						}
+					},
+					buyB:{
+						id:"minecraft:coal_block",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Block of Coal\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Block of Coal"
+						}
+					},
+					sell:{
+						id:"minecraft:lava_bucket",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Lava Bucket\"}",
+								Lore:[
+									'["",{"text":"Spawner Upgrade","italic":false,"color":"blue"}]',
+									'{"text":""}',
+									'["",{"text":"Decreases the average delay of a","italic":false,"color":"gray"}]',
+									'["",{"text":"Spawner by ","italic":false,"color":"gray"},{"text":"25%","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}]',
+									'["",{"text":"Unlimited duration!","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Lava Bucket"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:lava_bucket",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Magma Bucket\"}",
+								Lore:[
+									'["",{"text":"Spawner Upgrade","italic":false,"color":"blue"}]',
+									'{"text":""}',
+									'["",{"text":"Decreases the average delay of a","italic":false,"color":"gray"}]',
+									'["",{"text":"Spawner by ","italic":false,"color":"gray"},{"text":"30%","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}]',
+									'["",{"text":"Unlimited duration!","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Magma Bucket"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:lava_bucket",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"dark_red\",\"text\":\"Plasma Bucket\"}",
+								Lore:[
+									'["",{"text":"Spawner Upgrade","italic":false,"color":"blue"}]',
+									'{"text":""}',
+									'["",{"text":"Decreases the average delay of a","italic":false,"color":"gray"}]',
+									'["",{"text":"Spawner by ","italic":false,"color":"gray"},{"text":"35%","italic":false,"color":"green"},{"text":".","italic":false,"color":"gray"}]',
+									'["",{"text":"Unlimited duration!","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Plasma Bucket"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:13,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:oak_trapdoor",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Hamster Wheel\"}",
+								Lore:[
+									'["",{"text":"Spawner Fuel","italic":false,"color":"blue"}]',
+									'{"text":""}',
+									'["",{"text":"Decreases the average delay of a","italic":false,"color":"gray"}]',
+									'["",{"text":"Spawner by ","italic":false,"color":"gray"},{"text":"50%","italic":false,"color":"green"},{"text":" for ","italic":false,"color":"gray"},{"text":"24","italic":false,"color":"green"},{"text":" hours.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Hamster Wheel"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:52,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:charcoal",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Foul Flesh\"}",
+								Lore:[
+									'["",{"text":"Spawner Fuel","italic":false,"color":"blue"}]',
+									'{"text":""}',
+									'["",{"text":"Decreases the average delay of a","italic":false,"color":"gray"}]',
+									'["",{"text":"Spawner by ","italic":false,"color":"gray"},{"text":"90%","italic":false,"color":"green"},{"text":" for ","italic":false,"color":"gray"},{"text":"5","italic":false,"color":"green"},{"text":" hours.","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Foul Flesh"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:4,
+						tag:{
+							SkullOwner:{Id:[I;-1769377508,79577112,-2087052960,2122548069],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q5YzhkZDI0NWE2ODQ1ZDg3MDQxNDViYWI1ZmFjNjBhMzA3NjVlMTI5MWU3MGU5OGUyNWQ5ZmVjNDFiMjZjNSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Tasty Cheese\"}",
+								Lore:[
+									'["",{"text":"Spawner Fuel","italic":false,"color":"blue"}]',
+									'{"text":""}',
+									'["",{"text":"Increases the number of mobs","italic":false,"color":"gray"}]',
+									'["",{"text":"spawned by a Spawner by ","italic":false,"color":"gray"},{"text":"x2","italic":false,"color":"green"},{"text":" for","italic":false,"color":"gray"}]',
+									'["",{"text":"1","italic":false,"color":"green"},{"text":" hour.","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Tasty Cheese"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:5,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:quartz",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Crystal Fragment\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Crystal Fragment"
+						}
+					},
+					buyB:{
+						id:"minecraft:end_stone",
+						Count:8
+					},
+					sell:{
+						id:"minecraft:end_crystal",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Catalyst\"}",
+								Lore:[
+									'["",{"text":"Spawner Fuel","italic":false,"color":"blue"}]',
+									'{"text":""}',
+									'["",{"text":"Increases the number of mobs","italic":false,"color":"gray"}]',
+									'["",{"text":"spawned by a Spawner by ","italic":false,"color":"gray"},{"text":"x3","italic":false,"color":"green"},{"text":" for","italic":false,"color":"gray"}]',
+									'["",{"text":"3","italic":false,"color":"green"},{"text":" hours.","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Catalyst"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:end_crystal",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Catalyst\"}",
+								Lore:[
+									'["",{"text":"Spawner Fuel","italic":false,"color":"blue"}]',
+									'{"text":""}',
+									'["",{"text":"Increases the number of mobs","italic":false,"color":"gray"}]',
+									'["",{"text":"spawned by a Spawner by ","italic":false,"color":"gray"},{"text":"x3","italic":false,"color":"green"},{"text":" for","italic":false,"color":"gray"}]',
+									'["",{"text":"3","italic":false,"color":"green"},{"text":" hours.","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Catalyst"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:5,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:end_crystal",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Catalyst\"}",
+								Lore:[
+									'["",{"text":"Spawner Fuel","italic":false,"color":"blue"}]',
+									'{"text":""}',
+									'["",{"text":"Increases the number of mobs","italic":false,"color":"gray"}]',
+									'["",{"text":"spawned by a Spawner by ","italic":false,"color":"gray"},{"text":"x3","italic":false,"color":"green"},{"text":" for","italic":false,"color":"gray"}]',
+									'["",{"text":"3","italic":false,"color":"green"},{"text":" hours.","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Catalyst"
+						}
+					},
+					buyB:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1240818481,2046905802,-1897243209,655275876],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJlNGViOGE5MDNjNTg1YTc5NTllZmUzZDdhZjA5YWNkMTE5ZWYwYTY4ZGY4NjExNTJjODQ4MDgwNGY4MjI4MSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Hyper Catalyst Upgrade\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Combine with \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Catalysts, buffing\"},{\"italic\":false,\"color\":\"gray\",\"text\":\", buffing\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"the fuel to \"},{\"italic\":false,\"color\":\"green\",\"text\":\"x4\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" for 6 hours\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"duration.\"}]"
+								]
+							},
+							Name:"Hyper Catalyst Upgrade"
+						}
+					},
+					sell:{
+						id:"minecraft:end_crystal",
+						Count:8,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Hyper Catalyst\"}",
+								Lore:[
+									'["",{"text":"Spawner Fuel","italic":false,"color":"blue"}]',
+									'{"text":""}',
+									'["",{"text":"Increases the number of mobs","italic":false,"color":"gray"}]',
+									'["",{"text":"spawned by a Spawner by ","italic":false,"color":"gray"},{"text":"x4","italic":false,"color":"green"},{"text":" for","italic":false,"color":"gray"}]',
+									'["",{"text":"6","italic":false,"color":"green"},{"text":" hours.","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Hyper Catalyst"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:end_crystal",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Hyper Catalyst\"}",
+								Lore:[
+									'["",{"text":"Spawner Fuel","italic":false,"color":"blue"}]',
+									'{"text":""}',
+									'["",{"text":"Increases the number of mobs","italic":false,"color":"gray"}]',
+									'["",{"text":"spawned by a Spawner by ","italic":false,"color":"gray"},{"text":"x4","italic":false,"color":"green"},{"text":" for","italic":false,"color":"gray"}]',
+									'["",{"text":"6","italic":false,"color":"green"},{"text":" hours.","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Hyper Catalyst"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:end_crystal",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Power Crystal\"}"
+							},
+							Name:"Power Crystal"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:10,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:experience_bottle",
+						Count:3
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:4
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:lapis_lazuli",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Lapis Lazuli\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Lapis Lazuli"
+						}
+					},
+					buyB:{
+						id:"minecraft:glass_bottle",
+						Count:1
+					},
+					sell:{
+						id:"minecraft:experience_bottle",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Grand Experience Bottle\"}",
+								Lore:[
+									'["",{"text":"Smash it open to receive","italic":false,"color":"gray"}]',
+									'["",{"text":"experience!","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Grand Experience Bottle"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:experience_bottle",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Grand Experience Bottle\"}",
+								Lore:[
+									'["",{"text":"Smash it open to receive","italic":false,"color":"gray"}]',
+									'["",{"text":"experience!","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Grand Experience Bottle"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:lapis_block",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Block of Lapis\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Block of Lapis"
+						}
+					},
+					buyB:{
+						id:"minecraft:glass_bottle",
+						Count:1
+					},
+					sell:{
+						id:"minecraft:experience_bottle",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Titanic Experience Bottle\"}",
+								Lore:[
+									'["",{"text":"Smash it open to receive","italic":false,"color":"gray"}]',
+									'["",{"text":"experience!","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Titanic Experience Bottle"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:experience_bottle",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Titanic Experience Bottle\"}",
+								Lore:[
+									'["",{"text":"Smash it open to receive","italic":false,"color":"gray"}]',
+									'["",{"text":"experience!","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Titanic Experience Bottle"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:experience_bottle",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Titanic Experience Bottle\"}",
+								Lore:[
+									'["",{"text":"Smash it open to receive","italic":false,"color":"gray"}]',
+									'["",{"text":"experience!","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Titanic Experience Bottle"
+						}
+					},
+					buyB:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-941152845,1422346952,-1505220148,989073422],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA1NGMyOWM3ODA5MDQ3MWMxZWEwNThiZDY0MTg5NzM5MWM5ZTQ2OTRhYTlkMTQwYWZiYmE4ZDBjYzQzNjM3In19fQ=="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Colossal Experience Bottle Upgrade\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Craft with a \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Titanic Experience\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"aqua\",\"text\":\"Bottle\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"double\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" the experience\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"it contains.\"}]"
+								]
+							},
+							Name:"Colossal Experience Bottle Upgrade"
+						}
+					},
+					sell:{
+						id:"minecraft:experience_bottle",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Colossal Experience Bottle\"}",
+								Lore:[
+									'["",{"text":"Smash it open to receive","italic":false,"color":"gray"}]',
+									'["",{"text":"experience!","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Colossal Experience Bottle"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:experience_bottle",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Colossal Experience Bottle\"}",
+								Lore:[
+									'["",{"text":"Smash it open to receive","italic":false,"color":"gray"}]',
+									'["",{"text":"experience!","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Colossal Experience Bottle"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:13,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				}
+			]
+		}
+	}
+}

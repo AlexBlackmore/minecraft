@@ -1,0 +1,131 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Fishing Festival Items\"}",
+		Tags:["bazaar"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		ActiveEffects:[
+			{
+				Id:14,
+				Duration:2147483647,
+				ShowParticles:false
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:prismarine_shard",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Shark Fin\"}",
+								Lore:[
+									'["",{"text":"Dropped by Sharks during the","italic":false,"color":"gray"}]',
+									'["",{"text":"Fishing Festival.","italic":false,"color":"gray"}]'
+								]
+							},
+							HideFlags:1,
+							Name:"Shark Fin"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:prismarine_shard",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Shark Fin\"}",
+								Lore:[
+									'["",{"text":"Dropped by Sharks during the","italic":false,"color":"gray"}]',
+									'["",{"text":"Fishing Festival.","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Shark Fin"
+						}
+					},
+					buyB:{
+						id:"minecraft:prismarine_shard",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Shark Fin\"}",
+								Lore:[
+									'["",{"text":"Dropped by Sharks during the","italic":false,"color":"gray"}]',
+									'["",{"text":"Fishing Festival.","italic":false,"color":"gray"}]'
+								]
+							},
+							Name:"Shark Fin"
+						}
+					},
+					sell:{
+						id:"minecraft:prismarine_shard",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Shark Fin\"}",
+								Lore:[
+									'["",{"text":"A razor-sharp shark fin designed","italic":false,"color":"gray"}]',
+									'["",{"text":"to craft powerful items.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Shark Fin"
+						}
+					},
+					maxUses:2147483647,
+					rewardExp:false
+				},
+				{
+					buy:{
+						id:"minecraft:prismarine_shard",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Shark Fin\"}",
+								Lore:[
+									'["",{"text":"A razor-sharp shark fin designed","italic":false,"color":"gray"}]',
+									'["",{"text":"to craft powerful items.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Shark Fin"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:64
+					}
+				}
+			]
+		}
+	}
+}

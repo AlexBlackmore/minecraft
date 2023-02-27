@@ -1,0 +1,132 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Tarantula Broodfather\"}",
+		Tags:["bazaar"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		ActiveEffects:[
+			{
+				Id:14,
+				Duration:2147483647,
+				ShowParticles:false
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:string",
+						Count:6,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Tarantula Web\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Tarantula Web"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:string",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Tarantula Web\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Tarantula Web"
+						}
+					},
+					buyB:{
+						id:"minecraft:flint",
+						Count:16,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Flint\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Flint"
+						}
+					},
+					sell:{
+						id:"minecraft:cobweb",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Tarantula Silk\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Tarantula Silk"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:cobweb",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Tarantula Silk\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Tarantula Silk"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:43,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft::unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				}
+			]
+		}
+	}
+}

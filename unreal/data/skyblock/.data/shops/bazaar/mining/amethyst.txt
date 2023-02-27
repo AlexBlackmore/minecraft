@@ -1,0 +1,365 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Amethyst\"}",
+		Tags:["bazaar"],
+		CustomNameVisible:false,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:true,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		ActiveEffects:[
+			{
+				Id:14,
+				Duration:2147483647,
+				ShowParticles:false
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:amethyst_shard",
+						Count:2
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:1
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:amethyst_shard",
+						Count:64
+					},
+					buyB:{
+						id:"minecraft:amethyst_shard",
+						Count:16
+					},
+					sell:{
+						id:"minecraft:amethyst_shard",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Flawed Amethyst Shard\"}",
+								Lore:[
+									'["",{"text":"A slightly better version of","italic":false,"color":"gray"}]',
+									'["",{"text":"Amethyst","italic":false,"color":"white"},{"text":", but it could still use","italic":false,"color":"gray"}]',
+									'["",{"text":"some work.","italic":false,"color":"gray"}]',
+									'{"text":""}',
+									'["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}]',
+									'["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}]',
+									'["",{"text":"additional stats.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Flawed Amethyst Shard"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:amethyst_shard",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Flawed Amethyst Shard\"}",
+								Lore:[
+									'["",{"text":"A slightly better version of","italic":false,"color":"gray"}]',
+									'["",{"text":"Amethyst","italic":false,"color":"white"},{"text":", but it could still use","italic":false,"color":"gray"}]',
+									'["",{"text":"some work.","italic":false,"color":"gray"}]',
+									'{"text":""}',
+									'["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}]',
+									'["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}]',
+									'["",{"text":"additional stats.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Flawed Amethyst Shard"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:40
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:amethyst_shard",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Flawed Amethyst Shard\"}",
+								Lore:[
+									'["",{"text":"A slightly better version of","italic":false,"color":"gray"}]',
+									'["",{"text":"Amethyst","italic":false,"color":"white"},{"text":", but it could still use","italic":false,"color":"gray"}]',
+									'["",{"text":"some work.","italic":false,"color":"gray"}]',
+									'{"text":""}',
+									'["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}]',
+									'["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}]',
+									'["",{"text":"additional stats.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Flawed Amethyst Shard"
+						}
+					},
+					buyB:{
+						id:"minecraft:amethyst_shard",
+						Count:16,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Flawed Amethyst Shard\"}",
+								Lore:[
+									'["",{"text":"A slightly better version of","italic":false,"color":"gray"}]',
+									'["",{"text":"Amethyst","italic":false,"color":"white"},{"text":", but it could still use","italic":false,"color":"gray"}]',
+									'["",{"text":"some work.","italic":false,"color":"gray"}]',
+									'{"text":""}',
+									'["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}]',
+									'["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}]',
+									'["",{"text":"additional stats.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Flawed Amethyst Shard"
+						}
+					},
+					sell:{
+						id:"minecraft:amethyst_shard",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Fine Amethyst Shard\"}",
+								Lore:[
+									'["",{"text":"A type of ","italic":false,"color":"gray"},{"text":"Amethyst","italic":false,"color":"white"},{"text":" that has","italic":false,"color":"gray"}]',
+									'["",{"text":"clearly been treated with care.","italic":false,"color":"gray"}]',
+									'{"text":""}',
+									'["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}]',
+									'["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}]',
+									'["",{"text":"additional stats.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Fine Amethyst Shard"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:amethyst_shard",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Fine Amethyst Shard\"}",
+								Lore:[
+									'["",{"text":"A type of ","italic":false,"color":"gray"},{"text":"Amethyst","italic":false,"color":"white"},{"text":" that has","italic":false,"color":"gray"}]',
+									'["",{"text":"clearly been treated with care.","italic":false,"color":"gray"}]',
+									'{"text":""}',
+									'["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}]',
+									'["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}]',
+									'["",{"text":"additional stats.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Fine Amethyst Shard"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:50,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:amethyst_shard",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Fine Amethyst Shard\"}",
+								Lore:[
+									'["",{"text":"A type of ","italic":false,"color":"gray"},{"text":"Amethyst","italic":false,"color":"white"},{"text":" that has","italic":false,"color":"gray"}]',
+									'["",{"text":"clearly been treated with care.","italic":false,"color":"gray"}]',
+									'{"text":""}',
+									'["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}]',
+									'["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}]',
+									'["",{"text":"additional stats.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Fine Amethyst Shard"
+						}
+					},
+					buyB:{
+						id:"minecraft:amethyst_shard",
+						Count:16,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Fine Amethyst Shard\"}",
+								Lore:[
+									'["",{"text":"A type of ","italic":false,"color":"gray"},{"text":"Amethyst","italic":false,"color":"white"},{"text":" that has","italic":false,"color":"gray"}]',
+									'["",{"text":"clearly been treated with care.","italic":false,"color":"gray"}]',
+									'{"text":""}',
+									'["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}]',
+									'["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}]',
+									'["",{"text":"additional stats.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Fine Amethyst Shard"
+						}
+					},
+					sell:{
+						id:"minecraft:amethyst_shard",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Flawless Amethyst Shard\"}",
+								Lore:[
+									'["",{"text":"A near perfect version of","italic":false,"color":"gray"}]',
+									'["",{"text":"Amethyst","italic":false,"color":"white"},{"text":".","italic":false,"color":"gray"}]',
+									'{"text":""}',
+									'["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}]',
+									'["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}]',
+									'["",{"text":"additional stats.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Flawless Amethyst Shard"
+						}
+					},
+					rewardExp:false,
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:amethyst_shard",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Flawless Amethyst Shard\"}",
+								Lore:[
+									'["",{"text":"A near perfect version of","italic":false,"color":"gray"}]',
+									'["",{"text":"Amethyst","italic":false,"color":"white"},{"text":".","italic":false,"color":"gray"}]',
+									'{"text":""}',
+									'["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}]',
+									'["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}]',
+									'["",{"text":"additional stats.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Flawless Amethyst Shard"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:62,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					}
+				},
+				{
+					buy:{
+						id:"minecraft:amethyst_shard",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Perfect Amethyst Shard\"}",
+								Lore:[
+									'["",{"text":"A perfectly refined ","italic":false,"color":"gray"},{"text":"Amethyst","italic":false,"color":"white"},{"text":".","italic":false,"color":"gray"}]',
+									'{"text":""}',
+									'["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}]',
+									'["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}]',
+									'["",{"text":"additional stats.","italic":false,"color":"gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Perfect Amethyst Shard"
+						}
+					},
+					sell:{
+						id:"minecraft:emerald",
+						Count:5,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Epic"
+						}
+					}
+				}
+			]
+		}
+	}
+}
