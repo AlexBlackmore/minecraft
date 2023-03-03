@@ -3,6 +3,14 @@ execute at @s run summon armor_stand ~ ~ ~ {Invisible:true,Tags:["anvil"]}
 item replace entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand from entity @s weapon.mainhand
 
 
+#Name
+data modify entity @e[tag=anvil,limit=1,sort=nearest] HandItems[0].tag.Prefixes set value []
+
+execute as @e[tag=anvil,limit=1,sort=nearest] run data modify entity @s HandItems[0].tag.Prefixes append from entity @s HandItems[0].tag.Reforge
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Reforge run data modify entity @s HandItems[0].tag.Prefixes append value " "
+
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Thick run data modify entity @s HandItems[0].tag.Prefixes append value "Thick "
+
 #Duplicate Prefixes
 execute as @s if entity @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Reforge:"Wise"}}]}] run function skyblock:reforging/duplicate_prefixes
 execute as @s if entity @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Reforge:"Strong"}}]}] run function skyblock:reforging/duplicate_prefixes
@@ -13,10 +21,22 @@ execute as @s if entity @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{
 execute as @s if entity @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Reforge:"Refined"}}]}] run function skyblock:reforging/duplicate_prefixes
 
 
+execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:0}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_common
+execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:1}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_uncommon
+execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:2}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_rare
+execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:3}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_epic
+execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:4}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_legendary
+execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:5}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_mythic
+
+
 #Lore
 item modify entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand skyblock:reset_lore
 execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Enchantments if data entity @s HandItems[0].tag.Lore run item modify entity @s weapon.mainhand skyblock:lore_spacer
 data modify entity @e[tag=anvil,limit=1,sort=nearest] HandItems[0].tag.display.Lore set from entity @s SelectedItem.tag.Lore
+
+
+execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Name:"Tactician's Sword"}}]}] run function skyblock:lore/tacticians_sword
+
 
 #CustomEnchantments
 execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.CustomEnchantments run item modify entity @s weapon.mainhand skyblock:lore_spacer
@@ -49,6 +69,16 @@ execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag
 
 #TheArtOfWar
 execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.TheArtOfWar run item modify entity @s weapon.mainhand skyblock:the_art_of_war/set_lore
+
+#Thick
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Thick run item modify entity @s weapon.mainhand skyblock:wood_singularity/set_lore
+
+#Recombobulated
+execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Rarity:1}}]}] if data entity @s HandItems[0].tag.Recombobulated run item modify entity @s weapon.mainhand skyblock:recombobulator/set_lore/uncommon
+execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Rarity:2}}]}] if data entity @s HandItems[0].tag.Recombobulated run item modify entity @s weapon.mainhand skyblock:recombobulator/set_lore/rare
+execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Rarity:3}}]}] if data entity @s HandItems[0].tag.Recombobulated run item modify entity @s weapon.mainhand skyblock:recombobulator/set_lore/epic
+execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Rarity:4}}]}] if data entity @s HandItems[0].tag.Recombobulated run item modify entity @s weapon.mainhand skyblock:recombobulator/set_lore/legendary
+execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Rarity:5}}]}] if data entity @s HandItems[0].tag.Recombobulated run item modify entity @s weapon.mainhand skyblock:recombobulator/set_lore/mythic
 
 
 item modify entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand skyblock:lore_spacer

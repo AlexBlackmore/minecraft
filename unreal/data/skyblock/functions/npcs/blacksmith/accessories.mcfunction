@@ -1,95 +1,47 @@
-execute unless data entity @s SelectedItem.tag.Name run function skyblock:set_default_items
-execute unless data entity @s SelectedItem.tag.Reforge run function skyblock:reforging/set_default_attributes
-
-execute at @s run summon armor_stand ~ ~ ~ {Tags:["anvil"]}
-item replace entity @e[type=minecraft:armor_stand,tag=anvil] weapon.mainhand from entity @s weapon.mainhand
-
-execute store result score @s dummy run data get entity @p Inventory[{Slot:-106b}].Count
-tag @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:coal"}]}] add coal
-
-tag @s[tag=coal] add success
-tag @s[nbt={SelectedItem:{tag:{Rarity:0}}},level=13..] add success
-tag @s[nbt={SelectedItem:{tag:{Rarity:1}}},level=19..] add success
-tag @s[nbt={SelectedItem:{tag:{Rarity:2}}},level=26..] add success
-tag @s[nbt={SelectedItem:{tag:{Rarity:3}}},level=37..] add success
-tag @s[nbt={SelectedItem:{tag:{Rarity:4}}},level=48..] add success
-tag @s[nbt={SelectedItem:{tag:{Rarity:5}}},level=63..] add success
-
-tellraw @s[nbt={SelectedItem:{tag:{Rarity:0}}},tag=!success] {"text":"You need at least 13 levels to apply a basic reforge to this item!","color":"red"}
-tellraw @s[nbt={SelectedItem:{tag:{Rarity:1}}},tag=!success] {"text":"You need at least 19 levels to apply a basic reforge to this item!","color":"red"}
-tellraw @s[nbt={SelectedItem:{tag:{Rarity:2}}},tag=!success] {"text":"You need at least 26 levels to apply a basic reforge to this item!","color":"red"}
-tellraw @s[nbt={SelectedItem:{tag:{Rarity:3}}},tag=!success] {"text":"You need at least 37 levels to apply a basic reforge to this item!","color":"red"}
-tellraw @s[nbt={SelectedItem:{tag:{Rarity:5}}},tag=!success] {"text":"You need at least 48 levels to apply a basic reforge to this item!","color":"red"}
-tellraw @s[nbt={SelectedItem:{tag:{Rarity:4}}},tag=!success] {"text":"You need at least 63 levels to apply a basic reforge to this item, !","color":"red"}
-
-execute if entity @s[tag=success] run tag @e[tag=anvil,limit=1,sort=nearest] add success
-
-
 scoreboard objectives add random dummy "Random"
-execute at @e[tag=anvil] run summon minecraft:area_effect_cloud ~ 256 ~ {Duration:1,Tags:["rng"]}
-execute as @e[tag=anvil,limit=1,sort=nearest] run execute store result score @s random run data get entity @e[tag=rng,limit=1,sort=nearest] UUID[0]
-scoreboard players set @e[tag=anvil,limit=1,sort=nearest] dummy 18
-execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s random %= @s dummy
-#tellraw @p ["",{"text":"[RNG: ","italic":true,"color":"gray"},{"score":{"name":"@e[tag=anvil,limit=1,sort=nearest]","objective":"random"},"italic":true,"color":"gray"},{"text":"]","italic":true,"color":"gray"}]
+execute at @e[tag=reforge_anvil] run summon minecraft:area_effect_cloud ~ 256 ~ {Duration:1,Tags:["rng"]}
+execute as @e[tag=reforge_anvil,limit=1,sort=nearest] run execute store result score @s random run data get entity @e[tag=rng,limit=1,sort=nearest] UUID[0]
+scoreboard players set @e[tag=reforge_anvil,limit=1,sort=nearest] dummy 18
+execute as @e[tag=reforge_anvil,limit=1,sort=nearest] run scoreboard players operation @s random %= @s dummy
+#tellraw @p ["",{"text":"[RNG: ","italic":true,"color":"gray"},{"score":{"name":"@e[tag=reforge_anvil,limit=1,sort=nearest]","objective":"random"},"italic":true,"color":"gray"},{"text":"]","italic":true,"color":"gray"}]
+kill @e[tag=rng]
 
 function skyblock:reforging/reset_reforge_stats
 
-execute if entity @e[tag=success,tag=anvil,scores={random=0},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/bizarre
-execute if entity @e[tag=success,tag=anvil,scores={random=1},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/itchy
-execute if entity @e[tag=success,tag=anvil,scores={random=2},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/ominous
-execute if entity @e[tag=success,tag=anvil,scores={random=3},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/pleasant
-execute if entity @e[tag=success,tag=anvil,scores={random=4},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/pretty
-execute if entity @e[tag=success,tag=anvil,scores={random=5},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/shiny
-execute if entity @e[tag=success,tag=anvil,scores={random=6},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/simple
-execute if entity @e[tag=success,tag=anvil,scores={random=7},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/strange
-execute if entity @e[tag=success,tag=anvil,scores={random=8},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/vivid
-execute if entity @e[tag=success,tag=anvil,scores={random=9},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/godly
-execute if entity @e[tag=success,tag=anvil,scores={random=10},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/demonic
-execute if entity @e[tag=success,tag=anvil,scores={random=11},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/forceful
-execute if entity @e[tag=success,tag=anvil,scores={random=12},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/hurtful
-execute if entity @e[tag=success,tag=anvil,scores={random=13},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/keen
-execute if entity @e[tag=success,tag=anvil,scores={random=14},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/strong
-execute if entity @e[tag=success,tag=anvil,scores={random=15},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/superior
-execute if entity @e[tag=success,tag=anvil,scores={random=16},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/unpleasant
-execute if entity @e[tag=success,tag=anvil,scores={random=17},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessory/zealous
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=0},nbt={HandItems:[{tag:{Reforge:"Bizarre"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=1},nbt={HandItems:[{tag:{Reforge:"Itchy"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=2},nbt={HandItems:[{tag:{Reforge:"Ominous"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=3},nbt={HandItems:[{tag:{Reforge:"Pleasant"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=4},nbt={HandItems:[{tag:{Reforge:"Pretty"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=5},nbt={HandItems:[{tag:{Reforge:"Shiny"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=6},nbt={HandItems:[{tag:{Reforge:"Simple"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=7},nbt={HandItems:[{tag:{Reforge:"Strange"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=8},nbt={HandItems:[{tag:{Reforge:"Vivid"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=9},nbt={HandItems:[{tag:{Reforge:"Godly"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=10},nbt={HandItems:[{tag:{Reforge:"Demonic"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=11},nbt={HandItems:[{tag:{Reforge:"Forceful"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=12},nbt={HandItems:[{tag:{Reforge:"Hurtful"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=13},nbt={HandItems:[{tag:{Reforge:"Keen"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=14},nbt={HandItems:[{tag:{Reforge:"Strong"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=15},nbt={HandItems:[{tag:{Reforge:"Superior"}}]},limit=1,sort=nearest] random 1
+scoreboard players add @e[tag=success,tag=reforge_anvil,scores={random=16},nbt={HandItems:[{tag:{Reforge:"Unpleasant"}}]},limit=1,sort=nearest] random 1
+scoreboard players set @e[tag=success,tag=reforge_anvil,scores={random=17},nbt={HandItems:[{tag:{Reforge:"Zealoud"}}]},limit=1,sort=nearest] random 0 
 
-
-execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:0}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_common
-execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:1}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_uncommon
-execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:2}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_rare
-execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:3}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_epic
-execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:4}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_legendary
-execute as @e[tag=anvil,nbt={HandItems:[{tag:{Rarity:5}}]},limit=1,sort=nearest] run item modify entity @s weapon.mainhand skyblock:reforging/set_name_special
-
-tellraw @s[tag=success] ["",{"text":"You reforged your ","color":"white"},{"nbt":"SelectedItem.tag.display.Name","interpret":true,"entity":"@s"},{"text":" into a "},{"nbt":"HandItems[0].tag.display.Name","interpret":true,"entity":"@e[tag=anvil,limit=1,sort=nearest]"},{"text":"!","color":"white"}]
-item replace entity @s weapon.mainhand from entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand
-execute as @s[tag=success] run function skyblock:construct_lore
-kill @e[type=armor_stand,tag=anvil]
-
-
-item modify entity @s[tag=success,tag=coal] weapon.offhand skyblock:subtract_item
-item modify entity @s[tag=success,tag=coal] weapon.offhand skyblock:subtract_item
-item modify entity @s[tag=success,tag=coal] weapon.offhand skyblock:subtract_item
-item modify entity @s[tag=success,tag=coal] weapon.offhand skyblock:subtract_item
-item modify entity @s[tag=success,tag=coal] weapon.offhand skyblock:subtract_item
-item modify entity @s[tag=success,tag=coal] weapon.offhand skyblock:subtract_item
-item modify entity @s[tag=success,tag=coal] weapon.offhand skyblock:subtract_item
-item modify entity @s[tag=success,tag=coal] weapon.offhand skyblock:subtract_item
-item modify entity @s[tag=success,tag=coal] weapon.offhand skyblock:subtract_item
-item modify entity @s[tag=success,tag=coal] weapon.offhand skyblock:subtract_item
-
-xp add @s[tag=success,tag=!coal,nbt={SelectedItem:{tag:{Rarity:0}}}] -250 points
-xp add @s[tag=success,tag=!coal,nbt={SelectedItem:{tag:{Rarity:1}}}] -500 points
-xp add @s[tag=success,tag=!coal,nbt={SelectedItem:{tag:{Rarity:2}}}] -1000 points
-xp add @s[tag=success,tag=!coal,nbt={SelectedItem:{tag:{Rarity:3}}}] -2500 points
-xp add @s[tag=success,tag=!coal,nbt={SelectedItem:{tag:{Rarity:4}}}] -5000 points
-xp add @s[tag=success,tag=!coal,nbt={SelectedItem:{tag:{Rarity:5}}}] -10000 points
-
-playsound minecraft:block.anvil.use player @s[tag=success]
-playsound minecraft:entity.villager.no player @s[tag=success]
-
-advancement revoke @s only skyblock:commands/npcs/blacksmith/accessories
-
-scoreboard objectives remove random
-tag @s remove coal
-tag @s remove success
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=0},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/bizarre
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=1},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/itchy
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=2},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/ominous
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=3},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/pleasant
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=4},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/pretty
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=5},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/shiny
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=6},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/simple
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=7},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/strange
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=8},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/vivid
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=9},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/godly
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=10},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/demonic
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=11},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/forceful
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=12},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/hurtful
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=13},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/keen
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=14},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/strong
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=15},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/superior
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=16},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/unpleasant
+execute if entity @e[tag=success,tag=reforge_anvil,scores={random=17},limit=1,sort=nearest] run function skyblock:reforging/reforges/accessories/zealous

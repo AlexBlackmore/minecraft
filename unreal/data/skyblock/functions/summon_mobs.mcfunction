@@ -4,6 +4,14 @@ execute at @e[type=minecraft:pig,tag=Spawner] as @e[type=minecraft:armor_stand,t
 execute at @e[type=minecraft:pig,tag=Spawner] as @e[type=minecraft:armor_stand,tag=Spawner,limit=1,sort=nearest] if entity @s[tag=Ruins] run execute at @e[type=minecraft:pig,tag=Spawner] run loot spawn ~ ~ ~ loot skyblock:gameplay/spawn_eggs/hub_island/ruins
 execute at @e[type=minecraft:pig,tag=Spawner] as @e[type=minecraft:armor_stand,tag=Spawner,limit=1,sort=nearest] if entity @s[tag=HighLevel,predicate=skyblock:time/night] run execute at @e[type=minecraft:pig,tag=Spawner] run loot spawn ~ ~ ~ loot skyblock:gameplay/spawn_eggs/hub_island/skeleton
 
+
+#The Park
+execute at @e[type=minecraft:pig,tag=Spawner] as @e[type=minecraft:armor_stand,tag=Spawner,limit=1,sort=nearest] if entity @s[tag=HowlingSpirit] run execute at @e[type=minecraft:pig,tag=Spawner] run loot spawn ~ ~ ~ loot skyblock:gameplay/spawn_eggs/the_park/howling_spirit
+execute at @e[type=minecraft:pig,tag=Spawner] as @e[type=minecraft:armor_stand,tag=Spawner,limit=1,sort=nearest] if entity @s[tag=PackSpirit] run execute at @e[type=minecraft:pig,tag=Spawner] run loot spawn ~ ~ ~ loot skyblock:gameplay/spawn_eggs/the_park/pack_spirit
+execute at @e[type=minecraft:pig,tag=Spawner] as @e[type=minecraft:armor_stand,tag=Spawner,limit=1,sort=nearest] if entity @s[tag=SoulOfTheAlpha] run execute at @e[type=minecraft:pig,tag=Spawner] run loot spawn ~ ~ ~ loot skyblock:gameplay/spawn_eggs/the_park/soul_of_the_alpha
+
+
+
 #Dwarven Mines
 #execute at @s as @e[type=minecraft:armor_stand,tag=Spawner,limit=1,sort=nearest] if entity @s[tag=IceWalker] run execute at @e[type=minecraft:pig,tag=Spawner] run loot spawn ~ ~ ~ loot skyblock:gameplay/spawn_eggs/dwarven_mines/ice_walker
 #execute at @s as @e[type=minecraft:armor_stand,tag=Spawner,limit=1,sort=nearest] if entity @s[tag=GoblinBurrows] run execute at @e[type=minecraft:pig,tag=Spawner] run loot spawn ~ ~ ~ loot skyblock:gameplay/spawn_eggs/dwarven_mines/goblin_burrows

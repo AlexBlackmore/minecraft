@@ -7,16 +7,16 @@ execute as @s[tag=success] unless data entity @s SelectedItem.tag.AttributeModif
 
 item modify entity @s[tag=success] weapon.mainhand skyblock:the_art_of_war/set_nbt
 
-execute at @s[tag=success] run summon armor_stand ~ ~ ~ {Tags:["anvil"]}
-item replace entity @e[type=minecraft:armor_stand,tag=anvil,limit=1,sort=nearest] weapon.mainhand from entity @s[tag=success] weapon.mainhand
+execute at @s[tag=success] run summon armor_stand ~ ~ ~ {Tags:["reforge_anvil"]}
+item replace entity @e[type=minecraft:armor_stand,tag=reforge_anvil,limit=1,sort=nearest] weapon.mainhand from entity @s[tag=success] weapon.mainhand
 
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result score @s attack_damage run data get entity @s HandItems[0].tag.AttributeModifiers[{Name:"Attack Damage",Operation:0}].Amount
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run scoreboard players add @s attack_damage 1
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{Name:"Attack Damage",Operation:0}].Amount double 1 run scoreboard players get @s attack_damage
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run execute store result score @s attack_damage run data get entity @s HandItems[0].tag.AttributeModifiers[{Name:"Attack Damage",Operation:0}].Amount
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run scoreboard players add @s attack_damage 1
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{Name:"Attack Damage",Operation:0}].Amount double 1 run scoreboard players get @s attack_damage
 
 
-item replace entity @s[tag=success] weapon.mainhand from entity @e[type=minecraft:armor_stand,tag=anvil,limit=1,sort=nearest] weapon.mainhand
-kill @e[type=armor_stand,tag=anvil]
+item replace entity @s[tag=success] weapon.mainhand from entity @e[type=minecraft:armor_stand,tag=reforge_anvil,limit=1,sort=nearest] weapon.mainhand
+kill @e[type=armor_stand,tag=reforge_anvil]
 
 execute as @s[tag=success] run function skyblock:construct_lore
 item modify entity @s[tag=success] weapon.offhand skyblock:subtract_item

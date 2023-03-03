@@ -44,23 +44,23 @@ execute as @s[tag=success,tag=helmet] unless data entity @s SelectedItem.tag.Att
 
 
 execute at @s[tag=success] run summon armor_stand ~ ~ ~ {Tags:["anvil"]}
-item replace entity @e[type=minecraft:armor_stand,tag=anvil,limit=1,sort=nearest] weapon.mainhand from entity @s[tag=success] weapon.mainhand
+item replace entity @e[type=minecraft:armor_stand,tag=reforge_anvil,limit=1,sort=nearest] weapon.mainhand from entity @s[tag=success] weapon.mainhand
 
 
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result score @s armor run data get entity @s HandItems[0].tag.AttributeModifiers[{Name:"Armor",Operation:0}].Amount
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run scoreboard players add @s armor 1
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{Name:"Armor",Operation:0}].Amount double 1 run scoreboard players get @s armor
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run execute store result score @s armor run data get entity @s HandItems[0].tag.AttributeModifiers[{Name:"Armor",Operation:0}].Amount
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run scoreboard players add @s armor 1
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{Name:"Armor",Operation:0}].Amount double 1 run scoreboard players get @s armor
 
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result score @s max_health run data get entity @s HandItems[0].tag.AttributeModifiers[{Name:"Max Health",Operation:0}].Amount
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run scoreboard players add @s max_health 2
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{Name:"Max Health",Operation:0}].Amount double 1 run scoreboard players get @s max_health
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run execute store result score @s max_health run data get entity @s HandItems[0].tag.AttributeModifiers[{Name:"Max Health",Operation:0}].Amount
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run scoreboard players add @s max_health 2
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{Name:"Max Health",Operation:0}].Amount double 1 run scoreboard players get @s max_health
 
 scoreboard players add @s[tag=success] hot_potato_books 1
-execute store result entity @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] HandItems[0].tag.HotPotatoBooks int 1 run scoreboard players get @s hot_potato_books
+execute store result entity @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] HandItems[0].tag.HotPotatoBooks int 1 run scoreboard players get @s hot_potato_books
 
 
-item replace entity @s[tag=success] weapon.mainhand from entity @e[type=minecraft:armor_stand,tag=anvil,limit=1,sort=nearest] weapon.mainhand
-kill @e[type=armor_stand,tag=anvil]
+item replace entity @s[tag=success] weapon.mainhand from entity @e[type=minecraft:armor_stand,tag=reforge_anvil,limit=1,sort=nearest] weapon.mainhand
+kill @e[type=armor_stand,tag=reforge_anvil]
 
 execute as @s[tag=success] run function skyblock:construct_lore
 item modify entity @s[tag=success] weapon.offhand skyblock:subtract_item

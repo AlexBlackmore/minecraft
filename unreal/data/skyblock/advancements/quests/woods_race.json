@@ -5,7 +5,7 @@
 			"item":"minecraft:paper"
 		},
 		"title":"Woods Race",
-		"description":"[::]",
+		"description":"Talk to Gustave in the Spruce Woods to start this race!",
 		"frame":"task",
 		"show_toast":true,
 		"announce_to_chat":true,
@@ -16,7 +16,7 @@
 			"trigger":"minecraft:player_interacted_with_entity",
 			"conditions":{
 				"entity":{
-					"nbt":"{CustomName:\"{\\\"text\\\":\\\"Gustave\\\",\\\"color\\\":\\\"green\\\"}\"}"
+					"nbt":"{Tags:[\"gustave\"]}"
 				}
 			}
 		}

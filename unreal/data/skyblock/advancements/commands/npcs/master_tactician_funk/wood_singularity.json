@@ -1,0 +1,75 @@
+{
+	"parent":"skyblock:commands/npcs",
+	"display":{
+		"icon":{
+			"item":"minecraft:command_block"
+		},
+		"title":"Wood Singularity",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":true
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"master_tactician_funk\"]}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"nbt":"{
+								Inventory:[
+									{Slot:0b,tag:{Name:\"Enchanted Emerald Rare\"},Count:59b},
+									{Slot:1b,tag:{Name:\"Enchanted Emerald\"},Count:36b},
+									{Slot:2b,id:\"minecraft:emerald\",Count:32b},
+									{Slot:3b,tag:{Name:\"Enchanted Oak Log\"},Count:64b},
+									{Slot:4b,tag:{Name:\"Enchanted Oak Log\"},Count:64b},
+									{Slot:5b,tag:{Name:\"Enchanted Oak Log\"},Count:64b},
+									{Slot:6b,tag:{Name:\"Enchanted Oak Log\"},Count:64b},
+									{Slot:7b,tag:{Name:\"Enchanted Oak Log\"},Count:64b},
+									{Slot:9b,tag:{Name:\"Enchanted Spruce Log\"},Count:64b},
+									{Slot:10b,tag:{Name:\"Enchanted Spruce Log\"},Count:64b},
+									{Slot:11b,tag:{Name:\"Enchanted Spruce Log\"},Count:64b},
+									{Slot:12b,tag:{Name:\"Enchanted Spruce Log\"},Count:64b},
+									{Slot:13b,tag:{Name:\"Enchanted Spruce Log\"},Count:64b},
+									{Slot:14b,tag:{Name:\"Enchanted Birch Log\"},Count:64b},
+									{Slot:15b,tag:{Name:\"Enchanted Birch Log\"},Count:64b},
+									{Slot:16b,tag:{Name:\"Enchanted Birch Log\"},Count:64b},
+									{Slot:17b,tag:{Name:\"Enchanted Birch Log\"},Count:64b},
+									{Slot:18b,tag:{Name:\"Enchanted Birch Log\"},Count:64b},
+									{Slot:19b,tag:{Name:\"Enchanted Dark Oak Log\"},Count:64b},
+									{Slot:20b,tag:{Name:\"Enchanted Dark Oak Log\"},Count:64b},
+									{Slot:21b,tag:{Name:\"Enchanted Dark Oak Log\"},Count:64b},
+									{Slot:22b,tag:{Name:\"Enchanted Dark Oak Log\"},Count:64b},
+									{Slot:23b,tag:{Name:\"Enchanted Dark Oak Log\"},Count:64b},
+									{Slot:24b,tag:{Name:\"Enchanted Acacia Log\"},Count:64b},
+									{Slot:25b,tag:{Name:\"Enchanted Acacia Log\"},Count:64b},
+									{Slot:26b,tag:{Name:\"Enchanted Acacia Log\"},Count:64b},
+									{Slot:27b,tag:{Name:\"Enchanted Acacia Log\"},Count:64b},
+									{Slot:28b,tag:{Name:\"Enchanted Acacia Log\"},Count:64b},
+									{Slot:29b,tag:{Name:\"Enchanted Jungle Log\"},Count:64b},
+									{Slot:30b,tag:{Name:\"Enchanted Jungle Log\"},Count:64b},
+									{Slot:31b,tag:{Name:\"Enchanted Jungle Log\"},Count:64b},
+									{Slot:32b,tag:{Name:\"Enchanted Jungle Log\"},Count:64b},
+									{Slot:33b,tag:{Name:\"Enchanted Jungle Log\"},Count:64b}
+								]
+							}",
+							"flags":{
+								"is_sneaking":true
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/master_tactician_funk/wood_singularity"
+	}
+}

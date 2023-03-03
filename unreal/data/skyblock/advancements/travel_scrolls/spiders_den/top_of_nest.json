@@ -1,0 +1,22 @@
+{
+	"parent":"skyblock:travel_scrolls/spiders_den",
+	"display":{
+		"icon":{
+			"item":"minecraft:map"
+		},
+		"title":"§cTop of Nest",
+		"description":"§7Spawn at the top of the nest in the §cSpider's Den§7.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:recipe_unlocked",
+			"conditions":{
+				"recipe":"skyblock:travel_scrolls/top_of_nest"
+			}
+		}
+	}
+}

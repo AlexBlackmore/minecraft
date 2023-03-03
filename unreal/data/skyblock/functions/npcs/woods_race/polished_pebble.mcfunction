@@ -1,2 +1,0 @@
-tellraw @s ["",{"text":"<","color":"white"},{"text":"Gustave","color":"green"},{"text":"> Not bad, "},{"selector":"@s","color":"white"},{"text":". I hope you can get better than this! Here's a Polished Pebble. I found it laying around...","color":"white"}]
-playsound minecraft:entity.villager.no player @s

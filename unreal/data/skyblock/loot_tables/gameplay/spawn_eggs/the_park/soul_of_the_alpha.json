@@ -1,10 +1,44 @@
-summon wolf ~ ~ ~ {
-	CustomName:"{\"text\":\"Soul of the Alpha\"}",
-	CustomNameVisible:true,
-	Tags:[\"spawn_mob\","skyblock","soul_of_the_alpha"],
-	Health:55,
-	Attributes:[
-		{Name:"generic.max_health",Base:55}
-	],
-	DeathLootTable:"skyblock:entities/the_park/soul_of_the_alpha"
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:zombie_spawn_egg",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Soul of the Alpha","italic":false,"color":"red"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								EntityTag:{
+									id:\"minecraft:wolf\",
+									CustomNameVisible:true,
+									Tags:[\"spawn_mob\",\"soul_of_the_alpha\",\"15xp\"],
+									Health:55,
+									Attributes:[
+										{Name:\"generic.max_health\",Base:55}
+									],
+									HandDropChances:[0.0f,0.0f],
+									ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],
+									DeathLootTable:\"skyblock:entities/the_park/soul_of_the_alpha\"
+								}
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
 }
+

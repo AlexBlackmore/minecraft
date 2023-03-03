@@ -1,0 +1,22 @@
+{
+	"parent":"skyblock:travel_scrolls/the_end",
+	"display":{
+		"icon":{
+			"item":"minecraft:map"
+		},
+		"title":"§5Dragon's Nest",
+		"description":"§7Spawn inside the §dDragon's Nest§7, ready to grind Zealots.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:recipe_unlocked",
+			"conditions":{
+				"recipe":"skyblock:travel_scrolls/dragons_nest"
+			}
+		}
+	}
+}

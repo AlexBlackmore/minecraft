@@ -1,264 +1,312 @@
 give @p villager_spawn_egg{
 	EntityTag:{
-		id:"minecraft:villager"
-		CustomName:"{\"text\":\"Smithmonger\"}"
-		CustomNameVisible:true
-		PersistenceRequired:true
-		Silent:true
-		CanPickUpLoot:false
-		Willing:false
-		NoAI:false
-		VillagerData:
-		{
-			level:5
-			profession:"toolsmith"
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Smithmonger\",\"color\":\"yellow\"}",
+		Tags:["smithmonger"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"toolsmith",
 			type:"plains"
-		}
-		Attributes: [
+		},
+		Attributes:[
 			{
-				Name:"generic.movement_speed"
+				Name:"generic.movement_speed",
 				Base:0
 			}
-		]
+		],
 		Offers:
 		{
-			Recipes: [
-				{
-					buy:
-					{
-						id:"minecraft:emerald"
-						Count:2
-					}
-					sell:
-					{
-						id:"anvil"
-						Count:1
-					}
-					rewardExp:false
-					maxUses:640
-				}
+			Recipes:[
 				{
 					buy:{
-						id:"minecraft:emerald"
-						Count:15
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
-						}
-					}
-					buyB:
-					{
-						id:"minecraft:emerald"
-						Count:40
-					}
-					sell:{
-						id:"player_head"
-						Count:1
-						tag:{
-							SkullOwner:{Id:[I;1565060762508513037-20149394441399830119]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRlY2NjMjgwNzkzNTEwYTZjMTBiYTA4OGMwZTliODcwODc5MGU4MWM2MDkwN2ZkNmViNzNmMzMzMTI3NzdhNCJ9fX0="}]}}
-							display:{
-								Name:"{\"text\":\"Moil Log\"\"italic\":false\"color\":\"yellow\"}"
-								Lore:[
-									"{\"text\":\"Reforge\"\"italic\":false\"color\":\"blue\"}"
-									"\" \""
-									"{\"text\":\"Can be used to apply the Moil reforge to an axe.\"\"italic\":false\"color\":\"gray\"}"
-									"[\"\"{\"text\":\"Moil\"\"italic\":false\"color\":\"blue\"}{\"text\":\" reforge to an axe.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"When Applied:\"\"italic\":\"false\"}"
-									"[\"\"{\"text\":\"+X% Foraging XP\"\"italic\":false\"color\":\"blue\"}]"
-									"\" \""
-									"{\"text\":\"UNCOMMON\"\"bold\":true\"color\":\"yellow\"}"
-								]
-							}
-							Name:"Moil Log"
-						}
-					}
-					rewardExp:false
-					maxUses:640
-				}
-				{
-					buy:{
-						id:"minecraft:emerald"
-						Count:31
-						tag:{
-							display:{
-								Name:"{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}"
-								Lore:["{\"bold\":true\"color\":\"yellow\"\"text\":\"UNCOMMON\"}"]
-							}
-							Enchantments:[{id:"minecraft:unbreaking"lvl:1s}]
-							HideFlags:1
-							Name:"Enchanted Emerald"
-						}
-					}
-					buyB:
-					{
-						id:"minecraft:emerald"
+						id:"minecraft:emerald",
 						Count:16
-					}
+					},
 					sell:{
-						id:"player_head"
-						Count:1
+						id:"minecraft:anvil",
+						Count:1,
 						tag:{
-							SkullOwner:{Id:[I;1565060762508513037-20149394441399830119]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRlY2NjMjgwNzkzNTEwYTZjMTBiYTA4OGMwZTliODcwODc5MGU4MWM2MDkwN2ZkNmViNzNmMzMzMTI3NzdhNCJ9fX0="}]}}
 							display:{
-								Name:"{\"text\":\"Dirty Bottle\"\"italic\":false\"color\":\"aqua\"}"
-								Lore:[
-									"{\"text\":\"Reforge\"\"italic\":false\"color\":\"blue\"}"
-									"\" \""
-									"{\"text\":\"Can be used to apply the Moil reforge to an axe.\"\"italic\":false\"color\":\"gray\"}"
-									"[\"\"{\"text\":\"Dirty\"\"italic\":false\"color\":\"blue\"}{\"text\":\" reforge to a melee weapon.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"When Applied:\"\"italic\":\"false\"}"
-									"[\"\"{\"text\":\"+X% Attack Damage\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+X Attack Damage\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+X% Attack Speed\"\"italic\":false\"color\":\"blue\"}]"
-									"\" \""
-									"{\"text\":\"RARE\"\"bold\":true\"color\":\"aqua\"}"
-								]
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Anvil\"}"
 							}
-							Name:"Dirty Bottle"
 						}
-					}
-					rewardExp:false
-					maxUses:640
-				}
+					},
+					maxUses:2147483647
+				},
 				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
 					buyB:{
-						id:"knowledge_book"
-						Count:1
+						id:"minecraft:emerald",
+						Count:3,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"gray\"\"text\":\"Hotbar:\"}"
-								Lore:[
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"0: \"}{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x4\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"1: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x56\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"2: \"}{\"italic\":false\"color\":\"white\"\"text\":\"Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x32\"}]"
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
 						}
-					}
+					},
 					sell:{
-						id:"player_head"
-						Count:1
+						id:"minecraft:player_head",
+						Count:1,
 						tag:{
-							SkullOwner:{Id:[I;1565060762508513037-20149394441399830119]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRlY2NjMjgwNzkzNTEwYTZjMTBiYTA4OGMwZTliODcwODc5MGU4MWM2MDkwN2ZkNmViNzNmMzMzMTI3NzdhNCJ9fX0="}]}}
+							SkullOwner:{Id:[I;-1790541105,1137396980,-1270977697,534111698],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODgxZjY1MTZjYTc5NThhMTNhMjQ1NGFkZGY4NzYyZjQyMmIxYmNjOTk2OTk1NmI2NzE1NmJjMTdhODdkMjFkMiJ9fX0="}]}},
 							display:{
-								Name:"{\"text\":\"Toil Log\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Moil Log\"}",
 								Lore:[
-									"{\"text\":\"Reforge\"\"italic\":false\"color\":\"blue\"}"
-									"\" \""
-									"{\"text\":\"Can be used to apply the Moil reforge to an axe.\"\"italic\":false\"color\":\"gray\"}"
-									"[\"\"{\"text\":\"Toil\"\"italic\":false\"color\":\"blue\"}{\"text\":\" reforge to an axe.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"When Applied:\"\"italic\":\"false\"}"
-									"[\"\"{\"text\":\"+X% Crit Damage\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+X Attack Damage\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+X% Foraging XP\"\"italic\":false\"color\":\"blue\"}]"
-									"\" \""
-									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Reforge Stone\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Can be used to apply the\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Moil\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" reforge to an axe.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1-3% Foraging Wisdom\"}]"
 								]
-							}
-							Name:"Toil Log"
+							},
+							Name:"Axe Reforge Stone",
+							Reforge:"Moil"
 						}
-					}
-					rewardExp:false
-					maxUses:640
-				}
+					},
+					maxUses:2147483647
+				},
 				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:4,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
 					buyB:{
-						id:"knowledge_book"
-						Count:1
+						id:"minecraft:emerald",
+						Count:5,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"gray\"\"text\":\"Hotbar:\"}"
-								Lore:[
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"0: \"}{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x4\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"1: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x56\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"2: \"}{\"italic\":false\"color\":\"white\"\"text\":\"Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x32\"}]"
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
 						}
-					}
+					},
 					sell:{
-						id:"player_head"
-						Count:1
+						id:"minecraft:player_head",
+						Count:1,
 						tag:{
-							SkullOwner:{Id:[I;1565060762508513037-20149394441399830119]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRlY2NjMjgwNzkzNTEwYTZjMTBiYTA4OGMwZTliODcwODc5MGU4MWM2MDkwN2ZkNmViNzNmMzMzMTI3NzdhNCJ9fX0="}]}}
+							SkullOwner:{Id:[I;914584272,870010678,-1285051852,-1284287233],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjAzMjM5ZjcwYTNjMjUzNThiMjJhMjliZTFiZmQxYjk4NWVlOTVmMjg2MzQ4YjRlMGYyMmYzNDc0MDk4MjViOCJ9fX0="}]}},
 							display:{
-								Name:"{\"text\":\"Refined Amber\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Dirt Bottle\"}",
 								Lore:[
-									"{\"text\":\"Reforge\"\"italic\":false\"color\":\"blue\"}"
-									"\" \""
-									"{\"text\":\"Can be used to apply the Moil reforge to an axe.\"\"italic\":false\"color\":\"gray\"}"
-									"[\"\"{\"text\":\"Refined\"\"italic\":false\"color\":\"blue\"}{\"text\":\" reforge to a pickaxe.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"When Applied:\"\"italic\":\"false\"}"
-									"[\"\"{\"text\":\"+X Armor\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+X% Mining XP\"\"italic\":false\"color\":\"blue\"}]"
-									"\" \""
-									"[\"\"{\"text\":\"Refined Bonus\"\"italic\":false\"color\":\"gold\"}]"
-									"[\"\"{\"text\":\"Grants a \"\"italic\":false\"color\":\"gray\"}{\"text\":\"0.1%\"\"italic\":false\"color\":\"green\"}{\"text\":\" chance to drop an\"\"italic\":false\"color\":\"gray\"}]"
-									"[\"\"{\"text\":\"enchanted item from ores.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Reforge Stone\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Can be used to apply the\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Dirty\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" reforge to a sword.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+2-12% Ferocity\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+0.4-2.4 Attack Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+2-15% Attack Speed\"}]"
 								]
-							}
-							Name:"Refined Amber"
+							},
+							Name:"Sword Reforge Stone",
+							Reforge:"Dirty"
 						}
-					}
-					rewardExp:false
-					maxUses:640
-				}
+					},
+					maxUses:2147483647
+				},
 				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:40,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
 					buyB:{
-						id:"knowledge_book"
-						Count:1
+						id:"minecraft:emerald",
+						Count:45,
 						tag:{
 							display:{
-								Name:"{\"italic\":false\"color\":\"gray\"\"text\":\"Hotbar:\"}"
-								Lore:[
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"0: \"}{\"italic\":false\"color\":\"aqua\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x4\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"1: \"}{\"italic\":false\"color\":\"yellow\"\"text\":\"Enchanted Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x56\"}]"
-									"[\"\"{\"italic\":false\"color\":\"dark_gray\"\"text\":\"2: \"}{\"italic\":false\"color\":\"white\"\"text\":\"Emerald\"}{\"italic\":false\"color\":\"dark_gray\"\"text\":\" x32\"}]"
-								]
-							}
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
 						}
-					}
+					},
 					sell:{
-						id:"player_head"
-						Count:1
+						id:"minecraft:player_head",
+						Count:1,
 						tag:{
-							SkullOwner:{Id:[I;1565060762508513037-20149394441399830119]Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRlY2NjMjgwNzkzNTEwYTZjMTBiYTA4OGMwZTliODcwODc5MGU4MWM2MDkwN2ZkNmViNzNmMzMzMTI3NzdhNCJ9fX0="}]}}
+							SkullOwner:{Id:[I;1103690018,-150530775,-2116784803,395086904],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg4NzI1MzdiNmNlNTc0NjU5ZGMxNzZhMWQ4ZGZlOWMxZTU5OWY2ZjE0MWMxODIyNjI4MzQ3ZGQ1MzhiOWUyIn19fQ=="}]}},
 							display:{
-								Name:"{\"text\":\"Blessed Fruit\"\"italic\":false\"color\":\"light_purple\"}"
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Toil Log\"}",
 								Lore:[
-									"{\"text\":\"Reforge\"\"italic\":false\"color\":\"blue\"}"
-									"\" \""
-									"{\"text\":\"Can be used to apply the Moil reforge to an axe.\"\"italic\":false\"color\":\"gray\"}"
-									"[\"\"{\"text\":\"Blessed\"\"italic\":false\"color\":\"blue\"}{\"text\":\" reforge to a hoe.\"\"italic\":false\"color\":\"gray\"}]"
-									"\" \""
-									"{\"text\":\"When Applied:\"\"italic\":\"false\"}"
-									"[\"\"{\"text\":\"+X% Speed\"\"italic\":false\"color\":\"blue\"}]"
-									"[\"\"{\"text\":\"+X% Farming XP\"\"italic\":false\"color\":\"blue\"}]"
-									"\" \""
-									"{\"text\":\"EPIC\"\"bold\":true\"color\":\"light_purple\"}"
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Reforge Stone\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Can be used to apply the\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Toil\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" reforge to an axe.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+5-16% Crit Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1-3.2 Attack Damage\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1-5% Foraging Wisdom\"}]"
 								]
-							}
-							Name:"Blessed Fruit"
+							},
+							Name:"Axe Reforge Stone",
+							Reforge:"Toil"
 						}
-					}
-					rewardExp:false
-					maxUses:640
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:40,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:45,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;348354492,967065754,-1313046886,32540245],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQwNTViMDBiZmQzYjE4N2I0NzM2YjQ2MzIxYzUyMDNiOTA4NzBlZjJkYzJhY2U3MTJhZmRhZjEwZTg3MDY1MCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Refined Amber\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Reforge Stone\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Can be used to apply the\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Refined\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" reforge to a pickaxe.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1-3.2 Armor\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1-5% Mining Wisdom\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Refined Bonus:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"0.1%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance for the\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"resources mined from ores to be\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"aqua\",\"text\":\"enchanted\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]"
+								]
+							},
+							Name:"Pickaxe Reforge Stone",
+							Reforge:"Refined"
+						}
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:40,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:45,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-192716896,1592804066,-1244855871,637113992],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDAxOTMwY2RiNmQ3OTdkYTFiMzFlNDFkYmRiMzZiMzRjZTk3MjhmZmEzZjhjMWUzOTcyOGExMGIzNzE5NmI0NyJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Blessed Fruit\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Reforge Stone\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Can be used to apply the\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Blessed\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" reforge to a hoe or axe.\"}]",
+									"[\"\",{\"text\":\" \"}]",
+									"[\"\",{\"italic\":false,\"text\":\"When Applied:\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+5-16% Speed\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1-3.2 Luck\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"+1-5% Farming Wisdom\"}]"
+								]
+							},
+							Name:"Hoe Reforge Stone",
+							Reforge:"Blessed"
+						}
+					},
+					maxUses:2147483647
 				}
 			]
 		}
-	}
-	display:{
-		Name:"{\"text\":\"Smithmonger\"}"
 	}
 }

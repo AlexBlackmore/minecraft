@@ -1,0 +1,124 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Old Shaman Nyko\",\"color\":\"yellow\"}",
+		Tags:["old_shaman_nyko"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"cleric",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:36,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald Rare"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:40,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:enchanted_book",
+						Count:1,
+						tag:{
+							display:{
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"True Protection\"}]"
+								]
+							},
+							Name:"Enchanted Book",
+							CustomEnchantments:[
+								{id:"skyblock:true_protection",lvl:1}
+							]
+						}
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:emerald",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					buyB:{
+						id:"minecraft:emerald",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Emerald"
+						}
+					},
+					sell:{
+						id:"minecraft:gray_dye",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"True Essence\"}",
+								Lore:[
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"A brewing ingredient used to\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"craft \"},{\"italic\":false,\"color\":\"white\",\"text\":\"True Resistance Potions\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]"
+								]
+							},
+							Enchantments:[
+								{id:"minecraft:unbreaking",lvl:1}
+							],
+							HideFlags:1,
+							Name:"True Essence"
+						}
+					},
+					maxUses:2147483647
+				}
+			]
+		}
+	}
+}

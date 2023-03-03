@@ -16,18 +16,18 @@ item modify entity @s[tag=success,tag=bow] weapon.mainhand skyblock:enchantments
 item modify entity @s[tag=success,tag=!bow] weapon.mainhand skyblock:enchantments/increase_sharpness
 
 execute at @s[tag=success] run summon armor_stand ~ ~ ~ {Tags:["anvil"]}
-item replace entity @e[type=minecraft:armor_stand,tag=anvil,limit=1,sort=nearest] weapon.mainhand from entity @s[tag=success] weapon.mainhand
+item replace entity @e[type=minecraft:armor_stand,tag=reforge_anvil,limit=1,sort=nearest] weapon.mainhand from entity @s[tag=success] weapon.mainhand
 
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result score @s attack_damage run data get entity @s HandItems[0].tag.AttributeModifiers[{Name:"Attack Damage",Operation:0}].Amount
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run scoreboard players add @s attack_damage 1
-execute as @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{Name:"Attack Damage",Operation:0}].Amount double 1 run scoreboard players get @s attack_damage
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run execute store result score @s attack_damage run data get entity @s HandItems[0].tag.AttributeModifiers[{Name:"Attack Damage",Operation:0}].Amount
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run scoreboard players add @s attack_damage 1
+execute as @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] run execute store result entity @s HandItems[0].tag.AttributeModifiers[{Name:"Attack Damage",Operation:0}].Amount double 1 run scoreboard players get @s attack_damage
 
 scoreboard players add @s[tag=success] hot_potato_books 1
-execute store result entity @e[type=armor_stand,tag=anvil,limit=1,sort=nearest] HandItems[0].tag.HotPotatoBooks int 1 run scoreboard players get @s hot_potato_books
+execute store result entity @e[type=armor_stand,tag=reforge_anvil,limit=1,sort=nearest] HandItems[0].tag.HotPotatoBooks int 1 run scoreboard players get @s hot_potato_books
 
 
-item replace entity @s[tag=success] weapon.mainhand from entity @e[type=minecraft:armor_stand,tag=anvil,limit=1,sort=nearest] weapon.mainhand
-kill @e[type=armor_stand,tag=anvil]
+item replace entity @s[tag=success] weapon.mainhand from entity @e[type=minecraft:armor_stand,tag=reforge_anvil,limit=1,sort=nearest] weapon.mainhand
+kill @e[type=armor_stand,tag=reforge_anvil]
 
 execute as @s[tag=success] run function skyblock:construct_lore
 item modify entity @s[tag=success] weapon.offhand skyblock:subtract_item

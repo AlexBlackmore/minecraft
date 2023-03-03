@@ -58,11 +58,3 @@ tag @s[tag=head] remove head
 tag @s[tag=chest] remove chest
 tag @s[tag=legs] remove legs
 tag @s[tag=feet] remove feet
-
-
-#item modify entity @s[nbt={SelectedItem:{tag:{Rarity:0}}}] weapon.mainhand skyblock:reforging/set_name_common
-#item modify entity @s[nbt={SelectedItem:{tag:{Rarity:1}}}] weapon.mainhand skyblock:reforging/set_name_uncommon
-#item modify entity @s[nbt={SelectedItem:{tag:{Rarity:2}}}] weapon.mainhand skyblock:reforging/set_name_rare
-#item modify entity @s[nbt={SelectedItem:{tag:{Rarity:3}}}] weapon.mainhand skyblock:reforging/set_name_epic
-#item modify entity @s[nbt={SelectedItem:{tag:{Rarity:4}}}] weapon.mainhand skyblock:reforging/set_name_legendary
-#item modify entity @s[nbt={SelectedItem:{tag:{Rarity:5}}}] weapon.mainhand skyblock:reforging/set_name_special

@@ -174,13 +174,17 @@ item modify entity @s[nbt={SelectedItem:{id:"minecraft:turtle_helmet"}}] weapon.
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:trident"}}] weapon.mainhand skyblock:default/trident/set_attributes_trident
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:trident"}}] weapon.mainhand skyblock:default/trident/set_nbt_trident
 
-item modify entity @s[nbt={SelectedItem:{id:"minecraft:bow"}}] weapon.mainhand skyblock:default/bow/set_nbt_bow
-item modify entity @s[nbt={SelectedItem:{id:"minecraft:crossbow"}}] weapon.mainhand skyblock:default/crossbow/set_nbt_crossbow
-item modify entity @s[nbt={SelectedItem:{id:"minecraft:shield"}}] weapon.mainhand skyblock:default/shield/set_nbt_shield
-
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:fishing_rod"}}] weapon.mainhand skyblock:default/fishing_rod/set_attributes_fishing_rod
 item modify entity @s[nbt={SelectedItem:{id:"minecraft:fishing_rod"}}] weapon.mainhand skyblock:default/fishing_rod/set_nbt_fishing_rod
 
-item modify entity @s[nbt={SelectedItem:{tag:{Rarity:0}}}] weapon.mainhand skyblock:default/set_name_common
-item modify entity @s[nbt={SelectedItem:{tag:{Rarity:1}}}] weapon.mainhand skyblock:default/set_name_uncommon
-item modify entity @s[nbt={SelectedItem:{tag:{Rarity:2}}}] weapon.mainhand skyblock:default/set_name_rare
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:bow"}}] weapon.mainhand skyblock:default/bow/set_nbt_bow
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] weapon.mainhand skyblock:default/crossbow/set_nbt_carrot_on_a_stick
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:crossbow"}}] weapon.mainhand skyblock:default/crossbow/set_nbt_crossbow
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:elytra"}}] weapon.mainhand skyblock:default/crossbow/set_nbt_elytra
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:flint_and_steel"}}] weapon.mainhand skyblock:default/crossbow/set_nbt_flint_and_steel
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:shears"}}] weapon.mainhand skyblock:default/crossbow/set_nbt_shears
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:shield"}}] weapon.mainhand skyblock:default/shield/set_nbt_shield
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:stick"}}] weapon.mainhand skyblock:default/crossbow/set_nbt_stick
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick"}}] weapon.mainhand skyblock:default/crossbow/set_nbt_warped_fungus_on_a_stick
+
+function skyblock:construct_lore

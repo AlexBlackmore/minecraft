@@ -1,2 +1,0 @@
-tellraw @s ["",{"text":"<","color":"white"},{"text":"Gustave","color":"green"},{"text":"> Now we're cooking! You're getting close to my record! Here's a trinket I've found in the caverns behind the waterfall.","color":"white"}]
-playsound minecraft:entity.villager.yes player @s

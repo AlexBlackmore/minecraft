@@ -1,0 +1,27 @@
+{
+	"parent":"skyblock:commands/npcs",
+	"display":{
+		"icon":{
+			"item":"minecraft:paper"
+		},
+		"title":"Charlie",
+		"description":"[::]",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"lumberjack":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"charlie\"]}"
+				}
+			}
+		}
+	},
+	"rewards":{
+		"function":"skyblock:npcs/charlie"
+	}
+}
