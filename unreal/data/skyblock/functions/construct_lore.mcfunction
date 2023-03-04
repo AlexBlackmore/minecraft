@@ -42,7 +42,6 @@ execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Name:"Tactici
 execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.CustomEnchantments run item modify entity @s weapon.mainhand skyblock:lore_spacer
 execute as @s run function skyblock:lore/enchantments
 
-
 #Dye
 execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Dye run item modify entity @s[nbt={HandItems:[{tag:{DyeRarity:0}}]}] weapon.mainhand skyblock:dyes/set_lore/common
 execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Dye run item modify entity @s[nbt={HandItems:[{tag:{DyeRarity:1}}]}] weapon.mainhand skyblock:dyes/set_lore/uncommon
@@ -69,9 +68,6 @@ execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag
 
 #TheArtOfWar
 execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.TheArtOfWar run item modify entity @s weapon.mainhand skyblock:the_art_of_war/set_lore
-
-#Thick
-execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Thick run item modify entity @s weapon.mainhand skyblock:wood_singularity/set_lore
 
 #Recombobulated
 execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Rarity:1}}]}] if data entity @s HandItems[0].tag.Recombobulated run item modify entity @s weapon.mainhand skyblock:recombobulator/set_lore/uncommon

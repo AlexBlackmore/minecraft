@@ -1,0 +1,43 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:amethyst_shard",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Perfect Amethyst Shard","italic":false,"color":"gold"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"A perfectly refined ","italic":false,"color":"gray"},{"text":"Amethyst","italic":false,"color":"white"},{"text":".","italic":false,"color":"gray"}],
+								{"text":""},
+								["",{"text":"Some say that when ","italic":false,"color":"gray"},{"text":"harnessed","italic":false,"color":"yellow"}],
+								["",{"text":"properly","italic":false,"color":"yellow"},{"text":", it can give it\'s owner","italic":false,"color":"gray"}],
+								["",{"text":"additional stats.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Perfect Amethyst Shard\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

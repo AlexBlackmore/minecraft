@@ -61,3 +61,4 @@ advancement revoke @s only skyblock:abilities/tacticians_sword/skeleton
 advancement revoke @s only skyblock:abilities/tacticians_sword/slime
 advancement revoke @s only skyblock:abilities/tacticians_sword/spider
 advancement revoke @s only skyblock:abilities/tacticians_sword/zombie
+tag @s remove upgrade

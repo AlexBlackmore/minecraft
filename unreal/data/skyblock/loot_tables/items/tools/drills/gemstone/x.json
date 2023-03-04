@@ -1,0 +1,73 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:netherite_pickaxe",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Jasper Drill X","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"Grants ","italic":false,"color":"gray"},{"text":"+120% Fortune","italic":false,"color":"blue"},{"text":" when mining","italic":false,"color":"gray"}],
+								["",{"text":"Gemstones.","italic":false,"color":"gray"}],
+								{"text":" "},
+								["",{"text":"Apply Drill Parts to this Drill","italic":false,"color":"gray"}],
+								["",{"text":"by talking to a ","italic":false,"color":"gray"},{"text":"Drill Mechanic","italic":false,"color":"dark_green"},{"text":"!","italic":false,"color":"gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Jasper Drill X\",
+								Rarity:3,
+								Lore:[\"\",
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Grants \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+120% Fortune\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" when mining\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"Amethyst.\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"Apply Drill Parts to this Drill\",\"italic\":false,\"color\":\"gray\"}]',
+									'[\"\",{\"text\":\"by talking to a \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"Drill Mechanic\",\"italic\":false,\"color\":\"dark_green\"},{\"text\":\"!\",\"italic\":false,\"color\":\"gray\"}]',
+									'{\"text\":\" \"}'
+								]
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"efficiency":12
+							}
+						},
+						{
+							"function":"minecraft:set_attributes",
+							"modifiers":[
+								{
+									"name":"Attack Damage",
+									"attribute":"generic.attack_damage",
+									"operation":"addition",
+									"amount":15,
+									"slot":"mainhand"
+								},
+								{
+									"name":"Attack Speed",
+									"attribute":"generic.attack_speed",
+									"operation":"addition",
+									"amount":-2.8,
+									"slot":"mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
