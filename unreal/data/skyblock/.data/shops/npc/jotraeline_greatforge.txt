@@ -1,0 +1,25 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Jotraeline Greatforge\",\"color\":\"dark_green\"}",
+		Tags:["jotraeline_greatforge"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"nitwit",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:{}
+	}
+}

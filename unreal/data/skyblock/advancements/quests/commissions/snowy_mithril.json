@@ -1,0 +1,22 @@
+{
+	"parent":"skyblock:quests/commissions/mithril_miner",
+	"display":{
+		"icon":{
+			"item":"minecraft:rotten_flesh"
+		},
+		"title":"Snowy Mithril",
+		"description":"Mine 350 Mithril Ore in an Snowy biome.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:impossible"
+		}
+	},
+	"rewards":{
+		"experience":5000
+	}
+}

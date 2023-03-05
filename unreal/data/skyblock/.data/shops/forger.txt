@@ -1,0 +1,359 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Forger\"}",
+		Tags:["forger"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"toolsmith",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:
+		{
+			Recipes:[
+				{
+					buy:{
+						id:"minecraft:phantom_membrane",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Starfall\"}",
+								Lore:[
+									'{"text":"No one knows how and when the","color":"dark_gray"}',
+									'{"text":"Starfall appeared. All we know","color":"dark_gray"}',
+									'{"text":"is that it was already there","color":"dark_gray"}',
+									'{"text":"when the Dwarves discovered the","color":"dark_gray"}',
+									'{"text":"cavern.","color":"dark_gray"}'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Starfall"
+						}
+					},
+					buyB:{
+						id:"minecraft:phantom_membrane",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Starfall\"}",
+								Lore:[
+									'{"text":"No one knows how and when the","color":"dark_gray"}',
+									'{"text":"Starfall appeared. All we know","color":"dark_gray"}',
+									'{"text":"is that it was already there","color":"dark_gray"}',
+									'{"text":"when the Dwarves discovered the","color":"dark_gray"}',
+									'{"text":"cavern.","color":"dark_gray"}'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Starfall"
+						}
+					},
+					sell:{
+						id:"minecraft:end_crystal",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Power Crystal\"}",
+								Lore:[
+									'["",{"italic":false,"color":"gray","text":"Adds "},{"italic":false,"color":"dark_aqua","text":"+48 fuel"},{"italic":false,"color":"gray","text":" to "},{"italic":false,"color":"aqua","text":"The Forge"},{"italic":false,"color":"gray","text":" in"}]',
+									'["",{"italic":false,"color":"gray","text":"the "},{"italic":false,"color":"gold","text":"Dwarven Mines"},{"italic":false,"color":"gray","text":"."}]'
+								]
+							},
+							Name:"Power Crystal"
+						}
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:diamond_block",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Block of Diamond\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Block of Diamond"
+						}
+					},
+					sell:{
+						id:"minecraft:diamond",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Refined Diamond\"}",
+								Lore:[
+									'["",{"text":"Looking at if for too long may","color":"dark_gray"}]',
+									'["",{"text":"cause eye trauma.","color":"dark_gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Refined Diamond"
+						}
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:prismarine_crystals",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Mithril\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Mithril"
+						}
+					},
+					buyB:{
+						id:"minecraft:prismarine_crystals",
+						Count:64,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Mithril\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Mithril"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-497133499,678186280,-1586406226,1777463539],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVhNzY2MzMwMDYxOWJiNmExNTZkNzYzNTFhYzA1ZjdiM2NhZmVhYzMxZTJmZjA0YzU1Y2M5ZjIzNjMyNzgzMiJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Refined Mithril\"}"
+							},
+							Name:"Refined Mithril"
+						}
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:16,
+						tag:{
+							SkullOwner:{Id:[I;131459687,-754432484,-1688911943,-1661130505],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2RjYzBlYzk4NzNmNGY4ZDQwN2JhMGEwZjk4M2UyNTc3ODc3NzJlYWY4Nzg0ZTIyNmE2MWM3ZjcyN2FjOWUyNiJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Titanium\"}"
+							},
+							Name:"Enchanted Titanium"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;-1673360395,-1939980095,-1289227907,253232871],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA0YmFhYmY3ZWY4NTQ4MjVhYWUxOTkyZTRhNzVmZjcyODZlZDE2NTRkOGYxYTA4OTUyZTdiODY2OWNmNjkyZCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Refined Titanium\"}"
+							},
+							Name:"Refined Titanium"
+						}
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:coal_block",
+						Count:2,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Block of Coal\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Enchanted Block of Coal"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;2132263939,1600603343,-1565805917,-153391199],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTc1YjU4NmQyOWFhNGY2MzAwNjcwN2ZiZTk0YTMzYzg5YzIyNWY0OWIzYjQ0Y2IxODE3Mzg2NTZjOTQyZTI3NyJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Fuel Tank\"}"
+							},
+							Name:"Fuel Tank"
+						}
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:3,
+						tag:{
+							SkullOwner:{Id:[I;1806323069,228410532,-1843608650,965803263],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTgwZTJjMjA2ZjA2YjQxNjNkZWU2NzgxNjJiMmQ3YTNlZDZiMjBjNjQxOWZlYzQ0ZjkxZjZkZDAwMWExMmEzOSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Glacite Jewel\"}",
+								Lore:[
+									'["",{"text":"It is said that there is a lost","color":"dark_gray"}]',
+									'["",{"text":"village made of Glacite, deep","color":"dark_gray"}]',
+									'["",{"text":"under the Dwarven Mines.","color":"dark_gray"}]'
+								]
+							},
+							Name:"Glacite Jewel"
+						}
+					},
+					sell:{
+						id:"minecraft:stick",
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Bejeweled Handle\"}"
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Bejeweled Handle"
+						}
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:2,
+						tag:{
+							SkullOwner:{Id:[I;-1673360395,-1939980095,-1289227907,253232871],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA0YmFhYmY3ZWY4NTQ4MjVhYWUxOTkyZTRhNzVmZjcyODZlZDE2NTRkOGYxYTA4OTUyZTdiODY2OWNmNjkyZCJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Refined Titanium\"}"
+							},
+							Name:"Refined Titanium"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;131459687,-754432484,-1688911943,-1661130505],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2RjYzBlYzk4NzNmNGY4ZDQwN2JhMGEwZjk4M2UyNTc3ODc3NzJlYWY4Nzg0ZTIyNmE2MWM3ZjcyN2FjOWUyNiJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Titanium Talisman\"}"
+							},
+							AttributeModifiers:[
+								{Slot:"chest",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:0.15,Operation:1,UUID:[I;289708262,607591786,973715106,65018708]}
+							],
+							Name:"Titanium Talisman"
+						}
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:diamond",
+						Count:3,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Refined Diamond\"}",
+								Lore:[
+									'["",{"text":"Looking at if for too long may","color":"dark_gray"}]',
+									'["",{"text":"cause eye trauma.","color":"dark_gray"}]'
+								]
+							},
+							Enchantments:[
+								{lvl:1s,id:"minecraft:unbreaking"}
+							],
+							HideFlags:1,
+							Name:"Refined Diamond"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1904546482,-261666116,-1408298096,1893030092],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTIxOWZlZTkxNDJhODY5ZTUxOTE1MDczZWUwMDc2ZWE2MjllN2YxYzk4MmZiZDY3MjVjZWFkZTcyOWYyZWQ1YSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Diamonite\"}",
+								Lore:[
+									'["",{"italic":false,"color":"blue","text":"Reforge Stone"}]',
+									'["",{"italic":false,"color":"gray","text":"Can be used to apply the"}]',
+									'["",{"italic":false,"color":"blue","text":"Fleet"},{"italic":false,"color":"gray","text":" reforge to a pickaxe."}]',
+									'["",{"text":" "}]',
+									'["",{"italic":false,"text":"When Applied:"}]',
+									'["",{"italic":false,"color":"blue","text":"+9-75% Attack Speed"}]'
+								]
+							},
+							Name:"Tool Reforge Stone",
+							Reforge:"Fleet"
+						}
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:{
+						id:"minecraft:player_head",
+						Count:2,
+						tag:{
+							SkullOwner:{Id:[I;-497133499,678186280,-1586406226,1777463539],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVhNzY2MzMwMDYxOWJiNmExNTZkNzYzNTFhYzA1ZjdiM2NhZmVhYzMxZTJmZjA0YzU1Y2M5ZjIzNjMyNzgzMiJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Refined Mithril\"}"
+							},
+							Name:"Refined Mithril"
+						}
+					},
+					sell:{
+						id:"minecraft:player_head",
+						Count:1,
+						tag:{
+							SkullOwner:{Id:[I;-1961886720,499794448,-1121564648,1853857020],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ4MGQ1N2IwZDFkNDMyZTA3NDg3OGM2YWVjNWY0NWEyY2U5OGQ5YzQ4MWZiOGNjODM4MmNmZjE3MWY4MzY5OSJ9fX0="}]}},
+							display:{
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Pure Mithril\"}",
+								Lore:[
+									'["",{"italic":false,"color":"blue","text":"Reforge Stone"}]',
+									'["",{"italic":false,"color":"gray","text":"Can be used to apply the"}]',
+									'["",{"italic":false,"color":"blue","text":"Mithraic"},{"italic":false,"color":"gray","text":" reforge to a pickaxe."}]',
+									'["",{"text":" "}]',
+									'["",{"italic":false,"text":"When Applied:"}]',
+									'["",{"italic":false,"color":"blue","text":"+6-70% Attack Speed"}]',
+									'["",{"text":" "}]',
+									'["",{"italic":false,"color":"blue","text":"Mithraic Bonus:"}]',
+									'["",{"italic":false,"color":"gray","text":"Grants a "},{"italic":false,"color":"green","text":"10%"},{"italic":false,"color":"gray","text":" chance to receive"}]',
+									'["",{"italic":false,"color":"green","text":"1"},{"italic":false,"color":"gray","text":" extra "},{"italic":false,"color":"white","text":"Mithril"},{"italic":false,"color":"gray","text":" when mining"}]',
+									'["",{"italic":false,"color":"gray","text":"Mithril Ore."}]'
+								]
+							},
+							Name:"Tool Reforge Stone",
+							Reforge:"Mithraic"
+						}
+					},
+					maxUses:2147483647
+				}
+			]
+		}
+	}
+}

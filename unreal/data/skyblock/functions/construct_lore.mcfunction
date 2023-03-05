@@ -37,6 +37,16 @@ data modify entity @e[tag=anvil,limit=1,sort=nearest] HandItems[0].tag.display.L
 
 execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Name:"Tactician's Sword"}}]}] run function skyblock:lore/tacticians_sword
 
+#Drill
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Drill unless entity @s[nbt={HandItems:[{tag:{FuelTank:"Empty"}}]}] run item modify entity @s weapon.mainhand skyblock:drills/fuel_tanks/set_lore
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Drill if entity @s[nbt={HandItems:[{tag:{FuelTank:"Empty"}}]}] run item modify entity @s weapon.mainhand skyblock:drills/fuel_tanks/set_lore_empty
+
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Drill unless entity @s[nbt={HandItems:[{tag:{Engine:"Empty"}}]}] run item modify entity @s weapon.mainhand skyblock:drills/engines/set_lore
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Drill if entity @s[nbt={HandItems:[{tag:{Engine:"Empty"}}]}] run item modify entity @s weapon.mainhand skyblock:drills/engines/set_lore_empty
+
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Drill unless entity @s[nbt={HandItems:[{tag:{Upgrade:"Empty"}}]}] run item modify entity @s weapon.mainhand skyblock:drills/upgrades/set_lore
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.Drill if entity @s[nbt={HandItems:[{tag:{Upgrade:"Empty"}}]}] run item modify entity @s weapon.mainhand skyblock:drills/upgrades/set_lore_empty
+
 
 #CustomEnchantments
 execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.CustomEnchantments run item modify entity @s weapon.mainhand skyblock:lore_spacer
@@ -75,6 +85,9 @@ execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Rarity:2}}]}]
 execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Rarity:3}}]}] if data entity @s HandItems[0].tag.Recombobulated run item modify entity @s weapon.mainhand skyblock:recombobulator/set_lore/epic
 execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Rarity:4}}]}] if data entity @s HandItems[0].tag.Recombobulated run item modify entity @s weapon.mainhand skyblock:recombobulator/set_lore/legendary
 execute as @e[tag=anvil,limit=1,sort=nearest,nbt={HandItems:[{tag:{Rarity:5}}]}] if data entity @s HandItems[0].tag.Recombobulated run item modify entity @s weapon.mainhand skyblock:recombobulator/set_lore/mythic
+
+#Dwarven Pickaxe
+execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag.DwarvenPickaxe unless data entity @s HandItems[0].tag.Drill run item modify entity @s weapon.mainhand skyblock:dwarven_pickaxe
 
 
 item modify entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand skyblock:lore_spacer

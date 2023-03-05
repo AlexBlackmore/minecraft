@@ -22,9 +22,10 @@ scoreboard objectives add crit_chance dummy "Crit Chance"
 scoreboard objectives add crit_damage dummy "Crit Damage"
 scoreboard objectives add intelligence dummy "Intelligence"
 scoreboard objectives add ferocity dummy "Ferocity"
-scoreboard objectives add farming_wisdom dummy "FarmingWisdom"
-scoreboard objectives add foraging_wisdom dummy "ForagingWisdom"
-scoreboard objectives add mining_wisdom dummy "MiningWisdom"
+scoreboard objectives add farming_wisdom dummy "Farming Wisdom"
+scoreboard objectives add foraging_wisdom dummy "Foraging Wisdom"
+scoreboard objectives add mining_wisdom dummy "Mining Wisdom"
+scoreboard objectives add forge_fuel dummy "Forge Fuel"
 
 
 #Alchemy

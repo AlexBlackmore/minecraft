@@ -1,0 +1,25 @@
+give @p villager_spawn_egg{
+	EntityTag:{
+		id:"minecraft:villager",
+		CustomName:"{\"text\":\"Emissary Braum\",\"color\":\"gold\"}",
+		Tags:["emissary","braum"],
+		CustomNameVisible:true,
+		PersistenceRequired:true,
+		Silent:true,
+		CanPickUpLoot:false,
+		Willing:false,
+		NoAI:false,
+		VillagerData:{
+			level:5,
+			profession:"none",
+			type:"plains"
+		},
+		Attributes:[
+			{
+				Name:"generic.movement_speed",
+				Base:0
+			}
+		],
+		Offers:{}
+	}
+}

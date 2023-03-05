@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Bubu\",\"color\":\"yellow\"}",
+		CustomName:"{\"text\":\"Bubu\"}",
 		Tags:["bubu"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
@@ -43,15 +43,15 @@ give @p villager_spawn_egg{
 						Count:3
 					},
 					sell:{
-						id:"minecraft:diamond_pickaxe",
+						id:"minecraft:stone_pickaxe",
 						Count:1,
 						tag:{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Fractured Mithril Pickaxe\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Dwarven Pickaxe\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									'["",{"text":" "}]',
+									'["",{"italic":false,"color":"dark_gray","text":"Dwarven Pickaxe"}]',
+									'["",{"text":" "}]'
 								]
 							},
 							AttributeModifiers:[
@@ -63,12 +63,7 @@ give @p villager_spawn_egg{
 							],
 							Name:"Fractured Mithril Pickaxe",
 							Rarity:1,
-							Lore:[
-								"[\"\",{\"text\":\" \"}]",
-								"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Dwarven Pickaxe\"}]",
-								"[\"\",{\"text\":\" \"}]"
-							],
-							DwarvenPickaxe:1b
+							DwarvenPickaxe:true
 						}
 					},
 					maxUses:2147483647
@@ -81,27 +76,27 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.0: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x4\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.1: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x4\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.2: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x27\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.3: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Mithril\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.4: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Mithril\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.5: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Mithril\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.6: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Mithril\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x8\"}]"
+									'["",{"italic":false,"color":"gray","text":"Hotbar.0: "},{"italic":false,"color":"aqua","text":"Enchanted Emerald"},{"italic":false,"color":"dark_gray","text":" x4"}]',
+									'["",{"italic":false,"color":"gray","text":"Hotbar.1: "},{"italic":false,"color":"yellow","text":"Enchanted Emerald"},{"italic":false,"color":"dark_gray","text":" x4"}]',
+									'["",{"italic":false,"color":"gray","text":"Hotbar.2: "},{"italic":false,"color":"white","text":"Emerald"},{"italic":false,"color":"dark_gray","text":" x27"}]',
+									'["",{"italic":false,"color":"gray","text":"Hotbar.3: "},{"italic":false,"color":"white","text":"Mithril"},{"italic":false,"color":"dark_gray","text":" x64"}]',
+									'["",{"italic":false,"color":"gray","text":"Hotbar.4: "},{"italic":false,"color":"white","text":"Mithril"},{"italic":false,"color":"dark_gray","text":" x64"}]',
+									'["",{"italic":false,"color":"gray","text":"Hotbar.5: "},{"italic":false,"color":"white","text":"Mithril"},{"italic":false,"color":"dark_gray","text":" x64"}]',
+									'["",{"italic":false,"color":"gray","text":"Hotbar.6: "},{"italic":false,"color":"white","text":"Mithril"},{"italic":false,"color":"dark_gray","text":" x8"}]'
 								]
 							}
 						}
 					},
 					sell:{
-						id:"minecraft:diamond_pickaxe",
+						id:"minecraft:stone_pickaxe",
 						Count:1,
 						tag:{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Bandaged Mithril Pickaxe\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Dwarven Pickaxe\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									'["",{"text":" "}]',
+									'["",{"italic":false,"color":"dark_gray","text":"Dwarven Pickaxe"}]',
+									'["",{"text":" "}]'
 								]
 							},
 							AttributeModifiers:[
@@ -113,12 +108,7 @@ give @p villager_spawn_egg{
 							],
 							Name:"Bandaged Mithril Pickaxe",
 							Rarity:1,
-							Lore:[
-								"[\"\",{\"text\":\" \"}]",
-								"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Dwarven Pickaxe\"}]",
-								"[\"\",{\"text\":\" \"}]"
-							],
-							DwarvenPickaxe:1b
+							DwarvenPickaxe:true
 						}
 					},
 					maxUses:0
@@ -131,29 +121,29 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.0: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x40\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.1: \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x44\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.2: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Emerald\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x11\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.3: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Titanium\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x64\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.4: \"},{\"italic\":false,\"color\":\"white\",\"text\":\"Titanium\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x36\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Hotbar.5: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Bejeweled Handle\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x1\"}]"
+									'["",{"italic":false,"color":"gray","text":"Hotbar.0: "},{"italic":false,"color":"aqua","text":"Enchanted Emerald"},{"italic":false,"color":"dark_gray","text":" x40"}]',
+									'["",{"italic":false,"color":"gray","text":"Hotbar.1: "},{"italic":false,"color":"yellow","text":"Enchanted Emerald"},{"italic":false,"color":"dark_gray","text":" x44"}]',
+									'["",{"italic":false,"color":"gray","text":"Hotbar.2: "},{"italic":false,"color":"white","text":"Emerald"},{"italic":false,"color":"dark_gray","text":" x11"}]',
+									'["",{"italic":false,"color":"gray","text":"Hotbar.3: "},{"italic":false,"color":"white","text":"Titanium"},{"italic":false,"color":"dark_gray","text":" x64"}]',
+									'["",{"italic":false,"color":"gray","text":"Hotbar.4: "},{"italic":false,"color":"white","text":"Titanium"},{"italic":false,"color":"dark_gray","text":" x36"}]',
+									'["",{"italic":false,"color":"gray","text":"Hotbar.5: "},{"italic":false,"color":"aqua","text":"Bejeweled Handle"},{"italic":false,"color":"dark_gray","text":" x1"}]'
 								]
 							}
 						}
 					},
 					sell:{
-						id:"minecraft:netherite_pickaxe",
+						id:"minecraft:iron_pickaxe",
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Titanium Pickaxe\"}",
+								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Titanium Pickaxe\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+10% Fortune\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" when mining\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Ancient Debris.\"}]",
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Dwarven Pickaxe\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									'["",{"text":" "}]',
+									'["",{"italic":false,"color":"gray","text":"Grants "},{"italic":false,"color":"blue","text":"+10% Fortune"},{"italic":false,"color":"gray","text":" when mining"}]',
+									'["",{"italic":false,"color":"gray","text":"Ancient Debris."}]',
+									'["",{"text":" "}]',
+									'["",{"italic":false,"color":"dark_gray","text":"Dwarven Pickaxe"}]',
+									'["",{"text":" "}]'
 								]
 							},
 							AttributeModifiers:[
@@ -163,16 +153,15 @@ give @p villager_spawn_egg{
 							Enchantments:[
 								{id:"minecraft:unbreaking",lvl:6s}
 							],
-							Name:"Enchanted Titanium Pickaxe",
+							Name:"Titanium Pickaxe",
+							Rarity:2,
 							Lore:[
-								"[\"\",{\"text\":\" \"}]",
-								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"gold\",\"text\":\"+10% Fortune\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" when mining\"}]",
-								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Ancient Debris.\"}]",
-								"[\"\",{\"text\":\" \"}]",
-								"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Dwarven Pickaxe\"}]",
-								"[\"\",{\"text\":\" \"}]"
+								'["",{"text":" "}]',
+								'["",{"italic":false,"color":"gray","text":"Grants "},{"italic":false,"color":"gold","text":"+10% Fortune"},{"italic":false,"color":"gray","text":" when mining"}]',
+								'["",{"italic":false,"color":"gray","text":"Ancient Debris."}]',
+								'["",{"text":" "}]'
 							],
-							Rarity:2
+							DwarvenPickaxe:true
 						}
 					},
 					maxUses:0
@@ -185,25 +174,23 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Mainhand: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Titanium Pickaxe\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x1\"}]",
+									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Mainhand: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Titanium Pickaxe\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x1\"}]",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Offhand: \"},{\"italic\":false,\"color\":\"gold\",\"text\":\"Refined Titanium\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x3\"}]"
 								]
 							}
 						}
 					},
 					sell:{
-						id:"minecraft:netherite_pickaxe",
+						id:"minecraft:iron_pickaxe",
 						Count:1,
 						tag:{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Refined Titanium Pickaxe\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+15% Fortune\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" when mining\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Ancient Debris.\"}]",
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Dwarven Pickaxe\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									'["",{"text":" "}]',
+									'["",{"italic":false,"color":"gray","text":"Grants "},{"italic":false,"color":"blue","text":"+15% Fortune"},{"italic":false,"color":"gray","text":" when mining"}]',
+									'["",{"italic":false,"color":"gray","text":"Ancient Debris."}]',
+									'["",{"text":" "}]'
 								]
 							},
 							AttributeModifiers:[
@@ -216,13 +203,12 @@ give @p villager_spawn_egg{
 							Name:"Refined Titanium Pickaxe",
 							Rarity:2,
 							Lore:[
-								"[\"\",{\"text\":\" \"}]",
-								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants \"},{\"italic\":false,\"color\":\"gold\",\"text\":\"+15% Fortune\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" when mining\"}]",
-								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Ancient Debris.\"}]",
-								"[\"\",{\"text\":\" \"}]",
-								"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Dwarven Pickaxe\"}]",
-								"[\"\",{\"text\":\" \"}]"
-							]
+								'["",{"text":" "}]',
+								'["",{"italic":false,"color":"gray","text":"Grants "},{"italic":false,"color":"gold","text":"+15% Fortune"},{"italic":false,"color":"gray","text":" when mining"}]',
+								'["",{"italic":false,"color":"gray","text":"Ancient Debris."}]',
+								'["",{"text":" "}]'
+							],
+							DwarvenPickaxe:true
 						}
 					},
 					maxUses:0
@@ -253,21 +239,22 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Biofuel\"}",
 								Lore:[
-									"[\"\",{\"text\":\"Drill Fuel\",\"color\":\"blue\",\"italic\":false}]",
-									"{\"text\":\"\"}",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Adds \"},{\"italic\":false,\"color\":\"dark_green\",\"text\":\"+60 Durability\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to a Drill.\"}]",
-									"{\"text\":\"\"}",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Talk to a \"},{\"italic\":false,\"color\":\"dark_green\",\"text\":\"Drill Mechanic\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"refuel your Drills.\"}]",
-									"{\"text\":\"\"}",
-									"[\"\",{\"text\":\"100% renerable energy!\",\"color\":\"dark_gray\"}]"
+									'["",{"text":"Drill Fuel","color":"blue","italic":false}]',
+									'{"text":""}',
+									'["",{"italic":false,"color":"gray","text":"Adds "},{"italic":false,"color":"dark_green","text":"+60 Durability"},{"italic":false,"color":"gray","text":" to a Drill."}]',
+									'{"text":""}',
+									'["",{"italic":false,"color":"gray","text":"Talk to a "},{"italic":false,"color":"dark_green","text":"Drill Mechanic"},{"italic":false,"color":"gray","text":" to"}]',
+									'["",{"italic":false,"color":"gray","text":"refuel your Drills."}]',
+									'{"text":""}',
+									'["",{"text":"100% renerable energy!","color":"dark_gray"}]'
 								]
 							},
 							Enchantments:[
 								{id:"minecraft:unbreaking",lvl:1s}
 							],
 							HideFlags:1,
-							Name:"Biofuel"
+							Name:"Biofuel",
+							DrillFuel:true
 						}
 					},
 					maxUses:2147483647

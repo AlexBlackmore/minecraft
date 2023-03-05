@@ -1,0 +1,33 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:end_crystal",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Power Crystal","italic":false,"color":"light_puple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"italic":false,"color":"gray","text":"Adds "},{"italic":false,"color":"dark_aqua","text":"+48 fuel"},{"italic":false,"color":"gray","text":" to "},{"italic":false,"color":"aqua","text":"The Forge"},{"italic":false,"color":"gray","text":" in"}],
+								["",{"italic":false,"color":"gray","text":"the "},{"italic":false,"color":"gold","text":"Dwarven Mines"},{"italic":false,"color":"gray","text":"."}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Power Crystal\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

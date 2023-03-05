@@ -1,0 +1,22 @@
+{
+	"parent":"skyblock:quests/commissions",
+	"display":{
+		"icon":{
+			"item":"minecraft:rotten_flesh"
+		},
+		"title":"Goblin Slayer",
+		"description":"Slay 100 Goblins.",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:impossible"
+		}
+	},
+	"rewards":{
+		"experience":5000
+	}
+}

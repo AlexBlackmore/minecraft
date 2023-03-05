@@ -14,18 +14,25 @@
 						{
 							"function":"minecraft:set_lore",
 							"lore":[
-								{"text":"No one knows how and when the","italic":false,"color":"gray"},
-								{"text":"Starfall appeared. All we know","italic":false,"color":"gray"},
-								{"text":"is that it was already there","italic":false,"color":"gray"},
-								{"text":"when the Dwarves discovered the","italic":false,"color":"gray"},
-								{"text":"cavern.","italic":false,"color":"gray"}
+								{"text":"No one knows how and when the","color":"dark_gray"},
+								{"text":"Starfall appeared. All we know","color":"dark_gray"},
+								{"text":"is that it was already there","color":"dark_gray"},
+								{"text":"when the Dwarves discovered the","color":"dark_gray"},
+								{"text":"cavern.","color":"dark_gray"}
 							]
 						},
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
+								HideFlags:1,
 								Name:\"Starfall\"
 							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
 						}
 					]
 				}
