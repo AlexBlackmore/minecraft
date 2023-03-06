@@ -1,0 +1,64 @@
+{
+	"credit": "Made with Blockbench",
+	"texture": "reinforced_armor.png",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{
+					"coordinates": [-4, 12, -2, 8, 12, 4],
+					"uvNorth": [20, 10, 28, 16],
+					"uvEast": [16, 10, 20, 16],
+					"uvSouth": [32, 10, 40, 16],
+					"uvWest": [28, 10, 32, 16],
+					"uvUp": [28, 10, 20, 8],
+					"uvDown": [36, 8, 28, 10]
+				},
+				{
+					"coordinates": [-4, 12, -2, 8, 12, 4],
+					"uvNorth": [20, 20, 28, 32],
+					"uvEast": [16, 20, 20, 32],
+					"uvSouth": [32, 20, 40, 32],
+					"uvWest": [28, 20, 32, 32],
+					"uvUp": [28, 16, 20, 20],
+					"uvDown": [36, 20, 28, 16],
+					"sizeAdd": 0.25
+				},
+				{
+					"coordinates": [-4.5, 19, -3, 4, 3, 1],
+					"uvNorth": [49, 1, 53, 4],
+					"uvEast": [48, 1, 49, 4],
+					"uvSouth": [57, 1, 61, 4],
+					"uvWest": [53, 1, 54, 4],
+					"uvUp": [53, 1, 49, 0],
+					"uvDown": [53, 4, 49, 5],
+					"sizeAdd": 0.25
+				}
+			],
+			"submodels": [
+				{
+					"id": "body_sub_0",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{
+							"coordinates": [0.5, 19, -3, 4, 3, 1],
+							"uvNorth": [53, 1, 49, 4],
+							"uvEast": [62, 1, 61, 4],
+							"uvSouth": [61, 1, 57, 4],
+							"uvWest": [57, 1, 56, 4],
+							"uvUp": [57, 1, 61, 0],
+							"uvDown": [57, 4, 61, 5],
+							"sizeAdd": 0.25
+						}
+					]
+				}
+			]
+		}
+	]
+}
