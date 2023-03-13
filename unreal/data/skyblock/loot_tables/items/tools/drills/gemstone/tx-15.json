@@ -26,8 +26,15 @@
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
+								CustomModelData:37385,
 								Name:\"Amethyst Drill TX-15\",
 								Rarity:2,
+								DwarvenPickaxe:true,
+								Drill:true,
+								Efficiency:1,
+								FuelTank:\"Empty\",
+								Engine:\"Empty\",
+								Upgrade:\"Empty\",
 								Lore:[\"\",
 									'{\"text\":\" \"}',
 									'[\"\",{\"text\":\"Grants \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+60% Fortune\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" when mining\",\"italic\":false,\"color\":\"gray\"}]',
@@ -38,6 +45,14 @@
 									'{\"text\":\" \"}'
 								]
 							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"efficiency":1,
+								"fortune":3,
+								"unbreaking":3
+							}
 						},
 						{
 							"function":"minecraft:set_attributes",

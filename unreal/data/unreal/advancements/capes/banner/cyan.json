@@ -1,0 +1,50 @@
+{
+	"parent":"unreal:capes/banner",
+	"display":{
+		"icon":{
+			"item":"minecraft:elytra",
+			"nbt":"{display:{Skin:\"banner:cyan\"}}"
+		},
+		"title":"Cyan Elytra",
+		"description":"Can be crafted with Cyan Dye in your offhand.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:loom"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:elytra"
+					]
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"items":[
+										"minecraft:cyan_dye"
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"function":"unreal:capes/banner"
+	}
+}

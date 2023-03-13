@@ -42,6 +42,15 @@
 			"rolls":1,
 			"entries":[
 				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:blocks/logs"
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
 					"type":"minecraft:item",
 					"name":"minecraft:knowledge_book",
 					"functions":[
@@ -124,26 +133,11 @@
 					"chance":0.002
 				}
 			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"minecraft:loot_table",
-					"name":"skyblock:items/dyes/mango"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"random_chance",
-					"chance":0.0000001
-				}
-			]
 		}
 	],
 	"functions":[
 		{
-			"function":"furnace_smelt",
+			"function":"minecraft:furnace_smelt",
 			"conditions": [
 				{
 					"condition":"entity_properties",

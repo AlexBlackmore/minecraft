@@ -8,49 +8,6 @@
 					"type":"minecraft:item",
 					"name":"minecraft:cactus"
 				}
-			],
-			"functions":[
-				{
-					"function":"set_count",
-					"count":1
-				},
-				{
-					"function":"set_count",
-					"count":1,
-					"conditions":[
-						{
-							"condition":"entity_properties",
-							"entity":"this",
-							"predicate":{
-								"equipment":{
-									"mainhand":{
-										"nbt":"{Name:\"Cactus Knife\"}"
-									}
-								}
-							}
-						},
-						{
-							"condition":"random_chance",
-							"chance":0.3
-						}
-					],
-					"add":true
-				}
-			]
-		},
-		{
-			"rolls":0,
-			"bonus_rolls":1,
-			"entries":[
-				{
-					"type":"minecraft:empty",
-					"weight":19
-				},
-				{
-					"type":"minecraft:item",
-					"name":"minecraft:cactus",
-					"weight":1
-				}
 			]
 		},
 		{
@@ -58,20 +15,14 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/dyes/wild_strawberry"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"random_chance",
-					"chance":0.000000006667
+					"name":"skyblock:blocks/crops"
 				}
 			]
 		}
 	],
 	"functions":[
 		{
-			"function":"furnace_smelt",
+			"function":"minecraft:furnace_smelt",
 			"conditions":[
 				{
 					"condition":"entity_properties",

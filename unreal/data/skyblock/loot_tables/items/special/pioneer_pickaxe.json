@@ -1,0 +1,52 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:wooden_pickaxe",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Pioneer Pickaxe","italic":false,"color":"red"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Unbreakable:true,
+								Name:\"Pioneer Pickaxe\",
+								Rarity:5,
+								Lore:[
+									'{\"text\":\" \"}',
+									'[\"\",{\"text\":\"The very first pickaxe model!\",\"color\":\"dark_gray\"}]',
+									'[\"\",{\"text\":\"Invented by the famous\",\"color\":\"dark_gray\"}]',
+									'[\"\",{\"text\":\"Thomas Pickson.\",\"color\":\"dark_gray\"}]',
+									'{\"text\":\" \"}'
+								]
+							}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":" "},
+								["",{"text":"The very first pickaxe model!","color":"dark_gray"}],
+								["",{"text":"Invented by the famous","color":"dark_gray"}],
+								["",{"text":"Thomas Pickson.","color":"dark_gray"}],
+								{"text":" "}
+							]
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

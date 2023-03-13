@@ -9,7 +9,7 @@
 					"functions":[
 						{
 							"function":"minecraft:set_name",
-							"name":{"text":"Divan's Drill","italic":false,"color":"dark_red"}
+							"name":{"text":"Divan's Drill","italic":false,"color":"gold"}
 						},
 						{
 							"function":"minecraft:set_lore",
@@ -23,8 +23,15 @@
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
+								CustomModelData:37385,
 								Name:\"Divan's Drill\",
-								Rarity:5,
+								Rarity:4,
+								DwarvenPickaxe:true,
+								Drill:true,
+								Efficiency:52,
+								FuelTank:\"Empty\",
+								Engine:\"Empty\",
+								Upgrade:\"Empty\",
 								Lore:[\"\",
 									'{\"text\":\" \"}',
 									'[\"\",{\"text\":\"Apply Drill Parts to this Drill\",\"italic\":false,\"color\":\"gray\"}]',
@@ -36,7 +43,9 @@
 						{
 							"function":"minecraft:set_enchantments",
 							"enchantments":{
-								"efficiency":52
+								"efficiency":52,
+								"fortune":3,
+								"unbreaking":3
 							}
 						},
 						{

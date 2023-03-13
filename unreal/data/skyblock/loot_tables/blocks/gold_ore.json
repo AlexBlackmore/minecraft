@@ -5,12 +5,12 @@
 			"entries":[
 				{
 					"type":"minecraft:item",
-					"name":"raw_gold",
+					"name":"minecraft:raw_gold",
 					"functions":[
 						{
-							"function":"apply_bonus",
-							"enchantment":"fortune",
-							"formula":"ore_drops"
+							"function":"minecraft:apply_bonus",
+							"enchantment":"minecraft:fortune",
+							"formula":"minecraft:ore_drops"
 						},
 						{
 							"function":"minecraft:looting_enchant",
@@ -25,18 +25,24 @@
 			]
 		},
 		{
-			"rolls":0,
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"mining_fortune"
+			},
 			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"minecraft:item",
-					"name":"raw_gold",
-					"weight":1
+					"type":"minecraft:empty",
+					"weight":99
 				},
 				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
+					"type":"minecraft:item",
+					"name":"minecraft:raw_gold",
+					"weight":1
 				}
 			]
 		},
@@ -45,34 +51,36 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/mining/refined_mineral"
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/mining"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Mining Exp Boost\"}}]}"
+					"name":"skyblock:gameplay/mining/compact/gold",
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{CustomEnchantments:[{id:\"skyblock:compact\"}]}"
+									}
+								}
+							}
 						}
-					}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:blocks/stone_ores"
 				}
 			]
 		}
 	],
 	"functions":[
 		{
-			"function":"furnace_smelt",
+			"function":"minecraft:furnace_smelt",
 			"conditions":[
 				{
 					"condition":"minecraft:entity_properties",

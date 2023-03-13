@@ -1,0 +1,36 @@
+{
+	"type":"block",
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:alternatives",
+					"children":[
+						{
+							"type": "minecraft:loot_table",
+							"name": "skyblock:blocks/mithril_ore",
+							"conditions":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"mainhand":{
+												"nbt":"{DwarvenPickaxe:1b}"
+											}
+										}
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:andesite"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -63,18 +63,33 @@
 			]
 		},
 		{
-			"rolls":0,
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"farming_fortune"
+			},
 			"bonus_rolls":1,
 			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":99
+				},
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:red_mushroom",
 					"weight":1
-				},
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
+					"name":"skyblock:blocks/crops"
 				}
 			]
 		},

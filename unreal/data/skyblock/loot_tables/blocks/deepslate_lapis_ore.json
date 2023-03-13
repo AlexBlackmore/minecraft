@@ -1,16 +1,148 @@
 {
-	"type":"minecraft:block",
 	"pools":[
 		{
 			"rolls":{
 				"min":1,
 				"max":9
 			},
-			"bonus_rolls":0,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:lapis_lazuli",
+					"functions":[
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				}
+			],
+			"functions":[
+				{
+					"function":"minecraft:apply_bonus",
+					"enchantment":"minecraft:fortune",
+					"formula":"minecraft:ore_drops"
+				},
+				{
+					"function":"minecraft:looting_enchant",
+					"count":{
+						"type":"minecraft:uniform",
+						"min":0,
+						"max":1
+					}
+				}
+			]
+		},
+		{
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"mining_fortune"
+			},
+			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":99
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:lapis_lazuli",
+					"weight":1
+				}
+			]
+		},
+		{
+			"rolls":1,
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:blocks/lapis_ore"
+					"name":"skyblock:gameplay/mining/ore_experience",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:2,
+								Max:5
+							}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/compact/lapis",
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{CustomEnchantments:[{id:\"skyblock:compact\"}]}"
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:knowledge_book",
+					"functions":[
+						{
+							"function":"set_nbt",
+							"tag":"{Recipes:[\"skyblock:experience_bottle\"]}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Experience Bottle Recipe","italic":false,"color":"gray"}]
+							]
+						}
+					]
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"recipes":{
+								"skyblock:experience_bottle":false
+							}
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.002
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:blocks/deepslate_ores"
 				}
 			]
 		}

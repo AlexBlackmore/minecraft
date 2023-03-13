@@ -6,7 +6,6 @@
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:amethyst_shard",
-					"quality":0,
 					"weight":1834,
 					"functions":[
 						{
@@ -18,7 +17,6 @@
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:amethyst_shard",
-					"quality":0,
 					"weight":1834,
 					"functions":[
 						{
@@ -30,7 +28,6 @@
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:amethyst_shard",
-					"quality":0,
 					"weight":1834,
 					"functions":[
 						{
@@ -42,7 +39,6 @@
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:amethyst_shard",
-					"quality":0,
 					"weight":917,
 					"functions":[
 						{
@@ -53,14 +49,12 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_flawed",
-					"quality":1,
+					"name":"skyblock:items/enchanted/amethyst_shard/flawed",
 					"weight":367
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_flawed",
-					"quality":1,
+					"name":"skyblock:items/enchanted/amethyst_shard/flawed",
 					"weight":183,
 					"functions":[
 						{
@@ -71,8 +65,7 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_flawed",
-					"quality":1,
+					"name":"skyblock:items/enchanted/amethyst_shard/flawed",
 					"weight":55,
 					"functions":[
 						{
@@ -83,8 +76,7 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_flawed",
-					"quality":1,
+					"name":"skyblock:items/enchanted/amethyst_shard/flawed",
 					"weight":22,
 					"functions":[
 						{
@@ -95,71 +87,106 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_fine",
-					"quality":2,
+					"name":"skyblock:items/enchanted/amethyst_shard/fine",
 					"weight":2
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/prehistoric_egg",
-					"quality":0,
 					"weight":9
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/ascension_rope",
-					"quality":2,
 					"weight":73
 				},
 				{
-					"type":"minecraft:item",
-					"name":"minecraft:emerald",
-					"quality":0,
-					"weight":3668,
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/mithril_powder",
+					"weight":1834,
 					"functions":[
 						{
-							"function":"set_count",
-							"count":{
-								"min":17,
-								"max":64
-							}
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:80,
+								Max:240
+							}"
 						}
 					]
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/emerald1",
-					"quality":1,
-					"weight":734,
+					"name":"skyblock:items/mithril_powder",
+					"weight":367,
 					"functions":[
 						{
-							"function":"set_count",
-							"count":{
-								"min":2,
-								"max":6
-							}
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:240,
+								Max:1200
+							}"
 						}
 					]
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/emerald1",
-					"quality":1,
-					"weight":74,
+					"name":"skyblock:items/mithril_powder",
+					"weight":37,
 					"functions":[
 						{
-							"function":"set_count",
-							"count":{
-								"min":7,
-								"max":26
-							}
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:1200,
+								Max:4800
+							}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/gemstone_powder",
+					"weight":1834,
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:80,
+								Max:240
+							}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/gemstone_powder",
+					"weight":367,
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:240,
+								Max:1200
+							}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/gemstone_powder",
+					"weight":37,
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:1200,
+								Max:4800
+							}"
 						}
 					]
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/wishing_compass",
-					"quality":1,
 					"weight":229
 				}
 			]

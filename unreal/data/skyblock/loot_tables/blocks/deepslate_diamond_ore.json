@@ -1,16 +1,124 @@
 {
-	"type":"minecraft:block",
 	"pools":[
 		{
 			"rolls":{
 				"min":1,
 				"max":4
 			},
-			"bonus_rolls":0,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:diamond"
+				}
+			],
+			"functions":[
+				{
+					"function":"minecraft:apply_bonus",
+					"enchantment":"minecraft:fortune",
+					"formula":"minecraft:ore_drops"
+				},
+				{
+					"function":"minecraft:looting_enchant",
+					"count":{
+						"type":"minecraft:uniform",
+						"min":0,
+						"max":1
+					}
+				}
+			]
+		},
+		{
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"mining_fortune"
+			},
+			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":99
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:diamond",
+					"weight":1
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/ore_experience",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:3,
+								Max:7
+							}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/compact/diamond",
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{CustomEnchantments:[{id:\"skyblock:compact\"}]}"
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:blocks/diamond_ore"
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"player":{
+							"nbt":"{Inventory:[{tag:{Name:\"Bits Talisman\"}}]}"
+						}
+					}
+				},
+				{
+					"condition":"random_chance",
+					"chance":0.1
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:blocks/deepslate_ores"
 				}
 			]
 		}

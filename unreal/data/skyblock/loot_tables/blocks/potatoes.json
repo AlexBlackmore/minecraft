@@ -68,12 +68,19 @@
 			]
 		},
 		{
-			"rolls":0,
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"farming_fortune"
+			},
 			"bonus_rolls":1,
 			"entries":[
 				{
 					"type":"minecraft:empty",
-					"weight":19
+					"weight":99
 				},
 				{
 					"type":"minecraft:item",
@@ -87,20 +94,14 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/dyes/wild_strawberry"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"random_chance",
-					"chance":0.000000006667
+					"name":"skyblock:blocks/crops"
 				}
 			]
 		}
 	],
 	"functions":[
 		{
-			"function":"furnace_smelt",
+			"function":"minecraft:furnace_smelt",
 			"conditions": [
 				{
 					"condition":"entity_properties",

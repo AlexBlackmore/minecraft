@@ -9,17 +9,34 @@
 					"type":"minecraft:item",
 					"name":"minecraft:cobblestone"
 				}
-			],
-			"conditions":[
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
 				{
-					"condition":"minecraft:survives_explosion"
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/compact/stone",
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{CustomEnchantments:[{id:\"skyblock:compact\"}]}"
+									}
+								}
+							}
+						}
+					]
 				}
 			]
 		}
 	],
 	"functions":[
 		{
-			"function":"furnace_smelt",
+			"function":"minecraft:furnace_smelt",
 			"conditions":[
 				{
 					"condition":"entity_properties",

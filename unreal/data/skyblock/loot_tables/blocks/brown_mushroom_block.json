@@ -58,26 +58,39 @@
 							"limit":{
 								"max":9
 							}
-						},
-						{
-							"function":"minecraft:explosion_decay"
 						}
 					]
 				}
 			]
 		},
 		{
-			"rolls":0,
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"farming_fortune"
+			},
 			"bonus_rolls":1,
 			"entries":[
 				{
 					"type":"minecraft:empty",
-					"weight":19
+					"weight":99
 				},
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:brown_mushroom",
 					"weight":1
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:blocks/crops"
 				}
 			]
 		},

@@ -1,5 +1,19 @@
-effect give @a[advancements={skyblock:accessories/campfire_cultist_badge=true},predicate=skyblock:on_fire] instant_health 1 0
-effect give @a[advancements={skyblock:accessories/campfire_god_badge=true},predicate=skyblock:on_fire] instant_health 1 1
+execute as @a store result score @s max_health run attribute @s minecraft:generic.max_health get
+execute as @a store result score @s knockback_resistance run attribute @s minecraft:generic.knockback_resistance get
+execute as @a store result score @s movement_speed run attribute @s minecraft:generic.movement_speed get 1000
+execute as @a store result score @s attack_damage run attribute @s minecraft:generic.attack_damage get
+execute as @a store result score @s armor run attribute @s minecraft:generic.armor get
+execute as @a store result score @s armor_toughness run attribute @s minecraft:generic.armor_toughness get
+execute as @a store result score @s attack_knockback run attribute @s minecraft:generic.attack_knockback get
+
+execute as @a run function skyblock:stats/farming_fortune
+execute as @a run function skyblock:stats/farming_wisdom
+execute as @a run function skyblock:stats/foraging_wisdom
+execute as @a run function skyblock:stats/mining_fortune
+execute as @a run function skyblock:stats/mining_wisdom
+execute as @a run function skyblock:stats/combat_wisdom
+execute as @a run function skyblock:stats/pristine
+
 
 execute as @a[advancements={skyblock:accessories/magnetic_talisman=true}] at @s run tp @e[type=item,distance=0..3] ~ ~ ~
 
@@ -10,24 +24,20 @@ execute as @a at @s if entity @e[tag=fisherman,distance=0..40] run tag @s add Fi
 execute as @a at @s unless entity @e[tag=fisherman,distance=0..40] run tag @s remove FishermansHut
 
 
-#Every 2 seconds
-scoreboard players set @a dummy 40
-execute store result score @a time run time query gametime
-scoreboard players operation @a time %= @a dummy
-execute as @a[advancements={skyblock:accessories/campfire_adept_badge=true},predicate=skyblock:on_fire] if score @s time matches 0 run effect give @s instant_health 1 0
-execute as @a[advancements={skyblock:accessories/campfire_scion_badge=true},predicate=skyblock:on_fire] if score @s time matches 0 run effect give @s instant_health 1 1
+#Potions
+execute as @a run function skyblock:alchemy/active_effects
 
-#Every 4 seconds
-scoreboard players set @a dummy 80
-execute store result score @a time run time query gametime
-scoreboard players operation @a time %= @a dummy
-execute as @a if score @s time matches 0 run function skyblock:tick4
 
-#Every 5 seconds
-scoreboard players set @a dummy 100
-execute store result score @a time run time query gametime
-scoreboard players operation @a time %= @a dummy
-execute as @a[advancements={skyblock:accessories/campfire_initiate_badge=true},predicate=skyblock:on_fire] if score @s time matches 0 run effect give @s instant_health 1 0
+execute as @a if predicate skyblock:time/seconds/4 run function skyblock:tick4s
+
+
+#Campfire Badge
+effect give @a[advancements={skyblock:accessories/campfire_cultist_badge=true},predicate=skyblock:on_fire] instant_health 1 0
+effect give @a[advancements={skyblock:accessories/campfire_god_badge=true},predicate=skyblock:on_fire] instant_health 1 1
+
+execute as @a[advancements={skyblock:accessories/campfire_adept_badge=true},predicate=skyblock:on_fire] if predicate skyblock:time/seconds/2 run effect give @s instant_health 1 0
+execute as @a[advancements={skyblock:accessories/campfire_scion_badge=true},predicate=skyblock:on_fire] if predicate skyblock:time/seconds/2 run effect give @s instant_health 1 1
+execute as @a[advancements={skyblock:accessories/campfire_initiate_badge=true},predicate=skyblock:on_fire] if predicate skyblock:time/seconds/5 run effect give @s instant_health 1 0
 
 execute as @a run attribute @s minecraft:generic.armor modifier remove 87-88-23-45-4
 execute as @a[nbt={Inventory:[{Slot:103b,tag:{Name:"Zombie Hat"}}]}] run function skyblock:abilities/ambient/zombie_hat

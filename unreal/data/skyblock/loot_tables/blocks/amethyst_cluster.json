@@ -51,12 +51,19 @@
 			]
 		},
 		{
-			"rolls":0,
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"mining_fortune"
+			},
 			"bonus_rolls":1,
 			"entries":[
 				{
 					"type":"minecraft:empty",
-					"weight":19
+					"weight":99
 				},
 				{
 					"type":"minecraft:item",
@@ -66,11 +73,236 @@
 			]
 		},
 		{
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"pristine"
+			},
+			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":99
+				},
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/enchanted/amethyst_shard/flawed",
+					"weight":1,
+					"functions":[
+						{
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops",
+							"function": "minecraft:apply_bonus"
+						}
+					]
+				}
+			]
+			"conditions":[
+				{
+					"condition": "minecraft:match_tool",
+					"predicate":{
+						"tag": "minecraft:cluster_max_harvestables"
+					}
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:yellow_dye",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Haste Powder","italic":false}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Haste Powder\",
+								Haste:9
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					],
+					"conditions":[
+						{
+							"condition":"alternative",
+							"terms":[
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"mainhand":{
+												"nbt":"{Name:\"Amethyst Drill TX-15\"}"
+											}
+										}
+									}
+								},
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"mainhand":{
+												"nbt":"{Name:\"Amethyst Drill LT-522\"}"
+											}
+										}
+									}
+								},
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"mainhand":{
+												"nbt":"{Name:\"Amethyst Drill KGR-12\"}"
+											}
+										}
+									}
+								},
+								{
+									"condition":"entity_properties",
+									"entity":"this",
+									"predicate":{
+										"equipment":{
+											"mainhand":{
+												"nbt":"{Name:\"Amethyst Drill X\"}"
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":60,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":99
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:amethyst_shard",
+					"weight":1
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Name:\"Amethyst Drill TX-15\"}"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"rolls":80,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":99
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:amethyst_shard",
+					"weight":1
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Name:\"Amethyst Drill LT-522\"}"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"rolls":100,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":99
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:amethyst_shard",
+					"weight":1
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Name:\"Amethyst Drill KGR-12\"}"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"rolls":120,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":99
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:amethyst_shard",
+					"weight":1
+				}
+			],
+			"conditions":[
+				{
+					"condition":"entity_properties",
+					"entity":"this",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{Name:\"Amethyst Drill X\"}"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
 			"rolls":2,
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/mining/refined_mineral"
+					"name":"skyblock:blocks/deepslate_ores"
 				}
 			]
 		}

@@ -1,0 +1,131 @@
+{
+	"type": "minecraft:block",
+	"pools":[
+		{
+			"rolls": 1,
+			"entries":[
+				{
+					"type": "minecraft:loot_table",
+					"name": "skyblock:gameplay/mining/mithril",
+					"weight":98
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "skyblock:gameplay/mining/titanium",
+					"weight":2
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/mithril_powder",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:0,
+								Max:4
+							}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:yellow_dye",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Haste Powder","italic":false}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Haste Powder\",
+								Haste:0
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					],
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{Name:\"Mithril Pickaxe\"}"
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:yellow_dye",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Haste Powder","italic":false}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Haste Powder\",
+								Haste:2
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					],
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{Name:\"Refined Mithril Pickaxe\"}"
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:blocks/deepslate_ores"
+				}
+			]
+		}
+	]
+}

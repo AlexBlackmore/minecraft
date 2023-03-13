@@ -18,17 +18,46 @@
 			]
 		},
 		{
-			"rolls":0,
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"mining_fortune"
+			},
 			"bonus_rolls":1,
 			"entries":[
 				{
 					"type":"minecraft:empty",
-					"weight":19
+					"weight":99
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/mithril",
 					"weight":1
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/compact/mithril",
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{CustomEnchantments:[{id:\"skyblock:compact\"}]}"
+									}
+								}
+							}
+						}
+					]
 				}
 			]
 		}

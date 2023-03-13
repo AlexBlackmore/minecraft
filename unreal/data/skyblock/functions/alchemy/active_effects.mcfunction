@@ -80,6 +80,7 @@ advancement revoke @s[advancements={skyblock:effects/experience=true},scores={ex
 tellraw @s[advancements={skyblock:effects/experience=true},scores={experience_duration=200}] ["",{"text":"The effects of your Experience Potion are about to wear off.","color":"red"}]
 tellraw @s[advancements={skyblock:effects/experience=true},scores={experience_duration=1}] ["",{"text":"The effects of your Experience Potion have worn off.","color":"red"}]
 tag @s[advancements={skyblock:effects/experience=true},scores={experience_duration=1}] remove bitter_iced_tea_experience
+tag @s[advancements={skyblock:effects/experience=true},scores={experience_duration=1}] remove vikings_tear_experience
 execute as @s[advancements={skyblock:effects/experience=true},scores={experience_duration=1..}] run scoreboard players remove @s experience_duration 1
 
 
@@ -116,13 +117,24 @@ execute as @s[advancements={skyblock:effects/magic_find=true}] run function skyb
 
 
 #Jerry Candy
-attribute @s[advancements={skyblock:effects/jerry_candy=true},scores={jerry_candy_duration=0}] minecraft:generic.max_health modifier remove 75-69-28-28-70
 attribute @s[advancements={skyblock:effects/jerry_candy=true},scores={jerry_candy_duration=0}] minecraft:generic.attack_damage modifier remove 14-10-80-8-14
-attribute @s[advancements={skyblock:effects/jerry_candy=true},scores={jerry_candy_duration=0}] minecraft:generic.attack_damage modifier remove 61-64-64-26-44
 attribute @s[advancements={skyblock:effects/jerry_candy=true},scores={jerry_candy_duration=0}] minecraft:generic.luck modifier remove 35-58-7-89-97
 advancement revoke @s[advancements={skyblock:effects/jerry_candy=true},scores={jerry_candy_duration=0}] only skyblock:effects/jerry_candy
 
 execute as @s[advancements={skyblock:effects/jerry_candy=true}] run function skyblock:alchemy/effects/jerry_candy
+
+
+#Spelunker
+advancement revoke @s[advancements={skyblock:effects/spelunker=true},scores={spelunker_duration=0}] only skyblock:effects/spelunker
+
+execute as @s[advancements={skyblock:effects/spelunker=true}] run function skyblock:alchemy/effects/spelunker
+
+
+#Mushed Glowy Tonic
+advancement revoke @s[advancements={skyblock:effects/mushed_glowy_tonic=true},scores={mushed_glowy_tonic_duration=0}] only skyblock:effects/mushed_glowy_tonic
+
+execute as @s[advancements={skyblock:effects/mushed_glowy_tonic=true}] run function skyblock:alchemy/effects/mushed_glowy_tonic
+
 
 
 #Swiftness

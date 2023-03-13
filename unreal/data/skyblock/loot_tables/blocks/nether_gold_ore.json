@@ -33,18 +33,24 @@
 			]
 		},
 		{
-			"rolls":0,
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"mining_fortune"
+			},
 			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"minecraft:item",
-					"name":"gold_nugget",
-					"weight":1
+					"type":"minecraft:empty",
+					"weight":99
 				},
 				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
+					"type":"minecraft:item",
+					"name":"minecraft:gold_nugget",
+					"weight":1
 				}
 			]
 		},
@@ -53,27 +59,25 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/mining/refined_mineral"
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/mining"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Mining Exp Boost\"}}]}"
+					"name":"skyblock:gameplay/mining/ore_experience",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:0,
+								Max:1
+							}"
 						}
-					}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:blocks/netherrack_ores"
 				}
 			]
 		}

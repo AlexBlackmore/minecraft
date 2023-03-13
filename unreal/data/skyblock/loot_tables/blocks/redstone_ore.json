@@ -5,7 +5,7 @@
 			"entries":[
 				{
 					"type":"minecraft:item",
-					"name":"redstone",
+					"name":"minecraft:redstone",
 					"functions":[
 						{
 							"function":"minecraft:set_count",
@@ -16,9 +16,9 @@
 							}
 						},
 						{
-							"function":"apply_bonus",
-							"enchantment":"fortune",
-							"formula":"ore_drops"
+							"function":"minecraft:apply_bonus",
+							"enchantment":"minecraft:fortune",
+							"formula":"minecraft:ore_drops"
 						},
 						{
 							"function":"minecraft:looting_enchant",
@@ -33,18 +33,24 @@
 			]
 		},
 		{
-			"rolls":0,
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"mining_fortune"
+			},
 			"bonus_rolls":1,
 			"entries":[
 				{
-					"type":"minecraft:item",
-					"name":"redstone",
-					"weight":1
+					"type":"minecraft:empty",
+					"weight":99
 				},
 				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
+					"type":"minecraft:item",
+					"name":"minecraft:redstone",
+					"weight":1
 				}
 			]
 		},
@@ -53,27 +59,47 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/mining/refined_mineral"
-				}
-			]
-		},
-		{
-			"rolls":1,
-			"entries":[
-				{
-					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/exp_boosts/mining"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"entity_properties",
-					"entity":"this",
-					"predicate":{
-						"player":{
-							"nbt":"{Inventory:[{tag:{Name:\"Mining Exp Boost\"}}]}"
+					"name":"skyblock:gameplay/mining/ore_experience",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:1,
+								Max:5
+							}"
 						}
-					}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/compact/redstone",
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{CustomEnchantments:[{id:\"skyblock:compact\"}]}"
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:blocks/stone_ores"
 				}
 			]
 		}

@@ -1,0 +1,51 @@
+{
+	"parent":"unreal:capes/banner",
+	"display":{
+		"icon":{
+			"item":"minecraft:elytra",
+			"nbt":"{display:{Skin:\"banner:black\"}}"
+		},
+		"title":"Mojang (Classic)",
+		"description":"Can be crafted with Brown Elytra and a Thing Banner Pattern in your offhand.",
+		"frame":"task",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:item_used_on_block",
+			"conditions":{
+				"location":{
+					"blocks":[
+						"minecraft:loom"
+					]
+				},
+				"item":{
+					"items":[
+						"minecraft:elytra"
+					],
+					"nbt":"{display:{Skin:\"banner:brown\"}}"
+				},
+				"player":[
+					{
+						"condition":"entity_properties",
+						"entity":"this",
+						"predicate":{
+							"equipment":{
+								"offhand":{
+									"items":[
+										"minecraft:mojang_banner_pattern"
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":{
+		"function":"unreal:capes/patterns"
+	}
+}

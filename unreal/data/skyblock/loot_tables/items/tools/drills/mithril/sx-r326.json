@@ -23,9 +23,15 @@
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
+								CustomModelData:37385,
 								Name:\"Mithril Drill SX-R326\",
 								Rarity:2,
+								DwarvenPickaxe:true,
+								Drill:true,
 								Efficiency:12,
+								FuelTank:\"Empty\",
+								Engine:\"Empty\",
+								Upgrade:\"Empty\",
 								Lore:[\"\",
 									'{\"text\":\" \"}',
 									'[\"\",{\"text\":\"Apply Drill Parts to this Drill\",\"italic\":false,\"color\":\"gray\"}]',
@@ -37,7 +43,9 @@
 						{
 							"function":"minecraft:set_enchantments",
 							"enchantments":{
-								"efficiency":12
+								"efficiency":12,
+								"fortune":3,
+								"unbreaking":3
 							}
 						},
 						{

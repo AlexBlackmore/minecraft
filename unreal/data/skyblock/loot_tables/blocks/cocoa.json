@@ -43,27 +43,30 @@
 								}
 							],
 							"add":true
-						},
-						{
-						  "function":"minecraft:explosion_decay"
 						}
 					]
 				}
 			]
 		},
 		{
-			"rolls":0,
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"farming_fortune"
+			},
 			"bonus_rolls":1,
 			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":99
+				},
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:cocoa_beans",
 					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
 				}
 			]
 		},
@@ -72,13 +75,7 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/dyes/wild_strawberry"
-				}
-			],
-			"conditions":[
-				{
-					"condition":"random_chance",
-					"chance":0.000000006667
+					"name":"skyblock:blocks/crops"
 				}
 			]
 		}

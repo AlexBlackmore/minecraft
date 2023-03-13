@@ -22,10 +22,16 @@ scoreboard objectives add crit_chance dummy "Crit Chance"
 scoreboard objectives add crit_damage dummy "Crit Damage"
 scoreboard objectives add intelligence dummy "Intelligence"
 scoreboard objectives add ferocity dummy "Ferocity"
+scoreboard objectives add pristine dummy "Pristine"
+scoreboard objectives add forge_fuel dummy "Forge Fuel"
+
+scoreboard objectives add combat_wisdom dummy "Combat Wisdom"
 scoreboard objectives add farming_wisdom dummy "Farming Wisdom"
 scoreboard objectives add foraging_wisdom dummy "Foraging Wisdom"
 scoreboard objectives add mining_wisdom dummy "Mining Wisdom"
-scoreboard objectives add forge_fuel dummy "Forge Fuel"
+
+scoreboard objectives add farming_fortune dummy "Farming Fortune"
+scoreboard objectives add mining_fortune dummy "Mining Fortune"
 
 
 #Alchemy
@@ -82,28 +88,15 @@ scoreboard objectives add spirit_amplifier dummy "Spirit Potion Amplifier"
 scoreboard objectives add spirit_duration dummy "Spirit Potion Duration"
 
 #113
-scoreboard objectives add spirit_amplifier dummy "Magic Find Potion Amplifier"
-scoreboard objectives add spirit_duration dummy "Magic Find Potion Duration"
+scoreboard objectives add magic_find_amplifier dummy "Magic Find Potion Amplifier"
+scoreboard objectives add magic_find_duration dummy "Magic Find Potion Duration"
 
+#114
+scoreboard objectives add jerry_candy_duration dummy "Jerry Candy Duration"
 
-#Mining
-scoreboard objectives add mined_coal_ore minecraft.mined:minecraft.coal_ore "Mined Coal Ore"
-scoreboard objectives add mined_deepslate_coal_ore minecraft.mined:minecraft.deepslate_coal_ore "Mined Deepslate Coal Ore"
+#115
+scoreboard objectives add spelunker_amplifier dummy "Spelunker Potion Amplifier"
+scoreboard objectives add spelunker_duration dummy "Spelunker Potion Duration"
 
-scoreboard objectives add mined_lapis_ore minecraft.mined:minecraft.lapis_ore "Mined Lapis Ore"
-scoreboard objectives add mined_deepslate_lapis_ore minecraft.mined:minecraft.deepslate_lapis_ore "Mined Deepslate Lapis Ore"
-
-scoreboard objectives add mined_redstone_ore minecraft.mined:minecraft.redstone_ore "Mined Redstone Ore"
-scoreboard objectives add mined_deepslate_redstone_ore minecraft.mined:minecraft.deepslate_redstone_ore "Mined Deepslate Redstone Ore"
-
-scoreboard objectives add mined_diamond_ore minecraft.mined:minecraft.diamond_ore "Mined Diamond Ore"
-scoreboard objectives add mined_deepslate_diamond_ore minecraft.mined:minecraft.deepslate_diamond_ore "Mined Deepslate Diamond Ore"
-
-scoreboard objectives add mined_emerald_ore minecraft.mined:minecraft.emerald_ore "Mined Emerald Ore"
-scoreboard objectives add mined_deepslate_emerald_ore minecraft.mined:minecraft.deepslate_emerald_ore "Mined Deepslate Emerald Ore"
-
-scoreboard objectives add mined_quartz_ore minecraft.mined:minecraft.nether_quartz_ore "Mined Quartz Ore"
-
-scoreboard objectives add mined_nether_gold_ore minecraft.mined:minecraft.nether_gold_ore "Mined Nether Gold Ore"
-
-scoreboard objectives add mined_end_stone minecraft.mined:minecraft.end_stone "Mined End Stone"
+#116
+scoreboard objectives add mushed_glowy_tonic_duration dummy "Mushed Glowy Tonic Duration"

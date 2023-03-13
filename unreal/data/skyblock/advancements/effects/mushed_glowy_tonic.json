@@ -1,0 +1,20 @@
+{
+	"parent":"skyblock:effects/root",
+	"display":{
+		"icon":{
+			"item":"minecraft:potion",
+			"nbt":"{Potion:\"minecraft:leaping\"}"
+		},
+		"title":"Mushed Glowy Tonic",
+		"description":"§7Grants a §a+30% §7chance to catch additional fish while Fishing.",
+		"frame":"task",
+		"show_toast":false,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"impossible":{
+			"trigger":"minecraft:impossible"
+		}
+	}
+}

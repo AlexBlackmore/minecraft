@@ -1,0 +1,24 @@
+{
+	"parent":"skyblock:travel_scrolls/deep_caverns/lapis_quarry",
+	"display":{
+		"icon":{
+			"item":"minecraft:redstone_ore"
+		},
+		"title":"§bPigmen's Den",
+		"description":"§bMining §eII",
+		"frame":"goal",
+		"show_toast":true,
+		"announce_to_chat":true,
+		"hidden":false
+	},
+	"criteria":{
+		"criterion":{
+			"trigger":"minecraft:player_interacted_with_entity",
+			"conditions":{
+				"entity":{
+					"nbt":"{Tags:[\"lift_operator\",\"pigmens_den\"]}"
+				}
+			}
+		}
+	}
+}

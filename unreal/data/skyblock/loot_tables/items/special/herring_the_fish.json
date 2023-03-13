@@ -1,0 +1,44 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:salmon",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Herring the Fish","italic":false,"color":"red"}
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"Herring the Fish\"
+							}"
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Sometimes patience is the key to","italic":false,"color":"gray"}],
+								["",{"text":"victory. Sometimes it leads to","italic":false,"color":"gray"}],
+								["",{"text":"very little and it seems like","italic":false,"color":"gray"}],
+								["",{"text":"it's not worth it. And you","italic":false,"color":"gray"}],
+								["",{"text":"wonder why you waited so long","italic":false,"color":"gray"}],
+								["",{"text":"for something so disappointing.","italic":false,"color":"gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

@@ -23,8 +23,15 @@
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
+								CustomModelData:37385,
 								Name:\"Titanium Drill DR-X555\",
 								Rarity:3,
+								DwarvenPickaxe:true,
+								Drill:true,
+								Efficiency:32,
+								FuelTank:\"Empty\",
+								Engine:\"Empty\",
+								Upgrade:\"Empty\",
 								Lore:[\"\",
 									'{\"text\":\" \"}',
 									'[\"\",{\"text\":\"Apply Drill Parts to this Drill\",\"italic\":false,\"color\":\"gray\"}]',
@@ -36,7 +43,9 @@
 						{
 							"function":"minecraft:set_enchantments",
 							"enchantments":{
-								"efficiency":32
+								"efficiency":32,
+								"fortune":3,
+								"unbreaking":3
 							}
 						},
 						{

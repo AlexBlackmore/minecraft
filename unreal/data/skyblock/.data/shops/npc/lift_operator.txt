@@ -1,24 +1,23 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Lift Operator\",\"color\":\"aqua\"}",
+		CustomName:"{\"text\":\"Lift Operator\",\"color\":\"yellow\"}",
 		Tags:["lift_operator"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
+		Invulnerable:true,
 		Silent:true,
 		CanPickUpLoot:false,
 		Willing:false,
 		NoAI:false,
 		VillagerData:{
 			level:5,
-			profession:"none",
+			profession:"nitwit",
 			type:"plains"
 		},
 		Attributes:[
-			{
-				Name:"generic.movement_speed",
-				Base:0
-			}
+			{Name:"generic.movement_speed",Base:0.0},
+			{Name:"generic.knockback_resistance",Base:1.0}
 		],
 		Offers:{}
 	}

@@ -6,7 +6,6 @@
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:amethyst_shard",
-					"quality":0,
 					"weight":2222,
 					"functions":[
 						{
@@ -18,7 +17,6 @@
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:amethyst_shard",
-					"quality":0,
 					"weight":2444,
 					"functions":[
 						{
@@ -30,7 +28,6 @@
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:amethyst_shard",
-					"quality":0,
 					"weight":2222,
 					"functions":[
 						{
@@ -42,7 +39,6 @@
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:amethyst_shard",
-					"quality":0,
 					"weight":222,
 					"functions":[
 						{
@@ -54,7 +50,6 @@
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:amethyst_shard",
-					"quality":0,
 					"weight":2222,
 					"functions":[
 						{
@@ -66,7 +61,6 @@
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:amethyst_shard",
-					"quality":0,
 					"weight":222,
 					"functions":[
 						{
@@ -77,14 +71,12 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_flawed",
-					"quality":1,
+					"name":"skyblock:items/enchanted/amethyst_shard/flawed",
 					"weight":1111
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_flawed",
-					"quality":1,
+					"name":"skyblock:items/enchanted/amethyst_shard/flawed",
 					"weight":600,
 					"functions":[
 						{
@@ -95,8 +87,7 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_flawed",
-					"quality":1,
+					"name":"skyblock:items/enchanted/amethyst_shard/flawed",
 					"weight":222,
 					"functions":[
 						{
@@ -107,8 +98,7 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_flawed",
-					"quality":1,
+					"name":"skyblock:items/enchanted/amethyst_shard/flawed",
 					"weight":111,
 					"functions":[
 						{
@@ -119,14 +109,12 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_fine",
-					"quality":2,
+					"name":"skyblock:items/enchanted/amethyst_shard/fine",
 					"weight":18
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_fine",
-					"quality":2,
+					"name":"skyblock:items/enchanted/amethyst_shard/fine",
 					"weight":18,
 					"functions":[
 						{
@@ -137,71 +125,106 @@
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/amethyst_shard_flawless",
-					"quality":2,
+					"name":"skyblock:items/enchanted/amethyst_shard/flawless",
 					"weight":2
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/prehistoric_egg",
-					"quality":0,
 					"weight":11
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/tools/pickonimbus2000",
-					"quality":3,
 					"weight":22
 				},
 				{
-					"type":"minecraft:item",
-					"name":"minecraft:emerald",
-					"quality":0,
-					"weight":444,
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/mithril_powder",
+					"weight":222,
 					"functions":[
 						{
-							"function":"set_count",
-							"count":{
-								"min":17,
-								"max":64
-							}
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:80,
+								Max:240
+							}"
 						}
 					]
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/emerald1",
-					"quality":1,
-					"weight":44,
+					"name":"skyblock:gameplay/mining/mithril_powder",
+					"weight":22,
 					"functions":[
 						{
-							"function":"set_count",
-							"count":{
-								"min":2,
-								"max":6
-							}
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:240,
+								Max:1200
+							}"
 						}
 					]
 				},
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:items/enchanted/emerald1",
-					"quality":1,
-					"weight":8,
+					"name":"skyblock:gameplay/mining/mithril_powder",
+					"weight":4,
 					"functions":[
 						{
-							"function":"set_count",
-							"count":{
-								"min":7,
-								"max":26
-							}
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:1200,
+								Max:4800
+							}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/gemstone_powder",
+					"weight":222,
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:80,
+								Max:240
+							}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/gemstone_powder",
+					"weight":22,
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:240,
+								Max:1200
+							}"
+						}
+					]
+				},
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/gemstone_powder",
+					"weight":4,
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:1200,
+								Max:4800
+							}"
 						}
 					]
 				},
 				{
 					"type":"minecraft:loot_table",
 					"name":"skyblock:items/wishing_compass",
-					"quality":1,
 					"weight":278
 				}
 			]

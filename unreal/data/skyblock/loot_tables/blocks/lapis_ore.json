@@ -16,9 +16,9 @@
 							}
 						},
 						{
-							"function":"apply_bonus",
-							"enchantment":"fortune",
-							"formula":"ore_drops"
+							"function":"minecraft:apply_bonus",
+							"enchantment":"minecraft:fortune",
+							"formula":"minecraft:ore_drops"
 						},
 						{
 							"function":"minecraft:looting_enchant",
@@ -33,18 +33,24 @@
 			]
 		},
 		{
-			"rolls":0,
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"mining_fortune"
+			},
 			"bonus_rolls":1,
 			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":99
+				},
 				{
 					"type":"minecraft:item",
 					"name":"minecraft:lapis_lazuli",
 					"weight":1
-				},
-				{
-					"type":"minecraft:loot_table",
-					"name":"minecraft:empty",
-					"weight":19
 				}
 			]
 		},
@@ -53,7 +59,38 @@
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:gameplay/mining/refined_mineral"
+					"name":"skyblock:gameplay/mining/ore_experience",
+					"functions":[
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Min:2,
+								Max:5
+							}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/compact/lapis",
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{CustomEnchantments:[{id:\"skyblock:compact\"}]}"
+									}
+								}
+							}
+						}
+					]
 				}
 			]
 		},
@@ -92,6 +129,15 @@
 				{
 					"condition":"random_chance",
 					"chance":0.002
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:blocks/stone_ores"
 				}
 			]
 		}

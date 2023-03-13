@@ -26,8 +26,15 @@
 						{
 							"function":"minecraft:set_nbt",
 							"tag":"{
+								CustomModelData:37385,
 								Name:\"Amethyst Drill KGR-12\",
 								Rarity:3,
+								DwarvenPickaxe:true,
+								Drill:true,
+								Efficiency:7,
+								FuelTank:\"Empty\",
+								Engine:\"Empty\",
+								Upgrade:\"Empty\",
 								Lore:[\"\",
 									'{\"text\":\" \"}',
 									'[\"\",{\"text\":\"Grants \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"+100% Fortune\",\"italic\":false,\"color\":\"blue\"},{\"text\":\" when mining\",\"italic\":false,\"color\":\"gray\"}]',
@@ -42,7 +49,9 @@
 						{
 							"function":"minecraft:set_enchantments",
 							"enchantments":{
-								"efficiency":7
+								"efficiency":7,
+								"fortune":3,
+								"unbreaking":3
 							}
 						},
 						{

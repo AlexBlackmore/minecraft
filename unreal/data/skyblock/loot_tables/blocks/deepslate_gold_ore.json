@@ -1,14 +1,98 @@
 {
-	"type":"minecraft:block",
 	"pools":[
 		{
 			"rolls":1,
-			"bonus_rolls":0,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:raw_gold",
+					"functions":[
+						{
+							"function":"minecraft:apply_bonus",
+							"enchantment":"minecraft:fortune",
+							"formula":"minecraft:ore_drops"
+						},
+						{
+							"function":"minecraft:looting_enchant",
+							"count":{
+								"type":"minecraft:uniform",
+								"min":0,
+								"max":1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":{
+				"type":"minecraft:score",
+				"target":{
+					"type":"context",
+					"target":"this"
+				},
+				"score":"mining_fortune"
+			},
+			"bonus_rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:empty",
+					"weight":99
+				},
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:raw_gold",
+					"weight":1
+				}
+			]
+		},
+		{
+			"rolls":1,
 			"entries":[
 				{
 					"type":"minecraft:loot_table",
-					"name":"skyblock:blocks/gold_ore"
+					"name":"skyblock:gameplay/mining/compact/gold",
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{CustomEnchantments:[{id:\"skyblock:compact\"}]}"
+									}
+								}
+							}
+						}
+					]
 				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:blocks/deepslate_ores"
+				}
+			]
+		}
+	],
+	"functions":[
+		{
+			"function":"minecraft:furnace_smelt",
+			"conditions":[
+				{
+					"condition":"minecraft:entity_properties",
+					"entity":"this",
+					"predicate":{
+						"equipment":{
+							"mainhand":{
+								"nbt":"{CustomEnchantments:[{id:\"skyblock:smelting_touch\"}]}"
+							}
+						}
+					}
+                }
 			]
 		}
 	]

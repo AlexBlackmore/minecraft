@@ -19,6 +19,28 @@
 			"rolls":1,
 			"entries":[
 				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:gameplay/mining/compact/netherrack",
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{CustomEnchantments:[{id:\"skyblock:compact\"}]}"
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
 					"type":"minecraft:item",
 					"name":"minecraft:knowledge_book",
 					"functions":[
@@ -56,7 +78,7 @@
 	],
 	"functions":[
 		{
-			"function":"furnace_smelt",
+			"function":"minecraft:furnace_smelt",
 			"conditions": [
 				{
 					"condition":"entity_properties",

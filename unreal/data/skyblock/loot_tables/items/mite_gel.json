@@ -1,0 +1,32 @@
+{
+	"pools":[
+		{
+		  "rolls":1,
+		  "entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:purple_dye",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Mite Gel","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Sticky goo scraped off an","color":"dark_gray"}],
+								["",{"text":"Endermite.","color":"dark_gray"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Mite Gel\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
