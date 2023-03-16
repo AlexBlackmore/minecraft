@@ -60,6 +60,32 @@
 					]
 				}
 			]
+		},
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name": "skyblock:items/mithril",
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{Reforge:\"Mithraic\"}"
+									}
+								}
+							}
+						},
+						{
+							"condition":"random_chance",
+							"chance":0.10
+						}
+					]
+				}
+			]
 		}
 	]
 }

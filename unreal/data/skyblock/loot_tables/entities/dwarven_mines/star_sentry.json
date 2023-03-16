@@ -40,6 +40,32 @@
 			]
 		},
 		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:loot_table",
+					"name":"skyblock:items/starfall",
+					"conditions":[
+						{
+							"condition":"entity_properties",
+							"entity":"this",
+							"predicate":{
+								"equipment":{
+									"mainhand":{
+										"nbt":"{Reforge:\"Stellar\"}"
+									}
+								}
+							}
+						},
+						{
+							"condition":"random_chance",
+							"chance":0.20
+						}
+					]
+				}
+			]
+		},
+		{
 			"rolls":100,
 			"entries":[
 				{

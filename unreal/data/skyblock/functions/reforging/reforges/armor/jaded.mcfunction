@@ -26,12 +26,12 @@ data modify entity @e[tag=reforge_anvil,nbt={HandItems:[{tag:{Reforge:"Jaded",Ra
 data modify entity @e[tag=reforge_anvil,nbt={HandItems:[{tag:{Reforge:"Jaded",Rarity:4}}]},limit=1,sort=nearest] HandItems[0].tag.AttributeModifiers[{Name:"Reforge Attack Speed"}].Amount set value 0.45f
 data modify entity @e[tag=reforge_anvil,nbt={HandItems:[{tag:{Reforge:"Jaded",Rarity:5}}]},limit=1,sort=nearest] HandItems[0].tag.AttributeModifiers[{Name:"Reforge Attack Speed"}].Amount set value 0.60f
 
-data modify entity @e[tag=reforge_anvil,nbt={HandItems:[{tag:{Reforge:"Jaded",Rarity:0}}]},limit=1,sort=nearest] HandItems[0].tag.AttributeModifiers[{Name:"Reforge Luck"}].Amount set value 1.0f
-data modify entity @e[tag=reforge_anvil,nbt={HandItems:[{tag:{Reforge:"Jaded",Rarity:1}}]},limit=1,sort=nearest] HandItems[0].tag.AttributeModifiers[{Name:"Reforge Luck"}].Amount set value 2.0f
-data modify entity @e[tag=reforge_anvil,nbt={HandItems:[{tag:{Reforge:"Jaded",Rarity:2}}]},limit=1,sort=nearest] HandItems[0].tag.AttributeModifiers[{Name:"Reforge Luck"}].Amount set value 3.0f
-data modify entity @e[tag=reforge_anvil,nbt={HandItems:[{tag:{Reforge:"Jaded",Rarity:3}}]},limit=1,sort=nearest] HandItems[0].tag.AttributeModifiers[{Name:"Reforge Luck"}].Amount set value 4.0f
-data modify entity @e[tag=reforge_anvil,nbt={HandItems:[{tag:{Reforge:"Jaded",Rarity:4}}]},limit=1,sort=nearest] HandItems[0].tag.AttributeModifiers[{Name:"Reforge Luck"}].Amount set value 5.0f
-data modify entity @e[tag=reforge_anvil,nbt={HandItems:[{tag:{Reforge:"Jaded",Rarity:5}}]},limit=1,sort=nearest] HandItems[0].tag.AttributeModifiers[{Name:"Reforge Luck"}].Amount set value 6.0f
+data modify entity @e[tag=success,tag=reforge_anvil,nbt={HandItems:[{tag:{Rarity:0}}]},limit=1,sort=nearest] HandItems[0].tag.ReforgeMiningFortune set value 5
+data modify entity @e[tag=success,tag=reforge_anvil,nbt={HandItems:[{tag:{Rarity:1}}]},limit=1,sort=nearest] HandItems[0].tag.ReforgeMiningFortune set value 10
+data modify entity @e[tag=success,tag=reforge_anvil,nbt={HandItems:[{tag:{Rarity:2}}]},limit=1,sort=nearest] HandItems[0].tag.ReforgeMiningFortune set value 15
+data modify entity @e[tag=success,tag=reforge_anvil,nbt={HandItems:[{tag:{Rarity:3}}]},limit=1,sort=nearest] HandItems[0].tag.ReforgeMiningFortune set value 20
+data modify entity @e[tag=success,tag=reforge_anvil,nbt={HandItems:[{tag:{Rarity:4}}]},limit=1,sort=nearest] HandItems[0].tag.ReforgeMiningFortune set value 25
+data modify entity @e[tag=success,tag=reforge_anvil,nbt={HandItems:[{tag:{Rarity:5}}]},limit=1,sort=nearest] HandItems[0].tag.ReforgeMiningFortune set value 30
 
 
 xp add @s[tag=!free,tag=success,nbt={SelectedItem:{tag:{Rarity:0}}}] -20000 points
