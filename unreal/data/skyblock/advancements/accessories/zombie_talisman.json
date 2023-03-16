@@ -4,12 +4,12 @@
 		"icon":{
 			"item":"minecraft:zombie_head"
 		},
-		"title":"Zombie Talisman",
-		"description":"[::]",
+		"title":"§fZombie Talisman",
+		"description":"Purchased from the Adventurer in the Village. Grants +1 Armor Toughness while fighting Zombies.",
 		"frame":"task",
-		"show_toast":false,
+		"show_toast":true,
 		"announce_to_chat":true,
-		"hidden":true
+		"hidden":false
 	},
 	"criteria":{
 		"criterion":{
@@ -22,9 +22,5 @@
 				]
 			}
 		}
-
-	},
-	"rewards":{
-		"function":"skyblock:abilities/accessories/zombie_talisman"
 	}
 }

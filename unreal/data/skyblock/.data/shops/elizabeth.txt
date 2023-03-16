@@ -1,7 +1,7 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Elizabeth\",\"color\":\"yellow\"}",
+		CustomName:"{\"text\":\"Elizabeth\"}",
 		Tags:["elizabeth"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
@@ -31,8 +31,8 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"gray\",\"text\":\"Cost:\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Mainhand: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Enchanted Cookie\"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\" x1\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"XP: \"},{\"italic\":false,\"color\":\"green\",\"text\":\"325 levels\"}]"
+									'["",{"italic":false,"color":"gray","text":"Mainhand: "},{"italic":false,"color":"aqua","text":"Enchanted Cookie"},{"italic":false,"color":"dark_gray","text":" x1"}]',
+									'["",{"italic":false,"color":"gray","text":"XP: "},{"italic":false,"color":"green","text":"325 levels"}]'
 								]
 							}
 						}
@@ -44,16 +44,20 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"gold\",\"text\":\"Booster Cookie\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Consume to gain the \"},{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Cookie Buff\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"for \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"4\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" days:\"}]",
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"> \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"+20%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" Skill Wisdom\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"> \"},{\"italic\":false,\"color\":\"blue\",\"text\":\"+15 Luck\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"> \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"Keep experience levels on death\"}]"
+									'["",{"italic":false,"color":"gray","text":"Consume to gain the "},{"italic":false,"color":"light_purple","text":"Cookie Buff"}]',
+									'["",{"italic":false,"color":"gray","text":"for "},{"italic":false,"color":"aqua","text":"4"},{"italic":false,"color":"gray","text":" days:"}]',
+									'["",{"text":" "}]',
+									'["",{"italic":false,"color":"dark_gray","text":"> "},{"italic":false,"color":"blue","text":"+25% Combat Wisdom"}]',
+									'["",{"italic":false,"color":"dark_gray","text":"> "},{"italic":false,"color":"blue","text":"+25% Farming Wisdom"}]',
+									'["",{"italic":false,"color":"dark_gray","text":"> "},{"italic":false,"color":"blue","text":"+25% Fishing Wisdom"}]',
+									'["",{"italic":false,"color":"dark_gray","text":"> "},{"italic":false,"color":"blue","text":"+25% Foraging Wisdom"}]',
+									'["",{"italic":false,"color":"dark_gray","text":"> "},{"italic":false,"color":"blue","text":"+25% Mining Wisdom"}]',
+									'["",{"italic":false,"color":"dark_gray","text":"> "},{"italic":false,"color":"blue","text":"+15 Luck"}]',
+									'["",{"italic":false,"color":"dark_gray","text":"> "},{"italic":false,"color":"gray","text":"Keep experience levels on death"}]'
 								]
 							},
 							Enchantments:[
-								{id:"minecraft:unbreaking",lvl:1}
+								{id:"minecraft:unbreaking",lvl:1s}
 							],
 							HideFlags:1,
 							Name:"Booster Cookie"
@@ -82,33 +86,33 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"God Potion\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Consuming this potion gives the\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"player \"},{\"italic\":false,\"color\":\"green\",\"text\":\"1 day\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" of all positive\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"light_purple\",\"text\":\"potion effects\"},{\"italic\":false,\"color\":\"gray\",\"text\":\"!\"}]",
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Speed VIII (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Haste IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Strength VIII (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Jump Boost IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Regeneration IX (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Resistance VIII (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Fire Resistance (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Water Breathing VI (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Night Vision (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Absorption VIII (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Rabbit VI (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Burning IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Stun IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Archery IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Adrenaline VIII (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Critical IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Dodge IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"True Resistance IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Agility IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Experience IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Spirit IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Magic Find IV (20:00)\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Jerry Candy (20:00)\"}]"
+									'["",{"italic":false,"color":"gray","text":"Consuming this potion gives the"}]',
+									'["",{"italic":false,"color":"gray","text":"player "},{"italic":false,"color":"green","text":"1 day"},{"italic":false,"color":"gray","text":" of all positive"}]',
+									'["",{"italic":false,"color":"light_purple","text":"potion effects"},{"italic":false,"color":"gray","text":"!"}]',
+									'["",{"text":" "}]',
+									'["",{"italic":false,"color":"blue","text":"Speed VIII (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Haste IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Strength VIII (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Jump Boost IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Regeneration IX (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Resistance VIII (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Fire Resistance (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Water Breathing VI (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Night Vision (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Absorption VIII (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Rabbit VI (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Burning IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Stun IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Archery IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Adrenaline VIII (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Critical IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Dodge IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"True Resistance IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Agility IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Experience IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Spirit IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Magic Find IV (20:00)"}]',
+									'["",{"italic":false,"color":"blue","text":"Jerry Candy (20:00)"}]'
 								]
 							},
 							CustomPotionEffects:[
@@ -163,9 +167,9 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Kismet Feather\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Grants a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"50%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to not use\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Dungeon Chest Key\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" when opening\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"a \"},{\"italic\":false,\"color\":\"red\",\"text\":\"Reward Chest\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]"
+									'["",{"italic":false,"color":"gray","text":"Grants a "},{"italic":false,"color":"green","text":"50%"},{"italic":false,"color":"gray","text":" chance to not use"}]',
+									'["",{"italic":false,"color":"gray","text":"a "},{"italic":false,"color":"aqua","text":"Dungeon Chest Key"},{"italic":false,"color":"gray","text":" when opening"}]',
+									'["",{"italic":false,"color":"gray","text":"a "},{"italic":false,"color":"red","text":"Reward Chest"},{"italic":false,"color":"gray","text":"."}]'
 								]
 							},
 							Enchantments:[
@@ -198,8 +202,8 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Kat Flower\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"aqua\",\"text\":\"Kat\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" can use these to upgrade the\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"rarity of pets!\"}]"
+									'["",{"italic":false,"color":"aqua","text":"Kat"},{"italic":false,"color":"gray","text":" can use these to upgrade the"}]',
+									'["",{"italic":false,"color":"gray","text":"rarity of pets!"}]'
 								]
 							},
 							Enchantments:[
@@ -237,9 +241,9 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Heat Core\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Craft with \"},{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Enchanted Lava\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Buckets\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to upgrade the speed\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"bonus from \"},{\"italic\":false,\"color\":\"green\",\"text\":\"30%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to \"},{\"italic\":false,\"color\":\"green\",\"text\":\"35%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\".\"}]"
+									'["",{"italic":false,"color":"gray","text":"Craft with "},{"italic":false,"color":"light_purple","text":"Enchanted Lava"}]',
+									'["",{"italic":false,"color":"light_purple","text":"Buckets"},{"italic":false,"color":"gray","text":" to upgrade the speed"}]',
+									'["",{"italic":false,"color":"gray","text":"bonus from "},{"italic":false,"color":"green","text":"30%"},{"italic":false,"color":"gray","text":" to "},{"italic":false,"color":"green","text":"35%"},{"italic":false,"color":"gray","text":"."}]'
 								]
 							},
 							Name:"Heat Core"
@@ -273,9 +277,9 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Hyper Catalyst Upgrade\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Combine with \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Catalysts, buffing\"},{\"italic\":false,\"color\":\"gray\",\"text\":\", buffing\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"the fuel to \"},{\"italic\":false,\"color\":\"green\",\"text\":\"x4\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" for 6 hours\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"duration.\"}]"
+									'["",{"italic":false,"color":"gray","text":"Combine with "},{"italic":false,"color":"aqua","text":"Catalysts, buffing"},{"italic":false,"color":"gray","text":", buffing"}]',
+									'["",{"italic":false,"color":"gray","text":"the fuel to "},{"italic":false,"color":"green","text":"x4"},{"italic":false,"color":"gray","text":" for 6 hours"}]',
+									'["",{"italic":false,"color":"gray","text":"duration."}]'
 								]
 							},
 							Name:"Hyper Catalyst Upgrade"
@@ -309,9 +313,9 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Ultimate Carrot Candy Upgrade\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Craft with \"},{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Superb Carrot Candies\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"efficiently to have them grant\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"1,000,000\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" experience.\"}]"
+									'["",{"italic":false,"color":"gray","text":"Craft with "},{"italic":false,"color":"light_purple","text":"Superb Carrot Candies"}]',
+									'["",{"italic":false,"color":"gray","text":"efficiently to have them grant"}]',
+									'["",{"italic":false,"color":"green","text":"1,000,000"},{"italic":false,"color":"gray","text":" experience."}]'
 								]
 							},
 							Name:"Ultimate Carrot Candy Upgrade"
@@ -345,9 +349,9 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Colossal Experience Bottle Upgrade\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Craft with a \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Titanic Experience\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"aqua\",\"text\":\"Bottle\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" to \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"double\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" the experience\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"it contains.\"}]"
+									'["",{"italic":false,"color":"gray","text":"Craft with a "},{"italic":false,"color":"aqua","text":"Titanic Experience"}]',
+									'["",{"italic":false,"color":"aqua","text":"Bottle"},{"italic":false,"color":"gray","text":" to "},{"italic":false,"color":"aqua","text":"double"},{"italic":false,"color":"gray","text":" the experience"}]',
+									'["",{"italic":false,"color":"gray","text":"it contains."}]'
 								]
 							},
 							Name:"Colossal Experience Bottle Upgrade"
@@ -380,11 +384,11 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Matriarch's Perfume\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Consume to apply a pungent smell\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"aqua\",\"text\":\"upon yourself, confusing\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gold\",\"text\":\"The Matriarch\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" in the\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"red\",\"text\":\"Crimson Isle\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" into releasing new\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"pearls.\"}]"
+									'["",{"italic":false,"color":"gray","text":"Consume to apply a pungent smell"}]',
+									'["",{"italic":false,"color":"gray","text":"upon yourself, confusing"}]',
+									'["",{"italic":false,"color":"gold","text":"The Matriarch"},{"italic":false,"color":"gray","text":" in the"}]',
+									'["",{"italic":false,"color":"red","text":"Crimson Isle"},{"italic":false,"color":"gray","text":" into releasing new"}]',
+									'["",{"italic":false,"color":"gray","text":"pearls."}]'
 								]
 							},
 							Name:"Matriarch's Perfume"
@@ -428,10 +432,10 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"aqua\",\"text\":\"Bits Talisman\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Accessory\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Whenever you mine diamonds,\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"grants a \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"10%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to gain\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"double!\"}]"
+									'["",{"italic":false,"color":"blue","text":"Accessory"}]',
+									'["",{"italic":false,"color":"gray","text":"Whenever you mine diamonds,"}]',
+									'["",{"italic":false,"color":"gray","text":"grants a "},{"italic":false,"color":"aqua","text":"10%"},{"italic":false,"color":"gray","text":" chance to gain"}]',
+									'["",{"italic":false,"color":"gray","text":"double!"}]'
 								]
 							},
 							Name:"Bits Talisman"
@@ -474,8 +478,8 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Pure White Dye\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Changes the color of a leather\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"armor piece to \"},{\"italic\":false,\"color\":\"#FFFFFF\",\"text\":\"#FFFFFF\"},{\"italic\":false,\"color\":\"gray\",\"text\":\"!\"}]"
+									'["",{"italic":false,"color":"gray","text":"Changes the color of a leather"}]',
+									'["",{"italic":false,"color":"gray","text":"armor piece to "},{"italic":false,"color":"#FFFFFF","text":"#FFFFFF"},{"italic":false,"color":"gray","text":"!"}]'
 								]
 							},
 							Name:"Dye",
@@ -519,8 +523,8 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"light_purple\",\"text\":\"Pure Black Dye\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Changes the color of a leather\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"armor piece to \"},{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"#000000\"},{\"italic\":false,\"color\":\"gray\",\"text\":\"!\"}]"
+									'["",{"italic":false,"color":"gray","text":"Changes the color of a leather"}]',
+									'["",{"italic":false,"color":"gray","text":"armor piece to "},{"italic":false,"color":"dark_gray","text":"#000000"},{"italic":false,"color":"gray","text":"!"}]'
 								]
 							},
 							Name:"Dye",
@@ -545,8 +549,8 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"red\",\"text\":\"Inferno Fuel Block\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Reacts with gabagool in the\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"crafting of Inferno fuels.\"}]"
+									'["",{"italic":false,"color":"gray","text":"Reacts with gabagool in the"}]',
+									'["",{"italic":false,"color":"gray","text":"crafting of Inferno fuels."}]'
 								]
 							},
 							Name:"Inferno Fuel Block"
@@ -578,7 +582,7 @@ give @p villager_spawn_egg{
 						tag:{
 							display:{
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Expertise I\"}]"
+									'["",{"italic":false,"color":"blue","text":"Expertise I"}]'
 								]
 							},
 							StoredEnchantments:[
@@ -613,7 +617,7 @@ give @p villager_spawn_egg{
 						tag:{
 							display:{
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Compact I\"}]"
+									'["",{"italic":false,"color":"blue","text":"Compact I"}]'
 								]
 							},
 							StoredEnchantments:[
@@ -648,7 +652,7 @@ give @p villager_spawn_egg{
 						tag:{
 							display:{
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Cultivating I\"}]"
+									'["",{"italic":false,"color":"blue","text":"Cultivating I"}]'
 								]
 							},
 							StoredEnchantments:[
@@ -683,7 +687,7 @@ give @p villager_spawn_egg{
 						tag:{
 							display:{
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Champion I\"}]"
+									'["",{"italic":false,"color":"blue","text":"Champion I"}]'
 								]
 							},
 							StoredEnchantments:[
@@ -714,7 +718,7 @@ give @p villager_spawn_egg{
 						tag:{
 							display:{
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Hectacomb I\"}]"
+									'["",{"italic":false,"color":"blue","text":"Hectacomb I"}]'
 								]
 							},
 							StoredEnchantments:[

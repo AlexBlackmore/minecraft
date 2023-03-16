@@ -2,11 +2,11 @@
 	"parent":"skyblock:accessories/root",
 	"display":{
 		"icon":{
-			"item":"minecraft:skeleton_skull"
+			"item":"minecraft:enchanted_book"
 		},
-		"title":"§fSkeleton Talisman",
-		"description":"Purchased from the Adventurer in the Village. Grants +1 Armor Toughness while fighting Skeletons.",
-		"frame":"task",
+		"title":"§dExperience Artifact",
+		"description":"Craftable. +25% Combat Wisdom, +25% Farming Wisdom, +25% Fishing Wisdom, +25% Foraging Wisdom, +25% Mining Wisdom.",
+		"frame":"goal",
 		"show_toast":true,
 		"announce_to_chat":true,
 		"hidden":false
@@ -17,10 +17,12 @@
 			"conditions":{
 				"items":[
 					{
-						"nbt":"{Name:\"Skeleton Talisman\"}"
+						"nbt":"{Name:\"Experience Artifact\"}"
 					}
 				]
 			}
 		}
 	}
 }
+
+

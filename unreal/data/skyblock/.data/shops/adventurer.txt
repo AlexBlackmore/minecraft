@@ -32,7 +32,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"minecraft:rotten_flesh",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -43,7 +44,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"minecraft:bone",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -54,7 +56,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"minecraft:string",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -65,7 +68,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"minecraft:slime_ball",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -76,7 +80,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"minecraft:gunpowder",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -99,10 +104,10 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"fighting Zombies.\"}]"
 								]
 							},
-							Name:"Zombie Talisman",
-							Rarity:0
+							Name:"Zombie Talisman"
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -125,10 +130,10 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"fighting Skeletons.\"}]"
 								]
 							},
-							Name:"Skeleton Talisman",
-							Rarity:0
+							Name:"Skeleton Talisman"
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -139,9 +144,10 @@ give @p villager_spawn_egg{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
-							HideFlags:1
+							HideFlags:1,
+							Name:"Enchanted Emerald"
 						}
 					},
 					buyB:{
@@ -161,10 +167,10 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Villagers.\"}]"
 								]
 							},
-							Name:"Village Affinity Talisman",
-							Rarity:0
+							Name:"Village Affinity Talisman"
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -175,9 +181,10 @@ give @p villager_spawn_egg{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
-							HideFlags:1
+							HideFlags:1,
+							Name:"Enchanted Emerald"
 						}
 					},
 					buyB:{
@@ -197,10 +204,10 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"aqua\",\"text\":\"Mountain\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" or \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"Cave\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" biome.\"}]"
 								]
 							},
-							Name:"Mine Affinity Talisman",
-							Rarity:0
+							Name:"Mine Affinity Talisman"
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -211,9 +218,10 @@ give @p villager_spawn_egg{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
-							HideFlags:1
+							HideFlags:1,
+							Name:"Enchanted Emerald"
 						}
 					},
 					buyB:{
@@ -228,13 +236,16 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Intimidation Talisman\"}",
 								Lore:[
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Accessory\"}]"
+									'["",{"italic":false,"color":"blue","text":"Accessory"}]',
+									'["",{"italic":false,"color":"gray","text":"Reduces the "},{"italic":false,"color":"blue","text":"Follow Range"},{"italic":false,"color":"gray","text":" of"}]',
+									'["",{"italic":false,"color":"gray","text":"nearby mobs to "},{"italic":false,"color":"yellow","text":"16"},{"italic":false,"color":"gray","text":" blocks while"}]',
+									'["",{"italic":false,"color":"gray","text":"in your Inventory."}]'
 								]
 							},
-							Name:"Intimidation Talisman",
-							Rarity:0
+							Name:"Intimidation Talisman"
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -245,9 +256,10 @@ give @p villager_spawn_egg{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Enchanted Emerald\"}"
 							},
 							Enchantments:[
-								{id:"unbreaking",lvl:1}
+								{lvl:1s,id:"minecraft:unbreaking"}
 							],
-							HideFlags:1
+							HideFlags:1,
+							Name:"Enchanted Emerald"
 						}
 					},
 					buyB:{
@@ -267,10 +279,10 @@ give @p villager_spawn_egg{
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"an \"},{\"italic\":false,\"color\":\"gold\",\"text\":\"Emerald\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" when killed.\"}]"
 								]
 							},
-							Name:"Scavenger Talisman",
-							Rarity:0
+							Name:"Scavenger Talisman"
 						}
-					}
+					},
+					maxUses:2147483647
 				}
 			]
 		}

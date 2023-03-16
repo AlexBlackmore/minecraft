@@ -5,12 +5,12 @@
 			"item":"minecraft:player_head",
 			"nbt":"{SkullOwner:{Id:[I;1061862363,351027765,-1319752238,-1264016608],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODg1NWY3Y2FkMmM1ODM4ZGQ0YzJkZTAyYzU1ZGI2MWZmNzhjMDEwNjU4ZWE0ODJmNjIyYjU4MTFmNTM5ODE1In19fQ==\"}]}}}"
 		},
-		"title":"Scavenger Talisman",
-		"description":"[::]",
+		"title":"§fScavenger Talisman",
+		"description":"Purchased from the Adventurer in the Village. Monsters have a chance to drop an Emerald when killed.",
 		"frame":"task",
-		"show_toast":false,
+		"show_toast":true,
 		"announce_to_chat":true,
-		"hidden":true
+		"hidden":false
 	},
 	"criteria":{
 		"criterion":{
@@ -23,9 +23,5 @@
 				]
 			}
 		}
-
-	},
-	"rewards":{
-		"function":"skyblock:abilities/accessories/scavenger_talisman"
 	}
 }

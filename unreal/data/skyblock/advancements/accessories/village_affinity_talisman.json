@@ -5,12 +5,12 @@
 			"item":"minecraft:player_head",
 			"nbt":"{SkullOwner:{Id:[I;-1815128489,-544718155,-1150629972,-514904074],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzgxNDlkNzU4N2Q4ZGU3Mzc2MTI2MWJkMmQ0Y2QzZjllOTc5NzllNTk5ODg4ZTZmYWE0YmM2ZjljZGYxMDE0MiJ9fX0=\"}]}}}"	
 		},
-		"title":"Village Affinity Talisman",
-		"description":"[::]",
+		"title":"§fVillage Affinity Talisman",
+		"description":"Purchased from the Adventurer in the Village. Grants +10% Speed while near Villagers.",
 		"frame":"task",
-		"show_toast":false,
+		"show_toast":true,
 		"announce_to_chat":true,
-		"hidden":true
+		"hidden":false
 	},
 	"criteria":{
 		"criterion":{
@@ -23,9 +23,5 @@
 				]
 			}
 		}
-
-	},
-	"rewards":{
-		"function":"skyblock:abilities/accessories/village_affinity_talisman"
 	}
 }

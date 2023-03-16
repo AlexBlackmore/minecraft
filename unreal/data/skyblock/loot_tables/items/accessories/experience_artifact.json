@@ -1,0 +1,37 @@
+{
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:enchanted_book",
+					"functions":[
+						{
+							"function":"minecraft:set_name",
+							"name":{"text":"Experience Artifact","italic":false,"color":"light_purple"}
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								["",{"text":"Accessory","italic":false,"color":"blue"}],
+								["",{"text":"+25% Combat Wisdom","italic":false,"color":"blue"}],
+								["",{"text":"+25% Farming Wisdom","italic":false,"color":"blue"}],
+								["",{"text":"+25% Fishing Wisdom","italic":false,"color":"blue"}],
+								["",{"text":"+25% Foraging Wisdom","italic":false,"color":"blue"}],
+								["",{"text":"+25% Mining Wisdom","italic":false,"color":"blue"}]
+							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								Name:\"Experience Artifact\"
+							}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
