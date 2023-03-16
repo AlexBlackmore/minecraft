@@ -29,16 +29,16 @@ give @p villager_spawn_egg{
 						Count:17
 					},
 					sell:{
-						id:"iron_sword",
+						id:"minecraft:iron_sword",
 						Count:1,
 						tag:{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Undead Sword\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Undead\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									'{"text":" "}',
+									'["",{"italic":false,"color":"gray","text":"Deals "},{"italic":false,"color":"green","text":"+100%"},{"italic":false,"color":"gray","text":" damage to"}]',
+									'["",{"italic":false,"color":"gray","text":"Undead mobs."}]',
+									'{"text":" "}'
 								]
 							},
 							AttributeModifiers:[
@@ -46,9 +46,16 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;684961272,846201049,604752410,496819681]}
 							],
 							Name:"Undead Sword",
-							Rarity:0
+							Rarity:0,
+							Lore:[
+								'{"text":" "}',
+								'["",{"italic":false,"color":"gray","text":"Deals "},{"italic":false,"color":"green","text":"+100%"},{"italic":false,"color":"gray","text":" damage to"}]',
+								'["",{"italic":false,"color":"gray","text":"Undead mobs."}]',
+								'{"text":" "}'
+							]
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -56,16 +63,16 @@ give @p villager_spawn_egg{
 						Count:25
 					},
 					sell:{
-						id:"diamond_sword",
+						id:"minecraft:diamond_sword",
 						Count:1,
 						tag:{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"End Sword\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to Ender\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"mobs.\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									'{"text":" "}',
+									'["",{"italic":false,"color":"gray","text":"Deals "},{"italic":false,"color":"green","text":"+100%"},{"italic":false,"color":"gray","text":" damage to"}]',
+									'["",{"italic":false,"color":"gray","text":"Ender mobs."}]',
+									'{"text":" "}'
 								]
 							},
 							AttributeModifiers:[
@@ -73,9 +80,16 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;732666889,781481416,404192695,534427835]}
 							],
 							Name:"End Sword",
-							Rarity:1
+							Rarity:1,
+							Lore:[
+								'{"text":" "}',
+								'["",{"italic":false,"color":"gray","text":"Deals "},{"italic":false,"color":"green","text":"+100%"},{"italic":false,"color":"gray","text":" damage to"}]',
+								'["",{"italic":false,"color":"gray","text":"Ender mobs."}]',
+								'{"text":" "}'
+							]
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -83,16 +97,16 @@ give @p villager_spawn_egg{
 						Count:17
 					},
 					sell:{
-						id:"iron_sword",
+						id:"minecraft:iron_sword",
 						Count:1,
 						tag:{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Spider Sword\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Arthropods.\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									'{"text":" "}',
+									'["",{"italic":false,"color":"gray","text":"Deals "},{"italic":false,"color":"green","text":"+100%"},{"italic":false,"color":"gray","text":" damage to"}]',
+									'["",{"italic":false,"color":"gray","text":"Arthropods."}]',
+									'{"text":" "}'
 								]
 							},
 							AttributeModifiers:[
@@ -100,9 +114,16 @@ give @p villager_spawn_egg{
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-2.4,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
 							],
 							Name:"Spider Sword",
-							Rarity:0
+							Rarity:0,
+							Lore:[
+								'{"text":" "}',
+								'["",{"italic":false,"color":"gray","text":"Deals "},{"italic":false,"color":"green","text":"+100%"},{"italic":false,"color":"gray","text":" damage to"}]',
+								'["",{"italic":false,"color":"gray","text":"Arthropods."}]',
+								'{"text":" "}'
+							]
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -110,7 +131,7 @@ give @p villager_spawn_egg{
 						Count:10
 					},
 					sell:{
-						id:"diamond_sword",
+						id:"minecraft:diamond_sword",
 						Count:1,
 						tag:{
 							display:{
@@ -123,7 +144,8 @@ give @p villager_spawn_egg{
 							Name:"Diamond Sword",
 							Rarity:1
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -131,9 +153,10 @@ give @p villager_spawn_egg{
 						Count:5
 					},
 					sell:{
-						id:"bow",
+						id:"minecraft:bow",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -141,14 +164,10 @@ give @p villager_spawn_egg{
 						Count:7
 					},
 					sell:{
-						id:"arrow",
-						Count:12,
-						tag:{
-							display:{
-								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Flint Arrow\"}"
-							}
-						}
-					}
+						id:"minecraft:arrow",
+						Count:12
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -156,22 +175,29 @@ give @p villager_spawn_egg{
 						Count:42
 					},
 					sell:{
-						id:"bow",
+						id:"minecraft:bow",
 						Count:1,
 						tag:{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Wither Bow\"}",
 								Lore:[
-									"[\"\",{\"text\":\" \"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Deals \"},{\"italic\":false,\"color\":\"green\",\"text\":\"+100%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" damage to\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Wither mobs.\"}]",
-									"[\"\",{\"text\":\" \"}]"
+									'{"text":" "}',
+									'["",{"italic":false,"color":"gray","text":"Deals "},{"italic":false,"color":"green","text":"+100%"},{"italic":false,"color":"gray","text":" damage to"}]',
+									'["",{"italic":false,"color":"gray","text":"Wither mobs."}]',
+									'{"text":" "}'
 								]
 							},
 							Name:"Wither Bow",
-							Rarity:1
+							Rarity:1,
+							Lore:[
+								'{"text":" "}',
+								'["",{"italic":false,"color":"gray","text":"Deals "},{"italic":false,"color":"green","text":"+100%"},{"italic":false,"color":"gray","text":" damage to"}]',
+								'["",{"italic":false,"color":"gray","text":"Wither mobs."}]',
+								'{"text":" "}'
+							]
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -183,7 +209,7 @@ give @p villager_spawn_egg{
 						Count:36
 					},
 					sell:{
-						id:"bow",
+						id:"minecraft:bow",
 						Count:1,
 						tag:{
 							display:{
@@ -196,7 +222,8 @@ give @p villager_spawn_egg{
 							Rarity:2,
 							Shortbow:true
 						}
-					}
+					},
+					maxUses:2147483647
 				}
 			]
 		}

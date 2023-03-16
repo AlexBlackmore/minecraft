@@ -31,8 +31,19 @@ give @p villager_spawn_egg{
 					},
 					sell:{
 						id:"minecraft:leather_helmet",
-						Count:1
-					}
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Leather Helmet\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"head",AttributeName:"generic.armor",Name:"Armor",Amount:1,Operation:0,UUID:[I;880547910,254663267,40696167,292863750]}
+							],
+							Name:"Leather Helmet",
+							Rarity:0
+						}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -42,8 +53,19 @@ give @p villager_spawn_egg{
 					},
 					sell:{
 						id:"minecraft:leather_chestplate",
-						Count:1
-					}
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Leather Chestplate\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"chest",AttributeName:"generic.armor",Name:"Armor",Amount:3,Operation:0,UUID:[I;459825707,292939929,604046520,252951343]}
+							],
+							Name:"Leather Chestplate",
+							Rarity:0
+						}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -53,8 +75,19 @@ give @p villager_spawn_egg{
 					},
 					sell:{
 						id:"minecraft:leather_leggings",
-						Count:1
-					}
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Leather Leggings\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"legs",AttributeName:"generic.armor",Name:"Armor",Amount:2,Operation:0,UUID:[I;873443260,868321765,329979993,744153641]}
+							],
+							Name:"Leather Leggings",
+							Rarity:0
+						}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -64,8 +97,19 @@ give @p villager_spawn_egg{
 					},
 					sell:{
 						id:"minecraft:leather_boots",
-						Count:1
-					}
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Leather Boots\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"feet",AttributeName:"generic.armor",Name:"Armor",Amount:1,Operation:0,UUID:[I;988898580,954164967,812416676,703851964]}
+							],
+							Name:"Leather Boots",
+							Rarity:0
+						}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -75,8 +119,19 @@ give @p villager_spawn_egg{
 					},
 					sell:{
 						id:"minecraft:iron_helmet",
-						Count:1
-					}
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Iron Helmet\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"head",AttributeName:"generic.armor",Name:"Armor",Amount:2,Operation:0,UUID:[I;880547910,254663267,40696167,292863750]}
+							],
+							Name:"Iron Helmet",
+							Rarity:0
+						}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -86,8 +141,19 @@ give @p villager_spawn_egg{
 					},
 					sell:{
 						id:"minecraft:iron_chestplate",
-						Count:1
-					}
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Iron Chestplate\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"chest",AttributeName:"generic.armor",Name:"Armor",Amount:6,Operation:0,UUID:[I;459825707,292939929,604046520,252951343]}
+							],
+							Name:"Iron Chestplate",
+							Rarity:0
+						}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -97,8 +163,19 @@ give @p villager_spawn_egg{
 					},
 					sell:{
 						id:"minecraft:iron_leggings",
-						Count:1
-					}
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Iron Leggings\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"legs",AttributeName:"generic.armor",Name:"Armor",Amount:5,Operation:0,UUID:[I;873443260,868321765,329979993,744153641]}
+							],
+							Name:"Iron Leggings",
+							Rarity:0
+						}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -108,8 +185,19 @@ give @p villager_spawn_egg{
 					},
 					sell:{
 						id:"minecraft:iron_boots",
-						Count:1
-					}
+						Count:1,
+						tag:{
+							display:{
+								Name:"{\"italic\":false,\"color\":\"white\",\"text\":\"Iron Boots\"}"
+							},
+							AttributeModifiers:[
+							  {Slot:"feet",AttributeName:"generic.armor",Name:"Armor",Amount:2,Operation:0,UUID:[I;988898580,954164967,812416676,703851964]}
+							],
+							Name:"Iron Boots",
+							Rarity:0
+						}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -121,23 +209,16 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Helmet\"}",
-								Lore:[
-									"{\"text\":\" \"}",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Growth\"}]"
-								]
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Helmet\"}"
 							},
 							AttributeModifiers:[
-							  {Slot:"head",AttributeName:"generic.armor",Name:"Armor",Amount:3,Operation:0,UUID:[I;880547910,254663267,40696167,292863750]},
-							  {Slot:"head",AttributeName:"generic.max_health",Name:"Max Health",Amount:3,Operation:0,UUID:[I;941011704,360787613,230178741,12182078]}
-							],
-							CustomEnchantments:[
-								{id:"skyblock:growth",lvl:1}
+							  {Slot:"head",AttributeName:"generic.armor",Name:"Armor",Amount:3,Operation:0,UUID:[I;880547910,254663267,40696167,292863750]}
 							],
 							Name:"Diamond Helmet",
 							Rarity:1
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -153,23 +234,16 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Chestplate\"}",
-								Lore:[
-									"{\"text\":\" \"}",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Growth\"}]"
-								]
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Chestplate\"}"
 							},
 							AttributeModifiers:[
-							  {Slot:"chest",AttributeName:"generic.armor",Name:"Armor",Amount:8,Operation:0,UUID:[I;459825707,292939929,604046520,252951343]},
-							  {Slot:"chest",AttributeName:"generic.max_health",Name:"Max Health",Amount:3,Operation:0,UUID:[I;801235678,679902970,226128757,959818657]}
-							],
-							CustomEnchantments:[
-								{id:"skyblock:growth",lvl:1}
+							  {Slot:"chest",AttributeName:"generic.armor",Name:"Armor",Amount:8,Operation:0,UUID:[I;459825707,292939929,604046520,252951343]}
 							],
 							Name:"Diamond Chestplate",
 							Rarity:1
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -185,23 +259,16 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Leggings\"}",
-								Lore:[
-									"{\"text\":\" \"}",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Growth\"}]"
-								]
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Leggings\"}"
 							},
 							AttributeModifiers:[
-							  {Slot:"legs",AttributeName:"generic.armor",Name:"Armor",Amount:6,Operation:0,UUID:[I;873443260,868321765,329979993,744153641]},
-							  {Slot:"legs",AttributeName:"generic.max_health",Name:"Max Health",Amount:3,Operation:0,UUID:[I;58386279,207698003,215523430,116431303]}
-							],
-							CustomEnchantments:[
-								{id:"skyblock:growth",lvl:1}
+							  {Slot:"legs",AttributeName:"generic.armor",Name:"Armor",Amount:6,Operation:0,UUID:[I;873443260,868321765,329979993,744153641]}
 							],
 							Name:"Diamond Leggings",
 							Rarity:1
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -213,23 +280,16 @@ give @p villager_spawn_egg{
 						Count:1,
 						tag:{
 							display:{
-								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Boots\"}",
-								Lore:[
-									"{\"text\":\" \"}",
-									"[\"\",{\"italic\":false,\"color\":\"blue\",\"text\":\"Growth\"}]"
-								]
+								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Diamond Boots\"}"
 							},
 							AttributeModifiers:[
-							  {Slot:"feet",AttributeName:"generic.armor",Name:"Armor",Amount:3,Operation:0,UUID:[I;988898580,954164967,812416676,703851964]},
-							  {Slot:"feet",AttributeName:"generic.max_health",Name:"Max Health",Amount:3,Operation:0,UUID:[I;491221130,267563167,114492629,645446134]}
-							],
-							CustomEnchantments:[
-								{id:"skyblock:growth",lvl:1}
+							  {Slot:"feet",AttributeName:"generic.armor",Name:"Armor",Amount:3,Operation:0,UUID:[I;988898580,954164967,812416676,703851964]}
 							],
 							Name:"Diamond Boots",
 							Rarity:1
 						}
-					}
+					},
+					maxUses:2147483647
 				}
 			]
 		}

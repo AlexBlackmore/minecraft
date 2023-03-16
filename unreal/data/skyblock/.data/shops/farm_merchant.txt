@@ -1,8 +1,8 @@
 give @p villager_spawn_egg{
 	EntityTag:{
 		id:"minecraft:villager",
-		CustomName:"{\"text\":\"Farm Merchant\",\"color\":\"yellow\"}",
-		Tags:["farming_merchant"],
+		CustomName:"{\"text\":\"Farm Merchant\"}",
+		Tags:["farm_merchant"],
 		CustomNameVisible:true,
 		PersistenceRequired:true,
 		Silent:true,
@@ -32,7 +32,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"wheat",
 						Count:3
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -43,7 +44,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"carrot",
 						Count:3
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -54,7 +56,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"potato",
 						Count:3
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -65,7 +68,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"melon_slice",
 						Count:10
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -76,7 +80,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"sugar_cane",
 						Count:3
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -87,7 +92,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"pumpkin",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -98,7 +104,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"cocoa_beans",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -109,7 +116,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"red_mushroom",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -120,7 +128,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"brown_mushroom",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -131,7 +140,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"sand",
 						Count:2
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -142,7 +152,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"cactus",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -163,7 +174,8 @@ give @p villager_spawn_egg{
 							HideFlags:1,
 							Name:"Enchanted Bone Meal"
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -171,7 +183,7 @@ give @p villager_spawn_egg{
 						Count:2
 					},
 					sell:{
-						id:"stone_hoe",
+						id:"minecraft:stone_hoe",
 						Count:1,
 						tag:{
 							display:{
@@ -179,7 +191,8 @@ give @p villager_spawn_egg{
 								Lore:[
 									"{\"text\":\" \"}",
 									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Crops have a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"50%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop\"}]",
-									"{\"italic\":false,\"color\":\"gray\",\"text\":\"an extra seed.\"}"
+									"{\"italic\":false,\"color\":\"gray\",\"text\":\"an extra seed.\"}",
+									"{\"text\":\" \"}"
 								]
 							},
 							AttributeModifiers:[
@@ -195,9 +208,16 @@ give @p villager_spawn_egg{
 							],
 							HideFlags:8,
 							Name:"Rookie Hoe",
-							Rarity:0
+							Rarity:0,
+							Lore:[
+								"{\"text\":\" \"}",
+								"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Crops have a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"50%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop\"}]",
+								"{\"italic\":false,\"color\":\"gray\",\"text\":\"an extra seed.\"}",
+								"{\"text\":\" \"}"
+							]
 						}
-					}
+					},
+					maxUses:2147483647
 				}
 			]
 		}

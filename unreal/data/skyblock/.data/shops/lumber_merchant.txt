@@ -32,7 +32,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"oak_log",
 						Count:5
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -43,7 +44,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"birch_log",
 						Count:5
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -54,7 +56,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"spruce_log",
 						Count:5
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -65,7 +68,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"dark_oak_log",
 						Count:5
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -76,7 +80,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"acacia_log",
 						Count:5
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -87,7 +92,20 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"jungle_log",
 						Count:5
-					}
+					},
+					maxUses:2147483647
+				},
+				{
+					buy:
+					{
+						id:"minecraft:emerald",
+						Count:4
+					},
+					sell:{
+						id:"stick",
+						Count:32
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -105,7 +123,7 @@ give @p villager_spawn_egg{
 								{id:"efficiency",lvl:1}
 							],
 							AttributeModifiers:[
-								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:4,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.2,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
 							],
 							CanDestroy:[
@@ -116,7 +134,8 @@ give @p villager_spawn_egg{
 							Name:"Rookie Axe",
 							Rarity:0
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -130,28 +149,31 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Promising Axe\"}",
 								Lore:[
-									"{\"text\":\" \"}",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Breaking blocks has a chance to\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"increase the Efficiency level on\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"this axe.\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"dark_gray\",\"text\":\"(Max: Efficiency II)\"}]",
-									"{\"text\":\" \"}"
+									'{"text":" "}',
+									'["",{"italic":false,"color":"gray","text":"The Efficiency level of this axe"}]',
+									'["",{"italic":false,"color":"gray","text":"increases as more durability is"}]',
+									'["",{"italic":false,"color":"gray","text":"used."}]',
+									'{"text":" "}'
 								]
 							},
 							AttributeModifiers:[
-								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:5,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.1,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
-							],
-							CanDestroy:[
-								"minecraft:pumpkin",
-								"minecraft:melon"
 							],
 							HideFlags:8,
 							Name:"Promising Axe",
 							Rarity:1,
-							Promising:0
+							Promising:true,
+							Lore:[
+								'{"text":" "}',
+								'["",{"italic":false,"color":"gray","text":"The Efficiency level of this axe"}]',
+								'["",{"italic":false,"color":"gray","text":"increases as more durability is"}]',
+								'["",{"italic":false,"color":"gray","text":"used."}]',
+								'{"text":" "}'
+							]
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:
@@ -162,7 +184,8 @@ give @p villager_spawn_egg{
 					sell:{
 						id:"podzol",
 						Count:1
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -176,26 +199,30 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Sweet Axe\"}",
 								Lore:[
-									"{\"text\":\" \"}",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Chopping Oak Logs with this axe\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"has a \"},{\"italic\":false,\"color\":\"green\",\"text\":\"20%\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" chance to drop an\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"apple.\"}]",
-									"{\"text\":\" \"}"
+									'{"text":" "}',
+									'["",{"italic":false,"color":"gray","text":"Chopping logs with this axe has"}]',
+									'["",{"italic":false,"color":"gray","text":"a "},{"italic":false,"color":"green","text":"20%"},{"italic":false,"color":"gray","text":" chance to drop an"}]',
+									'["",{"italic":false,"color":"white","text":"Apple"},{"italic":false,"color":"gray","text":"."}]',
+									'{"text":" "}'
 								]
 							},
 							AttributeModifiers:[
-								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:5,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.1,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
-							],
-							CanDestroy:[
-								"minecraft:pumpkin",
-								"minecraft:melon"
 							],
 							HideFlags:8,
 							Name:"Sweet Axe",
-							Rarity:1
+							Rarity:1,
+							Lore:[
+								'{"text":" "}',
+								'["",{"italic":false,"color":"gray","text":"Chopping logs with this axe has"}]',
+								'["",{"italic":false,"color":"gray","text":"a "},{"italic":false,"color":"green","text":"20%"},{"italic":false,"color":"gray","text":" chance to drop an"}]',
+								'["",{"italic":false,"color":"white","text":"Apple"},{"italic":false,"color":"gray","text":"."}]',
+								'{"text":" "}'
+							]
 						}
-					}
+					},
+					maxUses:2147483647
 				},
 				{
 					buy:{
@@ -209,25 +236,28 @@ give @p villager_spawn_egg{
 							display:{
 								Name:"{\"italic\":false,\"color\":\"yellow\",\"text\":\"Efficient Axe\"}",
 								Lore:[
-									"{\"text\":\" \"}",
-									"[\"\",{\"italic\":false,\"color\":\"gray\",\"text\":\"Logs chopped with this axe drop\"}]",
-									"[\"\",{\"italic\":false,\"color\":\"green\",\"text\":\"5\"},{\"italic\":false,\"color\":\"gray\",\"text\":\" planks instead of logs.\"}]",
-									"{\"text\":\" \"}"
+									'{"text":" "}',
+									'["",{"italic":false,"color":"gray","text":"Converts all logs chopped with"}]',
+									'["",{"italic":false,"color":"green","text":"5"},{"italic":false,"color":"gray","text":" planks of the same type."}]',
+									'{"text":" "}'
 								]
 							},
 							AttributeModifiers:[
-								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:8,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
+								{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"Attack Damage",Amount:5,Operation:0,UUID:[I;584449257,335130560,485476939,29118079]},
 								{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"Attack Speed",Amount:-3.1,Operation:0,UUID:[I;289708262,607591786,973715106,65018708]}
-							],
-							CanDestroy:[
-								"minecraft:pumpkin",
-								"minecraft:melon"
 							],
 							HideFlags:8,
 							Name:"Efficient Axe",
-							Rarity:1
+							Rarity:1,
+							Lore:[
+								'{"text":" "}',
+								'["",{"italic":false,"color":"gray","text":"Converts all logs chopped with"}]',
+								'["",{"italic":false,"color":"green","text":"5"},{"italic":false,"color":"gray","text":" planks of the same type."}]',
+								'{"text":" "}'
+							]
 						}
-					}
+					},
+					maxUses:2147483647
 				}
 			]
 		}
