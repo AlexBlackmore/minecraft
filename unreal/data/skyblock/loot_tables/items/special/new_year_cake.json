@@ -4,39 +4,34 @@
 			"rolls":1,
 			"entries":[
 				{
-					"type":"alternatives",
-					"children":[
+					"type":"minecraft:item",
+					"name":"minecraft:cake",
+					"functions":[
 						{
-							"type":"minecraft:item",
-							"name":"minecraft:cake",
-							"functions":[
-								{
-									"function":"minecraft:set_name",
-									"name":{"text":"New Year Cake","italic":false,"color":"red"}
-								},
-								{
-									"function":"minecraft:set_lore",
-									"lore":[
-										{"text":"Given to celebrate surviving at","italic":false,"color":"gray"},
-										["",{"text":"least ","italic":false,"color":"gray"},{"text":"1 year","italic":false,"color":"red"},{"text":" in this world!","italic":false,"color":"gray"}],
-										{"text":" "}
-										{"text":"SPECIAL","bold":true,"color":"red"},
-										{"text":" "}
-									]
-								},
-								{
-									"function":"minecraft:set_nbt",
-									"tag":"{
-										HideFlags:1
-									}"
-								},
-								{
-									"function":"minecraft:set_enchantments",
-									"enchantments":{
-										"unbreaking":1
-									}
-								}
+							"function":"minecraft:set_name",
+							"name":["",{"text":"New Year Cake (Year ","italic":false,"color":"red"},{"score":{"name":"*","objective":"year"},"italic":false,"color":"red"},{"text":")","italic":false,"color":"red"}]
+						},
+						{
+							"function":"minecraft:set_lore",
+							"lore":[
+								{"text":"Given to every player as a","italic":false,"color":"gray"},
+								["",{"text":"celebration for another year in","italic":false,"color":"gray"}],
+								["",{"text":"Skyblock!","italic":false,"color":"gray"}],
+								{"text":" "}
 							]
+						},
+						{
+							"function":"minecraft:set_nbt",
+							"tag":"{
+								HideFlags:1,
+								Name:\"New Year Cake\"
+							}"
+						},
+						{
+							"function":"minecraft:set_enchantments",
+							"enchantments":{
+								"unbreaking":1
+							}
 						}
 					]
 				}
