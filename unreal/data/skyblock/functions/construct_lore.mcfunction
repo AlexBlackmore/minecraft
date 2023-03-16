@@ -97,62 +97,62 @@ execute as @e[tag=anvil,limit=1,sort=nearest] if data entity @s HandItems[0].tag
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s crit_chance run data get entity @s HandItems[0].tag.CritChance
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s dummy run data get entity @s HandItems[0].tag.ReforgeCritChance
 execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s crit_chance += @s dummy
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={crit_chance=1..}] run item modify entity @s weapon.mainhand skyblock:crit_chance_positive
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={crit_chance=..-1}] run item modify entity @s weapon.mainhand skyblock:crit_chance_negative
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={crit_chance=1..}] run item modify entity @s weapon.mainhand skyblock:stats/crit_chance/positive
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={crit_chance=..-1}] run item modify entity @s weapon.mainhand skyblock:stats/crit_chance/negative
 
 #CritDamage
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s crit_damage run data get entity @s HandItems[0].tag.CritDamage
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s dummy run data get entity @s HandItems[0].tag.ReforgeCritDamage
 execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s crit_damage += @s dummy
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={crit_damage=1..}] run item modify entity @s weapon.mainhand skyblock:crit_damage_positive
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={crit_damage=..-1}] run item modify entity @s weapon.mainhand skyblock:crit_damage_negative
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={crit_damage=1..}] run item modify entity @s weapon.mainhand skyblock:stats/crit_damage/positive
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={crit_damage=..-1}] run item modify entity @s weapon.mainhand skyblock:stats/crit_damage/negative
 
 #Intelligence
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s intelligence run data get entity @s HandItems[0].tag.Intelligence
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s dummy run data get entity @s HandItems[0].tag.ReforgeIntelligence
 execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s intelligence += @s dummy
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={intelligence=1..}] run item modify entity @s weapon.mainhand skyblock:intelligence_positive
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={intelligence=..-1}] run item modify entity @s weapon.mainhand skyblock:intelligence_negative
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={intelligence=1..}] run item modify entity @s weapon.mainhand skyblock:stats/intelligence/positive
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={intelligence=..-1}] run item modify entity @s weapon.mainhand skyblock:stats/intelligence/negative
 
 #Ferocity
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s ferocity run data get entity @s HandItems[0].tag.Ferocity
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s dummy run data get entity @s HandItems[0].tag.ReforgeFerocity
 execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s ferocity += @s dummy
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={ferocity=1..}] run item modify entity @s weapon.mainhand skyblock:ferocity
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={ferocity=1..}] run item modify entity @s weapon.mainhand skyblock:stats/ferocity
 
 
 #Wisdom
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s combat_wisdom run data get entity @s HandItems[0].tag.CombatWisdom
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s dummy run data get entity @s HandItems[0].tag.ReforgeCombatWisdom
 execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s combat_wisdom += @s dummy
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={combat_wisdom=1..}] run item modify entity @s weapon.mainhand skyblock:combat_wisdom
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={combat_wisdom=1..}] run item modify entity @s weapon.mainhand skyblock:stats/wisdom/combat
 
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s farming_wisdom run data get entity @s HandItems[0].tag.FarmingWisdom
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s dummy run data get entity @s HandItems[0].tag.ReforgeFarmingWisdom
 execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s farming_wisdom += @s dummy
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={farming_wisdom=1..}] run item modify entity @s weapon.mainhand skyblock:farming_wisdom
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={farming_wisdom=1..}] run item modify entity @s weapon.mainhand skyblock:stats/wisdom/farming
 
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s foraging_wisdom run data get entity @s HandItems[0].tag.ForagingWisdom
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s dummy run data get entity @s HandItems[0].tag.ReforgeForagingWisdom
 execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s foraging_wisdom += @s dummy
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={foraging_wisdom=1..}] run item modify entity @s weapon.mainhand skyblock:foraging_wisdom
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={foraging_wisdom=1..}] run item modify entity @s weapon.mainhand skyblock:stats/wisdom/foraging
 
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s mining_wisdom run data get entity @s HandItems[0].tag.MiningWisdom
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s dummy run data get entity @s HandItems[0].tag.ReforgeMiningWisdom
 execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s mining_wisdom += @s dummy
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={mining_wisdom=1..}] run item modify entity @s weapon.mainhand skyblock:mining_wisdom
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={mining_wisdom=1..}] run item modify entity @s weapon.mainhand skyblock:stats/wisdom/mining
 
 
 #Fortune
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s farming_fortune run data get entity @s HandItems[0].tag.FarmingFortune
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s dummy run data get entity @s HandItems[0].tag.ReforgeFarmingFortune
 execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s farming_fortune += @s dummy
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={farming_fortune=1..}] run item modify entity @s weapon.mainhand skyblock:farming_fortune
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={farming_fortune=1..}] run item modify entity @s weapon.mainhand skyblock:stats/fortune/farming
 
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s mining_fortune run data get entity @s HandItems[0].tag.MiningFortune
 execute as @e[tag=anvil,limit=1,sort=nearest] store result score @s dummy run data get entity @s HandItems[0].tag.ReforgeMiningFortune
 execute as @e[tag=anvil,limit=1,sort=nearest] run scoreboard players operation @s mining_fortune += @s dummy
-execute as @e[tag=anvil,limit=1,sort=nearest,scores={mining_fortune=1..}] run item modify entity @s weapon.mainhand skyblock:mining_fortune
+execute as @e[tag=anvil,limit=1,sort=nearest,scores={mining_fortune=1..}] run item modify entity @s weapon.mainhand skyblock:stats/fortune/mining
 
 
 item replace entity @s weapon.mainhand from entity @e[tag=anvil,limit=1,sort=nearest] weapon.mainhand
